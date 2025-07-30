@@ -1,0 +1,199 @@
+---
+title: "\U0001F579 I am Insta Famous"
+date: "2024-01-04"
+date-modified: "`r Sys.Date()`"
+order: 80
+categories:
+- Networks
+- Structure and Processes on Networks
+- Degree, Power
+- Network Effects
+image: featured.jpg
+---
+
+#### Am I a virus?
+
+```{r,echo = FALSE,fig.alt="Petr Slováček on Unsplash", fig.align='center'}
+knitr::include_graphics("featured.jpg")
+```
+
+## Introduction
+
+Do you think your friends have more friends than you have? Do you think
+that you are **outside the herd**, and that what you think or do is from
+your own mind?
+
+Anyways...
+
+## Activities
+
+### Activity: Secret Santa Game
+
+Let us play this in the vanilla way: Paper chits with names in a bin and
+drawing them in turn. What can go wrong with this? Ask [Avni
+Gupta](https://www.linkedin.com/in/avni-gupta-551014267/).
+
+Should we use this instead?
+<u><https://www.drawnames.com.sg/secret-santa-generator></u>
+
+Discussion:
+`Nodes, Links, Link Directionality, Connected and Disconnected Networks`
+
+### Activity: Barabasi Cocktail Party Game
+
+This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science
+pioneer and expert, who has written a wonderful, and wonderfully
+acessible, book on Network Science, available online
+<u><http://networksciencebook.com/></u>
+
+1.  Please take a coin in your hand. (A rupee coin is good!)
+2.  Find a ~~stranger~~ potential new friend in the classroom. Both of
+    you toss your coins.
+3.  If the coins show two Heads or two Tails, introduce yourselves, make
+    small talk, exchange classroom and college gossip. 2 Minutes!
+4.  Make a note of your new friends initials.
+5.  We will plot this conversation on the board. How?
+
+{{< vimeo 191074419 >}}
+
+Discussion:
+`Network Mechanisms, Information Flow, Giant Component, Emergence`
+
+### Activity: Indian Surnames Game
+
+1.  How many common Indian surnames do we know? Let us write them on the
+    board.
+2.  Each of us will now look at each surname and recollect how many
+    people they know with that surname.
+3.  Write down the score for each surname.
+4.  Let's plot this on (yet another) network!!
+
+Discussion:
+`Node Degree, Giant Component?  Small Worlds?  Multi-Link network, Link Values or Costs`
+
+### Activity: Hi, I am Kevin Bacon, SMI Foundation 2023 Batch
+
+Let us find a Keven Bacon in SMI Foundation Studies Programme!! Six
+Degrees of Separation...or of Kevin Bacon?
+
+Look at this video before you proceed!
+
+{{< vimeo 14196818 >}}
+
+1.  Collect friends Data from across college/class, import and plot,
+    analyze and comment
+2.  Use this online tool at DataBasic.io <u><https://databasic.io></u>
+    to *Connect the Dots*, OR
+3.  Even more fun at at GraphCommons
+    <u><https://graphcommons.com/graphs/new></u>
+
+Discussion: `Node Degree, Centrality, Betweenness, Link Values or Costs`
+
+### Activity: Can you Introduce me to Chandler, again?
+
+1.  Take your favourite Literary Work / TV Serial / Movie and create a
+    Network Database for it.
+
+2.  How? Use conversations between pairs of individuals (`nodes`) to
+    create links. E.g. each distinct conversation is a `link`, and the
+    number of sentences uttered is the `weight` of the link.
+
+3.  Visualize it either with or without tech tools From Teach
+    Engineering, this Activity Sheet
+    <u><https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2></u>.
+
+**Hah! Engineering in a Design college!!**`r emoji::emoji("laugh")`
+
+3.  Can also use [Graph Comics](https://aviz.fr/~bbach/graphcomics/)
+    <u><https://aviz.fr/~bbach/graphcomics/></u>
+
+Discussion:
+`Networks are everywhere, Cannot "unsee" them, You are a node and you are a link...are you?`
+
+### Activity: Way-Spotting Game
+
+Now that we have an idea of `nodes`, `links` and `costs`, let us get an
+experience of some more network science ideas:
+
+1.  Make groups of 3.
+2.  Head over to <u><http://www.wayspotting.com/index.html></u>
+3.  Play!! Make a note of your route each time ( your "traversal" of the
+    network)
+4.  Note if you can see the following:
+    -   Frequently Used Nodes
+    -   Frequently used Links
+5.  See here for more info:
+    <u>[https://medium.com/\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd](https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd){.uri}</u>.
+    Sadly link seems dead ;-(
+
+Discussion:
+`Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs`
+
+## References
+
+1.  Albert-Laszlo Barabasi. *Network Science*.
+    <u><http://networksciencebook.com></u>
+2.  Dmitry Zinoniev, Network Science Intro Slides.
+    <u><https://www.slideshare.net/DmitryZinoviev/workshop-20212296></u>
+3.  The Network Effects Bible.
+    <u><https://www.nfx.com/post/network-effects-bible></u>
+4.  Mark Newman, *The Physics of Networks*. Good intro Power Laws and
+    examples of many networks. <u>[Read the
+    PDF](Mark-Newman-Physics-of-Networks.pdf)</u>
+5.  The Historical Network Research Community.
+    <u><https://historicalnetworkresearch.org></u>
+6.  Konrad M. Lawson, <u>[*Toilers and Gangsters: Simple Network
+    Visualization with R for
+    Historians*](https://kmlawson.github.io/dh-tutorials/network.html)</u>
+7.  A Network oriented short story. Frigyes Karinthy, "Chains". <u>[Read
+    PDF](http://vadeker.net/articles/Karinthy-Chain-Links_1929.pdf)</u>
+8.  *Who told you about Srishti? Where?* Mark Granovetter, *The Strength
+    of Weak Ties*,
+    <u><https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf></u>
+9.  Michele Coscia. 2019. *Who will Cluster the Cluster Makers?*
+    <u><https://www.michelecoscia.com/?p=1709></u> Accessed 12 Jan 2024.
+10. Ran Katzir. Nov 16, 2019. *Experience Network Science Through
+    Play*.<u>[https://medium.com/\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd](https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd){.uri}</u>
+11. Mark Hoffman, *Methods for Network Analysis.*
+    <u><https://bookdown.org/markhoff/social_network_analysis/></u>
+12. Omar Lizardo and Isaac Jilbert, *Social Networks: An Introduction.*
+    <u><https://bookdown.org/omarlizardo/_main/></u>
+13. David Easely and Kleinberg. Networks, Market and Crowds. **The Rich
+    get Richer.**
+    <u><http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf></u>
+
+## Network Science in a Bollywood Song
+
+Song: Kuchh Toh Log Kahenge\
+Singer: Kishore Kumar\
+Music: R. D. Burman\
+Film: Amar Prem (1972)\
+
+<u><https://www.youtube.com/watch?v=OK6Hux4spNM></u>
+
+| Hindi Lyrics | English Translation |
+|--------------------------------|----------------------------------------|
+| Kuch toh log kahenge | People will say something or the other |
+| Logon ka kaam hai kehna | It's the job of people to say something |
+| Chhodo bekaar ki baaton mein | Forget all these useless things |
+| Kahin beet na jaaye raina | Or else our night will end just around them |
+| Kuch toh log kahenge | People will say something or the other |
+| ------ | ------- |
+| Kuch reet jagat ki aisi hai(2) | Some traditions of the world are such that |
+| Har ek subah ki shaam huyi(2) | Every morning has had an evening |
+| Tu kaun hai, tera naam hai kya | Who are you and what's your name |
+| Sita bhi yahan badnaam huyi | Even Goddess Sita has been defamed here |
+| Phir kyun sansaar ki baaton se | Then why with these conversations of the world |
+| Bheeg gaye tere naina | Have your eyes become bedewed |
+| Kuch toh log kahenge | People will say something or the other |
+| ---------- | ------------ |
+| Humko joh taane dete hai(2) | Those who taunt us saying that |
+| Hum khoye hai in rangraliyon mein(2) | We're lost in this debauchery |
+| Humne unko bhi chup chupke | Secretly I've also seen them |
+| Aate dekha in galiyon mein | Coming in these streets |
+| Yeh sach hai jhoothi baat nahi | This is the truth and not a lie |
+| Tum bolo yeh sach hai na | You tell me, isn't this the truth? |
+| Kuch toh log kahenge | People will say something or the other |
+| ... | ... |
+
+<br>

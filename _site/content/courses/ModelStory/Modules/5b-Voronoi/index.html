@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.11">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Arvind V.">
+<meta name="dcterms.date" content="2021-12-11">
+<title>🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<link href="../../../../../content/courses/ModelStory/Modules/6-Randomness/index.html" rel="next">
+<link href="../../../../../content/courses/ModelStory/Modules/5-Proximity/index.html" rel="prev">
+<link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
+<script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b6495f7ddc21fa4b617d4bbc77b8bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap-bf389d51471279d1e0a705a5c749840e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
+<script src="../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/tachyons-4.12.0/tachyons.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<link href="../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="../../../../../css/fira.css">
+<link rel="stylesheet" href="../../../../../css/roboto-condensed.css">
+<link rel="stylesheet" href="../../../../../css/vollkorn.css">
+<link rel="stylesheet" href="../../../../../css/fraunces.css">
+<link rel="stylesheet" href="../../../../../css/styles.css">
+<meta property="og:title" content="🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story">
+<meta property="og:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta property="og:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/5b-Voronoi/featured.jpg">
+<meta property="og:site_name" content="The Old Tortoise: The Model of the Story">
+<meta name="twitter:title" content="🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story">
+<meta name="twitter:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta name="twitter:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/5b-Voronoi/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../../index.html">
+    <span class="navbar-title">The Old Tortoise: The Model of the Story</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link active" href="../../../../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/arvindvenkatadri/model-story"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/arvind_v"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/arvindvenkatadri"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:arvind.venkatadri@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/Modules/5b-Voronoi/index.html">🕹 Measuring and Playing with Proximity</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../../../index.html" class="sidebar-logo-link">
+      <img src="../../../../../content/materials/images/1book25.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../content/courses/ModelStory/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Model of the Story</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/1-Company-Heroes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🦸 The Company of Heroes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/2-Strategies-in-PD/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 How Must I Play?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/3-Coordinated-Games/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Still More Games !!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/4-Rumours-Biases-ViralTrends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🍅 Biases, Memes, Viral Trends, and Rumours!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/5-Proximity/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Proximity - Painting Soho red with Kandinsky!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/5b-Voronoi/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">🕹 Measuring and Playing with Proximity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/6-Randomness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 A Random Walk with Hamlet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/6b-StillMoreRandomness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Throwing Stones with Hamlet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/7-Networks/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 I am Insta Famous</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/8-Fractals/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌵 Fractals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/9-L-Systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌲 Algorithmic Trees, L-Systems and Kolams</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/10-Sound/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕸 Wired for Sound</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 The Road Not Taken</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/12-Symmetry/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Symmetry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/100-Resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🎶 Resources and Notes to Myself</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#a-model-for-proximity-the-voronoi-and-the-delaunay-diagrams" id="toc-a-model-for-proximity-the-voronoi-and-the-delaunay-diagrams" class="nav-link active" data-scroll-target="#a-model-for-proximity-the-voronoi-and-the-delaunay-diagrams">A Model for Proximity: The Voronoi and the Delaunay Diagrams</a>
+  <ul class="collapse">
+<li><a href="#plotting-the-delaunay-and-voronoi-diagrams" id="toc-plotting-the-delaunay-and-voronoi-diagrams" class="nav-link" data-scroll-target="#plotting-the-delaunay-and-voronoi-diagrams">Plotting the Delaunay and Voronoi Diagrams</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  </ul>
+</li>
+  <li><a href="#fun-stuff-with-geogebra-and-voronoi" id="toc-fun-stuff-with-geogebra-and-voronoi" class="nav-link" data-scroll-target="#fun-stuff-with-geogebra-and-voronoi">Fun Stuff with Geogebra and Voronoi</a></li>
+  <li>
+<a href="#other-distances" id="toc-other-distances" class="nav-link" data-scroll-target="#other-distances">Other Distances?</a>
+  <ul class="collapse">
+<li><a href="#hamming-distances" id="toc-hamming-distances" class="nav-link" data-scroll-target="#hamming-distances">Hamming Distances</a></li>
+  <li><a href="#great-circle-distances" id="toc-great-circle-distances" class="nav-link" data-scroll-target="#great-circle-distances">Great Circle Distances</a></li>
+  <li><a href="#taxicab-distances" id="toc-taxicab-distances" class="nav-link" data-scroll-target="#taxicab-distances">Taxicab Distances</a></li>
+  <li><a href="#plotting-sihouette-diagrams" id="toc-plotting-sihouette-diagrams" class="nav-link" data-scroll-target="#plotting-sihouette-diagrams">Plotting Sihouette Diagrams</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#so-where-are-all-these-proximities-used" id="toc-so-where-are-all-these-proximities-used" class="nav-link" data-scroll-target="#so-where-are-all-these-proximities-used">So where are all these Proximities used?</a>
+  <ul class="collapse">
+<li><a href="#proximities-in-the-gps-system" id="toc-proximities-in-the-gps-system" class="nav-link" data-scroll-target="#proximities-in-the-gps-system">Proximities in the GPS System</a></li>
+  <li><a href="#code-proximity-measurement" id="toc-code-proximity-measurement" class="nav-link" data-scroll-target="#code-proximity-measurement">Code Proximity Measurement</a></li>
+  <li><a href="#a-brief-foray-into-cryptography" id="toc-a-brief-foray-into-cryptography" class="nav-link" data-scroll-target="#a-brief-foray-into-cryptography">A Brief Foray into Cryptography</a></li>
+  </ul>
+</li>
+  <li><a href="#painting-with-proximitydistance" id="toc-painting-with-proximitydistance" class="nav-link" data-scroll-target="#painting-with-proximitydistance">Painting with Proximity/Distance</a></li>
+  <li><a href="#wait-but-why" id="toc-wait-but-why" class="nav-link" data-scroll-target="#wait-but-why"><u>Wait, But Why?</u></a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/Modules/5b-Voronoi/index.html">🕹 Measuring and Playing with Proximity</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">🕹 Measuring and Playing with Proximity</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Voronoi Diagram</div>
+    <div class="quarto-category">Delaunay Triangulation</div>
+    <div class="quarto-category">Thiessen Polygons</div>
+    <div class="quarto-category">Silhouette Diagrams</div>
+    <div class="quarto-category">Geogebra</div>
+    <div class="quarto-category">Herds and Predators</div>
+    <div class="quarto-category">Proximity</div>
+    <div class="quarto-category">Distance</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Arvind V. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 11, 2021</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 30, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header><section id="dont-stand-so-close-to-me" class="level4"><h4 class="anchored" data-anchor-id="dont-stand-so-close-to-me">Don’t Stand so Close to Me</h4>
+</section><section id="a-model-for-proximity-the-voronoi-and-the-delaunay-diagrams" class="level2"><h2 class="anchored" data-anchor-id="a-model-for-proximity-the-voronoi-and-the-delaunay-diagrams">A Model for Proximity: The Voronoi and the Delaunay Diagrams</h2>
+<p>So how do we model “proximity”? Let us take a quick look at this description of <u><a href="../../../../../pdf/Proximity/FollowingtheHerd.pdf"><strong>Predator-Prey Dynamics.</strong></a></u></p>
+<section id="plotting-the-delaunay-and-voronoi-diagrams" class="level3"><h3 class="anchored" data-anchor-id="plotting-the-delaunay-and-voronoi-diagrams">Plotting the Delaunay and Voronoi Diagrams</h3>
+<p>So here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-1-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="2100"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-1-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="2100"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-1-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid figure-img" width="2100"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>How do we plot these diagrams?</p>
+<p>We will use this tool: <u><a href="https://www.geogebra.org/classic"><strong>Geogebra</strong></a></u></p>
+<p>Download and install this on your laptops. You can also use it in your browser <u><a href="https://www.geogebra.org/classic?lang=en" class="uri">https://www.geogebra.org/classic?lang=en</a></u> and download the Geogebra (<em>.ggb</em>) files that you create.</p>
+<ol type="1">
+<li>Exercise 1: Let us first see <u><a href="../../../../../pdf/Proximity/SohoMap.ggb"><strong>Soho with the Voronoi Diagram</strong></a></u>
+</li>
+</ol>
+<p>Now let us make such a diagram step by step:</p>
+<ol type="1">
+<li><p>Exercise 2: Let us try with just three points and see what we need to do to plot the Voronoi Diagram.</p></li>
+<li><p>Exercise 3: With 4 points: <u><a href="../../../../../pdf/Proximity/four points.ggb">Four Pointer Voronoi</a></u></p></li>
+<li><p>Exercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a <u><a href="../../../../../pdf/Proximity/VoronoiLargeNoOfPointsInGeogebra.pdf"><strong>“list of points” in Geogebra</strong></a></u></p></li>
+</ol></section><section id="discussion" class="level3"><h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
+<ul>
+<li>Did you see how the Delaunay Triangulation seems to “dislike” obtuse-angles, and changes the triangulation pattern when a certain (sum of) angles become more than 180?</li>
+<li>Wasn’t that a very Kandinsky-like thing to do, even for an algorithm?</li>
+<li>The Delaunay Triangulation gives us a set of triangular elements that cover our desired surface</li>
+<li>The Voronoi Diagram uses the Delaunay to give us <em>possibly infinite</em> proximal neighbourhoods.</li>
+</ul></section></section><section id="fun-stuff-with-geogebra-and-voronoi" class="level2"><h2 class="anchored" data-anchor-id="fun-stuff-with-geogebra-and-voronoi">Fun Stuff with Geogebra and Voronoi</h2>
+<ol type="1">
+<li>Predator Prey Movement….</li>
+</ol>
+<ul>
+<li>Create a set of points in Geogebra.</li>
+<li>Colour/Shape one of the outermost points as a predator which circles the herd.</li>
+<li>Use the Voronoi diagram to model the <em>Zone of Danger</em> for each of the animals in the inner herd.</li>
+<li>Try <strong>Animation</strong> in Geogebra !!</li>
+</ul>
+<ol start="2" type="1">
+<li>Service Areas with Voronoi</li>
+</ol>
+<ul>
+<li>Import a 5km * 5km square of area in your home town, from Google Maps, into Geogebra.</li>
+<li>Locate points of interest, all in one category ( ATMs, Post Offices, Hospitals, Police Stations…)</li>
+<li>Plot the Voronoi Diagram to show the area served by each such institution.</li>
+<li>Calculate the area in Geogebra.</li>
+<li>Assume a flat population/sqkm and use that to calculate the number of people served by each.</li>
+</ul>
+<p><strong>All</strong> of this can be done without leaving Geogebra !!</p>
+<ol start="3" type="1">
+<li>Voronoi Portraits and Facial Recognition</li>
+</ol>
+<p>A. My name is Arnold Schwarzenegger</p>
+<ul>
+<li>Take a picture of yourself and import it into Geogebra</li>
+<li>Plot Points on the Portrait such that the main facial features are defined.</li>
+<li>Use a Delaunay Triangulation of these points to create a Portrait.</li>
+</ul>
+<p><a href="AVinMath.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="AVinMath.jpeg" class="img-fluid"></a></p>
+<p>B. My Face is My Fortune</p>
+<ul>
+<li>Do the same for a famous person, past or present.</li>
+<li>Run a small survey in the class to see how many people can recognize celebrity!</li>
+</ul></section><section id="other-distances" class="level2"><h2 class="anchored" data-anchor-id="other-distances">Other Distances?</h2>
+<section id="hamming-distances" class="level3"><h3 class="anchored" data-anchor-id="hamming-distances">Hamming Distances</h3>
+<p>We have used the simplest and most common of geometric distances between entities, the <strong>Euclidean Distance</strong> to model proximity. Are there other <em>measures of distance</em>?</p>
+<ul>
+<li>How would you measure distance between <em>digital words</em>? For example <span class="math inline">\(10010011\)</span> and <span class="math inline">\(11011011\)</span>?</li>
+</ul>
+<blockquote class="blockquote">
+<p>The <strong>Hamming distance</strong> between two equal-length strings of symbols is the number of positions at which the corresponding symbols are different. The symbols may be letters, bits, or decimal digits, among other possibilities. For example, the Hamming distance between: “karolin” and “kathrin” is 3. “karolin” and “kerstin” is 3. “kathrin” and “kerstin” is 4. 0000 and 1111 is 4. 2173896 and 2233796 is 3.</p>
+</blockquote>
+<p>The Hamming Distance can be calculated using a logical operation known as <u><a href="https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation">“Exclusive-OR” or “XOR”</a></u>.</p>
+</section><section id="great-circle-distances" class="level3"><h3 class="anchored" data-anchor-id="great-circle-distances">Great Circle Distances</h3>
+<p>How would you measure distance over a <em>curved surface</em> such as the earth?</p>
+<p>View the path here: <u><a href="https://www.greatcirclemap.com/" class="uri">https://www.greatcirclemap.com/</a></u> Calculate distances here: <u><a href="https://www.gpsvisualizer.com/calculators" class="uri">https://www.gpsvisualizer.com/calculators</a></u></p>
+</section><section id="taxicab-distances" class="level3"><h3 class="anchored" data-anchor-id="taxicab-distances">Taxicab Distances</h3>
+<p>And if a <em>man hatta</em> live in New York?</p>
+<p><a href="taxicab-manhattan-grid-layout-paths.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="taxicab-manhattan-grid-layout-paths.gif" class="img-fluid"></a></p>
+<p><a href="taxicab-manhattan-grid-taxicab-distance.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="taxicab-manhattan-grid-taxicab-distance.png" class="img-fluid"></a></p>
+<p>We will use the Euclidean and maybe other concepts of distance when we get into our Machine Learning models!</p>
+</section><section id="plotting-sihouette-diagrams" class="level3"><h3 class="anchored" data-anchor-id="plotting-sihouette-diagrams">Plotting Sihouette Diagrams</h3>
+<p>To be written up!! <a href="https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html" class="uri">https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html</a></p>
+</section></section><section id="so-where-are-all-these-proximities-used" class="level2"><h2 class="anchored" data-anchor-id="so-where-are-all-these-proximities-used">So where are all these Proximities used?</h2>
+<section id="proximities-in-the-gps-system" class="level3"><h3 class="anchored" data-anchor-id="proximities-in-the-gps-system">Proximities in the GPS System</h3>
+<p>The GPS system is all about wanting to know if one is <em>proximate</em> to a desired landmark! But how does it work?</p>
+<p>Based on a measurement of two proximity scores, both electronic. One in Space and one in Time. Oooh, cryptic, isn’t it? Here is how it works:</p>
+<ul>
+<li><p>Users receive GPS transmissions from more than one satellite (to improve accuracy; more later).</p></li>
+<li><p>Each Satellite is given a <strong>unique digital signature code</strong>, called its <em>Coarse/Acquisition</em>, or C/A Code.</p></li>
+<li><p>This code is a digital one-zero based sequence, which repeats after a week.</p></li>
+<li><p>The code ones and zeroes are called <strong>chips</strong>; the chips are output by each satellite at a rate of 1.023 MHz. ( i.e.&nbsp;a little faster than a million chips per second)</p></li>
+<li><p>All satellites use an on-board time clock. All satellites are synchronized and it is the same time on all satellites, regardless of where they are in the sky.</p></li>
+<li><p>A User Receiver cannot understand what the satellite is saying, UNLESS it removes/wipes off the signature used by the satellite. So think of this in <strong><em>proximity</em></strong> terms: the user needs to know the Signature Sequence and also be <strong>in sync aligned</strong> with it, chip for chip.</p></li>
+<li><p>One the signature is removed, what remains is what the satellite is saying.</p></li>
+<li>
+<p>GPS#5 उवाच:</p>
+<ul>
+<li>“It is 4 PM on my onboard clock”;</li>
+<li>“The ionosphere is doing weird things so please include that weirdness in your position computation etc”;</li>
+<li>Other stuff, called the <strong>satellite ephimeris</strong> (which we may discuss in class)</li>
+</ul>
+</li>
+</ul>
+<p>But <u><a href="https://youtu.be/YwG4F-16Tno">Houston, we have a problem</a></u>, but right here on the ground, mercifully. The problem is, wait for it, <strong>the Speed of Light</strong>. And it is a <strong>good problem to have</strong>.</p>
+<ul>
+<li><p>When you detect say GPS#5 saying it is 4 PM, that signal came from GPS#5 to you at the speed of light, so <strong><em>by the time it arrives</em></strong>, the time on the satellite is already 4PM + 150 microseconds.</p></li>
+<li><p>Since different GPS satellites we can see are at different <strong><em>ranges</em></strong>, we receive different times from 5 different GPS satellites.</p></li>
+<li>
+<p>Then we can set up a set of linear matrix equations in these variables:</p>
+<ul>
+<li>“Received Time” from each satellite (<strong><em>Pseudo-Range</em></strong>)</li>
+<li>Long and Lat (called a <strong><em>Position Fix</em></strong>);</li>
+<li>Absolute Time (<strong><em>Time Fix</em></strong>)</li>
+</ul>
+</li>
+<li><p>Which we solve to obtain both Position Fix and Time Fix.</p></li>
+</ul>
+<p>So in summary, the user needs to calculate two proximities:</p>
+<ul>
+<li><p>A <strong>C/A code proximity</strong>, measured by the Hamming Distance between the received code and a locally generated C/A code. Which code to generate locally? We don’t really know, so we generate ~ <em>all</em>. Huh. And select that C/A code to wipe off which shows good proximity with received C/A code. <span class="black bg-gold">(This is called, in telecom language, a <strong><em>Code Matched Filter</em></strong> and <strong><em>Rake Receiver</em></strong>. Ask me what this looks like, at your peril.)</span></p></li>
+<li><p>A <strong>Time Proximity</strong>, by correcting its own local clock to match the satellite clocks, accurately. (This is called, in telecom language again, a <strong>Delay-Lock Loop</strong>. Peril again.)</p></li>
+</ul></section><section id="code-proximity-measurement" class="level3"><h3 class="anchored" data-anchor-id="code-proximity-measurement">Code Proximity Measurement</h3>
+<div id="fig-code-autocorr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-code-autocorr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/autocorr.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;1: Code Proximity Measure"><img src="images/autocorr.jpeg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-code-autocorr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Code Proximity Measure
+</figcaption></figure>
+</div>
+<p>In the <a href="#fig-code-autocorr" class="quarto-xref">Figure&nbsp;1</a> above, the red curve shows the Hamming Distance between a received C/A code, and its locally generated copy. Only when the proximity between them is within one-chip does the measure have any sensible amplitude. (This is called <strong><em>Autocorrelation</em></strong>.)</p>
+<p>The blue curve show Hamming Distance proximity between a received C/A code and <strong>any other</strong> C/A code. At no overlap position do these dissimilar codes have a useful proximity measure. (This is known as <strong>Cross-Correlation</strong>).</p>
+<p>C/A codes are <strong><em>designed</em></strong> to have that spike-like autocorrelation, and that fuzz like cross-correlation to aid in proximity-based synchronization and code wipe-off.</p>
+</section><section id="a-brief-foray-into-cryptography" class="level3"><h3 class="anchored" data-anchor-id="a-brief-foray-into-cryptography">A Brief Foray into Cryptography</h3>
+<p>In the Sherlock Holmes story,<u><a href="https://www.gutenberg.org/files/108/108-h/108-h.htm#chap03"><strong>The Adventure of the Dancing Men</strong></a></u>, a criminal known the one of the characters communicates with her using a childish/child-like drawing which looks like this:</p>
+<p><img src="images/img01.jpg" class="img-fluid"> In this message, each character is a visual representation, or a substution for, a letter from the alphabet. The characters with flags are the first letter of a new word. The message is translated in the story as “Am here, Abe Slaney”.</p>
+<p>The entire <strong>code alphabet</strong> is shown in the figure below: <img src="images/dancing-men-cipher-overview.png" class="img-fluid"></p>
+<p>This code is a good example of a <u><a href="https://www.geeksforgeeks.org/substitution-cipher/"><strong>Substitution Cipher</strong></a></u> with non-text substition. See <u><a href="https://www.boxentriq.com/code-breaking/dancing-men-cipher" class="uri">https://www.boxentriq.com/code-breaking/dancing-men-cipher</a></u> and <u><a href="https://www.dcode.fr/dancing-men-cipher" class="uri">https://www.dcode.fr/dancing-men-cipher</a></u> for examples where you can encode and decode your own text, and send them to friends. 😎 😼</p>
+<p>The intent behind any substitution cipher is to be create <strong>distance</strong> from the original message, or characters. The algorithms to encode and decode uses this idea of <strong>distance</strong> to perform their operations and are entirely reversible.</p>
+</section></section><section id="painting-with-proximitydistance" class="level2"><h2 class="anchored" data-anchor-id="painting-with-proximitydistance">Painting with Proximity/Distance</h2>
+<p>Well, all right, all right, tech is fine. Can we use the idea of Proximity to create <strong>art</strong>? Well, we are not Kandinsky, but we can try. Here goes:</p>
+<ul>
+<li>Fire up the Strava app, or equivalent, on your phones.</li>
+<li>Walk out into the college campus, preferably under open sky.</li>
+<li>With the app on, try to create a figure <u><a href="https://gpsart.info/en/gpsart-en/nowhow1-en/">like this</a></u>
+</li>
+<li>Share the image with your friend!</li>
+</ul></section><section id="wait-but-why" class="level2"><h2 class="anchored" data-anchor-id="wait-but-why"><u><a href="https://waitbutwhy.com">Wait, But Why?</a></u></h2>
+<p>Here are some domains and purposes within them, that use the idea of Proximity, and use Voronoi/Delaunay diagrams in their work. From <u><a href="https://www.ics.uci.edu/~eppstein/gina/scot.drysdale.html">David Eppstein’s <em>Geometry in Action</em> webpage at Univ. of California, <del>Arvind</del> Irvine</a> : </u></p>
+<ul>
+<li>Anthropology and Archaeology:
+<ul>
+<li>
+<em>Identify the parts of a region under the influence of different neolithic clans, chiefdoms, ceremonial centers, or hill forts</em>.<br>
+</li>
+</ul>
+</li>
+<li>Astronomy:
+<ul>
+<li>
+<em>Identify clusters of stars and clusters of galaxies (Here may be the earliest picture of a Voronoi diagram, drawn by Descartes in 1644, where the regions described the regions of gravitational influence of the sun and other stars.)</em><br>
+</li>
+</ul>
+</li>
+<li>Biology, Ecology, Forestry:
+<ul>
+<li>
+<em>Model and analyze plant competition (“Area potentially available to a tree”, “Plant polygons”)</em><br>
+</li>
+</ul>
+</li>
+<li>Cartography:
+<ul>
+<li>
+<em>Piece together satellite photographs into large “mosaic” maps</em><br>
+</li>
+</ul>
+</li>
+<li>Crystallography and Chemistry:
+<ul>
+<li>*Study chemical properties of metallic sodium (“Wigner-Seitz regions”);</li>
+<li>Modelling alloy structures as sphere-packings (“Domain of an atom”)*<br>
+</li>
+</ul>
+</li>
+<li>Finite Element Analysis:
+<ul>
+<li>
+<em>Generating finite element meshes which avoid small angles</em><br>
+</li>
+</ul>
+</li>
+<li>Geography:
+<ul>
+<li>
+<em>Analyzing patterns of urban settlements</em>. See also <a href="https://www.patternlanguage.com">Christopher Alexander’s Pattern Language</a><br>
+</li>
+</ul>
+</li>
+<li>Geology:
+<ul>
+<li>
+<em>Estimation of ore reserves in a deposit using information obtained from bore holes; modelling crack patterns in basalt due to contraction on cooling</em><br>
+</li>
+</ul>
+</li>
+<li>Geometric Modeling:
+<ul>
+<li>
+<em>Finding “good” triangulations of 3D surfaces</em><br>
+</li>
+</ul>
+</li>
+<li>Marketing:
+<ul>
+<li>
+<em>Model market of metropolitan areas; market area extending down to individual retail stores</em><br>
+</li>
+</ul>
+</li>
+<li>Mathematics:
+<ul>
+<li>
+<em>Study of positive definite quadratic forms (“Dirichlet tesselation”, “Voronoi diagram”)</em><br>
+</li>
+</ul>
+</li>
+<li>Metallurgy:
+<ul>
+<li>
+<em>Modelling “grain growth” in metal films</em><br>
+</li>
+</ul>
+</li>
+<li>Meteorology:
+<ul>
+<li>
+<em>Estimate regional rainfall averages, given data at discrete rain gauges (“Thiessen polygons”)</em><br>
+</li>
+</ul>
+</li>
+<li>Pattern Recognition:
+<ul>
+<li>
+<em>Find simple descriptors for shapes that extract 1D characterizations from 2D shapes (“Medial axis” or “skeleton” of a contour)</em><br>
+</li>
+</ul>
+</li>
+<li>Physiology:
+<ul>
+<li>
+<em>Analysis of capillary distribution in cross-sections of muscle tissue to compute oxygen transport (“Capillary domains”)</em><br>
+</li>
+</ul>
+</li>
+<li>Robotics/ Autonomous Vehicles:
+<ul>
+<li>
+<em>Path planning in the presence of obstacles</em><br>
+</li>
+</ul>
+</li>
+<li>Statistics and Data Analysis:
+<ul>
+<li>
+<em>Analyze statistical clustering (“Natural neighbors” interpolation)</em><br>
+</li>
+</ul>
+</li>
+<li>Zoology:
+<ul>
+<li><em>Model and analyze the territories of animals</em></li>
+</ul>
+</li>
+</ul></section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">References</h2>
+<ol type="1">
+<li>
+<u><strong>Voronoi Diagrams and a Day at the Beach</strong> <a href="../../../../../pdf/Proximity/VoronoiDiagrams-ADayAtTheBeach.pdf"><strong>(PDF)</strong></a></u> Talks about cholera in Soho, the Voronoi diagram, and how to construct it using waves on a beach!!</li>
+<li>Data Genetics. <u><a href="http://datagenetics.com/blog/may12017/index.html"><em>Voronoi Tessellations</em>.</a></u> Very interesting 3D pictures of how Voronois and Delaunays are created.</li>
+<li>Gorilla Sun Blog. <u><a href="https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/" class="uri">https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/</a></u>
+</li>
+<li>How are Codes used in GPS? <u><a href="https://natronics.github.io/blag/2014/gps-viz-1/" class="uri">https://natronics.github.io/blag/2014/gps-viz-1/</a></u>
+</li>
+<li>How Do Codes Work in GPS? <u><a href="https://natronics.github.io/blag/2014/gps-prn/" class="uri">https://natronics.github.io/blag/2014/gps-prn/</a></u>
+</li>
+</ol>
+
+
+</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/old-tortoise-taught-us\.netlify\.app");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../../../../../content/courses/ModelStory/Modules/5-Proximity/index.html" class="pagination-link" aria-label="🕹 Proximity - Painting Soho red with Kandinsky!">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🕹 Proximity - Painting Soho red with Kandinsky!</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../../../content/courses/ModelStory/Modules/6-Randomness/index.html" class="pagination-link" aria-label="🕹 A Random Walk with Hamlet">
+        <span class="nav-page-text">🕹 A Random Walk with Hamlet</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Website made with ❤️ and <a href="https://quarto.org/">Quarto</a>, by Arvind V.</p>
+</div>
+    <div class="nav-footer-right">
+<p>Hosted by Netlify <a href="https://www.netlify.com"><iconify-icon inline="" icon="simple-icons:netlify" aria-label="Icon netlify from simple-icons Iconify.design set." title="Icon netlify from simple-icons Iconify.design set."></iconify-icon></a>.</p>
+</div>
+  </div>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+<script src="../../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+</body></html>

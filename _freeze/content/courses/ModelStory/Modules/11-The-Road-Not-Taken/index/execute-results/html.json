@@ -1,0 +1,19 @@
+{
+  "hash": "0c50a55c03cf0457385cfebc28e0112e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\\U0001F579 The Road Not Taken\"\nsubtitle: \"Path Dependence in Human Experience\"\ndate: \"2024-02-17\"\ndate-modified: \"2025-07-30\"\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\nweight: 110\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](featured.jpg){fig-align='center' fig-alt='Petr Slováček on Unsplash' width=192}\n:::\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nBruce Hornsby The Road Not Taken\\\nRobert Frost\\\nScott Adams\\\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

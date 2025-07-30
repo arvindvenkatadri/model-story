@@ -1,0 +1,213 @@
+---
+title: "\U0001F9B8 The Company of Heroes"
+date: 2021-12-11
+date-modified: "`r Sys.Date()`"
+order: 10
+tags:
+- Cooperation
+- Defection
+- Prisoners` Dilemma
+- Regret, Reward, Risk, Retribution
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r include=FALSE}
+library(blogdown)
+library(slickR)
+#devtools::install_github("mccarthy-m-g/embedr")
+library(embedr) # Embed multimedia in HTML files
+
+```
+
+#### Who is a Stranger?
+
+![](featured.jpg){width="100%" height="50%" fig-align="center"}
+
+
+## Introduction: The Company of Strangers!
+
+How many strangers do you "meet" everyday? Why is the Human Species
+different from all others? Those two questions are not unrelated !!
+
+The Human Species is perhaps unique in that we are able to <u>[cooperate
+with strangers](https://fee.org/media/4316/547_42.pdf)</u>!! Yes! Do you
+think that designing things, building and conducting a business, or
+making art is something like that? No? Well, let us see a few quick
+stories!!
+
+## Story-1
+
+### Do you know who these four people are ?
+
+```{r, out.width = "350px",echo=FALSE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Dartagnan-musketeers.jpg/512px-Dartagnan-musketeers.jpg")
+
+```
+
+### The Hero's Journey
+
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d5619597.823074568!2d2.755529685345978!3d46.54878964634841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e1!4m5!1s0x12a9d38abcf194c3%3A0x47bfee34eecc4749!2sTarbes%2C%20France!3m2!1d43.232951!2d0.078082!4m5!1s0x47e4eca0d3e2cca1%3A0x26a31399ffc66f20!2sMeung-sur-Loire%2C%2045130%2C%20France!3m2!1d47.827006999999995!2d1.6974319999999998!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!3m2!1d48.856614!2d2.3522219!5e0!3m2!1sen!2sin!4v1639201450428!5m2!1sen!2sin" width="700" height="450" style="border:0;" allowfullscreen loading="lazy">
+
+</iframe>
+
+This is the story of a young man who leaves home from Tarbes, in
+Gascony, France, to travel to Paris to make his fortune. He has two
+blessings,one each from his mother and his father. True to the
+instructions given by his Dad, and his very Gascon nature, <u>[he picks
+a fight even before he reaches Paris.](https://youtu.be/KXvzAvOL5GI)</u>
+
+### Classic Movie Time!
+
+Let us watch a (very very) small part of this movie, <u>[The Three
+~~Pangas~~
+Musketeers-1973](https://en.wikipedia.org/wiki/The_Three_Musketeers_(1973_live-action_film))</u>.
+Here is the <u>[IMDB page](https://www.imdb.com/title/tt0072281/)</u>
+for film buffs.
+
+<u><https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/></u>
+
+and this order version:
+
+<iframe width="560" height="480" src="https://www.youtube.com/embed/WRR0k2-8i-I" title="The Three Musketeers(1935) - D&#39;Artagnan vs. Athos vs. Cardinal Guards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+### Classic Fiction Time!
+
+Let us read aloud(!) a bit of good old classic fiction !! This is the
+Conversation that occurs right before the duel scene we saw in the video
+above.
+
+<u>[**Chapter 5. THE KING'S MUSKETEERS AND THE CARDINAL'S
+GUARDS**](https://www.gutenberg.org/files/1257/1257-h/1257-h.htm).</u>[^1]
+Keep an eye on the conversation! And an ear open for French-ified
+English, I beseech you!!
+
+Here is the audio reading of this chapter from
+<u>[Librivox.org](https://librivox.org/the-three-musketeers-by-alexandre-dumas/)</u>
+
+<center>
+```{r}
+#| echo: false
+embedr::embed_audio("three_musketeers_05_dumas.mp3")
+``` 
+</center>
+
+
+### Discussion-1
+
+-   <u>["When have to shoot, shoot! Don't
+    talk!"](https://youtu.be/JrYtD7gSWsI?feature=shared)</u> said
+    <u>[Eli Wallach](https://en.wikipedia.org/wiki/Eli_Wallach)</u>.
+-   Pardon,m'sieu, but why were they so polite to each other? (Oh, These
+    French...)
+-   Were they talking as if they didn't want to fight?
+-   But to "have fought already"?
+-   The **Shadow of the Future**
+
+## Story-2
+
+What about this game ?
+
+<iframe width="560" height="315" src="https://criticalcommons.org/embed?m=vufgXphCO" frameborder="0" allowfullscreen>
+
+</iframe>
+
+### Discussion-2
+
+What **emotions** or **motivations** are portrayed by the characters in
+the story? We can think of the "4Rs":
+
+-   Reward
+-   Regret aka FOMO
+-   Risk
+-   Retribution/Punishment
+
+### Nice Guys Finish First
+
+{{< video https://youtube.com/watch?v=rr6lsTgZKAQ >}}
+
+
+## <u>[Wait, But Why?](https://waitbutwhy.com)</u>
+
+-   Many public behaviours require us to *trust* strangers
+-   We have Rule of Law based on this trust
+-   If there is no **C** at first, then everybody does a **D**
+-   That is the source of the **Dilemma**
+-   As Artists and Designers, and Creators, we need to practice our
+    craft that in such a way as to induce *niceness*...
+-   So what will you make? A movie? An ad? A public sign-board? A street
+    play? An illustration? A "spatial arrangement"? A policy or a law?
+
+## References
+
+1.  John D. Williams, *The Compleat Strategyst: Being a Primer on the
+    Theory of Games of Strategy*, RAND Corporation,
+    <ISBN:9780833042224>. This is a very humourous and fun book on Game
+    Theory ! It is available for free online at the <u>[**RAND
+    Corporation
+    Website.**](https://www.rand.org/content/dam/rand/pubs/commercial_books/2007/RAND_CB113-1.pdf)</u>
+2.  Ken Binmore,*Playing for Real: A Text on Game Theory*,
+    <ISBN:9780195300574>, Oxford University Press, March 2007.
+    <u>[Available here.](https://djvu.online/file/yFqEW5Mqk0aVd)</u>
+3.  Avinash Dixit, Susan Skeath, David Reiley, *Games of strategy*,
+    ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.
+4.  Brams Steven J., 1994. "Game Theory and Literature," Games and
+    Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January.
+    <u>[Available
+    here.](http://www.sscnet.ucla.edu/polisci/faculty/chwe/austen/brams1994.pdf)</u>
+5.  Alexander Mehlmann,*The game’s afoot! Game theory in myth and
+    paradox*, American Mathematical Society 2000. <u>[AMS
+    Bookstore](https://bookstore.ams.org/stml-5/)</u>
+6.  Steven .J Brams. (February 4, 1992). *Game Theory in Literature*
+    Department of Politics, New York University, New York, New
+    York 10003. <u>[Read the PDF](brams1994.pdf)</u>
+
+## Game Theory Pop Music, Movie Clip, and TV ad Playlist !!
+
+1.  Chris de Burgh: Don't Pay the Ferryman!
+    <u><https://www.youtube.com/watch?v=Q-a5TAL-IXs></u>
+2.  Abba: The Name of the Game
+    <u><https://www.youtube.com/watch?v=T5Qf_7HM1cM></u>
+3.  Bachchan vs Warsi: Want a Pepsi - Tit for Tat
+    <u><https://www.youtube.com/watch?v=gc6QZcxbMZE></u>
+4.  The Princess Bride - Battle of Wits - Which Strategy to Use here?
+    (Asymmetric Information)
+    <u><https://www.youtube.com/watch?v=rMz7JBRbmNo></u>
+5.  The Gods Must be Crazy (Brinkmanship)
+    <u><https://www.youtube.com/watch?v=9LvViKftRnA></u>
+6.  L.A. Confidential
+    <u><https://criticalcommons.org/embed?m=pBXsAUvh9></u>
+7.  <u><https://www.youtube.com/watch?v=QPun-5dtld0></u> (Sadly, dead
+    link)
+8.  <u><https://www.youtube.com/watch?v=nOFhfw-u5fg></u> (Sadly, dead
+    link)
+
+## Activity-1
+
+Take your favourite show/episode, film, or short story and look at the
+conduct of the characters. Decide whether these were C or D, and why!
+
+Make a Poster and put it up. Show and Tell in 1 hour!
+
+```{r, include=FALSE,eval=FALSE}
+library(tidyverse)
+library(slickR)
+# https://cran.r-project.org/web/packages/slickR/vignettes/iframes.html
+#
+slickR::slickR(c("https://cran.r-project.org/web/packages/slickR/vignettes/iframes.html", "https://cran.r-project.org/web/packages/slickR/vignettes/iframes.html"),
+               slideType = 'iframe',
+               height = 400,
+               width='95%') + 
+  settings(dots  = TRUE, 
+           slidesToShow   = 2, 
+           slidesToScroll = 2)
+
+
+```
+
+[^1]: Download *The Three Musketeers* e-book at
+    <u>[ProjectGutenberg](https://www.gutenberg.org/ebooks/1257)</u>

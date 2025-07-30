@@ -1,0 +1,164 @@
+---
+title: "\U0001F345 Biases, Memes, Viral Trends, and Rumours!"
+subtitle: "Whom will you Copy today?"
+date: 2024-01-04
+date-modified: "`r Sys.Date()`"
+image: featured.jpg
+order: 40
+categories: 
+  - Rumours
+  - Biases
+  - Viral Trends
+  - Memes
+  - Network Effects
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+#### Whom will you Copy today?
+
+```{r echo=FALSE}
+library(blogdown)
+```
+
+![Photo by
+<a href="https://unsplash.com/@yaaniu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ahmed
+Yaaniu</a> on
+<a href="https://unsplash.com/photos/green-and-brown-island-in-the-middle-of-blue-water-lD2PZuMscsw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](featured.jpg){height="450px"}
+
+## Introduction
+
+![](donne.png) [- John Donne, from ***Devotions Upon Emergent
+Occasions***]{style="float:right"}
+
+<br> <br>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1219217278&amp;color=ff5500&amp;show_teaser=true%3F">
+
+</iframe>
+
+::: {style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"}
+<a href="https://soundcloud.com/anton-jarvis-206182017" title="Anton Jarvis" target="_blank" style="color: #cccccc; text-decoration: none;">AntonJarvis</a>
+·
+<a href="https://soundcloud.com/anton-jarvis-206182017/no-man-is-an-island-by-john-donne" title="No Man is an Island by John Donne" target="_blank" style="color: #cccccc; text-decoration: none;">No
+Man is an Island by John Donne</a>
+:::
+
+From
+<u><https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island></u>
+
+> The words ‘No man is an island’ were embedded in a deeply Christian
+> sermon about how human beings are connected to each other, and how
+> important that connection is for the wellbeing and survival of any
+> individual. When you hear the church bell tolling for someone who has
+> died, don’t ask who it is, Donne says, just know that it’s tolling for
+> you too because you are part of the same society and the death of
+> anyone takes a part of your own life away.
+
+Does the Bell toll for thee?
+
+### The Game of the Polygons
+
+Let us explore, sadly, the `dark side` of Game Theory. Where our own
+agent-like actions lead to bad outcomes in Society...
+
+Always?
+
+Not if we...choose to copy others wisely !!
+
+Let us play <u>**The Game of the Polygons** [(web
+link)](https://ncase.me/polygons/)</u>
+
+### Another Dark Side of...
+
+Why are Petrol Stations located next to each other? Here is the
+**Hotelling's Phenomenon**, explained.\
+
+{{< video https://www.youtube.com/embed/u4cKzGj58q4 >}}
+
+## Viral Trends...With a Song?
+
+A Song that is all about Network Effects !!!
+
+Song: Kuchh Toh Log Kahenge\
+Singer: Kishore Kumar\
+Music: R. D. Burman\
+Film: Amar Prem (1972)\
+
+{{< video https://youtu.be/X6q7BVZXOUU?list=RDX6q7BVZXOUU >}}
+
+| Hindi Lyrics | English Translation |
+|-----------------------------|-------------------------------------------|
+| Kuch toh log kahenge | People will say something or the other |
+| Logon ka kaam hai kehna | It's the job of people to say something |
+| Chhodo bekaar ki baaton mein | Forget all these useless things |
+| Kahin beet na jaaye raina | Or else our night will end just around them |
+| Kuch toh log kahenge | People will say something or the other |
+| ------ | ------- |
+| Kuch reet jagat ki aisi hai(2) | Some traditions of the world are such that |
+| Har ek subah ki shaam huyi(2) | Every morning has had an evening |
+| Tu kaun hai, tera naam hai kya | Who are you and what's your name |
+| Sita bhi yahan badnaam huyi | Even Goddess Sita has been defamed here |
+| Phir kyun sansaar ki baaton se | Then why with these conversations of the world |
+| Bheeg gaye tere naina | Have your eyes become bedewed |
+| Kuch toh log kahenge | People will say something or the other |
+| ---------- | ------------ |
+| Humko joh taane dete hai(2) | Those who taunt us saying that |
+| Hum khoye hai in rangraliyon mein(2) | We're lost in this debauchery |
+| Humne unko bhi chup chupke | Secretly I've also seen them |
+| Aate dekha in galiyon mein | Coming in these streets |
+| Yeh sach hai jhoothi baat nahi | This is the truth and not a lie |
+| Tum bolo yeh sach hai na | You tell me, isn't this the truth? |
+| Kuch toh log kahenge | People will say something or the other |
+| ... | ... |
+
+<br>
+
+### Discussion Questions
+
+-   So how does one *scotch/stop* a rumour? Can you <u>[**be
+    vaccinated** against
+    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)</u>?
+    Is there a game-theoretic cost for the vaccination?
+-   How does one be *individual and different* and still *one of the
+    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea <u>[to be an insider and an outsider at the same
+    time?](https://www.beyondintractability.org/essay/insider-partial)</u>
+- How do <u>[Echo
+    Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/)</u> work?
+-   How does on think of products and ads, or policy messages? (Remember
+    the <u>["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)</u>
+-   There are popular and well-known phrases and memes in every
+    language! Use them!!
+-   Here is one for you: "Less Than Three!"
+
+## Conclusions
+
+-   Individual Actions Matter. Because they can be "reverse infections"
+    **and** be contagious, in a positive way.
+-   Correlations between Individual Actions can create "standing waves"
+    or "echoes" on the fabric of society.
+    -   Whatsapp "echo chambers"
+    -   Popularity of Memes, Songs, and Movie lines
+    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
+
+## References
+
+1.  Henderson, Ron. 12 June 2022. *Luxury Beliefs are Status Symbols:
+    The struggle for distinction*.
+    <u><https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web></u>. Accessed 07 Jan 2024.\
+
+{{< video https://www.youtube.com/embed/ck7Krz7QcxU?si=sa8XolhDe9GSkD7q >}}
+
+
+2.  The Network Effects Bible.
+    <u><https://www.nfx.com/post/network-effects-bible></u>
+3.  Mitchell Resnick. *Beyond the Centralized Mindset*.
+    <u><https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html></u>
+4.  Thomas W. Valente.(2012). *Network Interventions*. Science(337) 49.
+    Available here <u><https://sci-hub.se/10.1126/science.1217330></u>. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.
+
+5.  Nicholas Christakis. (May 3, 2024). To exploit social contagion,
+    tools are needed to efficiently identify individuals who are better
+    able to initiate cascades. To be maximally useful, such tools should
+    be deployable without having to actually map face-to-face social
+    network interactions. <https://t.co/DHCKxXeGYg>. This is a paper that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <u><https://www.science.org/doi/10.1126/science.adi5147></u>

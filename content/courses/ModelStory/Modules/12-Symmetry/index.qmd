@@ -1,0 +1,28 @@
+---
+title: "\U0001F579 Symmetry"
+subtitle: "Resilience to Change"
+date: "2024-02-23"
+date-modified: "`r Sys.Date()`"
+categories:
+- Path Dependence
+- Evolution
+image: "featured.jpg"
+order: 120
+
+---
+
+```{r,echo = FALSE, eval=FALSE, fig.alt="Petr Slováček on Unsplash", fig.align='center'}
+knitr::include_graphics("featured.jpg")
+```
+
+## Introduction
+
+To be written up !!
+
+Mahabharata\
+T. E. Brown\
+Elizabeth Barrett Browning\
+
+## Symmetry Games
+
+## Friezes and Lattices

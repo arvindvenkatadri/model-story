@@ -1,0 +1,24 @@
+---
+title: "\U0001F579 The Road Not Taken"
+subtitle: "Path Dependence in Human Experience"
+date: "2024-02-17"
+date-modified: "`r Sys.Date()`"
+categories:
+- Path Dependence
+- Evolution
+image: "featured.jpg"
+weight: 110
+
+---
+
+```{r,echo = FALSE, fig.alt="Petr Slováček on Unsplash", fig.align='center'}
+knitr::include_graphics("featured.jpg")
+```
+
+## Introduction
+
+To be written up !!
+
+Bruce Hornsby The Road Not Taken\
+Robert Frost\
+Scott Adams\

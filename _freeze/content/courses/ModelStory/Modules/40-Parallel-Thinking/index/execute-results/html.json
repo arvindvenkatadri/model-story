@@ -1,0 +1,19 @@
+{
+  "hash": "0d68619116cad1d3584e9b5975c7074b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ndate: \"2021-01-22\"\ntitle: \"The Art of Parallel Thinking\"\nexternal_link: \"\"\norder: 40\ntags:\n- Cultural Capital\n- Thinking Hats\n- Edward de Bono\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](featured.jpg){fig-align='center' fig-alt='andreas N on pixabay' width=100% height=150%}\n:::\n:::\n\n\n\n## Parallel Thinking\n\nEdward de Bono invented the concept and phrase, \"Parallel Thinking\" in his book with the same title. Let us understand what this is:\n\n{{< youtube uYBaSZYZ3sI >}}\n\n<br>\n\n{{< pdf \"W1D1 - 01 - The Six Thinking Hats.pdf\" width=860 height=600 >}}\n\n\n## Propositions\n\nNow that we have an idea of about Parallel Thinking, let us get into it! Let us consider a couple of ideas for schemes that have been \"around\" for some time:\n\n- Military Conscription for 2 years\n- Children Manage the House for one week\n- Young People must be assigned one Elderly Person to live with\n- All Cars must be removed from the City Centre\n\nCan we apply Parallel Thinking to these and come up with a vote, or even a way to achieve these, if we can agree with the Propositions?\n\n## Some of the de Bono Thinking Tools: \n\n1. 6 Thinking Hats Quick Reference [(**PDF Link**)](W1D1 - 01 - The Six Thinking Hats.pdf)\n\n2. 6H Technique - **PMI: Plus Minus Interesting** : <https://www.debono.com/de-bono-thinking-lessons-1/1.-PMI-lesson-plan>   \nAlso see:  \n<https://sites.google.com/site/qepcafe/modules/expand/plus-minus-interesting-pmi>\n\n3. 6H Technique - **APC: Alternatives, Possibilities, Choices**: <https://www.debono.com/de-bono-thinking-lessons-1/6.-APC-lesson-plan>\n\n\n4. 6H Technique - **CAF: Consider All Factors**: <https://www.debono.com/de-bono-thinking-lessons-1/2.-CAF-lesson-plan>\n\n5. 6H Technique - **OPV: Other Peoples' Voices**: <https://www.debono.com/de-bono-thinking-lessons-1/7.-OPV-lesson-plan>\n\n6. 6H Technique - **CnS: Consequence and Sequel** : <https://www.debono.com/de-bono-thinking-lessons-1/3.-C%26S-lesson-plan>\n\n\n\n## References\n\n1. Reading in Parallel Thinking [(**Web Link**)](https://www.debonogroup.com/services/core-programs/lateral-thinking/parallel-thinking/)  \n\n1. Edward de Bono, Six Thinking Hats [(**Goodreads**)](https://www.goodreads.com/book/show/97030.Six_Thinking_Hats)  \n\n1. Quality Enhancement Program (**QEP cafe**) <https://sites.google.com/site/qepcafe/#training-modules> ( Link appears to be dead ;-() )\n\n1. Reverse Brainstorming <https://sites.google.com/site/qepcafe/modules/expand/reverse-brainstorming> ( Link appears to be dead ;-() )\n\n1. <https://www.mindtools.com/a32qxsh/reverse-brainstorming>\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

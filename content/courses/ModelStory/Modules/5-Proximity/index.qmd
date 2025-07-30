@@ -1,0 +1,162 @@
+---
+title: "\U0001F579 Proximity - Painting Soho red with Kandinsky!"
+author: "Arvind V."
+date: 2021-12-11
+date-modified: "`r Sys.Date()`"
+order: 50
+image: featured.png
+categories:
+- Kandinsky
+- John Snow
+- Cholera
+- Herds and Predators
+- Proximity
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+#### Are You feeling Thirsty?
+
+```{r echo=FALSE,message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(blogdown)
+library(emoji)
+#devtools::install_github("mccarthy-m-g/embedr")
+library(embedr) # Embed multimedia in HTML files
+library(htmlwidgets)
+library(slickR)
+library(bsplus)
+```
+
+![](featured.png)
+
+## Introduction
+
+### Meeting Kandinsky
+
+Have you heard of a painter called Wassily Kandinksy?
+
+```{r, echo=FALSE, out.width= 450}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/8/8a/Vassily-Kandinsky.jpeg")
+```
+
+Extract from
+<u><https://artsandculture.google.com/story/QgUxxeY10_VADg></u>
+
+> 1.  **He had the gift of synesthesia.** Kandinsky was capable of
+>     synesthesia, an involuntary neurological phenomenon by which a
+>     person perceives several senses as being associated. In
+>     Kandinsky's case, the sense of hearing was associated with the
+>     sense of sight, sounds, and colors being intimately linked in his
+>     mind. He could therefore " see music " as he found himself
+>     following a performance of Wagner's *Lohengrin*.
+
+> 2.  **He became an artist at the age of 30.** In December 1896,
+>     Kandinsky left his homeland and moved to Munich with his wife,
+>     Ania Tchimiakina, in order to start a career as an artist. It was
+>     a radical move, a true departure. The artist was already 30-years
+>     old and left behind a respectable life, conforming to the
+>     conventions dictated by his family lineage.
+
+> 3.  **He opened his own school in 1902: it was open to women.** At the
+>     beginning of 1902, the Phalanx (group and school opposed to
+>     conventional and conservative art viewpoints) of which Kandinsky
+>     was president, opened a painting school in Schwabing. Kandinsky
+>     taught painting and drawing there. The school was open to women
+>     from its inception. This position was non-conformist and
+>     progressive, since, at the time, women were only admitted to the
+>     Society of Women Artists, an institution linked to the Munich
+>     Academy of Fine Arts, or to the evening classes of that Academy.
+
+> 4.  **He was friends with Marcel Duchamp.** European avant-garde made
+>     its official entry into the United States in 1913 at the Armory
+>     Show in New York. Kandinsky exhibited Improvisation 27, which
+>     artist and gallery owner Alfred Stieglitz bought to defend him
+>     against criticism. Marcel Duchamp's Nude Descending a Staircase
+>     was a scandalous success. Another scandal followed in 1917 when
+>     Duchamp presented a urinal claiming artwork status to the hanging
+>     committee of the Salon of independent artists of which he is a
+>     member: Fountain became history, formalizing the invention of the
+>     ready-made, a radical innovation which establishes an art of the
+>     idea and positions Duchamp in art history.
+
+> 5.  **He was a member of the " Blue Four" group** The German Galka
+>     Scheyer, who emigrated to New York in 1924, was the founder of the
+>     Blue Four group. After successful avant-garde exhibitions, he
+>     founded the influential Munich group Der Blaue Reiter (“The Blue
+>     Rider”; 1911–14) and began completely abstract painting. His forms
+>     evolved from fluid and organic to geometric and, finally, to
+>     pictographic (e.g., Tempered Élan, 1944).
+
+Here is a link to his <u>[**Top 40
+Paintings.**](https://www.wassilykandinsky.net/painting1896-1944.php)</u>
+
+Let us listen to Mathew Ritchie tell us about Kandinsky.
+
+{{< video https://www.youtube.com/watch?v=_oxS2TM182I >}}
+
+
+### The Math in Kandinsky
+
+Here is a brief paper discussing the <u>[**Math-Art of Wassily
+Kandinsky.**](/pdf/Proximity/Kandinsky-MathArtist.pdf)</u>
+
+What are the Key Insights from this paper?
+
+-   A very spatial aspect to his paintings?
+-   Metaphoric Correspondence between Emotions and Colours/Shapes
+-   Do we use Similar Language?
+-   Geometry pervades our lives
+-   Proximity can be interpreted in many ways
+
+## Using Proximity as a Model
+
+Can we use Proximity as a measure to quantify our experiences? What sort
+of experiences? What emotions could be involved? How can we attach
+*numerical significance* to those emotions?
+
+### Walking the Streets in Soho
+
+<u><https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak></u>
+
+Are you thirsty? Would you like some water?
+
+{{< video https://www.youtube.com/watch?v=lNjrAXGRda4 >}}
+
+### A Proximity Effect
+
+Let us play this <u>[**Vaccination
+Game**](https://rocs.hu-berlin.de/D3/herd/)</u>.
+
+### Fun Stuff with Kandinsky
+
+Let's also become synaesthetic, however temporarily, and make music with
+Kandinsky !!
+
+> CHROME MUSIC LAB:KANDINSKY This experiment is inspired by Wassily
+> Kandinsky, an artist who compared painting to making music. It turns
+> anything you draw – lines, circles, triangles, or scribbles – into
+> sound.
+
+<u>[**Kandinsky Music Maker: Music by
+Painting**](https://musiclab.chromeexperiments.com/kandinsky/)</u>
+
+### How to say, "You are standing too close to me?"
+
+Can we ask Sting? <u><https://youtu.be/KNIZofPB8ZM></u>
+
+Maybe not. There are better Models, may be!!
+
+## References
+
+1.  Dirk Brockman - <u>[This message must be Herd -
+    PDF](/pdf/Proximity/Brockman-ThisMessageMustBeHerd.pdf)</u>
+2.  P. Bingham, N.Q. Verlander, M.J. Cheal (2004). *John Snow, William
+    Farr and the 1849 outbreak of cholera that affected London: a
+    reworking of the data highlights the importance of the water
+    supply*. Public Health Volume 118, Issue 6, September 2004, Pages
+    387-394. <u>[Read the
+    PDF.](https://sci-hub.se/https://doi.org/10.1016/j.puhe.2004.05.007)</u>
+3.  <u>[Snazzy Maps](https://snazzymaps.com)</u>
+

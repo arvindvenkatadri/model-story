@@ -1,0 +1,145 @@
+---
+title: "\U0001F578 Wired for Sound"
+date: 2021-08-06
+date-modified: "`r Sys.Date()`"
+summary: A model for analyzing and synthesizing Sound
+order: 100
+categories:
+  - Model Story
+  - Sound
+  - Fourier Series
+  - Music
+  - Vibration
+  - Fourier Series, Sound, Vibration
+image: "featured.jpg"
+---
+
+![](featured.jpg) WORK IN PROGRESS!!
+
+## The Solitary Reaper
+
+Have you read this poem, **The Solitary Reaper**? [(Web
+Link)](https://www.poetryfoundation.org/poems-and-poets/poems/detail/45554)
+
+"The Solitary Reaper" is a ballad by English Romantic poet William
+Wordsworth, and one of his best-known works.\[\^1\] The poem was
+inspired by his and his sister Dorothy's stay at the village of
+Strathyre in the parish of Balquhidder in Scotland in September 1803.
+
+'"The Solitary Reaper is one of Wordsworth's most famous post-Lyrical
+Ballads lyrics".The words of the reaper's song are incomprehensible to
+the speaker, so his attention is free to focus on the tone, expressive
+beauty, and the blissful mood it creates in him. The poem functions to
+'praise the beauty of music and its fluid expressive beauty, the
+"spontaneous overflow of powerful feelings" that Wordsworth identified
+at the heart of poetry.The poet orders or requests his listeners to
+behold a young maiden reaping and singing to herself. The poet says that
+anyone passing by should either stop or gently pass as not to disturb
+her.
+
+### Playing with Sound
+
+Some dreaded trigonometry first! With Wires and Tubes, to boot!
+
+https://www.philtulga.com/harmonics.html
+
+### Measuring the Length of Sound
+
+Get this Android app:
+
+https://play.google.com/store/apps/details?id=com.keuwl.functiongenerator&hl=en
+
+iPhone folks: please find a similar app or team up with an "Android
+partner".
+
+Tap on things and objects around you to find out what is the frequency
+it "rings" at. You may need to match what you hear on the object with
+what you hear on the app. Once you seem to "hear a match", note the
+Frequency on the app, and measure the "length" of the object.
+
+Bring these readings in a data table to class!
+
+### Acoustic Smoothie Maker
+
+![](https://betterexplained.com/wp-content/webp-express/webp-images/uploads/images/smoothie-to-recipe-20121030-223058.png)
+
+An Intuitive Explanation of the Fourier Series ! We will see that the
+Fourier series is a set of Vectors rotating at different speeds, that
+help to make different kinds of waves ( sound, in our case).
+
+Go to: [(Web
+Link)](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)
+and make some ~~sine~~ ~~cosine~~ **fine** smoothies !!
+
+https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/
+
+### I think that **My Head is Spinning at 33 1/3 RPM** !!!
+
+Let's head over to:
+
+https://mathlets.org/mathlets/fourier-coefficients/
+
+Play with the animations to add sinewaves at different frequencies and
+see how closely you can make that weird waveform!
+
+### Online Music Maker
+
+Head off to:
+
+https://onlinesequencer.net/
+
+You may construct **Your Musical Signature** as follows:
+
+a)  Choose a favourite Raga from Hindustani or Carnatic music. If you
+    don't have a favourite raga, choose one that begines with the first
+    letter of your Name. E.g Adana; Bahudari; Charukeshi; Darbar;
+    GaudaMalhar; Hamsadhwani; Janaranjani ; Kalyani; Lathangi; Mohana ;
+    Nayaki; Oormika; Puriya Dhanashri ; Revati ; Saramati ;
+    Thilang...you get the idea.
+
+b)  Using notes ONLY from this raga, create a music sequence on the
+    sequencer that SPELLS OUT YOUR NAME
+
+c)  Change instruments as you go along; add percussion.
+
+d)  Connect the SRGM sargam notation of the Raga to Western CDEFG
+    notation by looking them up below. ( Source is here\[\^2\])
+
+| Carnatic Swara Sthaanams | Western Notes |
+|--------------------------|---------------|
+| s Shadjam                | C             |
+| r1 Suddha Rishabam       | C#            |
+| r2 Chatusruthi Rishabam  | D             |
+| g1 Sadharana Gandharam   | D#            |
+| g2 Antara Gandharam      | E             |
+| m1 Suddha madyaman       | F             |
+| m2 Prathi madhyamam      | F#            |
+| p Panchamam              | G             |
+| d1 Suddha Daivatham      | G#            |
+| d2 Chatusruti daivatham  | A             |
+| n1 Kaisiki Nishadam      | A#            |
+| n2 Kakali Nishadam       | B             |
+
+| Hindustani Svar | Western Notes |
+|-----------------|---------------|
+| S Shuddha Sa    | C             |
+| r Komal Re      | C#            |
+| R Shuddha Re    | D             |
+| g Komal Ga      | D#            |
+| G Shuddha Ga    | E             |
+| m Shuddha Ma    | F             |
+| M Teevra Ma     | F#            |
+| P Shuddha Pa    | G             |
+| d Komal Dha     | G#            |
+| D Shuddha Dha   | A             |
+| n Komal Ni      | A#            |
+| N Shuddha Ni    | B             |
+
+d)  Play it again, Sam !
+
+### References
+
+\[\^1\]. https://www.wikiwand.com/en/William_Wordsworth
+
+2.  https://groups.google.com/g/rec.music.indian.classical/c/29xDcW1rXzY?pli=1
+3.  https://musicianscompendium.netlify.app/

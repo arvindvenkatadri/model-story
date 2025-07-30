@@ -1,0 +1,94 @@
+---
+title: "Throwing Stones with Hamlet"
+date: "2024-06-17"
+date-modified: "`r Sys.Date()`"
+order: 77
+type: book
+image: featured.jpg
+summary: "Using Random Number generation to create orderly, natural looking textures, landscapes, and sounds"
+categories:
+- Hamlet
+- Random Number Generation
+- Procedural Texture
+- Procedural Landscape
+- Procedural Sound
+- Perlin Noise
+- TRON
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction: Where are the Stones?
+
+We saw how we could use `randomization` to generate parallel worlds to
+make sense of our experiment, and to decide whether there was something
+*algorithmic* Mother Nature was doing, or if it was just mere chance that
+we saw something.
+
+Are there other applications of this *chaotic procedure*? Can we throw
+more random stones, some more **outrageous slings and arrows of
+fortune** back at the world? Let us see if there are some applications
+where this might be a useful thing to do!
+
+## Spread Spectrum Communications: Bluetooth, GPS(again), and CDMA
+
+-   Pseudo Noise Codes
+-   C/A code
+-   "A random satellite??"
+
+### Have you see TRON?
+
+-   Ken Perlin
+
+<p align="center">
+
+<iframe src="https://editor.p5js.org/arvindv/full/EjRbE3TJ7" width="440" height="440">
+
+</iframe>
+
+</p>
+
+### A Brief Intro to `p5.js`
+
+### Making Noise with `p5.js`
+
+### Making Mountains out of ~~molehills~~ noise
+
+### <u>[Have you seen an Algorithmic Cat?](https://manypets.com/us/blog/cat-coats-patterns/)</u>
+
+### <u>[We are the Robots](https://youtu.be/D_8Pma1vHmw)</u>
+
+## <u>[Wait, But Why?](https://waitbutwhy.com)</u>
+
+## References
+
+1.  Ken Perlin. *Making Noise*.
+    <u><https://web.archive.org/web/20160308022101/http://noisemachine.com/talk1/index.html></u>
+
+2.  <u><https://rtouti.github.io/graphics/perlin-noise-algorithm>\></u>
+
+3.  Adrian Biagioli. (09 August 2014 ). *Understanding Perlin Noise*.
+    <u><https://adrianb.io/2014/08/09/perlinnoise.html></u>
+
+4.  Better Explained Blog. *Vector Calculus: Understanding the Dot
+    Product*.
+    <u><https://betterexplained.com/articles/vector-calculus-understanding-the-dot-product/></u>
+
+5.  Ball P. (2015). Forging patterns and making waves from biology to
+    geology: a commentary on Turing (1952) 'The chemical basis of
+    morphogenesis'. Philosophical transactions of the Royal Society of
+    London. Series B, Biological sciences, 370(1666), 20140218.
+    <https://doi.org/10.1098/rstb.2014.0218>.
+    <u>[**PDF**](/files/PBall.pdf)</u>
+
+6.  Terragen Software Page. <u><https://planetside.co.uk></u>
+
+7.  TRON Academy Award
+
+8.  *Cats Coats and Colours*.
+    <u><https://manypets.com/us/blog/cat-coats-patterns/></u>

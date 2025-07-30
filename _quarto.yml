@@ -39,23 +39,24 @@ website:
     logo: "content/materials/images/1book25.jpg"
     contents:
       - section: "The Model of the Story"
-        href: content/courses/TRIZ4ProbSolving/listing.qmd
+        href: content/courses/ModelStory/listing.qmd
         contents: 
-          - content/courses/TRIZ4ProbSolving/Modules/10-Flow-and-Play/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/20-Cultural-Capital/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/30-MBTI-Big-5/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/35-Domain-Field-Self/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/37-What-Am-I-Thinking-Of/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/40-Parallel-Thinking/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/50-Metaphoric-Thinking/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/60-Problems-and-Contradictions/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/70-TRIZ-Resources/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/75-TRIZ-Ideal-Final-Result/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/80-A-Contradictory-Language/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/90-TRIZ-Contradiction-Matrix/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/100-TRIZ-Laws-of-Evolution/index.qmd
-          - content/courses/TRIZ4ProbSolving/Modules/200-TRIZ-Advanced-Stuff/index.qmd
-        
+          - content/courses/ModelStory/Modules/1-Company-Heroes/index.qmd
+          - content/courses/ModelStory/Modules/2-Strategies-in-PD/index.qmd
+          - content/courses/ModelStory/Modules/3-Coordinated-Games/index.qmd
+          - content/courses/ModelStory/Modules/4-Rumours-Biases-ViralTrends/index.qmd
+          - content/courses/ModelStory/Modules/5-Proximity/index.qmd
+          - content/courses/ModelStory/Modules/5b-Voronoi/index.qmd
+          - content/courses/ModelStory/Modules/6-Randomness/index.qmd
+          - content/courses/ModelStory/Modules/6b-StillMoreRandomness/index.qmd
+          - content/courses/ModelStory/Modules/7-Networks/index.qmd
+          - content/courses/ModelStory/Modules/8-Fractals/index.qmd
+          - content/courses/ModelStory/Modules/9-L-Systems/index.qmd
+          - content/courses/ModelStory/Modules/10-Sound/index.qmd
+          - content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.qmd
+          - content/courses/ModelStory/Modules/12-Symmetry/index.qmd
+          - content/courses/ModelStory/Modules/100-Resources/index.qmd
+          
   page-footer:
     center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."
     right:  Hosted by Netlify [{{< iconify simple-icons netlify >}}](https://www.netlify.com).
@@ -118,6 +119,7 @@ format:
     fig-align: center
     fig-cap-location: bottom
     fig-dpi: 300
+    fig-responsive: true
 
     filters:
       - d2

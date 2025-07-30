@@ -1,0 +1,19 @@
+{
+  "hash": "593eaaf4c4170d5afb5097019a35a693",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\\U0001F579 Symmetry\"\nsubtitle: \"Resilience to Change\"\ndate: \"2024-02-23\"\ndate-modified: \"2025-07-30\"\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 120\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nMahabharata\\\nT. E. Brown\\\nElizabeth Barrett Browning\\\n\n## Symmetry Games\n\n## Friezes and Lattices\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

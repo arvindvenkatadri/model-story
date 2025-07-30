@@ -1,0 +1,228 @@
+---
+title: "\U0001F579 Still More Games !!"
+author: "Arvind V."
+date: 2024-01-04
+date-modified: "`r Sys.Date()`"
+image: featured.jpg
+order: 30
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r include=FALSE}
+library(blogdown)
+```
+
+#### Which Stranger Am I Talking with Today?
+
+![](featured.jpg)
+
+## Introduction
+
+Think about the following:
+
+-   So, would you wear a veshti/kurta/angavastram, saree/silk
+    paavade/dhaavani to college?
+-   When you want someone to *search the internet*, what do you tell
+    them do?
+-   How do you show someone, a stranger, that you agree with what they
+    are doing at that moment?
+-   How do you know where the exit is in a public place?
+-   Where would you stage a protest? How would you get other people to
+    join in?
+-   If you want a whole bunch of 20-30-something people to <u>[raise
+    their arms up and spontaneously rock side to
+    side](https://youtu.be/La0IJPt0t4Q)</u>?
+
+And, what does "less than three" even mean?!!??
+
+In the previous module on the Prisoners' Dilemma, we saw how we all are
+engaged in *adversarial and transactional Games* with many other people,
+most of whom are strangers to us. But as remarked before, the Human
+Species is perhaps unique in that we are able to <u>[cooperate with
+strangers](https://fee.org/articles/book-reviews-september-2004/)</u>
+and <u>[possess bourgeois
+virtues](https://fee.org/articles/where-the-bourgeois-virtues-are-found)</u>!!
+So we are not always adversaries or enemies, and we are able to obtain
+***unspoken agreement and correspondence with strangers***.
+
+What use would this be? Would it be a Design Tool? How?
+
+Today, we will study **Coordination Games** and **Schelling Focus
+Points**, and see how these concepts can help create better designs,
+businesses, and maybe, art.
+
+## The Stag Hunt
+
+A brief Introduction to the <u>[**Stag Hunt
+Game.**](https://www.heretical.com/pound/staghunt.html)</u>
+
+{{< video https:://www.youtube.com/watch?v=QQHPDLfbIK4 >}}
+
+
+## Coordination Games and Schelling Focus Points
+
+Here is Julia Galef on the idea of Schelling Focus Points:
+
+{{< video https:://www.youtube.com/watch?v=CFOQquw6hig >}}
+
+And here is another video on the same topic, but with a historical, and
+spatial, angle to it: <br>
+
+{{< video https:://www.youtube.com/watch?v=oDsePkuaL9Q >}}
+
+Focal points can be used in Coordination Games: these are activities
+where people's actions tend to organize into Patterns based on specific
+default options. These actions could be:
+
+a)  Conversation, Words, Phrases, Gestures
+
+b)  Dress
+
+c)  Travel / Meeting / Location
+
+d)  Food and Beverage Choices
+
+e)  Attention
+
+The **Payoff Matrix** in SH is:
+
+```{r, echo=FALSE}
+library(kableExtra)
+library(gt)
+data <- tibble::tibble("Player #2" = c("C", "D"),
+                       C = c("(R=3, R=3)", "(S=0, T=1)"),
+                       D = c("(T=1, S=0)", "(P=1, P=1)")) 
+
+data %>% 
+  gt(rowname_col = ) %>% 
+  tab_header(
+    title = md("**Stag Hunt Payoff Matrix**")) %>% 
+  gt::tab_spanner(columns = c(2,3), label = md("**Player #1**")) %>% 
+  cols_align(align = "center", columns = c(C,D,`Player #2`)) %>% 
+  tab_style(
+    style = cell_text(align = "center", weight = "bold"),
+    locations = cells_column_labels(columns = c(C,D, `Player #2`))) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = c(`Player #2`))) %>% 
+  tab_style(
+    style = cell_fill(color = "grey"),
+    locations = cells_body(columns = D, rows = 2)) %>% 
+    tab_style(
+    style = cell_fill(color = "grey"),
+    locations = cells_body(columns = C, rows = 1)) %>% 
+  tab_footnote(footnote = md("**Payoffs are (Player#1, Player#2)**")) %>% 
+  tab_footnote(footnote = md("R = Reward; S = Sucker's Payoff; T = Temptation; P = Punishment")) %>% 
+  tab_footnote(footnote = md("Shaded Cells are Nash Equilibria"))
+
+```
+
+The inequalities relating the payoffs in the Stag Hunt game are:
+
+$$
+Reward > Temptation > \pmb{Punishment} > \pmb{Sucker's~ Payoff} \\\
+$$ There is in fact no Temptation at all! Rewards for C are always the
+greatest!
+
+There are *two* Nash equilibria in the Stag hunt game. The CC corner is
+representative of both players being **pro-risk** and cooperating for
+higher reward. The DD corner is where each Player is **risk-averse** and
+prefers to work by themselves and mind their own business, without
+interference to, or help from, the other Player.
+
+The Stag Hunt is a less vindictive than the Prisoners' Dilemma and may
+be preferable in situations where there is not so much of an adversarial
+engagement as there is a tendency to maximize gains and minimize risks.
+
+## Is it better to Die than to Kill?
+
+What game is being played <u>[here](https://youtu.be/Iao7c5sw-Z8)</u>?
+
+{{< video https:://www.youtube.com/watch?v=Iao7c5sw-Z8 >}}
+
+This is the Chicken Game (CG), where it two Players *dare* each other to
+"chicken out" and survive, when put in a very strong adversarial
+situation.
+
+The **Payoff Matrix** in CG is:
+
+```{r, echo=FALSE}
+library(kableExtra)
+library(gt)
+data <- tibble::tibble("Player #2" = c("C", "D"),
+                       C = c("(R=4, R=4)", "(S=2, T=5)"),
+                       D = c("(T=5, S=2)", "(P=1, P=1)")) 
+
+data %>% 
+  gt(rowname_col = ) %>% 
+  tab_header(
+    title = md("**Chicken Game Payoff Matrix**")) %>% 
+  gt::tab_spanner(columns = c(2,3), label = md("**Player #1**")) %>% 
+  cols_align(align = "center", columns = c(C,D,`Player #2`)) %>% 
+  tab_style(
+    style = cell_text(align = "center", weight = "bold"),
+    locations = cells_column_labels(columns = c(C,D, `Player #2`))) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = c(`Player #2`))) %>% 
+  tab_style(
+    style = cell_fill(color = "grey"),
+    locations = cells_body(columns = D, rows = 1)) %>% 
+  tab_style(
+    style = cell_fill(color = "grey"),
+    locations = cells_body(columns = C, rows = 2)) %>% 
+  tab_footnote(footnote = md("**Payoffs are (Player#1, Player#2)**")) %>% 
+  tab_footnote(footnote = md("R = Reward; S = Sucker's Payoff; T = Temptation; P = Punishment")) %>% 
+  tab_footnote(footnote = md("Shaded Cells are Nash Equilibria"))
+
+```
+
+And the inequalities that govern the Chicken game are:
+
+$$
+Temptation > Reward > \pmb{Sucker's~ Payoff} > \pmb{Punishment} \\\
+$$
+
+and as with the PD, we have: $$
+R > (S + T)/2
+$$ Chicken Games often occur in politics and of course, in offices and
+organizations, where co-workers dare each other to shirk from work the
+longest!! Call Centres are a good place to look for manifestations of
+Chicken!!!
+
+Here us a <u>[*sermon*](https://ellerslie.com/the-game-of-chicken/)</u>
+on the Chicken Game. (Listen to the first few minutes for a good
+description of the Chicken Game.)
+
+## Schelling Points and the Lindy Effect
+
+To be written up. You are one lazy bugger. INTJ, but lazy. 
+
+## Additional Readings
+
+1.  Jim Allen(July 2, 2023). *Electro Ecstasy: How Donna Summer’s*
+    <u>[‘I Feel Love’](https://youtu.be/Nm-ISatLDG0)</u> Changed Music.
+    <u><https://www.udiscovermusic.com/stories/donna-summer-i-feel-love-feature/></u>
+2.  Presh Talwalkar.(2008) *How We Naturally Organize*.
+    <u><https://mindyourdecisions.com/blog/2008/04/01/focal-points-or-schelling-points-how-we-naturally-organize-in-games-of-coordination/></u>
+3.  Richard Littauer. (Feb 14, 2017). *Using internal Schelling points
+    to plan better*.
+    <u><https://medium.com/@richlitt/using-schelling-points-to-perform-better-973243efd989></u>
+4.  Ron Ashkenas.(July 26, 2011).*Why Leaders Play Chicken*.
+    <u><https://hbr.org/2011/07/why-leaders-play-chicken></u>
+5.  Rapoport, A., & Chammah, A. M. (1966). *The Game of Chicken*.
+    American Behavioral Scientist, 10(3), 10–28. Read here:
+    <u><https://sci-hub.se/https://doi.org/10.1177/000276426601000303></u>
+6.  Herbert Wulf.(01 March, 2023). *Cooperative Security, Arms Control
+    and Disarmament:Chicken-Game*.
+    <u><https://toda.org/global-outlook/2023/chicken-game.html></u>
+7.  <https://imotions.com/blog/learning/research-fundamentals/the-stag-hunt-game-theory/>
+8.  An [INTJ](https://www.16personalities.com/intj-personality)
+    Professor's Suicide Note. Yes.
+    <u><https://willopines.wordpress.com/2017/04/19/punched-out/></u>
+9.  Cate Hall.(Jan 11, 2024). *How to be More Agentic: On a supposedly
+    difficult thing*.
+    <u><https://open.substack.com/pub/usefulfictions/p/how-to-be-more-agentic?utm_campaign=post&utm_medium=web></u>
+
