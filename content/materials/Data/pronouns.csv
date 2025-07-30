@@ -1,0 +1,9 @@
+No,Pronoun,Answer,Variable/Scale,Example,What Operations?
+1,"How Many / Much / Heavy? Few? Seldom? Often? When?
+","Quantities, with Scale and a Zero Value.Differences and Ratios /Products are meaningful.",Quantitative/Ratio,"Length,Height,Temperature in Kelvin,Activity,Dose Amount,Reaction Rate,Flow Rate,Concentration,Pulse,Survival Rate",Correlation
+2,How Many / Much / Heavy? Few? Seldom? Often? When?,"Quantities with Scale.
+Differences are meaningful, but not products or ratios",Quantitative/Interval,"pH,SAT score(200-800),Credit score(300-850),SAT score(200-800),Year of Starting College
+
+","Mean,Standard Deviation"
+3,"How, What Kind, What Sort","A Manner / Method, Type or Attribute from a list, with list items in some "" order"" ( e.g. good, better, improved, best..)",Qualitative/Ordinal,"Socioeconomic status (Low income, Middle income, High income),Education level (HighSchool, BS, MS, PhD),Satisfaction rating(Very much Dislike, Dislike, Neutral, Like, Very Much Like)","Median,Percentile"
+4,"What, Who, Where, Whom, Which","Name, Place, Animal, Thing",Qualitative/Nominal,Name,"Count no. of cases,Mode"

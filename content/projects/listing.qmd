@@ -1,0 +1,16 @@
+---
+# options specified here will apply to all posts in this folder
+title: "Blogs and Writings on Code, TRIZ and other things"
+listing: 
+  type: default
+  contents:
+    - "Modules/TRIZ/*/index.qmd"
+    - "Modules/Talks/*/index.qmd"
+  sort: "date"
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, date]
+  table-striped: true
+  table-hover: true
+  categories: true
+---

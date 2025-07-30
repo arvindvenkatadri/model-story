@@ -1,0 +1,118 @@
+---
+date: "2021-04-22"
+title: "I am Water"
+date-modified: "`r Sys.Date()`"
+order: 10
+image: featured.jpg
+tags:
+- Flow and Play
+- Anxiety and Boredom
+- Mihaly Csikszentmihalyi
+- Ian Bogost
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+```{r,echo = FALSE, eval = TRUE, fig.alt="Petr Slováček on Unsplash", fig.align='center',out.height="50%", out.width="50%"}
+knitr::include_graphics("featured.jpg")
+```
+
+```{r echo=FALSE}
+library(blogdown)
+#devtools::install_github("mccarthy-m-g/embedr")
+library(embedr) # Embed multimedia in HTML files
+```
+
+## Introduction
+
+There is some stuff lying on the floor of the classroom.
+
+-   Lego
+
+-   Where's Waldo?
+    Books ![](https://upload.wikimedia.org/wikipedia/en/e/ec/WheresWally.jpg)
+
+-   Magic Eye
+    Books ![](https://upload.wikimedia.org/wikipedia/en/3/35/MagicEyeCover.gif)
+
+-   Dominos
+    ![](https://www.museumofplay.org/app/uploads/2021/08/domino-square_0.png)
+
+-   Magnets +
+    Links ![](https://upload.wikimedia.org/wikipedia/commons/7/70/M_tic.jpg)
+
+-   Parquetry
+    Blocks ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Plastic_pattern_blocks.JPG/640px-Plastic_pattern_blocks.JPG)
+
+-   Imaginarium Train Set + Thomas the Tank
+    Engine ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Holzeisenbahn.jpg/640px-Holzeisenbahn.jpg)
+
+Play!! Yes, you.
+
+## Discussion #1
+
+-   Did you get bored?
+-   Did you lose sense of time at any point?
+-   Did anything become too difficult at any time?
+-   What did you do at such times?
+
+## What is Flow?
+
+```{r, echo=FALSE,fig.align='center',out.height="100%", out.width="100%"}
+knitr::include_graphics("tweet.png")
+```
+
+```{r, echo=FALSE,fig.align='center',out.height="100%", out.width="100%"}
+knitr::include_graphics("Flow.png")
+```
+
+We will understand **Flow** from:
+
+1.  The book **Flow and the Psychology of Happiness**, pp; 72-76; by
+    **Mihaly Csikszentmihalyi**. First, let us learn to say his name!!
+
+`r embedr::embed_audio("https://upload.wikimedia.org/wikipedia/commons/5/59/Mih%C3%A1ly_Cs%C3%ADkszentmih%C3%A1lyi.ogg")`
+
+Here is the
+<u>[book.](Flow_%20The%20Psychology%20of%20Happiness%20-%20Csikszentmihalyi,%20Mihaly.pdf)</u>
+
+1.  This video: {{< youtube 8h6IMYRoCZw >}}
+
+<br>
+
+2.  This TED Talk : [**Flow, the Secret to
+    Happiness**](%22https://www.ted.com/talks/mihaly_csikszentmihalyi_flow_the_secret_to_happiness?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare%22)
+    {{< youtube fXIeFJCqsPs >}}
+
+<br> 3. This is Water: David Foster Wallace's famous Talk:
+{{< youtube eC7xzavzEKY >}} <br> 4. Let us quickly read and discuss this
+extract from the **Play and Playground Encyclopedia**
+<https://www.pgpedia.com/m/man-play-and-games>
+
+## Discussion #2
+
+-   Is the idea of Flow elusive?
+-   Do only some people get it, and then only at some times?
+-   Was David Foster Wallace's talk somewhat self-deluding?
+-   Then what is this *Empathy* stuff we talk about when we speak of
+    Design Thinking?
+
+## Pop Quix: Want still more Flow?
+
+No, that is not a bad spelling....why not?
+
+Go find me in this picture !! ![Pillar Rock](Pillar.JPG)
+
+## References
+
+1.  Scott Eberle, "The Aspects of Play"
+    <https://www.journalofplay.org/sites/www.journalofplay.org/files/pdf-articles/6-2-article-elements-of-play.pdf>
+
+2.  "Platform Creativity: Domain, Field, and Person".
+    <https://medium.com/call4/domain-8a22b6b486f4>
+
+3.  **8 Ways To Create Flow According to Mihaly Csikszentmihalyi**.
+    <https://positivepsychology.com/mihaly-csikszentmihalyi-father-of-flow/>
+
+4.  Ian Bogost, "Play at Anything".

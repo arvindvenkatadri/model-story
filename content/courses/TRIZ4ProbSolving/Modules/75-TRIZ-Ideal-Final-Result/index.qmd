@@ -1,0 +1,75 @@
+---
+date: "2021-02-04"
+title: "TRIZ - The Ideal Final Result"
+order: 75
+links:
+- icon: flask
+  icon_pack: fas
+  name: TRIZ DataBase
+  url: /slides/PlayAndInvent/TRIZ-Database/index.html
+# - icon: game
+#   icon_pack: fab
+#   name: Game
+#   url: /pdf/TRIZ/PlayAndInvent/Titanic_Case_Study.pdf
+slides: 
+summary: "This Module is part of a Creative Problem Solving course I offer at Srishti Manipal Institute, Bangalore"
+tags:
+- Ideal Final Result
+- Looking Backwards towards the Present 
+- Inversion
+
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+---
+
+
+
+```{r,echo=FALSE, fig.align='center',fig.alt="Photo by suzukii xingfu on pexels"}
+knitr::include_graphics("featured.jpg")
+
+```
+
+
+# Introduction
+
+> “The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself. Therefore all progress depends on the unreasonable man.” 
+[— George Bernard Shaw]{style="float:right"}
+
+
+How "unreasonable" can we become?
+
+In the previous Module on ***the Unreasonable Effectiveness of Available Resources*** we understood how to identify resources in everyday situations and to come to terms with our assumptions and ***functional fixedness***. This is the first and most important step in the TRIZ Problem Solving Method. 
+
+Another important idea in TRIZ is that of the ***Ideal Final Result(IFR)***. 
+
+Here is what TRIZ pioneer Ellen Domb says:  
+
+> The IFR is an *implementation-free description* of the situation after the problem has been solved. It focuses on customer needs or functions needed, *not the current process or equipment*. The goal of formulating the IFR is to eliminate rework (solve the right problem the first time!) by addressing the root cause of the problem or customer need. The IFR helps you reach breakthrough solutions by thinking about the solution, not the intervening problems.
+
+In this way, TRIZ is itself an implementation of TRIZ: we are working backwards to the present from the solution, "**the other way around**" !! (We will see this Principle later)
+
+
+## Ideal Final Result: Game
+TBD
+
+
+
+
+
+## Discussion
+
+Like the Queen in Alice in Wonderland, it is important to conceptualize the Ideal Final Result as one of the <u>[**six impossible things before breakfast.**](http://www.literaturepage.com/read/throughthelookingglass-42.html)</u> As Jack Hipple says in his book *The Ideal Result* ( Reference 3), *it's when something performs its function, and does not exist.*
+
+In this sense, TRIZ is a foretaste of what was said much later after TRIZ was invented, that <u>[**the best Technologies are those that disappear.**](https://web.archive.org/web/20141022035044/http://www.ubiq.com/hypertext/weiser/SciAmDraft3.html)</u>
+
+
+## References
+
+1. Titanic Game [(PDF)](pdf/TRIZ/Titanic_Case_Study.pdf)
+
+1. Stan Kaplan, ***An Introduction to TRIZ***[(PDF)](pdf/TRIZ/Stan Kaplan-Intro-to-TRIZ.pdf)
+This is a simple and short introduction to *all* aspects of Classical TRIZ.
+
+1. Jack Hipple, "The Ideal Result: What it is and how to achieve it", Springer, 2012.

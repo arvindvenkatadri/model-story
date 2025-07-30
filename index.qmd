@@ -1,0 +1,45 @@
+---
+title: "Arvind V." # if using a built-in template, this title appears under your photo
+image: content/materials/images/avatar.jpg # a great spot for your professional headshot :) 
+toc: false # disable table of contents for this page
+about: 
+  template: trestles 
+  image-shape: round
+  image-width: 20em
+  links: # create buttons
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/arvindvenkatadri/
+    - text: GitHub
+      icon: github
+      href: https://github.com/arvindvenkatadri
+    - text: Email
+      icon: envelope
+      href: mailto:arvind.venkatadri@gmail.com
+---
+
+I'm an an external Faculty Member at the [Srishti Manipal Institute of Art, Design, and Technology (SMI)](https://srishtimanipalinstitute.in), in Bangalore, INDIA. I am passionate about working on R,
+Data Visualization, Complexity Science, and Creative Thinking and
+Problem Solving with TRIZ. On this website, I share my course materials
+and methods. I also blog about TRIZ and Data Science on occasion.
+
+To get started, you can check out my courses on this website. 
+
+My teaching websites are:\
+
+- [The Mad Hatter's Guide to Data Viz and Stats in R](https:://madhatterguide.netlify.app)\ (This one!!)
+- [Model Thinking in Design](https://arvindvenkatadri.com/teaching/3-order-and-chaos/)\
+- [TRIZ for Problem Solvers](https://teaching-triz.netlify.app)\
+- [Literary Jukebox: Design Thinking from Short Fiction](https://literary-jukebox.netlify.app)\
+- [Maths for Creative Coders](https://mathsforcoders.netlify.app)\
+
+My student portfolios are here:\
+<https://we-r-us.netlify.app/portfolio/>\
+<https://form-and-structure.netlify.app/portfolio/>\
+
+You can find me on
+[Twitter](https://twitter.com/arvind_v), or
+[GitHub](https://github.com/arvindvenkatadri), and on
+[LinkedIn](https://www.linkedin.com/in/arvindvenkatadri)! Feel free to
+reach out to me via [mail](mailto:arvind.venkatadri@gmail.com) too!
+

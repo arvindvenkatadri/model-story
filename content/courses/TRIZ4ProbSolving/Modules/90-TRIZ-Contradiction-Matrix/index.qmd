@@ -1,0 +1,114 @@
+---
+date: "2021-01-18"
+title: "TRIZ - The Contradiction Matrix Workflow"
+order: 90
+links:
+- icon: flask
+  icon_pack: fas
+  name: TRIZ DataBase
+  url: slides/PlayAndInvent/TRIZ-Database/index.html
+# - icon: game
+#   icon_pack: fab
+#   name: Game
+#   url: /pdf/TRIZ/Titanic_Case_Study.pdf
+slides: 
+summary: "This Module is part of a Creative Problem Solving course I offer at Srishti Manipal Institute, Bangalore"
+tags:
+- Contradictions
+- Contradiction Matrix
+- 39 TRIZ Parameters
+- 40 Inventive Principles
+- Genrikh Altshuller
+url_code: ""
+url_pdf: ""
+url_slides: "slides/PlayAndInvent/TRIZ-Basics/index.html"
+url_video: ""
+---
+
+
+```{r,echo=FALSE, fig.align='center',fig.alt="Photo by Anirudh on unsplash", out.height="150%", out.width="50%"}
+knitr::include_graphics("featured.jpg")
+
+```
+
+# Introduction
+
+In the previous Module on **Problems and Contradictions** we understood how to identify a **Technical Contradiction** in everyday situations. This is the first and most important step in the TRIZ Problem Solving Method. 
+
+Next we look at two methods to **Resolve Contradictions**:
+
+- Using the **Contradiction Matrix** and **Inventive Principles** for **Technical Contradictions (TC)**
+
+- Using TRIZ **Separation Principles** for **Physical Contradictions (PC)**
+
+
+## Project TETRIS TRIZ Videos
+Let us get an actual experience of TRIZ methods with these short videos:
+
+
+1. History of TRIZ   
+{{< youtube NeDAnftRx8c >}}
+<br>
+
+2. TRIZ Tales: Nina at School   
+{{< youtube ouWWuwW21ZI >}} <br>
+
+3. TRIZ Tales: Nina at University   
+{{< youtube MxOGaB4OgYc >}}<br>
+
+4. TRIZ Tales: Nina at Work #1 
+{{< youtube bXxMf4AX_lE >}}<br>
+
+5. TRIZ Tales: Nina at Work #2 
+{{< youtube J_O3yR2kk2Q >}}<br>
+
+
+6. How to use the Contradiction Matrix:[(Coursera Video)](https://www.coursera.org/lecture/creative-thinking-techniques-and-tools-for-success/contradiction-matrix-DtEKz>)
+
+
+## A TRIZ Workflow
+
+We have seen  
+
+- How to examine a Situation  
+- Use the Ishikawa Diagram to find Knobs and Settings
+- Find one or more Administrative Contradictions  
+- State the Ideal Final Result  
+- Convert the AC into a TC with 39 TRIZ Parameters  
+- (Convert the AC into a PC)  
+
+Now we will use the TC and find out solutions for it using what is called the **Contradiction Matrix**. Here is a workflow presentation below:  
+<https://arvindvenkatadri.com/slides/playandinvent/triz-basics/#1">
+
+
+## TRIZ Stories and Case Studies!!
+
+Want to create a good protest or strike? Or simply want to clean up the oceans?
+
+<https://arvindvenkatadri.com/slides/playandinvent/triz-database/#1">
+
+## The TRIZ Contradiction Matrix
+
+1. The TRIZ Contradiction Matrix (2003) [(Matrix)](pdf/TRIZ/TRIZ_interactive_contradiction_matrix_2016.xlsx)
+
+
+
+## References
+
+1. Pizza Box <https://www.metodolog.ru/triz-journal/archives/2008/03/04/>
+
+1. TRIZ for Dummies Cheat Sheet [(weblink)](https://www.dummies.com/business/management/triz-for-dummies-cheat-sheet/)
+
+1. TRIZ Inventive Principles in Pics @instagram: <https://www.instagram.com/stories/highlights/17857566926043828/>
+
+1. Stan Kaplan, ***An Introduction to TRIZ***[(PDF)](pdf/TRIZ/Stan Kaplan-Intro-to-TRIZ.pdf)
+This is a simple and short introduction to *all* aspects of Classical TRIZ.
+
+1. Jack Hipple, "The Ideal Result: What it is and how to achive it", Springer, 2012.
+
+1. Project TETRIS: Chapter 1: Introduction to Classical TRIZ [(PDF)](https://innovazionesistematica.it/wp-content/uploads/2020/10/EN_01.pdf)
+
+
+1. Project TETRIS: Chapter 5: Techniques  to  Resolve  Contradictions / Resources / Effects [(PDF)](https://innovazionesistematica.it/wp-content/uploads/2020/10/EN_05.pdf)
+
+1. Project TETRIS: Examples of inventive problems: Example 1-5 [(RAR Archive File)](https://innovazionesistematica.it/wp-content/uploads/2020/10/ExamplesEN.rar)

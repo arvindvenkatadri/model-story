@@ -1,0 +1,105 @@
+---
+date: "2021-04-22"
+title: "I am What I yam"
+date-modified: "`r Sys.Date()`"
+order: 10
+image: feature.jpg
+tags:
+  - Cultural Capital
+  - Identity
+  - Stuff that I know because I am me
+  - Traditions, Manners, Customs
+  - Who taught me first?
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![](feature.jpg)
+
+```{r echo=FALSE}
+library(blogdown)
+#devtools::install_github("mccarthy-m-g/embedr")
+library(embedr) # Embed multimedia in HTML files
+```
+
+
+
+## Introduction
+
+We will understand Pierre Bourdieu's Concept of Cultural Capital(CC).
+
+CC affects our view of the world and helps us identify Problem
+Situations and Contradictions in Life.
+
+1.  **What is Cultural Capital?**
+    <https://culturallearningalliance.org.uk/what-is-cultural-capital>
+
+2.  Cultural Capital <br> {{< youtube 5DBEYiBkgp8 >}}
+
+## Activities
+
+### Sharing
+
+1.  Sharing of CC: we will each of us take turns to reveal some aspect
+    of Cultural Capital that we directly possess: **Objectified**,
+    **Institutional**, and **Embodied**
+
+-   What is something that replicates from generation to generation,
+    biologically?
+-   Is there something that replicates "non-biologically"?
+-   How would you measure that? In what units, so to speak?
+
+### Re-Inventing your Own Game
+
+1.  You will be divided into Teams. Each Team needs to chose a wellknown
+    parlour/household or board game from your childhood. Set it up and
+    play it.
+2.  Then, you will be given a piece of Electronic Hardware called a
+    **Makey-Makey**. You will need to include this hardware in your Game
+    and extend the Game in a certain way.
+
+::: callout-note
+## TRIZ Concept: Su-Field Analysis
+
+We will later tie this activity to the TRIZ idea of *Substance-Field
+Analysis*. Perhaps you have a premonitory idea about this already?
+:::
+
+### <u>[Inventing your City](https://youtu.be/JW1kfoXtxzY)</u>
+
+1.  Making a Street Intersection Logo
+
+Let us take inspiration from this website:
+<https://www.cartogrammar.com/blog/maps-make-the-best-logos/>
+
+2.  Here are some instructions:\
+
+-   Visit your home town on Google Maps
+-   Select a specific STREET INTERSECTION there.
+-   Copy paste the Shape of the Street Intersection into your favourite
+    image making software
+-   Create A LOGO for your city, using the Shape, such that you show off
+    some interesting aspects of your City, based on your own CULTURAL
+    CAPITAL.
+-   Three sentences to describe your Logo.
+-   See examples at the link above for inspiration
+
+::: callout-note
+## Serendipity
+
+This course is about nothing if not about *serendipity*.
+<https://www.dictionary.com/browse/serendipity>. We will connect this
+logo building idea with the idea of Metaphors in TRIZ.
+:::
+
+## References
+
+1.  Web Apps for your Makey-Makey.
+    <https://makeymakey.com/blogs/how-to-instructions/apps-for-plug-and-play>
+
+2.  Make your own game with a Makey-Makey.
+    <https://www.instructables.com/Using-Scratch-and-Makey-Makey-to-make-your-own-gam>
+
+3.  Richard Dawkins. The Selfish Gene.
+    <https://richarddawkins.net/2014/02/whats-in-a-meme/>

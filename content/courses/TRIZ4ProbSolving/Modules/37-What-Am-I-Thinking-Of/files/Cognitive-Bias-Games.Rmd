@@ -1,0 +1,118 @@
+---
+title: "I Think, Therefore I am"
+author: "Arvind Venkatadri"
+date: 06/Jan/2023
+date_modified: "`r Sys.Date()`"
+output:
+  html_document:
+    theme: journal
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    number_sections: TRUE
+tags:
+  - Cognitive Miserliness
+  - Priming
+  - Halo Effect
+abstract: Part of my course on Creativity and Innovation Studies, offered at Dayanand Sagar University in their MBA Programme.
+---
+
+# Introduction
+In this Module, we will acquaint ourselves with a few of our Cognitive Biases, in gamefied fashion. We will then discuss how these biases inform our efforts in the practice of Creativity and Innovation and discuss ways of overcoming them.
+
+# Goals
+
+At the end of this Lab/Games session, we should:  
+- know the types and nature of our Cognitive Biases  
+- Be able to slow down out decision making  
+- Be able to consider all parameters and aspects before arriving at our
+decision.
+
+
+## Bias #1: Cognitive Miserliness {.tabset .tabset-pills}
+
+### Game
+Let us start with a set of relatively easy games. Here [**PDF**](./Cognitive-Misers.pdf) are some questions for you. Please write or call out the answers as you see them.
+
+### Interpretation
+
+### References for Further Reading
+
+
+
+## Bias #2 Halo Effect {.tabset .tabset-pills}
+
+### Game
+
+Look at the set of words given here
+[**PDF**](./Solomon%20Asch%20Test%20-%20Halo%20Effect.pdf). We have a
+set of words arranged in a series; each word-set describing a person.
+Please look at these and then write a brief description of that person.
+
+Let us now compare what different people wrote about the persons
+described the respective word-sets.
+
+### Interpretation
+
+What we saw was that the word-set are the same but in reverse order. The
+SEQUENCE in which we encounter them colours our opinion of the person
+whom they describe. So *first impressions do seem to be last
+impressions!* This is a Cognitive Bias the **Halo Effect** at work. We
+formulate decisions based on first impressions. What can we do to over
+come this bias?
+
+
+### References for Further Reading
+
+## Bias #3 Priming {.tabset .tabset-pills}
+
+### Game
+You will be given a small questionnaire [**PDF**](./Priming Exercises.pdf), with a single multiple-choice question. Please enter your answer at the appropriate location.
+
+### Intepretation
+
+**The Marvels of Priming**
+
+As is common in science, the first big breakthrough in our understanding of the mechanism of association was an improvement in a method of measurement. Until a few decades ago, the only way to study associations was to ask many people questions such as, “What is the first word that comes to your mind when you hear the word DAY?” The researchers tallied the frequency of responses, such as “night,” “sunny,” or “long.” In the 1980s, psychologists discovered that exposure to a word causes immediate and measurable changes in the ease with which many related words can be evoked. If you have recently seen or heard the word EAT, you are temporarily more likely to complete the word fragment SO_P as SOUP than as SOAP. The opposite would happen, of course, if you had just seen WASH. We call this a **priming effect** and say that the idea of EAT primes the idea of SOUP, and that WASH primes SOAP.
+
+Priming effects take many forms. If the idea of EAT is currently on your mind (whether or not you are conscious of it), you will be quicker than usual to recognize the word SOUP when it is spoken in a whisper or presented in a blurry font. And of course you are primed not only for the idea of soup but also for a multitude of food-related ideas, including fork, hungry, fat, diet, and cookie. If for your most recent meal you sat at a wobbly restaurant table, you will be primed for wobbly as well. Furthermore, the primed ideas have some ability to prime other ideas, although more weakly. Like ripples on a pond, activation spreads through a small part of the vast network of associated ideas. The mapping of these ripples is now one of the most exciting pursuits in psychological research.
+
+**The Ideomotor Effect**
+Another major advance in our understanding of memory was the discovery that priming is not restricted to *concepts and words*. You cannot know this from conscious experience, of course, but you must accept the alien idea that your *actions and your emotions can be primed by events of which you are not even aware*. 
+
+In an experiment that became an instant classic, the psychologist John Bargh and his collaborators asked students at New York University --- most aged eighteen to twentytwo --- to assemble four-word sentences from a set of five words (for example, “finds he it yellow instantly”). For one group of students, half the scrambled sentences contained words associated with the elderly, such as Florida, forgetful, bald, gray, or wrinkle. When they had completed that task, the young participants were sent out to do another experiment in an office down the hall. That short walk was what the experiment was about. The researchers unobtrusively measured the time it took people to get from one end of the corridor to the other. As Bargh had predicted, the young people who had fashioned a sentence from words with an elderly theme walked down the hallway significantly more slowly than the others.
+
+
+
+### References for Further Reading
+
+## Bias #4 {.tabset .tabset-pills}
+
+### Game
+
+### Intepretation
+
+### References for Further Reading
+
+## Conclusions
+
+So what should we do to try to overcome these ( and other ) Cognitive Biases?
+
+
+> Be aware: Awareness is the first step towards overcoming errors in
+> judgement. Keeping in mind the potentially harmful consequences of
+> first impressions is helpful when meeting new people.
+
+> Slow down: The second step is to deliberately slow down your judgement
+> and any subsequent decisions. For example, never make a recruitment
+> choice straight after the interview.
+
+> Be systematic: Finally, try to engage your analytical reasoning skills
+> by taking a systematic approach. This sounds trickier than it is. In
+> the context of interviewing, you could prepare a list of essential
+> criteria and force yourself to consider each one carefully before
+> making a choice.
+
+This helps us to not arrive at flawed ideas to pursue but ones that we are reasonably sure we can justify to....our Field, as conceptualized by Mihaly Csikszentmihalyi.
+
+

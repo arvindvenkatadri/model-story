@@ -1,0 +1,51 @@
+---
+date: "2021-02-19"
+title: "Birds of Different Feathers"
+date-modified: "`r Sys.Date()`"
+order: 30
+image: featured.jpg
+tags:
+  - MBTI
+  - Personality Preferences
+  - Information
+  - Energy
+  - Decisions
+  - Plans
+---
+
+![](featured.jpg)
+
+## Introduction
+
+Socrates said, "Gnothi seauton"(Γνῶθι σαυτόν), *know thyself*. Let us do that, as we create some novel situations for ourselves in a Game.
+
+### Icebreaker Game!
+
+Look at the slide full of numbers on the screen. I would like you to:
+
+-   *Silently* work through the slide until you have found all the numbers\
+-   Raise your hand when you have done so.
+
+### A Personality Game
+
+I have divided you up into 4 groups. Each group will be given a specific task. You will need to:
+
+-   Discuss how to complete the Task\
+-   Complete the Task and document your work\
+-   *Also* document the main aspects of Discussion in your group. Who said/ suggested what; what were the points of agreement; what were the contentious points etc.\
+-   Present all of this : 7 + 5 minutes / team
+
+## References
+
+1.  Here is the MBTI Test site: <https://www.16personalities.com/free-personality-test>
+
+2.  Ice-breaker Activity Presentation [(Go to Webpage)](https://slidetodoc.com/numbers-icebreaker-this-is-one-of-many-free/)
+
+3.  MBTI Game: [PDF](/pdf/MBTI%20Activities.pdf)
+
+## Why does this Matter to Us
+
+From the two exercises, we see that:\
+- reality really matters upon the viewer: and that there are many possible points of view.\
+- We all have our "default modes" for behaviour\
+- As creators we need to be able straddle, if possible, the spectrum of the 4 preference pairs, in order to comprehend reality better.

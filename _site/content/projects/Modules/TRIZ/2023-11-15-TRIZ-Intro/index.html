@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.11">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Arvind V.">
+<meta name="dcterms.date" content="2023-11-15">
+<title>TRIZ – An Inventive Problem-Solving Method – The Old Tortoise Speaks Math Models from Stories</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../">
+<link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
+<script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b6495f7ddc21fa4b617d4bbc77b8bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../site_libs/bootstrap/bootstrap-bf389d51471279d1e0a705a5c749840e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<link href="../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../../../../../css/fira.css">
+<link rel="stylesheet" href="../../../../../css/roboto-condensed.css">
+<link rel="stylesheet" href="../../../../../css/vollkorn.css">
+<link rel="stylesheet" href="../../../../../css/fraunces.css">
+<link rel="stylesheet" href="../../../../../css/styles.css">
+<meta property="og:title" content="TRIZ – An Inventive Problem-Solving Method – The Old Tortoise Speaks Math Models from Stories">
+<meta property="og:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta property="og:image" content="https://old-tortoise-taught-us.netlify.app/content/projects/Modules/TRIZ/2023-11-15-TRIZ-Intro/images/featured.jpg">
+<meta property="og:site_name" content="The Old Tortoise Speaks Math Models from Stories">
+<meta name="twitter:title" content="TRIZ – An Inventive Problem-Solving Method – The Old Tortoise Speaks Math Models from Stories">
+<meta name="twitter:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta name="twitter:image" content="https://old-tortoise-taught-us.netlify.app/content/projects/Modules/TRIZ/2023-11-15-TRIZ-Intro/images/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../../index.html">
+    <span class="navbar-title">The Old Tortoise Speaks Math Models from Stories</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link active" href="../../../../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/arvindvenkatadri/dataviz"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/arvind_v"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/arvindvenkatadri"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:arvind.venkatadri@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">TRIZ – An Inventive Problem-Solving Method</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../../../index.html" class="sidebar-logo-link">
+      <img src="../../../../../content/materials/images/1book25.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../content/courses/TRIZ4ProbSolving/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ for Problem Solvers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/10-Flow-and-Play/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I am Water</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/20-Cultural-Capital/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I am What I yam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/30-MBTI-Big-5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birds of Different Feathers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/35-Domain-Field-Self/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I Connect therefore I am</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/37-What-Am-I-Thinking-Of/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I Think, Therefore I am</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/40-Parallel-Thinking/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Art of Parallel Thinking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/50-Metaphoric-Thinking/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Year of Metaphoric Thinking</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/60-Problems-and-Contradictions/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - Problems and Contradictions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/70-TRIZ-Resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - The Unreasonable Effectiveness of Available Resources</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/75-TRIZ-Ideal-Final-Result/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - The Ideal Final Result</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/80-A-Contradictory-Language/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - A Contradictory Language</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/90-TRIZ-Contradiction-Matrix/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - The Contradiction Matrix Workflow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/100-TRIZ-Laws-of-Evolution/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - The Laws of Evolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/TRIZ4ProbSolving/Modules/200-TRIZ-Advanced-Stuff/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TRIZ - Substance Field Analysis, and ARIZ</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><iconify-icon inline="" icon="emojione:japanese-symbol-for-beginner" aria-label="Icon japanese-symbol-for-beginner from emojione Iconify.design set." title="Icon japanese-symbol-for-beginner from emojione Iconify.design set."></iconify-icon> Introduction</a></li>
+  <li><a href="#there-is-world-of-problems" id="toc-there-is-world-of-problems" class="nav-link" data-scroll-target="#there-is-world-of-problems"><iconify-icon inline="" icon="healthicons:world-care-outline" aria-label="Icon world-care-outline from healthicons Iconify.design set." title="Icon world-care-outline from healthicons Iconify.design set."></iconify-icon> There is World of Problems!</a></li>
+  <li><a href="#appreciate-the-situation" id="toc-appreciate-the-situation" class="nav-link" data-scroll-target="#appreciate-the-situation"><iconify-icon inline="" icon="gis:position-man" aria-label="Icon position-man from gis Iconify.design set." title="Icon position-man from gis Iconify.design set."></iconify-icon> Appreciate the Situation</a></li>
+  <li><a href="#determining-the-administrative-contradiction" id="toc-determining-the-administrative-contradiction" class="nav-link" data-scroll-target="#determining-the-administrative-contradiction"><iconify-icon inline="" icon="icon-park-outline:thinking-problem" aria-label="Icon thinking-problem from icon-park-outline Iconify.design set." title="Icon thinking-problem from icon-park-outline Iconify.design set."></iconify-icon> Determining the Administrative Contradiction</a></li>
+  <li><a href="#stating-a-technical-contradiction-tc" id="toc-stating-a-technical-contradiction-tc" class="nav-link" data-scroll-target="#stating-a-technical-contradiction-tc"><iconify-icon inline="" icon="pepicons-pop:contract-off" aria-label="Icon contract-off from pepicons-pop Iconify.design set." title="Icon contract-off from pepicons-pop Iconify.design set."></iconify-icon> Stating a Technical Contradiction (TC)</a></li>
+  <li><a href="#using-the-triz-contradiction-matrix" id="toc-using-the-triz-contradiction-matrix" class="nav-link" data-scroll-target="#using-the-triz-contradiction-matrix"><iconify-icon inline="" icon="mdi:data-matrix" aria-label="Icon data-matrix from mdi Iconify.design set." title="Icon data-matrix from mdi Iconify.design set."></iconify-icon> Using the TRIZ Contradiction Matrix</a></li>
+  <li><a href="#a-complete-example" id="toc-a-complete-example" class="nav-link" data-scroll-target="#a-complete-example"><iconify-icon inline="" icon="pajamas:issue-type-test-case" aria-label="Icon issue-type-test-case from pajamas Iconify.design set." title="Icon issue-type-test-case from pajamas Iconify.design set."></iconify-icon> A Complete Example</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><iconify-icon inline="" icon="fluent-mdl2:decision-solid" aria-label="Icon decision-solid from fluent-mdl2 Iconify.design set." title="Icon decision-solid from fluent-mdl2 Iconify.design set."></iconify-icon> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><iconify-icon inline="" icon="ooui:references-ltr" aria-label="Icon references-ltr from ooui Iconify.design set." title="Icon references-ltr from ooui Iconify.design set."></iconify-icon> References</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">TRIZ – An Inventive Problem-Solving Method</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">TRIZ</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Arvind V. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 15, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header><div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/featured.jpg" class="quarto-figure quarto-figure-center figure-img" style="width:50.0%;height:25.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="introduction" class="level2"><h2 class="anchored" data-anchor-id="introduction">
+<iconify-icon inline="" icon="emojione:japanese-symbol-for-beginner" aria-label="Icon japanese-symbol-for-beginner from emojione Iconify.design set." title="Icon japanese-symbol-for-beginner from emojione Iconify.design set."></iconify-icon> Introduction</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/chesterton-riddle.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/chesterton-riddle.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<p>TRIZ is a system of Inventive Problem Solving created by Genrikh Altshuller. Altshuller, was born in Russia in 1926, made his first invention at age 14 (9th Grade), and was later educated as a mechanical engineer. At the time he started working on TRIZ, in 1946, he was employed in the patent department of the Soviet navy, assisting inventors in filing their patents, in Baku, Azerbaijan. While there he became intrigued by the question of how an invention happens:</p>
+<blockquote class="blockquote">
+<p>Is it a matter of luck? The result of a mental “light bulb” turning on, as in the comics? Or can inventions be seen as the result of systematic patterns of inventive thinking?</p>
+</blockquote>
+<p>Altshuller adopted an <em>empirical approach</em> to answering this question. He studied thousands of patents, looking for commonalities, repetitive patterns, and principles of inventive thought. As he found these, he codified and documented them. His results, when eventually published, attracted many enthusiasts who continued and expanded the work over the years, reviewing what is now estimated to be more than three million patents worldwide. TRIZ is actively used in Companies such as Boeing, Bridgestone, Eastman Kodak, Ford Motor Company, Harley-Davidson Motor Company, Hewlett-Packard, Illinois Tool Works, Inficon, Ingersoll Rand, Kimberly-Clark, L.G. Electronics, Lucent Technologies, Michelin, National Semiconductor, NASA, Philips, Rolls-Royce, Samsung, Siemens, Western Digital, and Xerox, among others.</p>
+<p>Altshuller found that the most inventive of patents did two things:</p>
+<ol type="1">
+<li>They stated PROBLEMS as CONTRADICTIONs (using just 48 unique phrases)</li>
+<li>These CONTRADICTIONs were resolved across a wide variety of patents using an astonishingly few INVENTIVE PRINCIPLEs. (only 40 in number!)</li>
+</ol></section><section id="there-is-world-of-problems" class="level2"><h2 class="anchored" data-anchor-id="there-is-world-of-problems">
+<iconify-icon inline="" icon="healthicons:world-care-outline" aria-label="Icon world-care-outline from healthicons Iconify.design set." title="Icon world-care-outline from healthicons Iconify.design set."></iconify-icon> There is World of Problems!</h2>
+<p>Let us take our first step into the world of TRIZ. What did you think of immediately when you saw the first picture on this page? You surely saw the Contradiction: it <em>is</em> graffiti but claiming not to be! In TRIZ, the fundamental way of looking at an Inventive Design Problem is to discover and propose Contradictions. These are rendered in as simple and stark a language as possible…the starker the better!</p>
+<p>What sort of Contradictions do we see in these familiar objects below ? What is good and what is not so good? Could that be the source of a problem to solve?</p>
+<div class="columns">
+<div class="column" style="width:10%;">
+
+</div><div class="column" style="width:30%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="images/chain.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/chain.jpg" style="width:70.0%;height:70.0%" class="figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="images/pizza.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/pizza.jpg" style="width:70.0%;height:70.0%" class="figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><a href="images/wrench.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/wrench.jpg" style="width:70.0%;height:70.0%" class="figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Contemplate and note down for each Object: Does it embody a CONTRADICTION?</p>
+<p>Yes, each one does, in its own way: The pizza box lid collapses on the pizza when it is hot and spoils the topping. The wrench must be turned by pushing against its narrower edge; we would find it easier and less painful if we could apply force on the broader surface of the handle. And the chain? Everyone know it needs to be stiff and strong to be able to pull the wheel, and yet flexible enough to go around the sprocket…and get horribly entangled, leading to greasy fingers!</p>
+<p>In this way we look at OBJECTS, PROCESSES, METHODS, PRODUCTS, and indeed CIRCUMSTANCES to find CONTRADICTIONs!</p>
+<p>Here are some more examples in the figure below:</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/Juice.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Juice"><img src="images/Juice.jpeg" class="img-fluid figure-img" width="219" alt="Juice"></a></p>
+<figcaption>Juice</figcaption></figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/Snails-1.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Snails"><img src="images/Snails-1.jpeg" class="img-fluid figure-img" style="width:65.0%" alt="Snails"></a></p>
+<figcaption>Snails</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>What could be our Contradictions here?</p>
+<blockquote class="blockquote">
+<p>Fresh Juice is good for health, but ads from juice companies wish to portray it as harmful, and they may not be able to sell!</p>
+<p>The ground is hot for a snail, but above ground it is visible to predators.</p>
+</blockquote>
+</section><section id="appreciate-the-situation" class="level2"><h2 class="anchored" data-anchor-id="appreciate-the-situation">
+<iconify-icon inline="" icon="gis:position-man" aria-label="Icon position-man from gis Iconify.design set." title="Icon position-man from gis Iconify.design set."></iconify-icon> Appreciate the Situation</h2>
+<p>We do not always contemplate only objects; indeed, as inventors, we want to be able to make objects or systems. What we more commonly contemplate is <u><strong><em>a situation</em></strong></u>. So how does one assess a situation? We might use what is called an Ishikawa Fishbone Diagram. This is shown below.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/IshikawaDiagram.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Ishikawa Fishbone Diagram"><img src="images/IshikawaDiagram.png" class="img-fluid figure-img" width="524" alt="Ishikawa Fishbone Diagram"></a></p>
+<figcaption>Ishikawa Fishbone Diagram</figcaption></figure>
+</div>
+</div>
+</div>
+<p>There are many versions of this diagram depending upon the DOMAIN it is applied in. This diagram is very helpful to us in assessing resources and processes, and watching how their interplay in a situation could lead to…a Contradiction.</p>
+</section><section id="determining-the-administrative-contradiction" class="level2"><h2 class="anchored" data-anchor-id="determining-the-administrative-contradiction">
+<iconify-icon inline="" icon="icon-park-outline:thinking-problem" aria-label="Icon thinking-problem from icon-park-outline Iconify.design set." title="Icon thinking-problem from icon-park-outline Iconify.design set."></iconify-icon> Determining the Administrative Contradiction</h2>
+<p>In the Ishikawa diagram, each of the items listed is considered a TRIZ KNOB, which is either in our control or not. By turning these KNOBs in either direction we can change a specific PARAMETER that the KNOB affects. This change may improve the situation for us but we may find that something else typically gets worse. This is the source of our CONTRADICTION for Situations. When this happens, we can usually state a CONTRADICTION in simple English.</p>
+<p>For example: <code>We want to boil milk, but we get bored watching it boil.</code></p>
+<p>Here Time and the Milk would both have been listed in your Ishikawa as Resources. You can further document your analysis of the Object or Situation using the following questionnaire 5W+H format:</p>
+<ol type="1">
+<li>What does the problem seem to be?</li>
+<li>Who has the problem?</li>
+<li>When does the problem occur? All the time? Under certain circumstances?</li>
+<li>Where does the problem occur?</li>
+<li>Why does the problem occur? (“Ask why 5 times” – W. Edwards Deming)</li>
+<li>How does the problem occur?</li>
+</ol>
+<p>This will help in “aiming” the solutions that TRIZ offers, in the right way.</p>
+<p><strong>STEP1</strong>: In TRIZ, this way of expressing a Problem as a simple CONTRADICTION is referred to as stating an ADMINISTRATIVE CONTRADICTION (AC). You should be able to state an Administrative Contradiction in the following (loose!) sentence structure — Items in <code>&lt; &gt;</code> come from the Ishikawa and your 5W + H questions).</p>
+<p><code>When we, as &lt; WHO / MANPOWER &gt;, attempt to perform &lt; HOW / METHOD &gt; during &lt;WHEN&gt; on &lt; WHERE / MACHINERY / KNOB&gt;, we improve &lt;EFFECT&gt;, but lose out on &lt;negative EFFECT / KNOB&gt;</code></p>
+</section><section id="stating-a-technical-contradiction-tc" class="level2"><h2 class="anchored" data-anchor-id="stating-a-technical-contradiction-tc">
+<iconify-icon inline="" icon="pepicons-pop:contract-off" aria-label="Icon contract-off from pepicons-pop Iconify.design set." title="Icon contract-off from pepicons-pop Iconify.design set."></iconify-icon> Stating a Technical Contradiction (TC)</h2>
+<p>Now that we know how problems can be stated as simple <em>Administrative Contradictions (AC)</em>, we need to take the next step and make what TRIZ calls Technical Contradictions (TC). Altshuller found that problems across domains could be expressed in a “TRIZ Language,” a set of metaphoric phrases that are an integral part of (classical) TRIZ. We will call these the 48 TRIZ Parameters. Some examples of TRIZ Parameters: <em>Weight of a stationary Object,</em> <em>Loss of Substance</em>, and <em>Temperature</em>.</p>
+<p>Every problem could be described as a contradiction using some pair of these 48 parameters. These metaphoric phrases are simple enough and provide rich troves for imaginative problem solving. Expressing our specific problem in this way allowed us to see the similarity it has with problems in other domains and helps us to leverage solutions from there.</p>
+<p><strong>STEP 2</strong>: Take the AC and state it in terms of these 48 TRIZ Parameters, for example: <code>Improve Loss of Substance and not worsen Weight of a Stationary Object</code> ; <code>Improve Loss of Information and not worsen Power</code></p>
+</section><section id="using-the-triz-contradiction-matrix" class="level2"><h2 class="anchored" data-anchor-id="using-the-triz-contradiction-matrix">
+<iconify-icon inline="" icon="mdi:data-matrix" aria-label="Icon data-matrix from mdi Iconify.design set." title="Icon data-matrix from mdi Iconify.design set."></iconify-icon> Using the TRIZ Contradiction Matrix</h2>
+<p>Armed with our TCs, we plug them into the TRIZ Contradiction Matrix. The TRIZ Matrix is a 48 X 48 structure, with every possible TRIZ Parameter being paired with every other TRIZ Parameter.</p>
+<p><strong>STEP3</strong>: One chooses one TRIZ Parameter from the TC as the ROW and the other as the COLUMN in the TRIZ Matrix. At their intersection lies a single cell which contains one or more TRIZ Inventive Principles. These Inventive Principles have been derived as solutions from hundreds and thousands of patents.</p>
+<p><strong>STEP4</strong>: These Inventive Principles must now be applied into our Problem to solve it. This is the TRIZ Contradiction Matrix Workflow.</p>
+</section><section id="a-complete-example" class="level2"><h2 class="anchored" data-anchor-id="a-complete-example">
+<iconify-icon inline="" icon="pajamas:issue-type-test-case" aria-label="Icon issue-type-test-case from pajamas Iconify.design set." title="Icon issue-type-test-case from pajamas Iconify.design set."></iconify-icon> A Complete Example</h2>
+<p>Let us consider the example of the pizza box that we saw at the start of this article. (We will not trouble to make the Ishikawa for this simple problem) Here is our AC:</p>
+<p><code>AC: The pizza needs to be hot but the steam it gives off must not make the lid collapse and ruin the pizza</code></p>
+<p>We can convert this into a TC by choosing several pairs of TRIZ Parameters:</p>
+<p><code>TC: Improve 21(Temperature) while not worsening 22(Stability)!</code></p>
+<p>Looking up the <a href="https://av-quarto.netlify.app/content/materials/ContradictionMatrix2003.pdf"><strong>TRIZ Contradiction Matrix</strong></a><code>(Row#21 Col#22)</code>, we get the TRIZ Inventive Principles: <code>24: Intermediary. 35: Parameter Change, 32: Colour Change, 3: Local Quality.</code></p>
+<p>Looking at <code>IP 24 (Intermediary</code>) we need to think of something between the pizza and the lid, and <code>IP 3 ( Local Quality</code>) suggests that it should we quite small, or “local” compared to the size of the pizza! What could that be? This!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/pizzatable.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Pizza Saver or Pizza Table"><img src="images/pizzatable.jpg" class="img-fluid figure-img" style="width:50.0%" alt="Pizza Saver or Pizza Table"></a></p>
+<figcaption>Pizza Saver or Pizza Table</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="conclusion" class="level2"><h2 class="anchored" data-anchor-id="conclusion">
+<iconify-icon inline="" icon="fluent-mdl2:decision-solid" aria-label="Icon decision-solid from fluent-mdl2 Iconify.design set." title="Icon decision-solid from fluent-mdl2 Iconify.design set."></iconify-icon> Conclusion</h2>
+<p>The TRIZ process allows us to leverage solutions that have been obtained from a vast number of patents. The TRIZ language allows us to access these solutions by expressing our specific problem in terms of the TRIZ Parameters, and leads us to the relevant TRIZ Inventive Principles which can solve our problem!</p>
+<p>Worth mastering!!</p>
+</section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">
+<iconify-icon inline="" icon="ooui:references-ltr" aria-label="Icon references-ltr from ooui Iconify.design set." title="Icon references-ltr from ooui Iconify.design set."></iconify-icon> References</h2>
+<ol type="1">
+<li><p>Open Source TRIZ. &lt;<a href="http://www.opensourcetriz.com/">TRIZ PowerTools - Free downloads ebooks pdfs teaching materials (opensourcetriz.com)</a>&gt;</p></li>
+<li><p>Jack Hipple’s Webpage.<a href="https://innovation-triz.com/personnel/JHipple.html" class="uri">https://innovation-triz.com/personnel/JHipple.html</a></p></li>
+<li><p>Valeri Souchkov’s Webpage.<a href="http://www.xtriz.com/ValeriSouchkov.htm" class="uri">http://www.xtriz.com/ValeriSouchkov.htm</a></p></li>
+</ol>
+
+
+</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/old-tortoise-taught-us\.netlify\.app");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Website made with ❤️ and <a href="https://quarto.org/">Quarto</a>, by Arvind V.</p>
+</div>
+    <div class="nav-footer-right">
+<p>Hosted by Netlify <a href="https://www.netlify.com"><iconify-icon inline="" icon="simple-icons:netlify" aria-label="Icon netlify from simple-icons Iconify.design set." title="Icon netlify from simple-icons Iconify.design set."></iconify-icon></a>.</p>
+</div>
+  </div>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+<script src="../../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

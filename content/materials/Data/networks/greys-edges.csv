@@ -1,0 +1,58 @@
+from,to,weight,type
+Leah Murphy,Arizona Robbins,2,friends
+Leah Murphy,Alex Karev,4,benefits
+Lauren Boswell,Arizona Robbins,1,friends
+Arizona Robbins,Callie Torres,1, friends
+Callie Torres,Erica Hahn,6, friends
+Callie Torres,Alex Karev, 12, benefits
+Callie Torres,Mark Sloan, 5, professional
+Callie Torres,George O'Malley,2, professional
+George O'Malley,Izzie Stevens,3, professional
+George O'Malley,Meredith Grey,4, friends
+Denny Duqutte,Izzie Stevens,1, friends
+Izzie Stevens,Alex Karev,7, professional
+Meredith Grey,Derek Sheperd,3, friends
+Preston Burke,Cristina Yang,4, friends
+Shane Ross,Cristina Yang,6, professional
+Derek Sheperd,Rose,2, friends
+Derek Sheperd,Addison Montgomery,1, friends
+Cristina Yang,Owen Hunt,1, benefits
+Amelia Shepherd,Owen Hunt,1, benefits
+Amelia Shepherd,Mark Sloan,1, professional
+Addison Montgomery,Mark Sloan,1, friends
+Stephanie Edwards,Jackson Avery,2, benefits
+Jackson Avery,April Kepner,3, benefits
+Jackson Avery,Lexie Grey,1, friends
+Reed Adamson,Mark Sloan,5, professional
+Mark Sloan,Lexie Grey,5, professional
+Mark Sloan,Teddy Altman,7,friends
+Lexie Grey,Alex Karev,12, friends
+Alex Karev,Heather Brooks,2, benefits
+Alex Karev,Jo Wilson,3, competition
+Teddy Altman,Henry Burton,1, friends
+Owen Hunt,Emma,1, competition
+Addison Montgomery,Alex Karev,8, friends
+Alex Karev,Rebecca Pope,1, competition
+Alex Karev,Lucy Fields,9,competition
+George O'Malley,Nurse Olivia,2,professional
+Nurse Olivia,Alex Karev,5,professional
+Hank,Izzie Stevens,1, friends
+Andrew Perkins,Teddy Altman,1,competition
+Mark Sloan,Nancy Shepard,2,professional
+Meredith Grey,Nathan Riggs,3, benefits
+Ben Warren,Miranda Bailey,4,benefits
+Miranda Bailey,Eli James,2,professional
+Miranda Bailey,Tucker Jones,3,friends
+Ellis Grey,Richard Webber,6,competition
+Ellis Grey,Thatcher Grey,1,professional
+Richard Webber,Catherine Avery,1,benefits
+Susan Grey,Thatcher Grey,1,friends
+Richard Webber,Adele Webber,1,friends
+Steve Mostow,Megan Nowland,3,competition
+Megan Nowland,Pierce Halley,4,competition
+Steve Murphy,Meredith Grey,7,friends
+Meredith Grey,Finn Dandridge,1,benefits
+Teddy Altman,Owen Hunt,1,friends
+Miranda Bailey,Lloyd,1,professional
+Colin Marlow,Cristina Yang,1,professional
+Dana Seabury,Alex Karev,12,benefits

@@ -1,0 +1,160 @@
+project:
+  type: website
+  output-dir: _site
+  preview: 
+    port: 8000
+    browser: true
+    
+page-layout: article
+execute:
+  freeze: auto
+  cache: true
+  echo: true
+  warning: false
+  message: false
+  error: true # errors will not stop rendering!
+  
+website:
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/arvindvenkatadri/dataviz
+      - icon: twitter
+        href: https://twitter.com/arvind_v
+      - icon: linkedin
+        href: https://www.linkedin.com/in/arvindvenkatadri
+      - icon: envelope
+        href: mailto:arvind.venkatadri@gmail.com
+  sidebar:
+    style: "docked"
+    background: secondary
+    alignment: left
+    collapse-level: 2
+    search: true
+    logo: "content/materials/images/1book25.jpg"
+    contents:
+      - section: "TRIZ for Problem Solvers"
+        href: content/courses/TRIZ4ProbSolving/listing.qmd
+        contents: 
+          - content/courses/TRIZ4ProbSolving/Modules/10-Flow-and-Play/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/20-Cultural-Capital/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/30-MBTI-Big-5/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/35-Domain-Field-Self/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/37-What-Am-I-Thinking-Of/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/40-Parallel-Thinking/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/50-Metaphoric-Thinking/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/60-Problems-and-Contradictions/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/70-TRIZ-Resources/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/75-TRIZ-Ideal-Final-Result/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/80-A-Contradictory-Language/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/90-TRIZ-Contradiction-Matrix/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/100-TRIZ-Laws-of-Evolution/index.qmd
+          - content/courses/TRIZ4ProbSolving/Modules/200-TRIZ-Advanced-Stuff/index.qmd
+        
+  page-footer:
+    center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."
+    right:  Hosted by Netlify [{{< iconify simple-icons netlify >}}](https://www.netlify.com).
+    left:  "License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)"
+    
+    
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  open-graph: true
+  search: true
+  twitter-card: true
+  title: "The Old Tortoise Speaks Math Models from Stories"
+  site-url: "https://old-tortoise-taught-us.netlify.app"
+  repo-url: ""
+  description: "This is Arvind V.'s website for teaching Math Models in Design Thinking"
+  favicon: "content/materials/icon-park-twotone--concept-sharing.svg"
+  google-analytics: "" 
+  reader-mode: true
+  
+format:
+  html:
+    smooth-scroll: true
+    fontsize: "medium"
+    theme:
+      - cosmo
+      - brand
+    css: 
+      - css/fira.css
+      - css/roboto-condensed.css
+      - css/vollkorn.css
+      - css/fraunces.css
+      - css/styles.css
+    toc: true
+    backgroundcolor: ""
+    mainfont: ""
+    monofont: ""
+    link-external-icon: true
+    link-external-newwindow: true
+    citations-hover: true
+    footnotes-hover: true
+    page-navigation: true
+    back-to-top-navigation: true
+    bread-crumbs: true
+    code-tools: false
+    code-copy: true
+    code-block-border-left: "black"
+    code-block-bg: "#E7FBFE"
+    code-fold: false
+    code-summary: "Show the Code"
+    code-overflow: scroll
+    code-line-numbers: false # not with code-link:true
+    code-link: true
+    code-annotations: false
+    format-links: true
+    highlight-style: tango
+    reference-location: document
+    cap-location: bottom
+    df-print: paged
+    fig-align: center
+    fig-cap-location: bottom
+    fig-dpi: 300
+
+    filters:
+      - d2
+      - tabby
+      - webr
+      - quarto
+      - line-highlight
+      - shinylive
+      - gadenbuie/tachyons # Causes strange code wrapping with decimals!
+    d2:
+      format: svg
+      embed_mode: raw
+    webr:
+      channel-type: "automatic"
+    mermaid:
+      theme: forest
+
+    grid:
+      sidebar-width: 250px
+      body-width: 1000px
+      margin-width: 250px
+      gutter-width: 1.5rem
+
+  
+editor: 
+  source:
+    markdown: 
+      wrap: 72
+lightbox: # Based on internal Quarto feature
+  match: auto
+  effect: zoom
+  desc-position: right
+  loop: false
+
+knitr:
+  opts_chunk: 
+    tidy: 'styler'
+
+
+

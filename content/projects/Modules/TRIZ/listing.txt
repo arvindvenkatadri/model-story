@@ -1,0 +1,10 @@
+---
+# options specified here will apply to all posts in this folder
+title: "Writings on TRIZ"
+listing: 
+  type: grid
+contents: 
+  - "./*.md"
+  - "./*.qmd"
+  - "./*.Rmd"
+---
