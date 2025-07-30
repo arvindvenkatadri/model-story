@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/index.html</loc>
-    <lastmod>2025-07-28T12:45:21.117Z</lastmod>
+    <loc>https://old-tortoise-taught-us.netlify.app/about.html</loc>
+    <lastmod>2025-07-30T01:14:03.169Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/TRIZ4ProbSolving/Modules/70-TRIZ-Resources/index.html</loc>
@@ -99,5 +99,9 @@
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/TRIZ4ProbSolving/Modules/90-TRIZ-Contradiction-Matrix/index.html</loc>
     <lastmod>2025-07-19T09:23:48.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/index.html</loc>
+    <lastmod>2025-07-28T12:45:21.117Z</lastmod>
   </url>
 </urlset>

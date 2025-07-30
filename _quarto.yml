@@ -23,7 +23,7 @@ website:
       - about.qmd
     right:
       - icon: github
-        href: https://github.com/arvindvenkatadri/dataviz
+        href: https://github.com/arvindvenkatadri/model-story
       - icon: twitter
         href: https://twitter.com/arvind_v
       - icon: linkedin
@@ -38,7 +38,7 @@ website:
     search: true
     logo: "content/materials/images/1book25.jpg"
     contents:
-      - section: "TRIZ for Problem Solvers"
+      - section: "The Model of the Story"
         href: content/courses/TRIZ4ProbSolving/listing.qmd
         contents: 
           - content/courses/TRIZ4ProbSolving/Modules/10-Flow-and-Play/index.qmd
@@ -68,7 +68,7 @@ website:
   open-graph: true
   search: true
   twitter-card: true
-  title: "The Old Tortoise Speaks Math Models from Stories"
+  title: "The Old Tortoise: The Model of the Story"
   site-url: "https://old-tortoise-taught-us.netlify.app"
   repo-url: ""
   description: "This is Arvind V.'s website for teaching Math Models in Design Thinking"

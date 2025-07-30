@@ -4,14 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Arvind V.",
-    "section": "",
-    "text": "I’m an an external Faculty Member at the Srishti Manipal Institute of Art, Design, and Technology (SMI), in Bangalore, INDIA. I am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nTo get started, you can check out my courses on this website.\nMy teaching websites are:\n\n\nThe Mad Hatter’s Guide to Data Viz and Stats in R (This one!!)\nModel Thinking in Design\n\nTRIZ for Problem Solvers\n\nLiterary Jukebox: Design Thinking from Short Fiction\n\nMaths for Creative Coders\n\n\nMy student portfolios are here:\nhttps://we-r-us.netlify.app/portfolio/\nhttps://form-and-structure.netlify.app/portfolio/\n\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!\n\n\n Back to top"
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "content/courses/TRIZ4ProbSolving/Modules/70-TRIZ-Resources/index.html#introduction",
@@ -21,7 +14,7 @@
     "text": "Introduction\nIn the previous Module on Problems and Contradictions we understood how to identify an Administrative Contradiction in everyday situations. This is the first and most important step in the TRIZ Problem Solving Method.\nAnother important idea in TRIZ is that of Available Resources. Let us appreciate this idea with the help of two games.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Unreasonable Effectiveness of Available Resources"
     ]
   },
@@ -33,7 +26,7 @@
     "text": "Available Resources: Game #1\nYou have to Stick the lighted candle to the Wall in such a way that the melting wax does not drop on to the floor. Your resources are:\n\nCandle\nMatchbox\nThumbtack",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Unreasonable Effectiveness of Available Resources"
     ]
   },
@@ -45,7 +38,7 @@
     "text": "Available Resources: Game #2\nLook at the graph below: does it remind you of something you know very well?\n\n\n\n\n\n\n\n\nWhat does this graph represent?\nLet us pretend we are part of this graph and see where our Problem Formulating Skills take us!",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Unreasonable Effectiveness of Available Resources"
     ]
   },
@@ -57,7 +50,7 @@
     "text": "Discussion\n\nProblems and Contradictions\nAll Available Resources\n\nAssumptions and Functional Fixedness\n\n\n\nA comparable switch of attention occurs in an old joke about a worker in a high security factory, in which the employees were carefully watched when they left at the end of their work day. On a particular day, this worker was stopped at the factory gate as he walked out with a wheelbarrow full of styrofoam packing peanuts. He explained that he had salvaged these from the trash, and was planning to use them in shipping gifts to his grandchildren. Searching through this packing material, the guards found nothing, and so they let the man go home. The following week the same thing happened, and the worker was again stopped. But he offered the very same story, and when the guards searched through the packing peanuts and found nothing, he was allowed to leave. But this continued, week after week, until the guards could no longer believe that one person would want or could make use of so much packing material. Finally, the man was held for interrogation, at which time he admitted that he had absolutely no use for packing peanuts - and that, all these weeks, he had been stealing wheelbarrows.\n\n\nHearing this joke, I am reminded of the phrase “part and parcel”, which is a rough equivalent of “figure and ground”, the Gestalt Principles. Throughout most of it, the packing peanuts occupy center stage as figure (part), while the wheelbarrows (which function merely as containers) are completely ignored as innocuous ground (parcel). At the end of the joke, there is an unexpected twist, a switch of emphasis, a recentering, when we learn that the parcel is really the part.\n\nThis should also remind us of the Guilford Alternative Uses Exercise that we did, where we forced ourselves to leave the “regular use” of an object behind and think of it as serving quite another function.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Unreasonable Effectiveness of Available Resources"
     ]
   },
@@ -69,7 +62,7 @@
     "text": "References\n\nhttps://www.wikiwand.com/en/Candle_problem\nResources Game PDF\nhttps://thedecisionlab.com/biases/functional-fixedness\nhttps://www.interaction-design.org/literature/article/the-laws-of-figure-ground-praegnanz-closure-and-common-fate-gestalt-principles-3\nStan Kaplan, An Introduction to TRIZ (PDF) This is a simple and short introduction to all aspects of Classical TRIZ.\nJack Hipple, “The Ideal Result: What it is and how to achieve it”, Springer, 2012.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Unreasonable Effectiveness of Available Resources"
     ]
   },
@@ -81,7 +74,7 @@
     "text": "Parallel Thinking\nEdward de Bono invented the concept and phrase, “Parallel Thinking” in his book with the same title. Let us understand what this is:\n\n\n\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "The Art of Parallel Thinking"
     ]
   },
@@ -93,7 +86,7 @@
     "text": "Propositions\nNow that we have an idea of about Parallel Thinking, let us get into it! Let us consider a couple of ideas for schemes that have been “around” for some time:\n\nMilitary Conscription for 2 years\nChildren Manage the House for one week\nYoung People must be assigned one Elderly Person to live with\nAll Cars must be removed from the City Centre\n\nCan we apply Parallel Thinking to these and come up with a vote, or even a way to achieve these, if we can agree with the Propositions?",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "The Art of Parallel Thinking"
     ]
   },
@@ -105,7 +98,7 @@
     "text": "Some of the de Bono Thinking Tools:\n\n6 Thinking Hats Quick Reference (PDF Link)\n6H Technique - PMI: Plus Minus Interesting : https://www.debono.com/de-bono-thinking-lessons-1/1.-PMI-lesson-plan\nAlso see:https://sites.google.com/site/qepcafe/modules/expand/plus-minus-interesting-pmi\n6H Technique - APC: Alternatives, Possibilities, Choices: https://www.debono.com/de-bono-thinking-lessons-1/6.-APC-lesson-plan\n6H Technique - CAF: Consider All Factors: https://www.debono.com/de-bono-thinking-lessons-1/2.-CAF-lesson-plan\n6H Technique - OPV: Other Peoples’ Voices: https://www.debono.com/de-bono-thinking-lessons-1/7.-OPV-lesson-plan\n6H Technique - CnS: Consequence and Sequel : https://www.debono.com/de-bono-thinking-lessons-1/3.-C%26S-lesson-plan",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "The Art of Parallel Thinking"
     ]
   },
@@ -117,7 +110,7 @@
     "text": "References\n\nReading in Parallel Thinking (Web Link)\nEdward de Bono, Six Thinking Hats (Goodreads)\nQuality Enhancement Program (QEP cafe) https://sites.google.com/site/qepcafe/#training-modules ( Link appears to be dead ;-() )\nReverse Brainstorming https://sites.google.com/site/qepcafe/modules/expand/reverse-brainstorming ( Link appears to be dead ;-() )\nhttps://www.mindtools.com/a32qxsh/reverse-brainstorming",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "The Art of Parallel Thinking"
     ]
   },
@@ -129,7 +122,7 @@
     "text": "Introduction\nThere is some stuff lying on the floor of the classroom.\n\nLego\nWhere’s Waldo? Books \nMagic Eye Books \nDominos \nMagnets + Links \nParquetry Blocks \nImaginarium Train Set + Thomas the Tank Engine \n\nPlay!! Yes, you.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -141,7 +134,7 @@
     "text": "Discussion #1\n\nDid you get bored?\nDid you lose sense of time at any point?\nDid anything become too difficult at any time?\nWhat did you do at such times?",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -153,7 +146,7 @@
     "text": "What is Flow?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe will understand Flow from:\n\nThe book Flow and the Psychology of Happiness, pp; 72-76; by Mihaly Csikszentmihalyi. First, let us learn to say his name!!\n\n Your browser does not support the audio tag;  for browser support, please see:  https://www.w3schools.com/tags/tag_audio.asp \nHere is the book.\n\nThis video: \n\n\n\n\nThis TED Talk : Flow, the Secret to Happiness \n\n\n 3. This is Water: David Foster Wallace’s famous Talk: \n  4. Let us quickly read and discuss this extract from the Play and Playground Encyclopedia https://www.pgpedia.com/m/man-play-and-games",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -165,7 +158,7 @@
     "text": "Discussion #2\n\nIs the idea of Flow elusive?\nDo only some people get it, and then only at some times?\nWas David Foster Wallace’s talk somewhat self-deluding?\nThen what is this Empathy stuff we talk about when we speak of Design Thinking?",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -177,7 +170,7 @@
     "text": "Pop Quix: Want still more Flow?\nNo, that is not a bad spelling….why not?\nGo find me in this picture !!",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -189,7 +182,7 @@
     "text": "References\n\nScott Eberle, “The Aspects of Play” https://www.journalofplay.org/sites/www.journalofplay.org/files/pdf-articles/6-2-article-elements-of-play.pdf\n“Platform Creativity: Domain, Field, and Person”. https://medium.com/call4/domain-8a22b6b486f4\n8 Ways To Create Flow According to Mihaly Csikszentmihalyi. https://positivepsychology.com/mihaly-csikszentmihalyi-father-of-flow/\nIan Bogost, “Play at Anything”.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am Water"
     ]
   },
@@ -201,7 +194,7 @@
     "text": "Introduction\nSocrates said, “Gnothi seauton”(Γνῶθι σαυτόν), know thyself. Let us do that, as we create some novel situations for ourselves in a Game.\n\nIcebreaker Game!\nLook at the slide full of numbers on the screen. I would like you to:\n\nSilently work through the slide until you have found all the numbers\n\nRaise your hand when you have done so.\n\n\n\nA Personality Game\nI have divided you up into 4 groups. Each group will be given a specific task. You will need to:\n\nDiscuss how to complete the Task\n\nComplete the Task and document your work\n\nAlso document the main aspects of Discussion in your group. Who said/ suggested what; what were the points of agreement; what were the contentious points etc.\n\nPresent all of this : 7 + 5 minutes / team",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "Birds of Different Feathers"
     ]
   },
@@ -213,7 +206,7 @@
     "text": "References\n\nHere is the MBTI Test site: https://www.16personalities.com/free-personality-test\nIce-breaker Activity Presentation (Go to Webpage)\nMBTI Game: PDF",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "Birds of Different Feathers"
     ]
   },
@@ -225,7 +218,7 @@
     "text": "Why does this Matter to Us\nFrom the two exercises, we see that:\n- reality really matters upon the viewer: and that there are many possible points of view.\n- We all have our “default modes” for behaviour\n- As creators we need to be able straddle, if possible, the spectrum of the 4 preference pairs, in order to comprehend reality better.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "Birds of Different Feathers"
     ]
   },
@@ -237,7 +230,7 @@
     "text": "Introduction\nLet us take our first step into the world of TRIZ. What did you think of immediately when you saw the first picture on this page?\nIn TRIZ, the fundamental way of looking at an Inventive Design Problem is to discover and propose Contradictions. These are rendered in as simple and stark a language as possible…the starker the better!\nOnce we have our Contradiction (and there can be more than one in a given Design Situation !) we can use TRIZ Principles to solve them WITHOUT COMPROMISE.\nWhat sort of Contradictions do we see in these familiar objects? What is good and what is not so good? Could that be the source of a problem to solve?",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -249,7 +242,7 @@
     "text": "Some Everyday Objects for us to Contemplate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nContemplate and note down for each Object:\n\nWhat is the Object meant to do? What is its Main Purpose?\nWhat are the other Accompanying Objects that it works with?\nWhat is One Aspect, or Parameter, or Knob for each of the Objects that you have listed, that makes the Object useful?\n\n\n\n\n\n\n\n\n\n\nWhat are the current Settings/Values for each Knob?\nChange the Setting of Each Knob to its natural opposite extreme. What Happens? Is it a good thing? When?\nYou will see that in many cases, each Knob creates a Certain Outcome at one Setting and another Outcome at the Opposite Setting.\nAre both Outcomes desirable? Do you want “eat your cake and have it too?”\nThis could be the source of your PROBLEM / CONTRADICTION !!\n\nIn TRIZ, this way of expressing a Problem as a simple Contradiction is referred to as stating an ADMINISTRATIVE CONTRADICTION (AC). (Oh those Russians…).\nLater we will use our experience with making metaphors to convert the AC into a more TRIZ-like Contradiction, using TRIZ language.\nLet us now consider some examples first and then get some practice at setting up simple AC:",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -261,7 +254,7 @@
     "text": "Some Example Contradictions…\nWe see them everywhere….if one is observant!! Let’s see a few:\nC1: Contradiction-1\nHow is this for a Contradiction? A shelf in a supermarket carries this placard for a shelf of FRESH JUICE:\n\n\n\n\n\n\n\n\n\n\nC2: Contradiction-2\nHere is another: \n\nC3: Contradiction-3\nSnails want to stay safe, and there is safety on the ground, but the ground is too hot. On the Ground, a Snail can be by itself, above the ground, they become visible to predators.\n\n\n\n\nSo…they need to group together.\nC4: Contradiction-4\nMost people’s healthcare is tied to their job….Therefore, every corona-time layoff creates yet another person without health insurance in this country. (The Corona Pandemic needs healthcare and therefore health Insurance.)\n\nThis outbreak is highlighting, with extreme clarity, every major contradiction of this society and its decaying social order. https://t.co/EtSUY3pPMi\n— Revolutionary Left Radio (@RevLeftRadio)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -273,7 +266,7 @@
     "text": "Contradictory Situations\nWe don’t contemplate only objects at all times; indeed, as designers/artists/creators, we want to be able to make objects. What we more commonly contemplate is a situation.\nHow does one figure Parameters/Aspects/Knobs on situations?\nWe use what is called an Ishikawa Fishbone Diagram. There are many versions of this diagram depending upon the DOMAIN it is applied in; it should be considered more as a process for thinking. You should search for other forms of this diagram and quickly learn to apply them.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nDeciding which are the Knobs that matter, and how they effect the outcome is not always this simple. It would typically involve research using structured experimentation to determine the effects of turning the knobs and deciding which ones matter. This experimentation lies within a DOMAIN called [Design of Experiments].",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -285,7 +278,7 @@
     "text": "Documenting the Administrative Contradiction\nYou can document your analysis of the Situation using the following questionnaire 5W+H format:\n\nWhat does the problem seem to be?\n\nWho has the problem?\n\n(Think Knobs!!)\n\n\nWhen does the problem occur? All the time? Under certain circumstances?\nWhere does the problem occur?\n\nWhy does the problem occur?\n\n“Ask why 5 times” – W. Edwards Deming\n\n\nHow does the problem occur?\n\n\nNOTE: This process should remind you of our exercise on the Guilford and Wallach-Kogan Divergent Thinking Game, except that this is of course more structured method, whereas that was simple brainstorming.\n\nWith this method you should be able to state an Administrative Contradiction in the following (loose!) sentence structure — Items in &lt; &gt; come from the Ishikawa and your 5W + H questions):\nWhen we, as &lt; WHO / MANPOWER &gt;, attempt to perform &lt; HOW / METHOD &gt; during &lt;WHEN&gt; on &lt; WHERE / MACHINERY / KNOB&gt;, we improve &lt;EFFECT&gt;, but lose out on &lt;negative EFFECT&gt;.\nLet’s see this method in action. The Domain of work may not be ours, but the context should be clear enough!\n\n  Let us now apply these ideas to examine the following challenges below.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -297,7 +290,7 @@
     "text": "Contradiction Challenges\n\nChallenge #1: Web and PDF\nChallenge #2: Web and PDF\nChallenge #3: Web and PDF\nChallenge #4: Web and PDF",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -309,7 +302,7 @@
     "text": "Additional Readings\nDo glance through these articles and try to form a “contradiction mentality” about things around you:\n\nEllen Domb (1997). How to Help TRIZ Beginners Succeed. https://www.metodolog.ru/triz-journal/archives/1997/04/a/index.html\nhttps://www.bbc.com/worklife/article/20201109-why-the-paradox-mindset-is-the-key-to-success\nhttps://hbr.org/2008/06/the-contradictions-that-drive-toyotas-success\nOpen Source TRIZ: Contradiction Challenges! https://www.opensourcetriz.com/images/1_OpenSourceTRIZ_Pictures/1.1_Teaching_Materials/01_Contradictions_Exercises_Actual.pdf\nhttps://taproot.com/whats-wrong-with-5-whys-complete-article/&lt;/u",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Problems and Contradictions"
     ]
   },
@@ -321,7 +314,7 @@
     "text": "Introduction\nOften times we swiftly come to conclusions or decisions, without being aware that\na) we are making a big mistake based on the information that is available,\nb) we are looking for our fondest beliefs to be true, or worse\nc) we are being manipulated !\nHence, one of the important points of view we need to retain is to be aware of our Cognitive Biases. Being aware of this may be the first step to check ourselves and therefore arrive a more nuanced “appreciation of the situation”, that would then allow us to formulate our Innovative Problems better.\nLet us now engage in some simple activities that show off! to us, our Cognitive Biases!",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -333,7 +326,7 @@
     "text": "Some Simple Cognitive Bias Games",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -345,7 +338,7 @@
     "text": "Bias #1: Cognitive Miserliness\nGame\nLet us start with a set of relatively easy games. Here PDF are some questions for you. Please write or call out the answers as you see them.\nInterpretation\nReferences for Further Reading",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -357,7 +350,7 @@
     "text": "Bias #2 Halo Effect\nGame\nLook at the set of words given here PDF. We have a set of words arranged in a series; each word-set describing a person. Please look at these and then write a brief description of that person.\nLet us now compare what different people wrote about the persons described the respective word-sets.\nInterpretation\nWhat we saw was that the word-set are the same but in reverse order. The SEQUENCE in which we encounter them colours our opinion of the person whom they describe. So first impressions do seem to be last impressions! This is a Cognitive Bias the Halo Effect at work. We formulate decisions based on first impressions. What can we do to over come this bias?\nReferences for Further Reading",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -369,7 +362,7 @@
     "text": "Bias #3 Priming\nGame\nYou will be given a small questionnaire PDF, with a single multiple-choice question. Please enter your answer at the appropriate location.\nIntepretation\nThe Marvels of Priming\nAs is common in science, the first big breakthrough in our understanding of the mechanism of association was an improvement in a method of measurement. Until a few decades ago, the only way to study associations was to ask many people questions such as, “What is the first word that comes to your mind when you hear the word DAY?” The researchers tallied the frequency of responses, such as “night,” “sunny,” or “long.” In the 1980s, psychologists discovered that exposure to a word causes immediate and measurable changes in the ease with which many related words can be evoked. If you have recently seen or heard the word EAT, you are temporarily more likely to complete the word fragment SO_P as SOUP than as SOAP. The opposite would happen, of course, if you had just seen WASH. We call this a priming effect and say that the idea of EAT primes the idea of SOUP, and that WASH primes SOAP.\nPriming effects take many forms. If the idea of EAT is currently on your mind (whether or not you are conscious of it), you will be quicker than usual to recognize the word SOUP when it is spoken in a whisper or presented in a blurry font. And of course you are primed not only for the idea of soup but also for a multitude of food-related ideas, including fork, hungry, fat, diet, and cookie. If for your most recent meal you sat at a wobbly restaurant table, you will be primed for wobbly as well. Furthermore, the primed ideas have some ability to prime other ideas, although more weakly. Like ripples on a pond, activation spreads through a small part of the vast network of associated ideas. The mapping of these ripples is now one of the most exciting pursuits in psychological research.\nThe Ideomotor Effect Another major advance in our understanding of memory was the discovery that priming is not restricted to concepts and words. You cannot know this from conscious experience, of course, but you must accept the alien idea that your actions and your emotions can be primed by events of which you are not even aware.\nIn an experiment that became an instant classic, the psychologist John Bargh and his collaborators asked students at New York University — most aged eighteen to twentytwo — to assemble four-word sentences from a set of five words (for example, “finds he it yellow instantly”). For one group of students, half the scrambled sentences contained words associated with the elderly, such as Florida, forgetful, bald, gray, or wrinkle. When they had completed that task, the young participants were sent out to do another experiment in an office down the hall. That short walk was what the experiment was about. The researchers unobtrusively measured the time it took people to get from one end of the corridor to the other. As Bargh had predicted, the young people who had fashioned a sentence from words with an elderly theme walked down the hallway significantly more slowly than the others.\nReferences for Further Reading",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -381,7 +374,7 @@
     "text": "Bias #4\nGame\nIntepretation\nReferences for Further Reading",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -393,7 +386,7 @@
     "text": "Conclusions\nSo what should we do to try to overcome these ( and other ) Cognitive Biases?\n\nBe aware: Awareness is the first step towards overcoming errors in judgement. Keeping in mind the potentially harmful consequences of first impressions is helpful when meeting new people.\n\n\nSlow down: The second step is to deliberately slow down your judgement and any subsequent decisions. For example, never make a recruitment choice straight after the interview.\n\n\nBe systematic: Finally, try to engage your analytical reasoning skills by taking a systematic approach. This sounds trickier than it is. In the context of interviewing, you could prepare a list of essential criteria and force yourself to consider each one carefully before making a choice.\n\nThis helps us to not arrive at flawed ideas to pursue but ones that we are reasonably sure we can justify to….our Field, as conceptualized by Mihaly Csikszentmihalyi.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -405,7 +398,7 @@
     "text": "References\n\nKahneman, Daniel. “Thinking Fast and Slow”\nBenson, Nigel C.; Ginsburg, Joannah; Grand, Voula; Lazyan, Merrin & Weeks, Marcus; Collin, Catherine, “The Psychology Handbook: Big Ideas Simply Explained”\nPashler, Harold. “Encyclopedia of the Mind”\nHolyoak, Keith J.& Morrison, Robert G., “The Cambridge Handbook of Thinking and Reasoning”\nQuality Enhancement Program (QEP cafe) https://sites.google.com/site/qepcafe/#training-modules",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Think, Therefore I am"
     ]
   },
@@ -417,7 +410,7 @@
     "text": "Metaphors for our Contradictions\nRecall that you considered several familiar Objects in the earlier module on Problems and Contradictions. And also considered a few sample Situations to find Administrative Contradictions in them.\nWe used the method of:\n\nFinding Knobs in Objects and Situations using the Ishikawa Diagram\nTurning the Knobs both ways\nFinding what improves or worsens in each case\nDeciding upon an Administrative Contradiction\n\n\nNow that we know how problems can be stated as simple Administrative Contradictions (AC), we need to take the next step and make what TRIZ calls Technical Contradictions (TC) and Physical Contradictions (PC). To do this, we will use a set of metaphoric phrases that are an integral part of (classical) TRIZ. These metaphoric phrases are simple enough and provide rich troves for imaginative problem solving.\nBefore we study this TRIZ Contradiction Language however, we need to obtain a quick understanding of its history.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -429,7 +422,7 @@
     "text": "The History of TRIZ\n\n\n\n\n\n\n\n\nThe creator of TRIZ, Genrich Altshuller, was born in Russia in 1926, made his first invention at age 14 (9th Grade), and was later educated as a mechanical engineer. At the time he started working on TRIZ, in 1946, he was employed in the patent department of the Soviet navy, assisting inventors in filing their patents, in Baku, Azerbaijan.\nWhile there he became intrigued by the question of how an invention happens:\n\nIs it a matter of luck? The result of a mental “light bulb” turning on, as in the comics? Or can inventions be seen as the result of systematic patterns of inventive thinking?\n\nAltshuller adopted an empirical approach to answering this question. He studied thousands of patents, looking for commonalities, repetitive patterns, and principles of inventive thought. As he found them he codified and documented them, as shown below. His results, when eventually published, attracted many enthusiasts who continued and expanded the work over the years, reviewing what is now estimated to be more than two million patents worldwide.\n\n\n\n\n\n\n\n\nLevel 1: Apparent Solution. This level requires no real invention; it consists of minor adaptations of existing concepts. Simple improvement of a technical system. They require knowledge available within an industry relevant to that system.\nLevel 2: Improvement. This level makes small improvements to existing approaches. Inventions include the resolution of a technical contradiction(TC). They require knowledge from different areas within an industry relevant to the system.\nLevel 3: Invention Inside the Paradigm. This level uses methods from other fields and improves previous approaches. This is an invention containing a resolution of a physical contradiction(PC). It requires knowledge from other industries.\nLevels #2 & #3 solve contradictions and therefore are innovative by definition.\nLevel 4. Invention Outside the Paradigm. This level involves a new design that is based on modifications of existing principles but in a manner not previously used. This level involves development a new technology. It is developed by using breakthrough solutions that requires knowledge from different fields of science. This fourth level also improves upon a technical system, but without solving an existing technical problem. Instead, it improves the function by replacing the original technology with a new technology. For example a mechanical system is replaced with a chemical system to perform the function.\nLevel 5: Discovery. This is the highest invention level. It consists of completely new concepts using new principles, and involves the discovery of new phenomena. The new phenomenon is discovered that allows pushing the existing technology to a higher level.\nAltshuller concluded from his research that a large number of patents (77%) belong only to Levels #1 and #2. The practical utilization of TRIZ methodology can help inventors elevate their innovative solutions to Levels #3 and #4. As a result of this work, hundreds of technical papers and many books on TRIZ have been published, including 14 books by Altshuller himself.\nTRIZ is actively used in Companies such as Boeing, Bridgestone, Eastman Kodak, Ford Motor Company, Harley-Davidson Motor Company, Hewlett-Packard, Illinois Tool Works, Inficon, Ingersoll Rand, Kimberly-Clark, L.G. Electronics, Lucent Technologies, Michelin, National Semiconductor, NASA, Philips, Rolls-Royce, Samsung, Siemens, Western Digital, and Xerox among others.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -441,7 +434,7 @@
     "text": "Speaking TRIZ\nAltshuller made two more discoveries (at least!) based on his study of Soviet Patents:\n\nThat when the the problems solved in the patents were expressed as Contradictions, there were only a few standard phrases using which these Contradictions could be constructed. These were an astonishingly small 48 in number!! Every problem could be described as a contradiction using some pair of these 48 parameters. We will call these the 48 TRIZ Parameters1.\nWhen the solutions in the Patents were examined, they could all be expressed simply as one of 40 abstract nouns or phrases. Just…40! We will call these the 40 TRIZ Inventive Principles\n\nSome examples:\n\nTRIZ Parameters: Weight of an stationary Object, Loss of Substance, and Temperature.\n\nTRIZ Inventive Principles: Asymmetry, Parameter Change and The Other Way Around.\n\nSo the task is:\n\nTake your Administrative Contradiction (AC)\n\nConvert “each side” (i.e terms) of the AC into a TRIZ Technical Contradiction by using a pair of the 48 TRIZ Parameters.\n\nMake sure that you are able to justify to yourself the metaphorical connection between the terms of AC and the chosen pair of TRIZ Parameters. For example, “Loss of substance” could mean “loss of money”!! Write this down, for both sides of your AC.\n\nWe may be able to also create a Physical Contradiction at this time, when we are examining the Ishikawa knobs.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -453,7 +446,7 @@
     "text": "Some Contradiction Examples\nTC Examples:\n\nIncreasing the power of an engine (positive improvement) requires an increase in the size of the engine (negative effect). So, an inventor considers increasing the power partially in order to reduce the negative effect (compromise solution).\n\nTo increase the speed of an airplane, a new and more powerful engine is installed. This increases the weight of the airplane so the wings can no longer support it during takeoff. Increasing the wing size produces more drag, slowing the airplane down.\n\nPC Examples:\n\nLanding gear must be present on an airplane in order to land and takeoff. It should not be present during flight because of an increase in air drag. The physical contradiction is that the landing gear must be both present and absent. This contradiction is resolved by separating the requirements in time — make the landing gear retractable.\nFor high water diving, water must be “hard” to support the diver and “soft” so as not to injure the diver. The physical contradiction: The water must be hard and soft at the same time. This contradiction is resolved by separating the requirements in space: Saturate the water with air bubbles — the pool contains both air and water.\n… an inherent contradiction in takeout pizza products. The customer wants the pizza to be hot, but hot pizza gives off steam. As a result, the cardboard box lid absorbs the steam, softens, and collapses down on the pizza. When the customer lifts the lid of the pizza box after arriving home, some of the pizza, which has stuck to the lid, attaches to the raised lid and the customer is not pleased because a significant amount of the cheese that he paid for is not edible. We want the pizza to be hot for one reason (an enjoyable pizza) and we want it to be cold for another (preventing the lid from becoming soggy and collapsing due to steam and water absorption). The little plastic tripod that is in the center of many takeout pizzas was the subject of the talk I heard. Such a simple invention! It resolves the contradiction of the pizza being hot and cold at the same time. (Jack Hipple, The Ideal Result)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -465,7 +458,7 @@
     "text": "Thinking, Problem Solving, and Language\nHere is Albert Einstein speaking on The Language of Science. The transcript is here.PDF.\nOne quote from this short reading seems very apposite here:\n\n“The super-national character of scientific concepts and scientific language is due to the fact that they have been set up by the best brains of all countries and all times. In solitude, and yet in cooperative effort as regards the final effect, they created the spiritual tools for the technical revolutions which have transformed the life of mankind in the last centuries. Their system of concepts has served as a guide in the bewildering chaos of perceptions so that we learned to grasp general truths from particular observations.”",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -477,7 +470,7 @@
     "text": "References\n\nValeri Souchkov, Differentiating Among the Five Levels of Solutions,Web\nValeri Souchkov, “How to Define a Contradiction”, Web and PDF\nOpen Source TRIZ: TRIZ Power Tools: Formulating Contradictions: Webpage",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -489,7 +482,7 @@
     "text": "Additional Readings\n\nhttps://www.bbc.com/worklife/article/20201109-why-the-paradox-mindset-is-the-key-to-success\nhttps://hbr.org/2008/06/the-contradictions-that-drive-toyotas-success",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -501,7 +494,7 @@
     "text": "Footnotes\n\nClassical TRIZ started off with 39 Inventive Parameters. In recent years, the parameters have been increased to 48, after a study of an ever-increasing body of patent literature.↩︎",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - A Contradictory Language"
     ]
   },
@@ -513,7 +506,7 @@
     "text": "References\n\nhttps://the-trizjournal.com/altshullers-greatest-discovery-beyond/\nProject TETRIS: Chapter 3: Short Review of ARIZ: Algorithm for Innovative Problem Solving and a Case Study (PDF)\nProject TETRIS: Chapter 4: Substance-Field ( “Su-Field” ) Analysis and Standard Solutions basic notions and rules (PDF)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - Substance Field Analysis, and ARIZ"
     ]
   },
@@ -1204,7 +1197,7 @@
     "text": "Japanese Daisugi Method of Growing Timber",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1215,7 +1208,7 @@
     "text": "Inspiration\nThis is an extracted “kagga” from the famous Mankutimmmana Kagga by D V Gundappa. (Quoted to me in 1989 at Horanadu, by late friend B.S.Nagesh Rao, Digital Systems Division, ISRO Satellite Centre)\n\nhosa chiguru haLE bEru kUDiralu mara sogasu| hosa yukti haLe tatva-doDagUDe dharma|| RuShivaakyadoDane vij~jaanakale mELavise| jasavu janajIvanake - maMkutimma || 522 ||",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1226,7 +1219,7 @@
     "text": "Introduction\nCreative Problem Solving is a Process and can be taught and learnt. Brainstorming is utter BS. Post-Its are a great Invention, but a complete waste of time.\nThis is a (very opinionated) Contextual Enquiry Course on Creative Problem Solving , designed for the Foundation (freshman) year of a Bachelor’s Degree in Art and Design, at the Srishti Manipal Institute of Art, Design, and Technology, Bangalore, India.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1237,7 +1230,7 @@
     "text": "Abstract\nThis Unit takes students on a journey of understanding the process of Personal Creativity and Structured Innovation.\nWe begin by using the idea of Flow, as a pathway between ever-increasing (creative) Complexity and Boredom as defined by Csikszentmihalyi. Childhood Games will be examined to understand the aspects of Play and linked to and the idea of “Infinite Games” by James Carse and how Rule-Breaking in Play is an important step in enhancing personal creativity.\nBourdieu’s concept of Cultural Capital will be interpreted as one of the primary sources for an individual’s ideas, along with Csikzentmihalyi’s idea of the Creative Domain, Field and the Creative Individual. Tools for enhancing Cultural Capital will be introduced. The MBTI / Big 5 Tool will be used to understanding ourselves, our abilities, strengths, traits and differences from others.\nStructured heuristic techniques based on de Bono’s 6 Hat method will help us see how to perform Situational Analysis and Idea Generation, to help us take ideas from conception to execution. Reference will be made to Alex Osborn’s “Applied Imagination” methods and tied to the Big 5 results.\nAspects of the Systematic Russian Process of innovation and problem solving, TRIZ (Teoriya Resheniya Izobretatelskhikh Zadatch) invented by Genrikh Altshuller will be introduced. Alshuller’s idea of Generalized Problem Solving by borrowing ideas/memes from other Domains, his 8 Laws of Evolution of Products, and ( a few of ) the 40 Inventive Principles derived from his analysis of patents, will be covered in gamified fashion. These will be linked to with David Perkin’s (Harvard Project Zero) ideas and Edward de Bono’s methods to interpret, and design for, existing situations and products.\nAdvanced aspects of TRIZ such as Su-Field Analysis, the Laws of Product Evolution, and ARIZ will be introduced in gamefied fashion.\nField visits to product, food preparation, solar energy, and logistics companies will be used to bolster and demonstrate the unity of these concepts acquired in class. Technological assignments, and non-tech making and presenting tasks will also be used in class to create gamefied experiences for all of these.\nThe students will finally use the methods and ideas they have learnt and apply them in creating a project, artifact or performance of their own.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1248,7 +1241,7 @@
     "text": "Course Contents\nThe course will have some basic foundations from psychological and cognitive science foundations, on top of which will be built the edifice of Big Understandings, Dispostions, and Skills.\n\nFundamentals of Flow and Play as defined by Mihaly Csikszentmihalyi\nThinking Styles and how one appreciates the Problem Situation\nCultural Capital as a source of one’s Ideas\nGenes and Memes\nCognitive Biases and Functional Fixedness\nCultivating a Mentality of Resource(fulness)\nMetaphors as Gateways\nThe Six Thinking Hats Method and how to apply them in practice\nInnovative Problems Solving Methods like TRIZ , its philosophy, and techniques such as the TRIZ Contradiction Matrix and 40 Inventive Principles\nAdvanced TRIZ methods such as Substance-Field Analysis , 76 Scientific Principles , and the Laws of Product Evolution\nAnalysis of Hollywood Movies for manifestations of metaphoric problems and TRIZ methods\nBring your own Problem: A Final Culminating Problem-Solving Project\n\n\nWhy all this “Structure” to a course on Creativity?\nIsn’t Empathy Mapping-Brainstorming-Ideation-Iteration the core of the Design process? What is this new(?)-fangled structured TRIZ process thing?\nLet us see some short extracts from Herbert Simon’s landmark book, Sciences of the Artificial: (emphasis everywhere in the following is mine)\n\nChapter 5: The Science of Design: Creating the Artificial Historically and traditionally, it has been the task of the science disciplines to teach about natural things: how they are and how they work. It has been the task of engineering schools to teach about artificial things: how to make artifacts that have desired properties and how to design.\n\n\nEngineers are not the only professional designers. Everyone designs who devises courses of action aimed at changing existing situations into preferred ones. The intellectual activity that produces material artifacts is no different fundamentally from the one that prescribes remedies for a sick patient or the one that devises a new sales plan for a company or a social welfare policy for a state. Design, so construed, is the core of all professional training; it is the principal mark that distinguishes the professions from the sciences. Schools of engineering, as well as schools of architecture, business, education, law, and medicine, are all centrally concerned with the process of design.\n\n\nIn view of the key role of design in professional activity, it is ironic that in this century the natural sciences almost drove the sciences of the artificial from professional school curricula, a development that peaked about two or three decades after the Second World War. Engineering schools gradually became schools of physics and mathematics; medical school became schools of biological science; business schools became schools of finite mathematics.\n\n\nSuch a universal phenomenon must have had a basic cause. It did have a very obvious one. As professional schools, including the independent engineering schools, were more and more absorbed into the general cul- ture of the university, they hankered after academic respectability.\n\n\nIn terms of the prevailing norms, academic respectability calls for subject matter that is intellectually tough, analytic, formalizable, and teachable.\n\n\nIn the past much, if not most, of what we knew about design and about the artificial sciences was intellectually soft, intuitive, informal, and cookbooky.\n\nYeah. That’s why this course exists. To make Design tough, analytic, formalizable, and teachable learnable.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1259,7 +1252,7 @@
     "text": "References\n\nHerbert A. Simon. (1988). The Science of Design: Creating the Artificial. Design Issues, Vol. 4, No. 1/2, Designing the Immaterial Society (1988), pp. 67-82.Stable URL: http://www.jstor.org/stable/1511391\nPrekshaa.(December 2019) The Making of Mankutimmana Kagga. https://www.prekshaa.in/article/making-mankutimmana-kagga",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1270,7 +1263,7 @@
     "text": "Course Materials and Modules",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers"
+      "The Model of the Story"
     ]
   },
   {
@@ -1281,7 +1274,7 @@
     "text": "Introduction\n\nLaws of Product Evolution\n8 directions\nRadar Chart in R\nFind Opportunities based on Radar Chart",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Laws of Evolution"
     ]
   },
@@ -1293,7 +1286,7 @@
     "text": "Laws of Product Evolution\n\nLaw of completeness of the system: Systems derive from synthesis of separate parts into a functional system.\nLaw of energy transfer in the system: Shaft, gears, magnetic fields, charged particles, which are the heart of many inventive problems.\nLaw of increasing ideality: Function is created with minimum complexity, which can be considered a ratio of system usefulness to its harmful effects. The ideal system has the desired outputs with no harmful effects, i.e., no machine, just the function(s).\nLaw of harmonization: Transferring energy more efficiently.\nLaw of uneven development of parts: Not all parts evolve at the same pace. The least will limit the overall system\nLaw of transition to a super system: Solution system becomes subsystem of larger system.\nLaw of Transition from Macro to Micro: Using physically smaller solutions, e.g., electronic tubes to chips.\nLaw of Increasing Substance-Field Involvement: Viewing and modeling systems as composed of two substances interacting through a field.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Laws of Evolution"
     ]
   },
@@ -1305,7 +1298,7 @@
     "text": "How Would you Redesign this Product\nTBD. Plot a set of Radar charts showing different stages of evolution of well known product lines. Obsolete products are even more interesting.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Laws of Evolution"
     ]
   },
@@ -1317,7 +1310,7 @@
     "text": "References\n\nProject TETRIS: Chapter 2: Laws of System Evolution (PDF)\nProject TETRIS: Chapter 5: Techniques to Resolve Contradictions / Resources / Effects (PDF)\nProject TETRIS: Examples of inventive problems: Example 1-5 (RAR Archive File)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Laws of Evolution"
     ]
   },
@@ -1329,7 +1322,7 @@
     "text": "Ideal Final Result: Game\nTBD",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Ideal Final Result"
     ]
   },
@@ -1341,7 +1334,7 @@
     "text": "Discussion\nLike the Queen in Alice in Wonderland, it is important to conceptualize the Ideal Final Result as one of the six impossible things before breakfast. As Jack Hipple says in his book The Ideal Result ( Reference 3), it’s when something performs its function, and does not exist.\nIn this sense, TRIZ is a foretaste of what was said much later after TRIZ was invented, that the best Technologies are those that disappear.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Ideal Final Result"
     ]
   },
@@ -1353,7 +1346,7 @@
     "text": "References\n\nTitanic Game (PDF)\nStan Kaplan, An Introduction to TRIZ(PDF) This is a simple and short introduction to all aspects of Classical TRIZ.\nJack Hipple, “The Ideal Result: What it is and how to achieve it”, Springer, 2012.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Ideal Final Result"
     ]
   },
@@ -1407,7 +1400,7 @@
     "text": "Introduction\nWe will understand Pierre Bourdieu’s Concept of Cultural Capital(CC).\nCC affects our view of the world and helps us identify Problem Situations and Contradictions in Life.\n\nWhat is Cultural Capital? https://culturallearningalliance.org.uk/what-is-cultural-capital\n\nCultural Capital",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am What I yam"
     ]
   },
@@ -1419,7 +1412,7 @@
     "text": "Activities\nSharing\n\nSharing of CC: we will each of us take turns to reveal some aspect of Cultural Capital that we directly possess: Objectified, Institutional, and Embodied\n\n\n\nWhat is something that replicates from generation to generation, biologically?\nIs there something that replicates “non-biologically”?\nHow would you measure that? In what units, so to speak?\nRe-Inventing your Own Game\n\nYou will be divided into Teams. Each Team needs to chose a wellknown parlour/household or board game from your childhood. Set it up and play it.\nThen, you will be given a piece of Electronic Hardware called a Makey-Makey. You will need to include this hardware in your Game and extend the Game in a certain way.\n\n\n\n\n\n\n\nNoteTRIZ Concept: Su-Field Analysis\n\n\n\nWe will later tie this activity to the TRIZ idea of Substance-Field Analysis. Perhaps you have a premonitory idea about this already?\n\n\nInventing your City\n\nMaking a Street Intersection Logo\n\nLet us take inspiration from this website: https://www.cartogrammar.com/blog/maps-make-the-best-logos/\n\nHere are some instructions:\n\n\n\nVisit your home town on Google Maps\nSelect a specific STREET INTERSECTION there.\nCopy paste the Shape of the Street Intersection into your favourite image making software\nCreate A LOGO for your city, using the Shape, such that you show off some interesting aspects of your City, based on your own CULTURAL CAPITAL.\nThree sentences to describe your Logo.\nSee examples at the link above for inspiration\n\n\n\n\n\n\n\nNoteSerendipity\n\n\n\nThis course is about nothing if not about serendipity. https://www.dictionary.com/browse/serendipity. We will connect this logo building idea with the idea of Metaphors in TRIZ.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am What I yam"
     ]
   },
@@ -1431,7 +1424,7 @@
     "text": "References\n\nWeb Apps for your Makey-Makey. https://makeymakey.com/blogs/how-to-instructions/apps-for-plug-and-play\nMake your own game with a Makey-Makey. https://www.instructables.com/Using-Scratch-and-Makey-Makey-to-make-your-own-gam\nRichard Dawkins. The Selfish Gene. https://richarddawkins.net/2014/02/whats-in-a-meme/",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I am What I yam"
     ]
   },
@@ -1443,7 +1436,7 @@
     "text": "The Creativity Systems Model\n\n\n\n\n\n\n\nMihaly Csikszentmihalyi\n\n\n\nMihaly Csikszentmihalyi created what he called a Systems Model for Creativity, shown in the Figure below.\n\n\n\n\n\n\n\n\nHere are some brief extracts from his book[Reference 1]\n\nMany of these books and articles have tried to answer what has been thought to be the most fundamental question: What is creativity? But no one has raised the simple question that should precede attempts at defining, measuring, or enhancing, namely: Where is creativity? On hearing this question, most people would answer “Why, in the creative person’s head, of course”.\n\n\nAfter studying creativity on and off for almost a quarter of a century, I have come to the reluctant conclusion that this is not the case. We cannot study creativity by isolating individuals and their works from the social and historical milieu in which their actions are carried out.\n\n\nThis is because what we call creative is never the result of individual action alone; it is the product of three main shaping forces:\n\na set of social institutions, or field, that selects from the variations produced by individuals those that are worth preserving;\n\na stable cultural domain that will preserve and transmit the selected new ideas or forms to the following generations;\n\nand finally the individual, who brings about some change in the domain, a change that the field will consider to be creative.\n\n\n\nSo the question “Where is creativity?” cannot be answered solely with reference to the person and the person’s work. Creativity is a phenomenon that results from interaction between these three systems. Without a culturally defined domain of action in which innovation is possible, the person cannot even get started. And without a group of peers to evaluate and confirm the adaptiveness of the innovation, it is impossible to differentiate what is creative from what is simply statistically improbable or bizarre.\n\n\nIf we think about it, the reason we believe that Leonardo or Einstein was creative is that we have read that that is the case, we have been told it is true; our opinions about who is creative and why ultimately are based on faith. We have faith in the domains of art and science, and we trust the judgment of the field, that is, of the artistic and scientific establishments. There is nothing wrong with this, because it is an inevitable situation. But by recognizing it, we must also accept some of its consequences, namely, that any attribution of creativity must be relative, grounded only in social agreement.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Connect therefore I am"
     ]
   },
@@ -1455,7 +1448,7 @@
     "text": "Discussion\nWhat are the salient points in this model?\n\nA rather “societal” view of creativity! Rather than a psychic view!\n\nThe influence of environment and people around the individual\n\nA defined domain of work, with a defined language to discuss its ideas and concepts.\nThe “evaluation” of the creative act by field members, who act as gatekeepers\n\nIs this nonplussing? Contrary to what you believe? Outright disturbing?\nI think this is immensely reassuring and humbling at the same time: reassuring because a creative act can be performed by anybody, not some arbitrarily defined “gifted individual”, and humbling, because if field members don’t like your act, or if you don’t have access to the field, you might not make it. It is fair and unfair, but immensely real.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Connect therefore I am"
     ]
   },
@@ -1467,7 +1460,7 @@
     "text": "Why this Model matters to us\nAs we will see later in this course, classical TRIZ was developed by Genrikh Altshuller based on an evaluation of more than 25000 patents. He found “design patterns” that had been repeatedly used across patents and classified them for our use. There is a strong sense of history and society right at the heart of TRIZ.\nFurther, the patents the study of which helped Altshuller create TRIZ in the first place belong with domains that we may not necessarily encounter. And yet, the Principles of TRIZ straddle domains and help “cross-domain” solutions to happen: the use of principles in one domain in another, unrelated, domain. (More when we enter TRIZ proper)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Connect therefore I am"
     ]
   },
@@ -1479,7 +1472,7 @@
     "text": "Some Examples from History\n\nBotticelli was for centuries considered to be a coarse painter, and the women he painted “sickly” and “clumsy”. Only in the mid-nineteenth century did some critics begin to reevaluate his work and see in it creative anticipations of modern sensibility. To what extent was creativity contained in Botticelli’s canvases, and to what extent did it emerge from the interpretive efforts of critics like Ruskin?\n\n\n…our view of Mendel’s contribution to genetics is generally quite wrong. The impression we have is that Mendel made a series of epochal experiments in the genetic transmission of traits in the 1860s, but that his creativity was not recognized by the scientific community until about 40 years later. This view is radically mistaken in a subtle but essential respect. (Brannigan) argues that Mendel’s experiments were not and could not have been contributions to genetics at the time they were made. Their implications for the theory of variation and natural selection were discovered only in 1900 by William Bateson and other evolutionists looking for a mechanism that explained discontinuous inheritance. Within their theoretical framework, Mendel’s work suddenly acquired an importance that it had lacked before, even in the mind of Mendel himself.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Connect therefore I am"
     ]
   },
@@ -1491,7 +1484,7 @@
     "text": "References\n\nMihaly Csikszentmihalyi, The Systems Model of Creativity: The Collected Works of Mihaly Csikszentmihalyi, ISBN:9789401790857, Springer, 2015.\nOliver Ding, “Platform Creativity: Domain, Field, and Person”, https://medium.com/call4/domain-8a22b6b486f4\nJessica Wolf,UCLA Newsroom, The truth about Galileo and his conflict with the Catholic Church, https://newsroom.ucla.edu/releases/the-truth-about-galileo-and-his-conflict-with-the-catholic-church",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "I Connect therefore I am"
     ]
   },
@@ -1503,7 +1496,7 @@
     "text": "Introduction\n\nThe Year of Magical Thinking is Joan Didion’s account of the year following the death of her husband, writer John Gregory Dunne, and her attempts to make sense of her grief while tending to the severe illness of her adopted daughter, Quintana. As she tries to make sense of John’s death and her own changed identity, Didion discovers that grief is not what she expected it to be. Consumed by memories of the years they lived in Los Angeles, shortly after they married and adopted Quintana, Didion feels that she has entered a state of temporary insanity. Though cool and collected on the surface, she begins to believe that her wishes might have the power to bring John back. To this end, she refuses to give away his clothes and shoes, believing that her husband will need them when he returns to her. She calls this childlike belief that her thoughts and wishes can alter reality “magical thinking.”\n\nOf course we are not embarked on anything like this, but we do want to generate some “magic” in our thoughts! So taking some inspiration from her “childlike belief” that can “alter reality”, let us hark back to our childhoods and see what we can do with these objects below:",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "A Year of Metaphoric Thinking"
     ]
   },
@@ -1515,7 +1508,7 @@
     "text": "Activities\nActivity-1: Some Objects to Contemplate\nHow many different uses can you imagine for each of these objects? Can you briefly describe and quickly sketch a few ideas?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity-2: Some Shapes to Contemplate\nWhere do you reckon you can “see” these shapes ? Can you briefly describe and quickly sketch a few ideas?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScoring your Ideas\nScoring is comprised of four components:\n\n\nFluency - total. Just add up all the responses. In this example it is 6.\n\nFlexibility - or different categories of ideas or, as Csikszentmihalyi would have us say, DOMAINS. Is your brick a Toy? Can it be used as…a Horticultural support thing? That is two domains, so two points.\n\n\n\nFrom https://houseplantjoy.com/bonsai-styles-fascinating-facts-about-bonsai-forms/\n\n\n\nElaboration - amount of detail (for Example: “in a bonsai” = 0, whereas “in a bonsai to create a root-over-rock structure as an island” = 2 (one for root-over-rock, two for further detail about the island structure).\n\nOriginality - each response it compared to the total amount of responses from all of the people you gave the test to. Responses that were given by only 5% of your group are unusual (1 point), responses that were given by only 1% of your group are unique - 2 points). Total all the points. Higher scores indicate creativity*\n\n\n\n\n\n\n\nNote\n\n\n\nYou might have noticed that the higher fluency the higher the originality (if you did “good for you!”) This is a contamination problem and can be corrected by using a corrective calculation for originality (originality = originality/fluency).\n\n\nDiscussion\nBoth these activities are examples of exercises in divergent thinking. See the references for more information.\n\nDid you use the words “as” and “like” to describe your ideas?\nDid you not use these words to describe your ideas?\nWere there, in your opinion, any outrageous ideas presented? Why were they outrageous?\nAre metaphors more interesting when they are surprising?\nHow did the attributes of the objects ( shape , texture, size, weight, orientation…) get embedded in the ideas presented?\nWere these “embeddings” meaningful? How and why so? (Ask Bourdieu!)\nActivity-3: Gangs of Wasseypur\nWe will divide into two groups (four if necessary) and contemplate a brief description of the town of Wasseypur. There are 4 short questions / problems for you to consider at the end.\nActivity-4: Seymour Papert Constructionism Game\nhttps://arvindvenkatadri.com/courses/1-play-and-invent/modules/50-metaphoric-thinking/#activity-4-seymour-papert-constructionism-game-1\nActivity-5: C’est ne une Pipe\n\nWe will break up into groups of 4-5.\nEach group will be given a household object, perhaps an unusual one.\nYou need to imagine a use for it that is not what is the common known one.\nMarket it as a product that serves this new purpose. Make an ad.\nUse only Gen Z language in your ad.\nAd = Performance/Jingle + Poster\n\n(Articles: Book End made of Wood; Aristo Slide Rule; 80-year-old brass mortar and pestle; Node from Elephant Bamboo stem)\nActivity-6: Metaphorical Story re-Writing\n\nRead the story in Ref. 7 below.\nUnderstand the metaphors in the story:\n\nWhat is the story about?\nWhat “metaphorical language” has Joshua Ferris used to describe the characters, their actions, and the results of their actions?\nWhat is the domain of these metaphors in the story?\n\n\nNow, choose a (short!) story that you know really well, something that you may have encountered in school.\nRe-write this story using language, metaphors, and images from any domain (other than what may be in the original story).\n\nFor example, in Primo Levi’s lyrical story Carbon, a lot of metaphors from Chemistry and atomic physics are used to describe life, and connections with people.",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "A Year of Metaphoric Thinking"
     ]
   },
@@ -1527,7 +1520,7 @@
     "text": "References\n\nGuilford Test for Divergent Thinking: (Weblink)\nWallas-Kogan Test for Divergent Thinking: (Weblink)\nThibodeau, Paul & Boroditsky, Lera. (2011). Metaphors We Think With: The Role of Metaphor in Reasoning. PloS one. 6. e16782. 10.1371/journal.pone.0016782. (PDF)\nBobo Hjort. (2003) Drawing, Knowledge, and Intuitive Thinking: Drawing as a Way to Understand and Solve Complex Problems in Art and Complexity. J. Casti and A. Karlqvist (editors) © 2003 Published by Elsevier Science B.V.(PDF)\nDavid Chen, Creative Paradoxical Thinking and Its Implications for Teaching and Learning Motor Skills (PDF)\nHolyoak and Thagard, The Analogical Mind, (PDF)\nJoshua Ferris, The Market Value of my Father, a metaphorical Short Story. (Web Link)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "A Year of Metaphoric Thinking"
     ]
   },
@@ -1539,7 +1532,7 @@
     "text": "Project TETRIS TRIZ Videos\nLet us get an actual experience of TRIZ methods with these short videos:\n\n\nHistory of TRIZ\n \n\n\nTRIZ Tales: Nina at School\n \n\n\nTRIZ Tales: Nina at University\n\n\n\n\nTRIZ Tales: Nina at Work #1 \n\n\n\n\nTRIZ Tales: Nina at Work #2 \n\n\n\nHow to use the Contradiction Matrix:(Coursera Video)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Contradiction Matrix Workflow"
     ]
   },
@@ -1551,7 +1544,7 @@
     "text": "A TRIZ Workflow\nWe have seen\n\nHow to examine a Situation\n\nUse the Ishikawa Diagram to find Knobs and Settings\nFind one or more Administrative Contradictions\n\nState the Ideal Final Result\n\nConvert the AC into a TC with 39 TRIZ Parameters\n\n(Convert the AC into a PC)\n\nNow we will use the TC and find out solutions for it using what is called the Contradiction Matrix. Here is a workflow presentation below:https://arvindvenkatadri.com/slides/playandinvent/triz-basics/#1\"",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Contradiction Matrix Workflow"
     ]
   },
@@ -1563,7 +1556,7 @@
     "text": "TRIZ Stories and Case Studies!!\nWant to create a good protest or strike? Or simply want to clean up the oceans?\nhttps://arvindvenkatadri.com/slides/playandinvent/triz-database/#1\"",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Contradiction Matrix Workflow"
     ]
   },
@@ -1575,7 +1568,7 @@
     "text": "The TRIZ Contradiction Matrix\n\nThe TRIZ Contradiction Matrix (2003) (Matrix)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Contradiction Matrix Workflow"
     ]
   },
@@ -1587,8 +1580,15 @@
     "text": "References\n\nPizza Box https://www.metodolog.ru/triz-journal/archives/2008/03/04/\nTRIZ for Dummies Cheat Sheet (weblink)\nTRIZ Inventive Principles in Pics @instagram: https://www.instagram.com/stories/highlights/17857566926043828/\nStan Kaplan, An Introduction to TRIZ(PDF) This is a simple and short introduction to all aspects of Classical TRIZ.\nJack Hipple, “The Ideal Result: What it is and how to achive it”, Springer, 2012.\nProject TETRIS: Chapter 1: Introduction to Classical TRIZ (PDF)\nProject TETRIS: Chapter 5: Techniques to Resolve Contradictions / Resources / Effects (PDF)\nProject TETRIS: Examples of inventive problems: Example 1-5 (RAR Archive File)",
     "crumbs": [
       "Home",
-      "TRIZ for Problem Solvers",
+      "The Model of the Story",
       "TRIZ - The Contradiction Matrix Workflow"
     ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arvind V.",
+    "section": "",
+    "text": "I’m an an external Faculty Member at the Srishti Manipal Institute of Art, Design, and Technology (SMI), in Bangalore, INDIA. I am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nTo get started, you can check out my courses on this website.\nMy teaching websites are:\n\n\nThe Mad Hatter’s Guide to Data Viz and Stats in R (This one!!)\nModel Thinking in Design\n\nTRIZ for Problem Solvers\n\nLiterary Jukebox: Design Thinking from Short Fiction\n\nMaths for Creative Coders\n\n\nMy student portfolios are here:\nhttps://we-r-us.netlify.app/portfolio/\nhttps://form-and-structure.netlify.app/portfolio/\n\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!\n\n\n Back to top"
   }
 ]
