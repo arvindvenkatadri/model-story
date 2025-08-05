@@ -29,7 +29,7 @@ My teaching websites are:\
 - [The Mad Hatter's Guide to Data Viz and Stats in R](https:://madhatterguide.netlify.app)\ 
 - [TRIZ for Problem Solvers](https://teaching-triz.netlify.app)\
 - [Literary Jukebox: Design Thinking from Short Fiction](https://literary-jukebox.netlify.app)\
-- [Maths for Creative Coders](https://mathsforcoders.netlify.app)\
+- [Maths for Creative Coders](https://mathforcoders.netlify.app)\
 
 My student portfolios are here:\
 <https://we-r-us.netlify.app/portfolio/>\
