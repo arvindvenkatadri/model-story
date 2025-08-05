@@ -1,8 +1,8 @@
 {
-  "hash": "0c50a55c03cf0457385cfebc28e0112e",
+  "hash": "53b8c33144f405b2be1ca62e7a5a0b96",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"\\U0001F579 The Road Not Taken\"\nsubtitle: \"Path Dependence in Human Experience\"\ndate: \"2024-02-17\"\ndate-modified: \"2025-07-30\"\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\nweight: 110\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](featured.jpg){fig-align='center' fig-alt='Petr Slováček on Unsplash' width=192}\n:::\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nBruce Hornsby The Road Not Taken\\\nRobert Frost\\\nScott Adams\\\n",
+    "markdown": "---\ntitle: \"\\U0001F579 The Road Not Taken\"\nsubtitle: \"Path Dependence in Human Experience\"\ndate: \"2024-02-17\"\ndate-modified: \"2025-08-05\"\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 110\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![Petr Slováček on Unsplash](featured.jpg){fig-align='center' fig-alt='Petr Slováček on Unsplash' width=100%}\n:::\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nBruce Hornsby The Road Not Taken\\\nRobert Frost\\\nScott Adams\\\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

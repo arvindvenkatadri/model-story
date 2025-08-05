@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.11">
-
+<meta name="generator" content="quarto-1.7.32">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="dcterms.date" content="2021-08-12">
-
-<title>🌲 Algorithmic Trees, L-Systems and Kolams – The Old Tortoise: The Model of the Story</title>
+<title>🌲 Algorithmic Trees, L-Systems and Kolams – Old Tortoise Taught Us: The Model of the Story</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +20,6 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-
 <script src="../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../../../../site_libs/clipboard/clipboard.min.js"></script>
@@ -36,19 +32,20 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
 <script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b6495f7ddc21fa4b617d4bbc77b8bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-1b3e43c72e8be34557c75123b0b69e0d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-bf389d51471279d1e0a705a5c749840e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-5fb089b95172d02fb44ac9b9517e8538.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
 <script src="../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
-<link href="../../../../../site_libs/quarto-contrib/tachyons-4.12.0/tachyons.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
+<script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../../../../../site_libs/quarto-contrib/tachyons-4.12.0/tachyons.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -74,34 +71,29 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-<style>html{ scroll-behavior: smooth; }</style>
-
-
-<link rel="stylesheet" href="../../../../../css/fira.css">
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<link href="../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../../../../../css/fira.css">
 <link rel="stylesheet" href="../../../../../css/roboto-condensed.css">
 <link rel="stylesheet" href="../../../../../css/vollkorn.css">
 <link rel="stylesheet" href="../../../../../css/fraunces.css">
 <link rel="stylesheet" href="../../../../../css/styles.css">
-<meta property="og:title" content="🌲 Algorithmic Trees, L-Systems and Kolams – The Old Tortoise: The Model of the Story">
+<meta property="og:title" content="🌲 Algorithmic Trees, L-Systems and Kolams – Old Tortoise Taught Us: The Model of the Story">
 <meta property="og:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
 <meta property="og:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/9-L-Systems/featured.jpg">
-<meta property="og:site_name" content="The Old Tortoise: The Model of the Story">
-<meta name="twitter:title" content="🌲 Algorithmic Trees, L-Systems and Kolams – The Old Tortoise: The Model of the Story">
+<meta property="og:site_name" content="Old Tortoise Taught Us: The Model of the Story">
+<meta name="twitter:title" content="🌲 Algorithmic Trees, L-Systems and Kolams – Old Tortoise Taught Us: The Model of the Story">
 <meta name="twitter:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
 <meta name="twitter:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/9-L-Systems/featured.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../../index.html">
-    <span class="navbar-title">The Old Tortoise: The Model of the Story</span>
+    <span class="navbar-title">Old Tortoise Taught Us: The Model of the Story</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -110,17 +102,13 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link active" href="../../../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
     <a class="nav-link" href="https://github.com/arvindvenkatadri/model-story"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -141,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -150,9 +138,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -163,16 +149,11 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../../../../../index.html" class="sidebar-logo-link">
-      <img src="../../../../../content/materials/images/1book25.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
+      <img src="../../../../../content/materials/images/1book33.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -181,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
+<li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../../../content/courses/ModelStory/listing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Model of the Story</span></a>
@@ -189,8 +170,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/1-Company-Heroes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🦸 The Company of Heroes</span></a>
@@ -276,35 +257,31 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/100-Resources/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../content/courses/ModelStory/Modules/300-Resources/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎶 Resources and Notes to Myself</span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#an-introduction-to-l-systems" id="toc-an-introduction-to-l-systems" class="nav-link active" data-scroll-target="#an-introduction-to-l-systems">An Introduction to L-Systems</a></li>
-  <li><a href="#resources-for-kolam-art" id="toc-resources-for-kolam-art" class="nav-link" data-scroll-target="#resources-for-kolam-art">Resources for Kolam Art</a>
+<li><a href="#an-introduction-to-l-systems" id="toc-an-introduction-to-l-systems" class="nav-link active" data-scroll-target="#an-introduction-to-l-systems">An Introduction to L-Systems</a></li>
+  <li>
+<a href="#resources-for-kolam-art" id="toc-resources-for-kolam-art" class="nav-link" data-scroll-target="#resources-for-kolam-art">Resources for Kolam Art</a>
   <ul class="collapse">
-  <li><a href="#symmetry" id="toc-symmetry" class="nav-link" data-scroll-target="#symmetry">Symmetry</a></li>
-  </ul></li>
+<li><a href="#symmetry" id="toc-symmetry" class="nav-link" data-scroll-target="#symmetry">Symmetry</a></li>
   </ul>
-</nav>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/Modules/9-L-Systems/index.html">🌲 Algorithmic Trees, L-Systems and Kolams</a></li></ol></nav>
-<div class="quarto-title">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../content/courses/ModelStory/Modules/9-L-Systems/index.html">🌲 Algorithmic Trees, L-Systems and Kolams</a></li></ol></nav><div class="quarto-title">
 <h1 class="title">🌲 Algorithmic Trees, L-Systems and Kolams</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Algorithmic Trees</div>
@@ -327,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">Invalid Date</p>
+      <p class="date-modified">August 5, 2025</p>
     </div>
   </div>
     
@@ -335,19 +312,28 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
-
-
-<p>WORK IN PROGRESS!! <img src="featured.jpg" class="img-fluid"></p>
+</header><p>WORK IN PROGRESS!!</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></a></p>
+</figure>
+</div>
+</div>
+</div>
 <p>Trees are fractal in nature, meaning that patterns created by the large structures, such as the main branches, repeat themselves in smaller structures, such as smaller branches…. a universal growth pattern first observed by Leonardo da Vinci 500 years ago: a simple yet startling relationship that always holds between the size of a tree’s trunk and sizes of its branches.</p>
-<p><img src="https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg" class="img-fluid"> <a href="https://www.insidescience.org/news/uncovering-da-vincis-rule-trees">(Image Courtesy Christophe Eloy | University of Provence)</a></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg" class="quarto-figure quarto-figure-center figure-img" alt="Coutesy Cristophe Eloy | University of Provence" width="450" height="250"></a></p>
+</figure>
+</div>
+</div>
+</div>
 <p>Let us see how we can create <strong>“Algorithmic Trees”</strong>.</p>
-<section id="an-introduction-to-l-systems" class="level2">
-<h2 class="anchored" data-anchor-id="an-introduction-to-l-systems">An Introduction to L-Systems</h2>
+<section id="an-introduction-to-l-systems" class="level2"><h2 class="anchored" data-anchor-id="an-introduction-to-l-systems">An Introduction to L-Systems</h2>
 <p>https://cgjennings.ca/articles/l-systems/</p>
-</section>
-<section id="resources-for-kolam-art" class="level2">
-<h2 class="anchored" data-anchor-id="resources-for-kolam-art">Resources for Kolam Art</h2>
+</section><section id="resources-for-kolam-art" class="level2"><h2 class="anchored" data-anchor-id="resources-for-kolam-art">Resources for Kolam Art</h2>
 <p>Attached Files:<br>
 File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile based Kolam.pdf (688.669 KB) 1) Marcia Ascher: The Kolam Tradition</p>
 <p>This is a very readable intro to Kolam, the threshold art form from Tamil Nadu.</p>
@@ -358,8 +344,7 @@ File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile b
 <p>This is an alternative way, of using permutations of simple “Tiles” that can be used to alphabetically form a Kolam. ( This is also briefly touched upon in MArcia Ascher’s paper).</p>
 <p>Saty Raghavachary is Professor of Computer Science at U of Southern California.</p>
 <p>Also take a look a the 2 minute video on kolam at his website: https://satysfactory.blogspot.in/2009/01/kolams.html</p>
-<section id="symmetry" class="level3">
-<h3 class="anchored" data-anchor-id="symmetry">Symmetry</h3>
+<section id="symmetry" class="level3"><h3 class="anchored" data-anchor-id="symmetry">Symmetry</h3>
 <p>W5 - D1 - Thomas Edward Brown and Elizabeth Barrett Browning 1) Thomas Edward Brown</p>
 <p>https://www.thewayofbeauty.org/blog/2012/09/a-garden-is-a-lovesome-thing-god-wot</p>
 <p>if you have heard of the word “godwottery”, it came from this poem.</p>
@@ -370,11 +355,7 @@ File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile b
 <p>https://mathstat.slu.edu/escher/index.php/Introduction_to_Symmetry</p>
 
 
-</section>
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -779,9 +760,7 @@ File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile b
       }
     }
   });
-  </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="../../../../../content/courses/ModelStory/Modules/8-Fractals/index.html" class="pagination-link" aria-label="🌵 Fractals">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🌵 Fractals</span>
       </a>          
@@ -793,8 +772,7 @@ File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile b
   </div>
 </nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
 <p>License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 </div>   
@@ -805,9 +783,38 @@ File Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty Raghupathy - Tile b
 <p>Hosted by Netlify <a href="https://www.netlify.com"><iconify-icon inline="" icon="simple-icons:netlify" aria-label="Icon netlify from simple-icons Iconify.design set." title="Icon netlify from simple-icons Iconify.design set."></iconify-icon></a>.</p>
 </div>
   </div>
-</footer>
-
-
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 <script src="../../../../../site_libs/quarto-html/zenscroll-min.js"></script>

@@ -55,8 +55,10 @@ The Game consists of:
 What strategies are possible as a bowler in Cricket? As a batsman? What
 strategies are **permitted**? By whom?
 
-```{r, out.width = "350px",out.height = "300px", echo=FALSE}
+```{r, out.width = "350px",out.height = "300px", echo=FALSE, fig.align='center'}
+
 knitr::include_graphics("rishabh.jpg")
+
 ```
 
 ## The Game of Trust

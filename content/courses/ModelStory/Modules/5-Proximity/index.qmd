@@ -37,7 +37,7 @@ library(bsplus)
 
 Have you heard of a painter called Wassily Kandinksy?
 
-```{r, echo=FALSE, out.width= 450}
+```{r, echo=FALSE, out.width = "300px", out.height = "300px", fig.align='center'}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/8/8a/Vassily-Kandinsky.jpeg")
 ```
 

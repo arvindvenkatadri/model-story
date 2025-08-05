@@ -55,6 +55,7 @@ acessible, book on Network Science, available online
 5.  We will plot this conversation on the board. How?
 
 {{< vimeo 191074419 >}}
+<br>
 
 Discussion:
 `Network Mechanisms, Information Flow, Giant Component, Emergence`
@@ -79,6 +80,7 @@ Degrees of Separation...or of Kevin Bacon?
 Look at this video before you proceed!
 
 {{< vimeo 14196818 >}}
+<br>
 
 1.  Collect friends Data from across college/class, import and plot,
     analyze and comment

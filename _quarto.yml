@@ -20,7 +20,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
     right:
       - icon: github
         href: https://github.com/arvindvenkatadri/model-story
@@ -36,7 +35,7 @@ website:
     alignment: left
     collapse-level: 2
     search: true
-    logo: "content/materials/images/1book25.jpg"
+    logo: "content/materials/images/1book33.jpg"
     contents:
       - section: "The Model of the Story"
         href: content/courses/ModelStory/listing.qmd
@@ -55,7 +54,7 @@ website:
           - content/courses/ModelStory/Modules/10-Sound/index.qmd
           - content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.qmd
           - content/courses/ModelStory/Modules/12-Symmetry/index.qmd
-          - content/courses/ModelStory/Modules/100-Resources/index.qmd
+          - content/courses/ModelStory/Modules/300-Resources/index.qmd
           
   page-footer:
     center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."
@@ -69,7 +68,7 @@ website:
   open-graph: true
   search: true
   twitter-card: true
-  title: "The Old Tortoise: The Model of the Story"
+  title: "Old Tortoise Taught Us: The Model of the Story"
   site-url: "https://old-tortoise-taught-us.netlify.app"
   repo-url: ""
   description: "This is Arvind V.'s website for teaching Math Models in Design Thinking"
@@ -116,7 +115,7 @@ format:
     reference-location: document
     cap-location: bottom
     df-print: paged
-    fig-align: center
+    #fig-align: center
     fig-cap-location: bottom
     fig-dpi: 300
     fig-responsive: true

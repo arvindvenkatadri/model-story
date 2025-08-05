@@ -14,7 +14,7 @@ categories:
 image: "featured.jpg"
 ---
 
-![](featured.jpg) WORK IN PROGRESS!!
+WORK IN PROGRESS!!
 
 ## The Solitary Reaper
 

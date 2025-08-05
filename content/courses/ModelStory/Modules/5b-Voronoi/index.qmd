@@ -333,7 +333,11 @@ characters with flags are the first letter of a new word. The message is
 translated in the story as "Am here, Abe Slaney".
 
 The entire **code alphabet** is shown in the figure below:
-![](images/dancing-men-cipher-overview.png)
+```{r, echo=FALSE, out.width = "300px", out.height = "300px", fig.align='center'}
+knitr::include_graphics("images/dancing-men-cipher-overview.png")
+
+```
+
 
 This code is a good example of a <u>[**Substitution
 Cipher**](https://www.geeksforgeeks.org/substitution-cipher/)</u> with

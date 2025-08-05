@@ -7,11 +7,13 @@ listing:
   sort-ui: false
   filter-ui: false
   contents: 
-    - "TRIZ4ProbSolving/listing.qmd"
+    - "ModelStory/listing.qmd"
   fields: [image, title, subtitle, date]
   table-striped: true
   table-hover: true
   categories: true
 ---
+
+I don't reference this file anywhere on the website, so it is irrelevant. 
 
 

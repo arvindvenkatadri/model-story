@@ -11,7 +11,17 @@ categories:
 
 ---
 
-WORK IN PROGRESS!! ![](featured.jpg)
+WORK IN PROGRESS!! 
+
+```{r}
+#| echo: false
+#| fig-align: 'center'
+#| out-width: "360px"
+
+knitr::include_graphics("featured.jpg")
+
+```
+
 
 Trees are fractal in nature, meaning that patterns created by the large
 structures, such as the main branches, repeat themselves in smaller
@@ -20,9 +30,11 @@ first observed by Leonardo da Vinci 500 years ago: a simple yet
 startling relationship that always holds between the size of a tree's
 trunk and sizes of its branches.
 
-![](https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg)
-[(Image Courtesy Christophe Eloy \| University of
-Provence)](https://www.insidescience.org/news/uncovering-da-vincis-rule-trees)
+```{r, out.width = "450px",out.height = "250px", echo=FALSE, fig.align='center', fig.alt= "Coutesy Cristophe Eloy | University of Provence"}
+
+knitr::include_graphics("https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg")
+
+```
 
 Let us see how we can create **"Algorithmic Trees"**.
 

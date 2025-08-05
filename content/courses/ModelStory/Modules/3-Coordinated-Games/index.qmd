@@ -16,7 +16,12 @@ library(blogdown)
 
 #### Which Stranger Am I Talking with Today?
 
-![](featured.jpg)
+```{r, out.width = "360px",out.height = "360px", echo=FALSE, fig.align='center'}
+
+knitr::include_graphics("featured.jpg")
+
+```
+
 
 ## Introduction
 

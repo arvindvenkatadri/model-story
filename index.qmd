@@ -23,12 +23,10 @@ Data Visualization, Complexity Science, and Creative Thinking and
 Problem Solving with TRIZ. On this website, I share my course materials
 and methods. I also blog about TRIZ and Data Science on occasion.
 
-To get started, you can check out my courses on this website. 
-
 My teaching websites are:\
 
-- [The Mad Hatter's Guide to Data Viz and Stats in R](https:://madhatterguide.netlify.app)\ (This one!!)
-- [Model Thinking in Design](https://arvindvenkatadri.com/teaching/3-order-and-chaos/)\
+- [Model Thinking in Design](https://old-tortoise-taught-us.netlify.app)\ (This one!!)
+- [The Mad Hatter's Guide to Data Viz and Stats in R](https:://madhatterguide.netlify.app)\ 
 - [TRIZ for Problem Solvers](https://teaching-triz.netlify.app)\
 - [Literary Jukebox: Design Thinking from Short Fiction](https://literary-jukebox.netlify.app)\
 - [Maths for Creative Coders](https://mathsforcoders.netlify.app)\

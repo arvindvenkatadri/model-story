@@ -1,0 +1,19 @@
+{
+  "hash": "cd81a9a20603979a38f1c51cf96af209",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \" \\U0001F332 Algorithmic Trees, L-Systems and Kolams\"\ndate: \"2021-08-12\"\ndate-modified: \"2025-08-05\"\norder: 90\nsummary: Investigating simple repetitive algorithms to create organic looking structures\ncategories:\n- Algorithmic Trees\n- Lindenmayer Systems\n\n\n---\n\nWORK IN PROGRESS!! \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](featured.jpg){fig-align='center' width=360px}\n:::\n:::\n\n\n\nTrees are fractal in nature, meaning that patterns created by the large\nstructures, such as the main branches, repeat themselves in smaller\nstructures, such as smaller branches.... a universal growth pattern\nfirst observed by Leonardo da Vinci 500 years ago: a simple yet\nstartling relationship that always holds between the size of a tree's\ntrunk and sizes of its branches.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](https://www.birdsoutsidemywindow.org/wp-content/uploads/2018/11/diagram_da_vinci_rule_of_trees_christophermalloy_insidescience-600x291.jpg){fig-align='center' fig-alt='Coutesy Cristophe Eloy | University of Provence' width=450px height=250px}\n:::\n:::\n\n\nLet us see how we can create **\"Algorithmic Trees\"**.\n\n## An Introduction to L-Systems\n\nhttps://cgjennings.ca/articles/l-systems/\n\n## Resources for Kolam Art\n\nAttached Files:\\\nFile Marcia Ascher - Kolam Tradition.pdf (2.94 MB) File Saty\nRaghupathy - Tile based Kolam.pdf (688.669 KB) 1) Marcia Ascher: The\nKolam Tradition\n\nThis is a very readable intro to Kolam, the threshold art form from\nTamil Nadu.\n\nMarcia Ascher has written two great books on the subject of math +\nculture. (I will put up her books, \"Ethnomathematics\" and \"Math\nElsewhere\" on a separate folder on BB.)\n\n2)  Saty Raghavachary: Tile-based Kolam Patterns\n\nThis is an alternative way, of using permutations of simple \"Tiles\" that\ncan be used to alphabetically form a Kolam. ( This is also briefly\ntouched upon in MArcia Ascher's paper).\n\nSaty Raghavachary is Professor of Computer Science at U of Southern\nCalifornia.\n\nAlso take a look a the 2 minute video on kolam at his website:\nhttps://satysfactory.blogspot.in/2009/01/kolams.html\n\n### Symmetry\n\nW5 - D1 - Thomas Edward Brown and Elizabeth Barrett Browning 1) Thomas\nEdward Brown\n\nhttps://www.thewayofbeauty.org/blog/2012/09/a-garden-is-a-lovesome-thing-god-wot\n\nif you have heard of the word \"godwottery\", it came from this poem.\n\n2)  Elizabeth Barrett Browning\n\nhttps://www.poets.org/poetsorg/poem/how-do-i-love-thee-sonnet-43\n\nhttps://mathstat.slu.edu/escher/index.php/Introduction_to_Symmetry\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

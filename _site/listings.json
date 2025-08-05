@@ -1,11 +1,9 @@
 [
   {
     "listing": "/content/courses/listing.html",
-    "items": []
-  },
-  {
-    "listing": "/content/projects/listing.html",
-    "items": []
+    "items": [
+      "/content/courses/ModelStory/listing.html"
+    ]
   },
   {
     "listing": "/content/courses/ModelStory/listing.html",
@@ -23,9 +21,9 @@
       "/content/courses/ModelStory/Modules/8-Fractals/index.html",
       "/content/courses/ModelStory/Modules/9-L-Systems/index.html",
       "/content/courses/ModelStory/Modules/10-Sound/index.html",
+      "/content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.html",
       "/content/courses/ModelStory/Modules/12-Symmetry/index.html",
-      "/content/courses/ModelStory/Modules/100-Resources/index.html",
-      "/content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.html"
+      "/content/courses/ModelStory/Modules/300-Resources/index.html"
     ]
   }
 ]

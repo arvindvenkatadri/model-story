@@ -7,11 +7,13 @@ categories:
 - Path Dependence
 - Evolution
 image: "featured.jpg"
-weight: 110
+order: 110
 
 ---
 
 ```{r,echo = FALSE, fig.alt="Petr Slováček on Unsplash", fig.align='center'}
+#| out-width: "100%"
+#| fig-cap: "Petr Slováček on Unsplash"
 knitr::include_graphics("featured.jpg")
 ```
 

@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.11">
+<meta name="generator" content="quarto-1.7.32">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Arvind V.">
 <meta name="dcterms.date" content="2021-12-11">
-<title>🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story</title>
+<title>🕹 Measuring and Playing with Proximity – Old Tortoise Taught Us: The Model of the Story</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,15 +33,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
 <script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b6495f7ddc21fa4b617d4bbc77b8bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-1b3e43c72e8be34557c75123b0b69e0d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-bf389d51471279d1e0a705a5c749840e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-5fb089b95172d02fb44ac9b9517e8538.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
 <script src="../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -86,7 +85,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -105,11 +104,11 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../../../css/vollkorn.css">
 <link rel="stylesheet" href="../../../../../css/fraunces.css">
 <link rel="stylesheet" href="../../../../../css/styles.css">
-<meta property="og:title" content="🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story">
+<meta property="og:title" content="🕹 Measuring and Playing with Proximity – Old Tortoise Taught Us: The Model of the Story">
 <meta property="og:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
 <meta property="og:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/5b-Voronoi/featured.jpg">
-<meta property="og:site_name" content="The Old Tortoise: The Model of the Story">
-<meta name="twitter:title" content="🕹 Measuring and Playing with Proximity – The Old Tortoise: The Model of the Story">
+<meta property="og:site_name" content="Old Tortoise Taught Us: The Model of the Story">
+<meta name="twitter:title" content="🕹 Measuring and Playing with Proximity – Old Tortoise Taught Us: The Model of the Story">
 <meta name="twitter:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
 <meta name="twitter:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/5b-Voronoi/featured.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -120,7 +119,7 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../../../index.html">
-    <span class="navbar-title">The Old Tortoise: The Model of the Story</span>
+    <span class="navbar-title">Old Tortoise Taught Us: The Model of the Story</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -132,10 +131,6 @@ window.Quarto = {
 <li class="nav-item">
     <a class="nav-link active" href="../../../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../../../about.html"> 
-<span class="menu-text">About</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -184,7 +179,7 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="../../../../../index.html" class="sidebar-logo-link">
-      <img src="../../../../../content/materials/images/1book25.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+      <img src="../../../../../content/materials/images/1book33.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -288,7 +283,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/100-Resources/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../content/courses/ModelStory/Modules/300-Resources/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎶 Resources and Notes to Myself</span></a>
   </div>
 </li>
@@ -368,7 +363,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 30, 2025</p>
+      <p class="date-modified">August 5, 2025</p>
     </div>
   </div>
     
@@ -528,7 +523,15 @@ Figure&nbsp;1: Code Proximity Measure
 </section><section id="a-brief-foray-into-cryptography" class="level3"><h3 class="anchored" data-anchor-id="a-brief-foray-into-cryptography">A Brief Foray into Cryptography</h3>
 <p>In the Sherlock Holmes story,<u><a href="https://www.gutenberg.org/files/108/108-h/108-h.htm#chap03"><strong>The Adventure of the Dancing Men</strong></a></u>, a criminal known the one of the characters communicates with her using a childish/child-like drawing which looks like this:</p>
 <p><img src="images/img01.jpg" class="img-fluid"> In this message, each character is a visual representation, or a substution for, a letter from the alphabet. The characters with flags are the first letter of a new word. The message is translated in the story as “Am here, Abe Slaney”.</p>
-<p>The entire <strong>code alphabet</strong> is shown in the figure below: <img src="images/dancing-men-cipher-overview.png" class="img-fluid"></p>
+<p>The entire <strong>code alphabet</strong> is shown in the figure below:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="images/dancing-men-cipher-overview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/dancing-men-cipher-overview.png" class="quarto-figure quarto-figure-center figure-img" width="300" height="300"></a></p>
+</figure>
+</div>
+</div>
+</div>
 <p>This code is a good example of a <u><a href="https://www.geeksforgeeks.org/substitution-cipher/"><strong>Substitution Cipher</strong></a></u> with non-text substition. See <u><a href="https://www.boxentriq.com/code-breaking/dancing-men-cipher" class="uri">https://www.boxentriq.com/code-breaking/dancing-men-cipher</a></u> and <u><a href="https://www.dcode.fr/dancing-men-cipher" class="uri">https://www.dcode.fr/dancing-men-cipher</a></u> for examples where you can encode and decode your own text, and send them to friends. 😎 😼</p>
 <p>The intent behind any substitution cipher is to be create <strong>distance</strong> from the original message, or characters. The algorithms to encode and decode uses this idea of <strong>distance</strong> to perform their operations and are entirely reversible.</p>
 </section></section><section id="painting-with-proximitydistance" class="level2"><h2 class="anchored" data-anchor-id="painting-with-proximitydistance">Painting with Proximity/Distance</h2>

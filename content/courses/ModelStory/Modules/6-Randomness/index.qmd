@@ -25,8 +25,17 @@ library(emoji)
 ```
 
 #### God Does not Play Dice
+> "God does not play dice with the universe." - Albert Einstein
 
-![](featured.jpg)
+```{r}
+#| echo: false
+#| out-width: "450px"
+#| out-height: "250px"
+#| fig-align: "center"
+#| 
+knitr::include_graphics("featured.jpg")
+```
+
 
 ## The Science of Surprise
 
@@ -128,7 +137,15 @@ for the occurrence of traffic, with a mean of $\large{\lambda = np}$.
 
 ## Is Randomness a Design Tool?
 
-![](pexels-sharath-g-4418675.jpg){height="250px"}
+```{r}
+#| echo: false
+#| out-width: "250px"
+#| out-height: "250px"
+#| fig-align: "center"
+knitr::include_graphics("pexels-sharath-g-4418675.jpg")
+```
+
+
 
 But we are interested in more than just the Poisson Process. And mangoes
 are far more interesting than cars!!!
@@ -216,7 +233,7 @@ We'll see.
     Holes*. <u>[**(Web
     Link)**](https://medium.com/@penguinpress/an-excerpt-from-how-not-to-be-wrong-by-jordan-ellenberg-664e708cfc3d)</u>
 
-![](Survivorship-bias.svg){width="300px"}
+![](Survivorship-bias.svg){width="360px" fig-align="center"}
 
 3.  R. J. MacKay and R. W. Oldford. <u>[**Scientific Method, Statistical
     Method and the Speed of
