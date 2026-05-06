@@ -2,6 +2,7 @@
 title: "The Model of the Story"
 subtitle: "Math Models in Design Thinking"
 date: 2025/Aug/05
+date-modified: today
 image: preview.jpeg
 listing: 
   type: table
@@ -15,8 +16,17 @@ listing:
   categories: numbered
 ---
 
-![Clock at Grand Central Station, NY](featured.jpg){fig-align="center"}
 
+```{r}
+#| echo: false
+#| out.height: "50%"
+#| out.width: "50%"
+#| fig-align: "center"
+#| fig-cap: "Clock at Grand Central Station, NY"
+#| fig-alt: "Clock at Grand Central Station, NY"
+
+knitr::include_graphics("featured.jpg")
+```
 
 
 ## Course Description
@@ -35,11 +45,11 @@ The Models should thusly provide data and directions for artistic and design end
 
 ## What you will learn
 
--   The so-called (by me!) [4-As]{.black .bg-gold} of Complexity Science - "Agents, Actions, Again, Aggregate"
+-   The so-called (by me!) [4-As]{.black .bg-gold} of Complexity Science - ***"Agents, Actions, Again, Aggregate"***
 -   [Complexity concepts]{.black .bg-gold} and how to identify them and apply them in practice
 - Complexity in Human Behaviour:
     -   ]{.black .bg-gold}Game Theory]{.black .bg-gold}: Prisoners' Dilemma, Stag Hunt, and Chicken Games
-    -   Coordination Games and Schelling Points]{.black .bg-gold}Public Behaviour and Policy]{.black .bg-gold}
+    -   Coordination Games and Schelling Points]{.black .bg-gold}, [Public Behaviour and Policy]{.black .bg-gold}
     -   [Viral Trends, Biases, and Epidemics]{.black .bg-gold}, and why you persist in saying *Bro*, *My Bad*, and *Think Different*🤦 
     -   Spatial Patterns and Social Behaviour
 -   Complexity in Connections:
@@ -50,17 +60,16 @@ The Models should thusly provide data and directions for artistic and design end
     -   Proximity
     -   Delaunay and Voronoi Patterns
     -   Spatial Pattern Emergence(again)
--   Fundamentals of [Fractals]{.black .bg-gold}
-    - Repetition and Iterated Functions
-    - Emergence of Shape(yet again)
-    - Fractional Dimensions and Box Counting
-    - Mandelbrot, Julia, and Barnsley Fractals
-    
--   Symmetry
-    - Canonical Movements at your fingertips
-    - 1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes
-    - *Symmetry on Average*: Probability meets Symmetry
-    - Orientation and "Orientability"
+    - Fundamentals of [Fractals]{.black .bg-gold}
+      - Repetition and Iterated Functions
+      - Emergence of Shape(yet again)
+      - Fractional Dimensions and Box Counting
+      - Mandelbrot, Julia, and Barnsley Fractals
+    - Symmetry
+      - Canonical Movements at your fingertips
+      - 1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes
+      - *Symmetry on Average*: Probability meets Symmetry
+      - Orientation and "Orientability"
     
 -   Probability and Randomness
     -   Randomness and its manifestation in Real Life
@@ -91,3 +100,8 @@ The Models should thusly provide data and directions for artistic and design end
 3. Complexity Explorables: A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <u><https://www.complexity-explorables.org></u>
 
 4. Santa Fe Complexity Institute's Complexity Explorer delivers online courses, tutorials, and resources essential to the study of complex systems. <u>https://www.complexityexplorer.org</u>
+
+## Modules
+
+
+

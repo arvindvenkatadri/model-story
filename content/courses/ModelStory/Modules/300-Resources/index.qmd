@@ -1,5 +1,6 @@
 ---
 title: "\U0001F3B6 Resources and Notes to Myself"
+subtitle: " My personal notes and resources for the course. Not meant for students, but may be useful to them too. You're welcome. 😉"
 date:  "2020-05-25"
 date-modified: "`r Sys.Date()`"
 order: 300
@@ -148,32 +149,21 @@ readings, writings and discussions.
 -   Gary William Flake - **The Computational Beauty of Nature**
 
 ## Symmetry
-
 -   Elizabeth Barrett Browning.1861. *How Do I Love Thee? (Sonnet 43)*
-    <u>[From "Sonnets from the
-    Portuguese"](https://poets.org/poem/how-do-i-love-thee-sonnet-43)</u>
-
+    <u>[From "Sonnets from the Portuguese"](https://poets.org/poem/how-do-i-love-thee-sonnet-43)</u>
 -   William Blake
     “Tiger,Tiger"<u><https://www.poetryfoundation.org/poems/43687/the-tyger></u>
-
 -   T E. Brown <u>[My
     Garden](https://www.public-domain-poetry.com/thomas-edward-brown/my-garden-9741)</u>
-
 -   Activity: <u>[Internet Anagram Server](https://wordsmith.org)</u>
-
 -   Motivate “Canonical Movements” and Operations (Translation /
     Rotation / Reflection / Glide Reflection)
-
 -   1D and 2D Symmetry; Dimensions
-
 -   Friezes / Lattices / Wallpapers / Kolams / Sona Art / Fibonacci
     Kolams
-
 -   Ethno-mathematics Marcia Asher
-
 -   <u>[Saty
     Raghavachary](https://www.youtube.com/watch?v=-l9za7UlzKM)</u>
-
     -   Activity: Elbows glued to desks; canonical movements to create
         symmetry patterns.
 
