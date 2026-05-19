@@ -162,3 +162,5 @@ Film: Amar Prem (1972)\
     able to initiate cascades. To be maximally useful, such tools should
     be deployable without having to actually map face-to-face social
     network interactions. <https://t.co/DHCKxXeGYg>. This is a paper that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <u><https://www.science.org/doi/10.1126/science.adi5147></u>
+6. David Pinsoff. (Dec 2025).*Everything is Bullshit* Substack. <https://www.everythingisbullshit.blog/p/a-big-misunderstanding>
+

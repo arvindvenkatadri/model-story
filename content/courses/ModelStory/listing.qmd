@@ -1,6 +1,6 @@
 ---
 title: "The Model of the Story"
-subtitle: "Math Models in Design Thinking"
+subtitle: "Mathy Models in Design Thinking"
 date: 2025/Aug/05
 date-modified: today
 image: preview.jpeg
@@ -37,11 +37,17 @@ knitr::include_graphics("featured.jpg")
 
 > All Models Are Wrong But Some Are Useful. --- GEORGE BOX
 
+>Humans possess a set of interacting traits connected to our unique capacities for cognition (how we think and reason), cooperation (how we work together), and culture (how we share and accumulate information). Through such abilities, we have acquired unprecedented powers to design and redesign our environments, but we have also become vulnerable to novel risks and failure modes. [--- Conspicuous Cognition Substack](https://www.conspicuouscognition.com/i/185756196/a-uniquely-unique-animal). 
+
+## Course Abstract
+
 In this Unit, we will take inspiration from [**Classic Literature, Poetry, Drama, and Paintings, and Music**]{.black .bg-gold} to contemplate certain **Human Experiences**. Using these as a starting point, we will create **Models** and make sense of these human experiences. 
 
 These Models may resemble a [Thought Experiment, or a Diagram, or a simple Procedure, or a piece of Computer Code, or even a Cultural Tradition]{.black .bg-gold}. The Models will be understood, internalized, fitted in with what we already know, and generalized to new situations and applications. This will done with the help of activities based on [games, pranks, memes, videos, movie-clips, art-related activities, open source software tools, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions.]{.black .bg-gold}. 
 
-The Models should thusly provide data and directions for artistic and design endeavours. In effect, we will go from <u>[**Stories to Data**](https://open.spotify.com/episode/2DpA27VkXd0eVvcM4f3hTl?si=fa54cde8dd0044d0)</u> rather than the other way around. At the end of the Unit, the ~~tired, but happy~~ students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.
+The Models should thusly provide data and directions for artistic and design endeavours. 
+
+In effect, we will go from <u>[**Stories to Data**](https://open.spotify.com/episode/2DpA27VkXd0eVvcM4f3hTl?si=fa54cde8dd0044d0)</u> rather than the other way around. At the end of the Unit, the ~~tired, but happy~~ students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.
 
 ## What you will learn
 
