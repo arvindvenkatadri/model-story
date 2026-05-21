@@ -40,20 +40,22 @@ website:
       - section: "The Model of the Story"
         href: content/courses/ModelStory/listing.qmd
         contents: 
-          - content/courses/ModelStory/Modules/1-Company-Heroes/index.qmd
-          - content/courses/ModelStory/Modules/2-Strategies-in-PD/index.qmd
-          - content/courses/ModelStory/Modules/3-Coordinated-Games/index.qmd
-          - content/courses/ModelStory/Modules/4-Rumours-Biases-ViralTrends/index.qmd
-          - content/courses/ModelStory/Modules/5-Proximity/index.qmd
-          - content/courses/ModelStory/Modules/5b-Voronoi/index.qmd
-          - content/courses/ModelStory/Modules/6-Randomness/index.qmd
-          - content/courses/ModelStory/Modules/6b-StillMoreRandomness/index.qmd
-          - content/courses/ModelStory/Modules/7-Networks/index.qmd
-          - content/courses/ModelStory/Modules/8-Fractals/index.qmd
-          - content/courses/ModelStory/Modules/9-L-Systems/index.qmd
-          - content/courses/ModelStory/Modules/10-Sound/index.qmd
-          - content/courses/ModelStory/Modules/11-The-Road-Not-Taken/index.qmd
-          - content/courses/ModelStory/Modules/12-Symmetry/index.qmd
+          - content/courses/ModelStory/Modules/10-Company-Heroes/index.qmd
+          - content/courses/ModelStory/Modules/20-Strategies-in-PD/index.qmd
+          - content/courses/ModelStory/Modules/30-Coordinated-Games/index.qmd
+          - content/courses/ModelStory/Modules/40-Networks/index.qmd
+          - content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.qmd
+          - content/courses/ModelStory/Modules/60-Proximity/index.qmd
+          - content/courses/ModelStory/Modules/70-Voronoi/index.qmd
+          - content/courses/ModelStory/Modules/80-Randomness/index.qmd
+          - content/courses/ModelStory/Modules/90-Mangoes/index.qmd
+          - content/courses/ModelStory/Modules/100-StillMoreRandomness/index.qmd
+          - content/courses/ModelStory/Modules/120-Symmetry/index.qmd
+          - content/courses/ModelStory/Modules/130-Fractals/index.qmd
+          - content/courses/ModelStory/Modules/140-L-Systems/index.qmd
+          - content/courses/ModelStory/Modules/200-Sound/index.qmd
+          - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
+
           - content/courses/ModelStory/Modules/300-Resources/index.qmd
           
   page-footer:
