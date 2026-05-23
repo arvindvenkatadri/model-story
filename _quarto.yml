@@ -55,9 +55,8 @@ website:
           - content/courses/ModelStory/Modules/140-L-Systems/index.qmd
           - content/courses/ModelStory/Modules/200-Sound/index.qmd
           - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
-
+          - content/courses/ModelStory/Modules/1000-Projects/index.qmd 
           - content/courses/ModelStory/Modules/300-Resources/index.qmd
-          
   page-footer:
     center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."
     right:  Hosted by Netlify [{{< iconify simple-icons netlify >}}](https://www.netlify.com).

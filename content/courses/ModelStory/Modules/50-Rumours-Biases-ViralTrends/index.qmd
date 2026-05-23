@@ -79,8 +79,9 @@ Always?
 
 Not if we...choose to copy others wisely !!
 
-Let us play <u>**The Game of the Polygons** [(web
-link)](https://ncase.me/polygons/)</u>
+Let us play **The Parable of the Polygons** <https://ncase.me/polygons/>
+
+{{< html https://ncase.me/polygons/ >}}
 
 ### Another Dark Side of...
 
@@ -139,18 +140,16 @@ Network Effects on Reputations!
 
 ### Discussion Questions
 
--   So how does one *scotch/stop* a rumour? Can you <u>[**be
+-   So how does one *scotch/stop* a rumour? Can you [**be
     vaccinated** against
-    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)</u>?
+    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)?
     Is there a game-theoretic cost for the vaccination?
 -   How does one be *individual and different* and still *one of the
-    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea <u>[to be an insider and an outsider at the same
-    time?](https://www.beyondintractability.org/essay/insider-partial)</u>
-- How do <u>[Echo
-    Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/)</u> work?
--   How does one think of products and ads, or policy messages? (Remember
-    the <u>["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)</u>
--   There are popular and well-known phrases and memes in every
+    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
+    time?](https://www.beyondintractability.org/essay/insider-partial)
+- How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
+-   How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
+-   There are popular and well-known phrases and ***memes*** in every
     language! Use them!!
 -   Here is one for you: "Less Than Three!"
 
@@ -169,14 +168,12 @@ Network Effects on Reputations!
 1. Thomas Schelling.*Dynamic Models of Segregation*. <https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf>
 1.  Henderson, Ron. 12 June 2022. *Luxury Beliefs are Status Symbols:
     The struggle for distinction*.
-    <u><https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web></u>. Accessed 07 Jan 2024.\
-
-::: {}
+    <https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web>. Accessed 07 Jan 2024.
 <center>
+<br>
 {{< video https://www.youtube.com/embed/ck7Krz7QcxU?si=sa8XolhDe9GSkD7q width="560" height="400" align="center" title="" >}}
-Rob Henderson's Idea of "Luxury Beliefs
+Rob Henderson's Idea of "Luxury Beliefs"
 </center>
-:::
 
 2.  The Network Effects Bible.
     <u><https://www.nfx.com/post/network-effects-bible></u>
@@ -184,11 +181,11 @@ Rob Henderson's Idea of "Luxury Beliefs
     <u><https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html></u>
 4.  Thomas W. Valente.(2012). *Network Interventions*. Science(337) 49.
     Available here <u><https://sci-hub.se/10.1126/science.1217330></u>. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.
-
 5.  Nicholas Christakis. (May 3, 2024). To exploit social contagion,
     tools are needed to efficiently identify individuals who are better
     able to initiate cascades. To be maximally useful, such tools should
     be deployable without having to actually map face-to-face social
-    network interactions. <https://t.co/DHCKxXeGYg>. This is a paper that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <u><https://www.science.org/doi/10.1126/science.adi5147></u>
+    network interactions. <https://t.co/DHCKxXeGYg>. This is a paper that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <https://www.science.org/doi/10.1126/science.adi5147>
 6. David Pinsoff. (Dec 2025).*Everything is Bullshit* Substack. <https://www.everythingisbullshit.blog/p/a-big-misunderstanding>
-
+7. fee.org.(Wednesday, September 19, 2018
+)*How Can Game Theory Prevent Disease Outbreaks.*<https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/> 

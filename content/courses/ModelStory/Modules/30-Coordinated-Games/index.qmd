@@ -21,36 +21,37 @@ knitr::include_graphics("featured.jpg")
 
 ```
 
-
 ## Introduction
 
 Think about the following:
 
--   So, would you wear a veshti/kurta/angavastram, saree/silk
-    paavade/dhaavani to college?
--   When you want someone to *search the internet*, what do you tell
-    them do?
--   How do you show someone, a stranger, that you agree with what they
-    are doing at that moment?
--   How do you know where the exit is in a public place?
--   Where would you stage a protest? How would you get other people to
-    join in?
--   If you want a whole bunch of 20-30-something people to <u>[raise
-    their arms up and spontaneously rock side to
-    side](https://youtu.be/La0IJPt0t4Q)</u>?
--   And, what does "less than three" even mean?!!??
+- So, would you wear a veshti/kurta/angavastram, saree/silk
+  paavade/dhaavani to college?
+- When you want someone to *search the internet*, what do you tell them
+  do?
+- How do you show someone, a stranger, that you agree with what they are
+  doing at that moment?
+- How do you know where the exit is in a public place?
+- Where would you stage a protest? How would you get other people to
+  join in?
+- If you want a whole bunch of 20-30-something people to [raise their
+  arms up and spontaneously rock side to
+  side](https://youtu.be/La0IJPt0t4Q)?
+- And, what does "less than three" even mean?!!??
 
 In the previous module on the Prisoners' Dilemma, we saw how we all are
 engaged in *adversarial and transactional Games* with many other people,
 most of whom are strangers to us. But as remarked before, the Human
-Species is perhaps unique in that we are able to <u>[cooperate with
-strangers](https://fee.org/articles/book-reviews-september-2004/)</u>
-and <u>[possess bourgeois
-virtues](https://fee.org/articles/where-the-bourgeois-virtues-are-found)</u>!!
+Species is perhaps unique in that we are able to [cooperate with
+strangers](https://fee.org/articles/book-reviews-september-2004/) and
+[possess bourgeois
+virtues](https://fee.org/articles/where-the-bourgeois-virtues-are-found)!!
 So we are not always adversaries or enemies, and we are able to obtain
-***unspoken agreement and correspondence with strangers***.
+***unspoken agreement and correspondence with strangers*** and treat
+them as our *honorary kin* for long term benefits.
 
-What use would this be? Would it be a Design Tool? How?
+[What use would this be? Would it be a Design Tool?
+How?]{style="background-color:yellow;"}
 
 Today, we will study **Coordination Games** and **Schelling Focus
 Points**, and see how these concepts can help create better designs,
@@ -58,45 +59,61 @@ businesses, and maybe, art.
 
 ## The Stag Hunt
 
-A brief Introduction to the <u>[**Stag Hunt
-Game.**](https://www.heretical.com/pound/staghunt.html)</u>
+From Brian Skyrms' [Address at
+UC.Irvine](https://sites.socsci.uci.edu/~bskyrms/bio/papers/StagHunt.pdf):
+
+> The Stag Hunt is a story that became a game. The game is a prototype
+> of the social contract. The story is briefly told by Jean-Jacques
+> Rousseau, in [***A Discourse on
+> Inequality***](https://archive.org/details/jean-jacques-rousseau-discourse-on-the-origins-of-inequality-among-men-masters_202206):
+
+:::: pa4
+::: {.athelas .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue}
+["...If it was a matter of hunting a deer, everyone well realized that
+he must remain faithful to his post; but if a hare happened to pass
+within reach of one of them, we cannot doubt that he would have gone off
+in pursuit of it without scruple..."]{.f5 .f4-m .f3-l .lh-copy .measure
+.mt0}
+
+[--- Rousseau]{.f6 .ttu .tracked .fs-normal}
+:::
+::::
+
+> Rousseau's story of the hunt leaves many questions open. What are the
+> values of a hare and of an individual's share of the deer given a
+> successful hunt? What is the probability that the hunt will be
+> successful if all participants remain faithful to the hunt? Might two
+> deer hunters decide to chase the hare?
+
+Here is brief Introduction to the [**Stag Hunt
+Game.**](https://www.heretical.com/pound/staghunt.html)
 
 ::: {}
-<center>
-{{< video https:://www.youtube.com/watch?v=QQHPDLfbIK4 width="560" height="400" align="center" title="" >}}
-What is the Stag Hunt Game?
-</center>
-
+<center>{{< video https:://www.youtube.com/watch?v=QQHPDLfbIK4 width="560" height="400" align="center" title="" >}}
+What is the Stag Hunt Game?</center>
 :::
-
 
 ## Coordination Games and Schelling Focus Points
 
 Here is Julia Galef on the idea of Schelling Focus Points:
 
 ::: {}
-<center>
-{{< video https:://www.youtube.com/watch?v=CFOQquw6hig width="560" height="400" align="center" title="" >}}
-Coffee, Caramels, and Schelling Points by Julia Galef
-</center>
+<center>{{< video https:://www.youtube.com/watch?v=CFOQquw6hig width="560" height="400" align="center" title="" >}}
+Coffee, Caramels, and Schelling Points by Julia Galef</center>
 :::
 
- <br>
-And here is another video on the same topic, but with a historical, and
-spatial, angle to it:
+<br> And here is another video on the same topic, but with a historical,
+and spatial, angle to it:
 
-::: {.fig}
-
+::: fig
 <center>
+
 {{< video https:://www.youtube.com/watch?v=oDsePkuaL9Q width="560" height="400" align="center" title="" >}}
 
 Schelling Focus Points
 
 </center>
-
 :::
-
-
 
 Focal points can be used in Coordination Games: these are activities
 where people's actions tend to organize into Patterns based on specific
@@ -145,7 +162,7 @@ The inequalities relating the payoffs in the Stag Hunt game are:
 
 $$
 Reward > Temptation > \pmb{Punishment} > \pmb{Sucker's~ Payoff} \\\
-$$ 
+$$
 
 There is in fact no Temptation at all! Rewards for C are always the
 greatest!
@@ -165,12 +182,10 @@ engagement as there is a tendency to maximize gains and minimize risks.
 What game is being played here?
 
 ::: {}
-
-<center>
-{{< video https://youtu.be/GvV5h9Oy4L0 width="560" height="400" align="center" title="" >}}
-The Chicken Game
-</center>
+<center>{{< video https://youtu.be/GvV5h9Oy4L0 width="560" height="400" align="center" title="" >}}
+The Chicken Game</center>
 :::
+
 <br>
 
 This is the Chicken Game (CG), where it two Players *dare* each other to
@@ -213,57 +228,78 @@ data %>%
 And the inequalities that govern the Chicken game are:
 
 $$
-Temptation > Reward > \pmb{Sucker's~ Payoff} > \pmb{Punishment} \\\
+Temptation > Reward > \pmb{Sucker's~ Payoff} > \pmb{Punishment}
 $$
 
-and as with the PD, we have: 
+and as with the PD, we have:
 
-$$
-R > (S + T)/2
-$$ 
+$$R > (S + T)/2$$
 
 Chicken Games often occur in politics and of course, in offices and
 organizations, where co-workers dare each other to shirk from work the
 longest!! Call Centres are a good place to look for manifestations of
 Chicken!!!
 
-Here us a <u>[*sermon*](https://ellerslie.com/the-game-of-chicken/)</u>
+Here us a [*sermon*](https://ellerslie.com/the-game-of-chicken/)
 on the Chicken Game. (Listen to the first few minutes for a good
 description of the Chicken Game.)
 
 ## Schelling Points and the Lindy Effect
 
-To be written up. You are one lazy bugger. INTJ, but lazy. 
+To be written up. You are one lazy bugger. INTJ, but lazy.
 
+## The Design of Game Incentives
+
+To be Written Up.
 
 ## Wait, But Why?
 
-Also to be written up. 
+- If we are going to *design "public behaviour"* ( an Ad, a Brand, a
+  Public Policy, a method for Crowd Management, Signage...) you might
+  want to think of which *Game* is involved
+- What are the Actions and the Payoffs?
+- Can you *design the Game* by changing the Matrix?
+- Incentives are both Positive and Negative:
+  - Costs/Benefits: Money, Reputation, Physical Danger, or mere
+    Inconvenience?
+- Some *apocryphal aphorisms* to consider: (Trying to imitate Naval
+  Ravikant here `r emoji::emoji("grin")`)\
+  - The best laws are those that ~~are easiest to follow~~ do not exist
+    on paper
+  - Useless laws weaken the necessary laws.
+  - Some Products are faulty, some others *de-faulty* (Schelling Points)
+- If you are engaged in Participatory Research with Americans, why would you make passing reference to "motherhood and apple pie", or "picket fences"?
 
+## References
+
+1.  William Poundstone. *Stag Hunt*.
+    <https://www.heretical.com/pound/staghunt.html)>
+2.  William Poundstone. *Volunteer's Dilemma*.
+    <https://www.heretical.com/pound/vdilemma.html> A multi-player
+    version of the Chicken Game.
 
 ## Additional Readings
 
 1.  Jim Allen(July 2, 2023). *Electro Ecstasy: How Donna Summer’s*
-    <u>[‘I Feel Love’](https://youtu.be/Nm-ISatLDG0)</u> Changed Music.
-    <u><https://www.udiscovermusic.com/stories/donna-summer-i-feel-love-feature/></u>
-1.  Presh Talwalkar.(2008) *How We Naturally Organize*.
-    <u><https://mindyourdecisions.com/blog/2008/04/01/focal-points-or-schelling-points-how-we-naturally-organize-in-games-of-coordination/></u>
-1.  Richard Littauer. (Feb 14, 2017). *Using internal Schelling points
+    [‘I Feel Love’](https://youtu.be/Nm-ISatLDG0) Changed Music.
+    <https://www.udiscovermusic.com/stories/donna-summer-i-feel-love-feature/>
+2.  Presh Talwalkar.(2008) *How We Naturally Organize*.
+    <https://mindyourdecisions.com/blog/2008/04/01/focal-points-or-schelling-points-how-we-naturally-organize-in-games-of-coordination/>
+3.  Richard Littauer. (Feb 14, 2017). *Using internal Schelling points
     to plan better*.
-    <u><https://medium.com/@richlitt/using-schelling-points-to-perform-better-973243efd989></u>
-1.  Ron Ashkenas.(July 26, 2011).*Why Leaders Play Chicken*.
-    <u><https://hbr.org/2011/07/why-leaders-play-chicken></u>
-1.  Rapoport, A., & Chammah, A. M. (1966). *The Game of Chicken*.
+    [https://medium.com/\@richlitt/using-schelling-points-to-perform-better-973243efd989](https://medium.com/@richlitt/using-schelling-points-to-perform-better-973243efd989){.uri}
+4.  Ron Ashkenas.(July 26, 2011).*Why Leaders Play Chicken*.
+    <https://hbr.org/2011/07/why-leaders-play-chicken>
+5.  Rapoport, A., & Chammah, A. M. (1966). *The Game of Chicken*.
     American Behavioral Scientist, 10(3), 10–28. Read here:
-    <u><https://sci-hub.se/https://doi.org/10.1177/000276426601000303></u>
-1.  Herbert Wulf.(01 March, 2023). *Cooperative Security, Arms Control
+    <https://sci-hub.se/https://doi.org/10.1177/000276426601000303>
+6.  Herbert Wulf.(01 March, 2023). *Cooperative Security, Arms Control
     and Disarmament: Chicken-Game*.
-    <u><https://toda.org/global-outlook/2023/chicken-game.html></u>
+    <https://toda.org/global-outlook/2023/chicken-game.html>
 7.  <https://imotions.com/blog/learning/research-fundamentals/the-stag-hunt-game-theory/>
 8.  An [INTJ](https://www.16personalities.com/intj-personality)
     Professor's Suicide Note. Sadly. Yes.
-    <u><https://willopines.wordpress.com/2017/04/19/punched-out/></u>
+    <https://willopines.wordpress.com/2017/04/19/punched-out/>
 9.  Cate Hall.(Jan 11, 2024). *How to be More Agentic: On a supposedly
     difficult thing*.
-    <u><https://open.substack.com/pub/usefulfictions/p/how-to-be-more-agentic?utm_campaign=post&utm_medium=web></u>
-
+    <https://open.substack.com/pub/usefulfictions/p/how-to-be-more-agentic?utm_campaign=post&utm_medium=web>

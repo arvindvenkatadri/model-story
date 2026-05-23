@@ -12,6 +12,7 @@ categories:
   - Vibration
   - Fourier Series, Sound, Vibration
 image: "featured.jpg"
+draft: true
 ---
 
 WORK IN PROGRESS!!

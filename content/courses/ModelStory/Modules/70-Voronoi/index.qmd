@@ -34,11 +34,12 @@ library(latticeExtra)
 ```
 
 
-## A Model for Proximity: The Voronoi and the Delaunay Diagrams
+## A Model for Proximity: The Delaunay Triangulation and the Voronoi Diagram 
 
 So how do we model "proximity"? Let us take a quick look at this
-description of <u>[**Predator-Prey
-Dynamics.**](../../../../materials/pdfs/FollowingtheHerd.pdf)</u>
+description of **Predator-Prey Dynamics.**
+
+{{< pdf ../../../../materials/pdfs/FollowingtheHerd.pdf >}}
 
 ### Plotting the Delaunay and Voronoi Diagrams
 
@@ -49,12 +50,12 @@ Triangulation and Voronoi Diagram:
 #| label: fig-voronoi-delaunay
 #| echo: false
 #| layout-ncol: 3
-#| out-width: "100%"
-#| out-height: "100%"
+#| out-width: "120%"
+#| out-height: "120%"
 #| fig-cap: "Spatial Partitionings"
 #| fig-subcap: 
-#| - Voronoi Diagram
 #| - Delaunay Triangulation
+#| - Voronoi Diagram
 #| - Both Overlaid
 #| 
 set.seed(1963)
@@ -110,27 +111,20 @@ gf_segment(y1 + y2 ~ x1 + x2, data = vor$delsgs, colour = "green") %>%
 
 How do we plot these diagrams?
 
-We will use this tool: <u>[**Geogebra**](https://www.geogebra.org/classic)</u>
+We will use this tool:[**Geogebra**](https://www.geogebra.org/classic)
 
 Download and install this on your laptops. You can also use it in your
-browser <u><https://www.geogebra.org/classic?lang=en></u> and download
-the Geogebra (*.ggb*) files that you create.
+browser <https://www.geogebra.org/classic?lang=en> and download
+the Geogebra (*.ggb*) files that you create. Let us first see Soho with the Voronoi Diagram, and then we make such a diagram step by step. 
 
-[](../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf)
-1.  Exercise 1: Let us first see Soho with the Voronoi Diagram. Download [this `.ggb` file](../../../../materials/pdfs/SohoMap.ggb)</u> and open it in Geogebra.
-    
-
-Now let us make such a diagram step by step:
-
+1.  Exercise 1: Download [this `.ggb` file](../../../../materials/pdfs/SohoMap.ggb)</u> and open it in Geogebra.
 1.  Exercise 2: Let us try with just three points and see what we need
     to do to plot the Voronoi Diagram.
-
-2.  Exercise 3: With 4 points: <u>[Four Pointer
-    Voronoi](../../../../materials/pdfs/four points.ggb)</u>
-
-3.  Exercise 4: Let us now add more points. How do we make a multi-point
-    Voronoi? We need to make a <u>[**"list of points" in
-    Geogebra**](../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf)</u>
+1.  Exercise 3: With 4 points: [Four Pointer
+    Voronoi](../../../../materials/pdfs/four points.ggb)
+1.  Exercise 4: Let us now add more points. How do we make a multi-point
+    Voronoi? We need to make a [**"list of points" in
+    Geogebra**](../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf).
 
 ### Discussion
 
@@ -146,45 +140,30 @@ Now let us make such a diagram step by step:
 
 ## Fun Stuff with Geogebra and Voronoi
 
-1.  Predator Prey Movement....
-
--   Create a set of points in Geogebra.
--   Colour/Shape one of the outermost points as a predator which circles
-    the herd.
--   Use the Voronoi diagram to model the *Zone of Danger* for each of
+1.  **Predator Prey Movement**....\
+    -   Create a set of points in Geogebra.
+    -   Colour/Shape one of the outermost points as a predator which circles the herd.
+    -   Use the Voronoi diagram to model the *Zone of Danger* for each of
     the animals in the inner herd.
--   Try **Animation** in Geogebra !!
-
-2.  Service Areas with Voronoi
-
--   Import a 5km \* 5km square of area in your home town, from Google
-    Maps, into Geogebra.
--   Locate points of interest, all in one category ( ATMs, Post Offices,
-    Hospitals, Police Stations...)
--   Plot the Voronoi Diagram to show the area served by each such
+    -   Try **Animation** in Geogebra !!
+2.  **Service Areas with Voronoi**\
+    -   Import a 5km \* 5km square of area in your home town, from Google Maps, into Geogebra.
+    -   Locate points of interest, all in one category ( ATMs, Post Offices, Hospitals, Police Stations...)
+    -   Plot the Voronoi Diagram to show the area served by each such
     institution.
--   Calculate the area in Geogebra.
--   Assume a flat population/sqkm and use that to calculate the number
-    of people served by each.
-
-**All** of this can be done without leaving Geogebra !!
-
-3.  Voronoi Portraits and Facial Recognition
-
-A. My name is Arnold Schwarzenegger
-
--   Take a picture of yourself and import it into Geogebra
--   Plot Points on the Portrait such that the main facial features are
-    defined.
--   Use a Delaunay Triangulation of these points to create a Portrait.
-
-![](AVinMath.jpeg)
-
-B. My Face is My Fortune
-
--   Do the same for a famous person, past or present.
--   Run a small survey in the class to see how many people can recognize
-    celebrity!
+    -   Calculate the area in Geogebra.
+    -   Assume a flat population/sqkm and use that to calculate the number of people served by each.
+    - **All** of this can be done without leaving Geogebra !!
+3.  **Voronoi Portraits and Facial Recognition**\
+    - A. *My name is Arnold Schwarzenegger*\
+      -   Take a picture of yourself and import it into Geogebra
+      -   Plot Points on the Portrait such that the main facial features are defined.
+      -   Use a Delaunay Triangulation of these points to create a Portrait.
+                  ![](AVinMath.jpeg)<br>
+    - B. *My Face is My Fortune*\
+      -   Do the same for a famous person, past or present.
+      -   Run a small survey in the class to see how many people can recognize the celebrity!
+      
 
 ## Other Distances?
 
@@ -205,16 +184,15 @@ entities, the **Euclidean Distance** to model proximity. Are there other
 > and "kerstin" is 4. 0000 and 1111 is 4. 2173896 and 2233796 is 3.
 
 The Hamming Distance can be calculated using a logical operation known
-as <u>["Exclusive-OR" or
-"XOR"](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation)</u>.
+as ["Exclusive-OR" or "XOR"](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation).
 
 ### Great Circle Distances
 
 How would you measure distance over a *curved surface* such as the
 earth?
 
-View the path here: <u><https://www.greatcirclemap.com/></u> Calculate
-distances here: <u><https://www.gpsvisualizer.com/calculators></u>
+View the path here: <https://www.greatcirclemap.com/>.
+Calculate distances here: <https://www.gpsvisualizer.com/calculators>.
 
 ### Taxicab Distances
 
@@ -244,57 +222,45 @@ Space and one in Time. Oooh, cryptic, isn't it? Here is how it works:
 
 -   Users receive GPS transmissions from more than one satellite (to
     improve accuracy; more later).
-
 -   Each Satellite is given a **unique digital signature code**, called
     its *Coarse/Acquisition*, or C/A Code.
-
 -   This code is a digital one-zero based sequence, which repeats after
     a week.
-
 -   The code ones and zeroes are called **chips**; the chips are output
     by each satellite at a rate of 1.023 MHz. ( i.e. a little faster
     than a million chips per second)
-
 -   All satellites use an on-board time clock. All satellites are
     synchronized and it is the same time on all satellites, regardless
     of where they are in the sky.
-
 -   A User Receiver cannot understand what the satellite is saying,
     UNLESS it removes/wipes off the signature used by the satellite. So
     think of this in ***proximity*** terms: the user needs to know the
     Signature Sequence and also be **in sync aligned** with it, chip for
     chip.
-
 -   One the signature is removed, what remains is what the satellite is
     saying.
-
 -   GPS#5 उवाच:
-
     -   "It is 4 PM on my onboard clock";
     -   "The ionosphere is doing weird things so please include that
         weirdness in your position computation etc";
     -   Other stuff, called the **satellite ephimeris** (which we may
         discuss in class)
 
-But <u>[Houston, we have a problem](https://youtu.be/YwG4F-16Tno)</u>,
+But [Houston, we have a problem](https://youtu.be/YwG4F-16Tno),
 but right here on the ground, mercifully. The problem is, wait for it,
 **the Speed of Light**. And it is a **good problem to have**.
 
 -   When you detect say GPS#5 saying it is 4 PM, that signal came from
     GPS#5 to you at the speed of light, so ***by the time it arrives***,
     the time on the satellite is already 4PM + 150 microseconds.
-
 -   Since different GPS satellites we can see are at different
     ***ranges***, we receive different times from 5 different GPS
     satellites.
-
 -   Then we can set up a set of linear matrix equations in these
     variables:
-
     -   "Received Time" from each satellite (***Pseudo-Range***)
     -   Long and Lat (called a ***Position Fix***);
     -   Absolute Time (***Time Fix***)
-
 -   Which we solve to obtain both Position Fix and Time Fix.
 
 So in summary, the user needs to calculate two proximities:
@@ -305,14 +271,32 @@ So in summary, the user needs to calculate two proximities:
     Huh, what!!! And select that C/A code to wipe off which shows good proximity with received C/A code. [(This is called, in telecom language, a
     ***Code Matched Filter*** and ***Rake Receiver***. Ask me what this
     looks like, at your peril.)]{.black .bg-gold}
-
 -   A **Time Proximity**, by correcting its own local clock to match the
     satellite clocks, accurately. (This is called, in telecom language
     again, a **Delay-Lock Loop**. Peril again.)
 
 ### Code Proximity Measurement
 
-![Code Proximity Measure](images/autocorr.jpeg){#fig-code-autocorr fig-align="center"}
+Here is a block diagram of the **Code Matched Filter**:
+```{r}
+#| echo: false
+#| label: fig-code-mf
+#| fig-cap: "Code Matched Filter or Correlator"
+
+knitr::include_graphics("https://gssc.esa.int/navipedia/images/7/73/Corr_block.png")
+
+```
+
+And here is a output of the **Code Matched Filter**:
+```{r}
+#| echo: false
+#| label: fig-code-autocorr
+#| fig-cap: "Code Matched Filter Output"
+
+knitr::include_graphics("https://gssc.esa.int/navipedia/images/8/88/Corr_prn.png")
+
+```
+
 
 In the @fig-code-autocorr above, the red curve shows the Hamming
 Distance between a received C/A code, and its locally generated copy.
@@ -330,28 +314,28 @@ synchronization and code wipe-off.
 
 ### A Brief Foray into Cryptography
 
-In the Sherlock Holmes story,<u>[**The Adventure of the Dancing
-Men**](https://www.gutenberg.org/files/108/108-h/108-h.htm#chap03)</u>,
+In the Sherlock Holmes story,[**The Adventure of the Dancing
+Men**](https://www.gutenberg.org/files/108/108-h/108-h.htm#chap03),
 a criminal known the one of the characters communicates with her using a
 childish/child-like drawing which looks like this:
 
-![](images/img01.jpg) In this message, each character is a visual
-representation, or a substution for, a letter from the alphabet. The
-characters with flags are the first letter of a new word. The message is
-translated in the story as "Am here, Abe Slaney".
+![](images/img01.jpg){fig-align="center"}
+
+In this message, each character is a visual
+representation, or a **substitution* for, a letter from the alphabet. The characters with flags are the last letter in each word. The message is translated in the story as *"Am here, Abe Slaney"*.
 
 The entire **code alphabet** is shown in the figure below:
-```{r, echo=FALSE, out.width = "300px", out.height = "300px", fig.align='center'}
+
+```{r, echo=FALSE, out.width = "360px", out.height = "360px", fig.align='center'}
 knitr::include_graphics("images/dancing-men-cipher-overview.png")
 
 ```
 
 
-This code is a good example of a <u>[**Substitution
-Cipher**](https://www.geeksforgeeks.org/substitution-cipher/)</u> with
-non-text substition. See
-<u><https://www.boxentriq.com/code-breaking/dancing-men-cipher></u> and
-<u><https://www.dcode.fr/dancing-men-cipher></u> for examples where you
+This code is a good example of a [**Substitution
+Cipher**](https://www.geeksforgeeks.org/substitution-cipher/) with
+non-text substition. See <https://www.boxentriq.com/code-breaking/dancing-men-cipher> and
+<https://www.dcode.fr/dancing-men-cipher> for examples where you
 can encode and decode your own text, and send them to friends.
 `r emoji::emoji("sunglasses")` `r emoji::emoji("smirk_cat")`
 
@@ -368,16 +352,15 @@ Here goes:
 
 -   Fire up the Strava app, or equivalent, on your phones.
 -   Walk out into the college campus, preferably under open sky.
--   With the app on, try to create a figure <u>[like
-    this](https://gpsart.info/en/gpsart-en/nowhow1-en/)</u>
+-   With the app on, try to create a figure [like
+    this](https://gpsart.info/en/gpsart-en/nowhow1-en/)
 -   Share the image with your friend!
 
-## <u>[Wait, But Why?](https://waitbutwhy.com)</u>
+## [Wait, But Why?](https://waitbutwhy.com)
 
 Here are some domains and purposes within them, that use the idea of
 Proximity, and use Voronoi/Delaunay diagrams in their work. From
-<u>[David Eppstein's *Geometry in Action* webpage at Univ. of California, ~~Arvind~~ Irvine](https://www.ics.uci.edu/~eppstein/gina/scot.drysdale.html) :
-</u>
+[David Eppstein's *Geometry in Action* webpage at Univ. of California, ~~Arvind~~ Irvine](https://www.ics.uci.edu/~eppstein/gina/scot.drysdale.html):
 
 -   Anthropology and Archaeology:
     - *Identify the parts of a region under
@@ -433,17 +416,17 @@ Proximity, and use Voronoi/Delaunay diagrams in their work. From
 
 ## References
 
-1.  <u>**Voronoi Diagrams and a Day at the Beach**
-    [**(PDF)**](../../../../materials/pdfs/VoronoiDiagrams-ADayAtTheBeach.pdf)</u>
+1.  **Voronoi Diagrams and a Day at the Beach**
+    [**(PDF)**](../../../../materials/pdfs/VoronoiDiagrams-ADayAtTheBeach.pdf)
     Talks about cholera in Soho, the Voronoi diagram, and how to
     construct it using waves on a beach!!
-2.  Data Genetics. <u>[*Voronoi
-    Tessellations*.](http://datagenetics.com/blog/may12017/index.html)</u>
+2.  Data Genetics. [*Voronoi
+    Tessellations*.](http://datagenetics.com/blog/may12017/index.html)
     Very interesting 3D pictures of how Voronois and Delaunays are
     created.
 3.  Gorilla Sun Blog.
-    <u><https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/></u>
+    <https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/>
 4.  How are Codes used in GPS?
-    <u><https://natronics.github.io/blag/2014/gps-viz-1/></u>
+    <https://natronics.github.io/blag/2014/gps-viz-1/>
 5.  How Do Codes Work in GPS?
-    <u><https://natronics.github.io/blag/2014/gps-prn/></u>
+    <https://natronics.github.io/blag/2014/gps-prn/>

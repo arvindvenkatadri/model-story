@@ -1,0 +1,144 @@
+---
+title: "Final Week Projects"
+subtitle: "How to show you can create Order and Chaos together. You're welcome. 😉"
+date:  "2020-05-25"
+date-modified: today
+order: 300
+image: "featured.jpg"
+---
+
+```{r}
+#| echo: false
+library(emoji)
+```
+
+## Final Course Exercises and Projects
+
+### Project 1: Crime Scene
+
+
+### Project 2: Historical Scene Depiction
+
+### Project 3: Live Data Gathering Experiment
+
+### Project 4: Cryptographic Post Office
+
+
+### Project 5: [Orchestral Manoeuvres ~~in the Dark~~](https://www.youtube.com/results?search_query=orchestral+manoeuvres+in+the+dark) over Wi-Fi
+
+**Task:** 
+
+1. Create an experience to enable **multiple users to
+simultaneously use hand-phone gestures to create collaborative
+music/sound**. 
+1. Viewers must use dance and/or gestures holding
+handphones, to create music together . 
+1. **Each user must be able to
+control unique aspects of the music** to create a collaborative piece
+each time. 
+1. There must be clear opportunities and instructions for
+collaboration based on a **Stag Hunt / Coordination Game**. 
+
+**Tools:**
+`Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi`
+`Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureData`\
+
+**Ideas from our Course:**
+`Proximity; Game Theory / Stag Hunt; Networks and Graphs`\
+
+**Resources:**
+
+-   <u>[PureData Sound Synthesizer](puredata.info)</u>\
+-   <u>[Sensors2OSC](https://sensors2.org/osc/)</u>\
+
+### Project 6: <u>Living on the Ceiling</u>
+
+**Task:** 
+
+1. Use physical movement in the room along with smartphone sensor
+data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja
+Gaikwad, FSP 2019-2020)
+
+**Tools:**
+`Software: Processing; Android apps for sensor data logging and sharing over WiFi`
+\`Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi;
+Makey-Makey'
+
+**Ideas from our Course:** `Proximity; Schelling Points`
+
+**Resources:**.
+
+-   <u>[Processing](https://processing.org/)</u>\
+-   <u>[Mesh Library for Processing](http://leebyron.com/mesh/)</u>\
+-   <u>[How to make things with
+    Make-Makey](https://makeymakey.com/pages/how-to)</u>\
+
+### Project 7: <u>Nightmare at Room 307</u>
+
+**Task:** 
+
+1. Create strange bloodcurdling sounds based on where individuals
+are standing in the room. 
+1. Participants need to move, perhaps be blindfolded and wear headphones / earphones.
+1. If they can experience "pain" in some way based on location, that would also be good. `r emoji::emoji("rofl")`. 
+
+**Tools:**
+`Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi`
+`Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall`
+
+**Ideas from our Course:** `Proximity; Schelling Points`
+
+**Resources:**
+
+- [Theremin](https://en.wikipedia.org/wiki/Theremin)
+
+### Project 8: Friends (Season 65, Episode 12)
+
+**Task:** 
+
+1. Use this article in the Atlantic Magazine as inspiration: [How
+friendships in Change in 
+Adulthood](https://www.theatlantic.com/health/archive/2015/10/how-friendships-change-over-time-in-adulthood/411466/).
+1. Create a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.
+1. Use our collected college network data, and inspiration from
+<https://graphcommons.com> as a starting point. 
+1. Can embed electronic
+(lights) or computed elements ( touch ) , if desired from an aesthetic
+point of view or to create/enhance Viewer participation. 
+1. The installation should show small changes over “time” and must be
+**wilfully and meaningfully degradable by viewers**. 
+1. Water, ink, knives, or flame, rubber-bands and oil are possibilities. 1. No acid.
+
+**Tools:**
+`Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements.`
+`Hardware: None specified. NO THERMOCOL.`
+
+**Ideas from our Course:**
+`Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws`
+
+### Project 9: Six Degrees of Separation
+
+**Task:** 
+
+1. Read the Skit/Play , [“Six Degrees of
+Separation”](https://www.penguinrandomhouse.com/books/72632/six-degrees-of-separation-by-john-guare/) by John Guare. 
+1. Stage or show in some way, part or all of it.
+
+**Tools:** `Software: None specified`
+`Hardware: None specified. NO THERMOCOL.`
+
+**Ideas from our Course:** `Networks and Graphs; Network Dynamics`
+
+### Project 10: Way-Spotting Game
+
+Now that we have an idea of `nodes`, `links` and `costs`, let us get an
+experience of some more network science ideas:
+
+1.  Head over to <https://medium.com/\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd>
+1. Make sense of the Board Game described there in detail. 
+1. Build the Game!!
+1.  Note if you can see the following:
+    -   Frequently Used Nodes
+    -   Frequently used Links
+
+**Ideas from our Course:** `Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs`

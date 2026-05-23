@@ -2,7 +2,7 @@
 title: "\U0001F3B6 Resources and Notes to Myself"
 subtitle: " My personal notes and resources for the course. Not meant for students, but may be useful to them too. You're welcome. 😉"
 date:  "2020-05-25"
-date-modified: "`r Sys.Date()`"
+date-modified: today
 order: 300
 image: "featured.jpg"
 ---

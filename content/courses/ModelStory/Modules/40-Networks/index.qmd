@@ -1,5 +1,6 @@
 ---
 title: "\U0001F579 I am Insta Famous"
+subtitle: Am I a virus?
 date: "2024-01-04"
 date-modified: today
 order: 40
@@ -11,8 +12,6 @@ categories:
 image: featured.jpg
 ---
 
-#### Am I a virus?
-
 ```{r,echo = FALSE,fig.alt="Petr Slováček on Unsplash", fig.align='center'}
 knitr::include_graphics("featured.jpg")
 ```
@@ -23,23 +22,22 @@ Do you think your friends have more friends than you have? Do you think
 that you are **outside the herd**, and that what you think or do is from
 your own mind?
 
-Anyways...
+`Anyways`...
 
 ## Activities
 
-### Activity: Secret Santa Game
+### Activity-1: Secret Santa Game
 
 Let us play this in the vanilla way: Paper chits with names in a bin and
 drawing them in turn. What can go wrong with this? Ask [Avni
 Gupta](https://www.linkedin.com/in/avni-gupta-551014267/).
 
-Should we use this instead?
-<u><https://www.drawnames.com.sg/secret-santa-generator></u>
+Should we use this instead?<https://www.drawnames.com.sg/secret-santa-generator>
 
 Discussion:
 `Nodes, Links, Link Directionality, Connected and Disconnected Networks`
 
-### Activity: Barabasi Cocktail Party Game
+### Activity-2: Barabasi Cocktail Party Game
 
 This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science
 pioneer and expert, who has written a wonderful, and wonderfully
@@ -54,13 +52,17 @@ acessible, book on Network Science, available online
 4.  Make a note of your new friends initials.
 5.  We will plot this conversation on the board. How?
 
-{{< vimeo 191074419 >}}
-<br>
+::: {}
+<center>
+{{< video https://vimeo.com/191074419 width="560" height="400" align="center" title="" >}}
+Connect the Dots
+</center>
+:::
 
 Discussion:
 `Network Mechanisms, Information Flow, Giant Component, Emergence`
 
-### Activity: Indian Surnames Game
+### Activity-3: Indian Surnames Game
 
 1.  How many common Indian surnames do we know? Let us write them on the
     board.
@@ -72,64 +74,43 @@ Discussion:
 Discussion:
 `Node Degree, Giant Component?  Small Worlds?  Multi-Link network, Link Values or Costs`
 
-### Activity: Hi, I am Kevin Bacon, SMI Foundation 2023 Batch
+### Activity-4: Hi, I am Kevin Bacon, SMI Foundation Batch
 
 Let us find a Keven Bacon in SMI Foundation Studies Programme!! Six
-Degrees of Separation...or of Kevin Bacon?
+Degrees of Separation...or of Kevin Bacon? Look at this video before you proceed!
 
-Look at this video before you proceed!
-
-{{< vimeo 14196818 >}}
-<br>
+::: {}
+<center>
+{{< video https://vimeo.com/14196818 width="560" height="400" align="center" title="" >}}
+Six Degrees of Separation
+</center>
+:::
 
 1.  Collect friends Data from across college/class, import and plot,
     analyze and comment
-2.  Use this online tool at DataBasic.io <u><https://databasic.io></u>
+2.  Use this online tool at DataBasic.io <https://databasic.io>
     to *Connect the Dots*, OR
 3.  Even more fun at at GraphCommons
-    <u><https://graphcommons.com/graphs/new></u>
+    <https://graphcommons.com/graphs/new>
 
 Discussion: `Node Degree, Centrality, Betweenness, Link Values or Costs`
 
-### Activity: Can you Introduce me to Chandler, again?
+### Activity-5: Can you Introduce me to Chandler, again?
 
 1.  Take your favourite Literary Work / TV Serial / Movie and create a
     Network Database for it.
-
-2.  How? Use conversations between pairs of individuals (`nodes`) to
+1.  How? Use conversations between pairs of individuals (`nodes`) to
     create links. E.g. each distinct conversation is a `link`, and the
     number of sentences uttered is the `weight` of the link.
-
-3.  Visualize it either with or without tech tools From Teach
+1.  Visualize it either with or without tech tools From Teach
     Engineering, this Activity Sheet
-    <u><https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2></u>.
-
-**Hah! Engineering in a Design college!!**`r emoji::emoji("laugh")`
-
-3.  Can also use [Graph Comics](https://aviz.fr/~bbach/graphcomics/)
-    <u><https://aviz.fr/~bbach/graphcomics/></u>
+    <https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2>.
+        **Hah! Engineering in a Design college!!**`r emoji::emoji("rofl")`
+1.  Can also use [Graph Comics](https://aviz.fr/~bbach/graphcomics/)<https://aviz.fr/~bbach/graphcomics/>
 
 Discussion:
 `Networks are everywhere, Cannot "unsee" them, You are a node and you are a link...are you?`
 
-### Activity: Way-Spotting Game
-
-Now that we have an idea of `nodes`, `links` and `costs`, let us get an
-experience of some more network science ideas:
-
-1.  Make groups of 3.
-2.  Head over to <u><http://www.wayspotting.com/index.html></u>
-3.  Play!! Make a note of your route each time ( your "traversal" of the
-    network)
-4.  Note if you can see the following:
-    -   Frequently Used Nodes
-    -   Frequently used Links
-5.  See here for more info:
-    <u>[https://medium.com/\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd](https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd){.uri}</u>.
-    Sadly link seems dead ;-(
-
-Discussion:
-`Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs`
 
 ## References
 
@@ -164,6 +145,7 @@ Discussion:
     get Richer.**
     <u><http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf></u>
 
+::: {.content-hidden}
 ## Network Science in a Bollywood Song
 
 Song: Kuchh Toh Log Kahenge\
@@ -199,3 +181,5 @@ Film: Amar Prem (1972)\
 | ... | ... |
 
 <br>
+
+:::

@@ -1,5 +1,6 @@
 ---
 title: "\U0001F579 Eating Mangoes with Hamlet"
+subtitle: Hamlet is also, yeah, I mean,... like us! Random!!
 date: 2021-12-11
 date-modified: today
 order: 90
@@ -25,7 +26,6 @@ library(ggtext)
 library(ggformula)
 ```
 
-#### Hamlet is also, yeah, I mean,... like us! Random!!
 
 ![Photo by
 <a href="https://unsplash.com/@gabiontheroad?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Gabriella
@@ -35,7 +35,7 @@ Clare Marino</a> on
 ## Introduction
 
 ::: {}
-<center>{{< video https://www.youtube.com/embed/EmjWIMMtjDc width="560" height="480" >}}
+<center>{{< video https://www.youtube.com/embed/EmjWIMMtjDc width="560" height="320" >}}
 Hamlet in 4 Minutes</center>
 :::
 
@@ -209,10 +209,7 @@ some "truth" (highly probable idea) that is important to us.
 We learnt a lot (new) words from Hamlet, didn't we? How many do we
 remember? What Hypothesis could be make? What do we have a hunch about?
 
-Let us consider the [**Short Term
-Memory(STM)**](Lawrence-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf)
-of Foundation Students at SMI as our vehicle for testing similar
-Hypotheses.[^2]
+Let us consider the [**Short Term Memory(STM)**](Lawrence-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf) of Foundation Students at SMI as our vehicle for testing similar Hypotheses.[^2]
 
 - STM scores are significantly different between students of Design and
   those of Art (;-O)
@@ -248,10 +245,12 @@ If we want our experiment to be **fair** we must have:
 - **randomly** select the people as *respondents* each Test Type
 
 We will choose one of these questions, or a similar one, and use the
-**PPDAC Method** to proceed with our Experiment. This paper by Lawrence
-to guide our Hypothesis Testing and the Design of our Experiment: [**Lawrence - A Design of Experiments Workshop as an Introduction to
-Statistics -
-PDF**](Lawrence-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf).
+**PPDAC Method** to proceed with our Experiment. This paper by Lawrance
+to guide our Hypothesis Testing and the Design of our Experiment:
+
+
+{{< pdf Lawrance-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf >}}
+
 
 This is the paper describing a simple *Design of Experiments* workshop
 in class much like ours. We will try to mimic as much of this as we can.
@@ -264,7 +263,7 @@ Once our test/survey is complete, let us collate all the data for all
 tests using this Excel [**spreadsheet**](STM.xlsx), which we can
 place on Google Drive for the whole class. (This is for the STM
 Hypothesis; we can adapt this spreadsheet for any other hypothesis test
-with categorical factors andscores.)
+with categorical factors and scores.)
 
 1.  Enter the data from all tests on the first sheet titled "RawData"
     (the one with the warning)
@@ -285,7 +284,7 @@ with categorical factors andscores.)
 
 ```{r,echo=FALSE,message=FALSE,warning=FALSE}
 #| label: fig-Experiment-Design
-#| fig-cap: "Experiment Design"
+#| fig-cap: "Experiment Data Analysis Strategy"
 #| out-height: "50%"
 #| out-width: "50%"
 #| fig-align: "center"
@@ -386,6 +385,8 @@ before we play with cards, some background:
 > by the deluge of commercials as I am? This is per half-hour!)
 
 ```{r echo = FALSE}
+#| label: tbl-tv-commercial-data
+#| tbl-cap: "TV Commercial Data"
 scores <- tibble(
   basic = c(6.95,10.013,10.62,10.15,8.583,7.62,8.233,10.35,11.016,8.516),
   extended = c(3.383,7.8,9.416,4.66,5.36,7.63,4.95,8.013,7.8,9.58))
@@ -404,15 +405,15 @@ diff
 > So what would happen if we assign labels randomly? How often would a
 > difference like 2.34 occur?
 >
-> We'll pool all twenty observations, **randomly** pick 10 of them to
+> We'll pool all twenty observations as shown in @tbl-pooled-data. Then we 
+> **randomly** allocate half of them to
 > label "basic" and label the rest "extended", and compute the
-> difference in means between the two groups. We'll repeat that many
-> times, say ten thousand, to get the *permutation distribution* shown
-> in Figure 1.
+> difference in means between the two (shuffled ) groups. We'll repeat that many times, say five thousand times, to get the *permutation distribution* shown in @fig-Null-Dist.
 
+::: {layout="[[20,-10,70]]"}
 ```{r}
-#| label: tbl-Raw-Data
-#| tbl-cap: "Data Table"
+#| label: tbl-pooled-data
+#| tbl-cap: "TV Commercial Durations, pooled data"
 #| out-height: "50%"
 #| out-width: "50%"
 #| fig-align: "center"
@@ -422,12 +423,11 @@ scores_long <- scores %>% pivot_longer(., cols = c("basic", "extended"), values_
 scores_long %>% knitr::kable()
 ```
 
-
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 #| label: fig-Null-Dist
-#| fig-cap: "Unlikely Measurement?"
-#| out-height: "50%"
-#| out-width: "50%"
+#| fig-cap: "Unlikely Difference in Ad Duration?"
+#| out-height: "75%"
+#| out-width: "100%"
 #| fig-align: "center"
 
 ggplot2::set_theme(new = theme_classic())
@@ -447,11 +447,14 @@ null_dist_time %>%
   guides(fill = guide_legend("Greater than 2.34"))
 
 ```
+:::
+
+
 
 > The observed statistic 2.34 is also shown; the fraction of the
 > distribution to the right of that value (≥ 2.34) is the probability
 > that random labeling would give a difference that large. In this case,
-> the probability of this value ( area coloured in green ) is \< 0.005.
+> the value of this probability ( area coloured in green ) is `r mean(null_dist_time$extended >=2.34) `, and is < 0.005.
 >
 > It would be rare for a difference this large to occur by chance. We
 > have randomly tried "all possible chances" and are *hardly able to
@@ -489,11 +492,11 @@ Apropos: how could we do this for non-binary factors ...??!!!
 
 What have been our Conclusions with the Experiment? Let us take our
 Experiment and make a comic out of it: <u>**Data Comic Generator from
-Gramener** [(**Weblink**)](https://gramener.com/comicgen)</u>
+Gramener** [(**Weblink**)](https://gramener.com/comicgen)</u>.
 
 ::: {}
 <center>
-{{< video https://www.youtube.com/embed/E_2hdZuugI8 width="560" height="480" >}}
+{{< video https://www.youtube.com/embed/E_2hdZuugI8 width="560" height="360" >}}
 Comig Generator Online
 </center>
 :::
@@ -503,47 +506,47 @@ Comig Generator Online
 
 ::: {}
 <center>
-{{< video https://www.youtube.com/embed/eGRd8jBdNYg width="560" height="480" >}}
+{{< video https://www.youtube.com/embed/eGRd8jBdNYg width="560" height="360" >}}
 Randomized Trials
 </center>
 :::
 
-2.  <u><https://safetyculture.com/topics/design-of-experiments/></u>
+2.  <https://safetyculture.com/topics/design-of-experiments/>
 
 3.  A. J. Lawrance (1996) *A Design of Experiments Workshop as an
     Introduction to Statistics*, The American Statistician, 50:2,
     156-158, DOI: 10.1080/00031305.1996.10474364.
-    <u>[PDF](Lawrence-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf)</u>
+    [PDF](Lawrence-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf)
 
 4.  Victoria Woodard (2023) *Five Hands-on Experiments for a Design of
     Experiments Course*, Journal of Statistics and Data Science
     Education, 31:3, 225-235, DOI: 10.1080/26939169.2023.2195889.
-    <u>[PDF](Five%20Hands-on%20Experiments%20for%20a%20Design%20of%20Experiments%20Course.pdf)</u>
+    [PDF](Five%20Hands-on%20Experiments%20for%20a%20Design%20of%20Experiments%20Course.pdf)
 
 5.  Tim C. Hesterberg (2015). *What Teachers Should Know About the
     Bootstrap: Resampling in the Undergraduate Statistics Curriculum*,
     The American Statistician, 69:4, 371-386,
-    DOI:10.1080/00031305.2015.1089789. <u>[PDF](hesterberg2015.pdf)</u>
+    DOI:10.1080/00031305.2015.1089789. [PDF](hesterberg2015.pdf)
 
 6.  Shuttleworth, M. (2009). What is the scientific method? Retrieved
-    from <u><https://explorable.com/what-is-the-scientific-method></u>
+    from <https://explorable.com/what-is-the-scientific-method>
 
 7.  Mahashweta Devi, *The Why Why Girl*,
-    <u><https://www.tulikabooks.com/picture-books/the-why-why-girl-english.html></u>,read
-    by Sarah Dryden Peterson.
-    <u><https://www.youtube.com/watch?v=xNcV5DZhg4c></u>
+    <https://www.tulikabooks.com/picture-books/the-why-why-girl-english.html>,read by Sarah Dryden Peterson.
+    <https://www.youtube.com/watch?v=xNcV5DZhg4c>
 
 8.  Could this song indicate what our situation might be?
 
-    <u><https://www.youtube.com/watch?v=qan0Y9hXpPQ></u>
+    <https://www.youtube.com/watch?v=qan0Y9hXpPQ>
 
-    <u><https://www.filmyquotes.com/songs/1381></u>
+    <https://www.filmyquotes.com/songs/1381>
+9. <https://gramener.com/comicgen/v1/>
 
 ### Fun Stuff: Stat Lessons from `Sholay`
 
 ::: {}
 <center>
-{{< video https://www.youtube.com/embed/chi9hsfYcDE width="560" height="480" >}}
+{{< video https://www.youtube.com/embed/chi9hsfYcDE width="560" height="360" >}}
 Gabbar Singh performs a Permutation Test!
 </center>
 :::
@@ -572,12 +575,12 @@ Stats Teacher: Fantastic! Our p-value is so small that we can reject the
 NULL Hypothesis!!\
 
 Go and like this post at:
-<u><https://www.linkedin.com/pulse/stat-lessons-from-sholay-arvind-venkatadri-wgtrf/?trackingId=c0b4UCTLRea6U%2Bj%2Bm4TCtw%3D%3D></u>
+<https://www.linkedin.com/pulse/stat-lessons-from-sholay-arvind-venkatadri-wgtrf/?trackingId=c0b4UCTLRea6U%2Bj%2Bm4TCtw%3D%3D>
 
 ### More Fun Stuff: Words Belong Hamlet
 
-Hamlet's *To be or not to be* in Pidgin English <u>[Tok
-Pisin](https://www.hawaii.edu/satocenter/langnet/definitions/tokpisin.html)</u>!
+Hamlet's *To be or not to be* in Pidgin English [Tok
+Pisin](https://www.hawaii.edu/satocenter/langnet/definitions/tokpisin.html)!
 
 ```{r echo=FALSE,eval=FALSE}
 blogdown::shortcode("tweet", 
@@ -607,5 +610,5 @@ blogdown::shortcode("tweet",
 
 [^1]: <https://nosweatshakespeare.com/quotes/famous/mortal-coil/>
 
-[^2]: Or we could use <u>[Guilford Alternative Uses Creative
-    Test](https://curtbonk.com/bobweb/r546/modules/creativity/creativity_tests/guilford_uses_task.html)</u>
+[^2]: Or we could use [Guilford Alternative Uses Creative
+    Test](https://curtbonk.com/bobweb/r546/modules/creativity/creativity_tests/guilford_uses_task.html)

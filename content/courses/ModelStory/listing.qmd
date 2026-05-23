@@ -29,7 +29,7 @@ knitr::include_graphics("featured.jpg")
 ```
 
 
-## Course Description
+## Introduction
 
 > It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience. --- ALBERT EINSTEIN
 
@@ -47,26 +47,26 @@ These Models may resemble a [Thought Experiment, or a Diagram, or a simple Proce
 
 The Models should thusly provide data and directions for artistic and design endeavours. 
 
-In effect, we will go from <u>[**Stories to Data**](https://open.spotify.com/episode/2DpA27VkXd0eVvcM4f3hTl?si=fa54cde8dd0044d0)</u> rather than the other way around. At the end of the Unit, the ~~tired, but happy~~ students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.
+In effect, we will go from [**Stories to Data**](https://open.spotify.com/episode/2DpA27VkXd0eVvcM4f3hTl?si=fa54cde8dd0044d0) rather than the other way around. At the end of the Unit, the ~~tired, but happy~~ students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.
 
 ## What you will learn
 
--   The so-called (by me!) [4-As]{.black .bg-gold} of Complexity Science - ***"Agents, Actions, Again, Aggregate"***
--   [Complexity concepts]{.black .bg-gold} and how to identify them and apply them in practice
-- Complexity in Human Behaviour:
-    -   ]{.black .bg-gold}Game Theory]{.black .bg-gold}: Prisoners' Dilemma, Stag Hunt, and Chicken Games
-    -   Coordination Games and Schelling Points]{.black .bg-gold}, [Public Behaviour and Policy]{.black .bg-gold}
-    -   [Viral Trends, Biases, and Epidemics]{.black .bg-gold}, and why you persist in saying *Bro*, *My Bad*, and *Think Different*🤦 
+-   **Complexity Science**: The so-called (by me!) [4-As]{.black .bg-gold} - ***"Agents, Actions, Again, Aggregate"***
+-   **Complexity concepts** and how to identify them and apply them in practice
+- **Complexity in Human Behaviour**:
+    -   Game Theory: Prisoners' Dilemma, Stag Hunt, and Chicken Games
+    -   Coordination Games and Schelling Points, Public Behaviour and Policy
+    -   Viral Trends, Biases, and Epidemics, and why you persist in saying *Bro*, *My Bad*, and *Think Different*🤦 
     -   Spatial Patterns and Social Behaviour
--   Complexity in Connections:
+-   **Complexity in Connections**:
     -   Network Structure
     -   Network Effects
     -   How the Spatial (Static) affects the Temporal (Behavioural) and vice versa
--   Complexity in Geometry:
-    -   Proximity
-    -   Delaunay and Voronoi Patterns
-    -   Spatial Pattern Emergence(again)
-    - Fundamentals of [Fractals]{.black .bg-gold}
+-   **Complexity in Geometry**:
+    - Proximity
+      - Delaunay and Voronoi Patterns
+      - Spatial Pattern Emergence(again)
+    - Fundamentals of Fractals
       - Repetition and Iterated Functions
       - Emergence of Shape(yet again)
       - Fractional Dimensions and Box Counting
@@ -77,35 +77,35 @@ In effect, we will go from <u>[**Stories to Data**](https://open.spotify.com/epi
       - *Symmetry on Average*: Probability meets Symmetry
       - Orientation and "Orientability"
     
--   Probability and Randomness
-    -   Randomness and its manifestation in Real Life
-    -   Using Randomness as a Design Tool
-    -   Hypothesis Testing
-    -   Basics of Design of Experiments
-    -   Data Gathering and Analysis (aka "Primary Research")
+-   **Complexity, Probability, and Randomness:**
+    - Randomness and its manifestation in Real Life
+      - Poisson Processes
+    - Using Randomness as a Design Tool
+      - Hypothesis Testing
+      - Basics of Design of Experiments
+      - Data Gathering and Analysis (aka "Primary Design Research")
     
--   Basics of Machine Learning Algorithms
-    -   Classification
-    -   Clustering
-    -   Regression
-    - Interpretation of (some) ML algorithms with ideas from Complexity
+-   **Complexity and Basics of Machine Learning Algorithms**
+    -   Classification, Clustering, Regression
+    -   Transformers(?)
+    -   Interpretation of (some) ML/AI algorithms with ideas from Complexity
 
-<br> And, finally
+And, finally
 
--   [Why all these &*@!#^%$ matter in Art and Design]{.black .bg-gold}, especially since you came here because you hated Maths in Class 8!!
+-   [***Why all these #&%!@!#^%$ things matter in Art and Design***]{.black .bg-gold}, especially since you came here because you hated Maths in Class 8!!
 
 ## Some Teasers!!
 
-1. This century was named by Stephen Hawking as the <u>[**Age of Complexity**](https://blogs.scientificamerican.com/the-curious-wavefunction/stephen-hawkings-advice-for-twenty-first-century-grads-embrace-complexity/)</u>.
+1. This century was named by Stephen Hawking as the [**Age of Complexity**](https://blogs.scientificamerican.com/the-curious-wavefunction/stephen-hawkings-advice-for-twenty-first-century-grads-embrace-complexity/).
     > A few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the "century of complexity". That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.
 
-1.  Documentary: <u>[**The Secret Life of Chaos.**](https://topdocumentaryfilms.com/secret-life-chaos/)</u>
+1.  Documentary: [**The Secret Life of Chaos.**](https://topdocumentaryfilms.com/secret-life-chaos/)
 
-2.  TED Talk: Benoit Mandelbrot. <u>[**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)</u>
+2.  TED Talk: Benoit Mandelbrot. [**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)
 
-3. Complexity Explorables: A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <u><https://www.complexity-explorables.org></u>
+3. *Complexity Explorables* : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <https://www.complexity-explorables.org>
 
-4. Santa Fe Complexity Institute's Complexity Explorer delivers online courses, tutorials, and resources essential to the study of complex systems. <u>https://www.complexityexplorer.org</u>
+4. Santa Fe Complexity Institute's *Complexity Explorer* (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <https://www.complexityexplorer.org>
 
 ## Modules
 

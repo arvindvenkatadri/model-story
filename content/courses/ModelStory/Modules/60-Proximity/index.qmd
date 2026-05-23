@@ -1,5 +1,6 @@
 ---
 title: "\U0001F579 Proximity - Painting Soho red with Kandinsky!"
+subtitle: Are you feeling thirsty?
 date: 2021-12-11
 date-modified: today
 order: 60
@@ -15,7 +16,6 @@ editor_options:
     wrap: 72
 ---
 
-#### Are You feeling Thirsty?
 
 ```{r echo=FALSE,message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -29,7 +29,7 @@ library(bsplus)
 ```
 
 ```{r}
-#| label: soho-map
+#| label: fig-soho-map
 #| echo: FALSE
 #| out.width: "580px"
 #| out.height: "480px"
@@ -101,20 +101,25 @@ Paintings.**](https://www.wassilykandinsky.net/painting1896-1944.php)
 
 Let us listen to Mathew Ritchie tell us about Kandinsky.
 
-::: {#fig-kandinsky}
+::: {}
 <center>
 {{< video https://www.youtube.com/watch?v=_oxS2TM182I width="560" height="480" >}}
 Mathew Ritchie on Kandinsky
 </center>
 :::
 
-
-
 ### The Math in Kandinsky
 
-Here is a brief paper discussing the [**Math-Art of Wassily
-Kandinsky.**](Kandinsky-MathArtist.pdf)
+Here is a brief paper discussing the **Math-Art of Wassily
+Kandinsky.**:
 
+:::{}
+<center>
+{{< pdf "../../../../materials/pdfs/Kandinsky-MathArtist.pdf" height="500px" width="100%" >}}
+Karl Katchee.*Kandinsky, Math Artist?*
+</center>
+:::
+<br>
 What are the Key Insights from this paper?
 
 -   A very spatial aspect to his paintings?
@@ -133,30 +138,43 @@ of experiences? What emotions could be involved? How can we attach
 
 Are you thirsty? Would you like some water?
 
-::: {#fig-kandinsky}
+::: {}
 <center>
 {{< video https://www.youtube.com/watch?v=lNjrAXGRda4 width="560" height="480" >}}
 Cholera in Soho
+<br>
+</center>
+:::
+More here: <https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak>
+
+### A Proximity Effect
+
+Let us play this **Vaccination Game**: <https://www.complexity-explorables.org/explorables/i-herd-you/>
+
+::: {}
+<center>
+{{< html https://www.complexity-explorables.org/explorables/i-herd-you/ height="700px" width="100%"  >}}
+Epidemonic: A Complexity Explorable
 </center>
 :::
 
-More here: <https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak>
-### A Proximity Effect
 
-Let us play this [**Vaccination Game**](https://rocs.hu-berlin.de/D3/herd/).
 
 ### Fun Stuff with Kandinsky
 
-Let's also become synaesthetic, however temporarily, and make music with
+Let's also become synesthetic, however temporarily, and make music with
 Kandinsky !!
 
-> CHROME MUSIC LAB:KANDINSKY This experiment is inspired by Wassily
-> Kandinsky, an artist who compared painting to making music. It turns
-> anything you draw – lines, circles, triangles, or scribbles – into
-> sound.
+Chrome Music Lab : Kandinsky: This experiment is inspired by Wassily
+Kandinsky, an artist who compared painting to making music. It turns anything you draw – lines, circles, triangles, or scribbles – into
+sound. <https://musiclab.chromeexperiments.com/kandinsky/>
 
-[**Kandinsky Music Maker: Music by
-Painting**](https://musiclab.chromeexperiments.com/kandinsky/)
+::: {}
+<center>
+{{< html https://musiclab.chromeexperiments.com/kandinsky/  height="700px" width="100%"  >}}
+Kandinsky Music Generator
+</center>
+:::
 
 ### How to say, "You are standing too close to me?"
 
@@ -168,11 +186,12 @@ Maybe not. There are better Models, may be!!
 
 1.  Dirk Brockman: [This message must be Herd -
     PDF](../../../../materials/pdfs/Brockman-ThisMessageMustBeHerd.pdf)
-2.  P. Bingham, N.Q. Verlander, M.J. Cheal (2004). *John Snow, William
+1.  P. Bingham, N.Q. Verlander, M.J. Cheal (2004). *John Snow, William
     Farr and the 1849 outbreak of cholera that affected London: a
     reworking of the data highlights the importance of the water
     supply*. Public Health Volume 118, Issue 6, September 2004, Pages
     387-394. [Read the
     PDF.](https://sci-hub.se/https://doi.org/10.1016/j.puhe.2004.05.007)
-3.  Make quick cool maps with [Snazzy Maps.](https://snazzymaps.com)
+1. `{{ggvoronoi}}` package in R: <https://github.com/garretrc/ggvoronoi>
+1.  Make quick cool maps with [Snazzy Maps.](https://snazzymaps.com)
 

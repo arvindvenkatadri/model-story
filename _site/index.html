@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-e18becae6b340f8811bc5fb08819d91b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/tachyons-4.12.0/tachyons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -275,6 +278,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./content/courses/ModelStory/Modules/1000-Projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Week Projects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./content/courses/ModelStory/Modules/300-Resources/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎶 Resources and Notes to Myself</span></a>
   </div>
@@ -338,9 +347,15 @@ ul.task-list li input[type="checkbox"] {
 <a href="https://form-and-structure.netlify.app/portfolio/" class="uri">https://form-and-structure.netlify.app/portfolio/</a><br>
 </p>
 <p>You can find me on <a href="https://twitter.com/arvind_v">Twitter</a>, or <a href="https://github.com/arvindvenkatadri">GitHub</a>, and on <a href="https://www.linkedin.com/in/arvindvenkatadri">LinkedIn</a>! Feel free to reach out to me via <a href="mailto:arvind.venkatadri@gmail.com">mail</a> too!</p>
+<center>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="arvindvenkatadri" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+<br><br>
+<center>
+<p><a href="content/materials/images/Produced-By-a-Human-Not-By-AI-Badge-white.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="content/materials/images/Produced-By-a-Human-Not-By-AI-Badge-white.png" class="img-fluid"></a></p>
+<p><br> <a href="./content/courses/ModelStory/listing.html" class="btn btn-primary btn-xl" role="button">Start Here →</a></p>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
+</center></center><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -757,6 +772,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

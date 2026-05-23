@@ -182,7 +182,7 @@ So can we use **Randomness** in Design? With *intent*? Like this:
 
 ```{r}
 #| label: fig-random-batting
-#| fig-cap: Children Randomizing Batting Order(painted by Grok)
+#| fig-cap: Children Randomizing Batting Order (painted by Grok)
 #| echo: false
 #| out-width: "360px"
 #| out-height: "360px"

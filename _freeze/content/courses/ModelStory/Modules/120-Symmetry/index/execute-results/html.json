@@ -1,8 +1,8 @@
 {
-  "hash": "4daa7102a0aeec0c23fa4807a2a87f16",
+  "hash": "1d571e9d99b9809aec63893b24b05ca0",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"\\U0001F579 Symmetry\"\nsubtitle: \"Resilience to Change\"\ndate: \"2024-02-23\"\ndate-modified: today\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 120\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nMahabharata\\\nT. E. Brown\\\nElizabeth Barrett Browning\\\n\n## Symmetry Games\n\n## Friezes and Lattices\n",
+    "markdown": "---\ntitle: \"\\U0001F579 Symmetry\"\nsubtitle: \"Resilience to Change\"\ndate: \"2024-02-23\"\ndate-modified: today\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 120\ndraft:  true\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nMahabharata\\\nT. E. Brown\\\nElizabeth Barrett Browning\\\n\n## Symmetry Games\n\n## Friezes and Lattices\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

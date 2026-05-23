@@ -8,6 +8,7 @@ categories:
 - Evolution
 image: "featured.jpg"
 order: 110
+draft: true
 
 ---
 
@@ -24,3 +25,13 @@ To be written up !!
 Bruce Hornsby The Road Not Taken\
 Robert Frost\
 Scott Adams\
+
+
+
+## References
+
+
+## Additional Readings
+
+1. The Story of Nachiketa ( Shreya and Preya ). <https://culturalsamvaad.com/story-of-nachiketa-and-yama-katha-upanishad-key-lessons/>
+
