@@ -1,5 +1,6 @@
 ---
 title: "\U0001F579 Still More Games !!"
+subtitle: Which Stranger Am I Talking with Today?
 date: 2024-01-04
 date-modified: today
 image: featured.jpg
@@ -13,7 +14,6 @@ editor_options:
 library(blogdown)
 ```
 
-#### Which Stranger Am I Talking with Today?
 
 ```{r, out.width = "360px",out.height = "480px", echo=FALSE, fig.align='center'}
 
@@ -167,15 +167,14 @@ $$
 There is in fact no Temptation at all! Rewards for C are always the
 greatest!
 
-There are *two* Nash equilibria in the Stag hunt game. The CC corner is
+[There are *two* Nash equilibria in the Stag hunt game]{style="background-color:yellow;"}. The CC corner is
 representative of both players being **pro-risk** and cooperating for
 higher reward. The DD corner is where each Player is **risk-averse** and
 prefers to work by themselves and mind their own business, without
-interference to, or help from, the other Player.
+interference to, or help from, the other Player. This nomenclature, and the insightful analysis that goes with it, is due to [Reinhard Selten and John Harsanyi](../../../../materials/pdfs/2011-a-nobel-prize-for-game-theorists-the-contributions-of-harsanyi-nash-and-selten.pdf), Nobel Prize winners in 1994, along with John Nash.
 
 The Stag Hunt is a less vindictive than the Prisoners' Dilemma and may
-be preferable in situations where there is not so much of an adversarial
-engagement as there is a tendency to maximize gains and minimize risks.
+be preferable as a Model in situations where there is not so much of an adversarial engagement as there is a tendency to maximize gains and minimize risks, and a possible high-trust environment.
 
 ## Is it better to Die than to Kill?
 
@@ -233,14 +232,37 @@ $$
 
 and as with the PD, we have:
 
-$$R > (S + T)/2$$
+$$
+R > (S + T)/2
+$$
 
-Chicken Games often occur in politics and of course, in offices and
+## Where do these Games show up?
+
+While it may seem, cynically speaking, that everyone is playing Prisoners' Dilemma, one can detect situations where the Stag Hunt is more appropriate as a Model:
+
+A. Prisoners' Dilemma
+
+- Security Check-in at Airports, when travelling in a group together
+- 
+
+B. Stag Hunt Game
+
+- Classroom Group Projects <https://amyjanzwood.wordpress.com/2018/11/14/game-theory-and-environmental-problems-a-classroom-simulation/>
+- Communities where tacit social contract that lets people live in peace with each other. 
+- When people follow queues. This is a high-trust situation, where people reap the benefits of quick service
+- When nobody goes to the party / protest because they don't think anybody else is going to the party, we are getting the risk-dominant outcome in a Stag hunt.
+- Hans Christian Andersen.*The Emperor's New Clothes*<https://americanliterature.com/author/hans-christian-andersen/short-story/the-emperors-new-clothes>
+
+
+C. Chicken Game
+
+- Sibling Rivalry, involved in family-home task ( similar to classroom projects)
+- Corporate Environments where some people shirk work and others do not. E.g. at Call Centers where the "time-to-answer" is a measured metric
+- Driving in the Wrong Direction, or driving a two-wheeler on the footpath
+- Chicken Games often occur in politics and of course, in offices and
 organizations, where co-workers dare each other to shirk from work the
-longest!! Call Centres are a good place to look for manifestations of
-Chicken!!!
-
-Here us a [*sermon*](https://ellerslie.com/the-game-of-chicken/)
+longest!! 
+- Here us a [*sermon*](https://ellerslie.com/the-game-of-chicken/)
 on the Chicken Game. (Listen to the first few minutes for a good
 description of the Chicken Game.)
 

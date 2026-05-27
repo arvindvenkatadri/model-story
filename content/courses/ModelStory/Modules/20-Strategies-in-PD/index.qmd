@@ -54,7 +54,7 @@ The Game consists of:
 What strategies are possible as a bowler in Cricket? As a batsman? What
 strategies are **permitted**? By whom?
 
-```{r, out.width = "350px",out.height = "300px", echo=FALSE, fig.align='center'}
+```{r, out.width = "450px",out.height = "300px", echo=FALSE, fig.align='center'}
 #| fig-cap: Rishabh Pant vs James Anderson
 
 knitr::include_graphics("rishabh.jpg")
@@ -66,6 +66,8 @@ knitr::include_graphics("rishabh.jpg")
 So, let us **play** a Game, on the [**Game of Trust
 Website**](https://ncase.me/trust) ! Please pair up on one laptop to
 play this.
+
+{{< html https://ncase.me/trust/ >}}
 
 ### Discussion-2: Nature
 
@@ -94,10 +96,9 @@ play this.
 This is a famous study of the Iterated Prisoners' Dilemma by Robert
 Axelrod, **The Evolution of Cooperation**. We will read just a wee bit of it in class.
 
-::: {}
 {{< pdf Axelrod-Hamilton.pdf >}}
-:::
 
+<br>
 And here is Robert Axelrod on the **RadioLab Podcast**:
 
 <center>
@@ -114,7 +115,7 @@ picture-in-picture" loading="lazy">
 
 ```
 
-<br> Transcript: <https://www.wnycstudios.org/podcasts/radiolab/segments/104010-one-good-deed-deserves-another>
+Transcript: <https://www.wnycstudios.org/podcasts/radiolab/segments/104010-one-good-deed-deserves-another>
 
 ### Nash Equilibrium and Dominant Strategy in PD
 
@@ -240,16 +241,14 @@ We'll see.
     <https://tetrahedral.blogspot.com/2011/12/carl-sagans-new-way-to-think-about.html>
 3.  Here is a good Summary of modern thinking about Human Cooperation:
     *The Evolution of Human Cooperation*,
-    [**PDF**](The%20Evolution%20of%20Human%20Cooperation%20–%20The%20Evolution%20Institute.pdf)
+    [**PDF**](../../../../materials/pdfs/TheEvolutionofCooperation-Axelrod.pdf)
 4.  John D. Williams, *The Compleat Strategyst: Being a Primer on the
     Theory of Games of Strategy*, RAND Corporation,
     <ISBN:9780833042224>. This is a very humourous and fun book on Game
-    Theory ! It is available for free online at the [**RAND
-    Corporation
-    Website.**](https://www.rand.org/content/dam/rand/pubs/commercial_books/2007/RAND_CB113-1.pdf)
+    Theory ! It is available for free online at the [**RAND Corporation Website.**](https://www.rand.org/content/dam/rand/pubs/commercial_books/2007/RAND_CB113-1.pdf)
 5.  Ken Binmore,*Playing for Real: A Text on Game Theory*,
     <ISBN:9780195300574>, Oxford University Press, March 2007.
-    [Available here.](https://djvu.online/file/yFqEW5Mqk0aVd)
+    [Available here.](https://djvu.online/file/yFqEW5Mqk0aVd). I have a copy too. 
 6.  Avinash Dixit, Susan Skeath, David Reiley, *Games of strategy*,
     ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.
 7.  Brams Steven J., 1994. "Game Theory and Literature," Games and
@@ -257,8 +256,7 @@ We'll see.
     [Available
     here.](http://www.sscnet.ucla.edu/polisci/faculty/chwe/austen/brams1994.pdf)
 8.  Alexander Mehlmann,*The game’s afoot! Game theory in myth and
-    paradox*, American Mathematical Society 2000. [AMS
-    Bookstore](https://bookstore.ams.org/stml-5/)
+    paradox*, American Mathematical Society 2000. [Available on the academia.edu website(https://www.academia.edu/126156641/The_Game_s_Afoot_Game_Theory_in_Myth_and_Paradox?sm=b&rhid=40311803017)
 9.  *The Tragedy of the Commons*. <https://en.wikipedia.org/wiki/Tragedy_of_the_commons>
 
 ## Fun Stuff With Game Theory
@@ -284,6 +282,18 @@ We'll see.
     <https://www.youtube.com/watch?v=9LvViKftRnA>
 7.  L.A. Confidential
     <https://criticalcommons.org/embed?m=pBXsAUvh9>
+8. Jane Austen, Game Theorist.
+
+  <center>
+  {{< video https://youtu.be/FUCGP3f8GQI width="560" height="400" align="center" title="" >}}
+  Jane Austen, Game Theorist, by Michael Chwe, UCLA
+  </center>
+6. Pride, Prejudice, and Strategic Thinking
+
+  <center>
+  {{< video https://youtu.be/OgtZgpEDQ6U width="560" height="400" align="center" title="" >}}
+  Pride, Prejudice, and Strategic Thinking: A Conversation between Michael Chwe and Anne Mellor
+  </center>
 
 ### Activity-1
 
@@ -296,11 +306,11 @@ Taylor Swift. Who else?
 
 ### Assignment-1
 
-Take a walk in the nearest urban area this weekend. Unobtrusively,
-observe what people are doing. Note these down when they seem to be
-visible examples of "Cooperate" or "Defect". For or Against whom? Discuss the Actions, and the possible payoff values. Draw up a Payoff Matrix is possible. ( Some Actions will of course have to be "predicted" since you do not observe the entire vocabulary of Actions they might perform.)
+Take your favourite show/episode, film, or short story and look at the
+conduct of the characters. Decide whether these were C or D, and why!
 
-No pictures.
+Make a Poster and put it up. Show and Tell in 1 hour!
+
 
 ### Assignment-2
 Analyze the situations outlined in this document. Discuss the payoffs and state the Dominant Strategy in each case. Extra Commentary welcome!!

@@ -41,8 +41,7 @@ Discussion:
 
 This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science
 pioneer and expert, who has written a wonderful, and wonderfully
-acessible, book on Network Science, available online
-<u><http://networksciencebook.com/></u>
+acessible, book on Network Science, available online. <http://networksciencebook.com/>
 
 1.  Please take a coin in your hand. (A rupee coin is good!)
 2.  Find a ~~stranger~~ potential new friend in the classroom. Both of
@@ -95,7 +94,7 @@ Six Degrees of Separation
 
 Discussion: `Node Degree, Centrality, Betweenness, Link Values or Costs`
 
-### Activity-5: Can you Introduce me to Chandler, again?
+### Activity-5: Can you introduce me to Chandler, again?
 
 1.  Take your favourite Literary Work / TV Serial / Movie and create a
     Network Database for it.
@@ -111,39 +110,39 @@ Discussion: `Node Degree, Centrality, Betweenness, Link Values or Costs`
 Discussion:
 `Networks are everywhere, Cannot "unsee" them, You are a node and you are a link...are you?`
 
-
 ## References
 
 1.  Albert-Laszlo Barabasi. *Network Science*.
-    <u><http://networksciencebook.com></u>
+    <http://networksciencebook.com>
 2.  Dmitry Zinoniev, Network Science Intro Slides.
-    <u><https://www.slideshare.net/DmitryZinoviev/workshop-20212296></u>
+    <https://www.slideshare.net/DmitryZinoviev/workshop-20212296>
 3.  The Network Effects Bible.
-    <u><https://www.nfx.com/post/network-effects-bible></u>
+    <https://www.nfx.com/post/network-effects-bible>
 4.  Mark Newman, *The Physics of Networks*. Good intro Power Laws and
-    examples of many networks. <u>[Read the
-    PDF](Mark-Newman-Physics-of-Networks.pdf)</u>
+    examples of many networks. [Read the
+    PDF](../../../../materials/pdfs/newman-physics-of-networks.pdf)
+    {{< pdf ../../../../materials/pdfs/newman-physics-of-networks.pdf  >}}
 5.  The Historical Network Research Community.
-    <u><https://historicalnetworkresearch.org></u>
-6.  Konrad M. Lawson, <u>[*Toilers and Gangsters: Simple Network
+    <https://historicalnetworkresearch.org>
+6.  Konrad M. Lawson, [*Toilers and Gangsters: Simple Network
     Visualization with R for
-    Historians*](https://kmlawson.github.io/dh-tutorials/network.html)</u>
-7.  A Network oriented short story. Frigyes Karinthy, "Chains". <u>[Read
-    PDF](http://vadeker.net/articles/Karinthy-Chain-Links_1929.pdf)</u>
+    Historians*](https://kmlawson.github.io/dh-tutorials/network.html)
+7.  A Network oriented short story. Frigyes Karinthy, "Chains". [Read
+    PDF](http://vadeker.net/articles/Karinthy-Chain-Links_1929.pdf)
 8.  *Who told you about Srishti? Where?* Mark Granovetter, *The Strength
     of Weak Ties*,
-    <u><https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf></u>
+    <https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf>
 9.  Michele Coscia. 2019. *Who will Cluster the Cluster Makers?*
-    <u><https://www.michelecoscia.com/?p=1709></u> Accessed 12 Jan 2024.
+    <https://www.michelecoscia.com/?p=1709> Accessed 12 Jan 2024.
 10. Ran Katzir. Nov 16, 2019. *Experience Network Science Through
-    Play*.<u>[https://medium.com/\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd](https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd){.uri}</u>
+    Play*.[https://medium.com/\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd](https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd){.uri}
 11. Mark Hoffman, *Methods for Network Analysis.*
-    <u><https://bookdown.org/markhoff/social_network_analysis/></u>
+    <https://bookdown.org/markhoff/social_network_analysis/>
 12. Omar Lizardo and Isaac Jilbert, *Social Networks: An Introduction.*
-    <u><https://bookdown.org/omarlizardo/_main/></u>
+    <https://bookdown.org/omarlizardo/_main/>
 13. David Easely and Kleinberg. Networks, Market and Crowds. **The Rich
     get Richer.**
-    <u><http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf></u>
+    <http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf>
 
 ::: {.content-hidden}
 ## Network Science in a Bollywood Song

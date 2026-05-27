@@ -10,7 +10,7 @@ listing:
   sort-ui: false
   filter-ui: false
   contents: "Modules/*/*.qmd"
-  fields: [image, title,reading-time]
+  fields: [title,reading-time]
   table-striped: true
   table-hover: true
   categories: numbered
@@ -19,8 +19,8 @@ listing:
 
 ```{r}
 #| echo: false
-#| out.height: "50%"
-#| out.width: "50%"
+#| out.height: "40%"
+#| out.width: "40%"
 #| fig-align: "center"
 #| fig-cap: "Clock at Grand Central Station, NY"
 #| fig-alt: "Clock at Grand Central Station, NY"
@@ -37,7 +37,7 @@ knitr::include_graphics("featured.jpg")
 
 > All Models Are Wrong But Some Are Useful. --- GEORGE BOX
 
->Humans possess a set of interacting traits connected to our unique capacities for cognition (how we think and reason), cooperation (how we work together), and culture (how we share and accumulate information). Through such abilities, we have acquired unprecedented powers to design and redesign our environments, but we have also become vulnerable to novel risks and failure modes. [--- Conspicuous Cognition Substack](https://www.conspicuouscognition.com/i/185756196/a-uniquely-unique-animal). 
+>Humans possess a set of interacting traits connected to our unique capacities for ***cognition*** (how we think and reason), ***cooperation*** (how we work together), and ***culture*** (how we share and accumulate information). Through such abilities, we have acquired unprecedented powers to design and redesign our environments, but we have also become vulnerable to novel risks and failure modes. [--- Conspicuous Cognition Substack](https://www.conspicuouscognition.com/i/185756196/a-uniquely-unique-animal). 
 
 ## Course Abstract
 
@@ -97,15 +97,33 @@ And, finally
 ## Some Teasers!!
 
 1. This century was named by Stephen Hawking as the [**Age of Complexity**](https://blogs.scientificamerican.com/the-curious-wavefunction/stephen-hawkings-advice-for-twenty-first-century-grads-embrace-complexity/).
-    > A few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the "century of complexity". That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.
 
-1.  Documentary: [**The Secret Life of Chaos.**](https://topdocumentaryfilms.com/secret-life-chaos/)
+:::: pa4
+::: {.athelas .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue}
+[A few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the "century of complexity". That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.]{.f5 .f4-m .f3-l .lh-copy .measure
+.mt0}
 
-2.  TED Talk: Benoit Mandelbrot. [**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)
+[--- Hawking]{.f6 .ttu .tracked .fs-normal}
+:::
+::::
 
-3. *Complexity Explorables* : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <https://www.complexity-explorables.org>
+2.  Documentary: [**The Secret Life of Chaos.**](https://topdocumentaryfilms.com/secret-life-chaos/)
+3.  TED Talk: Benoit Mandelbrot. [**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)
+4. *Complexity Explorables* : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <https://www.complexity-explorables.org>
+5. Santa Fe Complexity Institute's *Complexity Explorer* (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <https://www.complexityexplorer.org>
+6. Siegenfeld, Alexander F., Bar-Yam, Yaneer, An Introduction to Complex Systems Science and Its Applications, Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See @fig-complexity extracted from [this paper](https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872), below. 
 
-4. Santa Fe Complexity Institute's *Complexity Explorer* (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <https://www.complexityexplorer.org>
+```{r}
+#| echo: false
+#| label: fig-complexity
+#| fig-cap: "Complexity Phenomena and Behaviours"
+#| fig-link: https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872
+#| out-width: "75%"
+#| out-height: "75%"
+
+knitr::include_graphics("../../materials/images/Complexity-Bar-Yaam.jpg")
+
+```
 
 ## Modules
 
