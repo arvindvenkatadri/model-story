@@ -111,7 +111,7 @@ And, finally
 3.  TED Talk: Benoit Mandelbrot. [**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)
 4. *Complexity Explorables* : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <https://www.complexity-explorables.org>
 5. Santa Fe Complexity Institute's *Complexity Explorer* (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <https://www.complexityexplorer.org>
-6. Siegenfeld, Alexander F., Bar-Yam, Yaneer, An Introduction to Complex Systems Science and Its Applications, Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See @fig-complexity extracted from [this paper](https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872), below. 
+6. Siegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). *An Introduction to Complex Systems Science and Its Applications*. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See @fig-complexity extracted from [this paper](https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872), below. 
 
 ```{r}
 #| echo: false

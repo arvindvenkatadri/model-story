@@ -120,6 +120,7 @@ format:
     fig-cap-location: bottom
     fig-dpi: 300
     fig-responsive: true
+    tabsets: true
 
     filters:
       - d2

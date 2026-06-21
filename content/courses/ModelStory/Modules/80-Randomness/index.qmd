@@ -24,8 +24,6 @@ library(mosaic)
 library(emoji)
 ```
 
-#### God Does not Play Dice
-
 > "God does not play dice with the universe." - Albert Einstein
 
 ```{r}
@@ -182,7 +180,7 @@ So can we use **Randomness** in Design? With *intent*? Like this:
 
 ```{r}
 #| label: fig-random-batting
-#| fig-cap: Children Randomizing Batting Order (painted by Grok)
+#| fig-cap: Future IPL Stars, Randomizing Batting Order (painted by Grok)
 #| echo: false
 #| out-width: "360px"
 #| out-height: "360px"
@@ -219,7 +217,7 @@ Read more [here.](https://www.perplexity.ai/search/b87d0d87-4e4a-4051-882f-45fbe
 
 ## [Wait, But Why?](https://waitbutwhy.com)
 
-- Randomness can help create fairness?
+- Randomness can help create fairness? 
 - Visibly?
 - *Generate Randomness* to make things fair? How?
 - What does that even mean, to ["generate
@@ -228,6 +226,8 @@ Read more [here.](https://www.perplexity.ai/search/b87d0d87-4e4a-4051-882f-45fbe
 - What does [**"every
   time"**](https://web.archive.org/web/20190302202830id_/http://pdfs.semanticscholar.org/a931/ac1b3ef11235d4516f341b3b5bd8b1ee330e.pdf)
   even mean?
+- Would you put up with a bad outcome if something was *fair on average*?
+- What does *fairness on average* mean? 
 - Whom would you meet in a casino? In other words, what if something
   looks random, but isn't really? See Reference 2 below.
 
@@ -243,6 +243,7 @@ We'll see.
 2.  Randomness in the Arrival of Customers at a Bank, or a Restaurant,
     or Call Centre
 3.  Randomness in the Arrival of Phone Calls at an Exchange
+4.  Making something *fair on average* makes for good rules, service designs, and other design systems like lotteries for allocation of scarce resources. 
 
 ### References
 
@@ -250,27 +251,33 @@ We'll see.
     <https://seeing-theory.brown.edu/basic-probability/index.html>
     A Superb visual website to see patterns in theory! Go and play there
     with Hamlet!
-2.  Penguin Press \@ Medium. *Abraham Wald and the Missing Bullet
+1. Karan Kashyap, *Calculating the Value of Pi: A Monte Carlo
+    Simulation*,
+    <https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf>
+1. Martin Hairer. <https://plus.maths.org/maths-randomness-symmetry> How randomness can create Symmetry, which is another very useful idea for us. 
+
+    
+    
+### Additional Reading
+
+1.  Penguin Press \@ Medium. *Abraham Wald and the Missing Bullet
     Holes*. [**(Web
     Link)**](https://medium.com/@penguinpress/an-excerpt-from-how-not-to-be-wrong-by-jordan-ellenberg-664e708cfc3d)
 
 ![](Survivorship-bias.svg){width="360px" fig-align="center"}
 
-3.  R. J. MacKay and R. W. Oldford. [**Scientific Method, Statistical
+2.  R. J. MacKay and R. W. Oldford. [**Scientific Method, Statistical
     Method and the Speed of
     Light**](https://projecteuclid.org/euclid.ss/1009212817)
-4.  [The Man Who Invented Modern Probability - Andrei
+3.  [The Man Who Invented Modern Probability - Andrei
     Kolmogorov](https://getpocket.com/explore/item/the-man-who-invented-modern-probability)
-5.  Robert Scholz. May 1982. [**The Origin of Spread Spectrum
+4.  Robert Scholz. May 1982. [**The Origin of Spread Spectrum
     Communications**](https://web.archive.org/web/20190302202830id_/http://pdfs.semanticscholar.org/a931/ac1b3ef11235d4516f341b3b5bd8b1ee330e.pdf)
-6.  Emma Neeson. 04 March 2023. [**Hedy Lamarr and the Frequency
+5.  Emma Neeson. 04 March 2023. [**Hedy Lamarr and the Frequency
     Hopping Spread Spectrum: The mother of
     Wi-Fi**.](https://wyldnetworks.com/blog/hedy-lamarr-frequency-hopping-spread-spectrum)
-7.  Karan Kashyap, *Calculating the Value of Pi: A Monte Carlo
-    Simulation*,
-    <https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf>
-8.  Mozart Dice Game: Generate Mozart-like tunes by throwing dice:
+6.  Mozart Dice Game: Generate Mozart-like tunes by throwing dice:
     <https://vician.net/mozart/>
-9.  Theodore Sturgeon. (September 1957). *The Pod in the Barrier.*
+7.  Theodore Sturgeon. (September 1957). *The Pod in the Barrier.*
     Galaxy Science Fiction.<https://archive.org/details/galaxymagazine-1957-09/page/n9/mode/2up?view=theater>
-10. Two Goats, and a Car. <https://youtu.be/CYyUuIXzGgI>
+8. Two Goats, and a Car. <https://youtu.be/CYyUuIXzGgI>

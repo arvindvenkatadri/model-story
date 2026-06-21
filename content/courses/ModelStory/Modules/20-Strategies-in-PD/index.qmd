@@ -128,7 +128,11 @@ in society.
 
 The **Payoff Matrix** in PD is:
 
-```{r, echo=FALSE}
+```{r}
+#| label: tbl-pd-payoff
+#| tbl-cap: "Prisoners' Dilemma Payoff Table"
+#| echo: false
+#| 
 library(kableExtra)
 library(gt)
 data <- tibble::tibble("Player #2" = c("C", "D"),
@@ -137,12 +141,13 @@ data <- tibble::tibble("Player #2" = c("C", "D"),
 
 data %>% 
   gt(rowname_col = ) %>% 
+  tab_options(quarto.disable_processing = TRUE) %>% 
   tab_header(
     title = md("**Prisoners' Dilemma Payoff Matrix**")) %>% 
   gt::tab_spanner(columns = c(2,3), label = md("**Player #1**")) %>% 
   cols_align(align = "center", columns = c(C,D,`Player #2`)) %>% 
   tab_style(
-    style = cell_text(align = "center", weight = "bold"),
+    style = list(cell_text(align = "center", weight = "bold"), cell_fill(color = "white")),
     locations = cells_column_labels(columns = c(C,D, `Player #2`))) %>% 
   tab_style(
     style = cell_text(weight = "bold"),
@@ -152,7 +157,7 @@ data %>%
     locations = cells_body(columns = D, rows = 2)) %>% 
   tab_footnote(footnote = md("**Payoffs are (Player#1, Player#2)**")) %>% 
   tab_footnote(footnote = md("R = Reward; S = Sucker's Payoff; T = Temptation; P = Punishment")) %>% 
-  tab_footnote(footnote = md("Shaded Cells are Nash Equilibria"))
+  tab_footnote(footnote = md("Shaded Cell is Nash Equilibrium"))
 
 
 ```

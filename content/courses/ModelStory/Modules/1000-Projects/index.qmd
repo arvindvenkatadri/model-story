@@ -96,9 +96,10 @@ are standing in the room.
 
 **Task:** 
 
-1. Use this article in the Atlantic Magazine as inspiration: [How
-friendships in Change in 
-Adulthood](https://www.theatlantic.com/health/archive/2015/10/how-friendships-change-over-time-in-adulthood/411466/).
+1. Use these articles as inspiration: 
+    - [How friendships in Change in 
+Adulthood](../../../../materials/pdfs/How Friendships Change Over Time - The Atlantic.html)
+    - <https://beautified-balance.com/how-friendships-change-in-adulthood/> 
 1. Create a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.
 1. Use our collected college network data, and inspiration from
 <https://graphcommons.com> as a starting point. 

@@ -36,8 +36,12 @@ My teaching websites are:\
 - [Intro to Design of Experiments in R](https://doe-a-deer.netlify.app)\ (Extreme Work in Progress!)
 
 My student portfolios are here:\
-<https://we-r-us.netlify.app/portfolio/>\
-<https://form-and-structure.netlify.app/portfolio/>\
+[We R Us: A R workshop](https://we-r-us.netlify.app/portfolio/);[Nikhita Purohit](https://nikhita-project-1.netlify.app/);[Diya Bijoy](https://diyadata.netlify.app/);[Rayna Singh](https://my-blog-rayna.netlify.app/);[Khushi Nagesh](https://khushinagesh.netlify.app/);
+
+and
+[Ananya Satish, Nishtha Raval](https://editor.p5js.org/nishtharaval1/full/JYltkiSNS);[Sneha Manu Jacob aka SMJ](https://editor.p5js.org/SnehaManuJacob/sketches/8RDpOGwbT); [Sara Saju](https://meucsara.netlify.app/); and [Diya Bijoy, Rayna Singh, Aanya Pandith, Naman Rajoria, Soumya Saboo.](https://naman-a2-mudra.netlify.app/posts/welcome/)
+
+
 
 You can find me on
 [Twitter](https://twitter.com/arvind_v), or

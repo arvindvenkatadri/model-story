@@ -2,11 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="dcterms.date" content="2021-12-11">
 <title>🕹 A Random Walk with Hamlet – Old Tortoise Taught Us: The Model of the Story</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
 <script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-795e9e8eca1e12b12abcb09a27409631.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../../site_libs/quarto-html/quarto-syntax-highlighting-4bd490e9cd57f2396cbd188312c0541c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../../site_libs/bootstrap/bootstrap-e18becae6b340f8811bc5fb08819d91b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../site_libs/bootstrap/bootstrap-889851452a2bb4f7eeb95b29ed007d71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
 <script src="../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script src="../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><style>html{ scroll-behavior: smooth; }</style>
 <link href="../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -297,6 +300,7 @@ window.Quarto = {
   <ul class="collapse">
 <li><a href="#design-situations-with-high-randomness" id="toc-design-situations-with-high-randomness" class="nav-link" data-scroll-target="#design-situations-with-high-randomness">Design Situations with High Randomness?</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#additional-reading" id="toc-additional-reading" class="nav-link" data-scroll-target="#additional-reading">Additional Reading</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -328,7 +332,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">May 27, 2026</p>
+      <p class="date-modified">June 21, 2026</p>
     </div>
   </div>
     
@@ -342,8 +346,7 @@ window.Quarto = {
 </div>
 
 
-</header><section id="god-does-not-play-dice" class="level4"><h4 class="anchored" data-anchor-id="god-does-not-play-dice">God Does not Play Dice</h4>
-<blockquote class="blockquote">
+</header><blockquote class="blockquote">
 <p>“God does not play dice with the universe.” - Albert Einstein</p>
 </blockquote>
 <div class="cell" data-layout-align="center">
@@ -354,7 +357,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</section><section id="the-science-of-surprise" class="level2"><h2 class="anchored" data-anchor-id="the-science-of-surprise">The Science of Surprise</h2>
+<section id="the-science-of-surprise" class="level2"><h2 class="anchored" data-anchor-id="the-science-of-surprise">The Science of Surprise</h2>
 <p>Let us then examine the street traffic data we have gathered for any “model-like” pattern! Is our data clean? Do we have two columns of data, one containing 60counts of vehicles, and the other containing inter-vehicular gap times in seconds?<br>
 We will use a tool called, ah…umm…ahem…er…<strong>WTFcsv</strong>. Let us first quickly see what this tool offers us!</p>
 <p></p>
@@ -442,10 +445,10 @@ Figure&nbsp;1: Traffic Data Analysis
 <div class="cell-output-display">
 <div id="fig-random-batting" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-random-batting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="../../../../materials/images/batttingOrderRandom.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)"><img src="../../../../materials/images/batttingOrderRandom.jpg" class="quarto-figure quarto-figure-center figure-img" width="360" height="360"></a>
+<a href="../../../../materials/images/batttingOrderRandom.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;2: Future IPL Stars, Randomizing Batting Order (painted by Grok)"><img src="../../../../materials/images/batttingOrderRandom.jpg" class="quarto-figure quarto-figure-center figure-img" width="360" height="360"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-batting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)
+Figure&nbsp;2: Future IPL Stars, Randomizing Batting Order (painted by Grok)
 </figcaption></figure>
 </div>
 </div>
@@ -473,6 +476,8 @@ Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)
 <li>What does that even mean, to <a href="https://www.random.org/coins/">“generate randomness”</a>?</li>
 <li><span style="background-color:yellow;">If something is random-random, how can it be fair “every time”?</span></li>
 <li>What does <a href="https://web.archive.org/web/20190302202830id_/http://pdfs.semanticscholar.org/a931/ac1b3ef11235d4516f341b3b5bd8b1ee330e.pdf"><strong>“every time”</strong></a> even mean?</li>
+<li>Would you put up with a bad outcome if something was <em>fair on average</em>?</li>
+<li>What does <em>fairness on average</em> mean?</li>
 <li>Whom would you meet in a casino? In other words, what if something looks random, but isn’t really? See Reference 2 below.</li>
 </ul>
 <p>We’ll see.</p>
@@ -488,9 +493,15 @@ Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)
 </li>
 <li>Randomness in the Arrival of Customers at a Bank, or a Restaurant, or Call Centre</li>
 <li>Randomness in the Arrival of Phone Calls at an Exchange</li>
+<li>Making something <em>fair on average</em> makes for good rules, service designs, and other design systems like lotteries for allocation of scarce resources.</li>
 </ol></section><section id="references" class="level3"><h3 class="anchored" data-anchor-id="references">References</h3>
 <ol type="1">
 <li>Seeing Probability Theory: <a href="https://seeing-theory.brown.edu/basic-probability/index.html" class="uri">https://seeing-theory.brown.edu/basic-probability/index.html</a> A Superb visual website to see patterns in theory! Go and play there with Hamlet!</li>
+<li>Karan Kashyap, <em>Calculating the Value of Pi: A Monte Carlo Simulation</em>, <a href="https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf" class="uri">https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf</a>
+</li>
+<li>Martin Hairer. <a href="https://plus.maths.org/maths-randomness-symmetry" class="uri">https://plus.maths.org/maths-randomness-symmetry</a> How randomness can create Symmetry, which is another very useful idea for us.</li>
+</ol></section><section id="additional-reading" class="level3"><h3 class="anchored" data-anchor-id="additional-reading">Additional Reading</h3>
+<ol type="1">
 <li>Penguin Press @ Medium. <em>Abraham Wald and the Missing Bullet Holes</em>. <a href="https://medium.com/@penguinpress/an-excerpt-from-how-not-to-be-wrong-by-jordan-ellenberg-664e708cfc3d"><strong>(Web Link)</strong></a>
 </li>
 </ol>
@@ -498,15 +509,13 @@ Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)
 <figure class="figure"><p><a href="Survivorship-bias.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="Survivorship-bias.svg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></a></p>
 </figure>
 </div>
-<ol start="3" type="1">
+<ol start="2" type="1">
 <li>R. J. MacKay and R. W. Oldford. <a href="https://projecteuclid.org/euclid.ss/1009212817"><strong>Scientific Method, Statistical Method and the Speed of Light</strong></a>
 </li>
 <li><a href="https://getpocket.com/explore/item/the-man-who-invented-modern-probability">The Man Who Invented Modern Probability - Andrei Kolmogorov</a></li>
 <li>Robert Scholz. May 1982. <a href="https://web.archive.org/web/20190302202830id_/http://pdfs.semanticscholar.org/a931/ac1b3ef11235d4516f341b3b5bd8b1ee330e.pdf"><strong>The Origin of Spread Spectrum Communications</strong></a>
 </li>
 <li>Emma Neeson. 04 March 2023. <a href="https://wyldnetworks.com/blog/hedy-lamarr-frequency-hopping-spread-spectrum"><strong>Hedy Lamarr and the Frequency Hopping Spread Spectrum: The mother of Wi-Fi</strong>.</a>
-</li>
-<li>Karan Kashyap, <em>Calculating the Value of Pi: A Monte Carlo Simulation</em>, <a href="https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf" class="uri">https://www.cantorsparadise.com/calculating-the-value-of-pi-using-random-numbers-a-monte-carlo-simulation-d4b80dc12bdf</a>
 </li>
 <li>Mozart Dice Game: Generate Mozart-like tunes by throwing dice: <a href="https://vician.net/mozart/" class="uri">https://vician.net/mozart/</a>
 </li>
@@ -519,6 +528,10 @@ Figure&nbsp;2: Children Randomizing Batting Order (painted by Grok)
 
 </section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

@@ -37,13 +37,13 @@ readings, writings and discussions.
 **Other Terms:**
 `Emergence /  Coherence / Aggregation / Unison / Self Organization`
 
--   Mitchell Resnick: <u>[Beyond the Centralized
-    Mindset](https://llk.media.mit.edu/papers/decentralized/)</u>
+-   Mitchell Resnick: [Beyond the Centralized
+    Mindset](https://llk.media.mit.edu/papers/decentralized/)
 -   Steven Johnson: "Emergence": Chapter..TBD\
 -   Motivate "individual, simple rules" that lead to "emergence of
     patterns" as a central idea\
 -   Motivate Philip Anderson's idea "More is Different"
-    <u>[PDF](https://www.tkm.kit.edu/downloads/TKM1_2011_more_is_different_PWA.pdf)</u>
+    [PDF](https://www.tkm.kit.edu/downloads/TKM1_2011_more_is_different_PWA.pdf)
 -   Simple and not so simple Phenomena
     -   Mexican Wave and Clapping Patterns\
     -   Arpita Baypeyi’s Idea: "Repetitive Patterns in Dance - Kathak"\
@@ -66,21 +66,21 @@ readings, writings and discussions.
         -   Loops in networks cause positive feedback. Example of brain
             neuron **loops** from Steven Johnson's book **Emergence** (
             page 133 )
--   Nicky Case's website <u>[Loopy : a tool for thinking in
-    systems](https://ncase.me/loopy/)</u>
--   Modelling with <u>[STELLA Systems
-    Modelling](https://www.iseesystems.com/welcome.aspx%3E)</u>
+-   Nicky Case's website [Loopy : a tool for thinking in
+    systems](https://ncase.me/loopy/)
+-   Modelling with [STELLA Systems
+    Modelling](https://www.iseesystems.com/welcome.aspx%3E)
 -   A Tale of two Dirks:
-    -   Dirk Brockman: <u>[Research in Complex
-        Systems](http://rocs.hu-berlin.de/)</u>
-    -   Dirk Helbing: <u>[Pedestrians and Simple
-        Rules](https://www.pnas.org/content/pnas/108/17/6884.full.pdf)</u>
--   <u>[Complexity
-    Explorables](http://www.complexity-explorables.org)</u>
+    -   Dirk Brockman: [Research in Complex
+        Systems](http://rocs.hu-berlin.de/)
+    -   Dirk Helbing: [Pedestrians and Simple
+        Rules](https://www.pnas.org/content/pnas/108/17/6884.full.pdf)
+-   [Complexity
+    Explorables](http://www.complexity-explorables.org)
 -   NetLogo and ABM Model exploration
--   Skye Bender-deMoll's tutorial on <u>[Temporal Phenomena in Networks
+-   Skye Bender-deMoll's tutorial on [Temporal Phenomena in Networks
     using
-    Statnet](http://statnet.csde.washington.edu/workshops/SUNBELT/current/ndtv/ndtv_workshop.html)</u>
+    Statnet](http://statnet.csde.washington.edu/workshops/SUNBELT/current/ndtv/ndtv_workshop.html)
     -   Somewhat long tutorial so need time to execute this idea.
     -   Need to club this along with the idea of *"Positive Feedback
         being a result of preferential attachment and causing Hubs and
@@ -94,12 +94,12 @@ readings, writings and discussions.
 -   Extract from D'Arcy Wentworth Thompson **On Growth and Form**
 -   NetLogo Examples
 -   Introduction to L - Systems
-    <u><https://paulbourke.net/fractals/lsys/></u>
+    <https://paulbourke.net/fractals/lsys/>
 -   Interpretation of Kolam as L - Systems
--   CG Jennings <u><https://cgjennings.ca/articles/l-systems/></u>
+-   CG Jennings <https://cgjennings.ca/articles/l-systems/>
 -   @3blue1brown: With recorded COVID-19 cases (outside China) so eerily
-    matching an exponential, a <u>[primer on exponential/logistic
-    growth.](https://t.co/UNqvsybiAL)</u>
+    matching an exponential, a [primer on exponential/logistic
+    growth.](https://t.co/UNqvsybiAL)
 
 #### Chaos Theory
 
@@ -122,48 +122,48 @@ readings, writings and discussions.
 
 #### Fractals
 
--   <u><https://mathigon.org></u> Complex Algebra, 2D plane
+-   <https://mathigon.org> Complex Algebra, 2D plane
 -   Geometric interpretation of Canonical Operations - Translation,
     Reflections, Glide Reflections, Rotations
--   Benoit Mandelbrot's <u>[TED Talk on
-    Roughness](https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en)</u>
+-   Benoit Mandelbrot's [TED Talk on
+    Roughness](https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en)
 -   Michael Barnes method of MRCM
 -   Activity:
     -   Fractals : Julia and Mandelbrot using
-        <u>[XaOs](https://sourceforge.net/projects/xaos/)</u> or
+        [XaOs](https://sourceforge.net/projects/xaos/) or
         equivalent
-    -   <u>[Fractal text analysis of James Joyce's
-        Ulysses](https://phys.org/news/2016-01-world-greatest-literature-reveals-multifractals.html)</u>
-    -   <u>[Fractal
-        Antennas](http://www.ece.iit.edu/~pfelber/fractalantennas.pdf)</u>
+    -   [Fractal text analysis of James Joyce's
+        Ulysses](https://phys.org/news/2016-01-world-greatest-literature-reveals-multifractals.html)
+    -   [Fractal
+        Antennas](http://www.ece.iit.edu/~pfelber/fractalantennas.pdf)
         by Phil Felber
 
 ##### References
 
--   <u>[SantaFe Institute Complexity
-    Explorer](ComplexityExplorer.org)</u>
--   <u>[Complexity
-    Explorables](http://www.complexity-explorables.org)</u>
--   <u>[Yale Fractals
-    Course](https://users.math.yale.edu/public_html/People/frame/Fractals/)</u>
+-   [SantaFe Institute Complexity
+    Explorer](ComplexityExplorer.org)
+-   [Complexity
+    Explorables](http://www.complexity-explorables.org)
+-   [Yale Fractals
+    Course](https://users.math.yale.edu/public_html/People/frame/Fractals/)
 -   Gary William Flake - **The Computational Beauty of Nature**
 
 ## Symmetry
 -   Elizabeth Barrett Browning.1861. *How Do I Love Thee? (Sonnet 43)*
-    <u>[From "Sonnets from the Portuguese"](https://poets.org/poem/how-do-i-love-thee-sonnet-43)</u>
+    [From "Sonnets from the Portuguese"](https://poets.org/poem/how-do-i-love-thee-sonnet-43)
 -   William Blake
-    “Tiger,Tiger"<u><https://www.poetryfoundation.org/poems/43687/the-tyger></u>
--   T E. Brown <u>[My
-    Garden](https://www.public-domain-poetry.com/thomas-edward-brown/my-garden-9741)</u>
--   Activity: <u>[Internet Anagram Server](https://wordsmith.org)</u>
+    “Tiger,Tiger"<https://www.poetryfoundation.org/poems/43687/the-tyger>
+-   T E. Brown [My
+    Garden](https://www.public-domain-poetry.com/thomas-edward-brown/my-garden-9741)
+-   Activity: [Internet Anagram Server](https://wordsmith.org)
 -   Motivate “Canonical Movements” and Operations (Translation /
     Rotation / Reflection / Glide Reflection)
 -   1D and 2D Symmetry; Dimensions
 -   Friezes / Lattices / Wallpapers / Kolams / Sona Art / Fibonacci
     Kolams
 -   Ethno-mathematics Marcia Asher
--   <u>[Saty
-    Raghavachary](https://www.youtube.com/watch?v=-l9za7UlzKM)</u>
+-   [Saty
+    Raghavachary](https://www.youtube.com/watch?v=-l9za7UlzKM)
     -   Activity: Elbows glued to desks; canonical movements to create
         symmetry patterns.
 
@@ -171,11 +171,11 @@ readings, writings and discussions.
 
 -   To be Written up
 -   Activity: Frozen Light:
-    <u>https://imaginary.org/program/frozenlight</u>
+    https://imaginary.org/program/frozenlight
     -   links to Paulus Gerdes “Light + Mirrors” method of creating Sona
         patterns
     -   Girih Art from Isfahan:
-        <u><https://3dwarehouse.sketchup.com/search/?q=girih&searchTab=model></u>
+        <https://3dwarehouse.sketchup.com/search/?q=girih&searchTab=model>
 -   Questions:
 -   Can this be lined to Peano’s “Monster Curves”?
     -   By creating smaller and smaller grids, ( repletion / scale..)
@@ -183,7 +183,7 @@ readings, writings and discussions.
         (Gerdes, page 22 - 2)
 -   Use R to do some of this:
     -   R package `deldir` for
-        <u>[Mandalas](https://fronkonstin.com/2018/02/14/mandalas/)</u>
+        [Mandalas](https://fronkonstin.com/2018/02/14/mandalas/)
     -   Note: I don't like ~~Mandalas~~ Mondays.
 
 ##### Modularity ( To be written up properly)
@@ -206,10 +206,10 @@ readings, writings and discussions.
     used a Voronoi diagram
 -   Multi-dimensional Distances:
     -   **Support Vector Machines**:
-    -   Andriy Burkov <u>[Machine Learning in 100
-        Pages](http://themlbook.com/wiki/doku.php)</u>
-    -   <u>\[Math for Machine Learning\]
-        (https://mml-book.github.io/)</u>
+    -   Andriy Burkov [Machine Learning in 100
+        Pages](http://themlbook.com/wiki/doku.php)
+    -   \[Math for Machine Learning\]
+        (https://mml-book.github.io/)
     -   Alexandre Kowalcszyk's [SVM
         Tutorial](https://www.svm-tutorial.com/)
     -   Activity: Sorting Veggies based on touch and crouching at table
@@ -220,16 +220,16 @@ readings, writings and discussions.
         from separation hyperplane
 -   Classroom and Outdoor Assignments:
     -   Using Proximity and Machine Learning together:
-        -   Use <u>[Wekinator](http://www.wekinator.org/)</u>
-        -   <u>[Wekinator Projects at
-            Maker.Pro](https://maker.pro/wekinator)</u>
+        -   Use [Wekinator](http://www.wekinator.org/)
+        -   [Wekinator Projects at
+            Maker.Pro](https://maker.pro/wekinator)
     -   Activities:
     -   **"Painting with Distance"**
         -   Exercises with Strava
         -   Exercises with Google Literature Trips
         -   Voronoi Self-Portrait using GeoGebra
         -   Or using R + `deldir` following
-            <u>[Fronkenstin](https://fronkonstin.com/2017/03/07/frankenstein/)</u>
+            [Fronkenstin](https://fronkonstin.com/2017/03/07/frankenstein/)
         -   Kolams on a Map: City centres as pulli-s:
         -   Use the work of Darrah Chavey and Madhuri Bapat (Bridges
             Conference)
@@ -237,8 +237,8 @@ readings, writings and discussions.
 
 ## Connectivity
 
--   Set up <u>[Barabasi's cocktail
-    party](http://networksciencebook.com/chapter/3)</u> experiment in
+-   Set up [Barabasi's cocktail
+    party](http://networksciencebook.com/chapter/3) experiment in
     class with chocolate instead of wine.
     -   Coin tossing to set up meetings; ( 2 heads to talk =\> p=0.25
         etc.); 3 minutes per meeting
@@ -247,12 +247,12 @@ readings, writings and discussions.
         Average of one meeting...
     -   Discussion on how this is an *Erdos-Renyi model*, since pure
         randomness was the basis for any encounter being fruitful
--   Vimeo Video <u>[Six Degrees of
-    Separation](https://vimeo.com/14196818)</u>
--   <u>[Introduction to Networks and Graphs by Dmitry
-    Zinoviev](https://www.slideshare.net/DmitryZinoviev/workshop-20212296)</u>
--   Live coding in R with the <u>[tidygraph
-    package](https://www.data-imaginist.com/2017/introducing-tidygraph/)</u>
+-   Vimeo Video [Six Degrees of
+    Separation](https://vimeo.com/14196818)
+-   [Introduction to Networks and Graphs by Dmitry
+    Zinoviev](https://www.slideshare.net/DmitryZinoviev/workshop-20212296)
+-   Live coding in R with the [tidygraph
+    package](https://www.data-imaginist.com/2017/introducing-tidygraph/)
     -   Structure ( Node/ Link / Directed / Undirected /....)
     -   Dynamic Processes:
         -   Random Networks - Erdos-Renyi model
@@ -260,32 +260,32 @@ readings, writings and discussions.
         -   Hubs and Power Laws - Barabasi - Albert model
         -   Preferential Attachment ( Rich get Richer )
         -   Matthew Effect from the Bible
--   Readings from : <u>[Networks, Market and Crowds - Easely and
-    Kleinberg](http://www.cs.cornell.edu/home/kleinber/networks-book/)</u>
+-   Readings from : [Networks, Market and Crowds - Easely and
+    Kleinberg](http://www.cs.cornell.edu/home/kleinber/networks-book/)
 -   Activity:
     -   Check out the Kevin Bacon number of your favourite actor
     -   Find a Keven Bacon in Srishti Foundation Studies Programme
         -   Collect Data from across college, import and plot, analyze
             and comment
-        -   Use this online tool at databasic.io <u>[Connect the
-            Dots](https://www.databasic.io/en/connectthedots/)</u> or
+        -   Use this online tool at databasic.io [Connect the
+            Dots](https://www.databasic.io/en/connectthedots/) or
             **better still** at
-            <u>[GraphCommons](https://graphcommons.com/graphs/new)</u>
+            [GraphCommons](https://graphcommons.com/graphs/new)
         -   Use R and tidygraph
-        -   ~~Use this online tool at~~ <u>[Network
-            Repository](http://networkrepository.com/graphvis.php)</u>
+        -   ~~Use this online tool at~~ [Network
+            Repository](http://networkrepository.com/graphvis.php)
             Too Complex for now.
 -   Import any of the Sample Network Data Sets that make sense
     -   Take your favourite Literary Work / TV Serial / Movie and create
         a Network Database for it.
         -   Visualize it either with or without tech tools from
-            <u>[Teach Engineering, this
-            Activity](https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2)</u>
-        -   Can also use <u>[Graph Comics
-            !](https://aviz.fr/~bbach/graphcomics/)</u>
+            [Teach Engineering, this
+            Activity](https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2)
+        -   Can also use [Graph Comics
+            !](https://aviz.fr/~bbach/graphcomics/)
 -   Network Science Ideas:
     -   Use
-        <u>[NetLogo](https://ccl.northwestern.edu/netlogo/download.shtml)</u>
+        [NetLogo](https://ccl.northwestern.edu/netlogo/download.shtml)
         to Examine and Understand some Network Science Models :
         -   Friendship Paradox, Kevin Bacon Number
         -   Random Networks, Clustering, Small Worlds, Preferential
@@ -293,73 +293,73 @@ readings, writings and discussions.
         -   Mathew Effect from Bible
         -   Euler Walk, Bridges of Konigsberg
         -   Hamiltonian Walk and Journeyman Problem
-        -   <u>[Bidding Market Game in
-            NetLogo](http://ccl.northwestern.edu/netlogo/models/BiddingMarket)</u>
+        -   [Bidding Market Game in
+            NetLogo](http://ccl.northwestern.edu/netlogo/models/BiddingMarket)
             as a view to **Stock Market** workings
     -   Real World Examples:
-        -   CityLab Blog: <u>[How Cars Divide
-            America](https://www.citylab.com/transportation/2018/07/how-cars-divide-america/565148/?utm_source=feed)</u>
-        -   <u>[Disease Propagation Game](vax.herokuapp.com)</u>
+        -   CityLab Blog: [How Cars Divide
+            America](https://www.citylab.com/transportation/2018/07/how-cars-divide-america/565148/?utm_source=feed)
+        -   [Disease Propagation Game](vax.herokuapp.com)
         -   Disease Propagation and Epidemics and Percolation Theory :
-            <u>[Kevin Smiler - Going Critical - Models for Disease
-            Diffusion](https://meltingasphalt.com/interactive/going-critical/)</u>.
-        -   ""How to Win Friends and Influence People": <u>[Diffusion
+            [Kevin Smiler - Going Critical - Models for Disease
+            Diffusion](https://meltingasphalt.com/interactive/going-critical/).
+        -   ""How to Win Friends and Influence People": [Diffusion
             Simulation
-            Game](https://www.indiana.edu/~simed/istdemo/)</u> and
-            <u>[PDF](http://www.enablingchange.com.au/Summary_Diffusion_Theory.pdf)</u>
-        -   Read one Stock Market Crash / Bubble Story <u>[Joshua
+            Game](https://www.indiana.edu/~simed/istdemo/) and
+            [PDF](http://www.enablingchange.com.au/Summary_Diffusion_Theory.pdf)
+        -   Read one Stock Market Crash / Bubble Story [Joshua
             Ferris: The Market Value of my
-            Father](https://www.wealthsimple.com/en-ca/magazine/joshua-ferris)</u>
-        -   Read and Analyze <u>[Frigyes Karinthy's Short Story
-            *Chains*](Karinthy-Chain-Links_1929.pdf)</u>
+            Father](https://www.wealthsimple.com/en-ca/magazine/joshua-ferris)
+        -   Read and Analyze [Frigyes Karinthy's Short Story
+            *Chains*](Karinthy-Chain-Links_1929.pdf)
         -   Cambridge Analytics story? [TBD](Cambridge%20Analytics)
 -   Activities:
     -   Try to replicate Steve Millgram's experiment to motivate Small
         World
     -   We are Fine \[TBD??. Seem to have lost the reference/bookmark\]
-    -   <u>[Analyze BMTC routes in R using DiagrammeR : Data
-        Source](https://github.com/geohacker/bmtc)</u>
-    -   Tristan Mahr - <u>[Secret Santa is a graph traversal
-        problem](https://www.tjmahr.com/secret-santa-graph-traversal/)</u>
+    -   [Analyze BMTC routes in R using DiagrammeR : Data
+        Source](https://github.com/geohacker/bmtc)
+    -   Tristan Mahr - [Secret Santa is a graph traversal
+        problem](https://www.tjmahr.com/secret-santa-graph-traversal/)
     -   Use Arduino / Makey Makey + Phone BT to create a "connected set
         of streets" in class
     -   Network Theory in Art : Make Paper/ Rangoli / Thread Kolams and
         Sona Art using a printout of a Map as a background
-    -   Use and analyse/depict one dataset from the <u>[Stanford Large
+    -   Use and analyse/depict one dataset from the [Stanford Large
         Network Dataset Collection -
-        SNAP](https://snap.stanford.edu/data/index.html)</u>
+        SNAP](https://snap.stanford.edu/data/index.html)
 -   References
     -   Albert-Laszlo Barabasi's book
-        <u>["Linked"](http://networksciencebook.com)</u>
-    -   David Easley, <u>["Networks, Crowds and
-        Markets"](http://www.cs.cornell.edu/home/kleinber/networks-book/)</u>
-    -   Robert A. Hanneman and Mark Riddle - <u>["Introduction to social
+        ["Linked"](http://networksciencebook.com)
+    -   David Easley, ["Networks, Crowds and
+        Markets"](http://www.cs.cornell.edu/home/kleinber/networks-book/)
+    -   Robert A. Hanneman and Mark Riddle - ["Introduction to social
         network
-        methods"](https://faculty.ucr.edu/~hanneman/nettext/)</u>
-    -   Hiroki Sayama, <u>["Introduction to the Modeling and Analysis of
+        methods"](https://faculty.ucr.edu/~hanneman/nettext/)
+    -   Hiroki Sayama, ["Introduction to the Modeling and Analysis of
         Complex
-        Systems"](http://bingweb.binghamton.edu/~sayama/textbook/)</u>
-    -   Dmitry Zinoviev's <u>[Little Network Science
-        Lab](http://networksciencelab.com/)</u>
-    -   Networked Life by Michael Kearns: <u>[Online Video
-        Version](https://www.cis.upenn.edu/~mkearns/NetworkedLifeOnline/)</u>
+        Systems"](http://bingweb.binghamton.edu/~sayama/textbook/)
+    -   Dmitry Zinoviev's [Little Network Science
+        Lab](http://networksciencelab.com/)
+    -   Networked Life by Michael Kearns: [Online Video
+        Version](https://www.cis.upenn.edu/~mkearns/NetworkedLifeOnline/)
     -   Mark Newman: Networks
     -   Marcia Ascher: Ethnomathematics
     -   Paulus Gerdes: Lunda Geometry
 -   Visualization
-    -   Ognyanova, K. (2019) <u>[Network visualization with
-        R](www.kateto.net/network-visualization)</u> and Tutorial
-        <u>[PDF](http://www.kateto.net/wp-content/uploads/2019/06/Sunbelt%202019%20R%20Network%20Visualization%20Workshop.pdf)</u>
+    -   Ognyanova, K. (2019) [Network visualization with
+        R](www.kateto.net/network-visualization) and Tutorial
+        [PDF](http://www.kateto.net/wp-content/uploads/2019/06/Sunbelt%202019%20R%20Network%20Visualization%20Workshop.pdf)
     -   Network Repository <http://networkrepository.com/graphvis.php>
-    -   <u>[Fun Stuff with Network
-        Science](https://sites.google.com/a/binghamton.edu/netscied/fun-stuff)</u>
-    -   <u>[60 Graph Visualization
-        Libraries](https://www.kdnuggets.com/2019/05/60-useful-graph-visualization-libraries.html)</u>
-    -   Meeks, E., & Krishnan, M. (2013). <u>[An interactive
+    -   [Fun Stuff with Network
+        Science](https://sites.google.com/a/binghamton.edu/netscied/fun-stuff)
+    -   [60 Graph Visualization
+        Libraries](https://www.kdnuggets.com/2019/05/60-useful-graph-visualization-libraries.html)
+    -   Meeks, E., & Krishnan, M. (2013). [An interactive
         introduction to network analysis and
-        representation](http://dhs.stanford.edu/dh/networks/)</u>
+        representation](http://dhs.stanford.edu/dh/networks/)
     -   Database for Social Networks in Movies
-        <u>http://www.moviegalaxies.com</u>
+        http://www.moviegalaxies.com
 
 ## Rationality
 
@@ -367,16 +367,16 @@ readings, writings and discussions.
 
 -   Alexander Dumas “ The Three Musketeers” as a Manifestation of
     “Prisoner’s Dilemma” (Chapter 5 )
--   <u>[Presh Talwalkar's article on the South West Airlines
-    episode](https://mindyourdecisions.com/blog/2013/03/05/southwest-airlines-boarding-and-game-theory/)</u>
+-   [Presh Talwalkar's article on the South West Airlines
+    episode](https://mindyourdecisions.com/blog/2013/03/05/southwest-airlines-boarding-and-game-theory/)
 -   Public Behaviour and extract from V S Raghunathan’s “Games Indians
     Play"
 -   Axelrod Experiment and Strategy
--   <u>Play Prisoner’s Dilemma Game on Nicky Case Website [Trust
-    Game](https://ncase.me/trust/)</u>
+-   Play Prisoner’s Dilemma Game on Nicky Case Website [Trust
+    Game](https://ncase.me/trust/)
 -   Schelling Segregation Experiment (Nick Case website)
--   <u>[Hotelling’s experiment from Presh Talwarkar’s
-    Book](https://mindyourdecisions.com/blog/tag/hotellings-game/)</u>
+-   [Hotelling’s experiment from Presh Talwarkar’s
+    Book](https://mindyourdecisions.com/blog/tag/hotellings-game/)
 -   Schelling Points as an "Emergent Phenomenon" ( Preface of Thomas
     Schelling's Book, example on Audience Seating )\
     - Visit to local “urban ghetto”\
@@ -387,10 +387,10 @@ readings, writings and discussions.
     installation\
 -   Generative Adversarial Networks (GANs):\
     - Use Game Theory in to create faces to be used in Illustration\
-    - Nvidia AI Playground: <u>[GANimal and
-    GauGAN](https://www.nvidia.com/en-us/research/ai-playground/)</u>.\
-    - <u>[The GAN Lab](https://poloclub.github.io/ganlab/)</u> and
-    <u>[The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)</u>
+    - Nvidia AI Playground: [GANimal and
+    GauGAN](https://www.nvidia.com/en-us/research/ai-playground/).\
+    - [The GAN Lab](https://poloclub.github.io/ganlab/) and
+    [The GAN Zoo](https://github.com/hindupuravinash/the-gan-zoo)
 
 ## Sound
 
@@ -399,7 +399,7 @@ readings, writings and discussions.
 -   Wordsworth’s “Solitary Reaper” and “Tower of Babel”
     -   Motivate Music as common emotional language; PsychoAcoustics
     -   Gallopin' Gertie Bridge:
-        <u><https://www.youtube.com/watch?v=j-zczJXSxnw></u>
+        <https://www.youtube.com/watch?v=j-zczJXSxnw>
         -   Vibration and Resonance, Idea of Acoustic Length / Natural
             Frequency
         -   Example of Childhood Swing: How did Dad/Mom know when to
@@ -408,11 +408,11 @@ readings, writings and discussions.
 -   Activities:
     -   Measure vibration frequencies from common objects and tabulate
         "Acoustic Length" of objects
-    -   Using Simple Network Graphs to construct <u>[Musical
-        Scales](https://imaginary.github.io/ScaleLab/)</u>
+    -   Using Simple Network Graphs to construct [Musical
+        Scales](https://imaginary.github.io/ScaleLab/)
     -   Arduino and Sound Projects TBD
-    -   Use <u>[Mozart’s Random Music
-        generator](https://mozart.vician.cz/)</u> along with Makey-Makey
+    -   Use [Mozart’s Random Music
+        generator](https://mozart.vician.cz/) along with Makey-Makey
         to create movement and sound
     -   Use R packages `seewave`, `soundgen`, `phontools` and `tuneR` to
         synthesise sound algorithmically in R
@@ -425,27 +425,27 @@ readings, writings and discussions.
     -   Ear as FFT analyser
     -   **Eigen Functions** and how they are like an alphabet
     -   Musical instruments and Timbre
-    -   <u><http://andrewduncan.net/></u>
+    -   <http://andrewduncan.net/>
 
 ###### SuperCollider and PureData Stuff
 
--   Activity: SuperCollider for Algorithmic <u>[Sound
-    Composition](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider)</u>
--   <u>[SuperCollider Code
-    Examples](http://ecmc.rochester.edu/ecmc/docs/supercollider/examples/)</u>
--   James Harkins <u>[Patterns in
-    SuperCollider](http://distractionandnonsense.com/sc/A_Practical_Guide_to_Patterns.pdf)</u>
+-   Activity: SuperCollider for Algorithmic [Sound
+    Composition](https://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider)
+-   [SuperCollider Code
+    Examples](http://ecmc.rochester.edu/ecmc/docs/supercollider/examples/)
+-   James Harkins [Patterns in
+    SuperCollider](http://distractionandnonsense.com/sc/A_Practical_Guide_to_Patterns.pdf)
 
 ###### Rhythm
 
 -   Music as synchronized and coordinated motion
-    -   Nathan D. Hesselink: <u>[Radiohead’s “Pyramid Song”: Ambiguity,
+    -   Nathan D. Hesselink: [Radiohead’s “Pyramid Song”: Ambiguity,
         Rhythm, and
-        Participation](http://www.mtosmt.org/issues/mto.13.19.1/mto.13.19.1.hesselink.php)</u>
+        Participation](http://www.mtosmt.org/issues/mto.13.19.1/mto.13.19.1.hesselink.php)
         and
-        <u>[PDF](http://mtosmt.org/issues/mto.13.19.1/mto.13.19.1.hesselink.pdf)</u>
+        [PDF](http://mtosmt.org/issues/mto.13.19.1/mto.13.19.1.hesselink.pdf)
         and PDF
-        <u>[Examples](http://mtosmt.org/issues/mto.13.19.1/hesselink_examples.pdf)</u>
+        [Examples](http://mtosmt.org/issues/mto.13.19.1/hesselink_examples.pdf)
 
 ## Adaptation
 
@@ -482,29 +482,29 @@ To be written up\
         -   Design Randomized Observational Sampling Experiment
         -   No of Readings/Samples to get good Confidence Intervals
         -   Standard Errors, CI
-        -   <u>Motivate [Allen Downey Stat
-            Test](http://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)</u>
--   LoA - Imagine: Counterfactuals with <u>[Facebook
-    Prophet](https://facebook.github.io/prophet/)</u> or <u>[Google
-    CausalImpact](https://google.github.io/CausalImpact/CausalImpact.html)</u>
+        -   Motivate [Allen Downey Stat
+            Test](http://allendowney.blogspot.com/2016/06/there-is-still-only-one-test.html)
+-   LoA - Imagine: Counterfactuals with [Facebook
+    Prophet](https://facebook.github.io/prophet/) or [Google
+    CausalImpact](https://google.github.io/CausalImpact/CausalImpact.html)
 
 #### Bayesian Estimation
 
--   Bayesian Estimation using <u>[Harry
-    Potter](https://link.springer.com/article/10.3758/s13423-017-1262-3)</u>
+-   Bayesian Estimation using [Harry
+    Potter](https://link.springer.com/article/10.3758/s13423-017-1262-3)
 -   David Robinson: Understanding empirical Bayes estimation (using
     baseball statistics)
-    <u><http://varianceexplained.org/r/empirical_bayes_baseball/></u>
+    <http://varianceexplained.org/r/empirical_bayes_baseball/>
 -   Watch Moneyball(Brad Pitt)
--   Rasmus Baath <u>[Bayesian Estimation in
-    R](https://docs.google.com/presentation/d/1Lv5_IBi_PXbtp8FbA8-qBI0PwJAvPlP9OZ-6t6l6gwM/edit#slide=id.p)</u>
+-   Rasmus Baath [Bayesian Estimation in
+    R](https://docs.google.com/presentation/d/1Lv5_IBi_PXbtp8FbA8-qBI0PwJAvPlP9OZ-6t6l6gwM/edit#slide=id.p)
 -   `tidybayes`: Bayesian analysis + tidy data + geoms
-    <u><https://mjskay.github.io/tidybayes/></u>
--   <u>[Become a Bayesian master with
-    bayestestR](https://github.com/easystats/bayestestR)</u>
--   <u>[Predict which house of Hogwarts people will belong to, based on
+    <https://mjskay.github.io/tidybayes/>
+-   [Become a Bayesian master with
+    bayestestR](https://github.com/easystats/bayestestR)
+-   [Predict which house of Hogwarts people will belong to, based on
     personality
-    test](https://fabiandablander.com/r/Bayes-Potter.html)</u>
+    test](https://fabiandablander.com/r/Bayes-Potter.html)
 
 ## Estimation
 
@@ -512,14 +512,14 @@ To be written up\
 
 -   Use Greek Chorus and the Sutradhar concept as an introduction to
     Interpolation and Regression:
--   <u>[Legally Blonde: Greek Chorus in Popular
-    Culture](https://www.youtube.com/watch?v=aVRUfPRUKtU)</u>
--   <u>[The Greek Chorus Explained](https://youtu.be/orXPMdCU-6s)</u>
--   <u>[Indian Drama and the
-    Sutradhaar](https://www.britannica.com/art/theater-building/Developments-in-Asia#ref463835)</u>
+-   [Legally Blonde: Greek Chorus in Popular
+    Culture](https://www.youtube.com/watch?v=aVRUfPRUKtU)
+-   [The Greek Chorus Explained](https://youtu.be/orXPMdCU-6s)
+-   [Indian Drama and the
+    Sutradhaar](https://www.britannica.com/art/theater-building/Developments-in-Asia#ref463835)
 -   Motivate the idea of "Missing Data" and Interpolation
 -   *Robert Grant's website* : generate random dataset by painting it:
-    <u><http://www.robertgrantstats.co.uk/drawmydata.html></u>
+    <http://www.robertgrantstats.co.uk/drawmydata.html>
     -   Use random data for regression/interpolation in Excel or in R or
         [jamovi](https://www.jamovi.org/)
 -   Continue with Regression, Learning, Estimation
@@ -542,8 +542,8 @@ To be written up\
         Feb 2020
 2.  Symmetry
     -   Doris Schattschneider
-    -   <u>[Brian Sanderson's Page on Symmetry and
-        Tilings](http://www.math.toronto.edu/~drorbn/Gallery/Symmetry/Tilings/Sanderson/Algorithm.pdf)</u>
+    -   [Brian Sanderson's Page on Symmetry and
+        Tilings](http://www.math.toronto.edu/~drorbn/Gallery/Symmetry/Tilings/Sanderson/Algorithm.pdf)
     -   Joe Rosen
     -   Marcia Ascher “Ethnomathematics”
     -   Paulus Gerdes
@@ -569,13 +569,13 @@ To be written up\
     -   David Spiegelhalter: The Art of Statistics
     -   Derek Rowbotham
 7.  Machine Learning.
-    -   <u>Andriy Burkov [Machine Learning in 100
-        Pages](http://themlbook.com/wiki/doku.php)</u>
-    -   <u><https://vas3k.com/blog/machine_learning/></u>
+    -   Andriy Burkov [Machine Learning in 100
+        Pages](http://themlbook.com/wiki/doku.php)
+    -   <https://vas3k.com/blog/machine_learning/>
 
 ## Final Course Exercises and Projects
 
-### Project 1: <u>Orchestral Manoeuvres</u> ~~in the Dark~~ <u>over Wi-Fi</u>
+### Project 1: Orchestral Manoeuvres ~~in the Dark~~ over Wi-Fi
 
 **Task:** Create an experience to enable **multiple users to
 simultaneously use hand-phone gestures to create collaborative
@@ -590,10 +590,10 @@ collaboration based on a **Stag Hunt / Coordination Game**. **Tools:**
 `Proximity; Game Theory / Stag Hunt; Networks and Graphs`\
 **Resources:**
 
--   <u>[PureData Sound Synthesizer](puredata.info)</u>\
--   <u>[Sensors2OSC](https://sensors2.org/osc/)</u>\
+-   [PureData Sound Synthesizer](puredata.info)\
+-   [Sensors2OSC](https://sensors2.org/osc/)\
 
-### Project 2: <u>Living on the Ceiling</u>
+### Project 2: Living on the Ceiling
 
 **Task:** Use physical movement in the room along with smartphone sensor
 data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja
@@ -608,12 +608,12 @@ Makey-Makey'
 
 **Resources:**.
 
--   <u>[Processing](https://processing.org/)</u>\
--   <u>[Mesh Library for Processing](http://leebyron.com/mesh/)</u>\
--   <u>[How to make things with
-    Make-Makey](https://makeymakey.com/pages/how-to)</u>\
+-   [Processing](https://processing.org/)\
+-   [Mesh Library for Processing](http://leebyron.com/mesh/)\
+-   [How to make things with
+    Make-Makey](https://makeymakey.com/pages/how-to)\
 
-### Project 3: <u>Nightmare at Room 307</u>
+### Project 3: Nightmare at Room 307
 
 **Task:** Create strange bloodcurdling sounds based on where individuals
 are standing in the room. Participants need to move, perhaps be
@@ -627,7 +627,7 @@ blindfolded and wear headphones / earphones.
 
 **Resources:**
 
--   <u>[Theremin](https://en.wikipedia.org/wiki/Theremin)</u>
+-   [Theremin](https://en.wikipedia.org/wiki/Theremin)
 
 ### Project 4: Friends (Season 65, Episode 12)
 
