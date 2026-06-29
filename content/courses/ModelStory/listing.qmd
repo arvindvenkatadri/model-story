@@ -51,6 +51,10 @@ In effect, we will go from [**Stories to Data**](https://open.spotify.com/episod
 
 ## What you will learn
 
+::: {.grid}
+
+::: {.g-col-6}
+
 -   **Complexity Science**: The so-called (by me!) [4-As]{.black .bg-gold} - ***"Agents, Actions, Again, Aggregate"***
 -   **Complexity concepts** and how to identify them and apply them in practice
 - **Complexity in Human Behaviour**:
@@ -89,10 +93,25 @@ In effect, we will go from [**Stories to Data**](https://open.spotify.com/episod
     -   Classification, Clustering, Regression
     -   Transformers(?)
     -   Interpretation of (some) ML/AI algorithms with ideas from Complexity
+:::
+
+::: {.g-col-6}
+```{r}
+#| echo: false
+#| out.height: "820px"
+
+knitr::include_graphics("../../materials/code/enhanced_roadmap_ggplot.png")
+
+```
+
+:::
+
+:::
 
 And, finally
 
 -   [***Why all these #&%!@!#^%$ things matter in Art and Design***]{.black .bg-gold}, especially since you came here because you hated Maths in Class 8!!
+
 
 ## Some Teasers!!
 

@@ -110,159 +110,135 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
-    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "objectID": "content/courses/ModelStory/Modules/1000-Projects/index.html",
+    "href": "content/courses/ModelStory/Modules/1000-Projects/index.html",
+    "title": "Final Week Projects",
     "section": "",
-    "text": "Photo by Ahmed Yaaniu on Unsplash",
+    "text": "Task:\n\nCreate an experience to enable multiple users to simultaneously use hand-phone gestures to create collaborative music/sound.\nViewers must use dance and/or gestures holding handphones, to create music together .\n\nEach user must be able to control unique aspects of the music to create a collaborative piece each time.\nThere must be clear opportunities and instructions for collaboration based on a Stag Hunt / Coordination Game.\n\nTools: Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureData\nIdeas from our Course: Proximity; Game Theory / Stag Hunt; Networks and Graphs\nResources:\n\n\nPureData Sound Synthesizer\n\n\nSensors2OSC\n\n\nTask:\n\nUse physical movement in the room along with smartphone sensor data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja Gaikwad, FSP 2019-2020)\n\nTools: Software: Processing; Android apps for sensor data logging and sharing over WiFi `Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi; Makey-Makey’\nIdeas from our Course: Proximity; Schelling Points\nResources:.\n\n\nProcessing\n\n\nMesh Library for Processing\n\n\nHow to make things with Make-Makey\n\n\nTask:\n\nCreate strange bloodcurdling sounds based on where individuals are standing in the room.\nParticipants need to move, perhaps be blindfolded and wear headphones / earphones.\nIf they can experience “pain” in some way based on location, that would also be good. 🤣.\n\nTools: Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall\nIdeas from our Course: Proximity; Schelling Points\nResources:\n\nTheremin\n\nTask:\n\nUse these articles as inspiration:\n\nHow friendships in Change in Adulthood\nhttps://beautified-balance.com/how-friendships-change-in-adulthood/\n\n\nCreate a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.\nUse our collected college network data, and inspiration from https://graphcommons.com as a starting point.\nCan embed electronic (lights) or computed elements ( touch ) , if desired from an aesthetic point of view or to create/enhance Viewer participation.\nThe installation should show small changes over “time” and must be wilfully and meaningfully degradable by viewers.\nWater, ink, knives, or flame, rubber-bands and oil are possibilities. 1. No acid.\n\nTools: Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements. Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws\n\nTask:\n\nRead the Skit/Play , “Six Degrees of Separation” by John Guare.\nStage or show in some way, part or all of it.\n\nTools: Software: None specified Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Network Dynamics\n\nNow that we have an idea of nodes, links and costs, let us get an experience of some more network science ideas:\n\nHead over to https://medium.com/\\\\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMake sense of the Board Game described there in detail.\nBuild the Game!!\nNote if you can see the following:\n\nFrequently Used Nodes\nFrequently used Links\n\n\n\nIdeas from our Course: Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "Final Week Projects"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "objectID": "content/courses/ModelStory/Modules/1000-Projects/index.html#final-course-exercises-and-projects",
+    "href": "content/courses/ModelStory/Modules/1000-Projects/index.html#final-course-exercises-and-projects",
+    "title": "Final Week Projects",
+    "section": "",
+    "text": "Task:\n\nCreate an experience to enable multiple users to simultaneously use hand-phone gestures to create collaborative music/sound.\nViewers must use dance and/or gestures holding handphones, to create music together .\n\nEach user must be able to control unique aspects of the music to create a collaborative piece each time.\nThere must be clear opportunities and instructions for collaboration based on a Stag Hunt / Coordination Game.\n\nTools: Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureData\nIdeas from our Course: Proximity; Game Theory / Stag Hunt; Networks and Graphs\nResources:\n\n\nPureData Sound Synthesizer\n\n\nSensors2OSC\n\n\nTask:\n\nUse physical movement in the room along with smartphone sensor data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja Gaikwad, FSP 2019-2020)\n\nTools: Software: Processing; Android apps for sensor data logging and sharing over WiFi `Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi; Makey-Makey’\nIdeas from our Course: Proximity; Schelling Points\nResources:.\n\n\nProcessing\n\n\nMesh Library for Processing\n\n\nHow to make things with Make-Makey\n\n\nTask:\n\nCreate strange bloodcurdling sounds based on where individuals are standing in the room.\nParticipants need to move, perhaps be blindfolded and wear headphones / earphones.\nIf they can experience “pain” in some way based on location, that would also be good. 🤣.\n\nTools: Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall\nIdeas from our Course: Proximity; Schelling Points\nResources:\n\nTheremin\n\nTask:\n\nUse these articles as inspiration:\n\nHow friendships in Change in Adulthood\nhttps://beautified-balance.com/how-friendships-change-in-adulthood/\n\n\nCreate a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.\nUse our collected college network data, and inspiration from https://graphcommons.com as a starting point.\nCan embed electronic (lights) or computed elements ( touch ) , if desired from an aesthetic point of view or to create/enhance Viewer participation.\nThe installation should show small changes over “time” and must be wilfully and meaningfully degradable by viewers.\nWater, ink, knives, or flame, rubber-bands and oil are possibilities. 1. No acid.\n\nTools: Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements. Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws\n\nTask:\n\nRead the Skit/Play , “Six Degrees of Separation” by John Guare.\nStage or show in some way, part or all of it.\n\nTools: Software: None specified Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Network Dynamics\n\nNow that we have an idea of nodes, links and costs, let us get an experience of some more network science ideas:\n\nHead over to https://medium.com/\\\\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMake sense of the Board Game described there in detail.\nBuild the Game!!\nNote if you can see the following:\n\nFrequently Used Nodes\nFrequently used Links\n\n\n\nIdeas from our Course: Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Final Week Projects"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#introduction",
+    "title": "Basics of Machine Learning - Clustering",
     "section": "Introduction",
-    "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions\n&lt;/p&gt;\n\n\n\nAntonJarvis · No Man is an Island by John Donne\n\nFrom https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island\n\nThe words ‘No man is an island’ were embedded in a deeply Christian sermon about how human beings are connected to each other, and how important that connection is for the wellbeing and survival of any individual. When you hear the church bell tolling for someone who has died, don’t ask who it is, Donne says, just know that it’s tolling for you too because you are part of the same society and the death of anyone takes a part of your own life away.\n\nDoes the Bell toll for thee?\nThe Game of the Polygons\nLet us explore, sadly, the dark side of Game Theory. Where our own agent-like actions lead to bad outcomes in Society…\nAlways?\nNot if we…choose to copy others wisely !!\nLet us play The Parable of the Polygons https://ncase.me/polygons/\n    View webpage in full screen\n       \n      \n    \n  \nAnother Dark Side of…\nWhy are Petrol Stations located next to each other? Here is the Hotelling’s Phenomenon, explained.\n\n\n Hotelling’s Phenomenon, revisited",
+    "text": "Introduction\nWe saw that Classification always had a target variable, which we wanted the algorithm to match, with as high an accuracy as possible.\nWhat if we don’t have a target variable? What kind of situation would that be? Would it be commonplace?",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "Basics of Machine Learning - Clustering"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
-    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
-    "section": "Viral Trends…With a Song?",
-    "text": "Viral Trends…With a Song?\nA Song that is all about Network Effects !!!\nSong: Kuchh Toh Log Kahenge\nSinger: Kishore Kumar\nMusic: R. D. Burman\nFilm: Amar Prem (1972)\n\n\n Network Effects on Reputations!\n\n\n\n\n\n\n\n\n\nHindi Lyrics\nEnglish Translation\n\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\nLogon ka kaam hai kehna\nIt’s the job of people to say something\n\n\nChhodo bekaar ki baaton mein\nForget all these useless things\n\n\nKahin beet na jaaye raina\nOr else our night will end just around them\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n——\n——-\n\n\nKuch reet jagat ki aisi hai(2)\nSome traditions of the world are such that\n\n\nHar ek subah ki shaam huyi(2)\nEvery morning has had an evening\n\n\nTu kaun hai, tera naam hai kya\nWho are you and what’s your name\n\n\nSita bhi yahan badnaam huyi\nEven Goddess Sita has been defamed here\n\n\nPhir kyun sansaar ki baaton se\nThen why with these conversations of the world\n\n\nBheeg gaye tere naina\nHave your eyes become bedewed\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n———-\n————\n\n\nHumko joh taane dete hai(2)\nThose who taunt us saying that\n\n\nHum khoye hai in rangraliyon mein(2)\nWe’re lost in this debauchery\n\n\nHumne unko bhi chup chupke\nSecretly I’ve also seen them\n\n\nAate dekha in galiyon mein\nComing in these streets\n\n\nYeh sach hai jhoothi baat nahi\nThis is the truth and not a lie\n\n\nTum bolo yeh sach hai na\nYou tell me, isn’t this the truth?\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n…\n…\n\n\n\n\n\nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\nHow does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them!!\nHere is one for you: “Less Than Three!”",
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#game-1-sushi-anyone",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#game-1-sushi-anyone",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "Game-1: Sushi, anyone?",
+    "text": "Game-1: Sushi, anyone?\nLet us play a version of an HR game, which we will call Making Sushi. I am going to call out some “choices”, something you might want to do, or not, and you will need to move to a specific location in the room based upon your Yes/No answer.\nObservations-1\n\nOn what basis did you move?\n\nDistance/Proximity/Similarity ( “That’s me!”)\n\n\nWhat were the so-called “observations” in the data? You!!\nEach of you started in “your own cluster” and joined one as soon as you saw Proximity.\n\nContrary to what you might think, this was an example of top-down Clustering, sort of, since I was calling out (central control) the basis for cluster formation. Each Observation could move of course into any cluster, as long as it maximized the Proximity.",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "Basics of Machine Learning - Clustering"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
-    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
-    "section": "Conclusions",
-    "text": "Conclusions\n\nIndividual Actions Matter. Because they can be “reverse infections” and be contagious, in a positive way.\nCorrelations between Individual Actions can create “standing waves” or “echoes” on the fabric of society.\n\nWhatsapp “echo chambers”\nPopularity of Memes, Songs, and Movie lines\nTaglines from Ads, and Products ( e.g. “Think Different”. Bah.)",
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#game-2",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#game-2",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "Game-2:",
+    "text": "Game-2:\nTBD\nObservations-2\nTBD",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "Basics of Machine Learning - Clustering"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
-    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#so-what-is-clustering-good-for-then",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#so-what-is-clustering-good-for-then",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "So what is Clustering good for then?",
+    "text": "So what is Clustering good for then?\n\nClustering is used in many diverse fields.\n\ngenes -&gt; diseases; drugs -&gt; diseases\ncustomers -&gt; tastes, products\nfood -&gt; nutrients.\n\n\nThere is no target variable! Just groupings of existing data.\nNew data can also be clustered based on the groupings discovered in Clustering.\n\nSometimes we just want to mine the data: Are there any patterns, or groupings in there?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Clustering"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "How Does one Use Proximity for Clustering?",
+    "text": "How Does one Use Proximity for Clustering?\nHere are two interactives to understand how to create clusters with training data.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Clustering"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#cluster-prediction-for-new-data",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#cluster-prediction-for-new-data",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "Cluster Prediction for New Data",
+    "text": "Cluster Prediction for New Data\nTBD: Is this classification or clustering !!!\nClick on any part of the canvas below and see how the Clustering algorithm decides the cluster for the point based on the nearest neighbours.\n\n\n\nAlgorithm to create clusters (training ):\n\nCluster Assignment\n\nSelect the number of Clusters you “need”. (Not simple!!)\nSet random start points for the clusters\nCalculate Proximity of each point to the “start points”\nAssign Cluster to each point based on highest proximity (smallest distance)\n\n\nCentroid Update\n\nAha! Recalculate Cluster Centers based on centroid of cluster.\n\n\nRepeat.\n\nTo predict:\n\nSimply calculate distance to the k nearest neighbours\n\nTake majority vote based on their cluster identification",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Clustering"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#clustering-using-orange",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#clustering-using-orange",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "Clustering Using Orange",
+    "text": "Clustering Using Orange\nLet us first do this interactively! Fire up Orange Data Mining and open this file. Interactive k-Means",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Clustering"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#conclusion",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#conclusion",
+    "title": "Basics of Machine Learning - Clustering",
+    "section": "Conclusion",
+    "text": "Conclusion",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Clustering"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#references",
+    "href": "content/courses/ModelStory/Modules/130-SushiClustering/index.html#references",
+    "title": "Basics of Machine Learning - Clustering",
     "section": "References",
-    "text": "References\n\nThomas Schelling.Dynamic Models of Segregation. https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf\n\nHenderson, Ron. 12 June 2022. Luxury Beliefs are Status Symbols: The struggle for distinction. https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web. Accessed 07 Jan 2024.\n\n Rob Henderson’s Idea of “Luxury Beliefs”\n\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMitchell Resnick. Beyond the Centralized Mindset. https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html\n\nThomas W. Valente.(2012). Network Interventions. Science(337) 49. Available here https://sci-hub.se/10.1126/science.1217330. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.\nNicholas Christakis. (May 3, 2024). To exploit social contagion, tools are needed to efficiently identify individuals who are better able to initiate cascades. To be maximally useful, such tools should be deployable without having to actually map face-to-face social network interactions. https://t.co/DHCKxXeGYg. This is a paper that presents design tools that exploit the “Friendship Paradox” to create Social Contagion. A quick summary of the paper is available here. https://www.science.org/doi/10.1126/science.adi5147\n\nDavid Pinsoff. (Dec 2025).Everything is Bullshit Substack. https://www.everythingisbullshit.blog/p/a-big-misunderstanding\n\nfee.org.(Wednesday, September 19, 2018 )How Can Game Theory Prevent Disease Outbreaks.https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/",
+    "text": "References\n\nK-means Cluster Analysis. UC Business Analytics R Programming Guide https://uc-r.github.io/kmeans_clustering#optimal\nThean C Lim. Clustering: k-means, k-means ++ and gganimate. https://theanlim.rbind.io/post/clustering-k-means-k-means-and-gganimate/\nhttps://www.datacamp.com/tutorial/hierarchical-clustering-R\nhttps://www.datacamp.com/tutorial/k-means-clustering-r\nMichele Coscia. 2019. Who will Cluster the Cluster Makers? https://www.michelecoscia.com/?p=1709 Accessed 12 Jan 2024.",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#introduction-the-company-of-strangers",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#introduction-the-company-of-strangers",
-    "title": "🦸 The Company of Heroes",
-    "section": "Introduction: The Company of Strangers!",
-    "text": "Introduction: The Company of Strangers!\nHow many strangers do you “meet” everyday?\nWhy is the Human Species different from all others?\nThose two questions are not unrelated !! The Human Species is perhaps unique in that we are able to cooperate with strangers\n\n\n\n\nYes! Do you think that designing things, building and conducting a business, or making art is something like that? No? Well, let us see a few quick stories!!",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-1",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-1",
-    "title": "🦸 The Company of Heroes",
-    "section": "Story-1",
-    "text": "Story-1\nDo you know who these four people are ?\n\n\n\n\n\n\n\n\nThe Hero’s Journey\n\n\n\n\n\nThis is the story of a young man who leaves home from Tarbes, in Gascony, France, to travel to Paris to make his fortune. He has two blessings,one each from his mother and his father. True to the instructions given by his Dad, and his very Gascon nature, he picks a fight even before he reaches Paris.\nClassic Movie Time!\nLet us watch a (very very) small part of this movie, The Three Pangas Musketeers-1973. Here is the IMDB page for film buffs.\nThis video ( if available ) : https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/\nand this order version:\n\n\n Artagnan vs. Athos vs. Cardinal Guards\n\n\nClassic Fiction Time!\nLet us read aloud(!!) a bit of good old classic fiction !! This is the Conversation that occurs right before the duel scene we saw in the video above.Chapter 5. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS.1\nKeep an eye on the conversation! And an ear open for French-ified English, I beseech you!!\n    View webpage in full screen\n       \n      \n    \n  \nAnd here is the audio reading of this chapter from Librivox.org\n\n\nYour browser does not support the audio tag.\n\n\nDiscussion-1\n\nWhy are they TALKING, when they have come here to FIGHT?? “When have to shoot, shoot! Don’t talk!” said Eli Wallach.\nPardon,m’sieu, but why were they so polite to each other? (Oh, These French…)\nWere they talking as if they didn’t want to fight?\nBut to “have fought already”?\nThe Shadow of the Future on the Present",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-2",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-2",
-    "title": "🦸 The Company of Heroes",
-    "section": "Story-2",
-    "text": "Story-2\nWhat about this game ?\n\n\n\n\n\nDiscussion-2\nWhat emotions or motivations are portrayed by the characters in the story? We can think of the “4Rs”:\n\nReward\nRegret aka FOMO\nRisk\nRetribution/Punishment\nNice Guys Finish First\n\n\n Nice Guys ( Gals also, why not? ) finish First",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#wait-but-why",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#wait-but-why",
-    "title": "🦸 The Company of Heroes",
-    "section": "Wait, But Why?",
-    "text": "Wait, But Why?\n\nMany public behaviours require us to trust strangers\nWe have Rule of Law based on this trust\nIf there is no C at first, then everybody does a D\n\nThat is the source of the Dilemma\n\nAs Artists and Designers, and Creators, we need to practice our craft that in such a way as to induce niceness…\nSo what will you make? A movie? An ad? A public sign-board? A street play? An illustration? A “spatial arrangement”? A policy or a law?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#design-situations-with-game-theory",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#design-situations-with-game-theory",
-    "title": "🦸 The Company of Heroes",
-    "section": "Design Situations with Game Theory?",
-    "text": "Design Situations with Game Theory?\n\nRWAs, pets, animals, and children. Sigh.\nPublic Spaces: Malls, Theaters, Trains, Busses…\nStreet Traffic, Pedestrians, and Rules. (and Signage)\nGarbage, Littering, Noise..public (and not so public ) behaviour\nFamilies, Siblings, and Household Chores\nParenting\nOffices, Colleagues, and other pests",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#references",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#references",
-    "title": "🦸 The Company of Heroes",
-    "section": "References",
-    "text": "References\n\n\nGame Theory Presentation from fee.org\n\n\n Game Theory Presentation from fee.org\n\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nBrams Steven J., 1994. “Game Theory and Literature,” Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January. Available here.\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. AMS Bookstore\nSteven .J Brams. (February 4, 1992). Game Theory in Literature Department of Politics, New York University, New York, New York 10003. Read the PDF",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#game-theory-pop-music-movie-clip-and-tv-ad-playlist",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#game-theory-pop-music-movie-clip-and-tv-ad-playlist",
-    "title": "🦸 The Company of Heroes",
-    "section": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!",
-    "text": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!\n\nChris de Burgh: Don’t Pay the Ferryman! https://www.youtube.com/watch?v=Q-a5TAL-IXs\n\nAbba: The Name of the Game https://www.youtube.com/watch?v=T5Qf_7HM1cM\n\nBachchan vs Warsi: Want a Pepsi - Tit for Tat https://www.youtube.com/watch?v=gc6QZcxbMZE\n\nThe Princess Bride - Battle of Wits - Which Strategy to Use here? (Asymmetric Information) https://www.youtube.com/watch?v=rMz7JBRbmNo\n\nThe Gods Must be Crazy (Brinkmanship) https://www.youtube.com/watch?v=9LvViKftRnA\n\nL.A. Confidential https://criticalcommons.org/embed?m=pBXsAUvh9\n\n\nhttps://www.youtube.com/watch?v=QPun-5dtld0 (Sadly, dead link)\n\nhttps://www.youtube.com/watch?v=nOFhfw-u5fg (Sadly, dead link)\nGame Theory in the movies. https://criticalcommons.org/search?q=game+theory\n\nhttps://www.wikiwand.com/en/The_Three_Musketeers\n\nAssignment-1\nTake a walk in the nearest urban area this weekend. Unobtrusively, observe what people are doing. Note these down when they seem to be visible examples of “Cooperate” or “Defect”. For or Against whom? Discuss the Actions, and the possible payoff values. Draw up a Payoff Matrix is possible. ( Some Actions will of course have to be “predicted” since you do not observe the entire vocabulary of Actions they might perform.)\nNo pictures.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#footnotes",
-    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#footnotes",
-    "title": "🦸 The Company of Heroes",
-    "section": "Footnotes",
-    "text": "Footnotes\n\nDownload The Three Musketeers e-book at ProjectGutenberg↩︎",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🦸 The Company of Heroes"
+      "Basics of Machine Learning - Clustering"
     ]
   },
   {
@@ -446,54 +422,6 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html",
-    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html",
-    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
-    "section": "",
-    "text": "Figure 1: Map of Soho, London",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🕹 Proximity - Painting Soho red with Kandinsky!"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#introduction",
-    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
-    "section": "Introduction",
-    "text": "Introduction\nMeeting Kandinsky\nHave you heard of a painter called Wassily Kandinksy?\n\n\n\n\n\n\n\n\nExtract from https://artsandculture.google.com/story/QgUxxeY10_VADg\n\n\n\nHe had the gift of synesthesia. Kandinsky was capable of synesthesia, an involuntary neurological phenomenon by which a person perceives several senses as being associated. In Kandinsky’s case, the sense of hearing was associated with the sense of sight, sounds, and colors being intimately linked in his mind. He could therefore ” see music ” as he found himself following a performance of Wagner’s Lohengrin.\n\n\n\n\n\nHe became an artist at the age of 30. In December 1896, Kandinsky left his homeland and moved to Munich with his wife, Ania Tchimiakina, in order to start a career as an artist. It was a radical move, a true departure. The artist was already 30-years old and left behind a respectable life, conforming to the conventions dictated by his family lineage.\n\n\n\n\n\nHe opened his own school in 1902: it was open to women. At the beginning of 1902, the Phalanx (group and school opposed to conventional and conservative art viewpoints) of which Kandinsky was president, opened a painting school in Schwabing. Kandinsky taught painting and drawing there. The school was open to women from its inception. This position was non-conformist and progressive, since, at the time, women were only admitted to the Society of Women Artists, an institution linked to the Munich Academy of Fine Arts, or to the evening classes of that Academy.\n\n\n\n\n\nHe was friends with Marcel Duchamp. European avant-garde made its official entry into the United States in 1913 at the Armory Show in New York. Kandinsky exhibited Improvisation 27, which artist and gallery owner Alfred Stieglitz bought to defend him against criticism. Marcel Duchamp’s Nude Descending a Staircase was a scandalous success. Another scandal followed in 1917 when Duchamp presented a urinal claiming artwork status to the hanging committee of the Salon of independent artists of which he is a member: Fountain became history, formalizing the invention of the ready-made, a radical innovation which establishes an art of the idea and positions Duchamp in art history.\n\n\n\n\n\nHe was a member of the ” Blue Four” group The German Galka Scheyer, who emigrated to New York in 1924, was the founder of the Blue Four group. After successful avant-garde exhibitions, he founded the influential Munich group Der Blaue Reiter (“The Blue Rider”; 1911–14) and began completely abstract painting. His forms evolved from fluid and organic to geometric and, finally, to pictographic (e.g., Tempered Élan, 1944).\n\n\nHere is a link to his Top 40 Paintings.\nLet us listen to Mathew Ritchie tell us about Kandinsky.\n\n\n Mathew Ritchie on Kandinsky\n\n\nThe Math in Kandinsky\nHere is a brief paper discussing the Math-Art of Wassily Kandinsky.:\n\n\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n   Karl Katchee.Kandinsky, Math Artist?\n\n\n What are the Key Insights from this paper?\n\nA very spatial aspect to his paintings?\nMetaphoric Correspondence between Emotions and Colours/Shapes\nDo we use Similar Language?\nGeometry pervades our lives\nProximity can be interpreted in many ways",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🕹 Proximity - Painting Soho red with Kandinsky!"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#using-proximity-as-a-model",
-    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#using-proximity-as-a-model",
-    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
-    "section": "Using Proximity as a Model",
-    "text": "Using Proximity as a Model\nCan we use Proximity as a measure to quantify our experiences? What sort of experiences? What emotions could be involved? How can we attach numerical significance to those emotions?\nWalking the Streets in Soho\nAre you thirsty? Would you like some water?\n\n\n Cholera in Soho \n\n\nMore here: https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak\nA Proximity Effect\nLet us play this Vaccination Game: https://www.complexity-explorables.org/explorables/i-herd-you/\n\n\n    View webpage in full screen\n       \n      \n    \n   Epidemonic: A Complexity Explorable\n\n\nFun Stuff with Kandinsky\nLet’s also become synesthetic, however temporarily, and make music with Kandinsky !!\nChrome Music Lab : Kandinsky: This experiment is inspired by Wassily Kandinsky, an artist who compared painting to making music. It turns anything you draw – lines, circles, triangles, or scribbles – into sound. https://musiclab.chromeexperiments.com/kandinsky/\n\n\n    View webpage in full screen\n       \n      \n    \n   Kandinsky Music Generator\n\n\nHow to say, “You are standing too close to me?”\nCan we ask Sting? https://youtu.be/KNIZofPB8ZM\nMaybe not. There are better Models, may be!!",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🕹 Proximity - Painting Soho red with Kandinsky!"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#references",
-    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#references",
-    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
-    "section": "References",
-    "text": "References\n\nDirk Brockman: This message must be Herd - PDF\n\nP. Bingham, N.Q. Verlander, M.J. Cheal (2004). John Snow, William Farr and the 1849 outbreak of cholera that affected London: a reworking of the data highlights the importance of the water supply. Public Health Volume 118, Issue 6, September 2004, Pages 387-394. Read the PDF.\n\n\nggvoronoi package in R: https://github.com/garretrc/ggvoronoi\n\nMake quick cool maps with Snazzy Maps.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🕹 Proximity - Painting Soho red with Kandinsky!"
-    ]
-  },
-  {
     "objectID": "content/courses/ModelStory/Modules/40-Networks/index.html#introduction",
     "href": "content/courses/ModelStory/Modules/40-Networks/index.html#introduction",
     "title": "🕹 I am Insta Famous",
@@ -527,6 +455,174 @@
       "Home",
       "The Model of the Story",
       "🕹 I am Insta Famous"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "",
+    "text": "“The fourth incarnation of the god Vishnu as Narasimha; the god with the lion-head. The pose that the god takes on in this statue is called the Yoga Narasimha – from knee to knee there is a meditation-belt meant to keep the meditator in position. The goddess Laxmi used to be on Narasimha’s knee, but was destroyed when the sultans of the south invaded Hampi in the 16th century. Her right arm is still visible in embrace. Hovering over Narasimha’s head are 7 cobras.”\n— From Hampi\n\n\nWhere does Narasimha show up? Why does he look like he does? What are the characteristics that would help us describe him to a Martian?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#narasimha-agaccha",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#narasimha-agaccha",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "",
+    "text": "“The fourth incarnation of the god Vishnu as Narasimha; the god with the lion-head. The pose that the god takes on in this statue is called the Yoga Narasimha – from knee to knee there is a meditation-belt meant to keep the meditator in position. The goddess Laxmi used to be on Narasimha’s knee, but was destroyed when the sultans of the south invaded Hampi in the 16th century. Her right arm is still visible in embrace. Hovering over Narasimha’s head are 7 cobras.”\n— From Hampi\n\n\nWhere does Narasimha show up? Why does he look like he does? What are the characteristics that would help us describe him to a Martian?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#a-childhood-game",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#a-childhood-game",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "\nA Childhood Game",
+    "text": "A Childhood Game\nHave you played a Childhood Game called 20 Questions? Someone has a “target” entity in mind (a person or a thing or a literary character) and the others need to discover that entity by asking 20 questions.\n\nHow does one create questions in the game?\n\nCategories?\nNumbers? How?\nComparisons?\n\n\nWhat sort of answers can you expect for each question?\nIf the “target” was the Narasimha avatara, what questions would you create?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#q-game-as-a-play-with-data",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#q-game-as-a-play-with-data",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "\n20Q Game as a Play with Data…",
+    "text": "20Q Game as a Play with Data…\nAssuming we think of a 20Q Target as say, celebrity singer like Taylor Swift, or a cartoon character like Thomas the Tank Engine, what would an underlying “data structure” look like? We would ask Questions for instance in the following order to find the target of Taylor Swift:\n\nHuman?(Yes)\n\nLiving?(Yes)\n\nMale?(No)\n\nCelebrity?(Yes)\n\nMusic?(Yes)\n\nUSA?(Yes)\n\nOh…Taylor Swift!!!\nLet us try to construct the “datasets” underlying this game!\n\n\n\n\n\n\n\n\n\n\n\n\n\nName\nOccupation\nSex\nLiving\nNationality\nGenre\nPet\n\n\nTaylor Swift\nSinger\nF\nTRUE\nUSA\ncountry/rock\nScottish Fold Cats\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nName\nType\nLiving\nHuman\nNationality\ncolour\nmaterial\n\n\nThomas, the Tank Engine\nCartoon Character\nFALSE\nFALSE\nUK\nblue\nmetal\n\n\n\n\nIt should be fairly clear that the Questions we ask are based on the COLUMNs in the respective 1-row datasets! The TARGET Column in both cases is the name column.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#what-is-a-decision-tree",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#what-is-a-decision-tree",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "What is a Decision Tree?",
+    "text": "What is a Decision Tree?\nCan you imagine how the 20 Questions Game can be shown as a tree? Yes, upside-down perhaps, but nevertheless a tree!\n\n\n\n\n\n\n\nFigure 1: Decision Tree\n\n\n\nEach Question we ask, based on one of the Feature columns, begets a Yes/No answer and we turn the left or right accordingly. When we arrive at the leaf, we should be in a position to guess the answer !",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#twenty-times-20-questions",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#twenty-times-20-questions",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "Twenty times 20 Questions !!",
+    "text": "Twenty times 20 Questions !!\nWhat if the dataset we had contained many rows, instead of just one row? How would we play the same 20Q Game in this situation? Here is a sample of the famous penguins dataset:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\nAdelie\nBiscoe\n41.1\n18.2\n192\n4050\nmale\n2008\n\n\nAdelie\nTorgersen\n41.8\n19.4\n198\n4450\nmale\n2008\n\n\nAdelie\nDream\n37.6\n19.3\n181\n3300\nfemale\n2007\n\n\nGentoo\nBiscoe\n49.3\n15.7\n217\n5850\nmale\n2007\n\n\nGentoo\nBiscoe\n44.4\n17.3\n219\n5250\nmale\n2008\n\n\nAdelie\nDream\n36.6\n18.4\n184\n3475\nfemale\n2009\n\n\nGentoo\nBiscoe\n47.3\n15.3\n222\n5250\nmale\n2007\n\n\nAdelie\nBiscoe\n40.1\n18.9\n188\n4300\nmale\n2008\n\n\nGentoo\nBiscoe\n48.4\n14.6\n213\n5850\nmale\n2007\n\n\nAdelie\nBiscoe\n35.0\n17.9\n190\n3450\nfemale\n2008\n\n\nGentoo\nBiscoe\n43.8\n13.9\n208\n4300\nfemale\n2008\n\n\nGentoo\nBiscoe\n45.5\n15.0\n220\n5000\nmale\n2008\n\n\n\n\n\nAs before, we would need to look at the dataset as containing a TARGET column which we want to predict using several other FEATURE columns. Let us choose species.\nWhen we look at the FEATURE columns, We would need to formulate questions based on entire columns at a time. For instance:\n\n\n“Is the bill_length_mm greater than 45mm?” considers the entire bill_length_mm FEATURE column\nIs the sex female? considers the entire sex column\nIf the specific FEATURE column is a Numerical (N) variable, the question would use some “thresholding” as shown in the question above, to convert the Numerical Variable into a Categorical variable.\nIf a specific FEATURE column is a Categorical (C) variable, the question would be like a filter operation in Excel.\n\nEither way, we end up answering with a smaller and smaller subset of rows in the dataset, to which the questions are answered with a Yes. It is as if we played the same 20 Questions games in parallel, since there are so many simultaneous “answers”!\nOnce we exhaust all the FEATURE columns, then what remains is a subset (i.e. rows) of the original dataset and we read off the TARGET column, which should now contain a set of identical entries, e.g. “Adelie”. Thus we can extend a single-target 20Q game to a multiple-target one using a larger dataset. (Note how the multiple targets are all the same: “Adelie”, or “Gentoo”, or “Chinstrap”)\nThis forms the basic intuition for a Machine Learning Algorithm called a Decision Tree. Note that we being human, our tree is plotted inverted: trunk on top and the leaves below. Only God can make a tree.\n\n\n\n\n\n\n\nFigure 2: Penguins Decision Tree!\n\n\n\n\nWhat did we learn?\n\nThe 20Q Game can be viewed as a “Decision Tree” of Questions and Answers,\nEach fork in the game is a Question.\nDepending upon whether the current answer is yes or no, we turn in one direction or the other. (Remember “binary choices” in our work on the Poisson Distribution! More shortly!)\nEach of our questions is based on the information available in one or other of the columns!!\nWe arrive at a final “answer” or “target” after a particular sequence of yes/no answers. This is the one of the leaf nodes in the Tree.\nThe island and the species columns are categories and are especially suited to being the targets for a 20 Questions Game.\nWe can therefore use an entire column of data as our 20Questions target, rather than just one entity, person.\nIn doing so, we play the same 20Q Game many times over and obtain multiple answers from the target columns.\n\nThis is how we will use this Game as a Model for our first ML algorithm, classification using Decision Trees.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#looking-at-data-in-orange",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#looking-at-data-in-orange",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "Looking at Data in Orange",
+    "text": "Looking at Data in Orange\nLet us visualize this Decision Tree in Orange. Look at the now famous penguins dataset, available here:\nhttps://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv\nWe see that there are three species of penguins, that live on three islands. The measurements for each penguin are flipper_length_mm, bill_length_mm, bill_depth_mm, and body_mass_g.\n\nTask 1: Create a few data visualizations for the variables, and pairs of variables from this dataset.\nTask 2: Can you inspect the visualizations and imagine how each of this dataset can be used in a 20 Questions Game, to create a Decision Tree for this dataset as shown below?\n\nOnce you are comfortable with the interface and the way to generate graphs, then you can save this Orange Workflow file locally for reference.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-do-we-make-predictions-using-our-decision-tree-in-orange",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-do-we-make-predictions-using-our-decision-tree-in-orange",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "How do we Make Predictions using our Decision Tree in Orange",
+    "text": "How do we Make Predictions using our Decision Tree in Orange\nDownload this penguin tree file and open it in Orange.\nOur aim is to make predictions. Predictions of what? When we are given new unseen data in the same format, we should be able to predict TARGET variable using the same FEATURE columns.\nNOTE: This that is usually a class/category (We CAN also predict a numerical value with a Decision Tree; but we will deal with that later.)\nIn order to make predictions with completely unseen data, we need to first check if the algorithm is working well with known data. The way to do this is to use a large portion of data to design the tree, and then use the tree to predict some aspect of the remaining, but similar, data. Let us split the penguins dataset into two pieces: a training set to design our tree, and a test set to check how it is working.\nHow good are the Predictions? What is the Classification Error Rate?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-many-trees-do-we-need-enter-the-random-forest",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-many-trees-do-we-need-enter-the-random-forest",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "\n How Many Trees do we Need? Enter the Random Forest!",
+    "text": "How Many Trees do we Need? Enter the Random Forest!\nCheck all your individual Decision Trees:\n\nDo they ask the same Questions?\nDo they fork pretty much in the same way?\n\nYes, they all seem to use the same set of parameters to reach the target. So they are capable of being “biased” and make the same mistakes. So we ask: Does it help to use more than one tree, if all the questions/forks in the Trees are similar?\nNo…we need different Trees to be able to ask different questions, based on different variables or features in the data. That will make the Trees as different as possible and so…unbiased. This is what we also saw when we played 20Q: offbeat questions opened up some avenues for predicting the answer/target.\nA forest of such trees is called 🎥 the Wild Wood a Random Forest !",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#an-introduction-to-random-forests",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#an-introduction-to-random-forests",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "\nAn Introduction to Random Forests",
+    "text": "An Introduction to Random Forests\nIn the Random Forest method, we do as follows:\n\nSplit the dataset into training and test subsets (70::30 proportion is very common). Keep aside the testing dataset for final testing.\nDecide on a number of trees, say 100-500 in the forest.\nTake the training dataset and repeatedly sample some of the rows in it. Rows can be repeated too; this is called bootstrap sampling.\nGive this sampled training set to each tree. Each tree develops a question from this dataset, in a random fashion, using a randomly chosen variable. E.g. with penguins, if our target is species, then some trees will will use island, some others will use body_mass_g and some others may use bill_length_mm.\nEach tree will “grow its questions” in a unique way !! Since the questions are possibly based on a different variable at each time, the trees will grow in very different ways.\nStop when the required accuracy has been achieved (the sets contain observations/rows from only one species predominantly)\nWith the test set let each tree vote on which species it has decided upon. Take the majority vote.\n\nPhew!!\nLet’s get a visual sense of how all this works:\n    View webpage in full screen\n       \n      \n    \n  \nhttps://waternova.github.io/random-forest-viz/",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#are-random-forests-an-example-of-complexity",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#are-random-forests-an-example-of-complexity",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "Are Random Forests an Example of Complexity?",
+    "text": "Are Random Forests an Example of Complexity?\nDoes The Random Forest somehow embody the “4A”s of Complexity? (Agents, Actions, Again, Aggregate)? Can we try to interpret the algorithm as such? Here goes:\n\nEach little tree in the Random Forest is an independent Agent\n\nEach agent-tree has a vocabulary of Actions\n\nto choose randomly a subset of variables from the big dataset\nTo independently vote using their choice of variables\n\n\nAnd the “votes” are Aggregated to decide the final prediction\nWhich is greater (better, accurate with higher confidence) than each individual Agent-Trees\n\n🪗 Do it Again when presented with fresh data\n\nNot bad, is it, as a metaphor for Random Forests? Can 📃More is Different be true here too?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#random-forest-classification-in-orange",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#random-forest-classification-in-orange",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "Random Forest Classification in Orange",
+    "text": "Random Forest Classification in Orange\nLet us see how to create a Random Forests ML model in Orange:\n\n\n\n\nRandom Forests in Orange\n\nRF for for Penguins Data\nLet us develop develop a Random Forest Model from ground up using the penguins data downloaded earlier.\nWe will create a Random Forest Model for this dataset, and compare with the Decision Tree for the same dataset.\nRF for Heart Patients Data\nDo you want to develop an ML model for heart patients? We have a dataset of heart patients at the University of California, Arvind Irvine ML Dataset Repository:\nCleveland Heart Patient Data CSV\nWe will download this data and use it with this Orange Workflow file. Random Forests Workflow File\nWhat are the variables?\n\n(age): age in years\n\n(sex): 1 = male; 0 = female\n\n(cp): chest-pain type( 4 types, 1/2/3/4)\n\n(trestbps): resting blood pressure (in mm Hg on admission to the hospital)\n(chol) : serum cholesterol in mg/dl\n(fbs): (fasting blood sugar &gt; 120 mg/dl) (1 = true; 0 = false)\n(restecg): resting electrocardiograph results (0 = normal; 1= ST-T wave abnormality; 3 = LV hypertrophy)\n(thalach): maximum heart rate achieved\n(exang): exercise induced angina (1 = yes; 0 = no) (remember Puneet Rajkumar)\n\n(oldpeak): ST depression induced by exercise relative to rest\n(slope): the slope of the peak exercise ST segment\n- Value 1: upsloping\n- Value 2: flat\n- Value 3: downsloping\n\n(ca): number of major vessels (0-3) colored by fluoroscopy\n\n(thal): 3 = normal; 6 = fixed defect; 7 = reversible defect\n\n(num) : the target attribute, diagnosis of heart disease (angiographic disease status)\n- Value 0: &lt; 50% diameter narrowing\n- Value 1: &gt; 50% diameter narrowing\n(in any major vessel: attributes 59 through 68 are vessels)\n\nWe will create a Random Forest Model for this dataset, and compare with the Decision Tree for the same dataset.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-good-is-my-random-forest",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#how-good-is-my-random-forest",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "How good is my Random Forest?",
+    "text": "How good is my Random Forest?\nThere are good few metrics to state the performance of our Random Forest. We should know these:\n\n\nClassification Error : How many mismatches? Simple enough.\n\nGini Impurity: Each Group may end up mis-classifying observations from any of the other groups. The Gini Impurity index measures the variance across all groups. If there are \\(M\\) groups identified from what are actually \\(K\\) classes, then \\(p_{mk}\\) defines the proportion of k-class observations that are actually in Group-m. The Gini Impurity is defined as:\n\n\\[\nG = \\sum_{k=1}^{K} ~ p_{mk} * (1 - p_{mk})\n\\]\n(Very similar to the formula for variance of a binary variable).\nA little examination of the formula will show that when any proportion \\(p_{mk}\\) is either very high or very low, then the Gini index is small. A small \\(p_{mk}\\) means that each leaf is highly “pure”; a large one means that we have labels completely the other way around or swapped!!\nA small Gini index is a good thing!\n\n\nCross Entropy\nIn line with Claude Shannon’s idea of information entropy, we can define the Cross-entropy as:\n\n\\[\nD = \\sum_{k=1}^{K} p_{mk} * log(p_{mk})\n\\] Again, this tells us how much a particular group has members from another class…so a small Cross-Entropy is a good thing.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#references",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.html#references",
+    "title": "Basics of Machine Learning - Classification",
+    "section": "\n References",
+    "text": "References\n\nhttps://towardsdatascience.com/data-science-made-easy-data-modeling-and-prediction-using-orange-f451f17061fa\nThe beauty of Random Forests: https://orangedatamining.com/blog/2016/12/22/the-beauty-of-random-forest/\n\nPythagorean Trees for Random Forests: https://orangedatamining.com/blog/2016/07/29/pythagorean-trees-and-forests/\n\nR package data.tree sample applications, Christoph Glur, 2020-07-31. https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html\n\nhttps://waternova.github.io/random-forest-viz/",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Basics of Machine Learning - Classification"
     ]
   },
   {
@@ -567,7 +663,7 @@
     "href": "content/courses/ModelStory/listing.html#what-you-will-learn",
     "title": "The Model of the Story",
     "section": "What you will learn",
-    "text": "What you will learn\n\n\nComplexity Science: The so-called (by me!) 4-As - “Agents, Actions, Again, Aggregate”\n\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\nCoordination Games and Schelling Points, Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
+    "text": "What you will learn\n\n\n\n\nComplexity Science: The so-called (by me!) 4-As - “Agents, Actions, Again, Aggregate”\n\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\nCoordination Games and Schelling Points, Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
     "crumbs": [
       "Home",
       "The Model of the Story"
@@ -593,6 +689,66 @@
     "crumbs": [
       "Home",
       "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html",
+    "title": "🌵 Fractals",
+    "section": "",
+    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
+    "title": "🌵 Fractals",
+    "section": "Introduction",
+    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
+    "title": "🌵 Fractals",
+    "section": "A Little ( just a little?) of Maths…",
+    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
+    "title": "🌵 Fractals",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?\nTo be Written Up.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
+    "title": "🌵 Fractals",
+    "section": "References",
+    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
     ]
   },
   {
@@ -716,63 +872,91 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/130-Fractals/index.html",
-    "href": "content/courses/ModelStory/Modules/130-Fractals/index.html",
-    "title": "🌵 Fractals",
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html",
+    "title": "Random Forests",
     "section": "",
-    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
+    "text": "Machine Learning Basics - Random Forest at Shirin’s Playground"
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#references",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#references",
+    "title": "Random Forests",
+    "section": "",
+    "text": "Machine Learning Basics - Random Forest at Shirin’s Playground"
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#penguin-random-forest-model-withrandomforest",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#penguin-random-forest-model-withrandomforest",
+    "title": "Random Forests",
+    "section": "Penguin Random Forest Model withrandomForest\n",
+    "text": "Penguin Random Forest Model withrandomForest\n\nUsing the penguins dataset and Random Forest Classification.\n\npenguins\n\n\n  \n\n\nsummary(penguins)\n\n      species          island    bill_length_mm  bill_depth_mm  \n Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  \n Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  \n Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  \n                                 Mean   :43.92   Mean   :17.15  \n                                 3rd Qu.:48.50   3rd Qu.:18.70  \n                                 Max.   :59.60   Max.   :21.50  \n                                 NAs    :2       NAs    :2      \n flipper_length_mm  body_mass_g       sex           year     \n Min.   :172.0     Min.   :2700   female:165   Min.   :2007  \n 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  \n Median :197.0     Median :4050   NAs   : 11   Median :2008  \n Mean   :200.9     Mean   :4202                Mean   :2008  \n 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  \n Max.   :231.0     Max.   :6300                Max.   :2009  \n NAs    :2         NAs    :2                                 \n\npenguins %&gt;% skimr::skim()\n\n\nData summary\n\n\nName\nPiped data\n\n\nNumber of rows\n344\n\n\nNumber of columns\n8\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\nfactor\n3\n\n\nnumeric\n5\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: factor\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nordered\nn_unique\ntop_counts\n\n\n\nspecies\n0\n1.00\nFALSE\n3\nAde: 152, Gen: 124, Chi: 68\n\n\nisland\n0\n1.00\nFALSE\n3\nBis: 168, Dre: 124, Tor: 52\n\n\nsex\n11\n0.97\nFALSE\n2\nmal: 168, fem: 165\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\nbill_length_mm\n2\n0.99\n43.92\n5.46\n32.1\n39.23\n44.45\n48.5\n59.6\n▃▇▇▆▁\n\n\nbill_depth_mm\n2\n0.99\n17.15\n1.97\n13.1\n15.60\n17.30\n18.7\n21.5\n▅▅▇▇▂\n\n\nflipper_length_mm\n2\n0.99\n200.92\n14.06\n172.0\n190.00\n197.00\n213.0\n231.0\n▂▇▃▅▂\n\n\nbody_mass_g\n2\n0.99\n4201.75\n801.95\n2700.0\n3550.00\n4050.00\n4750.0\n6300.0\n▃▇▆▃▂\n\n\nyear\n0\n1.00\n2008.03\n0.82\n2007.0\n2007.00\n2008.00\n2009.0\n2009.0\n▇▁▇▁▇\n\n\n\n\npenguins &lt;- penguins %&gt;% tidyr::drop_na()\n# Spent one hour trying to find `drop-na()` ( 14 June 2020)\n\n\n# library(corrplot)\ncor &lt;- penguins %&gt;%\n  select(is.numeric) %&gt;%\n  cor()\ncor %&gt;% corrplot(., method = \"ellipse\", order = \"hclust\", tl.cex = 0.5)\n\n\n\n\n\n\n# try these too:\n# cor %&gt;% corrplot(., method = \"square\", order = \"hclust\",tl.cex = 0.5)\n# cor %&gt;% corrplot(., method = \"color\", order = \"hclust\",tl.cex = 0.5)\n# cor %&gt;% corrplot(., method = \"shade\", order = \"hclust\",tl.cex = 0.5)\n\nNotes: - flipper_length_mm and culmen_depth_mm are negtively correlated at approx (-0.7) - flipper_length_mm and body_mass_g are positively correlated at approx 0.8\nSo we will use steps in the recipe to remove correlated variables.\nPenguin Data Sampling and Recipe\n\n# Data Split\npenguin_split &lt;- initial_split(penguins, prop = 0.6)\npenguin_train &lt;- training(penguin_split)\npenguin_test &lt;- testing(penguin_split)\npenguin_split\n\n&lt;Training/Testing/Total&gt;\n&lt;199/134/333&gt;\n\nhead(penguin_train)\n\n\n  \n\n\n# Recipe\npenguin_recipe &lt;- penguins %&gt;%\n  recipe(species ~ .) %&gt;%\n  step_normalize(all_numeric()) %&gt;% # Scaling and Centering\n  step_corr(all_numeric()) %&gt;% # Handling correlated variables\n  prep()\n\n# Baking the data\npenguin_train_baked &lt;- penguin_train %&gt;%\n  bake(object = penguin_recipe, new_data = .)\n\npenguin_test_baked &lt;- penguin_test %&gt;%\n  bake(object = penguin_recipe, new_data = .)\n\nhead(penguin_train_baked)\n\n\n  \n\n\n\nPenguin Random Forest Model\n\npenguin_model &lt;-\n  rand_forest(trees = 100) %&gt;%\n  set_engine(\"randomForest\") %&gt;%\n  set_mode(\"classification\")\npenguin_model\n\nRandom Forest Model Specification (classification)\n\nMain Arguments:\n  trees = 100\n\nComputational engine: randomForest \n\npenguin_fit &lt;-\n  penguin_model %&gt;%\n  fit(species ~ ., penguin_train_baked)\npenguin_fit\n\nparsnip model object\n\n\nCall:\n randomForest(x = maybe_data_frame(x), y = y, ntree = ~100) \n               Type of random forest: classification\n                     Number of trees: 100\nNo. of variables tried at each split: 2\n\n        OOB estimate of  error rate: 2.01%\nConfusion matrix:\n          Adelie Chinstrap Gentoo class.error\nAdelie        97         1      0  0.01020408\nChinstrap      3        32      0  0.08571429\nGentoo         0         0     66  0.00000000\n\n# iris_ranger &lt;-\n#   rand_forest(trees = 100) %&gt;%\n#   set_mode(\"classification\") %&gt;%\n#   set_engine(\"ranger\") %&gt;%\n#   fit(Species ~ ., data = iris_training_baked)\n\nMetrics for the Penguin Random Forest Model\n\n# Predictions\npredict(object = penguin_fit, new_data = penguin_test_baked) %&gt;%\n  dplyr::bind_cols(penguin_test_baked) %&gt;%\n  glimpse()\n\nRows: 134\nColumns: 9\n$ .pred_class       &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; -0.8215515, -1.3335592, -0.5289757, -0.9861254, -1.3…\n$ bill_depth_mm     &lt;dbl&gt; 0.11940428, 1.08424573, 0.22096653, 2.04908718, 0.32…\n$ flipper_length_mm &lt;dbl&gt; -1.0678666, -0.5684290, -1.3532595, -0.7111254, -1.1…\n$ body_mass_g       &lt;dbl&gt; -0.50552542, -0.94019151, -1.25066728, -0.50552542, …\n$ sex               &lt;fct&gt; female, female, female, male, female, female, male, …\n$ year              &lt;dbl&gt; -1.2818130, -1.2818130, -1.2818130, -1.2818130, -1.2…\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n\n# Prediction Accuracy Metrics\npredict(object = penguin_fit, new_data = penguin_test_baked) %&gt;%\n  dplyr::bind_cols(penguin_test_baked) %&gt;%\n  yardstick::metrics(truth = species, estimate = .pred_class)\n\n\n  \n\n\n# Prediction Probabilities\npenguin_fit_probs &lt;-\n  predict(penguin_fit, penguin_test_baked, type = \"prob\") %&gt;%\n  dplyr::bind_cols(penguin_test_baked)\nglimpse(penguin_fit_probs)\n\nRows: 134\nColumns: 11\n$ .pred_Adelie      &lt;dbl&gt; 0.95, 0.98, 0.98, 1.00, 0.99, 0.97, 0.92, 1.00, 1.00…\n$ .pred_Chinstrap   &lt;dbl&gt; 0.05, 0.02, 0.02, 0.00, 0.01, 0.03, 0.07, 0.00, 0.00…\n$ .pred_Gentoo      &lt;dbl&gt; 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; -0.8215515, -1.3335592, -0.5289757, -0.9861254, -1.3…\n$ bill_depth_mm     &lt;dbl&gt; 0.11940428, 1.08424573, 0.22096653, 2.04908718, 0.32…\n$ flipper_length_mm &lt;dbl&gt; -1.0678666, -0.5684290, -1.3532595, -0.7111254, -1.1…\n$ body_mass_g       &lt;dbl&gt; -0.50552542, -0.94019151, -1.25066728, -0.50552542, …\n$ sex               &lt;fct&gt; female, female, female, male, female, female, male, …\n$ year              &lt;dbl&gt; -1.2818130, -1.2818130, -1.2818130, -1.2818130, -1.2…\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n\n# Confusion Matrix\npenguin_fit$fit$confusion %&gt;% tidy()\n\n\n  \n\n\n# Gain Curves\npenguin_fit_probs %&gt;%\n  yardstick::gain_curve(species, .pred_Adelie:.pred_Gentoo) %&gt;%\n  autoplot()\n\n\n\n\n\n\n# ROC Plot\npenguin_fit_probs %&gt;%\n  roc_curve(species, .pred_Adelie:.pred_Gentoo) %&gt;%\n  autoplot()\n\n\n\n\n\n\n\nUsing broom on the penguin model\n\npenguin_split\n\n&lt;Training/Testing/Total&gt;\n&lt;199/134/333&gt;\n\npenguin_split %&gt;% broom::tidy()\n\n\n  \n\n\npenguin_recipe %&gt;% broom::tidy()\n\n\n  \n\n\n# Following do not work for `random forest models` !! ;-()\n# penguin_model %&gt;% tidy()\n# penguin_fit %&gt;% tidy()\npenguin_model %&gt;% str()\n\nList of 7\n $ args                 :List of 3\n  ..$ mtry : language ~NULL\n  .. ..- attr(*, \".Environment\")=&lt;environment: R_EmptyEnv&gt; \n  ..$ trees: language ~100\n  .. ..- attr(*, \".Environment\")=&lt;environment: R_EmptyEnv&gt; \n  ..$ min_n: language ~NULL\n  .. ..- attr(*, \".Environment\")=&lt;environment: R_EmptyEnv&gt; \n $ eng_args             : Named list()\n  ..- attr(*, \"class\")= chr [1:2] \"quosures\" \"list\"\n $ mode                 : chr \"classification\"\n $ user_specified_mode  : logi TRUE\n $ method               : NULL\n $ engine               : chr \"randomForest\"\n $ user_specified_engine: logi TRUE\n - attr(*, \"class\")= chr [1:2] \"rand_forest\" \"model_spec\"\n\npenguin_test_baked"
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#iris-random-forest-model-with-ranger",
+    "href": "content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/Random-Forests.html#iris-random-forest-model-with-ranger",
+    "title": "Random Forests",
+    "section": "Iris Random Forest Model with ranger\n",
+    "text": "Iris Random Forest Model with ranger\n\nUsing the iris dataset and Random Forest Classification. This part uses rsample to split the data and the recipes to prep the data for model making.\n\n# set.seed(100)\niris_split &lt;- rsample::initial_split(iris, prop = 0.6)\niris_split\n\n&lt;Training/Testing/Total&gt;\n&lt;90/60/150&gt;\n\niris_split %&gt;%\n  training() %&gt;%\n  glimpse()\n\nRows: 90\nColumns: 5\n$ Sepal.Length &lt;dbl&gt; 5.6, 7.7, 5.5, 6.6, 4.7, 5.9, 6.7, 4.4, 5.8, 6.3, 6.3, 5.…\n$ Sepal.Width  &lt;dbl&gt; 2.5, 3.8, 3.5, 3.0, 3.2, 3.0, 3.1, 3.2, 2.6, 2.9, 2.8, 3.…\n$ Petal.Length &lt;dbl&gt; 3.9, 6.7, 1.3, 4.4, 1.6, 4.2, 4.4, 1.3, 4.0, 5.6, 5.1, 1.…\n$ Petal.Width  &lt;dbl&gt; 1.1, 2.2, 0.2, 1.4, 0.2, 1.5, 1.4, 0.2, 1.2, 1.8, 1.5, 0.…\n$ Species      &lt;fct&gt; versicolor, virginica, setosa, versicolor, setosa, versic…\n\niris_split %&gt;%\n  testing() %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.6, 5.0, 4.4, 4.8, 5.8, 5.7, 5.1, 5.7, 5.1, 4.…\n$ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.1, 3.4, 2.9, 3.4, 4.0, 4.4, 3.5, 3.8, 3.8, 3.…\n$ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.5, 1.5, 1.4, 1.6, 1.2, 1.5, 1.4, 1.7, 1.5, 1.…\n$ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.3, 0.3, 0.…\n$ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nIris Data Pre-Processing: Creating the Recipe\nThe recipes package provides an interface that specializes in data pre-processing. Within the package, the functions that start, or execute, the data transformations are named after cooking actions. That makes the interface more user-friendly. For example:\n\nrecipe() - Starts a new set of transformations to be applied, similar to the ggplot() command. Its main argument is the model’s formula.\nprep() - Executes the transformations on top of the data that is supplied (typically, the training data). Each data transformation is a step() function. ( Recall what we did with the caret package: Centering, Scaling, Removing Correlated variables…)\n\nNote that in order to avoid data leakage (e.g: transferring information from the train set into the test set), data should be “prepped” using the train_tbl only. https://towardsdatascience.com/modelling-with-tidymodels-and-parsnip-bae2c01c131c CRAN: The idea is that the preprocessing operations will all be created using the training set and then these steps will be applied to both the training and test set.\n\n# Pre Processing the Training Data\n\niris_recipe &lt;-\n  training(iris_split) %&gt;% # Note: Using TRAINING data !!\n  recipe(Species ~ .) # Note: Outcomes ~ Predictors !!\n\n# The data contained in the `data` argument need not be the training set; this data is only used to catalog the names of the variables and their types (e.g. numeric, etc.).\n\nQ: How does the recipe “figure” out which are the outcomes and which are the predictors? A.The recipe command defines Outcomes and Predictors using the formula interface. Not clear how this recipe “figures” out which are the outcomes and which are the predictors, when we have not yet specified them…\nQ. Why is the recipe not agnostic to data set? Is that a meaningful question? A. The use of the training set in the recipe command is just to declare the variables and specify the roles of the data, nothing else. Roles are open-ended and extensible. From https://cran.r-project.org/web/packages/recipes/vignettes/Simple_Example.html :\n\nThis document demonstrates some basic uses of recipes. First, some definitions are required: - variables are the original (raw) data columns in a data frame or tibble. For example, in a traditional formula Y ~ A + B + A:B, the variables are A, B, and Y. - roles define how variables will be used in the model. Examples are: predictor (independent variables), response, and case weight. This is meant to be open-ended and extensible. - terms are columns in a design matrix such as A, B, and A:B. These can be other derived entities that are grouped, such as a set of principal components or a set of columns, that define a basis function for a variable. These are synonymous with features in machine learning. Variables that have predictor roles would automatically be main effect terms.\n\n\n# Apply the transformation steps\niris_recipe &lt;- iris_recipe %&gt;%\n  step_corr(all_predictors()) %&gt;%\n  step_center(all_predictors(), -all_outcomes()) %&gt;%\n  step_scale(all_predictors(), -all_outcomes()) %&gt;%\n  prep()\n\nThis has created the recipe() and prepped it too. We now need to apply it to our datasets:\n\nTake training data and bake() it to prepare it for modelling.\nDo the same for the testing set.\n\n\niris_training_baked &lt;-\n  iris_split %&gt;%\n  training() %&gt;%\n  bake(iris_recipe, .)\niris_training_baked\n\n\n  \n\n\niris_testing_baked &lt;-\n  iris_split %&gt;%\n  testing() %&gt;%\n  bake(iris_recipe, .)\niris_testing_baked\n\n\n  \n\n\n\nIris Model Training using parsnip\n\nDifferent ML packages provide different interfaces (APIs ) to do the same thing (e.g random forests). The tidymodels package provides a consistent interface to invoke a wide variety of packages supporting a wide variety of models.\nThe parsnip package is a successor to caret.\nTo model with parsnip: 1. Pick a model : 2. Set the engine 3. Set the mode (if needed): Classification or Regression\nCheck here for models available in parsnip.\n\nMode: classification and regression in parsnip, each using a variety of models. ( Which Way). This defines the form of the output.\nEngine: The engine is the R package that is invoked by parsnip to execute the model. E.g glm, glmnet,keras.( How ) parsnip provides wrappers for models from these packages.\nModel: is the specific technique used for the modelling task. E.g linear_reg(), logistic_reg(), mars, decision_tree, nearest_neighbour…(What model).\n\nand models have: - hyperparameters: that are numerical or factor variables that tune the model ( Like the alpha beta parameters for Bayesian priors)\nWe can use the random forest model to classify the iris into species. Here Species is the Outcome variable and the rest are predictor variables. The random forest model is provided by the ranger package, to which tidymodels/parsnip provides a simple and consistent interface.\n\nlibrary(ranger)\niris_ranger &lt;-\n  rand_forest(trees = 100) %&gt;%\n  set_mode(\"classification\") %&gt;%\n  set_engine(\"ranger\") %&gt;%\n  fit(Species ~ ., data = iris_training_baked)\n\nranger can generate random forest models for classification, regression, survival( time series, time to event stuff). Extreme Forests are also supported, wherein all points in the dataset are used ( instead of bootstrap samples) along with feature bagging. We can also run the same model using the randomForest package:\n\nlibrary(randomForest, quietly = TRUE)\niris_rf &lt;-\n  rand_forest(trees = 100) %&gt;%\n  set_mode(\"classification\") %&gt;%\n  set_engine(\"randomForest\") %&gt;%\n  fit(Species ~ ., data = iris_training_baked)\n\nIris Predictions\nThe predict() function run against a parsnip model returns a prediction tibble. By default, the prediction variable is called .pred_class.\n\npredict(object = iris_ranger, new_data = iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_class  &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n$ Sepal.Length &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -1.68…\n$ Sepal.Width  &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.39396…\n$ Petal.Width  &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.251314…\n$ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nIris Classification Model Validation\nWe use metrics() function from the yardstick package to evaluate how good the model is.\n\npredict(iris_ranger, iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  yardstick::metrics(truth = Species, estimate = .pred_class)\n\n\n  \n\n\n\nWe can also check the metrics for randomForest model:\n\npredict(iris_rf, iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  yardstick::metrics(truth = Species, estimate = .pred_class)\n\n\n  \n\n\n\nIris Per-Classifier Metrics\nWe can use the parameter type = \"prob\" in the predict() function to obtain a probability score on each prediction. TBD: How is this prob calculated? Possible answer: the Random Forest model outputs its answer by majority voting across n trees. Each of the possible answers( i.e. predictions) for a particular test datum gets a share of the vote, that represents its probability. Hence each dataum in the test vector can show a probability for the “winning” answer. ( Quite possibly we can get the probabilities for all possible outcomes for each test datum)\n\niris_ranger_probs &lt;-\n  predict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  dplyr::bind_cols(iris_testing_baked)\nglimpse(iris_ranger_probs)\n\nRows: 60\nColumns: 7\n$ .pred_setosa     &lt;dbl&gt; 0.996250000, 0.931075758, 0.975238095, 0.993535714, 0…\n$ .pred_versicolor &lt;dbl&gt; 0.003750000, 0.060696970, 0.023095238, 0.005464286, 0…\n$ .pred_virginica  &lt;dbl&gt; 0.000000000, 0.008227273, 0.001666667, 0.001000000, 0…\n$ Sepal.Length     &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -…\n$ Sepal.Width      &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.3…\n$ Petal.Width      &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.25…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\niris_rf_probs &lt;-\n  predict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  dplyr::bind_cols(iris_testing_baked)\nglimpse(iris_rf_probs)\n\nRows: 60\nColumns: 7\n$ .pred_setosa     &lt;dbl&gt; 1.00, 0.96, 0.98, 1.00, 0.93, 1.00, 0.67, 0.72, 1.00,…\n$ .pred_versicolor &lt;dbl&gt; 0.00, 0.03, 0.02, 0.00, 0.07, 0.00, 0.27, 0.25, 0.00,…\n$ .pred_virginica  &lt;dbl&gt; 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.06, 0.03, 0.00,…\n$ Sepal.Length     &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -…\n$ Sepal.Width      &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.3…\n$ Petal.Width      &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.25…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\n# Tabulating the probabilities\nftable(iris_rf_probs$.pred_versicolor)\n\n  0 0.01 0.02 0.03 0.07 0.1 0.13 0.18 0.21 0.23 0.24 0.25 0.27 0.29 0.32 0.35 0.47 0.49 0.59 0.62 0.65 0.7 0.78 0.83 0.87 0.9 0.91 0.92 0.93 0.95 0.96 0.97 0.98 0.99\n                                                                                                                                                                     \n 13    1    3    2    1   1    3    1    2    1    2    2    2    1    1    1    1    1    1    1    1   1    1    1    1   2    2    1    2    1    1    2    2    1\n\nftable(iris_rf_probs$.pred_virginica)\n\n  0 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1 0.19 0.22 0.25 0.38 0.41 0.51 0.53 0.65 0.67 0.73 0.76 0.77 0.79 0.82 0.85 0.93 0.97 0.98  1\n                                                                                                                                                 \n 14    5    1    4    1    1    2    1    1    2   2    1    1    1    1    1    1    1    1    1    1    2    1    2    4    1    1    1    2  2\n\nftable(iris_rf_probs$.pred_setosa)\n\n  0 0.01 0.02 0.05 0.07 0.11 0.13 0.16 0.67 0.71 0.72 0.93 0.96 0.98  1\n                                                                       \n 27    4    2    5    1    1    1    1    1    1    2    1    1    2 10\n\n\n\n### Iris Classifier: Gain and ROC Curves\n\nWe can plot gain and ROC curves for each of these models\n\n\n::: {.cell}\n\n```{.r .cell-code}\niris_ranger_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 133\nColumns: 5\n$ .level          &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"set…\n$ .n              &lt;dbl&gt; 0, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 17, 18, 19…\n$ .n_events       &lt;dbl&gt; 0, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 17, 18, 18…\n$ .percent_tested &lt;dbl&gt; 0.000000, 3.333333, 6.666667, 8.333333, 10.000000, 11.…\n$ .percent_found  &lt;dbl&gt; 0.00000, 11.11111, 22.22222, 27.77778, 33.33333, 38.88…\n\niris_ranger_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\niris_ranger_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 136\nColumns: 4\n$ .level      &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\"…\n$ .threshold  &lt;dbl&gt; -Inf, 0.000000000, 0.001000000, 0.002250000, 0.004444444, …\n$ specificity &lt;dbl&gt; 0.0000000, 0.0000000, 0.2619048, 0.3571429, 0.4523810, 0.5…\n$ sensitivity &lt;dbl&gt; 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0…\n\niris_ranger_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\n:::\n\niris_rf_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 82\nColumns: 5\n$ .level          &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"set…\n$ .n              &lt;dbl&gt; 0, 10, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 27, 29,…\n$ .n_events       &lt;dbl&gt; 0, 10, 12, 13, 14, 16, 17, 18, 18, 18, 18, 18, 18, 18,…\n$ .percent_tested &lt;dbl&gt; 0.000000, 16.666667, 20.000000, 21.666667, 23.333333, …\n$ .percent_found  &lt;dbl&gt; 0.000000, 55.555556, 66.666667, 72.222222, 77.777778, …\n\niris_rf_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\niris_rf_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 85\nColumns: 4\n$ .level      &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\"…\n$ .threshold  &lt;dbl&gt; -Inf, 0.00, 0.01, 0.02, 0.05, 0.07, 0.11, 0.13, 0.16, 0.67…\n$ specificity &lt;dbl&gt; 0.0000000, 0.0000000, 0.6428571, 0.7380952, 0.7857143, 0.9…\n$ sensitivity &lt;dbl&gt; 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0…\n\niris_rf_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\n\nIris Classifier: Metrics\n\npredict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_setosa     &lt;dbl&gt; 0.996250000, 0.931075758, 0.975238095, 0.993535714, 0…\n$ .pred_versicolor &lt;dbl&gt; 0.003750000, 0.060696970, 0.023095238, 0.005464286, 0…\n$ .pred_virginica  &lt;dbl&gt; 0.000000000, 0.008227273, 0.001666667, 0.001000000, 0…\n$ .pred_class      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\npredict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)\n\nError in `mn_log_loss()`:\n! Can't select columns that don't exist.\n✖ Columns `...1`, `...2`, and `...3` don't exist.\n\n# And for the `randomForest`method\n\npredict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_setosa     &lt;dbl&gt; 1.00, 0.96, 0.98, 1.00, 0.93, 1.00, 0.67, 0.72, 1.00,…\n$ .pred_versicolor &lt;dbl&gt; 0.00, 0.03, 0.02, 0.00, 0.07, 0.00, 0.27, 0.25, 0.00,…\n$ .pred_virginica  &lt;dbl&gt; 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.06, 0.03, 0.00,…\n$ .pred_class      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\npredict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)\n\nError in `mn_log_loss()`:\n! Can't select columns that don't exist.\n✖ Columns `...1`, `...2`, and `...3` don't exist."
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/140-LegallyRegression/index.html",
+    "href": "content/courses/ModelStory/Modules/140-LegallyRegression/index.html",
+    "title": "Basics of Machine Learning - Regression",
+    "section": "",
+    "text": "Introduction: Mixing Colours\nInterpolation:\n\nbetween TWO colours, both colours inclusive using a straight line between them\n\nbetween several different colours?\n\nby mixing “equal proportions” of each\n\nProportions based on “distance” from each colour\n\nOn a “plane” with these points\n\n\nSome Examples from Drama\n\nLegally Blonde:\n\n\n\n\n\nLegally Blonde\n\n\nGreek Chorus Explained:\n\n\n\n\n\nThe Greek Chorus Concept\n\n\nSutradhar in Indian Drama\n\nView webpage in full screen\n       \n      \n    \n  \nhttps://www.britannica.com/art/theater-building/Developments-in-Asia#ref463835\nDiscussion\n\nInterpolation\nExtrapolation\nCalculating the optimum  values for m and c, given x and y**, for \\(y = mx + c\\)\n\nPlaying with Orange: Paint My Data\n\n\n\n\n\n\n\nFigure 1: Painting Data for Regression\n\n\n\n\nLet us “draw inspiration” from the picture above, and see if we can replicate it. We will fire up Orange, paint some data and see if we can fit a linear regression ML model to it.\nHere is the Orange file for you to download. Open this file in Orange.\nRegression Plane\n\n\n\n\n\n\n\n\n\n\n(a) Cars and Mileage vs Weight + CC\n\n\n\n\n\n\n\n\n(b) Penguin Weight vs Flipper + Bill\n\n\n\n\nFigure 2: Interactive Regression Planes\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🌵 Fractals"
+      "Basics of Machine Learning - Regression"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/130-Fractals/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/130-Fractals/index.html#introduction",
-    "title": "🌵 Fractals",
+    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html",
+    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html",
+    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
+    "section": "",
+    "text": "Figure 1: Map of Soho, London",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Proximity - Painting Soho red with Kandinsky!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#introduction",
+    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
     "section": "Introduction",
-    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
+    "text": "Introduction\nMeeting Kandinsky\nHave you heard of a painter called Wassily Kandinksy?\n\n\n\n\n\n\n\n\nExtract from https://artsandculture.google.com/story/QgUxxeY10_VADg\n\n\n\nHe had the gift of synesthesia. Kandinsky was capable of synesthesia, an involuntary neurological phenomenon by which a person perceives several senses as being associated. In Kandinsky’s case, the sense of hearing was associated with the sense of sight, sounds, and colors being intimately linked in his mind. He could therefore ” see music ” as he found himself following a performance of Wagner’s Lohengrin.\n\n\n\n\n\nHe became an artist at the age of 30. In December 1896, Kandinsky left his homeland and moved to Munich with his wife, Ania Tchimiakina, in order to start a career as an artist. It was a radical move, a true departure. The artist was already 30-years old and left behind a respectable life, conforming to the conventions dictated by his family lineage.\n\n\n\n\n\nHe opened his own school in 1902: it was open to women. At the beginning of 1902, the Phalanx (group and school opposed to conventional and conservative art viewpoints) of which Kandinsky was president, opened a painting school in Schwabing. Kandinsky taught painting and drawing there. The school was open to women from its inception. This position was non-conformist and progressive, since, at the time, women were only admitted to the Society of Women Artists, an institution linked to the Munich Academy of Fine Arts, or to the evening classes of that Academy.\n\n\n\n\n\nHe was friends with Marcel Duchamp. European avant-garde made its official entry into the United States in 1913 at the Armory Show in New York. Kandinsky exhibited Improvisation 27, which artist and gallery owner Alfred Stieglitz bought to defend him against criticism. Marcel Duchamp’s Nude Descending a Staircase was a scandalous success. Another scandal followed in 1917 when Duchamp presented a urinal claiming artwork status to the hanging committee of the Salon of independent artists of which he is a member: Fountain became history, formalizing the invention of the ready-made, a radical innovation which establishes an art of the idea and positions Duchamp in art history.\n\n\n\n\n\nHe was a member of the ” Blue Four” group The German Galka Scheyer, who emigrated to New York in 1924, was the founder of the Blue Four group. After successful avant-garde exhibitions, he founded the influential Munich group Der Blaue Reiter (“The Blue Rider”; 1911–14) and began completely abstract painting. His forms evolved from fluid and organic to geometric and, finally, to pictographic (e.g., Tempered Élan, 1944).\n\n\nHere is a link to his Top 40 Paintings.\nLet us listen to Mathew Ritchie tell us about Kandinsky.\n\n\n Mathew Ritchie on Kandinsky\n\n\nThe Math in Kandinsky\nHere is a brief paper discussing the Math-Art of Wassily Kandinsky.:\n\n\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n   Karl Katchee.Kandinsky, Math Artist?\n\n\n What are the Key Insights from this paper?\n\nA very spatial aspect to his paintings?\nMetaphoric Correspondence between Emotions and Colours/Shapes\nDo we use Similar Language?\nGeometry pervades our lives\nProximity can be interpreted in many ways",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🌵 Fractals"
+      "🕹 Proximity - Painting Soho red with Kandinsky!"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/130-Fractals/index.html#a-little-just-a-little-of-maths",
-    "href": "content/courses/ModelStory/Modules/130-Fractals/index.html#a-little-just-a-little-of-maths",
-    "title": "🌵 Fractals",
-    "section": "A Little ( just a little?) of Maths…",
-    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
+    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#using-proximity-as-a-model",
+    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#using-proximity-as-a-model",
+    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
+    "section": "Using Proximity as a Model",
+    "text": "Using Proximity as a Model\nCan we use Proximity as a measure to quantify our experiences? What sort of experiences? What emotions could be involved? How can we attach numerical significance to those emotions?\nWalking the Streets in Soho\nAre you thirsty? Would you like some water?\n\n\n Cholera in Soho \n\n\nMore here: https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak\nA Proximity Effect\nLet us play this Vaccination Game: https://www.complexity-explorables.org/explorables/i-herd-you/\n\n\n    View webpage in full screen\n       \n      \n    \n   Epidemonic: A Complexity Explorable\n\n\nFun Stuff with Kandinsky\nLet’s also become synesthetic, however temporarily, and make music with Kandinsky !!\nChrome Music Lab : Kandinsky: This experiment is inspired by Wassily Kandinsky, an artist who compared painting to making music. It turns anything you draw – lines, circles, triangles, or scribbles – into sound. https://musiclab.chromeexperiments.com/kandinsky/\n\n\n    View webpage in full screen\n       \n      \n    \n   Kandinsky Music Generator\n\n\nHow to say, “You are standing too close to me?”\nCan we ask Sting? https://youtu.be/KNIZofPB8ZM\nMaybe not. There are better Models, may be!!",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🌵 Fractals"
+      "🕹 Proximity - Painting Soho red with Kandinsky!"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/130-Fractals/index.html#wait-but-why",
-    "href": "content/courses/ModelStory/Modules/130-Fractals/index.html#wait-but-why",
-    "title": "🌵 Fractals",
-    "section": "Wait, But Why?",
-    "text": "Wait, But Why?\nTo be Written Up.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/130-Fractals/index.html#references",
-    "href": "content/courses/ModelStory/Modules/130-Fractals/index.html#references",
-    "title": "🌵 Fractals",
+    "objectID": "content/courses/ModelStory/Modules/60-Proximity/index.html#references",
+    "href": "content/courses/ModelStory/Modules/60-Proximity/index.html#references",
+    "title": "🕹 Proximity - Painting Soho red with Kandinsky!",
     "section": "References",
-    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
+    "text": "References\n\nDirk Brockman: This message must be Herd - PDF\n\nP. Bingham, N.Q. Verlander, M.J. Cheal (2004). John Snow, William Farr and the 1849 outbreak of cholera that affected London: a reworking of the data highlights the importance of the water supply. Public Health Volume 118, Issue 6, September 2004, Pages 387-394. Read the PDF.\n\n\nggvoronoi package in R: https://github.com/garretrc/ggvoronoi\n\nMake quick cool maps with Snazzy Maps.",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🌵 Fractals"
+      "🕹 Proximity - Painting Soho red with Kandinsky!"
     ]
   },
   {
@@ -804,7 +988,7 @@
     "href": "content/courses/ModelStory/Modules/90-Mangoes/index.html#suppose-we-were-hamlet.",
     "title": "🕹 Eating Mangoes with Hamlet",
     "section": "Suppose we were Hamlet….",
-    "text": "Suppose we were Hamlet….\nWhat would we want to know? What Questions would we have?\n\nWho is our friend?\nWhat is the chance that we will survive?\nWho killed Dad?\n\nDid Hamlet have an idea, any suspicion, that he might have wanted to prove? Yes, he did, and that is why he feigned madness, so people would open up and tell him things, in an unguarded way. So there was craft in his madness!!\nSo here Hamlet tells his friends, Horatio and Marcellus, what he is going to do, what prank he is going to play, his plans for a naatak, and swears them into silence:\n\nHere as before. [For the third time, Hamlet places his sword for the others to swear upon]\nNever, so help you mercy,\nHow strange or odd soe’er I bear myself\n(As I perchance hereafter shall think meet\nTo put an antic disposition on)\nThat you at such time seeing me never shall,\nWith arms encumbered thus, or thus head shaked,\nOr by pronouncing of some doubtful phrase\nAs, “Well, we know,” or “We could an if we would,”\nAnd especially don’t say Hakuna Matata, Dude!!\n\nA Hypothesis worthy of Hamlet\nSo we know what Hamlet wanted to know, and how he planned to find out.\nWhat about us?\nIf we wanted to know the truth of something, some guess, a hunch, or a Hypothesis that we had, then we would need to conduct an “Experiment”, rather like Hamlet did, without quite going or feigning madness of course. But there is a Madness to/in the Method, as we will see…\n\n\n“Design of Experiments - A Workflow: A Madness in the Method”\n\n\nFrom StatsRef\n\n\n\n\n\n\nThe PPDAC summary table suggests a relatively linear flow from problem definition/Hypothesis through to conclusions — this is typically not the case. It is often better to see the process as cyclical, with a series of feedback loops. A summary of a revised PPDAC approach is shown in the diagram below. As can be seen, although the clockwise sequence (1→5) applies as the principal flow, each stage may and often will feed back to the previous stage.\n\n\nIn addition, it may well be beneficial to examine the process in the reverse direction, starting with Problem definition and then examining expectations as to the format and structure of the Conclusions (without pre-judging the outcomes!). This procedure then continues, step-by-step, in an anti-clockwise manner (e→a) determining the implications of these expectations for each stage of the process.",
+    "text": "Suppose we were Hamlet….\nWhat would we want to know? What Questions would we have?\n\nWho is our friend?\nWhat is the chance that we will survive?\nWho killed Dad?\n\nDid Hamlet have an idea, any suspicion, that he might have wanted to prove? Yes, he did, and that is why he feigned madness, so people would open up and tell him things, in an unguarded way. So there was craft in his madness!!\nSo here Hamlet tells his friends, Horatio and Marcellus, what he is going to do, what prank he is going to play, his plans for a naatak, and swears them into silence:\n\nHere as before. [For the third time, Hamlet places his sword for the others to swear upon]\nNever, so help you mercy,\nHow strange or odd soe’er I bear myself\n(As I perchance hereafter shall think meet\nTo put an antic disposition on)\nThat you at such time seeing me never shall,\nWith arms encumbered thus, or thus head shaked,\nOr by pronouncing of some doubtful phrase\nAs, “Well, we know,” or “We could an if we would,”\nAnd especially don’t say Hakuna Matata, Dude!!\n\nA Hypothesis worthy of Hamlet\nSo we know what Hamlet wanted to know, and how he planned to find out.\nWhat about us?\nIf we wanted to know the truth of something, some guess, a hunch, or a Hypothesis that we had, then we would need to conduct an “Experiment”, rather like Hamlet did, without quite going or feigning madness of course. But there is a Madness to/in the Method, as we will see…\n\n\n“Design of Experiments - A Workflow: A Madness in the Method”\n\nFrom StatsRef :\n\nThe PPDAC summary table suggests a relatively linear flow from problem definition/Hypothesis through to conclusions — this is typically not the case. It is often better to see the process as cyclical, with a series of feedback loops. A summary of a revised PPDAC approach is shown in the diagram below. As can be seen, although the clockwise sequence (1→5) applies as the principal flow, each stage may and often will feed back to the previous stage.\n\n\nIn addition, it may well be beneficial to examine the process in the reverse direction, starting with Problem definition and then examining expectations as to the format and structure of the Conclusions (without pre-judging the outcomes!). This procedure then continues, step-by-step, in an anti-clockwise manner (e→a) determining the implications of these expectations for each stage of the process.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -848,27 +1032,159 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/1000-Projects/index.html",
-    "href": "content/courses/ModelStory/Modules/1000-Projects/index.html",
-    "title": "Final Week Projects",
-    "section": "",
-    "text": "Task:\n\nCreate an experience to enable multiple users to simultaneously use hand-phone gestures to create collaborative music/sound.\nViewers must use dance and/or gestures holding handphones, to create music together .\n\nEach user must be able to control unique aspects of the music to create a collaborative piece each time.\nThere must be clear opportunities and instructions for collaboration based on a Stag Hunt / Coordination Game.\n\nTools: Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureData\nIdeas from our Course: Proximity; Game Theory / Stag Hunt; Networks and Graphs\nResources:\n\n\nPureData Sound Synthesizer\n\n\nSensors2OSC\n\n\nTask:\n\nUse physical movement in the room along with smartphone sensor data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja Gaikwad, FSP 2019-2020)\n\nTools: Software: Processing; Android apps for sensor data logging and sharing over WiFi `Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi; Makey-Makey’\nIdeas from our Course: Proximity; Schelling Points\nResources:.\n\n\nProcessing\n\n\nMesh Library for Processing\n\n\nHow to make things with Make-Makey\n\n\nTask:\n\nCreate strange bloodcurdling sounds based on where individuals are standing in the room.\nParticipants need to move, perhaps be blindfolded and wear headphones / earphones.\nIf they can experience “pain” in some way based on location, that would also be good. 🤣.\n\nTools: Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall\nIdeas from our Course: Proximity; Schelling Points\nResources:\n\nTheremin\n\nTask:\n\nUse these articles as inspiration:\n\nHow friendships in Change in Adulthood\nhttps://beautified-balance.com/how-friendships-change-in-adulthood/\n\n\nCreate a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.\nUse our collected college network data, and inspiration from https://graphcommons.com as a starting point.\nCan embed electronic (lights) or computed elements ( touch ) , if desired from an aesthetic point of view or to create/enhance Viewer participation.\nThe installation should show small changes over “time” and must be wilfully and meaningfully degradable by viewers.\nWater, ink, knives, or flame, rubber-bands and oil are possibilities. 1. No acid.\n\nTools: Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements. Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws\n\nTask:\n\nRead the Skit/Play , “Six Degrees of Separation” by John Guare.\nStage or show in some way, part or all of it.\n\nTools: Software: None specified Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Network Dynamics\n\nNow that we have an idea of nodes, links and costs, let us get an experience of some more network science ideas:\n\nHead over to https://medium.com/\\\\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMake sense of the Board Game described there in detail.\nBuild the Game!!\nNote if you can see the following:\n\nFrequently Used Nodes\nFrequently used Links\n\n\n\nIdeas from our Course: Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs",
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#introduction-the-company-of-strangers",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#introduction-the-company-of-strangers",
+    "title": "🦸 The Company of Heroes",
+    "section": "Introduction: The Company of Strangers!",
+    "text": "Introduction: The Company of Strangers!\nHow many strangers do you “meet” everyday?\nWhy is the Human Species different from all others?\nThose two questions are not unrelated !! The Human Species is perhaps unique in that we are able to cooperate with strangers\n\n\n\n\nYes! Do you think that designing things, building and conducting a business, or making art is something like that? No? Well, let us see a few quick stories!!",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "Final Week Projects"
+      "🦸 The Company of Heroes"
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/1000-Projects/index.html#final-course-exercises-and-projects",
-    "href": "content/courses/ModelStory/Modules/1000-Projects/index.html#final-course-exercises-and-projects",
-    "title": "Final Week Projects",
-    "section": "",
-    "text": "Task:\n\nCreate an experience to enable multiple users to simultaneously use hand-phone gestures to create collaborative music/sound.\nViewers must use dance and/or gestures holding handphones, to create music together .\n\nEach user must be able to control unique aspects of the music to create a collaborative piece each time.\nThere must be clear opportunities and instructions for collaboration based on a Stag Hunt / Coordination Game.\n\nTools: Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureData\nIdeas from our Course: Proximity; Game Theory / Stag Hunt; Networks and Graphs\nResources:\n\n\nPureData Sound Synthesizer\n\n\nSensors2OSC\n\n\nTask:\n\nUse physical movement in the room along with smartphone sensor data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja Gaikwad, FSP 2019-2020)\n\nTools: Software: Processing; Android apps for sensor data logging and sharing over WiFi `Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi; Makey-Makey’\nIdeas from our Course: Proximity; Schelling Points\nResources:.\n\n\nProcessing\n\n\nMesh Library for Processing\n\n\nHow to make things with Make-Makey\n\n\nTask:\n\nCreate strange bloodcurdling sounds based on where individuals are standing in the room.\nParticipants need to move, perhaps be blindfolded and wear headphones / earphones.\nIf they can experience “pain” in some way based on location, that would also be good. 🤣.\n\nTools: Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall\nIdeas from our Course: Proximity; Schelling Points\nResources:\n\nTheremin\n\nTask:\n\nUse these articles as inspiration:\n\nHow friendships in Change in Adulthood\nhttps://beautified-balance.com/how-friendships-change-in-adulthood/\n\n\nCreate a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time.\nUse our collected college network data, and inspiration from https://graphcommons.com as a starting point.\nCan embed electronic (lights) or computed elements ( touch ) , if desired from an aesthetic point of view or to create/enhance Viewer participation.\nThe installation should show small changes over “time” and must be wilfully and meaningfully degradable by viewers.\nWater, ink, knives, or flame, rubber-bands and oil are possibilities. 1. No acid.\n\nTools: Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements. Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws\n\nTask:\n\nRead the Skit/Play , “Six Degrees of Separation” by John Guare.\nStage or show in some way, part or all of it.\n\nTools: Software: None specified Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Network Dynamics\n\nNow that we have an idea of nodes, links and costs, let us get an experience of some more network science ideas:\n\nHead over to https://medium.com/\\\\\\@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMake sense of the Board Game described there in detail.\nBuild the Game!!\nNote if you can see the following:\n\nFrequently Used Nodes\nFrequently used Links\n\n\n\nIdeas from our Course: Network Traversal, Node Degree, Centrality, Betweenness, Link Values or Costs",
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-1",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-1",
+    "title": "🦸 The Company of Heroes",
+    "section": "Story-1",
+    "text": "Story-1\nDo you know who these four people are ?\n\n\n\n\n\n\n\n\nThe Hero’s Journey\n\n\n\n\n\nThis is the story of a young man who leaves home from Tarbes, in Gascony, France, to travel to Paris to make his fortune. He has two blessings,one each from his mother and his father. True to the instructions given by his Dad, and his very Gascon nature, he picks a fight even before he reaches Paris.\nClassic Movie Time!\nLet us watch a (very very) small part of this movie, The Three Pangas Musketeers-1973. Here is the IMDB page for film buffs.\nThis video ( if available ) : https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/\nand this order version:\n\n\n Artagnan vs. Athos vs. Cardinal Guards\n\n\nClassic Fiction Time!\nLet us read aloud(!!) a bit of good old classic fiction !! This is the Conversation that occurs right before the duel scene we saw in the video above.Chapter 5. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS.1\nKeep an eye on the conversation! And an ear open for French-ified English, I beseech you!!\n    View webpage in full screen\n       \n      \n    \n  \nAnd here is the audio reading of this chapter from Librivox.org\n\n\nYour browser does not support the audio tag.\n\n\nDiscussion-1\n\nWhy are they TALKING, when they have come here to FIGHT?? “When have to shoot, shoot! Don’t talk!” said Eli Wallach.\nPardon,m’sieu, but why were they so polite to each other? (Oh, These French…)\nWere they talking as if they didn’t want to fight?\nBut to “have fought already”?\nThe Shadow of the Future on the Present",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "Final Week Projects"
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-2",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-2",
+    "title": "🦸 The Company of Heroes",
+    "section": "Story-2",
+    "text": "Story-2\nWhat about this game ?\n\n\n\n\n\nDiscussion-2\nWhat emotions or motivations are portrayed by the characters in the story? We can think of the “4Rs”:\n\nReward\nRegret aka FOMO\nRisk\nRetribution/Punishment\nNice Guys Finish First\n\n\n Nice Guys ( Gals also, why not? ) finish First",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#wait-but-why",
+    "title": "🦸 The Company of Heroes",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?\n\nMany public behaviours require us to trust strangers\nWe have Rule of Law based on this trust\nIf there is no C at first, then everybody does a D\n\nThat is the source of the Dilemma\n\nAs Artists and Designers, and Creators, we need to practice our craft that in such a way as to induce niceness…\nSo what will you make? A movie? An ad? A public sign-board? A street play? An illustration? A “spatial arrangement”? A policy or a law?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#design-situations-with-game-theory",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#design-situations-with-game-theory",
+    "title": "🦸 The Company of Heroes",
+    "section": "Design Situations with Game Theory?",
+    "text": "Design Situations with Game Theory?\n\nRWAs, pets, animals, and children. Sigh.\nPublic Spaces: Malls, Theaters, Trains, Busses…\nStreet Traffic, Pedestrians, and Rules. (and Signage)\nGarbage, Littering, Noise..public (and not so public ) behaviour\nFamilies, Siblings, and Household Chores\nParenting\nOffices, Colleagues, and other pests",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#references",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#references",
+    "title": "🦸 The Company of Heroes",
+    "section": "References",
+    "text": "References\n\n\nGame Theory Presentation from fee.org\n\n\n Game Theory Presentation from fee.org\n\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nBrams Steven J., 1994. “Game Theory and Literature,” Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January. Available here.\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. AMS Bookstore\nSteven .J Brams. (February 4, 1992). Game Theory in Literature Department of Politics, New York University, New York, New York 10003. Read the PDF",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#game-theory-pop-music-movie-clip-and-tv-ad-playlist",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#game-theory-pop-music-movie-clip-and-tv-ad-playlist",
+    "title": "🦸 The Company of Heroes",
+    "section": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!",
+    "text": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!\n\nChris de Burgh: Don’t Pay the Ferryman! https://www.youtube.com/watch?v=Q-a5TAL-IXs\n\nAbba: The Name of the Game https://www.youtube.com/watch?v=T5Qf_7HM1cM\n\nBachchan vs Warsi: Want a Pepsi - Tit for Tat https://www.youtube.com/watch?v=gc6QZcxbMZE\n\nThe Princess Bride - Battle of Wits - Which Strategy to Use here? (Asymmetric Information) https://www.youtube.com/watch?v=rMz7JBRbmNo\n\nThe Gods Must be Crazy (Brinkmanship) https://www.youtube.com/watch?v=9LvViKftRnA\n\nL.A. Confidential https://criticalcommons.org/embed?m=pBXsAUvh9\n\n\nhttps://www.youtube.com/watch?v=QPun-5dtld0 (Sadly, dead link)\n\nhttps://www.youtube.com/watch?v=nOFhfw-u5fg (Sadly, dead link)\nGame Theory in the movies. https://criticalcommons.org/search?q=game+theory\n\nhttps://www.wikiwand.com/en/The_Three_Musketeers\n\nAssignment-1\nTake a walk in the nearest urban area this weekend. Unobtrusively, observe what people are doing. Note these down when they seem to be visible examples of “Cooperate” or “Defect”. For or Against whom? Discuss the Actions, and the possible payoff values. Draw up a Payoff Matrix is possible. ( Some Actions will of course have to be “predicted” since you do not observe the entire vocabulary of Actions they might perform.)\nNo pictures.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#footnotes",
+    "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#footnotes",
+    "title": "🦸 The Company of Heroes",
+    "section": "Footnotes",
+    "text": "Footnotes\n\nDownload The Three Musketeers e-book at ProjectGutenberg↩︎",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🦸 The Company of Heroes"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
+    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "section": "",
+    "text": "Photo by Ahmed Yaaniu on Unsplash",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
+    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "section": "Introduction",
+    "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions\n&lt;/p&gt;\n\n\n\nAntonJarvis · No Man is an Island by John Donne\n\nFrom https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island\n\nThe words ‘No man is an island’ were embedded in a deeply Christian sermon about how human beings are connected to each other, and how important that connection is for the wellbeing and survival of any individual. When you hear the church bell tolling for someone who has died, don’t ask who it is, Donne says, just know that it’s tolling for you too because you are part of the same society and the death of anyone takes a part of your own life away.\n\nDoes the Bell toll for thee?\nThe Game of the Polygons\nLet us explore, sadly, the dark side of Game Theory. Where our own agent-like actions lead to bad outcomes in Society…\nAlways?\nNot if we…choose to copy others wisely !!\nLet us play The Parable of the Polygons https://ncase.me/polygons/\n    View webpage in full screen\n       \n      \n    \n  \nAnother Dark Side of…\nWhy are Petrol Stations located next to each other? Here is the Hotelling’s Phenomenon, explained.\n\n\n Hotelling’s Phenomenon, revisited",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
+    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "section": "Viral Trends…With a Song?",
+    "text": "Viral Trends…With a Song?\nA Song that is all about Network Effects !!!\nSong: Kuchh Toh Log Kahenge\nSinger: Kishore Kumar\nMusic: R. D. Burman\nFilm: Amar Prem (1972)\n\n\n Network Effects on Reputations!\n\n\n\n\n\n\n\n\n\nHindi Lyrics\nEnglish Translation\n\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\nLogon ka kaam hai kehna\nIt’s the job of people to say something\n\n\nChhodo bekaar ki baaton mein\nForget all these useless things\n\n\nKahin beet na jaaye raina\nOr else our night will end just around them\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n——\n——-\n\n\nKuch reet jagat ki aisi hai(2)\nSome traditions of the world are such that\n\n\nHar ek subah ki shaam huyi(2)\nEvery morning has had an evening\n\n\nTu kaun hai, tera naam hai kya\nWho are you and what’s your name\n\n\nSita bhi yahan badnaam huyi\nEven Goddess Sita has been defamed here\n\n\nPhir kyun sansaar ki baaton se\nThen why with these conversations of the world\n\n\nBheeg gaye tere naina\nHave your eyes become bedewed\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n———-\n————\n\n\nHumko joh taane dete hai(2)\nThose who taunt us saying that\n\n\nHum khoye hai in rangraliyon mein(2)\nWe’re lost in this debauchery\n\n\nHumne unko bhi chup chupke\nSecretly I’ve also seen them\n\n\nAate dekha in galiyon mein\nComing in these streets\n\n\nYeh sach hai jhoothi baat nahi\nThis is the truth and not a lie\n\n\nTum bolo yeh sach hai na\nYou tell me, isn’t this the truth?\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n…\n…\n\n\n\n\n\nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\nHow does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them!!\nHere is one for you: “Less Than Three!”",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
+    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nIndividual Actions Matter. Because they can be “reverse infections” and be contagious, in a positive way.\nCorrelations between Individual Actions can create “standing waves” or “echoes” on the fabric of society.\n\nWhatsapp “echo chambers”\nPopularity of Memes, Songs, and Movie lines\nTaglines from Ads, and Products ( e.g. “Think Different”. Bah.)",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
+    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "section": "References",
+    "text": "References\n\nThomas Schelling.Dynamic Models of Segregation. https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf\n\nHenderson, Ron. 12 June 2022. Luxury Beliefs are Status Symbols: The struggle for distinction. https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web. Accessed 07 Jan 2024.\n\n Rob Henderson’s Idea of “Luxury Beliefs”\n\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMitchell Resnick. Beyond the Centralized Mindset. https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html\n\nThomas W. Valente.(2012). Network Interventions. Science(337) 49. Available here https://sci-hub.se/10.1126/science.1217330. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.\nNicholas Christakis. (May 3, 2024). To exploit social contagion, tools are needed to efficiently identify individuals who are better able to initiate cascades. To be maximally useful, such tools should be deployable without having to actually map face-to-face social network interactions. https://t.co/DHCKxXeGYg. This is a paper that presents design tools that exploit the “Friendship Paradox” to create Social Contagion. A quick summary of the paper is available here. https://www.science.org/doi/10.1126/science.adi5147\n\nDavid Pinsoff. (Dec 2025).Everything is Bullshit Substack. https://www.everythingisbullshit.blog/p/a-big-misunderstanding\n\nfee.org.(Wednesday, September 19, 2018 )How Can Game Theory Prevent Disease Outbreaks.https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Viral Trends, and Rumours!"
     ]
   },
   {

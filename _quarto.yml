@@ -50,10 +50,14 @@ website:
           - content/courses/ModelStory/Modules/80-Randomness/index.qmd
           - content/courses/ModelStory/Modules/90-Mangoes/index.qmd
           - content/courses/ModelStory/Modules/100-StillMoreRandomness/index.qmd
-          - content/courses/ModelStory/Modules/120-Symmetry/index.qmd
-          - content/courses/ModelStory/Modules/130-Fractals/index.qmd
-          - content/courses/ModelStory/Modules/140-L-Systems/index.qmd
-          - content/courses/ModelStory/Modules/200-Sound/index.qmd
+          - content/courses/ModelStory/Modules/120-ClassificationTaylorSwift/index.qmd
+          - content/courses/ModelStory/Modules/130-SushiClustering/index.qmd
+          - content/courses/ModelStory/Modules/140-LegallyRegression/index.qmd
+          - content/courses/ModelStory/Modules/180-Symmetry/index.qmd
+          - content/courses/ModelStory/Modules/190-Fractals/index.qmd
+
+          - content/courses/ModelStory/Modules/200-L-Systems/index.qmd
+          - content/courses/ModelStory/Modules/220-Sound/index.qmd
           - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
           - content/courses/ModelStory/Modules/1000-Projects/index.qmd 
           - content/courses/ModelStory/Modules/300-Resources/index.qmd

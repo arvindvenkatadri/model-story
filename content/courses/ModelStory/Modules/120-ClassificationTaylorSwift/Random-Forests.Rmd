@@ -1,0 +1,401 @@
+---
+title: "Random Forests"
+author: "Arvind Venkatadri"
+date: "13/06/2020"
+output:
+  html_document:
+    df_print: paged
+    toc: yes
+    code_download: TRUE
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidymodels)
+library(prettydoc)
+library(corrplot)
+library(ggformula)
+library(palmerpenguins) # Allison Horst's `penguin` data.
+```
+
+## References:
+1. Machine Learning Basics - Random Forest at [Shirin's Playground](https://shirinsplayground.netlify.app/2018/10/ml_basics_rf/)
+2. 
+
+## Penguin Random Forest Model with`randomForest`
+
+Using the `penguins` dataset and Random Forest Classification.
+
+```{r penguins}
+penguins
+summary(penguins)
+penguins %>% skimr::skim()
+penguins <- penguins %>% tidyr::drop_na()
+# Spent one hour trying to find `drop-na()` ( 14 June 2020)
+```
+
+
+```{r EDA on penguins data}
+
+# library(corrplot)
+cor <- penguins %>% select(is.numeric) %>% cor() 
+cor %>% corrplot(., method = "ellipse", order = "hclust",tl.cex = 0.5)
+
+# try these too:
+# cor %>% corrplot(., method = "square", order = "hclust",tl.cex = 0.5)
+# cor %>% corrplot(., method = "color", order = "hclust",tl.cex = 0.5)
+# cor %>% corrplot(., method = "shade", order = "hclust",tl.cex = 0.5)
+```
+
+Notes:
+- `flipper_length_mm` and `culmen_depth_mm` are negtively correlated at approx (-0.7)
+- `flipper_length_mm` and `body_mass_g` are positively correlated at approx 0.8
+
+So we will use steps in the recipe to remove correlated variables. 
+
+
+### Penguin Data Sampling and Recipe
+```{r Penguin Data Sampling and Recipe}
+# Data Split
+penguin_split <- initial_split(penguins, prop = 0.6)
+penguin_train <- training(penguin_split)
+penguin_test <- testing(penguin_split)
+penguin_split
+
+head(penguin_train)
+
+# Recipe
+penguin_recipe <- penguins %>% 
+  recipe(species ~ .) %>% 
+  step_normalize(all_numeric()) %>% # Scaling and Centering
+  step_corr(all_numeric()) %>%  # Handling correlated variables
+  prep()
+
+# Baking the data
+penguin_train_baked <-  penguin_train %>% 
+  bake(object = penguin_recipe, new_data = .)
+
+penguin_test_baked <-  penguin_test %>% 
+  bake(object = penguin_recipe, new_data = .)
+
+head(penguin_train_baked)
+```
+
+### Penguin Random Forest Model
+
+```{r Penguin Random Forest Model}
+penguin_model <- 
+  rand_forest(trees = 100) %>% 
+  set_engine("randomForest") %>% 
+  set_mode("classification")
+penguin_model
+
+penguin_fit <- 
+  penguin_model %>% 
+  fit(species ~ .,penguin_train_baked)
+penguin_fit
+
+# iris_ranger <- 
+#   rand_forest(trees = 100) %>% 
+#   set_mode("classification") %>% 
+#   set_engine("ranger") %>% 
+#   fit(Species ~ ., data = iris_training_baked)
+```
+### Metrics for the Penguin Random Forest Model
+
+```{r Penguin Model Predictions and Metrics}
+
+# Predictions
+predict(object = penguin_fit, new_data = penguin_test_baked) %>%  
+  dplyr::bind_cols(penguin_test_baked) %>% 
+  glimpse()
+
+# Prediction Accuracy Metrics
+predict(object = penguin_fit, new_data = penguin_test_baked) %>%  
+  dplyr::bind_cols(penguin_test_baked) %>% 
+  yardstick::metrics(truth = species, estimate = .pred_class)
+
+# Prediction Probabilities
+penguin_fit_probs <- 
+  predict(penguin_fit, penguin_test_baked, type = "prob") %>%
+  dplyr::bind_cols(penguin_test_baked)
+glimpse(penguin_fit_probs)
+
+# Confusion Matrix
+penguin_fit$fit$confusion %>% tidy()
+
+# Gain Curves
+penguin_fit_probs %>% 
+  yardstick::gain_curve(species, .pred_Adelie:.pred_Gentoo) %>%
+  autoplot()
+
+# ROC Plot
+penguin_fit_probs%>%
+  roc_curve(species, .pred_Adelie:.pred_Gentoo) %>%
+  autoplot()
+```
+### Using `broom` on the penguin model
+```{r Using `broom` on the penguin model}
+penguin_split
+penguin_split %>% broom::tidy()
+penguin_recipe %>% broom::tidy()
+
+# Following do not work for `random forest models` !! ;-()
+#penguin_model %>% tidy()
+#penguin_fit %>% tidy() 
+penguin_model %>% str()
+
+penguin_test_baked
+
+
+```
+
+
+
+
+
+## Iris Random Forest Model with `ranger`
+
+Using the `iris` dataset and Random Forest Classification.
+This part uses `rsample` to split the data and the `recipes` to *prep* the data for model making. 
+
+```{r Pre-process data}
+#set.seed(100)
+iris_split <- rsample::initial_split(iris, prop = 0.6)
+iris_split
+
+iris_split %>% training() %>% glimpse()
+iris_split %>% testing() %>% glimpse()
+```
+
+
+### Iris Data Pre-Processing: Creating the Recipe
+
+The `recipes` package provides an interface that specializes in *data pre-processing*. Within the package, the functions that start, or execute, the data transformations are named after **cooking actions**. That makes the interface more user-friendly. For example:
+
+ - `recipe()` - Starts a new set of transformations to be applied, similar to the `ggplot()` command. Its main argument is the model’s `formula`.
+
+ - `prep()` - Executes the transformations on top of the data that is supplied (**typically, the training data**). Each data transformation is a `step()` function. ( Recall what we did with the `caret` package: *Centering, Scaling, Removing Correlated variables*...)
+
+Note that in order to avoid data leakage (e.g: transferring information from the train set into the test set), data should be “prepped” using the **train_tbl** only. <https://towardsdatascience.com/modelling-with-tidymodels-and-parsnip-bae2c01c131c>
+CRAN: The idea is that the preprocessing operations will all be **created** using the *training set* and then these steps will be **applied** to both the training and test set.
+
+```{r Declare Variables}
+# Pre Processing the Training Data
+
+iris_recipe <- 
+  training(iris_split) %>% # Note: Using TRAINING data !!
+  recipe(Species ~ .)      # Note: Outcomes ~ Predictors !!
+
+# The data contained in the `data` argument need not be the training set; this data is only used to catalog the names of the variables and their types (e.g. numeric, etc.).
+```
+
+Q: How does the recipe "figure" out which are the outcomes and which are the predictors?
+A.The `recipe` command defines `Outcomes` and `Predictors` using the formula interface. ~~Not clear how this recipe "figures" out which are the outcomes and which are the predictors, when we have not yet specified them...~~
+
+Q. Why is the recipe not agnostic to data set? Is that a meaningful question?
+A. The use of the `training set` in the recipe command is just to declare the variables and specify the `roles` of the data, nothing else. `Roles` are open-ended and extensible. 
+From <https://cran.r-project.org/web/packages/recipes/vignettes/Simple_Example.html> :
+
+> This document demonstrates some basic uses of recipes. First, some definitions are required:
+- **variables** are the original (raw) data columns in a data frame or tibble. For example, in a traditional formula Y ~ A + B + A:B, the variables are A, B, and Y.
+- **roles** define how variables will be used in the model. Examples are: `predictor` (independent variables), `response`, and `case weight`. This is meant to be open-ended and extensible.
+- **terms** are columns in a **design matrix** such as A, B, and A:B. These can be other derived entities that are grouped, such as a set of `principal components` or a set of columns, that define a `basis function` for a variable. These are synonymous with `features` in machine learning. Variables that have `predictor` roles would automatically be main `effect terms`.
+
+
+```{r Prep the recipe}
+# Apply the transformation steps
+iris_recipe <- iris_recipe %>% 
+  step_corr(all_predictors()) %>% 
+  step_center(all_predictors(), -all_outcomes()) %>% 
+  step_scale(all_predictors(), -all_outcomes()) %>% 
+  prep()
+```
+
+This has created the `recipe()` and prepped it too. 
+We now need to apply it to our datasets:
+
+- Take `training` data and `bake()` it to prepare it for modelling. 
+- Do the same for the `testing` set. 
+
+```{r Pre-Processing_2}
+iris_training_baked <- 
+  iris_split %>% 
+  training() %>% 
+  bake(iris_recipe,.)
+iris_training_baked
+
+iris_testing_baked <- 
+  iris_split %>% 
+  testing() %>% 
+  bake(iris_recipe,.)
+iris_testing_baked 
+```
+
+### Iris Model Training using `parsnip`
+
+Different ML packages provide different interfaces (APIs ) to do the same thing  (e.g random forests). The `tidymodels` package provides a consistent interface to invoke a wide variety of packages supporting a wide variety of models. 
+
+The `parsnip` package is a successor to `caret`. 
+
+To model with `parsnip`:
+1. Pick a `model` : 
+2. Set the `engine`
+3. Set the `mode` (if needed): *Classification* or *Regression*
+
+Check [here](https://tidymodels.github.io/parsnip/articles/articles/Models.html) for models available in `parsnip`. 
+
+ - Mode: *classification* and *regression* in `parsnip`, each using a variety of models. ( **Which Way**). This defines the form of the output. 
+ 
+ - Engine: The `engine` is the **R package** that is invoked by `parsnip` to execute the model. E.g `glm`, `glmnet`,`keras`.( **How** ) `parsnip` provides **wrappers** for models from these packages. 
+ 
+ - Model: is the **specific technique** used for the modelling task. E.g `linear_reg()`, `logistic_reg()`, `mars`, `decision_tree`, `nearest_neighbour`...(What model). 
+ 
+ and models have:
+ - `hyperparameters`: that are numerical or factor variables that `tune` the model ( Like the alpha beta parameters for Bayesian priors)
+
+We can use the `random forest` model to **classify** the iris into species. Here Species is the `Outcome` variable and the rest are `predictor` variables. The `random forest` model is provided by the `ranger` package, to which `tidymodels/parsnip` provides a simple and consistent interface.
+
+```{r Random Forest Model with `ranger`}
+library(ranger)
+iris_ranger <- 
+  rand_forest(trees = 100) %>% 
+  set_mode("classification") %>% 
+  set_engine("ranger") %>% 
+  fit(Species ~ ., data = iris_training_baked)
+```
+
+`ranger` can generate random forest models for `classification`, `regression`, `survival`( time series, time to event stuff). `Extreme Forests` are also supported, wherein all points in the dataset are used ( instead of bootstrap samples) along with `feature bagging`. 
+We can also run the same model using the `randomForest` package:
+
+```{r Random Forest Model with `randomForest`}
+library(randomForest,quietly = TRUE)
+iris_rf <- 
+  rand_forest(trees = 100) %>% 
+  set_mode("classification") %>% 
+  set_engine("randomForest") %>% 
+  fit(Species ~ ., data = iris_training_baked)
+```
+### Iris Predictions
+
+The `predict()` function run against a `parsnip` model returns a prediction `tibble`. By default, the prediction variable is called `.pred_class`. 
+
+```{r Predictions}
+predict(object = iris_ranger, new_data = iris_testing_baked) %>%  
+  dplyr::bind_cols(iris_testing_baked) %>% 
+  glimpse()
+```
+
+### Iris Classification Model Validation
+
+We use `metrics()` function from the `yardstick` package to evaluate how good the model is. 
+
+
+```{r metrics `ranger`}
+predict(iris_ranger, iris_testing_baked) %>%
+  dplyr::bind_cols(iris_testing_baked) %>% 
+  yardstick::metrics(truth = Species, estimate = .pred_class)
+```
+
+We can also check the metrics for `randomForest` model:
+
+```{r metrics `randomForest`}
+predict(iris_rf, iris_testing_baked) %>%
+  dplyr::bind_cols(iris_testing_baked) %>% 
+  yardstick::metrics(truth = Species, estimate = .pred_class)
+```
+
+### Iris Per-Classifier Metrics
+
+We can use the parameter `type = "prob"` in the `predict()` function to obtain a probability score on each prediction. 
+**TBD: How is this prob calculated?** Possible answer: the Random Forest model outputs its answer by majority voting across n trees. Each of the possible answers( i.e. predictions) for a particular test datum gets a share of the vote, that represents its probability. Hence each dataum in the test vector can show a probability for the "winning" answer. ( Quite possibly we can get the probabilities for *all possible outcomes* for **each test datum**)
+
+```{r Classification Probabilities}
+iris_ranger_probs <- 
+  predict(iris_ranger, iris_testing_baked, type = "prob") %>%
+  dplyr::bind_cols(iris_testing_baked)
+glimpse(iris_ranger_probs)
+
+iris_rf_probs <- 
+  predict(iris_rf, iris_testing_baked, type = "prob") %>%
+  dplyr::bind_cols(iris_testing_baked)
+glimpse(iris_rf_probs)
+
+# Tabulating the probabilities
+ftable(iris_rf_probs$.pred_versicolor)
+ftable(iris_rf_probs$.pred_virginica)
+ftable(iris_rf_probs$.pred_setosa)
+
+```
+```
+
+### Iris Classifier: Gain and ROC Curves
+
+We can plot gain and ROC curves for each of these models
+
+```{r Gain and ROC Curves `ranger`}
+iris_ranger_probs %>% 
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  glimpse()
+
+iris_ranger_probs %>% 
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  autoplot()
+
+iris_ranger_probs %>% 
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  glimpse()
+
+iris_ranger_probs %>% 
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  autoplot()
+```
+
+```{r Gain and ROC Curves `randomForest`}
+iris_rf_probs %>% 
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  glimpse()
+
+iris_rf_probs %>% 
+  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  autoplot()
+
+iris_rf_probs %>% 
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  glimpse()
+
+iris_rf_probs %>% 
+  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %>% 
+  autoplot()
+```
+
+
+### Iris Classifier: Metrics
+
+```{r}
+predict(iris_ranger, iris_testing_baked, type = "prob") %>% 
+  bind_cols(predict(iris_ranger,iris_testing_baked)) %>% 
+  bind_cols(select(iris_testing_baked,Species)) %>% 
+  glimpse()
+
+
+predict(iris_ranger, iris_testing_baked, type = "prob") %>% 
+  bind_cols(predict(iris_ranger,iris_testing_baked)) %>% 
+  bind_cols(select(iris_testing_baked,Species)) %>% 
+  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)
+
+
+# And for the `randomForest`method
+
+predict(iris_rf, iris_testing_baked, type = "prob") %>% 
+  bind_cols(predict(iris_ranger,iris_testing_baked)) %>% 
+  bind_cols(select(iris_testing_baked,Species)) %>% 
+  glimpse()
+
+predict(iris_rf, iris_testing_baked, type = "prob") %>% 
+  bind_cols(predict(iris_ranger,iris_testing_baked)) %>% 
+  bind_cols(select(iris_testing_baked,Species)) %>% 
+  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)
+```
