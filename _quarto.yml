@@ -45,6 +45,7 @@ website:
           - content/courses/ModelStory/Modules/30-Coordinated-Games/index.qmd
           - content/courses/ModelStory/Modules/40-Networks/index.qmd
           - content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.qmd
+          - content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.qmd      
           - content/courses/ModelStory/Modules/60-Proximity/index.qmd
           - content/courses/ModelStory/Modules/70-Voronoi/index.qmd
           - content/courses/ModelStory/Modules/80-Randomness/index.qmd

@@ -1,0 +1,113 @@
+---
+title: "\U0001F345 Using Networks in Art and Design"
+subtitle: "Copy, then Innovate!"
+date: 2026-07-04
+date-modified: today
+image: featured.jpg
+order: 55
+categories: 
+  - Branding
+  - Viral Trends
+  - Memes
+  - Network Effects
+  - Innovation Tools
+  - TRIZ
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r echo=FALSE}
+library(blogdown)
+```
+
+![Photo by
+<a href="https://unsplash.com/@yaaniu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ahmed
+Yaaniu</a> on
+<a href="https://unsplash.com/photos/green-and-brown-island-in-the-middle-of-blue-water-lD2PZuMscsw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](featured.jpg){height="450px"}
+
+## Introduction
+
+```{r}
+#| label: fig-john-donne
+#| eval: false
+#| echo: false
+#| out-height: "120%"
+#| fig-align: "center"
+#| fig-cap: "- John Donne, from ***Devotions Upon Emergent Occasions***"
+#| fig-cap-location: margin
+
+
+knitr::include_graphics("donne.png")
+```
+
+![](donne.png) [- John Donne, from ***Devotions Upon Emergent
+Occasions***]{style="float:right" height="480" }
+
+## Using Network Bahviour and Network Effects in Art and Design
+
+### Small Worlds
+
+{{< pdf ../../../../materials/pdfs/watts98smallworld.pdf >}}
+
+- Did you know that the "Small World" phenomenon is a network effect? It is! And it is also a design tool. You can use it to create "viral" effects in your designs, products, and campaigns.
+- How did one small link jumping across "vast distances" seemingly compress the network into a "Small World"?
+- How might we use this idea in Art/Design?
+  - Try a very tenuous-looking, unlikely *location* to access a new community of users / artists / designers / collaborators?
+  - *Put yourself / your enterprise in *dangerous* postions?
+  
+  
+### Moat Building in Business
+
+
+### Metcalfe's Law
+
+
+### First Mover Advantage
+
+
+### 
+
+
+### Discussion Questions
+
+-   So how does one *scotch/stop* a rumour? Can you [**be
+    vaccinated** against
+    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)?
+    Is there a game-theoretic cost for the vaccination?
+-   How does one be *individual and different* and still *one of the
+    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
+    time?](https://www.beyondintractability.org/essay/insider-partial)
+- How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
+-   How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
+-   There are popular and well-known phrases and ***memes*** in every
+    language! Use them!!
+-   Here is one for you: "Less Than Three!"
+
+## Conclusions
+
+-   Individual Actions Matter. Because they can be "reverse infections"
+    **and** be contagious, in a positive way.
+-   Correlations between Individual Actions can create "standing waves"
+    or "echoes" on the fabric of society.
+    -   Whatsapp "echo chambers"
+    -   Popularity of Memes, Songs, and Movie lines
+    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
+
+## References
+
+
+1.  The Network Effects Bible.
+    <u><https://www.nfx.com/post/network-effects-bible></u>
+1.  Mitchell Resnick. *Beyond the Centralized Mindset*.
+    <u><https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html></u>
+1.  Thomas W. Valente.(2012). *Network Interventions*. Science(337) 49.
+    Available here <u><https://sci-hub.se/10.1126/science.1217330></u>. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.
+1.  Nicholas Christakis. (May 3, 2024). To exploit social contagion,
+    tools are needed to efficiently identify individuals who are better
+    able to initiate cascades. To be maximally useful, such tools should
+    be deployable without having to actually map face-to-face social
+    network interactions. <https://t.co/DHCKxXeGYg>. This is a paper that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <https://www.science.org/doi/10.1126/science.adi5147>
+1. David Pinsoff. (Dec 2025).*Everything is Bullshit* Substack. <https://www.everythingisbullshit.blog/p/a-big-misunderstanding>
+1. fee.org.(Wednesday, September 19, 2018
+)*How Can Game Theory Prevent Disease Outbreaks.*<https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/> 

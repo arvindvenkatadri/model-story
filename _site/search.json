@@ -450,7 +450,7 @@
     "href": "content/courses/ModelStory/Modules/40-Networks/index.html#references",
     "title": "🕹 I am Insta Famous",
     "section": "References",
-    "text": "References\n\nAlbert-Laszlo Barabasi. Network Science. http://networksciencebook.com\n\nDmitry Zinoniev, Network Science Intro Slides. https://www.slideshare.net/DmitryZinoviev/workshop-20212296\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMark Newman, The Physics of Networks. Good intro Power Laws and examples of many networks. Read the PDF   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nThe Historical Network Research Community. https://historicalnetworkresearch.org\n\nKonrad M. Lawson, Toilers and Gangsters: Simple Network Visualization with R for Historians\n\nA Network oriented short story. Frigyes Karinthy, “Chains”. Read PDF\n\n\nWho told you about Srishti? Where? Mark Granovetter, The Strength of Weak Ties, https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf\n\nMichele Coscia. 2019. Who will Cluster the Cluster Makers? https://www.michelecoscia.com/?p=1709 Accessed 12 Jan 2024.\nRan Katzir. Nov 16, 2019. Experience Network Science Through Play.https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMark Hoffman, Methods for Network Analysis. https://bookdown.org/markhoff/social_network_analysis/\n\nOmar Lizardo and Isaac Jilbert, Social Networks: An Introduction. https://bookdown.org/omarlizardo/_main/\n\nDavid Easely and Kleinberg. Networks, Market and Crowds. The Rich get Richer. http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf",
+    "text": "References\n\nAlbert-Laszlo Barabasi. Network Science. http://networksciencebook.com\n\nDmitry Zinoniev, Network Science Intro Slides. https://www.slideshare.net/DmitryZinoviev/workshop-20212296\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nNetSciEd: Network Literacy: Essential Concepts and Core Ideas. https://sites.google.com/a/binghamton.edu/netscied/teaching-learning/network-concepts\n\nMark Newman, The Physics of Networks. Good intro Power Laws and examples of many networks. Read the PDF   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nThe Historical Network Research Community. https://historicalnetworkresearch.org\n\nKonrad M. Lawson, Toilers and Gangsters: Simple Network Visualization with R for Historians\n\nA Network oriented short story. Frigyes Karinthy, “Chains”. Read PDF\n\n\nWho told you about Srishti? Where? Mark Granovetter, The Strength of Weak Ties, https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf\n\nMichele Coscia. 2019. Who will Cluster the Cluster Makers? https://www.michelecoscia.com/?p=1709 Accessed 12 Jan 2024.\nRan Katzir. Nov 16, 2019. Experience Network Science Through Play.https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd\n\nMark Hoffman, Methods for Network Analysis. https://bookdown.org/markhoff/social_network_analysis/\n\nOmar Lizardo and Isaac Jilbert, Social Networks: An Introduction. https://bookdown.org/omarlizardo/_main/\n\nDavid Easely and Kleinberg. Networks, Market and Crowds. The Rich get Richer. http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf\n\n\nAppendix\n“Definitions” of some Network Terms:\n\n\n\n\n\n\n\n\nTerm\nDefinition\nExample\n\n\n\nNetwork\nA set of connected nodes and edges.\nA group of friends on a social media platform forms a network.\n\n\nNode\nA vertex or entity in the network.\nEach friend in that network is a node.\n\n\nEdge\nA connection between two nodes.\nA friendship between two friends is an edge.\n\n\nDirected Edge\nAn edge that has a direction, indicating a one-way relationship.\nIf A follows B on social media, but B does not follow A back, the edge from A to B is directed.\n\n\nWeighted Edge\nAn edge that has a weight or value associated with it, representing the strength or capacity of the connection.\nIf A and B communicate frequently, their edge might have a higher weight than an edge between A and C, who rarely communicate.\n\n\nPath\nA sequence of edges connecting two nodes.\nIf A is friends with B, and B is friends with C, then A-B-C is a path from A to C.\n\n\nConnected or Disconnected Network\nA connected network is one in which there is (atleast one) path between every pair of nodes, while a disconnected network has at least one pair of nodes with no path between them.\nIf every friend in a social media group can reach every other friend through some chain of friendships, the network is connected. If there are isolated friends who cannot reach others, the network is disconnected.\n\n\nPath length\nThe number of edges along a path between two nodes.\nIf A is connected to B and B to C, the path length from A to C is 2.\n\n\nDegree\nThe number of edges attached to a node.\nIf one person has 5 friends, their degree is 5.\n\n\nBetweenness\nHow often a node lies on shortest paths between other nodes.\nA student who connects two otherwise separate friend groups has high betweenness.\n\n\nCloseness\nHow near a node is to all other nodes, based on shortest-path distance.\nA person who can reach everyone else through few steps has high closeness.\n\n\nCommunity\nA group of nodes more densely connected to each other than to the rest of the network.\nA tightly connected group of classmates is a community.\n\n\nCharacteristic path length\nThe average shortest-path distance across all pairs of nodes.\nIf most people in the network can reach each other in about 3 steps, the characteristic path length is about 3.\n\n\nShortest Path\nThe path between two nodes that has the fewest edges.\nIf A is connected to C via B, and also via D *and E, then the shortest path from A to C is A-B-C.\n\n\nDiameter\nThe longest shortest route between any two nodes in the network.\nIn a small network, the diameter is the longest shortest route between any two people.\n\n\nEulerian Path\nA path that visits every edge in the network exactly once.\nA mail carrier delivering mail along each street without retracing any street has an Eulerian path.\n\n\nHamiltonian Path\nA path that visits every node in the network exactly once.\nA traveling salesman visiting each city exactly once has a Hamiltonian path.\n\n\n\n\nFun Stuff\nGeorge Cluny and Vera Farmiga embark on a Hamiltonian Trip across the US in (Up in the Air, 2009). The movie is a great example of a Hamiltonian Path. The movie is also a great example of a “Small World” network, where the two characters meet and interact with many people across the US, forming connections and relationships along the way.\n      \n\n\n \n View this post on Instagram\n\n \n   \n\n  \n\n   \n\n   \nA post shared by Art of Cinema (@artof.cinema)",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -626,6 +626,126 @@
     ]
   },
   {
+    "objectID": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html",
+    "href": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html",
+    "title": "🍅 Using Networks in Art and Design",
+    "section": "",
+    "text": "Photo by Ahmed Yaaniu on Unsplash",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Using Networks in Art and Design"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#introduction",
+    "title": "🍅 Using Networks in Art and Design",
+    "section": "Introduction",
+    "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Using Networks in Art and Design"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#using-network-bahviour-and-network-effects-in-art-and-design",
+    "href": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#using-network-bahviour-and-network-effects-in-art-and-design",
+    "title": "🍅 Using Networks in Art and Design",
+    "section": "Using Network Bahviour and Network Effects in Art and Design",
+    "text": "Using Network Bahviour and Network Effects in Art and Design\nSmall Worlds\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\nDid you know that the “Small World” phenomenon is a network effect? It is! And it is also a design tool. You can use it to create “viral” effects in your designs, products, and campaigns.\nHow did one small link jumping across “vast distances” seemingly compress the network into a “Small World”?\nHow might we use this idea in Art/Design?\n\nTry a very tenuous-looking, unlikely location to access a new community of users / artists / designers / collaborators?\n\nPut yourself / your enterprise in dangerous* postions?\n\n\nMoat Building in Business\nMetcalfe’s Law\nFirst Mover Advantage\n\nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\nHow does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them!!\nHere is one for you: “Less Than Three!”",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Using Networks in Art and Design"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#conclusions",
+    "href": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#conclusions",
+    "title": "🍅 Using Networks in Art and Design",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nIndividual Actions Matter. Because they can be “reverse infections” and be contagious, in a positive way.\nCorrelations between Individual Actions can create “standing waves” or “echoes” on the fabric of society.\n\nWhatsapp “echo chambers”\nPopularity of Memes, Songs, and Movie lines\nTaglines from Ads, and Products ( e.g. “Think Different”. Bah.)",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Using Networks in Art and Design"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#references",
+    "href": "content/courses/ModelStory/Modules/55-UsingNetworks4Design/index.html#references",
+    "title": "🍅 Using Networks in Art and Design",
+    "section": "References",
+    "text": "References\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMitchell Resnick. Beyond the Centralized Mindset. https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html\n\nThomas W. Valente.(2012). Network Interventions. Science(337) 49. Available here https://sci-hub.se/10.1126/science.1217330. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.\nNicholas Christakis. (May 3, 2024). To exploit social contagion, tools are needed to efficiently identify individuals who are better able to initiate cascades. To be maximally useful, such tools should be deployable without having to actually map face-to-face social network interactions. https://t.co/DHCKxXeGYg. This is a paper that presents design tools that exploit the “Friendship Paradox” to create Social Contagion. A quick summary of the paper is available here. https://www.science.org/doi/10.1126/science.adi5147\n\nDavid Pinsoff. (Dec 2025).Everything is Bullshit Substack. https://www.everythingisbullshit.blog/p/a-big-misunderstanding\n\nfee.org.(Wednesday, September 19, 2018 )How Can Game Theory Prevent Disease Outbreaks.https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Using Networks in Art and Design"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html",
+    "title": "🌵 Fractals",
+    "section": "",
+    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
+    "title": "🌵 Fractals",
+    "section": "Introduction",
+    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
+    "title": "🌵 Fractals",
+    "section": "A Little ( just a little?) of Maths…",
+    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
+    "title": "🌵 Fractals",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?\nTo be Written Up.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
+    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
+    "title": "🌵 Fractals",
+    "section": "References",
+    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🌵 Fractals"
+    ]
+  },
+  {
     "objectID": "content/courses/ModelStory/listing.html",
     "href": "content/courses/ModelStory/listing.html",
     "title": "The Model of the Story",
@@ -689,66 +809,6 @@
     "crumbs": [
       "Home",
       "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html",
-    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html",
-    "title": "🌵 Fractals",
-    "section": "",
-    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#introduction",
-    "title": "🌵 Fractals",
-    "section": "Introduction",
-    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
-    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#a-little-just-a-little-of-maths",
-    "title": "🌵 Fractals",
-    "section": "A Little ( just a little?) of Maths…",
-    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
-    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#wait-but-why",
-    "title": "🌵 Fractals",
-    "section": "Wait, But Why?",
-    "text": "Wait, But Why?\nTo be Written Up.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
-    "href": "content/courses/ModelStory/Modules/190-Fractals/index.html#references",
-    "title": "🌵 Fractals",
-    "section": "References",
-    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "🌵 Fractals"
     ]
   },
   {
@@ -1130,61 +1190,73 @@
   {
     "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
     "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "",
     "text": "Photo by Ahmed Yaaniu on Unsplash",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
     ]
   },
   {
     "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
     "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#introduction",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "Introduction",
     "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions\n&lt;/p&gt;\n\n\n\nAntonJarvis · No Man is an Island by John Donne\n\nFrom https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island\n\nThe words ‘No man is an island’ were embedded in a deeply Christian sermon about how human beings are connected to each other, and how important that connection is for the wellbeing and survival of any individual. When you hear the church bell tolling for someone who has died, don’t ask who it is, Donne says, just know that it’s tolling for you too because you are part of the same society and the death of anyone takes a part of your own life away.\n\nDoes the Bell toll for thee?\nThe Game of the Polygons\nLet us explore, sadly, the dark side of Game Theory. Where our own agent-like actions lead to bad outcomes in Society…\nAlways?\nNot if we…choose to copy others wisely !!\nLet us play The Parable of the Polygons https://ncase.me/polygons/\n    View webpage in full screen\n       \n      \n    \n  \nAnother Dark Side of…\nWhy are Petrol Stations located next to each other? Here is the Hotelling’s Phenomenon, explained.\n\n\n Hotelling’s Phenomenon, revisited",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#vaccinations-for-or-against",
+    "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#vaccinations-for-or-against",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
+    "section": "Vaccinations: For or Against?",
+    "text": "Vaccinations: For or Against?\nIf there are nasty Rumours in circulation, then it is well to be vaccinated against them. But if there are good news stories, or even brands, or cultural trends, one needs to be in with the group. (Can you see costs lurking in here?)\nWhat are the effects of vaccinations? How can one be intellectually vaccinated, and when needed physiologically vaccinated?\nHere is yet another pair of interactive:\n\n\n\n    View webpage in full screen\n       \n      \n    \n  \n\n\n    View webpage in full screen",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
     ]
   },
   {
     "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
     "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#viral-trendswith-a-song",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "Viral Trends…With a Song?",
-    "text": "Viral Trends…With a Song?\nA Song that is all about Network Effects !!!\nSong: Kuchh Toh Log Kahenge\nSinger: Kishore Kumar\nMusic: R. D. Burman\nFilm: Amar Prem (1972)\n\n\n Network Effects on Reputations!\n\n\n\n\n\n\n\n\n\nHindi Lyrics\nEnglish Translation\n\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\nLogon ka kaam hai kehna\nIt’s the job of people to say something\n\n\nChhodo bekaar ki baaton mein\nForget all these useless things\n\n\nKahin beet na jaaye raina\nOr else our night will end just around them\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n——\n——-\n\n\nKuch reet jagat ki aisi hai(2)\nSome traditions of the world are such that\n\n\nHar ek subah ki shaam huyi(2)\nEvery morning has had an evening\n\n\nTu kaun hai, tera naam hai kya\nWho are you and what’s your name\n\n\nSita bhi yahan badnaam huyi\nEven Goddess Sita has been defamed here\n\n\nPhir kyun sansaar ki baaton se\nThen why with these conversations of the world\n\n\nBheeg gaye tere naina\nHave your eyes become bedewed\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n———-\n————\n\n\nHumko joh taane dete hai(2)\nThose who taunt us saying that\n\n\nHum khoye hai in rangraliyon mein(2)\nWe’re lost in this debauchery\n\n\nHumne unko bhi chup chupke\nSecretly I’ve also seen them\n\n\nAate dekha in galiyon mein\nComing in these streets\n\n\nYeh sach hai jhoothi baat nahi\nThis is the truth and not a lie\n\n\nTum bolo yeh sach hai na\nYou tell me, isn’t this the truth?\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n…\n…\n\n\n\n\n\nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\nHow does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them!!\nHere is one for you: “Less Than Three!”",
+    "text": "Viral Trends…With a Song?\nA Song that is all about Network Effects !!!\nSong: Kuchh Toh Log Kahenge\nSinger: Kishore Kumar\nMusic: R. D. Burman\nFilm: Amar Prem (1972)\n\n\n Network Effects on Reputations!\n\n\n\n\n\n\n\n\n\nHindi Lyrics\nEnglish Translation\n\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\nLogon ka kaam hai kehna\nIt’s the job of people to say something\n\n\nChhodo bekaar ki baaton mein\nForget all these useless things\n\n\nKahin beet na jaaye raina\nOr else our night will end just around them\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n——\n——-\n\n\nKuch reet jagat ki aisi hai(2)\nSome traditions of the world are such that\n\n\nHar ek subah ki shaam huyi(2)\nEvery morning has had an evening\n\n\nTu kaun hai, tera naam hai kya\nWho are you and what’s your name\n\n\nSita bhi yahan badnaam huyi\nEven Goddess Sita has been defamed here\n\n\nPhir kyun sansaar ki baaton se\nThen why with these conversations of the world\n\n\nBheeg gaye tere naina\nHave your eyes become bedewed\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n———-\n————\n\n\nHumko joh taane dete hai(2)\nThose who taunt us saying that\n\n\nHum khoye hai in rangraliyon mein(2)\nWe’re lost in this debauchery\n\n\nHumne unko bhi chup chupke\nSecretly I’ve also seen them\n\n\nAate dekha in galiyon mein\nComing in these streets\n\n\nYeh sach hai jhoothi baat nahi\nThis is the truth and not a lie\n\n\nTum bolo yeh sach hai na\nYou tell me, isn’t this the truth?\n\n\nKuch toh log kahenge\nPeople will say something or the other\n\n\n…\n…\n\n\n\n\n\nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\n(VCSB folks) How does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them in Design!!\nDoes a meme automatically create a community?\nHere is one for you: “Less Than Three!”",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
     ]
   },
   {
     "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
     "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#conclusions",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "Conclusions",
     "text": "Conclusions\n\nIndividual Actions Matter. Because they can be “reverse infections” and be contagious, in a positive way.\nCorrelations between Individual Actions can create “standing waves” or “echoes” on the fabric of society.\n\nWhatsapp “echo chambers”\nPopularity of Memes, Songs, and Movie lines\nTaglines from Ads, and Products ( e.g. “Think Different”. Bah.)",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
     ]
   },
   {
     "objectID": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
     "href": "content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html#references",
-    "title": "🍅 Biases, Memes, Viral Trends, and Rumours!",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "References",
-    "text": "References\n\nThomas Schelling.Dynamic Models of Segregation. https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf\n\nHenderson, Ron. 12 June 2022. Luxury Beliefs are Status Symbols: The struggle for distinction. https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web. Accessed 07 Jan 2024.\n\n Rob Henderson’s Idea of “Luxury Beliefs”\n\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMitchell Resnick. Beyond the Centralized Mindset. https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html\n\nThomas W. Valente.(2012). Network Interventions. Science(337) 49. Available here https://sci-hub.se/10.1126/science.1217330. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.\nNicholas Christakis. (May 3, 2024). To exploit social contagion, tools are needed to efficiently identify individuals who are better able to initiate cascades. To be maximally useful, such tools should be deployable without having to actually map face-to-face social network interactions. https://t.co/DHCKxXeGYg. This is a paper that presents design tools that exploit the “Friendship Paradox” to create Social Contagion. A quick summary of the paper is available here. https://www.science.org/doi/10.1126/science.adi5147\n\nDavid Pinsoff. (Dec 2025).Everything is Bullshit Substack. https://www.everythingisbullshit.blog/p/a-big-misunderstanding\n\nfee.org.(Wednesday, September 19, 2018 )How Can Game Theory Prevent Disease Outbreaks.https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/",
+    "text": "References\n\nThomas Schelling.Dynamic Models of Segregation. https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf\n\nHenderson, Ron. 12 June 2022. Luxury Beliefs are Status Symbols: The struggle for distinction. https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web. Accessed 07 Jan 2024.\n\n Rob Henderson’s Idea of “Luxury Beliefs”\n\n\nThe Network Effects Bible. https://www.nfx.com/post/network-effects-bible\n\nMitchell Resnick. Beyond the Centralized Mindset. https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html\n\nThomas W. Valente.(2012). Network Interventions. Science(337) 49. Available here https://sci-hub.se/10.1126/science.1217330. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.\nNicholas Christakis. (May 3, 2024). To exploit social contagion, tools are needed to efficiently identify individuals who are better able to initiate cascades. To be maximally useful, such tools should be deployable without having to actually map face-to-face social network interactions. https://t.co/DHCKxXeGYg. This is a paper that presents design tools that exploit the “Friendship Paradox” to create Social Contagion. A quick summary of the paper is available here. https://www.science.org/doi/10.1126/science.adi5147\n\nDavid Pinsoff. (Dec 2025).Everything is Bullshit Substack. https://www.everythingisbullshit.blog/p/a-big-misunderstanding\n\nfee.org.(Wednesday, September 19, 2018 )How Can Game Theory Prevent Disease Outbreaks.https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/\n\n\nAppendix\nWhat was that “Standing Wave” thingy?\nTBW. An explanation of how echoes create standing waves that can metaphorically be used to depict viral trends in society. So, don’t reflect, just absorb. That’s being vaccinated.",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "🍅 Biases, Memes, Viral Trends, and Rumours!"
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
     ]
   },
   {

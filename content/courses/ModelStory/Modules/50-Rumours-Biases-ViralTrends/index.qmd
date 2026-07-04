@@ -1,6 +1,6 @@
 ---
-title: "\U0001F345 Biases, Memes, Viral Trends, and Rumours!"
-subtitle: "Whom will you Copy today?"
+title: "\U0001F345 Biases, Memes, Brands, Viral Trends... and Rumours!"
+subtitle: "Whom (not \"who\"!!) will you Copy today?"
 date: 2024-01-04
 date-modified: today
 image: featured.jpg
@@ -15,8 +15,6 @@ editor_options:
   markdown: 
     wrap: 72
 ---
-
-#### Whom will you Copy today?
 
 ```{r echo=FALSE}
 library(blogdown)
@@ -33,10 +31,11 @@ Yaaniu</a> on
 #| label: fig-john-donne
 #| eval: false
 #| echo: false
-#| out-height: "120%"
-#| fig-align: "center"
+#| out-height: "100%"
+#| out-width: "100%"
 #| fig-cap: "- John Donne, from ***Devotions Upon Emergent Occasions***"
 #| fig-cap-location: margin
+#| fig-align: default
 
 
 knitr::include_graphics("donne.png")
@@ -94,6 +93,30 @@ Why are Petrol Stations located next to each other? Here is the
 Hotelling's Phenomenon, revisited
 </center>
 :::
+
+## Vaccinations: For or Against?
+
+If there are nasty Rumours *in circulation*, then it is well to be **vaccinated against** them. But if there are good news stories, or even ***brands***, or ***cultural trends***, one needs to be in with the group. (*Can you see costs lurking in here?*)
+
+What are the effects of vaccinations? How can one be *intellectually vaccinated*, and when needed *physiologically vaccinated*?
+
+Here is yet another pair of interactive:
+
+::: {.column-page-right}
+
+::: {.grid}
+
+::: {.g-col-6}
+{{< html https://www.complexity-explorables.org/explorables/epidemonic/ >}}
+:::
+::: {.g-col-6}
+{{< html https://www.complexity-explorables.org/explorables/i-herd-you/ >}}
+:::
+
+:::
+:::
+
+
 ## Viral Trends...With a Song?
 
 A Song that is all about Network Effects !!!
@@ -105,10 +128,11 @@ Film: Amar Prem (1972)\
 
 ::: {}
 <center>
-{{< video https://youtu.be/X6q7BVZXOUU?list=RDX6q7BVZXOUU width="560" height="400" align="center" title="" >}}
+{{< video https://youtu.be/X6q7BVZXOUU?list=RDX6q7BVZXOUU width="640" height="400" align="center" title="" >}}
 Network Effects on Reputations!
 </center>
 :::
+
 ::: {style="text-align: center; font-size: 0.75em;"}
 | Hindi Lyrics | English Translation |
 |-----------------------------|-------------------------------------------|
@@ -148,9 +172,10 @@ Network Effects on Reputations!
     gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
     time?](https://www.beyondintractability.org/essay/insider-partial)
 - How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
--   How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
+-   (VCSB folks) How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
 -   There are popular and well-known phrases and ***memes*** in every
-    language! Use them!!
+    language! Use them in Design!!
+- Does a meme automatically create a community?
 -   Here is one for you: "Less Than Three!"
 
 ## Conclusions
@@ -189,3 +214,11 @@ Rob Henderson's Idea of "Luxury Beliefs"
 6. David Pinsoff. (Dec 2025).*Everything is Bullshit* Substack. <https://www.everythingisbullshit.blog/p/a-big-misunderstanding>
 7. fee.org.(Wednesday, September 19, 2018
 )*How Can Game Theory Prevent Disease Outbreaks.*<https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/> 
+
+
+### Appendix
+
+#### What was that "Standing Wave" thingy?
+
+TBW. An explanation of how echoes create standing waves that can metaphorically be used to depict viral trends in society. 
+So, don't reflect, just absorb. That's being vaccinated. 
