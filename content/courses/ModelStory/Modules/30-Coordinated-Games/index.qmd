@@ -253,7 +253,8 @@ While it may seem, cynically speaking, that everyone is playing Prisoners' Dilem
 A. Prisoners' Dilemma
 
 - Security Check-in at Airports, when travelling in a group together
-- 
+- At Restaurants? Ever sat next to a noisy table?
+- ?
 
 B. Stag Hunt Game
 
@@ -261,7 +262,7 @@ B. Stag Hunt Game
 - Communities where tacit social contract that lets people live in peace with each other. 
 - When people follow queues. This is a high-trust situation, where people reap the benefits of quick service
 - When nobody goes to the party / protest because they don't think anybody else is going to the party, we are getting the risk-dominant outcome in a Stag hunt.
-- Hans Christian Andersen.*The Emperor's New Clothes*.<https://americanliterature.com/author/hans-christian-andersen/short-story/the-emperors-new-clothes>
+- Hans Christian Andersen.*The Emperor's New Clothes*. <https://americanliterature.com/author/hans-christian-andersen/short-story/the-emperors-new-clothes>
 
 
 C. Chicken Game
@@ -278,7 +279,7 @@ description of the Chicken Game.)
 
 ## Schelling Points and the Lindy Effect
 
-To be written up. You are one lazy bugger. INTJ, but lazy.
+To be written up. You are one lazy bugger, Arvind. INTJ, but lazy.
 
 ## The Design of Game Incentives
 
@@ -306,9 +307,9 @@ To be Written Up. Use Scott Adams on Mechanism Design, and also "Algorithms for 
 
 1.  William Poundstone. *Stag Hunt*.
     <https://www.heretical.com/pound/staghunt.html)>
-2.  William Poundstone. *Volunteer's Dilemma*.
-    <https://www.heretical.com/pound/vdilemma.html> A multi-player
-    version of the Chicken Game.
+1. inomics blog. *Stag Hunt*. <https://inomics.com/terms/stag-hunt-1537413>
+1.  William Poundstone. *Volunteer's Dilemma*.
+    <https://www.heretical.com/pound/vdilemma.html> A multi-player version of the Chicken Game.
 
 ## Additional Readings
 

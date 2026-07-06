@@ -222,3 +222,41 @@ George Cluny and Vera Farmiga embark on a **Hamiltonian Trip** across the US in 
 <script async src="//www.instagram.com/embed.js"></script>
 ```
 
+
+
+::: {.content-hidden}
+
+The core curriculum across these programs follows a clear progression: foundational theory → practical analysis tools → advanced modeling and dynamics. Here are the most essential network science concepts for undergraduates:
+
+**1. Foundational Graph Theory & Network Models**
+- **Graph representation**: Understanding nodes, edges, adjacency matrices, incidence matrices
+- **Key metrics**: Degree distribution (including power-law), clustering coefficient, path lengths, centrality measures (e.g., degree, betweenness)
+- **Core models**: Erdős–Rényi random graphs, small-world model, configuration model, preferential attachment model
+
+**2. Network Structure Analysis & Community Detection**
+- **Community detection algorithms**: Girvan-Newman algorithm, modularity optimization
+- **Structural concepts**: Structural holes, strength of weak ties, overlapping communities (using clique percolation)
+- **Spectral methods**: Graph partitioning via graph cuts and spectral clustering
+
+**3. Network Dynamics & Information Flow**
+- **Contagion models**: SIR/SIS/SIRS epidemic models for disease spreading
+- **Cascading behavior**: Decision-based models of collective action, probabilistic cascades (e.g., Independent Cascade Model)
+- **Information diffusion**: PageRank and HITS algorithms for node importance in web search
+
+**4. Network Inference & Machine Learning**
+- **Link prediction**: Neighborhood-based methods, supervised learning approaches
+- **Network reconstruction**: Backboning techniques to infer latent network structures from incomplete data
+- **Graph neural networks (GNNs)**: Introduction to representation learning on graphs for mobility and epidemics
+
+**5. Applications Across Disciplines**
+Students are exposed to the interdisciplinary relevance of these concepts:
+- Biological systems (e.g., protein interaction networks)
+- Social systems (e.g., influence propagation, opinion dynamics)
+- Information technology (e.g., internet architecture, search engines)
+
+These curricula show a consistent emphasis on both theoretical foundations and practical computational skills using tools like Python (NetworkX), R, and agent-based modeling. The programs integrate network science with engineering, economics, and social sciences to provide students with holistic understanding.
+
+The concept of "Network Science" as taught at the undergraduate level is not isolated theory—it's presented as a way to understand complex systems that underpin modern society across technical and human domains.
+
+:::
+
