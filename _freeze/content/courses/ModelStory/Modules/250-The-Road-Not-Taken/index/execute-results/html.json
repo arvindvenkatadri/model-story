@@ -1,8 +1,8 @@
 {
-  "hash": "fc58d9b65a5a936721c9538276e2a7ef",
+  "hash": "3d8293e2441df760dd95780ec7a153cf",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"\\U0001F579 The Road Not Taken\"\nsubtitle: \"Path Dependence in Human Experience\"\ndate: \"2024-02-17\"\ndate-modified: today\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 110\ndraft: true\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![Petr Slováček on Unsplash](featured.jpg){fig-align='center' fig-alt='Petr Slováček on Unsplash' width=50%}\n:::\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nBruce Hornsby The Road Not Taken\\\nRobert Frost\\\nScott Adams\\\n\n\n\n## References\n\n\n## Additional Readings\n\n1. The Story of Nachiketa ( Shreya and Preya ). <https://culturalsamvaad.com/story-of-nachiketa-and-yama-katha-upanishad-key-lessons/>\n\n",
+    "markdown": "---\ntitle: \"\\U0001F579 The Road Not Taken\"\nsubtitle: \"Path Dependence in Human Experience\"\ndate: \"2024-02-17\"\ndate-modified: today\ncategories:\n- Path Dependence\n- Evolution\nimage: \"featured.jpg\"\norder: 250\ndraft: true\n\n---\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![Petr Slováček on Unsplash](featured.jpg){fig-align='center' fig-alt='Petr Slováček on Unsplash' width=50%}\n:::\n:::\n\n\n## Introduction\n\nTo be written up !!\n\nBruce Hornsby The Road Not Taken\\\nRobert Frost\\\nScott Adams\\\n\n\n\n## References\n\n\n## Additional Readings\n\n1. The Story of Nachiketa ( Shreya and Preya ). <https://culturalsamvaad.com/story-of-nachiketa-and-yama-katha-upanishad-key-lessons/>\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

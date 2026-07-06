@@ -1,0 +1,71 @@
+---
+title: "\U0001F578 Key Concepts in Network Science"
+subtitle: "Connecting it all up!"
+date: 2026-07-06
+date-modified: today
+image: featured.jpg
+order: 60
+code-fold: true
+categories: 
+  - Nodes and Edges
+  - Degree
+  - Degree Distributions
+  - Erdos-Renyi Model
+  - Configuration Model
+  - Power Laws
+  - Betweenness
+
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+#| warning: false
+#| 
+library(blogdown)
+library(tidyverse)
+library(igraph)
+library(ggraph)
+library(tidygraph)
+library(gganimate)
+library(ggplot2)
+library(gifski)
+
+
+```
+
+
+## Introduction
+
+Let us quickly summarize some Key Concepts and Terms in Network Science
+
+
+### Nodes and Edges
+
+### Degree
+
+### Degree Distributions
+
+### Erdos-Renyi Model
+
+### Configuration Model
+
+### Power Laws
+
+### Betweenness
+
+### Communities
+
+### Path Length
+
+### Hamitonian Path
+
+### Eulerian Path
+
+
+  
+

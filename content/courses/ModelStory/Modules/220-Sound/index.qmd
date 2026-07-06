@@ -3,7 +3,7 @@ title: "\U0001F578 Wired for Sound"
 date: 2021-08-06
 date-modified: "`r Sys.Date()`"
 summary: A model for analyzing and synthesizing Sound
-order: 100
+order: 220
 categories:
   - Model Story
   - Sound

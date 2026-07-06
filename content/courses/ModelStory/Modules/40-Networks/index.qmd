@@ -39,16 +39,12 @@ Discussion:
 
 ### Activity-2: Barabasi Cocktail Party Game
 
-This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science
-pioneer and expert, who has written a wonderful, and wonderfully
-acessible, book on Network Science, available online. <http://networksciencebook.com/>
+This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. <http://networksciencebook.com/>
 
 1.  Please take a coin in your hand. (A rupee coin is good!)
-2.  Find a ~~stranger~~ potential new friend in the classroom. Both of
-    you toss your coins.
-3.  If the coins show two Heads or two Tails, introduce yourselves, make
-    small talk, exchange classroom and college gossip. 2 Minutes!
-4.  Make a note of your new friends initials.
+2.  Find a ~~stranger~~ potential new friend in the classroom. Both of you toss your coins.
+3.  If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!
+4.  Make a note of your new friends initials. ("AV")
 5.  We will plot this conversation on the board. How?
 
 ::: {}
@@ -71,7 +67,9 @@ Discussion:
 4.  Let's plot this on (yet another) network!!
 
 Discussion:
-`Node Degree, Giant Component?  Small Worlds?  Multi-Link network, Link Values or Costs`
+`Node Degree, Giant Component?  Small Worlds?  Multi-Link network, Link Values or Costs`, `(Network) Configuration Model`
+
+Standard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.
 
 ### Activity-4: Hi, I am [Kevin Bacon](https://oracleofbacon.org/), SMI Foundation Batch
 
@@ -119,10 +117,6 @@ Discussion:
 1.  The Network Effects Bible.
     <https://www.nfx.com/post/network-effects-bible>
 1. NetSciEd: *Network Literacy: Essential Concepts and Core Ideas*. <https://sites.google.com/a/binghamton.edu/netscied/teaching-learning/network-concepts>
-1.  Mark Newman, *The Physics of Networks*. Good intro Power Laws and
-    examples of many networks. [Read the
-    PDF](../../../../materials/pdfs/newman-physics-of-networks.pdf)
-    {{< pdf ../../../../materials/pdfs/newman-physics-of-networks.pdf  >}}
 1.  The Historical Network Research Community.
     <https://historicalnetworkresearch.org>
 1.  Konrad M. Lawson, [*Toilers and Gangsters: Simple Network

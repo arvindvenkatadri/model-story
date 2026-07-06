@@ -1,0 +1,19 @@
+{
+  "hash": "88350cf038f14a153df950d34fe66e5d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\\U0001F578 Key Concepts in Network Science\"\nsubtitle: \"Connecting it all up!\"\ndate: 2026-07-06\ndate-modified: today\nimage: featured.jpg\norder: 60\ncode-fold: true\ncategories: \n  - Nodes and Edges\n  - Degree\n  - Degree Distributions\n  - Erdos-Renyi Model\n  - Configuration Model\n  - Power Laws\n  - Betweenness\n\neditor_options: \n  markdown: \n    wrap: 72\n---\n\n\n::: {.cell}\n\n:::\n\n\n\n## Introduction\n\nLet us quickly summarize some Key Concepts and Terms in Network Science\n\n\n### Nodes and Edges\n\n### Degree\n\n### Degree Distributions\n\n### Erdos-Renyi Model\n\n### Configuration Model\n\n### Power Laws\n\n### Betweenness\n\n### Communities\n\n### Path Length\n\n### Hamitonian Path\n\n### Eulerian Path\n\n\n  \n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

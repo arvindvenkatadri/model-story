@@ -3,7 +3,7 @@ title: "Final Week Projects"
 subtitle: "How to show you can create Order and Chaos together. You're welcome. 😉"
 date:  "2020-05-25"
 date-modified: today
-order: 300
+order: 1000
 image: "featured.jpg"
 ---
 

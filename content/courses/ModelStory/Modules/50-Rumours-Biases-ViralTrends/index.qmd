@@ -71,12 +71,12 @@ Does the Bell toll for thee?
 
 ### The Game of the Polygons
 
-Let us explore, sadly, the `dark side` of Game Theory. Where our own
+Let us explore, sadly, the `dark side` of [Game Theory](../10-Company-Heroes/index.qmd), and of course [Networks](../40-Networks/index.qmd). Where our own
 agent-like actions lead to bad outcomes in Society...
 
 Always?
 
-Not if we...choose to copy others wisely !!
+Not if we...choose to copy others but wisely !!
 
 Let us play **The Parable of the Polygons** <https://ncase.me/polygons/>
 
