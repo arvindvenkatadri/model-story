@@ -100,21 +100,34 @@ If there are nasty Rumours *in circulation*, then it is well to be **vaccinated 
 
 What are the effects of vaccinations? How can one be *intellectually vaccinated*, and when needed *physiologically vaccinated*?
 
-Here is yet another pair of interactive:
-
-::: {.column-page-right}
-
-::: {.grid}
-
-::: {.g-col-6}
 {{< html https://www.complexity-explorables.org/explorables/epidemonic/ >}}
-:::
-::: {.g-col-6}
-{{< html https://www.complexity-explorables.org/explorables/i-herd-you/ >}}
-:::
 
-:::
-:::
+### Discussion Questions
+
+-   So how does one *scotch/stop* a rumour? Can you [**be
+    vaccinated** against
+    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)?
+    Is there a game-theoretic cost for the vaccination?
+-   How does one be *individual and different* and still *one of the
+    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
+    time?](https://www.beyondintractability.org/essay/insider-partial)
+- How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
+-   (VCSB folks) How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
+-   There are popular and well-known phrases and ***memes*** in every
+    language! Use them in Design!!
+- Does a meme automatically create a community?
+-   Here is one for you: "Less Than Three!"
+
+
+## Conclusions
+
+-   Individual Actions Matter. Because they can be "reverse infections" **and** be contagious, in a positive way.
+-   Correlations between Individual Actions can create *"standing waves"* or "resonances" on the fabric of society.
+    -   Whatsapp "echo chambers"
+    -   Popularity of Memes, Songs, and Movie lines
+    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
+- When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
+- And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
 
 
 ## Viral Trends...With a Song?
@@ -162,31 +175,7 @@ Network Effects on Reputations!
 
 <br>
 
-### Discussion Questions
 
--   So how does one *scotch/stop* a rumour? Can you [**be
-    vaccinated** against
-    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)?
-    Is there a game-theoretic cost for the vaccination?
--   How does one be *individual and different* and still *one of the
-    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
-    time?](https://www.beyondintractability.org/essay/insider-partial)
-- How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
--   (VCSB folks) How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
--   There are popular and well-known phrases and ***memes*** in every
-    language! Use them in Design!!
-- Does a meme automatically create a community?
--   Here is one for you: "Less Than Three!"
-
-## Conclusions
-
--   Individual Actions Matter. Because they can be "reverse infections" **and** be contagious, in a positive way.
--   Correlations between Individual Actions can create *"standing waves"* or "resonances" on the fabric of society.
-    -   Whatsapp "echo chambers"
-    -   Popularity of Memes, Songs, and Movie lines
-    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
-- When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
-- And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
 
 ## References
 

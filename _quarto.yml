@@ -45,14 +45,14 @@ website:
           - content/courses/ModelStory/Modules/30-Coordinated-Games/index.qmd
           - content/courses/ModelStory/Modules/40-Networks/index.qmd
           - content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.qmd
-          - content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.qmd
+          # - content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.qmd
           - content/courses/ModelStory/Modules/70-UsingNetworks4Design/index.qmd      
           - content/courses/ModelStory/Modules/80-Proximity/index.qmd
           - content/courses/ModelStory/Modules/90-Voronoi/index.qmd
           - content/courses/ModelStory/Modules/100-Randomness/index.qmd
           - content/courses/ModelStory/Modules/110-Mangoes/index.qmd
-          - content/courses/ModelStory/Modules/120-StillMoreRandomness/index.qmd
-          - content/courses/ModelStory/Modules/130-ClassificationTaylorSwift/index.qmd
+          # - content/courses/ModelStory/Modules/120-StillMoreRandomness/index.qmd
+          - content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.qmd
           - content/courses/ModelStory/Modules/140-SushiClustering/index.qmd
           - content/courses/ModelStory/Modules/150-LegallyRegression/index.qmd
           - content/courses/ModelStory/Modules/300-Symmetry/index.qmd

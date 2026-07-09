@@ -1,5 +1,5 @@
 ---
-title: "\U0001F579 Measuring and Playing with Proximity"
+title: "\U0001F3D8 Measuring and Playing with Proximity"
 date: 2021-12-11
 date-modified: today
 order: 90
@@ -120,11 +120,8 @@ the Geogebra (*.ggb*) files that you create. Let us first see Soho with the Voro
 1.  Exercise 1: Download [this `.ggb` file](../../../../materials/pdfs/SohoMap.ggb)</u> and open it in Geogebra.
 1.  Exercise 2: Let us try with just three points and see what we need
     to do to plot the Voronoi Diagram.
-1.  Exercise 3: With 4 points: [Four Pointer
-    Voronoi](../../../../materials/pdfs/four points.ggb)
-1.  Exercise 4: Let us now add more points. How do we make a multi-point
-    Voronoi? We need to make a [**"list of points" in
-    Geogebra**](../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf).
+1.  Exercise 3: With 4 points: [Four Pointer Voronoi](../../../../materials/pdfs/four points.ggb)
+1.  Exercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a [**"list of points" in Geogebra**](../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf).
 
 ### Discussion
 
@@ -135,16 +132,14 @@ the Geogebra (*.ggb*) files that you create. Let us first see Soho with the Voro
     algorithm?
 -   The Delaunay Triangulation gives us a set of triangular elements
     that cover our desired surface
--   The Voronoi Diagram uses the Delaunay to give us *possibly infinite*
-    proximal neighbourhoods.
+-   The Voronoi Diagram uses the Delaunay to give us *possibly infinite* proximal neighbourhoods.
 
 ## Fun Stuff with Geogebra and Voronoi
 
 1.  **Predator Prey Movement**....\
     -   Create a set of points in Geogebra.
     -   Colour/Shape one of the outermost points as a predator which circles the herd.
-    -   Use the Voronoi diagram to model the *Zone of Danger* for each of
-    the animals in the inner herd.
+    -   Use the Voronoi diagram to model the *Zone of Danger* for each of the animals in the inner herd.
     -   Try **Animation** in Geogebra !!
 2.  **Service Areas with Voronoi**\
     -   Import a 5km \* 5km square of area in your home town, from Google Maps, into Geogebra.
@@ -169,9 +164,7 @@ the Geogebra (*.ggb*) files that you create. Let us first see Soho with the Voro
 
 ### Hamming Distances
 
-We have used the simplest and most common of geometric distances between
-entities, the **Euclidean Distance** to model proximity. Are there other
-*measures of distance*?
+We have used the simplest and most common of geometric distances between entities, the **Euclidean Distance** to model proximity. Are there other *measures of distance*?
 
 -   How would you measure distance between *digital words*? For example
     $10010011$ and $11011011$?
@@ -202,10 +195,9 @@ And if a *man hatta* live in New York?
 
 ![](taxicab-manhattan-grid-taxicab-distance.png){fig-align="center"}
 
-We will use the Euclidean and maybe other concepts of distance when we
-get into our Machine Learning models!
+We will use the Euclidean and maybe other concepts of distance when we get into our Machine Learning models!
 
-### Plotting Sihouette Diagrams
+### Plotting Silhouette Diagrams
 
 To be written up!!
 <https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html>

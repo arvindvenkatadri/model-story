@@ -28,7 +28,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../../../">
 <link href="../../../../../content/courses/ModelStory/Modules/80-Proximity/index.html" rel="next">
-<link href="../../../../../content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.html" rel="prev">
+<link href="../../../../../content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html" rel="prev">
 <link href="../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
 <script src="../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -230,12 +230,6 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕸 Key Concepts in Network Science</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/70-UsingNetworks4Design/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">🕸 Using Networks Science Models in Art and Design</span></a>
   </div>
@@ -243,13 +237,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/80-Proximity/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 Proximity - Painting Soho red with Kandinsky!</span></a>
+ <span class="menu-text">🏘 Proximity - Painting Soho red with Kandinsky!</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/90-Voronoi/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 Measuring and Playing with Proximity</span></a>
+ <span class="menu-text">🏘 Measuring and Playing with Proximity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -266,8 +260,8 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/130-ClassificationTaylorSwift/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ML-Classification with Taylor Swift</span></a>
+  <a href="../../../../../content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML-Classification with Narasimha</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -313,16 +307,17 @@ window.Quarto = {
 <li>
 <a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-<li><a href="#small-worlds" id="toc-small-worlds" class="nav-link" data-scroll-target="#small-worlds">Small Worlds</a></li>
-  <li><a href="#preferential-attachment" id="toc-preferential-attachment" class="nav-link" data-scroll-target="#preferential-attachment">Preferential Attachment</a></li>
-  <li><a href="#metcalfes-law" id="toc-metcalfes-law" class="nav-link" data-scroll-target="#metcalfes-law">Metcalfe’s Law</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions">Discussion Questions</a></li>
+<li><a href="#erdos-and-renyi-random-networks" id="toc-erdos-and-renyi-random-networks" class="nav-link" data-scroll-target="#erdos-and-renyi-random-networks">Erdos and Renyi: Random Networks</a></li>
+  <li><a href="#watts-and-strogatz-small-worlds" id="toc-watts-and-strogatz-small-worlds" class="nav-link" data-scroll-target="#watts-and-strogatz-small-worlds">Watts and Strogatz: Small Worlds</a></li>
+  <li><a href="#granovetter-strength-of-weak-ties" id="toc-granovetter-strength-of-weak-ties" class="nav-link" data-scroll-target="#granovetter-strength-of-weak-ties">Granovetter: Strength of Weak Ties</a></li>
+  <li><a href="#albert-l%C3%A1szl%C3%B3-barab%C3%A1si-and-r%C3%A9ka-albert-preferential-attachment" id="toc-albert-lászló-barabási-and-réka-albert-preferential-attachment" class="nav-link" data-scroll-target="#albert-l%C3%A1szl%C3%B3-barab%C3%A1si-and-r%C3%A9ka-albert-preferential-attachment">Albert-László Barabási and Réka Albert: Preferential Attachment</a></li>
   </ul>
 </li>
+  <li><a href="#discussion-and-questions" id="toc-discussion-and-questions" class="nav-link" data-scroll-target="#discussion-and-questions">Discussion and Questions</a></li>
   <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#important-papers-in-network-science" id="toc-important-papers-in-network-science" class="nav-link" data-scroll-target="#important-papers-in-network-science">Important Papers in Network Science</a></li>
+  <li><a href="#fun-stuff-ha" id="toc-fun-stuff-ha" class="nav-link" data-scroll-target="#fun-stuff-ha">Fun Stuff ( ha!)</a></li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -333,6 +328,7 @@ window.Quarto = {
     <div class="quarto-category">Small Worlds</div>
     <div class="quarto-category">Preferential Attachment</div>
     <div class="quarto-category">Power Laws</div>
+    <div class="quarto-category">Scale-free networks</div>
     <div class="quarto-category">Hubs</div>
     <div class="quarto-category">Matthew Effect</div>
   </div>
@@ -353,7 +349,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 6, 2026</p>
+      <p class="date-modified">July 9, 2026</p>
     </div>
   </div>
     
@@ -363,14 +359,55 @@ window.Quarto = {
 
 </header><section id="introduction" class="level2"><h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!</p>
-<section id="small-worlds" class="level3"><h3 class="anchored" data-anchor-id="small-worlds">Small Worlds</h3>
+<section id="erdos-and-renyi-random-networks" class="level3"><h3 class="anchored" data-anchor-id="erdos-and-renyi-random-networks">Erdos and Renyi: Random Networks</h3>
+<p>Consider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played <a href="../../../../../content/courses/ModelStory/Modules/40-Networks/index.html#activity-2-barabasi cocktail-party-game">earlier</a>.</p>
+<p>In many ways this is the <em>most agnostic</em>, or <strong><em>Null</em></strong> model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is <strong>not random</strong>, or even <strong>differently random</strong> would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on <a href="https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude">yet another website of mine</a> ).</p>
+<section id="implications" class="level6"><h6 class="anchored" data-anchor-id="implications">Implications:</h6>
+<ul>
+<li>
+<strong>Degree Distribution</strong>: With random attachment, we get a “bell-curve” like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Math Aside
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>(In <code>G(n, p)</code>, the degree of a node follows a <code>Binomial(n-1, p) distribution</code>. For sparse networks (p small, average degree <span class="math inline">\(λ = p(n-1)\)</span> fixed as n → ∞), this approximates a <code>Poisson(λ) distribution</code>. (More later when we meet <a href="../../../../../content/courses/ModelStory/Modules/100-Randomness/index.html">Hamlet.</a>)</p>
+</div>
+</div>
+<ul>
+<li>
+<strong>Connectivity &amp; Giant Component</strong>: There is a critical threshold for connectivity.:
+<ul>
+<li>When average degree λ &lt; 1: Many small components.</li>
+<li>At λ ≈ 1: Phase transition — a giant component emerges.</li>
+<li>λ &gt; 1: Almost surely a single giant component containing most nodes. Suddenly, if everyone has on average one friend, it is a connected world. On average!!!</li>
+</ul>
+</li>
+<li>
+<strong>Shortest Paths</strong>: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.</li>
+<li>
+<strong>Clustering</strong>: No community structure, correlations, or growth dynamics.</li>
+<li>
+<strong>No Hubs</strong>: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.</li>
+</ul></section><section id="why-it-matters-in-artdesign" class="level6"><h6 class="anchored" data-anchor-id="why-it-matters-in-artdesign">Why it matters in Art/Design?</h6>
+<ul>
+<li>Good baseline to compare your Design ( assuming it is a network oriented thing ) to a random network. If your design is not better than random, there are improvements to be made!)</li>
+<li>The emergent <code>Giant Component</code> is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point.</li>
+<li>What can you do to create more correlated actions between nodes on a network? Then you have a better chance of <em>growth dynamics</em> setting in! (See below)</li>
+</ul></section></section><section id="watts-and-strogatz-small-worlds" class="level3"><h3 class="anchored" data-anchor-id="watts-and-strogatz-small-worlds">Watts and Strogatz: Small Worlds</h3>
 <p><em>“It’s a Small World”</em> is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming “leap of a connection” bridges across communities that may otherwise be isolated. That one small link jumping across “vast distances” seemingly compresses the network into a <code>"Small World"</code>!</p>
-<section id="implications" class="level6"><h6 class="anchored" data-anchor-id="implications">Implications</h6>
+<section id="implications-1" class="level6"><h6 class="anchored" data-anchor-id="implications-1">Implications</h6>
 <ul>
 <li>
 <code>Target audiences</code> that may seem inaccessible, and very far, may suddenly be not far at all due to one “random link” that bridges communities</li>
 <li>The World becomes smaller than you had thought</li>
-</ul></section><section id="why-it-matters-in-artdesign" class="level5"><h5 class="anchored" data-anchor-id="why-it-matters-in-artdesign">Why it matters in Art/Design?</h5>
+</ul></section><section id="why-it-matters-in-artdesign-1" class="level6"><h6 class="anchored" data-anchor-id="why-it-matters-in-artdesign-1">Why it matters in Art/Design?</h6>
 <ul>
 <li>Try a very tenuous-looking, unlikely <em>location</em> to access a new community of users / artists / designers / collaborators?</li>
 <li>Put yourself / your art/design enterprise in <em>dangerous</em> positions?</li>
@@ -397,10 +434,10 @@ Figure&nbsp;1: Increasing Random Links ( L to R )
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div id="fig-small-worlds-2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-small-worlds-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./images/watts_strogatz_figure2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: &quot;Network Distance&quot; and &quot;Clustering&quot;"><img src="./images/watts_strogatz_figure2.png" class="quarto-figure quarto-figure-center figure-img" style="width:100.0%;height:100.0%"></a>
+<a href="./images/watts_strogatz_figure2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: &quot;Network Distance&quot; and &quot;Clustering&nbsp;vs Connection Probability”"><img src="./images/watts_strogatz_figure2.png" class="quarto-figure quarto-figure-center figure-img" style="width:100.0%;height:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-small-worlds-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: "Network Distance" and "Clustering"
+Figure&nbsp;2: "Network Distance" and "Clustering&nbsp;vs Connection Probability”
 </figcaption></figure>
 </div>
 </div>
@@ -418,7 +455,15 @@ Figure&nbsp;3: Small World Construction (Emergent)
 </div>
 </div>
 </div>
-</section></section><section id="preferential-attachment" class="level3"><h3 class="anchored" data-anchor-id="preferential-attachment">Preferential Attachment</h3>
+<p>In <a href="#fig-small-worlds-2" class="quarto-xref">Figure&nbsp;2</a>, look at the two curves: the <span class="white bg-black">black curve</span> for <span class="math inline">\(C(p)\)</span> shows the presence of <em>communities</em> or clusters: high at first and then as random re-wirings take over, falling in <em>cliff-like</em> fashion. The <span class="white bg-gray">gray curve</span> for <span class="math inline">\(L(p)\)</span> shows the <em>average path length</em> between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.</p>
+<p>The region where <span class="math inline">\(C(p)\)</span> is still high, and <span class="math inline">\(L(p)\)</span> is already low, is what makes a network a <em>small world</em>: high clustering and short average path lengths.</p>
+</section></section><section id="granovetter-strength-of-weak-ties" class="level3"><h3 class="anchored" data-anchor-id="granovetter-strength-of-weak-ties">Granovetter: Strength of Weak Ties</h3>
+<p>A very related model is called “the Strength of Weak Ties”. <a href="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf">Granovetter</a> showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.</p>
+<p>Weak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).</p>
+<p>Strong ties create dense, overlapping clusters (high local redundancy; your friends know each other). Weak ties act as local bridges connecting otherwise separate clusters, providing access to <em>novel information</em>. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.</p>
+<p>This highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.</p>
+<p>In a sense, Watts-Strogatz’s model provides the math justification for Granovetter’s empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.</p>
+</section><section id="albert-lászló-barabási-and-réka-albert-preferential-attachment" class="level3"><h3 class="anchored" data-anchor-id="albert-lászló-barabási-and-réka-albert-preferential-attachment">Albert-László Barabási and Réka Albert: Preferential Attachment</h3>
 <p>If you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of <code>preferential attachment</code>, a concept that explains how networks grow and evolve over time.</p>
 <div id="fig-preferential-attachment" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-preferential-attachment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -449,7 +494,7 @@ Figure&nbsp;3: Small World Construction (Emergent)
 Figure&nbsp;4
 </figcaption></figure>
 </div>
-<p>When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a <strong><em>“rich get richer” effect</em></strong>. This is akin to the [Matthew Effect] from the Bible:</p>
+<p>When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a <a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf"><strong><em>“rich get richer” effect</em></strong></a>. This is akin to the <a href="https://researchonresearch.org/largest-study-of-its-kind-shows-that-the-matthew-effect-in-science-funding-holds-true/">Matthew Effect</a> from the Bible:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-bible" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -462,15 +507,15 @@ Figure&nbsp;5: Matthew Effect
 </div>
 </div>
 </div>
-<section id="some-examples" class="level5"><h5 class="anchored" data-anchor-id="some-examples">Some examples:</h5>
+<section id="some-examples" class="level6"><h6 class="anchored" data-anchor-id="some-examples">Some examples:</h6>
 <ul>
 <li>Imagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that’s where the “buzz” is.</li>
 <li>The Internet topology (where some servers are connected to thousands of others)</li>
 <li>Social media networks (a few influencers have millions of followers)</li>
 <li>Biological protein interaction networks (some proteins interact with far more partners than most)</li>
 </ul>
-<p>The model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific statistical properties. It also serves as the foundation for models like the Barabási–Albert model, which uses preferential attachment to simulate network growth and predict system behavior under various conditions.</p>
-<section id="implications-1" class="level6"><h6 class="anchored" data-anchor-id="implications-1">Implications</h6>
+<p>The model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.</p>
+</section><section id="implications-2" class="level6"><h6 class="anchored" data-anchor-id="implications-2">Implications</h6>
 <ul>
 <li>
 <code>Power-law degree distribution</code>: The probability <span class="math inline">\(P(k)\)</span> that a node has k connections follows a power law: <span class="math inline">\(P(k) ∝ k^{-γ}\)</span>. This means most nodes have very few connections, but a small number of “hubs” dominate.</li>
@@ -491,23 +536,33 @@ Figure&nbsp;6: Power Law for Node Degree with Preferential Attachment
 <li>
 <code>Self-reinforcing growth</code>: As the network grows, hubs become even larger because they attract more connections.</li>
 <li>
-<code>Emergence of scale-free structure</code>: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures.</li>
-</ul></section><section id="why-it-matters-in-artdesign-1" class="level6"><h6 class="anchored" data-anchor-id="why-it-matters-in-artdesign-1">Why It Matters in Art/Design</h6>
+<code>Emergence of scale-free structure</code>: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. <a href="https://mathinsight.org/scale_free_network" class="uri">https://mathinsight.org/scale_free_network</a>
+</li>
+</ul></section><section id="why-it-matters-in-artdesign-2" class="level6"><h6 class="anchored" data-anchor-id="why-it-matters-in-artdesign-2">Why It Matters in Art/Design</h6>
 <ul>
 <li>The robustness of infrastructure networks (many small links can fail, but hubs remain). OTOH, if these hubs fail, the network comes to a halt. So more money, typically, would be spent in protecting hubs.</li>
 <li>The spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.</li>
 <li>If one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.</li>
-</ul></section></section></section><section id="metcalfes-law" class="level3"><h3 class="anchored" data-anchor-id="metcalfes-law">Metcalfe’s Law</h3>
-</section><section id="section" class="level3"><h3 class="anchored" data-anchor-id="section"></h3>
-</section><section id="discussion-questions" class="level3"><h3 class="anchored" data-anchor-id="discussion-questions">Discussion Questions</h3>
-</section></section><section id="conclusions" class="level2"><h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
-</section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">References</h2>
+</ul></section></section></section><section id="discussion-and-questions" class="level2"><h2 class="anchored" data-anchor-id="discussion-and-questions">Discussion and Questions</h2>
+<ul>
+<li>
+<em>Random</em> is equal; but do we want <em>equal</em> when we want designs, policies, ads to work?</li>
+<li>Are heavy-tailed distributions a bad thing?</li>
+<li>Can network-oriented designs (are there any other kind??) work without creating heavy-tailed distributions?</li>
+<li>Can a business survive serving the non-heavy side of the distribution? (E.g. stocking books by authors who are not best-sellers, or selling to people who are not influencers.) How?</li>
+<li>Can niche be a…niche?</li>
+</ul></section><section id="conclusions" class="level2"><h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<ul>
+<li>We <strong>are</strong> network. Maybe we should make a movie titled <del>I,Robot</del> <em>We, Network</em>.</li>
+<li>Our Culture, Inventions, Business, Creations are all solidly linked to the Networks we are embedded in.</li>
+<li>Note what <a href="https://nav.al/">Naval Ravikant</a> says “The three big decisions – what you do, where you live, and who you’re with.”</li>
+</ul></section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
 <li>The Network Effects Bible. <u><a href="https://www.nfx.com/post/network-effects-bible" class="uri">https://www.nfx.com/post/network-effects-bible</a></u>
 </li>
-<li>Duncan Watts and Steven Strogatz. (1998). <em>Collective dynamics of ‘small-world’ networks</em>. Nature 393, 440–442. <a href="https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf" class="uri">https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf</a>
+<li>Herbert Simon. <a href="https://thedecisionlab.com/thinkers/computer-science/herbert-simon" class="uri">https://thedecisionlab.com/thinkers/computer-science/herbert-simon</a>
 </li>
-<li>Mark Granovetter. (1973). <em>The Strength of Weak Ties</em>. American Journal of Sociology 78(6): 1360–1380. <a href="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf" class="uri">https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf</a>
+<li>Duncan Watts and Steven Strogatz. (1998). <em>Collective dynamics of ‘small-world’ networks</em>. Nature 393, 440–442. <a href="https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf" class="uri">https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf</a>
 </li>
 <li>The Startup Junkie.* How to be a Connector*. <a href="https://startupjunkie.org/2021-12-1-the-power-of-weak-ties-tips-on-how-to-become-the-connector/" class="uri">https://startupjunkie.org/2021-12-1-the-power-of-weak-ties-tips-on-how-to-become-the-connector/</a>
 </li>
@@ -538,6 +593,22 @@ Figure&nbsp;6: Power Law for Node Degree with Preferential Attachment
     <p>Unable to display PDF file. <a href="../../../../materials/pdfs/newman-physics-of-networks.pdf">Download</a> instead.</p>
   </object>
   </li>
+<li>
+<p>Mark Granovetter. (1973). <em>The Strength of Weak Ties</em>. American Journal of Sociology 78(6): 1360–1380.   </p>
+<p><a href="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf" target="_blank">Download PDF File</a></p>
+   <object data="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf" type="application/pdf" width="100%" height="600px">
+    <p>Unable to display PDF file. <a href="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf">Download</a> instead.</p>
+  </object>
+  </li>
+</ol></section><section id="fun-stuff-ha" class="level2"><h2 class="anchored" data-anchor-id="fun-stuff-ha">Fun Stuff ( ha!)</h2>
+<ol type="1">
+<li>Puzzles and Games for Graph Theory. <a href="https://www.tes.com/teaching-resource/graph-theory-puzzles-and-games-12164908" class="uri">https://www.tes.com/teaching-resource/graph-theory-puzzles-and-games-12164908</a>
+</li>
+<li>The Erdos Number Projects. <a href="https://sites.google.com/oakland.edu/grossman/home/the-erdoes-number-project" class="uri">https://sites.google.com/oakland.edu/grossman/home/the-erdoes-number-project</a>
+</li>
+<li>Collab Distance! <a href="https://mathscinet.ams.org/mathscinet/freetools/collab-dist" class="uri">https://mathscinet.ams.org/mathscinet/freetools/collab-dist</a>
+</li>
+<li>The Srishti Distance Project. <a href="https://There_ain't_no_such_website_yet.html" class="uri">https://There_ain't_no_such_website_yet.html</a> Unless you count PDAs.</li>
 </ol>
 
 
@@ -952,13 +1023,13 @@ Figure&nbsp;6: Power Law for Node Degree with Preferential Attachment
     }
   });
   </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="../../../../../content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.html" class="pagination-link" aria-label="🕸 Key Concepts in Network Science">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🕸 Key Concepts in Network Science</span>
+      <a href="../../../../../content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html" class="pagination-link" aria-label="🍅 Biases, Memes, Brands, Viral Trends... and Rumours!">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">🍅 Biases, Memes, Brands, Viral Trends… and Rumours!</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../../../content/courses/ModelStory/Modules/80-Proximity/index.html" class="pagination-link" aria-label="🕹 Proximity - Painting Soho red with Kandinsky!">
-        <span class="nav-page-text">🕹 Proximity - Painting Soho red with Kandinsky!</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../../../content/courses/ModelStory/Modules/80-Proximity/index.html" class="pagination-link" aria-label="🏘 Proximity - Painting Soho red with Kandinsky!">
+        <span class="nav-page-text">🏘 Proximity - Painting Soho red with Kandinsky!</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

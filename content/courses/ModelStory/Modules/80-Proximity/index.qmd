@@ -1,5 +1,5 @@
 ---
-title: "\U0001F579 Proximity - Painting Soho red with Kandinsky!"
+title: "\U0001F3D8 Proximity - Painting Soho red with Kandinsky!"
 subtitle: Are you feeling thirsty?
 date: 2021-12-11
 date-modified: today

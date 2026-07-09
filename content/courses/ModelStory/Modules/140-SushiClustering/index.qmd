@@ -115,6 +115,7 @@ Let us first do this interactively! Fire up Orange Data Mining and open this fil
 
 ## References
 
+1. Gao Hongnan. *K-means Clustering*. <https://www.gaohongnan.com/influential/kmeans_clustering/02_concept.html>
 1.  K-means Cluster Analysis. [UC Business Analytics R Programming Guide](https://uc-r.github.io/) <https://uc-r.github.io/kmeans_clustering#optimal>
 2.  Thean C Lim. Clustering: k-means, k-means ++ and gganimate. <https://theanlim.rbind.io/post/clustering-k-means-k-means-and-gganimate/>
 

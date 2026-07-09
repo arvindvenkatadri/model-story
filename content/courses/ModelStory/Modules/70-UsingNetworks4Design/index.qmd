@@ -10,6 +10,7 @@ categories:
   - Small Worlds
   - Preferential Attachment
   - Power Laws
+  - Scale-free networks
   - Hubs
   - Matthew Effect
 editor_options: 
@@ -40,8 +41,339 @@ library(gifski)
 
 Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!
 
+### Erdos and Renyi: Random Networks
 
-### Small Worlds
+Consider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played [earlier](../40-Networks/index.qmd#activity-2-barabasi cocktail-party-game). 
+
+In many ways this is the *most agnostic*, or ***Null*** model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is **not random**, or even **differently random** would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on [yet another website of mine](https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude) ). 
+
+::: {.content-hidden}
+There are two closely related formulations, often denoted `G(n, p)` and `G(n, m)`:
+
+::: {.grid}
+::: {.g-col-6}
+`G(n, p)` **(most common)**:
+
+- Start with n nodes (vertices).
+- For every possible pair of distinct nodes, add an edge independently with probability p (0 < p < 1).
+- Expected number of edges: $m ~\sim p × n(n-1)/2$.
+
+```{r}
+#| label: random-graph-gnp
+#| echo: false
+#| eval: false
+
+# ============================================================
+# Animated construction of an Erdos-Renyi random graph G(n, p)
+#   n = 12 nodes
+#   p = 0.05 (edge probability)
+#
+# The animation shows nodes fixed in a circular layout while edges
+# are added one at a time (in random order), with the most recently
+# added edge briefly highlighted before settling into the final graph.
+#
+# Requires: igraph, ggplot2, gganimate, dplyr, gifski
+#   install.packages(c("igraph", "ggplot2", "gganimate", "dplyr", "gifski"))
+# ============================================================
+
+set.seed(2026)
+
+# ---------------------------
+# Parameters
+# ---------------------------
+n <- 12
+p <- 0.05
+
+# ---------------------------
+# Generate the G(n,p) graph
+# (p = 0.05 with n = 12 is sparse -- expected edges ~ p * choose(n,2) = 3.3,
+#  so we guard against a degenerate all-isolated draw and re-roll if needed)
+# ---------------------------
+g <- sample_gnp(n, p, directed = FALSE, loops = FALSE)
+while (ecount(g) == 0) {
+  g <- sample_gnp(n, p, directed = FALSE, loops = FALSE)
+}
+
+# ---------------------------
+# Fixed node layout (circle, so nodes never move -- only edges appear)
+# ---------------------------
+coords <- layout_in_circle(g)
+node_df <- data.frame(id = 1:n, x = coords[, 1], y = coords[, 2])
+
+# ---------------------------
+# Edge list, shuffled into a random "arrival order"
+# ---------------------------
+edge_list <- igraph::as_data_frame(g, what = "edges")
+edge_list <- edge_list[sample(nrow(edge_list)), ]
+edge_list$arrival_order <- seq_len(nrow(edge_list))
+
+edge_df <- edge_list %>%
+  mutate(
+    x    = node_df$x[from],
+    y    = node_df$y[from],
+    xend = node_df$x[to],
+    yend = node_df$y[to]
+  )
+
+n_edges <- nrow(edge_df)
+hold_frames  <- 10                     # extra frames to pause on the finished graph
+total_frames <- n_edges + hold_frames
+
+# ---------------------------
+# Expand into one row per (edge, frame) for cumulative reveal:
+# an edge appears from its arrival frame onward, and is tagged "new"
+# only in the exact frame it arrives (for a brief highlight).
+# ---------------------------
+edge_frames <- lapply(0:total_frames, function(f) {
+  edge_df %>%
+    filter(arrival_order <= f) %>%
+    mutate(frame = f,
+           status = if_else(arrival_order == f, "new", "existing"))
+})
+edge_frames <- bind_rows(edge_frames)
+
+node_frames <- lapply(0:total_frames, function(f) {
+  node_df %>% mutate(frame = f)
+})
+node_frames <- bind_rows(node_frames)
+
+# ---------------------------
+# Build the animated plot
+# ---------------------------
+anim <- ggplot() +
+  geom_segment(
+    data = edge_frames,
+    aes(x = x, y = y, xend = xend, yend = yend,
+        color = status, linewidth = status)
+  ) +
+  geom_point(data = node_frames, aes(x = x, y = y), size = 10, color = "steelblue") +
+  geom_text(data = node_frames, aes(x = x, y = y, label = id),
+            color = "white", fontface = "bold", size = 4) +
+  scale_color_manual(values = c(new = "firebrick2", existing = "gray55"), guide = "none") +
+  scale_linewidth_manual(values = c(new = 1.6, existing = 0.9), guide = "none") +
+  coord_equal(clip = "off") +
+  theme_void() +
+  labs(
+    title    = "G(n, p) Random Graph Construction",
+    subtitle = paste0("n = ", n, ",  p = ", p, "   |   Frame: {frame} / ", total_frames)
+  ) +
+  theme(
+    plot.title    = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 11)
+  ) +
+  transition_manual(frame)
+
+# ---------------------------
+# Render and save
+# ---------------------------
+animated <- animate(
+  anim,
+  nframes = total_frames + 1,
+  fps     = 3,
+  width   = 600,
+  height  = 600,
+  renderer = gifski_renderer()
+)
+
+anim_save("./images/gnp_random_graph_animation.gif", animated)
+
+cat("Animation saved as: gnp_random_graph_animation.gif\n")
+cat("Total edges in final graph:", n_edges, "out of", choose(n, 2), "possible pairs\n")
+
+
+```
+
+![](./images/gnp_random_graph_animation.gif)
+
+:::
+::: {.g-col-6}
+`G(n, m)`: 
+
+- Start with n nodes.
+- Choose exactly m edges uniformly at random from all possible pairs (no multiples or self-loops in the basic version).
+
+```{r}
+#| label: random-graph-gnm
+#| echo: false
+#| eval: false
+
+# ============================================================
+# Animated construction of an Erdos-Renyi random graph G(n, m)
+#   n = 12 nodes
+#   m = 4  (exact number of edges, placed uniformly at random)
+#
+# The animation shows nodes fixed in a circular layout while edges
+# are added one at a time (in random order), with the most recently
+# added edge briefly highlighted before settling into the final graph.
+#
+# Requires: igraph, ggplot2, gganimate, dplyr, gifski
+#   install.packages(c("igraph", "ggplot2", "gganimate", "dplyr", "gifski"))
+# ============================================================
+
+set.seed(2026)
+
+# ---------------------------
+# Parameters
+# ---------------------------
+n <- 12
+m <- 4
+
+# ---------------------------
+# Generate the G(n,m) graph
+# (exactly m edges are placed uniformly at random among all possible
+#  pairs of the n nodes -- unlike G(n,p), the edge count is guaranteed,
+#  so no re-roll guard is needed)
+# ---------------------------
+g <- sample_gnm(n, m, directed = FALSE, loops = FALSE)
+
+# ---------------------------
+# Fixed node layout (circle, so nodes never move -- only edges appear)
+# ---------------------------
+coords <- layout_in_circle(g)
+node_df <- data.frame(id = 1:n, x = coords[, 1], y = coords[, 2])
+
+# ---------------------------
+# Edge list, shuffled into a random "arrival order"
+# ---------------------------
+edge_list <- igraph::as_data_frame(g, what = "edges")
+edge_list <- edge_list[sample(nrow(edge_list)), ]
+edge_list$arrival_order <- seq_len(nrow(edge_list))
+
+edge_df <- edge_list %>%
+  mutate(
+    x    = node_df$x[from],
+    y    = node_df$y[from],
+    xend = node_df$x[to],
+    yend = node_df$y[to]
+  )
+
+n_edges <- nrow(edge_df)
+hold_frames  <- 10                     # extra frames to pause on the finished graph
+total_frames <- n_edges + hold_frames
+
+# ---------------------------
+# Expand into one row per (edge, frame) for cumulative reveal:
+# an edge appears from its arrival frame onward, and is tagged "new"
+# only in the exact frame it arrives (for a brief highlight).
+# ---------------------------
+edge_frames <- lapply(0:total_frames, function(f) {
+  edge_df %>%
+    filter(arrival_order <= f) %>%
+    mutate(frame = f,
+           status = if_else(arrival_order == f, "new", "existing"))
+})
+edge_frames <- bind_rows(edge_frames)
+
+node_frames <- lapply(0:total_frames, function(f) {
+  node_df %>% mutate(frame = f)
+})
+node_frames <- bind_rows(node_frames)
+
+# ---------------------------
+# Build the animated plot
+# ---------------------------
+anim <- ggplot() +
+  geom_segment(
+    data = edge_frames,
+    aes(x = x, y = y, xend = xend, yend = yend,
+        color = status, linewidth = status)
+  ) +
+  geom_point(data = node_frames, aes(x = x, y = y), size = 10, color = "steelblue") +
+  geom_text(data = node_frames, aes(x = x, y = y, label = id),
+            color = "white", fontface = "bold", size = 4) +
+  scale_color_manual(values = c(new = "firebrick2", existing = "gray55"), guide = "none") +
+  scale_linewidth_manual(values = c(new = 1.6, existing = 0.9), guide = "none") +
+  coord_equal(clip = "off") +
+  theme_void() +
+  labs(
+    title    = "G(n, m) Random Graph Construction",
+    subtitle = paste0("n = ", n, ",  m = ", m, "   |   Frame: {frame} / ", total_frames)
+  ) +
+  theme(
+    plot.title    = element_text(hjust = 0.5, size = 16, face = "bold"),
+    plot.subtitle = element_text(hjust = 0.5, size = 11)
+  ) +
+  transition_manual(frame)
+
+# ---------------------------
+# Render and save
+# ---------------------------
+animated <- animate(
+  anim,
+  nframes = total_frames + 1,
+  fps     = 3,
+  width   = 600,
+  height  = 600,
+  renderer = gifski_renderer()
+)
+
+anim_save("./images/gnm_random_graph_animation.gif", animated)
+
+cat("Animation saved as: gnm_random_graph_animation.gif\n")
+cat("Total edges in final graph:", n_edges, "out of", choose(n, 2), "possible pairs\n")
+
+```
+![](./images/gnm_random_graph_animation.gif)
+
+:::
+
+:::
+
+Both produce similar behavior for large n when m is chosen to match the expected edges in `G(n, p)`.
+
+:::
+
+
+###### Implications:
+
+- **Degree Distribution**: With random attachment, we get a "bell-curve" like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network. 
+
+::: {.callout-note}
+#### Math Aside
+(In `G(n, p)`, the degree of a node follows a `Binomial(n-1, p) distribution`. For sparse networks (p small, average degree $λ = p(n-1)$ fixed as n → ∞), this approximates a `Poisson(λ) distribution`. (More later when we meet [Hamlet.](../100-Randomness/index.qmd)) 
+
+:::
+
+- **Connectivity & Giant Component**: There is a critical threshold for connectivity.:
+  - When average degree λ < 1: Many small components.
+  - At λ ≈ 1: Phase transition — a giant component emerges.
+  - λ > 1: Almost surely a single giant component containing most nodes.
+Suddenly, if everyone has on average one friend, it is a connected world. On average!!!
+- **Shortest Paths**: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.
+- **Clustering**: No community structure, correlations, or growth dynamics.
+- **No Hubs**: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.
+
+###### Why it matters in Art/Design?
+
+ - Good baseline to compare your Design ( assuming it is a network oriented thing )  to a random network. If your design is not better than random, there are improvements to be made!)
+ - The emergent `Giant Component` is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point. 
+ - What can you do to create more correlated actions between nodes on a network? Then you have a better chance of *growth dynamics* setting in! (See below)
+ 
+::: {.content-hidden}
+###### Why is this important
+
+- Null Model: Used to test whether properties in real networks (e.g., high clustering, assortativity, robustness) are statistically significant or just random.
+- Mathematical Tractability: Many properties (component sizes, diameter, connectivity thresholds) can be derived analytically using probability theory.
+- Historical Role: Introduced by Paul Erdős and Alfréd Rényi in the late 1950s/early 1960s. It marked the beginning of systematic random graph theory.
+
+###### Limitations (Compared to Real Networks)
+
+- Homogeneous degrees (Poisson-like) vs. heterogeneous (power-law) in many real systems.
+- Low clustering.No community structure, correlations, or growth dynamics.
+
+###### Comparison to Other Models
+
+- Configuration Model: Fixes an arbitrary degree sequence (can be heavy-tailed) while randomizing connections. Better for matching real degree distributions.
+- Barabási–Albert: Adds growth + preferential attachment to produce scale-free (power-law) degrees and hubs.
+- Watts–Strogatz: Starts from a lattice and rewires to add small-world properties with high clustering.
+
+Grok says: 
+In your teaching context, the ER model pairs nicely with your Secret Santa or Barabási Cocktail Party games as a simple baseline: “What if connections were purely random with probability $p$?”
+Simple Classroom Demo Idea: For small n, have students flip coins (or use random numbers) to decide edges and plot the resulting graph. Compare degree histograms to your surname or friendship activities.
+It remains a cornerstone for understanding phase transitions and baseline randomness in networks. If you’d like formulas, code examples, phase transition details, or how it contrasts with your games, just say the word!
+:::
+
+### Watts and Strogatz: Small Worlds
 
 *"It's a Small World"* is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming "leap of a connection" bridges across communities that may otherwise be isolated. That one small link jumping across "vast distances" seemingly compresses the network into a `"Small World"`!
 
@@ -49,7 +381,7 @@ Here, we will see a few Network Behaviours and Network Effects, and understand h
  -  `Target audiences` that may seem inaccessible, and very far, may suddenly be not far at all due to one "random link" that bridges communities
  - The World becomes smaller than you had thought
  
-##### Why it matters in Art/Design?
+###### Why it matters in Art/Design?
 
   - Try a very tenuous-looking, unlikely *location* to access a new community of users / artists / designers / collaborators?
   - Put yourself / your art/design enterprise in *dangerous* positions?
@@ -158,7 +490,6 @@ anim_save("./images/random_graph_animation.gif", animation = anim)
 # the graph "growing" from empty to fully random-connected.
 # 
 ```
-
 ```{r}
 #| label: fig-random-static
 #| fig-cap: Random Graph
@@ -200,8 +531,6 @@ p <- ggraph(graph =  layout_coords) +
 ggsave("./images/random_graph_static.png", plot = p, width = 7, height = 7, dpi = 150)
 
 ```
-
-
 ```{r}
 #| label: random-regular-graph
 #| echo: false
@@ -334,8 +663,6 @@ anim_save("./images/regular_graph_animation.gif", animation = anim)
 # symmetric, fully connected regular lattice.
 # 
 ```
-
-
 ```{r}
 #| label: fig-regular-static
 #| echo: false
@@ -389,7 +716,6 @@ p <- ggraph(g, layout = "circle") +
 ggsave("./images/regular_graph_static.png", plot = p, width = 7, height = 7, dpi = 150)
 
 ```
-
 ```{r}
 #| label: small-worlds-1
 #| fig-cap: Small worlds (Random)
@@ -401,8 +727,6 @@ knitr::include_graphics("./images/random_graph_animation.gif")
 
 knitr::include_graphics("./images/random_graph_static.png")
 ```
-
-
 ```{r}
 #| label: small-worlds-2
 #| fig-cap: ""
@@ -419,7 +743,6 @@ knitr::include_graphics("./images/regular_graph_animation.gif")
 knitr::include_graphics("./images/regular_graph_static.png")
 
 ```
-
 
 ```{r}
 #| echo: false
@@ -515,7 +838,6 @@ ggsave("./images/watts_strogatz_figure1.png", plot = combined, width = 12, heigh
 #   panels will differ slightly each run unless you fix set.seed().
 #   
 ```
-
 ```{r}
 #| echo: false
 #| eval: false
@@ -648,7 +970,6 @@ ggsave("./images/watts_strogatz_figure2.png", plot = p_fig2, width = 7, height =
 #   
 #   
 ```
-
 ```{r}
 #| echo: false
 #| label: fig-small-worlds
@@ -656,7 +977,7 @@ ggsave("./images/watts_strogatz_figure2.png", plot = p_fig2, width = 7, height =
 #| fig-align: center
 #| fig-subcap: 
 #|  - Increasing Random Links ( L to R )
-#|  - \"Network Distance\" and \"Clustering\"
+#|  - \"Network Distance\" and \"Clustering\ vs Connection Probability"
 #| out-width: "100%"
 #| out-height: "100%"
 #| 
@@ -782,7 +1103,6 @@ save_gif({
 cat("Animation saved as:", gif_file, "\n")
 
 ```
-
 ```{r}
 #| label: fig-small-world-animated
 #| fig-cap: Small World Construction (Emergent)
@@ -794,8 +1114,24 @@ knitr::include_graphics("./images/watts_strogatz_animation.gif")
 
 ```
 
+In @fig-small-worlds-2, look at the two curves: the [black curve]{.white .bg-black} for $C(p)$ shows the presence of *communities* or clusters: high at first and then as random re-wirings take over, falling in *cliff-like* fashion. The [gray curve]{.white .bg-gray} for $L(p)$ shows the *average path length* between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network. 
 
-### Preferential Attachment
+The region where $C(p)$ is still high, and $L(p)$ is already low, is what makes a network a *small world*: high clustering and short average path lengths.
+
+### Granovetter: Strength of Weak Ties
+
+A very related model is called "the Strength of Weak Ties". [Granovetter](https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf) showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.
+
+Weak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).
+
+Strong ties create dense, overlapping clusters (high local redundancy; your friends know each other).
+Weak ties act as local bridges connecting otherwise separate clusters, providing access to *novel information*. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.
+
+This highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.
+
+In a sense, Watts-Strogatz's model provides the math justification for Granovetter's empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.
+
+### Albert-László Barabási and Réka Albert: Preferential Attachment
 
 If you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of `preferential attachment`, a concept that explains how networks grow and evolve over time.
 
@@ -918,7 +1254,6 @@ anim_save("./images/preferential_attachment_animation.gif", animation = anim)
 # 
 ```
 
-
 ```{r}
 #| label: preferential-attachment-static
 #| eval: false
@@ -983,7 +1318,7 @@ knitr::include_graphics("./images/preferential_attachment_animation.gif")
 
 ```
 
-When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a ***"rich get richer" effect***. This is akin to the [Matthew Effect] from the Bible:
+When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a [***"rich get richer" effect***](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf). This is akin to the [Matthew Effect](https://researchonresearch.org/largest-study-of-its-kind-shows-that-the-matthew-effect-in-science-funding-holds-true/) from the Bible:
 
 ```{r}
 #| label: fig-bible
@@ -997,14 +1332,14 @@ knitr::include_graphics("./images/King_James_Bible_1772_-_Matthew_25_(2)_(croppe
 
 ```
 
-##### Some examples:
+###### Some examples:
 
 - Imagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that's where the "buzz" is.
 - The Internet topology (where some servers are connected to thousands of others)
 - Social media networks (a few influencers have millions of followers)
 - Biological protein interaction networks (some proteins interact with far more partners than most)
 
-The model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific statistical properties. It also serves as the foundation for models like the Barabási–Albert model, which uses preferential attachment to simulate network growth and predict system behavior under various conditions. 
+The model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.
 
 ###### Implications
 
@@ -1095,7 +1430,7 @@ knitr::include_graphics("./images/pa_degree_powerlaw.gif")
 
 
 - `Self-reinforcing growth`: As the network grows, hubs become even larger because they attract more connections.
-- `Emergence of scale-free structure`: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures.
+- `Emergence of scale-free structure`: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. <https://mathinsight.org/scale_free_network> 
 
 ###### Why It Matters in Art/Design
 
@@ -1103,28 +1438,28 @@ knitr::include_graphics("./images/pa_degree_powerlaw.gif")
 - The spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.
 - If one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.
 
+## Discussion and Questions
 
-### Metcalfe's Law
-
-
-
-### 
-
-
-### Discussion Questions
-
+- *Random* is equal; but do we want *equal* when we want designs, policies, ads to work?
+- Are heavy-tailed distributions a bad thing? 
+- Can network-oriented designs (are there any other kind??) work without creating heavy-tailed distributions?
+- Can a business survive serving the non-heavy side of the distribution? (E.g. stocking books by authors who are not best-sellers, or selling to people who are not influencers.) How?
+- Can niche be a...niche?
 
 
 ## Conclusions
 
+- We **are** network. Maybe we should make a movie titled ~~I,Robot~~ *We, Network*.
+- Our Culture, Inventions, Business, Creations are all solidly linked to the Networks we are embedded in. 
+- Note what [Naval Ravikant](https://nav.al/) says "The three big decisions – what you do, where you live, and who you’re with."
+
 
 ## References
 
-
 1.  The Network Effects Bible.
     <u><https://www.nfx.com/post/network-effects-bible></u>
+1. Herbert Simon. <https://thedecisionlab.com/thinkers/computer-science/herbert-simon>
 1. Duncan Watts and Steven Strogatz. (1998). *Collective dynamics of 'small-world' networks*. Nature 393, 440–442. <https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf>
-1. Mark Granovetter. (1973). *The Strength of Weak Ties*. American Journal of Sociology 78(6): 1360–1380. <https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf>
 1. The Startup Junkie.* How to be a Connector*. <https://startupjunkie.org/2021-12-1-the-power-of-weak-ties-tips-on-how-to-become-the-connector/>
 1. Ran Katzir. *Experience Network Science through Play*. <https://medium.com/@ran_katzir/teaching-network-science-using-board-games-f78489a3b3bd> ( Describes an in-design board game.)
 1.  Mitchell Resnick. *Beyond the Centralized Mindset*.
@@ -1150,3 +1485,11 @@ knitr::include_graphics("./images/pa_degree_powerlaw.gif")
 
 1.  Mark Newman, *The Physics of Networks*. Good intro Power Laws and examples of many networks.
 {{< pdf ../../../../materials/pdfs/newman-physics-of-networks.pdf  >}}
+1. Mark Granovetter. (1973). *The Strength of Weak Ties*. American Journal of Sociology 78(6): 1360–1380. {{< pdf https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf >}}
+
+## Fun Stuff ( ha!)
+1. Puzzles and Games for Graph Theory. <https://www.tes.com/teaching-resource/graph-theory-puzzles-and-games-12164908>
+1. The Erdos Number Projects. <https://sites.google.com/oakland.edu/grossman/home/the-erdoes-number-project>
+1. Collab Distance! <https://mathscinet.ams.org/mathscinet/freetools/collab-dist>
+1. The Srishti Distance Project. <https://There_ain't_no_such_website_yet.html> Unless you count PDAs. 
+

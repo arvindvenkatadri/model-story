@@ -75,7 +75,32 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><style>html{ scroll-behavior: smooth; }</style>
 <link href="../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../../../../../css/fira.css">
+<script src="../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="../../../../../css/fira.css">
 <link rel="stylesheet" href="../../../../../css/roboto-condensed.css">
 <link rel="stylesheet" href="../../../../../css/vollkorn.css">
 <link rel="stylesheet" href="../../../../../css/fraunces.css">
@@ -205,12 +230,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕸 Key Concepts in Network Science</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/70-UsingNetworks4Design/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🕸 Using Networks Science Models in Art and Design</span></a>
   </div>
@@ -218,13 +237,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/80-Proximity/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 Proximity - Painting Soho red with Kandinsky!</span></a>
+ <span class="menu-text">🏘 Proximity - Painting Soho red with Kandinsky!</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../../../content/courses/ModelStory/Modules/90-Voronoi/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 Measuring and Playing with Proximity</span></a>
+ <span class="menu-text">🏘 Measuring and Playing with Proximity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -241,8 +260,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../../content/courses/ModelStory/Modules/130-ClassificationTaylorSwift/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ML-Classification with Taylor Swift</span></a>
+  <a href="../../../../../content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML-Classification with Narasimha</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -331,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 6, 2026</p>
+      <p class="date-modified">July 9, 2026</p>
     </div>
   </div>
     
@@ -349,18 +368,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="introduction" class="level2"><h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Do you think your friends have more friends than you have? Do you think that you are <strong>outside the herd</strong>, and that what you think or do is from your own mind?</p>
-<p><code>Anyways</code>…</p>
+<p>How can you possibly be friends with someone who <strong>does not say</strong> <code>anyways</code> or <code>my bad</code>…</p>
 </section><section id="activities" class="level2"><h2 class="anchored" data-anchor-id="activities">Activities</h2>
 <section id="activity-1-secret-santa-game" class="level3"><h3 class="anchored" data-anchor-id="activity-1-secret-santa-game">Activity-1: Secret Santa Game</h3>
 <p>Let us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask <a href="https://www.linkedin.com/in/avni-gupta-551014267/">Avni Gupta</a>.</p>
-<p>Should we use this instead?<a href="https://www.drawnames.com.sg/secret-santa-generator" class="uri">https://www.drawnames.com.sg/secret-santa-generator</a></p>
-<p>Discussion: <code>Nodes, Links, Link Directionality, Connected and Disconnected Networks</code></p>
+<p>Should we use this instead? <a href="https://www.drawnames.com.sg/secret-santa-generator" class="uri">https://www.drawnames.com.sg/secret-santa-generator</a></p>
+<p>Discussion: <code>Nodes</code>, <code>Links</code>, <code>Link Directionality</code>, <code>Connected and Disconnected Networks</code></p>
 </section><section id="activity-2-barabasi-cocktail-party-game" class="level3"><h3 class="anchored" data-anchor-id="activity-2-barabasi-cocktail-party-game">Activity-2: Barabasi Cocktail Party Game</h3>
 <p>This is a game “invented” by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. <a href="http://networksciencebook.com/" class="uri">http://networksciencebook.com/</a></p>
 <ol type="1">
 <li>Please take a coin in your hand. (A rupee coin is good!)</li>
 <li>Find a <del>stranger</del> potential new friend in the classroom. Both of you toss your coins.</li>
-<li>If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!</li>
+<li><ul>
+<li>
+<em>Regime #1</em>: If the coins show <strong>exactly</strong> two Heads, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!</li>
+<li>
+<em>Regime #2</em>: If the coins show <em>two Heads or two Tails</em>, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!</li>
+</ul></li>
 <li>Make a note of your new friends initials. (“AV”)</li>
 <li>We will plot this conversation on the board. How?</li>
 </ol>
@@ -369,15 +393,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-video"><iframe data-external="1" src="https://player.vimeo.com/video/191074419" width="560" height="400" frameborder="0" title="" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div> Connect the Dots
 </center>
 </div>
-<p>Discussion: <code>Network Mechanisms, Information Flow, Giant Component, Emergence</code></p>
+<p>Discussion: <code>Random Network Mechanisms</code>, <code>Information Flow</code>, <code>Giant Component</code>, <code>Emergence</code></p>
 </section><section id="activity-3-indian-surnames-game" class="level3"><h3 class="anchored" data-anchor-id="activity-3-indian-surnames-game">Activity-3: Indian Surnames Game</h3>
 <ol type="1">
 <li>How many common Indian surnames do we know? Let us write them on the board.</li>
 <li>Each of us will now look at each surname and recollect how many people they know with that surname.</li>
 <li>Write down the score for each surname.</li>
 <li>Let’s plot this on (yet another) network!!</li>
+<li>AND: let us plot a count of tallies for each one of us, and see who knows the most number of surnamed-people! 😹</li>
 </ol>
-<p>Discussion: <code>Node Degree, Giant Component?  Small Worlds?  Multi-Link network, Link Values or Costs</code>, <code>(Network) Configuration Model</code></p>
+<p>Discussion: <code>Node Degree</code>, <code>Degree Distribution</code>, <code>Heavy Tail/Scale Free</code>, <code>(Network) Configuration Model</code></p>
 <p>Standard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.</p>
 </section><section id="activity-4-hi-i-am-kevin-bacon-smi-foundation-batch" class="level3"><h3 class="anchored" data-anchor-id="activity-4-hi-i-am-kevin-bacon-smi-foundation-batch">Activity-4: Hi, I am <a href="https://oracleofbacon.org/">Kevin Bacon</a>, SMI Foundation Batch</h3>
 <p>Let us find a Keven Bacon in SMI Foundation Studies Programme!! Six Degrees of Separation…or of Kevin Bacon? Look at this video before you proceed!</p>
@@ -392,21 +417,23 @@ ul.task-list li input[type="checkbox"] {
 <li>Even more fun at at GraphCommons <a href="https://graphcommons.com/graphs/new" class="uri">https://graphcommons.com/graphs/new</a>
 </li>
 </ol>
-<p>Discussion: <code>Node Degree, Centrality, Betweenness, Link Values or Costs</code></p>
+<p>Discussion: <code>Node Degree</code>, <code>Centrality</code>, <code>Betweenness</code>, <code>Link Values or Costs</code></p>
 </section><section id="activity-5-can-you-introduce-me-to-chandler-again" class="level3"><h3 class="anchored" data-anchor-id="activity-5-can-you-introduce-me-to-chandler-again">Activity-5: Can you introduce me to Chandler, again?</h3>
 <ol type="1">
 <li>Take your favourite Literary Work / TV Serial / Movie and create a Network Database for it.</li>
 <li>How? Use conversations between pairs of individuals (<code>nodes</code>) to create links. E.g. each distinct conversation is a <code>link</code>, and the number of sentences uttered is the <code>weight</code> of the link.</li>
-<li>Visualize it either with or without tech tools From Teach Engineering, this Activity Sheet <a href="https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2" class="uri">https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2</a>. <strong>Hah! Engineering in a Design college!!</strong>🤣</li>
+<li>Visualize it either with or without tech tools From Teach Engineering, this Activity Sheet: <a href="https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2" class="uri">https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2</a>. <strong>Hah! Doing Engineering in a Design college!!</strong>🤣🤣🤣</li>
 <li>Can also use <a href="https://aviz.fr/~bbach/graphcomics/">Graph Comics</a><a href="https://aviz.fr/~bbach/graphcomics/" class="uri">https://aviz.fr/~bbach/graphcomics/</a>
 </li>
 </ol>
-<p>Discussion: <code>Networks are everywhere, Cannot "unsee" them, You are a node and you are a link...are you?</code></p>
+<p>Discussion:<code>Everything's Connected ("Old Srishti Proverb." Bah!)</code>, <code>Networks are everywhere</code>, <code>You are a node and you are a link...are you?</code></p>
 </section></section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
 <li>Albert-Laszlo Barabasi. <em>Network Science</em>. <a href="http://networksciencebook.com" class="uri">http://networksciencebook.com</a>
 </li>
-<li>Dmitry Zinoniev, Network Science Intro Slides. <a href="https://www.slideshare.net/DmitryZinoviev/workshop-20212296" class="uri">https://www.slideshare.net/DmitryZinoviev/workshop-20212296</a>
+<li>David Easley and Jon Kleinberg. <em>Networks, Crowds, and Markets:Reasoning About a Highly Connected World</em>. <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/" class="uri">https://www.cs.cornell.edu/home/kleinber/networks-book/</a>
+</li>
+<li>Dmitry Zinoniev. <em>Network Science Intro Slides</em>. <a href="https://www.slideshare.net/DmitryZinoviev/workshop-20212296" class="uri">https://www.slideshare.net/DmitryZinoviev/workshop-20212296</a>
 </li>
 <li>The Network Effects Bible. <a href="https://www.nfx.com/post/network-effects-bible" class="uri">https://www.nfx.com/post/network-effects-bible</a>
 </li>
@@ -416,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Konrad M. Lawson, <a href="https://kmlawson.github.io/dh-tutorials/network.html"><em>Toilers and Gangsters: Simple Network Visualization with R for Historians</em></a>
 </li>
-<li>A Network oriented short story. Frigyes Karinthy, “Chains”. <a href="http://vadeker.net/articles/Karinthy-Chain-Links_1929.pdf">Read PDF</a>
+<li>Frigyes Karinthy. <em>Chains</em>. <a href="http://vadeker.net/articles/Karinthy-Chain-Links_1929.pdf">Read PDF</a>. A Network oriented short story.<br>
 </li>
 <li>
 <em>Who told you about Srishti? Where?</em> Mark Granovetter, <em>The Strength of Weak Ties</em>, <a href="https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf" class="uri">https://www.cs.cmu.edu/~jure/pub/papers/granovetter73ties.pdf</a>
@@ -427,8 +454,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Mark Hoffman, <em>Methods for Network Analysis.</em> <a href="https://bookdown.org/markhoff/social_network_analysis/" class="uri">https://bookdown.org/markhoff/social_network_analysis/</a>
 </li>
 <li>Omar Lizardo and Isaac Jilbert, <em>Social Networks: An Introduction.</em> <a href="https://bookdown.org/omarlizardo/_main/" class="uri">https://bookdown.org/omarlizardo/_main/</a>
-</li>
-<li>David Easely and Kleinberg. Networks, Market and Crowds. <strong>The Rich get Richer.</strong> <a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf" class="uri">http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf</a>
 </li>
 </ol>
 <section id="appendix" class="level3"><h3 class="anchored" data-anchor-id="appendix">Appendix</h3>
@@ -531,11 +556,27 @@ ul.task-list li input[type="checkbox"] {
 <td>A path that visits every node in the network exactly once.</td>
 <td>A traveling salesman visiting each city exactly once has a Hamiltonian path.</td>
 </tr>
+<tr class="even">
+<td>Degree distribution</td>
+<td>The distribution showing how many nodes in a network have degree 1, 2, 3, and so on. The degree of a node is the number of connections it has wikipedia+1.</td>
+<td>In a friendship network, if most people have 5–10 friends and a few have 100+, the degree distribution summarizes that pattern wikipedia+1.</td>
+</tr>
+<tr class="odd">
+<td>Power law</td>
+<td>A pattern where small values are very common and large values are rare, often written as <span class="math inline">\(P(k)∼k−γP(k) \sim k^{-\gamma}P(k)∼k−γ\)</span> .</td>
+<td>A network where a few nodes have extremely many links and most have very few links can show a power-law degree distribution wikipedia+1.</td>
+</tr>
+<tr class="even">
+<td>Erdős-Rényi network</td>
+<td>A random network model where each possible edge is included independently with the same probability <span class="math inline">\(p\)</span>.</td>
+<td>If you generate a graph with 100 nodes and connect each pair with probability 0.05, that is an Erdős-Rényi network.</td>
+</tr>
 </tbody>
 </table>
 </div>
 <section id="fun-stuff" class="level4"><h4 class="anchored" data-anchor-id="fun-stuff">Fun Stuff</h4>
 <p>George Cluny and Vera Farmiga embark on a <strong>Hamiltonian Trip</strong> across the US in (Up in the Air, 2009). The movie is a great example of a Hamiltonian Path. The movie is also a great example of a “Small World” network, where the two characters meet and interact with many people across the US, forming connections and relationships along the way.</p>
+<center>
 <blockquote class="instagram-media blockquote" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/reel/DQzSkMnkn1d/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DQzSkMnkn1d/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
 </div>
 </div>
@@ -553,6 +594,8 @@ ul.task-list li input[type="checkbox"] {
 </div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DQzSkMnkn1d/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Art of Cinema (@artof.cinema)</a></p>
 </div></blockquote>
 <script async="" src="//www.instagram.com/embed.js"></script>
+</center>
+
 
 </section></section></section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

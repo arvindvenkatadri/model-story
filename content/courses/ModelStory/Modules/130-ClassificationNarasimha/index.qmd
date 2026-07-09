@@ -1,5 +1,5 @@
 ---
-title: ML-Classification with Taylor Swift
+title: ML-Classification with Narasimha
 subtitle: ""
 date: "2021-08-09"
 date-modified: today
@@ -57,7 +57,7 @@ Hovering over Narasimha's head are 7 cobras."]{.f5 .f4-m .f3-l .lh-copy .measure
 :::
 ::::
 
-Where does Narasimha show up? Why does he look like he does? What are the characteristics that would help us describe him to a Martian? 
+Where does Narasimha show up? Why does he look like he does? What are the attributes and characteristics that would help us describe him to someone from another continent? To a Martian? 
 
 ## {{< iconify mingcute question-fill >}}A Childhood Game
 
@@ -194,6 +194,11 @@ knitr::include_graphics("penguins.png")
 This is how we will use this Game as a Model for our first ML algorithm, **classification** using Decision Trees.
 
 ## Looking at Data in Orange
+
+[Orange Data Mining](https://orangedatamining.com/) is very intuitive, no-code, point-and-click, Photoshop-like tool for Data Analysis, Visualization, and Machine Learning, that was created at the University of Ljubljana in Slovenia. It is a very good tool for **teaching** and **learning** Data Science, and is used in many universities around the world.
+
+A quick intro to Orange is on my [No Code Data Viz](https://nocodedataviz.netlify.app/content/courses/nocodedataviz/modules/05-introductiontoorange/) website!
+
 
 Let us visualize this Decision Tree in Orange. Look at the now famous `penguins` dataset, available here:
 
