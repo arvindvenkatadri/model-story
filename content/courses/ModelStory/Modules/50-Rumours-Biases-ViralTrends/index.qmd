@@ -82,6 +82,8 @@ Let us play **The Parable of the Polygons** <https://ncase.me/polygons/>
 
 {{< html https://ncase.me/polygons/ >}}
 
+The Parable of the Polygons was created by [Vi Hart](https://twitter.com/vihartvihart) and [Nicky Case](https://twitter.com/ncasenmare) in order to demonstrate how small individual biases can have large societal consequences in terms of segregation. This project is based on the work of Thomas Schelling's [Dynamic Models of Segregation](https://www.stat.berkeley.edu/%7Ealdous/157/Papers/Schelling_Seg_Models.pdf).
+
 ### Another Dark Side of...
 
 Why are Petrol Stations located next to each other? Here is the
@@ -102,6 +104,10 @@ What are the effects of vaccinations? How can one be *intellectually vaccinated*
 
 {{< html https://www.complexity-explorables.org/explorables/epidemonic/ >}}
 
+And of course, there is Nicky Case again!
+
+{{< html https://ncase.me/crowds/ >}}
+
 ### Discussion Questions
 
 -   So how does one *scotch/stop* a rumour? Can you [**be
@@ -116,7 +122,7 @@ What are the effects of vaccinations? How can one be *intellectually vaccinated*
 -   There are popular and well-known phrases and ***memes*** in every
     language! Use them in Design!!
 - Does a meme automatically create a community?
--   Here is one for you: "Less Than Three!"
+-   Did you notice a famous Srishti mathematical meme at the end of the Nicky Case Interactive?
 
 
 ## Conclusions
