@@ -4,26 +4,130 @@ subtitle: "Resilience to Change"
 date: "2024-02-23"
 date-modified: today
 categories:
-- Path Dependence
-- Evolution
-image: "featured.jpg"
+- Change
+- Pattern
+- Orientation
+- Canonical Operations
+- "Point of View"
 order: 300
-draft:  true
-
 ---
+<br>
 
-```{r,echo = FALSE, eval=FALSE, fig.alt="Petr Slováček on Unsplash", fig.align='center'}
-knitr::include_graphics("featured.jpg")
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "50%"
+#| out-height: "50%"
+#| 
+
+knitr::include_graphics("../../../../materials/images/Guide_ Abhimanyu.jpeg")
+
 ```
+Why did Abhimanyu have to fight alone, to the death? Why could not any one from the Pandava Army help him??
 
 ## Introduction
 
-To be written up !!
+Let us consider two very widely "separated" cultural ideas: the Chakrayuha from the Mahabharata, and the poem *My Garden* by T.E. Brown. Both are about symmetry, but in very different ways. And then we might *Count the Ways* they are different, using Elizabeth Barrett Browning's famous sonnet titled (TBD)(Sonnets from the Portuguese).
+
+###### Chakravyuha
+
+In the Mahabharata, there is the story of Abhimanyu, the son of Subhadra and Arjuna, who learnt (when in his mother's womb) about how to penetrate a military battle formation called the *Chakravyuha* or *Padmavyuha*:
+
+>The Padmavyūha is a multi-tiered defensive formation that looks like a blooming lotus (पद्म padma) or disc (चक्र chakra) when **viewed from above**[^1].The warriors at each interleaving position would be in an increasingly tough position to fight against. The formation was used in the battle of Kurukshetra by Dronacharya.
+
+The formation has rotational symmetry (spinning chakra) and layered, **self-similar structure**. From afar or in motion, it may appear uniform or *disorienting*  - hard to assign a fixed "direction" or path. Mirroring or rotating the view would preserve its threatening appearance.
+
+###### My Garden
+
+T.E. Brown’s short poem *My Garden* (often called “A Garden is a Lovesome Thing, God Wot!”) celebrates the garden as an ordered, harmonious space infused with divine presence:
+
+> A garden is a lovesome thing, God wot!  
+> Rose plot,  
+> Fringed pool,  
+> Ferned grot—  
+> The veriest school  
+> Of peace; and yet the fool  
+> Contends that God is not—  
+> Not God! in gardens! when the eve is cool?  
+> Nay, but I have a sign;  
+> ’Tis very sure God walks in mine.
+
+The poem portrays the garden as a microcosm of beauty, peace, and symmetry: neatly plotted roses, a bordered pool, a fern-filled grotto — structured, balanced, and inviting. This human-imposed (or cultivated) order becomes a “school of peace” and evidence of the divine.
+
+The **Chakravyuha**, by contrast, is a *dynamic, martial symmetry*: a rotating, multi-layered lotus/wheel formation of warriors with concentric rings, synchronized movement, and strategic balance. Its symmetry serves entrapment and defense — ordered, patterned, and cyclic, yet labyrinthine and disorienting to outsiders. Like the garden, it represents imposed human order and beauty (from the commander’s aerial view, a perfect chakra/lotus), but from the intruder’s perspective, it is a trap of deceptive harmony. Brown’s garden uses static, nurturing symmetry (plots, fringes, balance) to create peace and reveal God. The Chakravyuha deploys rotational and hierarchical symmetry for strategic dominance and psychological dominance.
+
+In both, ***symmetry is not accidental*** — it is *designed*. 
+
+## So, what is Symmetry, then??
+
+## Symmetry Games
+
+### Canonical Movements
+
+
+## Have we seen Symmetry before?
+
+- Symmetry in Game Theory
+- Symmetry in Randomness, and the Randomized Experiment
+
+
+## Symmetry in Space
+
+- Vector Spaces
+- Basis Functions
+- Projections as Shadows
+- Can we detect or design for Symmetry based on the size of Projections/Shadows?
+
+
+## Symmetry and Asymmetry in ML
+
+- Is Machine Learning a way of detecting and exploiting Asymmetry in data
+- ***If data was symmetric, would it teach us anything?***
+- ***What does it mean when we say, "Data is Symmetric"?***
+- PCA as a set of "most-symmetric" shadows
+- Why we want to reduce data/things to symmetry and then ignore them
+- 
+
+## Friezes and Lattices
+
+- Symmetry in "vanilla" geometry
+- Symmetry "on average"
+  - Chaos Games
+  - Stephen Wolfram, *A New Kind of Science*. <https://www.wolframscience.com/nks/>
+  
+
+
+[1]:<https://archive.org/details/indiathroughages00mada>
+
+
+### Human Desire for Symmetry — and Complaints About It
+
+We *crave* symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.
+
+Yet we complain about it too:
+- **Over-symmetry feels sterile or oppressive**: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).
+- **Labyrinthine or rigid symmetry traps us**: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.
+- **We romanticize asymmetry**: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of *my* garden.
+
+This ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, ML models seeking isotropic residuals), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.
+
+### Do We Have a “Gene” for Symmetry?
+
+Not a single “symmetry gene,” but **yes, there is a strong evolved biological and psychological basis** for preferring symmetry. 
+
+Evolutionary psychology and biology link it to **developmental stability** and **genetic quality**:
+- Bilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments.
+- This preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments.
+- Neuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.
+
+It’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.
+
+In tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in *balanced* symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape. 
+
+This ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?
 
 Mahabharata\
 T. E. Brown\
 Elizabeth Barrett Browning\
 
-## Symmetry Games
 
-## Friezes and Lattices

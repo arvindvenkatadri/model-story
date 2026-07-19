@@ -71,20 +71,20 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d7/Dar
 </center>
 
 This is the story of a young man who leaves home from Tarbes, in
-Gascony, France, to travel to Paris to make his fortune. He has two
-blessings,one each from his mother and his father. True to the
+Gascony, France, to travel to Paris to make his fortune. He has two sets of blessings, one each from his mother (an ointment to cure wounds) and his father (a horse, a sword, some money, and an [LOR](../../../../materials/images/LOR-John-Nash.jpeg)). True to the
 instructions given by his Dad, and his very Gascon nature, [he picks a
 fight even before he reaches Paris.](https://youtu.be/KXvzAvOL5GI)
+
 
 ### Classic Movie Time!
 
 Let us watch a (very very) small part of this movie, [The Three
 ~~Pangas~~
 Musketeers-1973](https://en.wikipedia.org/wiki/The_Three_Musketeers_(1973_live-action_film)).
-Here is the [IMDB page](https://www.imdb.com/title/tt0072281/) for film
-buffs.
+(Here is the [IMDB page](https://www.imdb.com/title/tt0072281/) for film
+buffs.)
 
-This video ( if available ) :
+And this video ( if available ) :
 <https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/>
 
 and this order version:
@@ -96,13 +96,12 @@ Artagnan vs. Athos vs. Cardinal Guards</center>
 
 ### Classic Fiction Time!
 
-Let us read aloud(!!) a bit of good old classic fiction !! This is the
-Conversation that occurs right before the duel scene we saw in the video
-above.[**Chapter 5. THE KING'S MUSKETEERS AND THE CARDINAL'S
-GUARDS**](https://www.gutenberg.org/files/1257/1257-h/1257-h.htm).[^1]
-
-Keep an eye on the conversation! And an ear open for French-ified
+Let us read/hear aloud (!!) a bit of good old classic French fiction !! *Mesdames et Messieurs, rappelons, si'l vous plait*, this is the very Conversation that occurs right before the duel scene we saw in the video
+above. *Écoutez attentivement la conversation* ! Keep an eye on the conversation! And an ear open for French-ified
 English, I beseech you!!
+
+[**Chapter 5. THE KING'S MUSKETEERS AND THE CARDINAL'S
+GUARDS**](https://www.gutenberg.org/files/1257/1257-h/1257-h.htm).[^1]
 
 {{< html https://www.gutenberg.org/files/1257/1257-h/1257-h.htm#chap05 >}}
 
@@ -122,9 +121,9 @@ And here is the audio reading of this chapter from
   to shoot, shoot! Don't
   talk!"](https://youtu.be/JrYtD7gSWsI?feature=shared) said [Eli
   Wallach](https://en.wikipedia.org/wiki/Eli_Wallach).
-- Pardon,m'sieu, but why were they so polite to each other? (Oh, These
+- Pardon,m'sieu, but why were they so polite to each other? Is this a *panga*, or not? (Oh, These
   French...)
-- Were they talking as if they didn't want to fight?
+- Were they talking **as if they didn't want to fight at all**?
 - But to ["have fought already"]{style="background-color:yellow;"}?
 - The **Shadow of the Future on the Present**
 
@@ -156,7 +155,7 @@ the story? We can think of the "4Rs":
 
 ::: {}
 <center>{{< video https://youtube.com/watch?v=rr6lsTgZKAQ width="560" height="315" >}}
-Nice Guys ( Gals also, why not? ) finish First</center>
+Nice Guys ( Gals also bro, why not? ) Finish First</center>
 :::
 
 ## [Wait, But Why?](https://waitbutwhy.com)
@@ -175,9 +174,9 @@ Nice Guys ( Gals also, why not? ) finish First</center>
 - RWAs, pets, animals, and children. Sigh. 
 - Public Spaces: Malls, Theaters, Trains, Busses...
 - Street Traffic, Pedestrians, and Rules. (and Signage)
-- Garbage, Littering, Noise..public (and not so public ) behaviour
+- Garbage, Littering, Noise...public (and not so public ) behaviour
 - Families, Siblings, and Household Chores
-- Parenting
+- Parenting (Enough said.)
 - Offices, Colleagues, and other pests
 
 ## References
@@ -201,18 +200,12 @@ Nice Guys ( Gals also, why not? ) finish First</center>
 4.  Avinash Dixit, Susan Skeath, David Reiley, *Games of strategy*,
     ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.
 
-5.  Brams Steven J., 1994. "Game Theory and Literature," Games and
-    Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January.
-    [Available
-    here.](http://www.sscnet.ucla.edu/polisci/faculty/chwe/austen/brams1994.pdf)
 
-6.  Alexander Mehlmann,*The game’s afoot! Game theory in myth and
+5.  Alexander Mehlmann,*The game’s afoot! Game theory in myth and
     paradox*, American Mathematical Society 2000. [AMS
     Bookstore](../../../../materials/pdfs/The_Game_s_Afoot_Game_Theory_in_Myth.pdf)
 
-7.  Steven .J Brams. (February 4, 1992). *Game Theory in Literature*
-    Department of Politics, New York University, New York, New
-    York 10003. [Read the PDF](brams1994.pdf)
+6.  Steven J. Brams. (1994). *Game Theory in Literature*. **Games and Economic Behavior**, Elsevier, vol. 6(1), pages 32-54, January 1994. [Read the PDF](brams1994.pdf)
 
 ## Game Theory Pop Music, Movie Clip, and TV ad Playlist !!
 
@@ -244,7 +237,7 @@ Matrix is possible. ( Some Actions will of course have to be "predicted"
 since you do not observe the entire vocabulary of Actions they might
 perform.)
 
-No pictures.
+Take no pictures.
 
 ```{r, include=FALSE,eval=FALSE}
 library(tidyverse)

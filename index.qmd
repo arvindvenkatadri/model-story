@@ -33,13 +33,11 @@ My teaching websites are:\
 - [TRIZ for Problem Solvers](https://teaching-triz.netlify.app)\
 - [Literary Jukebox: Design Thinking from Short Fiction](https://literary-jukebox.netlify.app)\
 - [Maths for Creative Coders](https://mathforcoders.netlify.app)\
-- [Intro to Design of Experiments in R](https://doe-a-deer.netlify.app)\ (Extreme Work in Progress!)
+- [Intro to Design of Experiments in R](https://doe-a-deer.netlify.app)\ (Extreme Work-in-Progress!)
+- [Tidymodels: ML and AI in R, from Algorithms to Deployment](https://ml-ai-r.netlify.app)\ (Also extreme Work-in-Progress)
 
 My student portfolios are here:\
-[We R Us: A R workshop](https://we-r-us.netlify.app/portfolio/);[Nikhita Purohit](https://nikhita-project-1.netlify.app/);[Diya Bijoy](https://diyadata.netlify.app/);[Rayna Singh](https://my-blog-rayna.netlify.app/);[Khushi Nagesh](https://khushinagesh.netlify.app/);
-
-and
-[Ananya Satish, Nishtha Raval](https://editor.p5js.org/nishtharaval1/full/JYltkiSNS);[Sneha Manu Jacob aka SMJ](https://editor.p5js.org/SnehaManuJacob/sketches/8RDpOGwbT); [Sara Saju](https://meucsara.netlify.app/); and [Diya Bijoy, Rayna Singh, Aanya Pandith, Naman Rajoria, Soumya Saboo.](https://naman-a2-mudra.netlify.app/posts/welcome/)
+[We R Us: A R workshop](https://we-r-us.netlify.app/portfolio/); [Nikhita Purohit](https://nikhita-project-1.netlify.app/); [Diya Bijoy](https://diyadata.netlify.app/); [Rayna Singh](https://my-blog-rayna.netlify.app/); [Khushi Nagesh](https://khushinagesh.netlify.app/); [Ananya Satish + Nishtha Raval](https://editor.p5js.org/nishtharaval1/full/JYltkiSNS); [Sneha Manu Jacob aka SMJ](https://editor.p5js.org/SnehaManuJacob/sketches/8RDpOGwbT); [Sara Saju](https://meucsara.netlify.app/); and [Diya Bijoy + Rayna Singh + Aanya Pandith + Naman Rajoria + Soumya Saboo.](https://naman-a2-mudra.netlify.app/posts/welcome/)
 
 
 
@@ -51,12 +49,9 @@ reach out to me via [mail](mailto:arvind.venkatadri@gmail.com) too!
 
 <center>
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="arvindvenkatadri" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-\center
 
-<br><br>
-<center>
 ![](content/materials/images/Produced-By-a-Human-Not-By-AI-Badge-white.png)
-
-<br>
+---
 [Start Here →](content/courses/ModelStory/listing.qmd){.btn .btn-primary .btn-xl role="button"}
 
+<center>

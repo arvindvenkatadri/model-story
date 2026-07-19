@@ -58,10 +58,11 @@ website:
           - content/courses/ModelStory/Modules/300-Symmetry/index.qmd
           - content/courses/ModelStory/Modules/320-Fractals/index.qmd
           - content/courses/ModelStory/Modules/330-L-Systems/index.qmd
-          - content/courses/ModelStory/Modules/220-Sound/index.qmd
-          - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
+#          - content/courses/ModelStory/Modules/220-Sound/index.qmd
+#          - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
           - content/courses/ModelStory/Modules/1000-Projects/index.qmd 
           - content/courses/ModelStory/Modules/500-Resources/index.qmd
+          
   page-footer:
     center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."
     right:  Hosted by Netlify [{{< iconify simple-icons netlify >}}](https://www.netlify.com).

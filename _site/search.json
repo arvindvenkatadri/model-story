@@ -14,6 +14,102 @@
     "text": "I don’t reference this file anywhere on the website, so it is irrelevant.\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\nThe Model of the Story\n\n\nMathy Models in Design Thinking\n\n\nAug 5, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html",
+    "title": "🕹 Symmetry",
+    "section": "",
+    "text": "Why did Abhimanyu have to fight alone, to the death? Why could not any one from the Pandava Army help him??",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#introduction",
+    "title": "🕹 Symmetry",
+    "section": "Introduction",
+    "text": "Introduction\nLet us consider two very widely “separated” cultural ideas: the Chakrayuha from the Mahabharata, and the poem My Garden by T.E. Brown. Both are about symmetry, but in very different ways. And then we might Count the Ways they are different, using Elizabeth Barrett Browning’s famous sonnet titled (TBD)(Sonnets from the Portuguese).\nChakravyuha\nIn the Mahabharata, there is the story of Abhimanyu, the son of Subhadra and Arjuna, who learnt (when in his mother’s womb) about how to penetrate a military battle formation called the Chakravyuha or Padmavyuha:\n\nThe Padmavyūha is a multi-tiered defensive formation that looks like a blooming lotus (पद्म padma) or disc (चक्र chakra) when viewed from above[^1].The warriors at each interleaving position would be in an increasingly tough position to fight against. The formation was used in the battle of Kurukshetra by Dronacharya.\n\nThe formation has rotational symmetry (spinning chakra) and layered, self-similar structure. From afar or in motion, it may appear uniform or disorienting - hard to assign a fixed “direction” or path. Mirroring or rotating the view would preserve its threatening appearance.\nMy Garden\nT.E. Brown’s short poem My Garden (often called “A Garden is a Lovesome Thing, God Wot!”) celebrates the garden as an ordered, harmonious space infused with divine presence:\n\nA garden is a lovesome thing, God wot!\nRose plot,\nFringed pool,\nFerned grot—\nThe veriest school\nOf peace; and yet the fool\nContends that God is not—\nNot God! in gardens! when the eve is cool?\nNay, but I have a sign;\n’Tis very sure God walks in mine.\n\nThe poem portrays the garden as a microcosm of beauty, peace, and symmetry: neatly plotted roses, a bordered pool, a fern-filled grotto — structured, balanced, and inviting. This human-imposed (or cultivated) order becomes a “school of peace” and evidence of the divine.\nThe Chakravyuha, by contrast, is a dynamic, martial symmetry: a rotating, multi-layered lotus/wheel formation of warriors with concentric rings, synchronized movement, and strategic balance. Its symmetry serves entrapment and defense — ordered, patterned, and cyclic, yet labyrinthine and disorienting to outsiders. Like the garden, it represents imposed human order and beauty (from the commander’s aerial view, a perfect chakra/lotus), but from the intruder’s perspective, it is a trap of deceptive harmony. Brown’s garden uses static, nurturing symmetry (plots, fringes, balance) to create peace and reveal God. The Chakravyuha deploys rotational and hierarchical symmetry for strategic dominance and psychological dominance.\nIn both, symmetry is not accidental — it is designed.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#so-what-is-symmetry-then",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#so-what-is-symmetry-then",
+    "title": "🕹 Symmetry",
+    "section": "So, what is Symmetry, then??",
+    "text": "So, what is Symmetry, then??",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-games",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-games",
+    "title": "🕹 Symmetry",
+    "section": "Symmetry Games",
+    "text": "Symmetry Games\nCanonical Movements",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#have-we-seen-symmetry-before",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#have-we-seen-symmetry-before",
+    "title": "🕹 Symmetry",
+    "section": "Have we seen Symmetry before?",
+    "text": "Have we seen Symmetry before?\n\nSymmetry in Game Theory\nSymmetry in Randomness, and the Randomized Experiment",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-in-space",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-in-space",
+    "title": "🕹 Symmetry",
+    "section": "Symmetry in Space",
+    "text": "Symmetry in Space\n\nVector Spaces\nBasis Functions\nProjections as Shadows\nCan we detect or design for Symmetry based on the size of Projections/Shadows?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-and-asymmetry-in-ml",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#symmetry-and-asymmetry-in-ml",
+    "title": "🕹 Symmetry",
+    "section": "Symmetry and Asymmetry in ML",
+    "text": "Symmetry and Asymmetry in ML\n\nIs Machine Learning a way of detecting and exploiting Asymmetry in data\nIf data was symmetric, would it teach us anything?\nWhat does it mean when we say, “Data is Symmetric”?\nPCA as a set of “most-symmetric” shadows\nWhy we want to reduce data/things to symmetry and then ignore them",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/300-Symmetry/index.html#friezes-and-lattices",
+    "href": "content/courses/ModelStory/Modules/300-Symmetry/index.html#friezes-and-lattices",
+    "title": "🕹 Symmetry",
+    "section": "Friezes and Lattices",
+    "text": "Friezes and Lattices\n\nSymmetry in “vanilla” geometry\nSymmetry “on average”\n\nChaos Games\nStephen Wolfram, A New Kind of Science. https://www.wolframscience.com/nks/\n\n\n\n\nHuman Desire for Symmetry — and Complaints About It\nWe crave symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.\nYet we complain about it too: - Over-symmetry feels sterile or oppressive: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness). - Labyrinthine or rigid symmetry traps us: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling. - We romanticize asymmetry: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of my garden.\nThis ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, ML models seeking isotropic residuals), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.\nDo We Have a “Gene” for Symmetry?\nNot a single “symmetry gene,” but yes, there is a strong evolved biological and psychological basis for preferring symmetry.\nEvolutionary psychology and biology link it to developmental stability and genetic quality: - Bilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments. - This preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments. - Neuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.\nIt’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.\nIn tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in balanced symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape.\nThis ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?\nMahabharata\nT. E. Brown\nElizabeth Barrett Browning",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "🕹 Symmetry"
+    ]
+  },
+  {
     "objectID": "content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.html",
     "href": "content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.html",
     "title": "ML-Classification with Narasimha",
@@ -498,7 +594,7 @@
     "href": "content/courses/ModelStory/listing.html#course-abstract",
     "title": "The Model of the Story",
     "section": "Course Abstract",
-    "text": "Course Abstract\nIn this Unit, we will take inspiration from Classic Literature, Poetry, Drama, and Paintings, and Music to contemplate certain Human Experiences. Using these as a starting point, we will create Models and make sense of these human experiences.\nThese Models may resemble a Thought Experiment, or a Diagram, or a simple Procedure, or a piece of Computer Code, or even a Cultural Tradition. The Models will be understood, internalized, fitted in with what we already know, and generalized to new situations and applications. This will done with the help of activities based on games, pranks, memes, videos, movie-clips, art-related activities, open source software tools, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions..\nThe Models should thusly provide data and directions for artistic and design endeavours.\nIn effect, we will go from Stories to Data rather than the other way around. At the end of the Unit, the tired, but happy students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.",
+    "text": "Course Abstract\nIn this Unit, we will take inspiration from Classic Literature, Poetry, Drama, and Paintings, and Music to contemplate certain Human Experiences. Using these as a starting point, we will create Models and make sense of these human experiences.\nThese Models may resemble a Theory, a Thought Experiment, a Diagram, a simple Procedure, a piece of Computer Code, or even a Cultural Tradition. The Models will be understood, internalized, fitted in with what we already know, and generalized to new situations and applications. This will done with the help of activities based on games, pranks, memes, videos, movies, movie-clips, art-related activities, open source software tools, interactives, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions..\nThe Models should thusly provide data and directions for artistic and design endeavours. In effect, we will go from Stories to Data, rather than the other way around.\nAt the end of the Unit, the tired, but happy students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.",
     "crumbs": [
       "Home",
       "The Model of the Story"
@@ -509,7 +605,7 @@
     "href": "content/courses/ModelStory/listing.html#what-you-will-learn",
     "title": "The Model of the Story",
     "section": "What you will learn",
-    "text": "What you will learn\n\n\nComplexity Science: The so-called (by me!) 4-As - “Agents, Actions, Again, Aggregate”\n\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\nCoordination Games and Schelling Points, Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
+    "text": "What you will learn\n\n\nComplexity Science: The so-called (by me!) 4-As - the “Agents, Actions, Again, Aggregate” idea\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\n\nCoordination Games and Schelling Focus Points; Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦🤦🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
     "crumbs": [
       "Home",
       "The Model of the Story"
@@ -520,7 +616,7 @@
     "href": "content/courses/ModelStory/listing.html#some-teasers",
     "title": "The Model of the Story",
     "section": "Some Teasers!!",
-    "text": "Some Teasers!!\n\nThis century was named by Stephen Hawking as the Age of Complexity.\n\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\n\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\n\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\n\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours",
+    "text": "Some Teasers!!\n\n\nAre we all Ants?   \nDownload PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nThis century was named by Stephen Hawking as the Age of Complexity.\n\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\n\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\n\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\n\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours\n\n\n\n\n\n\nGerry Rafferty (1979). Baker Street.\n\nThat immortal sax by Raphael Ravenscroft, yes. But the lyrics, the lyrics…\n\n\n\nWinding your way down on Baker Street Light in your head and dead on your feet Well another crazy day, you’ll drink the night away And forget about everything\nThis city desert makes you feel so cold It’s got so many people but it’s got no soul And it’s taken you so long to find out you were wrong When you thought it held everything\nYou used to think that it was so easy You used to say that it was so easy But you’re tryin’, you’re tryin’ now Another year and then you’d be happy Just one more year and then you’d be happy But you’re cryin’, you’re cryin’ now\nWay down the street there’s a light in his place He opens the door, he’s got that look on his face And he asks you where you’ve been, you tell him who you’ve seen And you talk about anything\nHe’s got this dream about buyin’ some land He’s gonna give up the booze and the one night stands And then he’ll settle down, it’s a quiet little town And forget about everything\nBut you know he’ll always keep movin’ You know he’s never gonna stop movin’ ‘Cause he’s rollin’, he’s the rollin’ stone And when you wake up it’s a new mornin’ The sun is shinin’, it’s a new mornin’ But you’re going, you’re going on..",
     "crumbs": [
       "Home",
       "The Model of the Story"
@@ -1154,7 +1250,7 @@
     "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-1",
     "title": "🦸 The Company of Heroes",
     "section": "Story-1",
-    "text": "Story-1\nDo you know who these four people are ?\n\n\n\n\n\n\n\n\nThe Hero’s Journey\n\n\n\n\n\nThis is the story of a young man who leaves home from Tarbes, in Gascony, France, to travel to Paris to make his fortune. He has two blessings,one each from his mother and his father. True to the instructions given by his Dad, and his very Gascon nature, he picks a fight even before he reaches Paris.\nClassic Movie Time!\nLet us watch a (very very) small part of this movie, The Three Pangas Musketeers-1973. Here is the IMDB page for film buffs.\nThis video ( if available ) : https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/\nand this order version:\n\n\n Artagnan vs. Athos vs. Cardinal Guards\n\n\nClassic Fiction Time!\nLet us read aloud(!!) a bit of good old classic fiction !! This is the Conversation that occurs right before the duel scene we saw in the video above.Chapter 5. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS.1\nKeep an eye on the conversation! And an ear open for French-ified English, I beseech you!!\n    View webpage in full screen\n       \n      \n    \n  \nAnd here is the audio reading of this chapter from Librivox.org\n\n\nYour browser does not support the audio tag.\n\n\nDiscussion-1\n\nWhy are they TALKING, when they have come here to FIGHT?? “When have to shoot, shoot! Don’t talk!” said Eli Wallach.\nPardon,m’sieu, but why were they so polite to each other? (Oh, These French…)\nWere they talking as if they didn’t want to fight?\nBut to “have fought already”?\nThe Shadow of the Future on the Present",
+    "text": "Story-1\nDo you know who these four people are ?\n\n\n\n\n\n\n\n\nThe Hero’s Journey\n\n\n\n\n\nThis is the story of a young man who leaves home from Tarbes, in Gascony, France, to travel to Paris to make his fortune. He has two sets of blessings, one each from his mother (an ointment to cure wounds) and his father (a horse, a sword, some money, and an LOR). True to the instructions given by his Dad, and his very Gascon nature, he picks a fight even before he reaches Paris.\nClassic Movie Time!\nLet us watch a (very very) small part of this movie, The Three Pangas Musketeers-1973. (Here is the IMDB page for film buffs.)\nAnd this video ( if available ) : https://www.tcm.com/video/454255/three-musketeers-the-1973-movie-clip-we-are-only-three/\nand this order version:\n\n\n Artagnan vs. Athos vs. Cardinal Guards\n\n\nClassic Fiction Time!\nLet us read/hear aloud (!!) a bit of good old classic French fiction !! Mesdames et Messieurs, rappelons, si’l vous plait, this is the very Conversation that occurs right before the duel scene we saw in the video above. Écoutez attentivement la conversation ! Keep an eye on the conversation! And an ear open for French-ified English, I beseech you!!\nChapter 5. THE KING’S MUSKETEERS AND THE CARDINAL’S GUARDS.1\n    View webpage in full screen\n       \n      \n    \n  \nAnd here is the audio reading of this chapter from Librivox.org\n\n\nYour browser does not support the audio tag.\n\n\nDiscussion-1\n\nWhy are they TALKING, when they have come here to FIGHT?? “When have to shoot, shoot! Don’t talk!” said Eli Wallach.\nPardon,m’sieu, but why were they so polite to each other? Is this a panga, or not? (Oh, These French…)\nWere they talking as if they didn’t want to fight at all?\nBut to “have fought already”?\nThe Shadow of the Future on the Present",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1166,7 +1262,7 @@
     "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#story-2",
     "title": "🦸 The Company of Heroes",
     "section": "Story-2",
-    "text": "Story-2\nWhat about this game ?\n\n\n\n\n\nDiscussion-2\nWhat emotions or motivations are portrayed by the characters in the story? We can think of the “4Rs”:\n\nReward\nRegret aka FOMO\nRisk\nRetribution/Punishment\nNice Guys Finish First\n\n\n Nice Guys ( Gals also, why not? ) finish First",
+    "text": "Story-2\nWhat about this game ?\n\n\n\n\n\nDiscussion-2\nWhat emotions or motivations are portrayed by the characters in the story? We can think of the “4Rs”:\n\nReward\nRegret aka FOMO\nRisk\nRetribution/Punishment\nNice Guys Finish First\n\n\n Nice Guys ( Gals also bro, why not? ) Finish First",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1190,7 +1286,7 @@
     "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#design-situations-with-game-theory",
     "title": "🦸 The Company of Heroes",
     "section": "Design Situations with Game Theory?",
-    "text": "Design Situations with Game Theory?\n\nRWAs, pets, animals, and children. Sigh.\nPublic Spaces: Malls, Theaters, Trains, Busses…\nStreet Traffic, Pedestrians, and Rules. (and Signage)\nGarbage, Littering, Noise..public (and not so public ) behaviour\nFamilies, Siblings, and Household Chores\nParenting\nOffices, Colleagues, and other pests",
+    "text": "Design Situations with Game Theory?\n\nRWAs, pets, animals, and children. Sigh.\nPublic Spaces: Malls, Theaters, Trains, Busses…\nStreet Traffic, Pedestrians, and Rules. (and Signage)\nGarbage, Littering, Noise…public (and not so public ) behaviour\nFamilies, Siblings, and Household Chores\nParenting (Enough said.)\nOffices, Colleagues, and other pests",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1202,7 +1298,7 @@
     "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#references",
     "title": "🦸 The Company of Heroes",
     "section": "References",
-    "text": "References\n\n\nGame Theory Presentation from fee.org\n\n\n Game Theory Presentation from fee.org\n\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nBrams Steven J., 1994. “Game Theory and Literature,” Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January. Available here.\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. AMS Bookstore\nSteven .J Brams. (February 4, 1992). Game Theory in Literature Department of Politics, New York University, New York, New York 10003. Read the PDF",
+    "text": "References\n\n\nGame Theory Presentation from fee.org\n\n\n Game Theory Presentation from fee.org\n\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. AMS Bookstore\nSteven J. Brams. (1994). Game Theory in Literature. Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January 1994. Read the PDF",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1214,7 +1310,7 @@
     "href": "content/courses/ModelStory/Modules/10-Company-Heroes/index.html#game-theory-pop-music-movie-clip-and-tv-ad-playlist",
     "title": "🦸 The Company of Heroes",
     "section": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!",
-    "text": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!\n\nChris de Burgh: Don’t Pay the Ferryman! https://www.youtube.com/watch?v=Q-a5TAL-IXs\n\nAbba: The Name of the Game https://www.youtube.com/watch?v=T5Qf_7HM1cM\n\nBachchan vs Warsi: Want a Pepsi - Tit for Tat https://www.youtube.com/watch?v=gc6QZcxbMZE\n\nThe Princess Bride - Battle of Wits - Which Strategy to Use here? (Asymmetric Information) https://www.youtube.com/watch?v=rMz7JBRbmNo\n\nThe Gods Must be Crazy (Brinkmanship) https://www.youtube.com/watch?v=9LvViKftRnA\n\nL.A. Confidential https://criticalcommons.org/embed?m=pBXsAUvh9\n\n\nhttps://www.youtube.com/watch?v=QPun-5dtld0 (Sadly, dead link)\n\nhttps://www.youtube.com/watch?v=nOFhfw-u5fg (Sadly, dead link)\nGame Theory in the movies. https://criticalcommons.org/search?q=game+theory\n\nhttps://www.wikiwand.com/en/The_Three_Musketeers\n\nAssignment-1\nTake a walk in the nearest urban area this weekend. Unobtrusively, observe what people are doing. Note these down when they seem to be visible examples of “Cooperate” or “Defect”. For or Against whom? Discuss the Actions, and the possible payoff values. Draw up a Payoff Matrix is possible. ( Some Actions will of course have to be “predicted” since you do not observe the entire vocabulary of Actions they might perform.)\nNo pictures.",
+    "text": "Game Theory Pop Music, Movie Clip, and TV ad Playlist !!\n\nChris de Burgh: Don’t Pay the Ferryman! https://www.youtube.com/watch?v=Q-a5TAL-IXs\n\nAbba: The Name of the Game https://www.youtube.com/watch?v=T5Qf_7HM1cM\n\nBachchan vs Warsi: Want a Pepsi - Tit for Tat https://www.youtube.com/watch?v=gc6QZcxbMZE\n\nThe Princess Bride - Battle of Wits - Which Strategy to Use here? (Asymmetric Information) https://www.youtube.com/watch?v=rMz7JBRbmNo\n\nThe Gods Must be Crazy (Brinkmanship) https://www.youtube.com/watch?v=9LvViKftRnA\n\nL.A. Confidential https://criticalcommons.org/embed?m=pBXsAUvh9\n\n\nhttps://www.youtube.com/watch?v=QPun-5dtld0 (Sadly, dead link)\n\nhttps://www.youtube.com/watch?v=nOFhfw-u5fg (Sadly, dead link)\nGame Theory in the movies. https://criticalcommons.org/search?q=game+theory\n\nhttps://www.wikiwand.com/en/The_Three_Musketeers\n\nAssignment-1\nTake a walk in the nearest urban area this weekend. Unobtrusively, observe what people are doing. Note these down when they seem to be visible examples of “Cooperate” or “Defect”. For or Against whom? Discuss the Actions, and the possible payoff values. Draw up a Payoff Matrix is possible. ( Some Actions will of course have to be “predicted” since you do not observe the entire vocabulary of Actions they might perform.)\nTake no pictures.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1458,7 +1554,7 @@
     "href": "content/courses/ModelStory/Modules/20-Strategies-in-PD/index.html#references",
     "title": "🕹 How Must I Play?",
     "section": "References",
-    "text": "References\n\nJeff Desjardins (2014). The Silver Rule, Taleb, and the Slippery Slope to Interventionism. https://medium.com/@jeffdesjardins/the-silver-rule-taleb-and-the-slippery-slope-to-interventionism-ef6baef17c23\n\nCarl Sagan’s “A New Way To Think About Rules To Live By”. https://tetrahedral.blogspot.com/2011/12/carl-sagans-new-way-to-think-about.html\n\nHere is a good Summary of modern thinking about Human Cooperation: The Evolution of Human Cooperation, PDF\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\n\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.. I have a copy too.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nBrams Steven J., 1994. “Game Theory and Literature,” Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January. Available here.\n\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. [Available on the academia.edu website(https://www.academia.edu/126156641/The_Game_s_Afoot_Game_Theory_in_Myth_and_Paradox?sm=b&rhid=40311803017)\n\nThe Tragedy of the Commons. https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
+    "text": "References\n\nStrategy in Games\n\n\n\n Strategy in Games\n\n\n\nJeff Desjardins (2014). The Silver Rule, Taleb, and the Slippery Slope to Interventionism. https://medium.com/@jeffdesjardins/the-silver-rule-taleb-and-the-slippery-slope-to-interventionism-ef6baef17c23\n\nCarl Sagan’s “A New Way To Think About Rules To Live By”. https://tetrahedral.blogspot.com/2011/12/carl-sagans-new-way-to-think-about.html\n\nHere is a good Summary of modern thinking about Human Cooperation: The Evolution of Human Cooperation, PDF\n\nJohn D. Williams, The Compleat Strategyst: Being a Primer on the Theory of Games of Strategy, RAND Corporation, ISBN:9780833042224. This is a very humourous and fun book on Game Theory ! It is available for free online at the RAND Corporation Website.\n\nKen Binmore,Playing for Real: A Text on Game Theory, ISBN:9780195300574, Oxford University Press, March 2007. Available here.. I have a copy too.\nAvinash Dixit, Susan Skeath, David Reiley, Games of strategy, ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.\nBrams Steven J., 1994. “Game Theory and Literature,” Games and Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January. Available here.\n\nAlexander Mehlmann,The game’s afoot! Game theory in myth and paradox, American Mathematical Society 2000. [Available on the academia.edu website(https://www.academia.edu/126156641/The_Game_s_Afoot_Game_Theory_in_Myth_and_Paradox?sm=b&rhid=40311803017)\n\nThe Tragedy of the Commons. https://en.wikipedia.org/wiki/Tragedy_of_the_commons",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1494,6 +1590,13 @@
     "href": "index.html",
     "title": "Arvind V.",
     "section": "",
-    "text": "I’m external Faculty at the Srishti Manipal Institute of Art and Design, and Engineering Manager at MMRFIC, both in Bangalore, INDIA, and a Certified Level #1 TRIZ Professional.\nI am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nMy teaching websites are:\n\n\nModel Thinking in Design (This one!!)\nData Viz and Stats in R\n\nData Visualization with No Code\n\nTRIZ for Problem Solvers\n\nLiterary Jukebox: Design Thinking from Short Fiction\n\nMaths for Creative Coders\n\nIntro to Design of Experiments in R (Extreme Work in Progress!)\n\nMy student portfolios are here:\nWe R Us: A R workshop;Nikhita Purohit;Diya Bijoy;Rayna Singh;Khushi Nagesh;\nand Ananya Satish, Nishtha Raval;Sneha Manu Jacob aka SMJ; Sara Saju; and Diya Bijoy, Rayna Singh, Aanya Pandith, Naman Rajoria, Soumya Saboo.\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!\n\n\n\n\n\n Start Here →\n\n\n Back to top"
+    "text": "I’m external Faculty at the Srishti Manipal Institute of Art and Design, and Engineering Manager at MMRFIC, both in Bangalore, INDIA, and a Certified Level #1 TRIZ Professional.\nI am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nMy teaching websites are:\nMy student portfolios are here:\nWe R Us: A R workshop; Nikhita Purohit; Diya Bijoy; Rayna Singh; Khushi Nagesh; Ananya Satish + Nishtha Raval; Sneha Manu Jacob aka SMJ; Sara Saju; and Diya Bijoy + Rayna Singh + Aanya Pandith + Naman Rajoria + Soumya Saboo.\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Arvind V.",
+    "section": "",
+    "text": "Start Here →"
   }
 ]
