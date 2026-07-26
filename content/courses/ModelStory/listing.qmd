@@ -41,7 +41,7 @@ knitr::include_graphics("featured.jpg")
 
 ## Course Abstract
 
-In this Unit, we will take inspiration from [**Classic Literature, Poetry, Drama, and Paintings, and Music**]{.black .bg-gold} to contemplate certain **Human Experiences**. Using these as a starting point, we will create **Models** and make sense of these human experiences. 
+In this Unit, we will take inspiration from [**Classic Literature, Poetry, Drama, Movies, Paintings, and Music**]{.black .bg-gold} to contemplate certain **Human Experiences**. Using these as a starting point, we will create **Models** and make sense of these human experiences. 
 
 These Models may resemble a [Theory, a Thought Experiment, a Diagram, a simple Procedure, a piece of Computer Code, or even a Cultural Tradition]{.black .bg-gold}. The Models will be understood, internalized, fitted in with what we already know, and **generalized** to new situations and applications. This will done with the help of activities based on [games, pranks, memes, videos, movies, movie-clips, art-related activities, open source software tools, interactives, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions.]{.black .bg-gold}. 
 

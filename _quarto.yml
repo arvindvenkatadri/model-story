@@ -40,28 +40,73 @@ website:
       - section: "The Model of the Story"
         href: content/courses/ModelStory/listing.qmd
         contents: 
-          - content/courses/ModelStory/Modules/10-Company-Heroes/index.qmd
-          - content/courses/ModelStory/Modules/20-Strategies-in-PD/index.qmd
-          - content/courses/ModelStory/Modules/30-Coordinated-Games/index.qmd
-          - content/courses/ModelStory/Modules/40-Networks/index.qmd
-          - content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.qmd
-          # - content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.qmd
-          - content/courses/ModelStory/Modules/70-UsingNetworks4Design/index.qmd      
-          - content/courses/ModelStory/Modules/80-Proximity/index.qmd
-          - content/courses/ModelStory/Modules/90-Voronoi/index.qmd
-          - content/courses/ModelStory/Modules/100-Randomness/index.qmd
-          - content/courses/ModelStory/Modules/110-Mangoes/index.qmd
-          # - content/courses/ModelStory/Modules/120-StillMoreRandomness/index.qmd
-          - content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.qmd
-          - content/courses/ModelStory/Modules/140-SushiClustering/index.qmd
-          - content/courses/ModelStory/Modules/150-LegallyRegression/index.qmd
-          - content/courses/ModelStory/Modules/300-Symmetry/index.qmd
-          - content/courses/ModelStory/Modules/320-Fractals/index.qmd
-          - content/courses/ModelStory/Modules/330-L-Systems/index.qmd
-#          - content/courses/ModelStory/Modules/220-Sound/index.qmd
-#          - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
-          - content/courses/ModelStory/Modules/1000-Projects/index.qmd 
-          - content/courses/ModelStory/Modules/500-Resources/index.qmd
+          
+#######################################
+              - section: "Games"
+                href: content/courses/ModelStory/Modules/10-Games/listing.qmd
+                contents:
+                - content/courses/ModelStory/Modules/10-Games/10-Company-Heroes/index.qmd
+                - content/courses/ModelStory/Modules/10-Games/20-Strategies-in-PD/index.qmd
+                - content/courses/ModelStory/Modules/10-Games/30-Coordinated-Games/index.qmd
+                 
+#######################################
+              - section: "Networks"
+                href: content/courses/ModelStory/Modules/20-Networks/listing.qmd
+                contents:                 
+                  - content/courses/ModelStory/Modules/20-Networks/40-Networks/index.qmd
+                  - content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.qmd
+                # - content/courses/ModelStory/Modules/20-Networks/60-NetworksKeyConcepts/index.qmd
+                  - content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.qmd      
+          
+#######################################
+              - section: "Proximity"
+                href: content/courses/ModelStory/Modules/30-Proximity/listing.qmd
+                contents: 
+                  - content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.qmd
+                  - content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.qmd
+                  
+#######################################
+              - section: "Chance"
+                href: content/courses/ModelStory/Modules/40-Chance/listing.qmd
+                contents:                  
+                  - content/courses/ModelStory/Modules/40-Chance/100-Randomness/index.qmd
+                  - content/courses/ModelStory/Modules/40-Chance/110-Mangoes/index.qmd
+                  - content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.qmd
+                  - content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.qmd
+          
+#######################################
+              - section: "ML"
+                href: content/courses/ModelStory/Modules/50-ML/listing.qmd
+                contents:          
+                  - content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.qmd
+                  - content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.qmd
+                  - content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.qmd
+          
+#######################################
+              - section: "Symmetry"
+                href: content/courses/ModelStory/Modules/60-Symmetry/listing.qmd
+                contents:          
+                  - content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.qmd
+                  - content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.qmd
+                  - content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.qmd
+                  - content/courses/ModelStory/Modules/60-Symmetry/350-L-Systems/index.qmd
+          
+#######################################
+              - section: "Chaos"
+                href: content/courses/ModelStory/Modules/70-Chaos/listing.qmd
+                contents:        
+                  - content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.qmd
+                  - content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.qmd
+ 
+#######################################
+              - section: "Miscellaneous"
+                href: 
+                contents:       
+                # - content/courses/ModelStory/Modules/220-Sound/index.qmd
+                # - content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.qmd
+                - content/courses/ModelStory/Modules/1000-Projects/index.qmd
+                - content/courses/ModelStory/Modules/5000-Resources/index.qmd
+          
           
   page-footer:
     center: "Website made with ❤️ and [Quarto](https://quarto.org/), by Arvind V."

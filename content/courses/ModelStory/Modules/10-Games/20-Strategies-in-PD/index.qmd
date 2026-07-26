@@ -1,0 +1,332 @@
+---
+title: "\U0001F579 How Must I Play?"
+subtitle: The Rules of My Game
+date: 2021-12-11
+date-modified: today
+image: featured.jpg
+order: 20
+tags:
+- Game Theory
+- Prisoners` Dilemma
+- Strategy
+- Algorithm for Altruism?
+- Regret, Reward, Risk, Retribution
+- Nash Equilibrium
+projects: [game-theory-examples]
+links:
+- icon: flask
+  icon_pack: fas
+  name: Worked Examples
+  url: project/game-theory-examples
+---
+
+![Photo by
+<a href="https://unsplash.com/@nathan_cima?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nathan
+Cima</a> on
+<a href="https://unsplash.com/photos/a-group-of-men-standing-around-a-pool-table-CiVuPxerdAA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](featured.jpg)
+
+```{r include=FALSE}
+library(blogdown)
+library(tidyverse)
+library(huxtable)
+library(gt)
+library(knitr)
+library(kableExtra)
+library(emoji)
+#devtools::install_github("mccarthy-m-g/embedr")
+library(embedr) # Embed multimedia in HTML files
+```
+
+## Introduction
+
+We read The Three Musketeers, and also saw a brief video from Squid
+Game. Let us further contemplate the actions of the characters.
+
+### Discussion-1: Structure
+
+The Game consists of:
+
+-   Rational *Players*
+-   Numerical *Payoffs*
+-   Arranged in a Game *Payoff Matrix*
+-   Player *Strategies* to navigate the Matrix
+
+What strategies are possible as a bowler in Cricket? As a batsman? What strategies are **permitted**? By whom?
+
+```{r, out.width = "450px",out.height = "300px", echo=FALSE, fig.align='center'}
+#| fig-cap: Rishabh Pant vs James Anderson
+
+knitr::include_graphics("rishabh.jpg")
+
+```
+
+## The Game of Trust
+
+So, let us **play** a Game, on the [**Game of Trust
+Website**](https://ncase.me/trust) ! Please pair up on one laptop to play this.
+
+{{< html https://ncase.me/trust/ >}}
+
+### Discussion-2: Nature
+
+-   **Strategies** in PD define what actions you will take in response
+    to actions others might take.
+-   We saw quite a few strategies here
+-   The *best strategy* is one that **survives**!
+-   ***Survival is everything***. That is what D'Artagnan and the Three
+    Musketeers were also basing their actions on!
+    -   Read more about this idea in this (**possibly illegally hosted**) copy of [**Nassim Nicholas Taleb's Book, "Skin in the
+        Game"**.](https://philosophiatopics.files.wordpress.com/2018/10/skin-in-the-game-nassim-nicholas-taleb.pdf)
+    -   Or you can [**watch Taleb
+        speak**](https://youtu.be/uv6KLbkvua8?feature=shared)
+        
+        ::: {}
+        <center>
+        {{< video https://youtu.be/uv6KLbkvua8 width="560" height="400" align="center" title="" >}}
+        Taleb Speaks: Skin in the Game
+        </center>
+        :::
+        
+-   We will encounter *Survival* again soon!
+
+## Reading: Robert Axelrod's Study on Cooperation
+
+This is a famous study of the Iterated Prisoners' Dilemma by Robert
+Axelrod, **The Evolution of Cooperation**. We will read just a wee bit of it in class.
+
+{{< pdf Axelrod-Hamilton.pdf >}}
+
+<br>
+And here is Robert Axelrod on the **RadioLab Podcast**:
+
+<center>
+{{< audio "../../../../../materials/audio/tit-for-tat-radiolabpodcast.mp3" >}}
+</center>
+
+And on **Spotify**:
+
+
+```{=html}
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1pFEPQUVNgTkRa13y4Gilk?utm_source=generator" width="100%" height="256" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen;
+picture-in-picture" loading="lazy">
+</iframe>
+
+```
+
+Transcript: <https://www.wnycstudios.org/podcasts/radiolab/segments/104010-one-good-deed-deserves-another>
+
+### Nash Equilibrium and Dominant Strategy in PD
+
+Are there COSTs to ACTIONs? Who decides?
+
+How does one ACT to minimize costs and maximize rewards? Remember, we
+are all **Agents**, with our own vocabulary of **Actions** which we
+might use **Again** and again, and experience an **Aggregate** outcome
+in society.
+
+The **Payoff Matrix** in PD is:
+
+```{r}
+#| label: tbl-pd-payoff
+#| tbl-cap: "Prisoners' Dilemma Payoff Table"
+#| echo: false
+#| 
+library(kableExtra)
+library(gt)
+data <- tibble::tibble("Player #2" = c("C", "D"),
+                       C = c("(R=3, R=3)", "(S=0, T=5)"),
+                       D = c("(T=5, S=0)", "(P=1, P=1)")) 
+
+data %>% 
+  gt(rowname_col = ) %>% 
+  tab_options(quarto.disable_processing = TRUE) %>% 
+  tab_header(
+    title = md("**Prisoners' Dilemma Payoff Matrix**")) %>% 
+  gt::tab_spanner(columns = c(2,3), label = md("**Player #1**")) %>% 
+  cols_align(align = "center", columns = c(C,D,`Player #2`)) %>% 
+  tab_style(
+    style = list(cell_text(align = "center", weight = "bold"), cell_fill(color = "white")),
+    locations = cells_column_labels(columns = c(C,D, `Player #2`))) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(columns = c(`Player #2`))) %>% 
+  tab_style(
+    style = cell_fill(color = "grey"),
+    locations = cells_body(columns = D, rows = 2)) %>% 
+  tab_footnote(footnote = md("**Payoffs are (Player#1, Player#2)**")) %>% 
+  tab_footnote(footnote = md("R = Reward; S = Sucker's Payoff; T = Temptation; P = Punishment")) %>% 
+  tab_footnote(footnote = md("Shaded Cell is Nash Equilibrium"))
+
+
+```
+
+Note that, in order for this to be a true Prisoners' Dilemma, we need:
+
+$$
+Temptation > Reward > Punishment > Sucker's~ Payoff\\\
+$${#eq-PD-payoff-inequality}
+
+$$
+R > (S + T)/2
+$${#eq-pd-cabal}
+
+The first condition ensures that Temptation (to D) is always stronger
+than the Reward(for C); and the second ensures that the two Players
+cannot mutually agree to alternate between C and D and have a higher net
+reward !! [[Can you game Game-Theory ? That's a Cabal
+!!](https://www.quora.com/Who-is-responsible-for-repairing-roads-if-they-are-damaged-by-heavy-vehicles-Who-can-we-complain-to-if-our-roads-are-damaged)]{style="background-color:yellow;"}
+
+Wherever you "are" on the matrix, you can **always** improve your
+situation by defecting!! "D" is your **best move**, your **"Dominant
+Strategy"**, because that is how the matrix is (numerically) stacked.
+And if both players do that, then we end up at the bottom-right cell,
+which says "(D,D)", where the game stays forever, in state called the
+**"Nash Equilibrium"**.\
+
+While just a little thought, even hesitation, could have led us "(C,
+C)"...An altruistic decision to "C" first could tip the scales in favour
+of "(C,C)".
+
+Sigh.
+
+## SouthWest Airlines: A Case Study
+
+OK, so how does PD show up in a real-world context? Here is a business
+story: The story of Southwest Airlines' [**Early Bird
+Check-In**.](https://mindyourdecisions.com/blog/2013/03/05/southwest-airlines-boarding-and-game-theory/)
+
+What could be the passengers' strategy?
+
+## Hotelling's Phenomenon: A Case Study
+
+Why are Hotels and Petrol Pumps located next to each other? Here is the
+**Hotelling's Phenomenon**:
+
+::: {}
+<center>
+{{< video https://www.youtube.com/watch?v=u4cKzGj58q4 width="560" height="400" align="center" title="" >}}
+</center>
+Hotelling's Phenomenon: PD in the Spatial Domain
+:::
+
+Also see: <https://mindyourdecisions.com/blog/2008/03/25/game-theory-tuesdays-hotelling%e2%80%99s-game-or-why-gas-stations-have-competitors-nearby/>
+
+
+## What are the Assumptions in **Prisoners' Dilemma**?
+
+-   That gains and pains can be **quantified**
+-   Rationality
+-   Players have identical and opposed aims i.e. **Adverserial
+    Symmetry**.
+-   In most cases, the game is **zero-sum**
+-   Some form of spoke/unspoken agreement as to what may and may not be
+    done ( i.e Rules of the Game )
+
+## <u>[Wait, But Why?](https://waitbutwhy.com)</u>
+
+-   So, the PD matrix is loaded towards "D". ;-(
+-   "Defect" is the **Dominant Strategy**
+-   Societal Outcomes will then be ....horrible. This is the **Nash
+    Equilibrium** in PD.
+-   OK, so public behaviour can be influenced by individual decisions to
+    **first C, and then respond**?
+-   But is it always **zero sum**? Can it be non-adverserial?
+-   Are there other Strategies? Other Games even?
+
+We'll see.
+
+## References
+
+1. Strategy in Games
+
+::: {}
+<center>
+{{< video https://youtu.be/LJS7Igvk6ZM width="560" height="400" align="center" title="" >}}
+   Strategy in Games
+</center>
+:::
+
+2.  Jeff Desjardins (2014). *The Silver Rule, Taleb, and the Slippery
+    Slope to Interventionism*.
+    [https://medium.com/\@jeffdesjardins/the-silver-rule-taleb-and-the-slippery-slope-to-interventionism-ef6baef17c23](https://medium.com/@jeffdesjardins/the-silver-rule-taleb-and-the-slippery-slope-to-interventionism-ef6baef17c23){.uri}
+3.  Carl Sagan's "A New Way To Think About Rules To Live By".
+    <https://tetrahedral.blogspot.com/2011/12/carl-sagans-new-way-to-think-about.html>
+4.  Here is a good Summary of modern thinking about Human Cooperation:
+    *The Evolution of Human Cooperation*,
+    [**PDF**](../../../../materials/pdfs/TheEvolutionofCooperation-Axelrod.pdf)
+5.  John D. Williams, *The Compleat Strategyst: Being a Primer on the
+    Theory of Games of Strategy*, RAND Corporation,
+    <ISBN:9780833042224>. This is a very humourous and fun book on Game
+    Theory ! It is available for free online at the [**RAND Corporation Website.**](https://www.rand.org/content/dam/rand/pubs/commercial_books/2007/RAND_CB113-1.pdf)
+6.  Ken Binmore,*Playing for Real: A Text on Game Theory*,
+    <ISBN:9780195300574>, Oxford University Press, March 2007.
+    [Available here.](https://djvu.online/file/yFqEW5Mqk0aVd). I have a copy too. 
+7.  Avinash Dixit, Susan Skeath, David Reiley, *Games of strategy*,
+    ISBN: 9780393124446, New York :W.W. Norton & Company, 2015.
+8.  Brams Steven J., 1994. "*Game Theory and Literature*," Games and
+    Economic Behavior, Elsevier, vol. 6(1), pages 32-54, January.
+    [Available
+    here.](http://www.sscnet.ucla.edu/polisci/faculty/chwe/austen/brams1994.pdf)
+8.  Alexander Mehlmann,*The game’s afoot! Game theory in myth and paradox*, American Mathematical Society 2000. [Read the PDF](../../../../../materials/pdfs/The_Game_s_Afoot_Game_Theory_in_Myth.pdf)
+9.  *The Tragedy of the Commons*. <https://en.wikipedia.org/wiki/Tragedy_of_the_commons>
+
+## Fun Stuff With Game Theory
+
+1.  Olivia Jack , Dirk Brockmann. "*The Prisoner's Kaleidoscope*”: The
+    prisoner's dilemma game on a lattice Pattern Formation, Beauty and
+    Chaos in a Game Theoretic Model. <https://www.complexity-explorables.org/explorables/prisoners-kaleidoscope/>
+    
+### Game Theory: Pop Music, Movie Clip, and TV ad Playlist !!
+
+1.  The Alan Parsons Project: Eye in the Sky.
+    <https://youtu.be/fRMf3wKBCPo>
+2.  Chris de Burgh: Don't Pay the Ferryman!
+    <https://www.youtube.com/watch?v=Q-a5TAL-IXs>
+3.  Abba: The Name of the Game
+    <https://www.youtube.com/watch?v=T5Qf_7HM1cM>
+4.  Bachchan vs Warsi: Want a Pepsi - Tit for Tat
+    <https://www.youtube.com/watch?v=gc6QZcxbMZE>
+5.  The Princess Bride - Battle of Wits - Which Strategy to Use here?
+    (Asymmetric Information)
+    <https://www.youtube.com/watch?v=rMz7JBRbmNo>
+6.  The Gods Must be Crazy (Brinkmanship)
+    <https://www.youtube.com/watch?v=9LvViKftRnA>
+7.  L.A. Confidential
+    <https://criticalcommons.org/embed?m=pBXsAUvh9>
+8. Jane Austen, Game Theorist.
+
+  <center>
+  {{< video https://youtu.be/FUCGP3f8GQI width="560" height="400" align="center" title="" >}}
+  Jane Austen, Game Theorist, by Michael Chwe, UCLA
+  </center>
+6. Pride, Prejudice, and Strategic Thinking
+
+  <center>
+  {{< video https://youtu.be/OgtZgpEDQ6U width="560" height="400" align="center" title="" >}}
+  Pride, Prejudice, and Strategic Thinking: A Conversation between Michael Chwe and Anne Mellor
+  </center>
+
+### Activity-1
+
+Taylor Swift. Who else?
+
+{{< pdf ../../../../../materials/pdfs/15-GameTheory-TaylorSwift-FEE-ORG.pdf height="360px", width=100% >}}
+
+## Serious Stuff
+
+
+### Assignment-1
+
+Take your favourite show/episode, film, or short story and look at the
+conduct of the characters. Decide whether these were C or D, and why!
+
+Make a Poster and put it up. Show and Tell in 1 hour!
+
+
+### Assignment-2
+Analyze the situations outlined in this document. Discuss the payoffs and state the Dominant Strategy in each case. Extra Commentary welcome!!
+
+{{< pdf ../../../../../materials/pdfs/GameTheoryQuestionBank.pdf height="360px", width=100% >}}
+
+
+

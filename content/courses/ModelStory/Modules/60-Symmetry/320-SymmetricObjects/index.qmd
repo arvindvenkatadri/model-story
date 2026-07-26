@@ -1,0 +1,168 @@
+---
+title: "\U0001F579 Measuring and Viewing Symmetry"
+subtitle: "The Matrix Math of Symmetry"
+date: 23/July/2026
+date-modified: today
+categories:
+- Matrices
+- Adjacency
+- Karnaugh Map
+- Paulus Gerdes
+- Angola
+- Tchockwe/Sona/Lunda geometry
+- South India
+- Kolam
+order: 320
+draft: true
+
+---
+<br>
+
+```{r}
+#| echo: false
+#| eval: false
+#| fig-align: center
+#| out-width: "50%"
+#| out-height: "50%"
+#| 
+
+knitr::include_graphics("../../../../materials/images/Guide_ Abhimanyu.jpeg")
+
+```
+
+```{r}
+#| label: setup
+#| echo: false
+
+library(tidyverse)
+library(igraph)
+library(igraphdata)
+library(tidygraph)
+library(graphlayouts)
+## install.packages("remotes")
+## remotes::install_github("schochastics/networkdata")
+library(networkdata)
+
+```
+
+## What is a Matrix?
+
+
+## What can a Matrix Represent?
+
+
+## What Kinds of Matrices are Useful to us?
+
+### Adjacency Matrix in Networks
+
+:::: {.grid}
+::: {.g-col-6}
+Adjacency matrices are a fundamental representation of networks (graphs) in network science. For an undirected graph with $n$ nodes, the adjacency matrix $A$ is an $ n \times n$ symmetric matrix where the columns *and* rows indicate nodes in the network:
+$$A_{ij} = 
+\begin{cases} 
+1 & \text{if there is an edge between nodes } i \text{ and } j, \\
+0 & \text{otherwise}.
+\end{cases}$$
+
+For directed graphs, $A$ is generally asymmetric. For weighted graphs, $A_{ij}$ holds the weight of the edge. The matrix encodes the entire topology compactly, enabling linear algebra techniques (matrix powers, decompositions, etc.) to extract insights about structure, dynamics, and function.
+:::
+
+::: {.g-col-6}
+
+```{r}
+#| echo: false
+#| 
+A <- matrix(
+  c(0,1,1,0,
+    1,0,1,0,
+    1,1,0,1,
+    0,0,1,0),
+  nrow = 4, byrow = TRUE
+)
+rownames(A) <- colnames(A) <- c("V1", "V2", "V3", "V4")
+A
+g <- graph_from_adjacency_matrix(A, mode = "undirected", diag = FALSE)
+plot(g)
+
+```
+
+:::
+::::
+
+
+## References
+
+
+## Content 
+
+***Question:*** What is the correspondence, if any, between Adjacency Matrices in Network Science, Karnaugh Maps, Cayley's Group Theory matrices, and Paulus Gerdes' symmetry matrices in Lunda geometry?
+
+**There is no single, direct one-to-one correspondence** among all four, but they share deep structural and conceptual overlaps rooted in **binary representations, symmetry, adjacency/operations, and combinatorial geometry**. They are all matrix-like or grid-based tools for encoding relationships, symmetries, or operations. Here’s a breakdown of the connections:
+
+### 1. Adjacency Matrices (Network Science / Graph Theory)
+- An **n × n** (0,1)-matrix where entry (i,j) = 1 if there is an edge between vertices i and j.
+- Encodes the **structure of a graph** (who is connected to whom).
+- Key properties: symmetric for undirected graphs; eigenvalues reveal connectivity, clustering, etc.
+- Used for random walks, centrality, community detection, etc.
+
+### 2. Cayley Tables (Group Theory)
+
+- A square table (matrix) showing the **binary operation** (e.g., multiplication or addition) of a finite group: rows and columns labeled by group elements, entry = result of operation.
+- For groups like ℤₙ or Klein four-group, it is a **Latin square** with additional algebraic structure (every row/column is a permutation, identity element, inverses).
+- The **Cayley graph** derived from a group and generating set has an **adjacency matrix** directly built from the group operation (1 if difference is a generator).
+
+**Link to adjacency matrices**: Cayley graphs make the group operation visible as a regular graph; its adjacency matrix encodes the algebraic structure.
+
+### 3. Karnaugh Maps (Boolean Algebra / Digital Logic)
+
+- A **rearranged truth table** in a grid (usually 2ᵏ cells for k variables) using **Gray code** ordering so that adjacent cells differ by exactly one bit.
+- Used to **visually group** minterms (1s) or maxterms (0s) for simplification via the adjacency property (Quine-McCluskey idea made graphical).
+- Not a traditional matrix of relations, but a **geometric encoding of Boolean functions** where spatial adjacency = logical adjacency.
+
+**Links**:
+
+- To adjacency matrices: The Gray code adjacency reflects Hamming distance 1 (like edges in a hypercube graph). The K-map can be seen as labeling vertices of a hypercube, with 1-regions corresponding to subgraphs.
+- To Cayley tables: Both use structured grids to reveal algebraic simplifications or closures. Boolean algebras are related to groups/rings in some contexts.
+
+### 4. Paulus Gerdes’ Symmetry Matrices in Lunda Geometry
+
+Paulus Gerdes (ethnomathematician) studied **Tchokwe/Lunda sona** (sand drawings) and generalized them into **Lunda-designs** and **mirror curves** — black-and-white patterns with strong **two-color symmetry**, mirror symmetries, and periodic properties.
+
+He analyzed these using **matrices** that encode:
+
+- Symmetry operations (reflections, rotations, translations).
+- Coloring rules (e.g., alternating black/white with specific crossing or mirroring properties).
+- Polyomino-like tilings and **helix matrices**, magic squares, and other combinatorial objects derived from African design traditions.
+
+These matrices often exhibit:
+
+- **Symmetry axes** (horizontal, vertical, diagonal).
+- Group-like closure under certain transformations.
+- Binary (0/1 or black/white) patterns.
+
+**Links**:
+
+- To adjacency matrices: Lunda patterns can be modeled as graphs (e.g., intersection graphs or dual graphs of curves), with matrices capturing adjacency or incidence.
+- To Cayley tables / groups: Many Lunda symmetries form or relate to **symmetry groups** (dihedral, etc.). Gerdes explicitly connected his work to group theory and combinatorics.
+- To Karnaugh maps: Both heavily rely on **binary grids** and **adjacency/symmetry** for simplification or pattern generation. The Gray-code-like local changes in K-maps parallel the smooth, mirror-symmetric transitions in Lunda curves. Both are tools for visualizing combinatorial explosion in a human-readable geometric way.
+
+### Overall Correspondences
+| Aspect                  | Adjacency Matrix          | Cayley Table              | Karnaugh Map                  | Lunda Symmetry Matrices          |
+|-------------------------|---------------------------|---------------------------|-------------------------------|----------------------------------|
+| **Core Idea**           | Graph connections        | Group operation          | Boolean function simplification | Cultural symmetry & patterns    |
+| **Structure**           | 0-1 matrix                | Operation table (Latin sq.) | Gray-code grid               | Binary/symmetric pattern matrix |
+| **Adjacency/Symmetry**  | Direct (edges)            | Indirect (via generators) | Gray code = logical adj.     | Mirror/rotational symmetry      |
+| **Algebraic Flavor**    | Spectral graph theory     | Group axioms              | Boolean algebra              | Symmetry groups, tilings        |
+| **Visualization**       | Network layout            | Multiplication table      | 2D map for grouping          | Aesthetic black-white designs   |
+
+**Deep unifying themes**:
+
+- **Binary encoding + geometry**: All use grids/matrices to turn abstract relations (connections, operations, truth values, symmetries) into visual, manipulable forms.
+- **Symmetry and closure**: Groups (Cayley), Boolean functions (K-maps), graphs (adjacency), and Lunda patterns all emphasize invariance under transformations.
+- **Ethnomathematics ↔ Formal math**: Gerdes’ work bridges African visual traditions with modern graph theory, group theory, and combinatorics — showing how "intuitive" cultural matrices encode the same principles as formal tools.
+- **Hypercube / Hamming space connections**: K-maps live on hypercubes; Cayley graphs of elementary abelian 2-groups are hypercubes; many Lunda designs have recursive or fractal-like binary symmetry.
+
+In short, they are different **representational languages** for the same underlying mathematical universe of **finite structures with symmetry and local-to-global relations**. Gerdes’ Lunda matrices are perhaps the most "visual/aesthetic" bridge, while adjacency matrices and Cayley tables are the most algebraic, and K-maps the most applied (engineering). 
+
+There is rich potential for further exploration — for example, representing Lunda symmetries as Cayley graphs or using K-map techniques on binary Lunda patterns.
+

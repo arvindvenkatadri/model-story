@@ -1,0 +1,128 @@
+---
+title: Clustering with Sushi
+subtitle: "Big in Japan!"
+date: "2021-08-09"
+date-modified: today
+image: featured.jpg
+fig-cap: Photo by <a href="https://unsplash.com/@maddibazzocco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maddi Bazzocco</a> on <a href="https://unsplash.com/s/photos/groceries?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+order: 140
+summary: We will look at the basic models for Clustering of Data.
+tags:
+- Machine Learning
+- Orange
+
+---
+
+```{r, echo=FALSE, warning=FALSE,message=FALSE}
+library(tidyAML)
+```
+
+```{r}
+#| label: cluster-veggies
+#| echo: FALSE
+#| out.width: "580px"
+#| out.height: "480px"
+#| fig.align: 'center'
+knitr::include_graphics("featured.jpg")
+```
+
+## Introduction
+
+We saw that Classification always had a *target variable*, which we wanted the algorithm to match, with as high an accuracy as possible.
+
+What if we don't **have** a target variable? What kind of situation would that be? Would it be commonplace?
+
+## Game-1: Sushi, anyone?
+
+Let us play a version of an HR game, which we will call *Making Sushi*. I am going to call out some "choices", something you might want to do, or not, and you will need to move to a specific location in the room based upon your Yes/No answer.
+
+### Observations-1
+
+-   On what basis did you move?
+    -   Distance/Proximity/Similarity ( "That's me!")
+- What were the so-called "observations" in the data? **You**!!
+- Each of you started in "your own cluster" and joined one as soon as you saw Proximity. 
+
+Contrary to what you might think, this was an example of **top-down Clustering**, sort of, since I was calling out (central control) the basis for cluster formation. Each Observation could move  of course into *any* cluster, as long as it maximized the Proximity. 
+
+
+## Game-2: 
+TBD
+
+
+### Observations-2
+TBD
+
+
+
+## So what **is** Clustering good for then?
+
+-   Clustering is used in many diverse fields.
+    -   genes -\> diseases; drugs -\> diseases
+    -   customers -\> tastes, products
+    -   food -\> nutrients.
+  -   There is no target variable! Just groupings of existing data.
+  -   New data can also be clustered based on the groupings discovered in Clustering.
+
+Sometimes we just want to *mine* the data: Are there any patterns, or groupings in there?
+
+## How Does one Use Proximity for Clustering?
+
+Here are two interactives to understand how to **create** clusters with **training data**.
+
+<iframe width="100%" height="853" frameborder="0" src="https://observablehq.com/embed/ab4e983a61997013?cells=viewof+seed%2Cviewof+spread%2Cviewof+num_centroids%2Cviewof+selection%2Cviewof+stepslider">
+
+</iframe>
+
+</iframe>
+
+`<iframe width="100%" height="500" frameborder="0" src="https://observablehq.com/embed/5f5821f1971c7749?cell=*"`{=html}
+
+</iframe>
+
+## Cluster Prediction for New Data
+
+TBD: Is this classification or clustering !!!
+
+Click on any part of the canvas below and see how the Clustering algorithm decides the cluster for the point based on the nearest neighbours.
+
+`<iframe width="100%" height="735" frameborder="0" src="https://observablehq.com/embed/16bc2b3dcb13d1cd@289?cells=viewof+numTrain%2Cviewof+k%2CPlot"`{=html}
+
+</iframe>
+
+Algorithm to **create** clusters (training ):
+
+-   Cluster Assignment
+    -   Select the number of Clusters you "need". (Not simple!!)
+    -   Set random start points for the clusters
+    -   Calculate Proximity of each point to the "start points"
+    -   Assign Cluster to each point based on highest proximity (smallest distance)
+-   Centroid Update
+    -   Aha! Recalculate Cluster Centers based on centroid of cluster.
+-   Repeat.
+
+To predict:
+
+-   Simply calculate distance to the `k` nearest neighbours\
+-   Take majority vote based on **their** cluster identification
+
+## Clustering Using Orange
+
+Let us first do this interactively! Fire up Orange Data Mining and open this file. <u>[**Interactive k-Means**](interactive-KMeans.ows)</u>
+
+
+## Conclusion
+
+## References
+
+1. Gao Hongnan. *K-means Clustering*. <https://www.gaohongnan.com/influential/kmeans_clustering/02_concept.html>
+1.  K-means Cluster Analysis. [UC Business Analytics R Programming Guide](https://uc-r.github.io/) <https://uc-r.github.io/kmeans_clustering#optimal>
+2.  Thean C Lim. Clustering: k-means, k-means ++ and gganimate. <https://theanlim.rbind.io/post/clustering-k-means-k-means-and-gganimate/>
+
+3.  <https://www.datacamp.com/tutorial/hierarchical-clustering-R>
+
+4.  <https://www.datacamp.com/tutorial/k-means-clustering-r>
+
+5. Michele Coscia. 2019. *Who will Cluster the Cluster Makers?* <https://www.michelecoscia.com/?p=1709> Accessed 12 Jan 2024. 
+
+

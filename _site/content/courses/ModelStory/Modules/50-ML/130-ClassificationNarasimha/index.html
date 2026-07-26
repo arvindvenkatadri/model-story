@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="dcterms.date" content="2021-08-09">
+<title>Classifying Narasimha – Old Tortoise Taught Us: The Model of the Story</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="../../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../../">
+<link href="../../../../../../content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html" rel="next">
+<link href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html" rel="prev">
+<link href="../../../../../../content/materials/icon-park-twotone--concept-sharing.svg" rel="icon" type="image/svg+xml">
+<script src="../../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../../site_libs/quarto-html/quarto-syntax-highlighting-795e9e8eca1e12b12abcb09a27409631.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../../site_libs/bootstrap/bootstrap-e18becae6b340f8811bc5fb08819d91b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
+<script src="../../../../../../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
+<script src="../../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../../../../../../site_libs/quarto-contrib/tachyons-4.12.0/tachyons.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><style>html{ scroll-behavior: smooth; }</style>
+<link href="../../../../../../site_libs/htmltools-fill-0.5.9.9000/fill.css" rel="stylesheet">
+<script src="../../../../../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="../../../../../../site_libs/viz-1.8.2/viz.js"></script><link href="../../../../../../site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet">
+<script src="../../../../../../site_libs/grViz-binding-1.0.12/grViz.js"></script><link href="../../../../../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../../../../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="../../../../../../css/fira.css">
+<link rel="stylesheet" href="../../../../../../css/roboto-condensed.css">
+<link rel="stylesheet" href="../../../../../../css/vollkorn.css">
+<link rel="stylesheet" href="../../../../../../css/fraunces.css">
+<link rel="stylesheet" href="../../../../../../css/styles.css">
+<meta property="og:title" content="Classifying Narasimha – Old Tortoise Taught Us: The Model of the Story">
+<meta property="og:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta property="og:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/featured.jpg">
+<meta property="og:site_name" content="Old Tortoise Taught Us: The Model of the Story">
+<meta name="twitter:title" content="Classifying Narasimha – Old Tortoise Taught Us: The Model of the Story">
+<meta name="twitter:description" content="This is Arvind V.’s website for teaching Math Models in Design Thinking">
+<meta name="twitter:image" content="https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/featured.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../../../../index.html">
+    <span class="navbar-title">Old Tortoise Taught Us: The Model of the Story</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../../../../../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/arvindvenkatadri/model-story"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/arvind_v"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/arvindvenkatadri"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:arvind.venkatadri@gmail.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html">ML</a></li><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html">Classifying Narasimha</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../../../../index.html" class="sidebar-logo-link">
+      <img src="../../../../../../content/materials/images/1book33.jpg" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none"><img src="../../../../../../content/materials/images/1book33.jpg" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none"></a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Model of the Story</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/10-Games/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Games</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/10-Games/10-Company-Heroes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🦸 The Company of Heroes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/10-Games/20-Strategies-in-PD/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 How Must I Play?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/10-Games/30-Coordinated-Games/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Still More Games !!</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/20-Networks/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Networks</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 I am Insta Famous</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🍅 Biases, Memes, Brands, Viral Trends… and Rumours!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕸 Using Networks Science Models in Art and Design</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/30-Proximity/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Proximity</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏘 Painting Soho Red with Kandinsky!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🏘 Measuring and Playing with Proximity</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/40-Chance/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chance</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/40-Chance/100-Randomness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 A Random Walk with Hamlet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/40-Chance/110-Mangoes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Eating Mangoes with Hamlet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 DoE or Die with Gabbar Singh</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Classifying Narasimha</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clustering with Sushi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Legally Regression</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Symmetry</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 I am multi-sided and multi-lettered</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Creating Symmetry</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../../../../content/courses/ModelStory/Modules/70-Chaos/listing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chaos</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Chaos Games</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌵 Fractals</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+ <span class="menu-text">Miscellaneous</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/1000-Projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Week Projects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/5000-Resources/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🎶 Resources and Notes to Myself</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#narasimha-agaccha" id="toc-narasimha-agaccha" class="nav-link active" data-scroll-target="#narasimha-agaccha">Narasimha Agaccha</a></li>
+  <li><a href="#a-childhood-game" id="toc-a-childhood-game" class="nav-link" data-scroll-target="#a-childhood-game"><iconify-icon inline="" icon="mingcute:question-fill" aria-label="Icon question-fill from mingcute Iconify.design set." title="Icon question-fill from mingcute Iconify.design set."></iconify-icon>A Childhood Game</a></li>
+  <li><a href="#q-game-as-a-play-with-data" id="toc-q-game-as-a-play-with-data" class="nav-link" data-scroll-target="#q-game-as-a-play-with-data"><iconify-icon inline="" icon="mdi:head-question-outline" aria-label="Icon head-question-outline from mdi Iconify.design set." title="Icon head-question-outline from mdi Iconify.design set."></iconify-icon><iconify-icon inline="" icon="carbon:data-table" aria-label="Icon data-table from carbon Iconify.design set." title="Icon data-table from carbon Iconify.design set."></iconify-icon>20Q Game as a Play with Data…</a></li>
+  <li><a href="#what-is-a-decision-tree" id="toc-what-is-a-decision-tree" class="nav-link" data-scroll-target="#what-is-a-decision-tree">What is a Decision Tree?</a></li>
+  <li><a href="#twenty-times-20-questions" id="toc-twenty-times-20-questions" class="nav-link" data-scroll-target="#twenty-times-20-questions">Twenty times 20 Questions !!</a></li>
+  <li><a href="#looking-at-data-in-orange" id="toc-looking-at-data-in-orange" class="nav-link" data-scroll-target="#looking-at-data-in-orange">Looking at Data in Orange</a></li>
+  <li><a href="#how-do-we-make-predictions-using-our-decision-tree-in-orange" id="toc-how-do-we-make-predictions-using-our-decision-tree-in-orange" class="nav-link" data-scroll-target="#how-do-we-make-predictions-using-our-decision-tree-in-orange">How do we Make Predictions using our Decision Tree in Orange</a></li>
+  <li><a href="#how-many-trees-do-we-need-enter-the-random-forest" id="toc-how-many-trees-do-we-need-enter-the-random-forest" class="nav-link" data-scroll-target="#how-many-trees-do-we-need-enter-the-random-forest"><iconify-icon inline="" icon="game-icons:circle-forest" aria-label="Icon circle-forest from game-icons Iconify.design set." title="Icon circle-forest from game-icons Iconify.design set."></iconify-icon> How Many Trees do we Need? Enter the Random Forest!</a></li>
+  <li><a href="#an-introduction-to-random-forests" id="toc-an-introduction-to-random-forests" class="nav-link" data-scroll-target="#an-introduction-to-random-forests"><iconify-icon inline="" icon="fluent-emoji-high-contrast:game-die" aria-label="Icon game-die from fluent-emoji-high-contrast Iconify.design set." title="Icon game-die from fluent-emoji-high-contrast Iconify.design set."></iconify-icon><iconify-icon inline="" icon="game-icons:circle-forest" aria-label="Icon circle-forest from game-icons Iconify.design set." title="Icon circle-forest from game-icons Iconify.design set."></iconify-icon>An Introduction to Random Forests</a></li>
+  <li><a href="#are-random-forests-an-example-of-complexity" id="toc-are-random-forests-an-example-of-complexity" class="nav-link" data-scroll-target="#are-random-forests-an-example-of-complexity">Are Random Forests an Example of Complexity?</a></li>
+  <li>
+<a href="#random-forest-classification-in-orange" id="toc-random-forest-classification-in-orange" class="nav-link" data-scroll-target="#random-forest-classification-in-orange">Random Forest Classification in Orange</a>
+  <ul class="collapse">
+<li><a href="#rf-for-for-penguins-data" id="toc-rf-for-for-penguins-data" class="nav-link" data-scroll-target="#rf-for-for-penguins-data">RF for for Penguins Data</a></li>
+  <li><a href="#rf-for-heart-patients-data" id="toc-rf-for-heart-patients-data" class="nav-link" data-scroll-target="#rf-for-heart-patients-data">RF for Heart Patients Data</a></li>
+  </ul>
+</li>
+  <li><a href="#how-good-is-my-random-forest" id="toc-how-good-is-my-random-forest" class="nav-link" data-scroll-target="#how-good-is-my-random-forest">How good is my Random Forest?</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><iconify-icon inline="" icon="ooui:references-rtl" aria-label="Icon references-rtl from ooui Iconify.design set." title="Icon references-rtl from ooui Iconify.design set."></iconify-icon> References</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/listing.html">The Model of the Story</a></li><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html">ML</a></li><li class="breadcrumb-item"><a href="../../../../../../content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html">Classifying Narasimha</a></li></ol></nav><div class="quarto-title">
+<h1 class="title">Classifying Narasimha</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Orange Data Mining</div>
+    <div class="quarto-category">Decision Trees</div>
+    <div class="quarto-category">Random Forests</div>
+    <div class="quarto-category">20 Questions Game</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 9, 2021</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 26, 2026</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header><section id="narasimha-agaccha" class="level2"><h2 class="anchored" data-anchor-id="narasimha-agaccha"><a href="https://youtu.be/e0ENcwgf7-o">Narasimha Agaccha</a></h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="quarto-figure quarto-figure-center figure-img" style="width:50.0%;height:50.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="pa4">
+<div class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+<p><span class="f5 f4-m f3-l lh-copy measure mt0">“The fourth incarnation of the god Vishnu as Narasimha; the god with the lion-head. The pose that the god takes on in this statue is called the Yoga Narasimha – from knee to knee there is a meditation-belt meant to keep the meditator in position. The goddess Laxmi used to be on Narasimha’s knee, but was destroyed when the sultans of the south invaded Hampi in the 16th century. Her right arm is still visible in embrace. Hovering over Narasimha’s head are 7 cobras.”</span></p>
+<p><span class="f6 ttu tracked fs-normal">— From Hampi</span></p>
+</div>
+</div>
+<p>Where does Narasimha show up? Why does he look like he does? What are the attributes and characteristics that would help us describe him to someone from another continent? To a Martian?</p>
+</section><section id="a-childhood-game" class="level2"><h2 class="anchored" data-anchor-id="a-childhood-game">
+<iconify-icon inline="" icon="mingcute:question-fill" aria-label="Icon question-fill from mingcute Iconify.design set." title="Icon question-fill from mingcute Iconify.design set."></iconify-icon>A Childhood Game</h2>
+<p>Have you played a Childhood Game called <strong>20 Questions</strong>? Someone has a “target” entity in mind (a person or a thing or a literary character) and the others need to discover that entity by asking 20 questions.</p>
+<ul>
+<li>How does one create questions in the game?
+<ul>
+<li>Categories?</li>
+<li>Numbers? How?</li>
+<li>Comparisons?</li>
+</ul>
+</li>
+<li>What sort of answers can you expect for each question?</li>
+<li>If the “target” was the Narasimha avatara, what questions would you create?</li>
+</ul></section><section id="q-game-as-a-play-with-data" class="level2"><h2 class="anchored" data-anchor-id="q-game-as-a-play-with-data">
+<iconify-icon inline="" icon="mdi:head-question-outline" aria-label="Icon head-question-outline from mdi Iconify.design set." title="Icon head-question-outline from mdi Iconify.design set."></iconify-icon><iconify-icon inline="" icon="carbon:data-table" aria-label="Icon data-table from carbon Iconify.design set." title="Icon data-table from carbon Iconify.design set."></iconify-icon>20Q Game as a Play with Data…</h2>
+<p>Assuming we think of a 20Q Target as say, celebrity singer like Taylor Swift, or a cartoon character like Thomas the Tank Engine, what would an underlying “data structure” look like? We would ask Questions for instance in the following order to find the target of Taylor Swift:</p>
+<ul>
+<li>Human?(Yes)<br>
+</li>
+<li>Living?(Yes)<br>
+</li>
+<li>Male?(No)<br>
+</li>
+<li>Celebrity?(Yes)<br>
+</li>
+<li>Music?(Yes)<br>
+</li>
+<li>USA?(Yes)</li>
+</ul>
+<p>Oh…Taylor Swift!!!</p>
+<p>Let us try to construct the “datasets” underlying this game!</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 13%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 24%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Occupation</th>
+<th style="text-align: left;">Sex</th>
+<th style="text-align: left;">Living</th>
+<th style="text-align: left;">Nationality</th>
+<th style="text-align: left;">Genre</th>
+<th style="text-align: left;">Pet</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">Taylor Swift</td>
+<td style="text-align: left;">Singer</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">TRUE</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">country/rock</td>
+<td style="text-align: left;">Scottish Fold Cats</td>
+</tr></tbody>
+</table>
+</div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 10%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Living</th>
+<th style="text-align: left;">Human</th>
+<th style="text-align: left;">Nationality</th>
+<th style="text-align: left;">colour</th>
+<th style="text-align: left;">material</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">Thomas, the Tank Engine</td>
+<td style="text-align: left;">Cartoon Character</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">UK</td>
+<td style="text-align: left;">blue</td>
+<td style="text-align: left;">metal</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<p>It should be fairly clear that the Questions we ask are based on the COLUMNs in the respective <strong>1-row datasets</strong>! The TARGET Column in both cases is the <strong>name</strong> column.</p>
+</section><section id="what-is-a-decision-tree" class="level2"><h2 class="anchored" data-anchor-id="what-is-a-decision-tree">What is a Decision Tree?</h2>
+<p>Can you imagine how the <strong>20 Questions</strong> Game can be shown as a <strong>tree</strong>? Yes, upside-down perhaps, but nevertheless a tree!</p>
+<div class="cell">
+<div id="fig-decision-tree" class="cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="grViz html-widget html-fill-item" id="htmlwidget-1fd74f5a9dc3978cfc61" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1fd74f5a9dc3978cfc61">{"x":{"diagram":"\ndigraph tree_diagram {\n\n  # a \"graph\" statement\n  graph [overlap = false, fontsize = 10]\n\n  # several \"node\" statements\n  node [shape = circle,\n        fontname = Helvetica,\n        label = root]\n  A; \n\n  node [shape = circle,\n        fixedsize = true,\n        label = nodes,\n        fillcolor = purple,\n        width = 0.9] // sets as circles\n  B; C; \n\nnode [shape = diamond,\n        fixedsize = true,\n        label = leaf,\n        color = springgreen,\n        width = 0.9] \n  D;E;\n\n  # several \"edge\" statements\n  A->B[color = blue, label = yes]; A->C[color = red,label = no]; \nB->D[color = blue,label = yes]; B->E[color = red,label = no]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Decision Tree
+</figcaption></figure>
+</div>
+</div>
+<p>Each Question we ask, based on one of the Feature columns, begets a Yes/No answer and we turn the left or right accordingly. When we arrive at the leaf, we should be in a position to <em>guess</em> the answer !</p>
+</section><section id="twenty-times-20-questions" class="level2"><h2 class="anchored" data-anchor-id="twenty-times-20-questions">Twenty times 20 Questions !!</h2>
+<p>What if the dataset we had contained <strong>many</strong> rows, instead of just one row? How would we play the <strong>same</strong> 20Q Game in this situation? Here is a sample of the famous <em>penguins</em> dataset:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 20%">
+<col style="width: 13%">
+<col style="width: 7%">
+<col style="width: 5%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">species</th>
+<th style="text-align: left;">island</th>
+<th style="text-align: right;">bill_length_mm</th>
+<th style="text-align: right;">bill_depth_mm</th>
+<th style="text-align: right;">flipper_length_mm</th>
+<th style="text-align: right;">body_mass_g</th>
+<th style="text-align: left;">sex</th>
+<th style="text-align: right;">year</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">41.1</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">192</td>
+<td style="text-align: right;">4050</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Torgersen</td>
+<td style="text-align: right;">41.8</td>
+<td style="text-align: right;">19.4</td>
+<td style="text-align: right;">198</td>
+<td style="text-align: right;">4450</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Dream</td>
+<td style="text-align: right;">37.6</td>
+<td style="text-align: right;">19.3</td>
+<td style="text-align: right;">181</td>
+<td style="text-align: right;">3300</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: right;">2007</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">49.3</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: right;">217</td>
+<td style="text-align: right;">5850</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2007</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">44.4</td>
+<td style="text-align: right;">17.3</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">5250</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Dream</td>
+<td style="text-align: right;">36.6</td>
+<td style="text-align: right;">18.4</td>
+<td style="text-align: right;">184</td>
+<td style="text-align: right;">3475</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: right;">2009</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">47.3</td>
+<td style="text-align: right;">15.3</td>
+<td style="text-align: right;">222</td>
+<td style="text-align: right;">5250</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2007</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">40.1</td>
+<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">4300</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">48.4</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: right;">5850</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2007</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Adelie</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">35.0</td>
+<td style="text-align: right;">17.9</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">3450</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">43.8</td>
+<td style="text-align: right;">13.9</td>
+<td style="text-align: right;">208</td>
+<td style="text-align: right;">4300</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: right;">2008</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gentoo</td>
+<td style="text-align: left;">Biscoe</td>
+<td style="text-align: right;">45.5</td>
+<td style="text-align: right;">15.0</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: right;">2008</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>As before, we would need to look at the dataset as containing a <strong>TARGET</strong> column which we want to predict using several other <strong>FEATURE</strong> columns. Let us choose <strong>species</strong>.</p>
+<p>When we look at the FEATURE columns, We would need to formulate questions based on <em>entire columns</em> at a time. For instance:</p>
+<ul>
+<li>
+<em>“Is the <em>bill_length_mm</em> greater than 45mm?”</em> considers the entire <em>bill_length_mm</em> FEATURE column</li>
+<li>Is the <em>sex</em> female? considers the entire <em>sex</em> column</li>
+<li>If the specific <strong>FEATURE</strong> column is a <strong>Numerical</strong> (N) variable, the question would use some “thresholding” as shown in the question above, to convert the Numerical Variable into a Categorical variable.</li>
+<li>If a specific <strong>FEATURE</strong> column is a <strong>Categorical</strong> (C) variable, the question would be like a <em>filter</em> operation in Excel.</li>
+</ul>
+<p>Either way, we end up answering with a <strong>smaller and smaller subset of rows in the dataset</strong>, to which the questions are answered with a Yes. It is as if we played <strong>the same</strong> 20 Questions games in parallel, <strong><em>since there are so many simultaneous “answers”</em></strong>!</p>
+<p>Once we exhaust <strong>all</strong> the FEATURE columns, then what remains is a subset (i.e.&nbsp;rows) of the original dataset and we read off the TARGET column, which should now contain a set of identical entries, e.g.&nbsp;“Adelie”. Thus we can extend a <em>single-target</em> 20Q game to a <strong>multiple-target</strong> one using a larger dataset. (Note how the multiple targets are all the same: “Adelie”, or “Gentoo”, or “Chinstrap”)</p>
+<p>This forms the basic intuition for a Machine Learning Algorithm called a <strong>Decision Tree</strong>. Note that we being human, our tree is plotted <strong>inverted</strong>: trunk on top and the leaves below. <a href="https://www.poetryfoundation.org/poetrymagazine/poems/12744/trees">Only God can make a tree.</a></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-penguins-decision-tree" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-penguins-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="penguins.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Penguins Decision Tree!"><img src="penguins.png" class="quarto-figure quarto-figure-center figure-img" style="width:100.0%;height:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguins-decision-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Penguins Decision Tree!
+</figcaption></figure>
+</div>
+</div>
+</div>
+<section id="what-did-we-learn" class="level4"><h4 class="anchored" data-anchor-id="what-did-we-learn">What did we learn?</h4>
+<ul>
+<li>The 20Q Game can be viewed as a “Decision Tree” of Questions and Answers,</li>
+<li>Each <strong>fork</strong> in the game is a Question.</li>
+<li>Depending upon whether the current answer is <strong>yes or no</strong>, we turn in one direction or the other. (Remember “binary choices” in our work on the Poisson Distribution! More shortly!)</li>
+<li>Each of our questions is <strong>based</strong> on the information available in one or other of the columns!!</li>
+<li>We arrive at a final “answer” or “target” after a particular sequence of yes/no answers. This is the one of the <strong>leaf</strong> nodes in the Tree.</li>
+<li>The <code>island</code> and the <code>species</code> columns are <strong>categories</strong> and are especially suited to being the <strong>targets</strong> for a 20 Questions Game.</li>
+<li>We can therefore use an <strong>entire column</strong> of data as our 20Questions <strong>target</strong>, rather than just one entity, person.</li>
+<li>In doing so, we play the <strong>same 20Q Game</strong> many times over and obtain multiple answers from the <strong>target columns</strong>.</li>
+</ul>
+<p>This is how we will use this Game as a Model for our first ML algorithm, <strong>classification</strong> using Decision Trees.</p>
+</section></section><section id="looking-at-data-in-orange" class="level2"><h2 class="anchored" data-anchor-id="looking-at-data-in-orange">Looking at Data in Orange</h2>
+<p><a href="https://orangedatamining.com/">Orange Data Mining</a> is very intuitive, no-code, point-and-click, Photoshop-like tool for Data Analysis, Visualization, and Machine Learning, that was created at the University of Ljubljana in Slovenia. It is a very good tool for <strong>teaching</strong> and <strong>learning</strong> Data Science, and is used in many universities around the world.</p>
+<p>A quick intro to Orange is on my <a href="https://nocodedataviz.netlify.app/content/courses/nocodedataviz/modules/05-introductiontoorange/">No Code Data Viz</a> website!</p>
+<p>Let us visualize this Decision Tree in Orange. Look at the now famous <code>penguins</code> dataset, available here:</p>
+<p><a href="https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv" class="uri">https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv</a></p>
+<p>We see that there are three <code>species</code> of penguins, that live on three <code>islands</code>. The measurements for each penguin are <code>flipper_length_mm</code>, <code>bill_length_mm</code>, <code>bill_depth_mm</code>, and <code>body_mass_g</code>.</p>
+<ol type="1">
+<li><p><strong>Task 1:</strong> Create a few data visualizations for the variables, and pairs of variables from this dataset.</p></li>
+<li><p><strong>Task 2:</strong> Can you inspect the visualizations and imagine how each of this dataset can be used in a <code>20 Questions Game</code>, to create a <strong>Decision Tree</strong> for this dataset as shown below?</p></li>
+</ol>
+<p>Once you are comfortable with the interface and the way to generate graphs, then you can save this Orange Workflow file locally for reference.</p>
+</section><section id="how-do-we-make-predictions-using-our-decision-tree-in-orange" class="level2"><h2 class="anchored" data-anchor-id="how-do-we-make-predictions-using-our-decision-tree-in-orange">How do we Make Predictions using our Decision Tree in Orange</h2>
+<p>Download this <a href="penguins-tree.ows"><strong>penguin tree file</strong></a> and open it in Orange.</p>
+<p>Our aim is to make <code>predictions</code>. Predictions of what? When we are given new unseen data in the same format, we should be able to predict TARGET variable using the same FEATURE columns.</p>
+<p>NOTE: This that is usually a <strong>class/category</strong> (We <strong>CAN</strong> also predict a <strong>numerical value</strong> with a Decision Tree; but we will deal with that later.)</p>
+<p>In order to make predictions with completely unseen data, we need to first check if the algorithm is working well with <strong>known</strong> data. The way to do this is to use a large portion of data to <strong>design the tree</strong>, and then use the tree to predict some aspect of the remaining, but similar, data. Let us split the <code>penguins</code> dataset into two pieces: a <code>training set</code> to design our tree, and a <code>test set</code> to check how it is working.</p>
+<p>How good are the Predictions? What is the <strong>Classification Error Rate</strong>?</p>
+</section><section id="how-many-trees-do-we-need-enter-the-random-forest" class="level2"><h2 class="anchored" data-anchor-id="how-many-trees-do-we-need-enter-the-random-forest">
+<iconify-icon inline="" icon="game-icons:circle-forest" aria-label="Icon circle-forest from game-icons Iconify.design set." title="Icon circle-forest from game-icons Iconify.design set."></iconify-icon> How Many Trees do we Need? Enter the Random Forest!</h2>
+<p>Check all your individual Decision Trees:</p>
+<ul>
+<li>Do they ask the same Questions?</li>
+<li>Do they fork pretty much in the same way?</li>
+</ul>
+<p>Yes, they all seem to use the same set of parameters to reach the target. So they are capable of being “biased” and make the <strong>same mistakes</strong>. So we ask: Does it help to use more than one tree, if all the questions/forks in the Trees are similar?</p>
+<p>No…we need different Trees to be able to <strong>ask different questions</strong>, based on different <strong>variables</strong> or <strong>features</strong> in the data. That will make the Trees as different as possible and so…unbiased. This is what we also saw when we played 20Q: offbeat questions opened up some avenues for predicting the answer/target.</p>
+<p>A forest of such trees is called <a href="https://youtu.be/zE0uAfAuZ08">🎥 <del><strong>the Wild Wood</strong></del></a> <strong>a Random Forest</strong> !</p>
+</section><section id="an-introduction-to-random-forests" class="level2"><h2 class="anchored" data-anchor-id="an-introduction-to-random-forests">
+<iconify-icon inline="" icon="fluent-emoji-high-contrast:game-die" aria-label="Icon game-die from fluent-emoji-high-contrast Iconify.design set." title="Icon game-die from fluent-emoji-high-contrast Iconify.design set."></iconify-icon><iconify-icon inline="" icon="game-icons:circle-forest" aria-label="Icon circle-forest from game-icons Iconify.design set." title="Icon circle-forest from game-icons Iconify.design set."></iconify-icon>An Introduction to Random Forests</h2>
+<p>In the Random Forest method, we do as follows:</p>
+<ol type="1">
+<li>Split the dataset into <code>training</code> and <code>test</code> subsets (70::30 proportion is very common). Keep aside the <code>testing</code> dataset for final testing.</li>
+<li>Decide on a number of trees, say 100-500 in the forest.</li>
+<li>Take the training dataset and repeatedly sample some of the rows in it. Rows can be <strong>repeated</strong> too; this is called <code>bootstrap sampling</code>.</li>
+<li>Give this sampled training set to each tree. Each tree develops a question from this dataset, in a <strong>random fashion</strong>, using a <strong>randomly chosen</strong> variable. E.g. with <code>penguins</code>, if our target is <code>species</code>, then some trees will will use <code>island</code>, some others will use <code>body_mass_g</code> and some others may use <code>bill_length_mm</code>.</li>
+<li>Each tree will “grow its questions” in a unique way !! Since the questions are possibly based on a different variable at each time, the trees will grow in very different ways.</li>
+<li>Stop when the required accuracy has been achieved (the sets contain observations/rows from only one <code>species</code> predominantly)</li>
+<li>With the <code>test set</code> let each tree vote on which <code>species</code> it has decided upon. Take the majority vote.</li>
+</ol>
+<p>Phew!!</p>
+<p>Let’s get a visual sense of how all this works:</p>
+    <p><a href="https://waternova.github.io/random-forest-viz/" target="_blank">View webpage in full screen</a></p>
+       <div>
+      <iframe src="https://waternova.github.io/random-forest-viz/" height="475px" width="100%"></iframe>
+    </div>
+  
+<p><a href="https://waternova.github.io/random-forest-viz/" class="uri">https://waternova.github.io/random-forest-viz/</a></p>
+</section><section id="are-random-forests-an-example-of-complexity" class="level2"><h2 class="anchored" data-anchor-id="are-random-forests-an-example-of-complexity">Are Random Forests an Example of Complexity?</h2>
+<p>Does The Random Forest somehow embody the “4A”s of Complexity? (<code>Agents, Actions, Again, Aggregate</code>)? Can we try to interpret the algorithm as such? Here goes:</p>
+<ul>
+<li>Each little <em>tree</em> in the Random Forest is an independent <strong>Agent</strong>
+</li>
+<li>Each agent-tree has a vocabulary of <strong>Actions</strong>
+<ul>
+<li>to choose randomly a <em>subset</em> of variables from the big dataset</li>
+<li>To independently vote using their choice of variables</li>
+</ul>
+</li>
+<li>And the “votes” are <strong>Aggregated</strong> to decide the final prediction</li>
+<li>Which is greater (better, accurate with higher confidence) than each individual Agent-Trees</li>
+<li>
+<a href="https://youtu.be/jmdiKePVUy8">🪗 Do it <strong>Again</strong></a> when presented with fresh data</li>
+</ul>
+<p>Not bad, is it, as a metaphor for Random Forests? Can <u><a href="Strogatz_et_al_2022_More_is_different.pdf">📃More is Different</a></u> be true here too?</p>
+</section><section id="random-forest-classification-in-orange" class="level2"><h2 class="anchored" data-anchor-id="random-forest-classification-in-orange">Random Forest Classification in Orange</h2>
+<p>Let us see how to create a Random Forests ML model in Orange:</p>
+<div class="{fig-random-forests-orange}">
+<center>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/gSQsFIMcA8A" width="640" height="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</center>
+<p>Random Forests in Orange</p>
+</div>
+<section id="rf-for-for-penguins-data" class="level3"><h3 class="anchored" data-anchor-id="rf-for-for-penguins-data">RF for for Penguins Data</h3>
+<p>Let us develop develop a Random Forest Model from ground up using the penguins data downloaded earlier.</p>
+<p>We will create a Random Forest Model for this dataset, and compare with the Decision Tree for the same dataset.</p>
+</section><section id="rf-for-heart-patients-data" class="level3"><h3 class="anchored" data-anchor-id="rf-for-heart-patients-data">RF for Heart Patients Data</h3>
+<p>Do you want to develop an ML model for heart patients? We have a dataset of heart patients at the <a href="https://archive.ics.uci.edu/ml/datasets/heart+disease"><strong>University of California, <del>Arvind</del> Irvine ML Dataset Repository</strong></a>:</p>
+<p><a href="processed.cleveland.data.csv"><strong>Cleveland Heart Patient Data CSV</strong></a></p>
+<p>We will download this data and use it with this Orange Workflow file. <a href="random_forest.ows">Random Forests Workflow File</a></p>
+<p>What are the variables?</p>
+<ol type="1">
+<li>(age): age in years<br>
+</li>
+<li>(sex): 1 = male; 0 = female<br>
+</li>
+<li>(cp): chest-pain type( 4 types, 1/2/3/4)<br>
+</li>
+<li>(trestbps): resting blood pressure (in mm Hg on admission to the hospital)</li>
+<li>(chol) : serum cholesterol in mg/dl</li>
+<li>(fbs): (fasting blood sugar &gt; 120 mg/dl) (1 = true; 0 = false)</li>
+<li>(restecg): resting electrocardiograph results (0 = normal; 1= ST-T wave abnormality; 3 = LV hypertrophy)</li>
+<li>(thalach): maximum heart rate achieved</li>
+<li>(exang): exercise induced angina (1 = yes; 0 = no) (remember <strong>Puneet Rajkumar</strong>)<br>
+</li>
+<li>(oldpeak): ST depression induced by exercise relative to rest</li>
+<li>(slope): the slope of the peak exercise ST segment<br>
+- Value 1: upsloping<br>
+- Value 2: flat<br>
+- Value 3: downsloping<br>
+</li>
+<li>(ca): number of major vessels (0-3) colored by fluoroscopy<br>
+</li>
+<li>(thal): 3 = normal; 6 = fixed defect; 7 = reversible defect<br>
+</li>
+<li>(num) : <strong>the target attribute</strong>, diagnosis of heart disease (angiographic disease status)<br>
+- Value 0: &lt; 50% diameter narrowing<br>
+- Value 1: &gt; 50% diameter narrowing<br>
+(in any major vessel: attributes 59 through 68 are vessels)</li>
+</ol>
+<p>We will create a Random Forest Model for this dataset, and compare with the Decision Tree for the same dataset.</p>
+</section></section><section id="how-good-is-my-random-forest" class="level2"><h2 class="anchored" data-anchor-id="how-good-is-my-random-forest">How good is my Random Forest?</h2>
+<p>There are good few metrics to state the performance of our Random Forest. We should know these:</p>
+<ol type="1">
+<li>
+<code>Classification Error</code> : How many mismatches? Simple enough.</li>
+<li>
+<code>Gini Impurity</code>: Each Group may end up mis-classifying observations from <em>any</em> of the other groups. The Gini Impurity index measures the variance across all groups. If there are <span class="math inline">\(M\)</span> groups identified from what are actually <span class="math inline">\(K\)</span> classes, then <span class="math inline">\(p_{mk}\)</span> defines the proportion of <code>k-class</code> observations that are actually in <code>Group-m</code>. The Gini Impurity is defined as:</li>
+</ol>
+<p><span class="math display">\[
+G = \sum_{k=1}^{K} ~ p_{mk} * (1 - p_{mk})
+\]</span></p>
+<p>(Very similar to the formula for variance of a binary variable).</p>
+<p>A little examination of the formula will show that when any proportion <span class="math inline">\(p_{mk}\)</span> is either very high or very low, then the Gini index is small. A small <span class="math inline">\(p_{mk}\)</span> means that each leaf is highly “pure”; a large one means that we have labels completely the other way around or swapped!!</p>
+<p>A small Gini index is a good thing!</p>
+<ol start="3" type="1">
+<li>
+<code>Cross Entropy</code><br>
+In line with Claude Shannon’s idea of <code>information entropy</code>, we can define the Cross-entropy as:</li>
+</ol>
+<p><span class="math display">\[
+D = \sum_{k=1}^{K} p_{mk} * log(p_{mk})
+\]</span> Again, this tells us how much a particular group has members from another class…so a small Cross-Entropy is a good thing.</p>
+</section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">
+<iconify-icon inline="" icon="ooui:references-rtl" aria-label="Icon references-rtl from ooui Iconify.design set." title="Icon references-rtl from ooui Iconify.design set."></iconify-icon> References</h2>
+<ol type="1">
+<li><a href="https://towardsdatascience.com/data-science-made-easy-data-modeling-and-prediction-using-orange-f451f17061fa" class="uri">https://towardsdatascience.com/data-science-made-easy-data-modeling-and-prediction-using-orange-f451f17061fa</a></li>
+<li>The beauty of Random Forests: <a href="https://orangedatamining.com/blog/2016/12/22/the-beauty-of-random-forest/" class="uri">https://orangedatamining.com/blog/2016/12/22/the-beauty-of-random-forest/</a>
+</li>
+<li>Pythagorean Trees for Random Forests: <a href="https://orangedatamining.com/blog/2016/07/29/pythagorean-trees-and-forests/" class="uri">https://orangedatamining.com/blog/2016/07/29/pythagorean-trees-and-forests/</a>
+</li>
+<li>R package <em>data.tree</em> sample applications, Christoph Glur, 2020-07-31. <a href="https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html" class="uri">https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html</a>
+</li>
+<li><a href="https://waternova.github.io/random-forest-viz/" class="uri">https://waternova.github.io/random-forest-viz/</a></li>
+</ol>
+
+
+</section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/old-tortoise-taught-us\.netlify\.app");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="pagination-link" aria-label="ML">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ML</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html" class="pagination-link" aria-label="Clustering with Sushi">
+        <span class="nav-page-text">Clustering with Sushi</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Website made with ❤️ and <a href="https://quarto.org/">Quarto</a>, by Arvind V.</p>
+</div>
+    <div class="nav-footer-right">
+<p>Hosted by Netlify <a href="https://www.netlify.com"><iconify-icon inline="" icon="simple-icons:netlify" aria-label="Icon netlify from simple-icons Iconify.design set." title="Icon netlify from simple-icons Iconify.design set."></iconify-icon></a>.</p>
+</div>
+  </div>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"right","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+<script src="../../../../../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../../../../site_libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+</body></html>

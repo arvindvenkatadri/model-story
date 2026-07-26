@@ -1,0 +1,19 @@
+{
+  "hash": "a945b89cfe6b559f7dd273a336f1a2a2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\\U0001F579 Measuring and Viewing Symmetry\"\nsubtitle: \"The Matrix Math of Symmetry\"\ndate: 23/July/2026\ndate-modified: today\ncategories:\n- Matrices\n- Adjacency\n- Karnaugh Map\n- Paulus Gerdes\n- Angola\n- Tchockwe/Sona/Lunda geometry\n- South India\n- Kolam\norder: 315\n---\n<br>\n\n\n::: {.cell layout-align=\"center\"}\n\n:::\n\n\n\n## What is a Matrix?\n\n\n### What do they Represent?\n\n\n### What Kinds of Matrices are Useful to us?\n\n\n## References\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../../../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../../../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

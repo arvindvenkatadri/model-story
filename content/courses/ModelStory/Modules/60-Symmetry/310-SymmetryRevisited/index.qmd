@@ -1,0 +1,138 @@
+---
+title: "\U0001F579 Creating Symmetry"
+subtitle: "The Language of Symmetry"
+date: 21/July/2026
+date-modified: today
+categories:
+- Cyclic
+- Dihedral
+- Permutation
+- Canonical Movements
+- Chiral
+- Complex Numbers
+order: 310
+---
+<br>
+
+```{r}
+#| echo: false
+#| eval: false
+#| fig-align: center
+#| out-width: "50%"
+#| out-height: "50%"
+#| 
+
+knitr::include_graphics("../../../../materials/images/Guide_ Abhimanyu.jpeg")
+
+```
+
+:::: {.pa4}
+::: {.athelas .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue}
+["Here is a health, my brothers, to you, \
+However your prayers are said,\
+And praised be Allah Who gave me two\
+Separate sides to my head!"]{.f5 .f4-m .f3-l .lh-copy .measure .mt0}
+
+[ --- Rudyard Kipling, *The Two Sided Man*]{.f6 .ttu .tracked .fs-normal}
+:::
+
+
+## So, what is Symmetry, then??
+
+Let us define this idea once and for all:
+
+> Symmetry is immunity to change.
+
+What?? Change?? What change??? OK, OK, here come some funky games, again!
+
+
+### Symmetry Games
+
+- Elizabeth Barrett Browning
+ - [Internet Anagram Server](https://wordsmith.org/anagram/)
+ - The set of all possible rearrangements of n distinct letters forms the symmetric group Sₙ (the group of all permutations of n objects).
+
+### Canonical Movements
+TBWU
+- `Group theory` is the mathematical language of symmetry. 
+A symmetry of an object is a transformation (rotation, reflection, etc.) that leaves it looking unchanged. These transformations form a symmetry group.
+
+How do these related to "points of view"? 
+
+
+### The (brief) Maths of Symmetry
+
+$C_n$ and $D_n$. What is this *cyclic* and *dihedral* stuff anyhow?
+
+Cayley 
+
+## Where have we seen Symmetry before?
+
+- Symmetry in Game Theory
+- Symmetry in Randomness, and the Randomized Experiment
+- Can Symmetry be a metaphor?
+
+## Symmetry in Space
+
+- Vector Spaces
+- Basis Functions
+- Projections as Shadows
+- Can we detect or design for Symmetry based on the size of Projections/Shadows?
+
+
+## Symmetry and Asymmetry in ML
+
+- Is Machine Learning a way of detecting and exploiting Asymmetry in data
+- ***If data was symmetric, would it teach us anything?***
+- ***What does it mean when we say, "Data is Symmetric"?***
+- PCA as a set of "most-symmetric" shadows
+- Why we want to reduce data/things to symmetry and then ignore them
+- 
+
+## Friezes and Lattices
+
+- Symmetry in "vanilla" geometry
+- Symmetry "on average"
+  - Chaos Games
+  - Stephen Wolfram, *A New Kind of Science*. <https://www.wolframscience.com/nks/>
+  
+
+
+[1]:<https://archive.org/details/indiathroughages00mada>
+
+
+### Human Desire for Symmetry — and Complaints About It
+
+We *crave* symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.
+
+Yet we complain about it too:
+
+- **Over-symmetry feels sterile or oppressive**: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).
+- **Labyrinthine or rigid symmetry traps us**: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.
+- **We romanticize asymmetry**: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of *my* garden.
+
+This ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, ML models seeking isotropic residuals), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.
+
+### Do We Have a “Gene” for Symmetry?
+
+Not a single “symmetry gene,” but **yes, there is a strong evolved biological and psychological basis** for preferring symmetry. 
+
+Evolutionary psychology and biology link it to **developmental stability** and **genetic quality**:
+- Bilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments.
+- This preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments.
+- Neuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.
+
+It’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.
+
+In tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in *balanced* symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape. 
+
+This ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?
+
+Mahabharata\
+T. E. Brown\
+Elizabeth Barrett Browning\
+
+
+## References
+
+1. 17 Wallpaper groups. <http://xahlee.info/Wallpaper_dir/c5_17WallpaperGroups.html>

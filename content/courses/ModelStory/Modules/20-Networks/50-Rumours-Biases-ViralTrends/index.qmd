@@ -1,0 +1,279 @@
+---
+title: "\U0001F345 Biases, Memes, Brands, Viral Trends... and Rumours!"
+subtitle: "Whom (not \"who\"!!) will you Copy today?"
+date: 2024-01-04
+date-modified: today
+image: featured.jpg
+order: 50
+categories: 
+  - Rumours
+  - Biases
+  - Viral Trends
+  - Memes
+  - Network Effects
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r echo=FALSE}
+library(blogdown)
+```
+
+![Photo by
+<a href="https://unsplash.com/@yaaniu?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ahmed
+Yaaniu</a> on
+<a href="https://unsplash.com/photos/green-and-brown-island-in-the-middle-of-blue-water-lD2PZuMscsw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>](featured.jpg){height="450px"}
+
+## Introduction
+
+```{r}
+#| label: fig-john-donne
+#| eval: false
+#| echo: false
+#| out-height: "100%"
+#| out-width: "100%"
+#| fig-cap: "- John Donne, from ***Devotions Upon Emergent Occasions***"
+#| fig-cap-location: margin
+#| fig-align: default
+
+
+knitr::include_graphics("donne.png")
+```
+
+![](donne.png) [- John Donne, from ***Devotions Upon Emergent
+Occasions***]{style="float:right" height="480" }
+
+<br> <br>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1219217278&amp;color=ff5500&amp;show_teaser=true%3F">
+
+</iframe>
+
+::: {style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"}
+<a href="https://soundcloud.com/anton-jarvis-206182017" title="Anton Jarvis" target="_blank" style="color: #cccccc; text-decoration: none;">AntonJarvis</a>
+·
+<a href="https://soundcloud.com/anton-jarvis-206182017/no-man-is-an-island-by-john-donne" title="No Man is an Island by John Donne" target="_blank" style="color: #cccccc; text-decoration: none;">No
+Man is an Island by John Donne</a>
+:::
+
+From
+<u><https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island></u>
+
+> The words ‘No man is an island’ were embedded in a deeply Christian
+> sermon about how human beings are connected to each other, and how
+> important that connection is for the wellbeing and survival of any
+> individual. When you hear the church bell tolling for someone who has
+> died, don’t ask who it is, Donne says, just know that it’s tolling for
+> you too because you are part of the same society and the death of
+> anyone takes a part of your own life away.
+
+Does the Bell toll for thee?
+
+### The Game of the Polygons
+
+Let us explore, sadly, the `dark side` of [Game Theory](../../10-Games/10-Company-Heroes/index.qmd), and of course [Networks](../40-Networks/index.qmd). Where our own
+agent-like actions lead to bad outcomes in Society...
+
+Always?
+
+Not if we...choose to copy others but wisely !!
+
+Let us play **The Parable of the Polygons** <https://ncase.me/polygons/>
+
+{{< html https://ncase.me/polygons/ >}}
+
+The Parable of the Polygons was created by [Vi Hart](https://twitter.com/vihartvihart) and [Nicky Case](https://twitter.com/ncasenmare) in order to demonstrate how small individual biases can have large societal consequences in terms of segregation. This project is based on the work of Thomas Schelling's [Dynamic Models of Segregation](https://www.stat.berkeley.edu/%7Ealdous/157/Papers/Schelling_Seg_Models.pdf).
+
+### Another Dark Side of...
+
+Why are Petrol Stations located next to each other? Here is the
+**Hotelling's Phenomenon**, explained.\
+
+::: {}
+<center>
+{{< video https://www.youtube.com/embed/u4cKzGj58q4 width="560" height="400" align="center" title="">}}
+Hotelling's Phenomenon, revisited
+</center>
+:::
+
+## Vaccinations: For or Against?
+
+If there are nasty Rumours *in circulation*, then it is well to be **vaccinated against** them. But if there are good news stories, or even ***brands***, or ***cultural trends***, one needs to be in with the group. (*Can you see costs lurking in here?*)
+
+What are the effects of vaccinations? How can one be *intellectually vaccinated*, and when needed *physiologically vaccinated*?
+
+{{< html https://www.complexity-explorables.org/explorables/epidemonic/ >}}
+
+And of course, there is Nicky Case again!
+
+{{< html https://ncase.me/crowds/ >}}
+
+### Discussion Questions
+
+-   So how does one *scotch/stop* a rumour? Can you [**be
+    vaccinated** against
+    rumours](https://www.complexity-explorables.org/explorables/epidemonic/)?
+    Is there a game-theoretic cost for the vaccination?
+-   How does one be *individual and different* and still *one of the
+    gang*? Is it possible [to be inside and outside the group]{.black .bg-washed-red} at the same time? Is it a good idea [to be an insider and an outsider at the same
+    time?](https://www.beyondintractability.org/essay/insider-partial)
+- How do [Echo Chambers](https://www.complexity-explorables.org/explorables/echo-chambers/) work?
+-   (VCSB folks) How does one think of products and ads, or policy messages? (Remember the ["Bell Bajaao" campaign?](https://youtu.be/zmNz0cTcxFU)
+-   There are popular and well-known phrases and ***memes*** in every
+    language! Use them in Design!!
+- Does a meme automatically create a community?
+-   Did you notice a famous Srishti mathematical meme at the end of the Nicky Case Interactive?
+
+
+## Conclusions
+
+-   Individual Actions Matter. Because they can be "reverse infections" **and** be contagious, in a positive way.
+-   Correlations between Individual Actions can create *"standing waves"* or "resonances" on the fabric of society.
+    -   Whatsapp "echo chambers"
+    -   Popularity of Memes, Songs, and Movie lines
+    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
+- When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
+- And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
+
+
+## Viral Trends...With a Song?
+
+A Song that is all about Network Effects !!!
+
+Song: Kuchh Toh Log Kahenge\
+Singer: Kishore Kumar\
+Music: R. D. Burman\
+Film: Amar Prem (1972)\
+
+::: {}
+<center>
+{{< video https://youtu.be/X6q7BVZXOUU?list=RDX6q7BVZXOUU width="640" height="400" align="center" title="" >}}
+Network Effects on Reputations!
+</center>
+:::
+
+::: {style="text-align: center; font-size: 0.75em;"}
+| Hindi Lyrics | English Translation |
+|-----------------------------|-------------------------------------------|
+| Kuch toh log kahenge | People will say something or the other |
+| Logon ka kaam hai kehna | It's the job of people to say something |
+| Chhodo bekaar ki baaton mein | Forget all these useless things |
+| Kahin beet na jaaye raina | Or else our night will end just around them |
+| Kuch toh log kahenge | People will say something or the other |
+| ------ | ------- |
+| Kuch reet jagat ki aisi hai(2) | Some traditions of the world are such that |
+| Har ek subah ki shaam huyi(2) | Every morning has had an evening |
+| Tu kaun hai, tera naam hai kya | Who are you and what's your name |
+| Sita bhi yahan badnaam huyi | Even Goddess Sita has been defamed here |
+| Phir kyun sansaar ki baaton se | Then why with these conversations of the world |
+| Bheeg gaye tere naina | Have your eyes become bedewed |
+| Kuch toh log kahenge | People will say something or the other |
+| ---------- | ------------ |
+| Humko joh taane dete hai(2) | Those who taunt us saying that |
+| Hum khoye hai in rangraliyon mein(2) | We're lost in this debauchery |
+| Humne unko bhi chup chupke | Secretly I've also seen them |
+| Aate dekha in galiyon mein | Coming in these streets |
+| Yeh sach hai jhoothi baat nahi | This is the truth and not a lie |
+| Tum bolo yeh sach hai na | You tell me, isn't this the truth? |
+| Kuch toh log kahenge | People will say something or the other |
+| ... | ... |
+:::
+
+<br>
+
+
+
+## References
+
+1. Thomas Schelling.*Dynamic Models of Segregation*. <https://www.stat.berkeley.edu/~aldous/157/Papers/Schelling_Seg_Models.pdf>
+1.  Henderson, Ron. 12 June 2022. *Luxury Beliefs are Status Symbols:
+    The struggle for distinction*.
+    <https://www.robkhenderson.com/p/status-symbols-and-the-struggle-for?utm_campaign=post&utm_medium=web>. Accessed 07 Jan 2024.
+<center>
+<br>
+{{< video https://www.youtube.com/embed/ck7Krz7QcxU?si=sa8XolhDe9GSkD7q width="560" height="400" align="center" title="" >}}
+Rob Henderson's Idea of "Luxury Beliefs"
+</center>
+
+2.  The Network Effects Bible. <https://www.nfx.com/post/network-effects-bible>
+3.  Mitchell Resnick. *Beyond the Centralized Mindset*. <https://web.media.mit.edu/~mres/papers/JLS/JLS-1.0.html>
+4.  Thomas W. Valente.(2012). *Network Interventions*. Science(337) 49.
+    Available here <https://sci-hub.se/10.1126/science.1217330>. The term “network interventions” describes the process of using social network data to accelerate behavior change or improve organizational performance. In this Review, four strategies for network interventions are described, each of which has multiple tactical alternatives.
+5.  Nicholas Christakis. (May 3, 2024). To exploit social contagion,
+    tools are needed to efficiently **identify individuals who are better
+    able to initiate cascades**. To be maximally useful, such tools should
+    be deployable without having to actually map face-to-face social
+    network interactions. [This is a paper](https://t.co/DHCKxXeGYg) that presents design tools that exploit the "Friendship Paradox" to create Social Contagion. A quick summary of the paper is available here. <https://www.science.org/doi/10.1126/science.adi5147>
+6. David Pinsoff. (Dec 2025).*Everything is Bullshit* Substack. <https://www.everythingisbullshit.blog/p/a-big-misunderstanding>
+7. fee.org.(Wednesday, September 19, 2018
+)*How Can Game Theory Prevent Disease Outbreaks.*<https://fee.org/articles/how-game-theory-can-help-prevent-disease-outbreaks/> 
+
+
+### Appendix
+
+#### What was that "Standing Wave" thingy?
+
+Here is an explanation of how echoes create standing waves that can metaphorically be used to depict viral trends in society.
+
+In physics, we have a phenomenon called "Standing Waves" or "Resonance". We have an metallic enclosure, into which we unleash an electromagnetic wave (never mind how!). If the dimensions of the enclosure are an integer-multiple of the half-wavelength ( whoa!), then there will always be fixed positions of maxima and minima of the wave. 
+
+OK, here is where I begin to mix metaphors! 
+
+Assume we lauch a wave-rumour heading towards the right. It takes some time to cover the distance to the far end. At the far end of the box, there's someone else who *echoes* the same rumour and creates a counter-propagating wave-rumour in the opposite direction. These add **constructively** together ( since the dimensions/propagation time permit it ) and create the standing pattern.
+
+Think of it as ripples on the water that never move! They are in the same place !
+
+Why does it vary up and down? Why can't it just stand? Well, for the metaphor to work, you need wave propagation. For wave-propagation you need an AC field, not DC. Sure you don't want an engineering electromagnetics class, with [Mr. Maxwell](https://www.geeksforgeeks.org/electronics-engineering/maxwells-equation/)?
+
+The reason is that the enclosure echoes/reflects the wave
+
+So, when in a chamber, don't reflect, just absorb. That's being vaccinated. 
+
+```{r}
+#| label: standing-wave
+#| echo: false
+#| eval: false
+#| 
+library(tidyverse)
+library(gganimate)
+
+A <- 1
+L <- 1
+n <- 3
+omega <- 2*pi
+x <- seq(0, L, length.out = 500)
+times <- seq(0, 2*pi, length.out = 120)
+
+df <- expand_grid(x = x, t = times) |>
+  mutate(y = A * sin(n * pi * x / L) * cos(omega * t))
+
+p <- ggplot(df, aes(x, y)) +
+  geom_line(linewidth = 1.2, color = "#2C7FB8") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray60") +
+  coord_cartesian(ylim = c(-1.2, 1.2)) +
+  labs(
+    x = "Position",
+    y = "Displacement",
+    title = "Standing wave, harmonic {n}",
+    subtitle = "Time = {frame_time}"
+  ) +
+  theme_minimal(base_size = 14)
+
+anim <- p +
+  transition_time(t) +
+  ease_aes("linear")
+
+animate(anim, fps = 30, width = 900, height = 500)
+anim_save("./images/standing_waves.gif", animation = anim, width = 640, height = 400)
+
+```
+```{r}
+#| label: fig-standing-wave
+#| echo: false
+#| fig-cap: Standing Waves
+#| 
+
+knitr::include_graphics("./images/standing_waves.gif")
+
+```
+

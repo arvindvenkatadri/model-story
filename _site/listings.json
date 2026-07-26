@@ -6,30 +6,71 @@
     ]
   },
   {
+    "listing": "/content/courses/ModelStory/Modules/40-Chance/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/40-Chance/100-Randomness/index.html",
+      "/content/courses/ModelStory/Modules/40-Chance/110-Mangoes/index.html",
+      "/content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/10-Games/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/10-Games/10-Company-Heroes/index.html",
+      "/content/courses/ModelStory/Modules/10-Games/20-Strategies-in-PD/index.html",
+      "/content/courses/ModelStory/Modules/10-Games/30-Coordinated-Games/index.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/20-Networks/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html",
+      "/content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html",
+      "/content/courses/ModelStory/Modules/20-Networks/60-NetworksKeyConcepts/index.html",
+      "/content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/70-Chaos/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
+      "/content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html"
+    ]
+  },
+  {
     "listing": "/content/courses/ModelStory/listing.html",
     "items": [
-      "/content/courses/ModelStory/Modules/10-Company-Heroes/index.html",
-      "/content/courses/ModelStory/Modules/20-Strategies-in-PD/index.html",
-      "/content/courses/ModelStory/Modules/30-Coordinated-Games/index.html",
-      "/content/courses/ModelStory/Modules/40-Networks/index.html",
-      "/content/courses/ModelStory/Modules/50-Rumours-Biases-ViralTrends/index.html",
-      "/content/courses/ModelStory/Modules/60-NetworksKeyConcepts/index.html",
-      "/content/courses/ModelStory/Modules/70-UsingNetworks4Design/index.html",
-      "/content/courses/ModelStory/Modules/80-Proximity/index.html",
-      "/content/courses/ModelStory/Modules/90-Voronoi/index.html",
-      "/content/courses/ModelStory/Modules/100-Randomness/index.html",
-      "/content/courses/ModelStory/Modules/110-Mangoes/index.html",
-      "/content/courses/ModelStory/Modules/120-StillMoreRandomness/index.html",
-      "/content/courses/ModelStory/Modules/130-ClassificationNarasimha/index.html",
-      "/content/courses/ModelStory/Modules/140-SushiClustering/index.html",
-      "/content/courses/ModelStory/Modules/150-LegallyRegression/index.html",
-      "/content/courses/ModelStory/Modules/220-Sound/index.html",
-      "/content/courses/ModelStory/Modules/250-The-Road-Not-Taken/index.html",
-      "/content/courses/ModelStory/Modules/300-Symmetry/index.html",
-      "/content/courses/ModelStory/Modules/320-Fractals/index.html",
-      "/content/courses/ModelStory/Modules/330-L-Systems/index.html",
-      "/content/courses/ModelStory/Modules/500-Resources/index.html",
-      "/content/courses/ModelStory/Modules/1000-Projects/index.html"
+      "/content/courses/ModelStory/Modules/1000-Projects/index.html",
+      "/content/courses/ModelStory/Modules/5000-Resources/index.html",
+      "/content/courses/ModelStory/Modules/10-Games/listing.html",
+      "/content/courses/ModelStory/Modules/20-Networks/listing.html",
+      "/content/courses/ModelStory/Modules/30-Proximity/listing.html",
+      "/content/courses/ModelStory/Modules/40-Chance/listing.html",
+      "/content/courses/ModelStory/Modules/50-ML/listing.html",
+      "/content/courses/ModelStory/Modules/60-Symmetry/listing.html",
+      "/content/courses/ModelStory/Modules/70-Chaos/listing.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/60-Symmetry/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html",
+      "/content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/30-Proximity/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html",
+      "/content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html"
+    ]
+  },
+  {
+    "listing": "/content/courses/ModelStory/Modules/50-ML/listing.html",
+    "items": [
+      "/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html",
+      "/content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html",
+      "/content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html"
     ]
   }
 ]

@@ -1,0 +1,91 @@
+---
+title: "Chaos Games"
+subtitle: "Being Reasonably Ugly, most times"
+order: 320
+date: 20/July/2026
+date-modified: today
+categories:
+  - Symmetry
+  - Randomness
+  - Metaphor
+
+---
+
+## Introduction
+
+TBWU: The coast line of Britain ( Lewis Fry Richardson)
+
+Let us understand the ideas of `roughness`, `fractality`, and even `dimension` from the late great Benoit Mandelbrot. 
+TED Talk: Benoit Mandelbrot. [**Fractals and the Art of Roughness.**](https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en)
+
+::: {.fig-roughness}
+<div style="max-width:1024px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness" width="1024px" height="576px" title="Fractals and the art of roughness" style="position:absolute;left:0;top:0;width:100%;height:100%"  frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen onload="window.parent.postMessage('iframeLoaded', 'https://embed.ted.com')"></iframe></div></div>
+
+The Art of Roughness
+:::
+
+
+
+
+### Sierpinski Game
+
+- Mathigon link
+- Geogebra embed
+- Hand-made
+
+### Koch Snowflake
+
+- Definitely hand made
+
+
+### Make your own fractal
+
+- Elbow-binding exercise
+- Look up fractal handbook (TBWU)
+
+## Mixing Randomness and Symmetry
+
+**Yes, there are many real-world phenomena where randomness, combined with simple underlying rules or constraints, produces symmetry, fairness, usefulness, or beauty.** This mirrors the Sierpinski triangle chaos game, where repeatedly selecting a random vertex and moving halfway toward it (a stochastic process with deterministic rules) yields a highly structured, self-similar fractal pattern.
+
+### Statistical and Physical Examples: Order from Random Motion
+- **Galton board (quincunx)**: This is one of the closest mechanical analogies. Balls drop randomly left or right at each peg (like coin flips). With enough balls, they form a symmetric **bell curve** (normal/Gaussian distribution) at the bottom, illustrating the **Central Limit Theorem**. Individual paths are unpredictable and random, but the aggregate is beautifully ordered and predictable. This demonstrates how randomness averages out into symmetry and is foundational to statistics, error analysis, and quality control.
+
+- **Crystal formation and snowflakes**: Atoms or molecules jiggle randomly due to thermal motion but settle into highly symmetric lattice structures because of energy minimization and physical laws. Snowflakes exhibit intricate hexagonal symmetry emerging from random diffusion and attachment of water molecules in the atmosphere—chaos seeding beauty.
+
+- **Brownian motion and diffusion-limited aggregation**: Random particle walks can produce fractal-like structures (e.g., in electrodeposition or mineral growth) that are complex yet patterned. Viscous fingering (e.g., paint between plates) generates fractal patterns from random instabilities.
+
+These show how microscopic randomness, constrained by physics, leads to macroscopic order and utility (e.g., strong crystal materials).
+
+### Biological and Natural Patterns
+- **Fractals in nature**: Trees, river networks, blood vessels, lungs, coastlines, and lightning often exhibit self-similar branching patterns. These arise from growth processes involving randomness (e.g., resource competition, diffusion) optimized by evolutionary or physical pressures for efficiency (maximizing surface area or flow). They look "random" up close but reveal beautiful, functional symmetry at multiple scales.
+
+- **Phyllotaxis** (leaf/seed arrangement in plants): Seeds in sunflowers or pinecones follow near-random placement that resolves into Fibonacci spirals. This optimizes packing and light exposure through simple local rules, producing striking mathematical beauty.
+
+Self-organization in systems like clouds, termite mounds, or flocking birds also turns local random interactions into global coherent patterns.
+
+### Human and Societal Contexts: Fairness and Usefulness
+- **Law of Large Numbers and markets/democracy**: Individual decisions (votes, purchases, investments) are often somewhat random or biased, but aggregated over many people, they can produce surprisingly efficient or representative outcomes. Stock markets approximate efficient pricing through countless "random" trades; polling averages out noise into reliable signals. Randomness helps cancel biases, leading to collective "fairness" or robustness.
+
+- **Randomized algorithms and fair lotteries**: In computer science, injecting randomness (e.g., in quicksort pivots or Monte Carlo simulations) often yields faster, more reliable results than deterministic alternatives. Lotteries or random jury selection aim for fairness by removing human bias.
+
+- **Generative art**: Artists like Jackson Pollock (drip paintings with fractal qualities) or modern algorithmic artists deliberately introduce randomness into rulesets. Controlled chance produces unique, aesthetically pleasing works that feel organic and emergent—beauty from chaos.
+
+### Broader Philosophical Take
+This pattern reflects **emergence** and **self-organization**: simple local rules + randomness + constraints (gravity, energy, selection pressures) often yield global order without central planning. It's why chaos theory and fractals describe so much of the universe—from quantum fluctuations seeding cosmic structure to evolution turning random mutations into adapted life.
+
+The Sierpinski chaos game isn't just a math curiosity; it's a microcosm of how the universe generates complexity and beauty from probabilistic foundations. These examples highlight a comforting truth: randomness isn't pure disorder—under the right conditions, it reliably builds structure, utility, and wonder.
+
+
+
+## References
+
+1. Stephen Wolfram. *A New Kind of Science*. <https://www.wolframscience.com/nks/> 
+1. Frame - Golubitsky: **Symmetry on Average**. Need to explore this
+
+
+::: callout-important
+### Running Java applets
+The website <https://cut-the-knot.org> uses Java applets to run some of the interactive examples. Modern browsers have dropped support for Java applets, so you may need to install a browser extension to run them. One such extension is CheerpJ Applet Runner, which allows you to run Java applets in Chrome. You can find it here:
+<https://chromewebstore.google.com/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein?pli=1>
+Install it, and pin it to your browser toolbar. When you navigate to <https://www.cut-the-knot.org/>, click the CheerpJ icon in your toolbar and select "Run Java Applet" to enable the applets on the page.
+::::
