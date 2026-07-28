@@ -92,7 +92,7 @@ plot(g)
 
 ## References
 
-
+::: {.content-hidden}
 ## Content 
 
 ***Question:*** What is the correspondence, if any, between Adjacency Matrices in Network Science, Karnaugh Maps, Cayley's Group Theory matrices, and Paulus Gerdes' symmetry matrices in Lunda geometry?
@@ -165,4 +165,5 @@ These matrices often exhibit:
 In short, they are different **representational languages** for the same underlying mathematical universe of **finite structures with symmetry and local-to-global relations**. Gerdes’ Lunda matrices are perhaps the most "visual/aesthetic" bridge, while adjacency matrices and Cayley tables are the most algebraic, and K-maps the most applied (engineering). 
 
 There is rich potential for further exploration — for example, representing Lunda symmetries as Cayley graphs or using K-map techniques on binary Lunda patterns.
+:::
 

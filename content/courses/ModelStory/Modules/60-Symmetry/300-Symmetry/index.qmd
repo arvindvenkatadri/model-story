@@ -10,6 +10,8 @@ categories:
 - Canonical Operations
 - "Point of View"
 order: 300
+draft: true
+
 ---
 <br>
 
@@ -111,6 +113,8 @@ And add *randomness* to the mix?
 1. Anagram Algebra. <https://matthematics.com/redoak/sec_anagrammer.html>
 1. 
 
+::: {.content-hidden}
+
 ## Additional Material to be Cleaned Up!!
 
 In tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in *balanced* symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape. 
@@ -208,6 +212,8 @@ This directly parallels:
 This creates a nice progression: **Anagrams (permutations) → Group Theory (abstract symmetry) → Network Automorphisms (applied to real-world graphs and games)**. It shows how the same mathematical tools unify linguistics, chemistry, and network science.
 
 If you want code examples (e.g., Python with NetworkX for a small party graph), specific paper summaries, or ways to tie this to a particular aspect of your discussions, provide more details!
+:::
+
 
 
 

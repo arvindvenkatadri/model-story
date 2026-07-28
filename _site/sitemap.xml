@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/about.html</loc>
-    <lastmod>2025-07-30T01:14:03.169Z</lastmod>
+    <lastmod>2026-07-28T02:55:07.510Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/listing.html</loc>
@@ -11,10 +11,6 @@
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/Random-Forests.html</loc>
     <lastmod>2024-08-11T00:22:47.574Z</lastmod>
-  </url>
-  <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html</loc>
-    <lastmod>2026-07-26T04:56:56.117Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/1000-Projects/index.html</loc>
@@ -26,7 +22,7 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/40-Chance/listing.html</loc>
-    <lastmod>2026-07-26T01:58:23.160Z</lastmod>
+    <lastmod>2026-07-26T23:44:36.222Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.html</loc>
@@ -38,7 +34,7 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/10-Games/listing.html</loc>
-    <lastmod>2026-07-26T01:57:33.405Z</lastmod>
+    <lastmod>2026-07-26T23:42:50.867Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html</loc>
@@ -46,7 +42,7 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/20-Networks/listing.html</loc>
-    <lastmod>2026-07-26T01:57:53.890Z</lastmod>
+    <lastmod>2026-07-26T23:43:42.028Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.html</loc>
@@ -57,36 +53,20 @@
     <lastmod>2026-07-26T02:52:42.495Z</lastmod>
   </url>
   <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html</loc>
-    <lastmod>2026-07-21T00:48:48.181Z</lastmod>
-  </url>
-  <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/70-Chaos/listing.html</loc>
-    <lastmod>2026-07-26T01:58:49.048Z</lastmod>
-  </url>
-  <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html</loc>
-    <lastmod>2026-07-26T05:13:10.747Z</lastmod>
+    <lastmod>2026-07-26T23:45:40.487Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/listing.html</loc>
-    <lastmod>2026-07-26T05:07:25.743Z</lastmod>
+    <lastmod>2026-07-26T23:41:42.327Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/listing.html</loc>
-    <lastmod>2026-07-26T01:59:10.144Z</lastmod>
-  </url>
-  <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html</loc>
-    <lastmod>2026-07-26T05:10:49.882Z</lastmod>
-  </url>
-  <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html</loc>
-    <lastmod>2026-07-22T23:57:22.579Z</lastmod>
+    <lastmod>2026-07-26T23:45:18.392Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/30-Proximity/listing.html</loc>
-    <lastmod>2026-07-26T01:58:07.952Z</lastmod>
+    <lastmod>2026-07-26T23:43:56.892Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html</loc>
@@ -102,7 +82,7 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/5000-Resources/index.html</loc>
-    <lastmod>2026-07-21T00:49:19.918Z</lastmod>
+    <lastmod>2026-07-28T01:28:27.539Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/10-Games/30-Coordinated-Games/index.html</loc>
@@ -118,11 +98,7 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/listing.html</loc>
-    <lastmod>2026-07-26T01:58:35.186Z</lastmod>
-  </url>
-  <url>
-    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html</loc>
-    <lastmod>2026-07-26T04:57:15.725Z</lastmod>
+    <lastmod>2026-07-28T01:38:00.782Z</lastmod>
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html</loc>
@@ -130,6 +106,34 @@
   </url>
   <url>
     <loc>https://old-tortoise-taught-us.netlify.app/index.html</loc>
-    <lastmod>2026-07-17T03:35:09.624Z</lastmod>
+    <lastmod>2026-07-28T02:26:34.456Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html</loc>
+    <lastmod>2026-07-28T01:21:14.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html</loc>
+    <lastmod>2026-07-28T01:34:07.585Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html</loc>
+    <lastmod>2026-07-28T01:16:48.151Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html</loc>
+    <lastmod>2026-07-28T01:17:10.527Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html</loc>
+    <lastmod>2026-07-28T01:03:55.792Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html</loc>
+    <lastmod>2026-07-28T01:13:10.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://old-tortoise-taught-us.netlify.app/content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html</loc>
+    <lastmod>2026-07-28T01:14:09.921Z</lastmod>
   </url>
 </urlset>

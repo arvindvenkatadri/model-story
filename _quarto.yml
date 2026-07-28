@@ -75,7 +75,7 @@ website:
                   - content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.qmd
           
 #######################################
-              - section: "ML"
+              - section: "Information"
                 href: content/courses/ModelStory/Modules/50-ML/listing.qmd
                 contents:          
                   - content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.qmd

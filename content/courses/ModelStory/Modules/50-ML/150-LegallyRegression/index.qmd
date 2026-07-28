@@ -2,14 +2,15 @@
 title: Legally Regression
 subtitle: ""
 date: "2021-08-09"
-date-format: today
-image: featyred.jpg
+date-modified: today
+image: featured.jpg
 fig-cap: The Tight Rope Walker (Seiltänzer) (1923) by Paul Klee
 order: 150
 summary: We will look at the basic models for Linear Regression.
 tags:
 - Machine Learning
 - tidymodels
+draft: true
 
 ---
 
@@ -190,6 +191,20 @@ plot_ly() %>%
 ```
 :::
 
+
+## Data Sets
+
+
+## Interpreting Regression
+
+
+## Predicting with Regression
+
+
+## Wait, But Why?
+
+
+## Refernces
 
 
 

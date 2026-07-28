@@ -10,6 +10,9 @@ categories:
 - Siepinski
 - Mandelbrot
 - Julia
+draft: true
+
+
 ---
 
 ```{r, echo=FALSE,message=FALSE}

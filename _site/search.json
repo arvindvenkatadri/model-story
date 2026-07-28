@@ -42,123 +42,6 @@
     "text": "Iris Random Forest Model with ranger\n\nUsing the iris dataset and Random Forest Classification. This part uses rsample to split the data and the recipes to prep the data for model making.\n\n# set.seed(100)\niris_split &lt;- rsample::initial_split(iris, prop = 0.6)\niris_split\n\n&lt;Training/Testing/Total&gt;\n&lt;90/60/150&gt;\n\niris_split %&gt;%\n  training() %&gt;%\n  glimpse()\n\nRows: 90\nColumns: 5\n$ Sepal.Length &lt;dbl&gt; 5.6, 7.7, 5.5, 6.6, 4.7, 5.9, 6.7, 4.4, 5.8, 6.3, 6.3, 5.…\n$ Sepal.Width  &lt;dbl&gt; 2.5, 3.8, 3.5, 3.0, 3.2, 3.0, 3.1, 3.2, 2.6, 2.9, 2.8, 3.…\n$ Petal.Length &lt;dbl&gt; 3.9, 6.7, 1.3, 4.4, 1.6, 4.2, 4.4, 1.3, 4.0, 5.6, 5.1, 1.…\n$ Petal.Width  &lt;dbl&gt; 1.1, 2.2, 0.2, 1.4, 0.2, 1.5, 1.4, 0.2, 1.2, 1.8, 1.5, 0.…\n$ Species      &lt;fct&gt; versicolor, virginica, setosa, versicolor, setosa, versic…\n\niris_split %&gt;%\n  testing() %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.6, 5.0, 4.4, 4.8, 5.8, 5.7, 5.1, 5.7, 5.1, 4.…\n$ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.1, 3.4, 2.9, 3.4, 4.0, 4.4, 3.5, 3.8, 3.8, 3.…\n$ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.5, 1.5, 1.4, 1.6, 1.2, 1.5, 1.4, 1.7, 1.5, 1.…\n$ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.3, 0.3, 0.…\n$ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nIris Data Pre-Processing: Creating the Recipe\nThe recipes package provides an interface that specializes in data pre-processing. Within the package, the functions that start, or execute, the data transformations are named after cooking actions. That makes the interface more user-friendly. For example:\n\nrecipe() - Starts a new set of transformations to be applied, similar to the ggplot() command. Its main argument is the model’s formula.\nprep() - Executes the transformations on top of the data that is supplied (typically, the training data). Each data transformation is a step() function. ( Recall what we did with the caret package: Centering, Scaling, Removing Correlated variables…)\n\nNote that in order to avoid data leakage (e.g: transferring information from the train set into the test set), data should be “prepped” using the train_tbl only. https://towardsdatascience.com/modelling-with-tidymodels-and-parsnip-bae2c01c131c CRAN: The idea is that the preprocessing operations will all be created using the training set and then these steps will be applied to both the training and test set.\n\n# Pre Processing the Training Data\n\niris_recipe &lt;-\n  training(iris_split) %&gt;% # Note: Using TRAINING data !!\n  recipe(Species ~ .) # Note: Outcomes ~ Predictors !!\n\n# The data contained in the `data` argument need not be the training set; this data is only used to catalog the names of the variables and their types (e.g. numeric, etc.).\n\nQ: How does the recipe “figure” out which are the outcomes and which are the predictors? A.The recipe command defines Outcomes and Predictors using the formula interface. Not clear how this recipe “figures” out which are the outcomes and which are the predictors, when we have not yet specified them…\nQ. Why is the recipe not agnostic to data set? Is that a meaningful question? A. The use of the training set in the recipe command is just to declare the variables and specify the roles of the data, nothing else. Roles are open-ended and extensible. From https://cran.r-project.org/web/packages/recipes/vignettes/Simple_Example.html :\n\nThis document demonstrates some basic uses of recipes. First, some definitions are required: - variables are the original (raw) data columns in a data frame or tibble. For example, in a traditional formula Y ~ A + B + A:B, the variables are A, B, and Y. - roles define how variables will be used in the model. Examples are: predictor (independent variables), response, and case weight. This is meant to be open-ended and extensible. - terms are columns in a design matrix such as A, B, and A:B. These can be other derived entities that are grouped, such as a set of principal components or a set of columns, that define a basis function for a variable. These are synonymous with features in machine learning. Variables that have predictor roles would automatically be main effect terms.\n\n\n# Apply the transformation steps\niris_recipe &lt;- iris_recipe %&gt;%\n  step_corr(all_predictors()) %&gt;%\n  step_center(all_predictors(), -all_outcomes()) %&gt;%\n  step_scale(all_predictors(), -all_outcomes()) %&gt;%\n  prep()\n\nThis has created the recipe() and prepped it too. We now need to apply it to our datasets:\n\nTake training data and bake() it to prepare it for modelling.\nDo the same for the testing set.\n\n\niris_training_baked &lt;-\n  iris_split %&gt;%\n  training() %&gt;%\n  bake(iris_recipe, .)\niris_training_baked\n\n\n  \n\n\niris_testing_baked &lt;-\n  iris_split %&gt;%\n  testing() %&gt;%\n  bake(iris_recipe, .)\niris_testing_baked\n\n\n  \n\n\n\nIris Model Training using parsnip\n\nDifferent ML packages provide different interfaces (APIs ) to do the same thing (e.g random forests). The tidymodels package provides a consistent interface to invoke a wide variety of packages supporting a wide variety of models.\nThe parsnip package is a successor to caret.\nTo model with parsnip: 1. Pick a model : 2. Set the engine 3. Set the mode (if needed): Classification or Regression\nCheck here for models available in parsnip.\n\nMode: classification and regression in parsnip, each using a variety of models. ( Which Way). This defines the form of the output.\nEngine: The engine is the R package that is invoked by parsnip to execute the model. E.g glm, glmnet,keras.( How ) parsnip provides wrappers for models from these packages.\nModel: is the specific technique used for the modelling task. E.g linear_reg(), logistic_reg(), mars, decision_tree, nearest_neighbour…(What model).\n\nand models have: - hyperparameters: that are numerical or factor variables that tune the model ( Like the alpha beta parameters for Bayesian priors)\nWe can use the random forest model to classify the iris into species. Here Species is the Outcome variable and the rest are predictor variables. The random forest model is provided by the ranger package, to which tidymodels/parsnip provides a simple and consistent interface.\n\nlibrary(ranger)\niris_ranger &lt;-\n  rand_forest(trees = 100) %&gt;%\n  set_mode(\"classification\") %&gt;%\n  set_engine(\"ranger\") %&gt;%\n  fit(Species ~ ., data = iris_training_baked)\n\nranger can generate random forest models for classification, regression, survival( time series, time to event stuff). Extreme Forests are also supported, wherein all points in the dataset are used ( instead of bootstrap samples) along with feature bagging. We can also run the same model using the randomForest package:\n\nlibrary(randomForest, quietly = TRUE)\niris_rf &lt;-\n  rand_forest(trees = 100) %&gt;%\n  set_mode(\"classification\") %&gt;%\n  set_engine(\"randomForest\") %&gt;%\n  fit(Species ~ ., data = iris_training_baked)\n\nIris Predictions\nThe predict() function run against a parsnip model returns a prediction tibble. By default, the prediction variable is called .pred_class.\n\npredict(object = iris_ranger, new_data = iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_class  &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n$ Sepal.Length &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -1.68…\n$ Sepal.Width  &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.39396…\n$ Petal.Width  &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.251314…\n$ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setosa, s…\n\n\nIris Classification Model Validation\nWe use metrics() function from the yardstick package to evaluate how good the model is.\n\npredict(iris_ranger, iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  yardstick::metrics(truth = Species, estimate = .pred_class)\n\n\n  \n\n\n\nWe can also check the metrics for randomForest model:\n\npredict(iris_rf, iris_testing_baked) %&gt;%\n  dplyr::bind_cols(iris_testing_baked) %&gt;%\n  yardstick::metrics(truth = Species, estimate = .pred_class)\n\n\n  \n\n\n\nIris Per-Classifier Metrics\nWe can use the parameter type = \"prob\" in the predict() function to obtain a probability score on each prediction. TBD: How is this prob calculated? Possible answer: the Random Forest model outputs its answer by majority voting across n trees. Each of the possible answers( i.e. predictions) for a particular test datum gets a share of the vote, that represents its probability. Hence each dataum in the test vector can show a probability for the “winning” answer. ( Quite possibly we can get the probabilities for all possible outcomes for each test datum)\n\niris_ranger_probs &lt;-\n  predict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  dplyr::bind_cols(iris_testing_baked)\nglimpse(iris_ranger_probs)\n\nRows: 60\nColumns: 7\n$ .pred_setosa     &lt;dbl&gt; 0.996250000, 0.931075758, 0.975238095, 0.993535714, 0…\n$ .pred_versicolor &lt;dbl&gt; 0.003750000, 0.060696970, 0.023095238, 0.005464286, 0…\n$ .pred_virginica  &lt;dbl&gt; 0.000000000, 0.008227273, 0.001666667, 0.001000000, 0…\n$ Sepal.Length     &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -…\n$ Sepal.Width      &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.3…\n$ Petal.Width      &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.25…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\niris_rf_probs &lt;-\n  predict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  dplyr::bind_cols(iris_testing_baked)\nglimpse(iris_rf_probs)\n\nRows: 60\nColumns: 7\n$ .pred_setosa     &lt;dbl&gt; 1.00, 0.96, 0.98, 1.00, 0.93, 1.00, 0.67, 0.72, 1.00,…\n$ .pred_versicolor &lt;dbl&gt; 0.00, 0.03, 0.02, 0.00, 0.07, 0.00, 0.27, 0.25, 0.00,…\n$ .pred_virginica  &lt;dbl&gt; 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.06, 0.03, 0.00,…\n$ Sepal.Length     &lt;dbl&gt; -0.87694148, -1.10873218, -1.45641823, -0.99283683, -…\n$ Sepal.Width      &lt;dbl&gt; 1.04348343, -0.15439296, 0.08518232, 0.80390816, -0.3…\n$ Petal.Width      &lt;dbl&gt; -1.2513140, -1.2513140, -1.2513140, -1.2513140, -1.25…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\n# Tabulating the probabilities\nftable(iris_rf_probs$.pred_versicolor)\n\n  0 0.01 0.02 0.03 0.07 0.1 0.13 0.18 0.21 0.23 0.24 0.25 0.27 0.29 0.32 0.35 0.47 0.49 0.59 0.62 0.65 0.7 0.78 0.83 0.87 0.9 0.91 0.92 0.93 0.95 0.96 0.97 0.98 0.99\n                                                                                                                                                                     \n 13    1    3    2    1   1    3    1    2    1    2    2    2    1    1    1    1    1    1    1    1   1    1    1    1   2    2    1    2    1    1    2    2    1\n\nftable(iris_rf_probs$.pred_virginica)\n\n  0 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1 0.19 0.22 0.25 0.38 0.41 0.51 0.53 0.65 0.67 0.73 0.76 0.77 0.79 0.82 0.85 0.93 0.97 0.98  1\n                                                                                                                                                 \n 14    5    1    4    1    1    2    1    1    2   2    1    1    1    1    1    1    1    1    1    1    2    1    2    4    1    1    1    2  2\n\nftable(iris_rf_probs$.pred_setosa)\n\n  0 0.01 0.02 0.05 0.07 0.11 0.13 0.16 0.67 0.71 0.72 0.93 0.96 0.98  1\n                                                                       \n 27    4    2    5    1    1    1    1    1    1    2    1    1    2 10\n\n\n\n### Iris Classifier: Gain and ROC Curves\n\nWe can plot gain and ROC curves for each of these models\n\n\n::: {.cell}\n\n```{.r .cell-code}\niris_ranger_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 133\nColumns: 5\n$ .level          &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"set…\n$ .n              &lt;dbl&gt; 0, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 17, 18, 19…\n$ .n_events       &lt;dbl&gt; 0, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 17, 18, 18…\n$ .percent_tested &lt;dbl&gt; 0.000000, 3.333333, 6.666667, 8.333333, 10.000000, 11.…\n$ .percent_found  &lt;dbl&gt; 0.00000, 11.11111, 22.22222, 27.77778, 33.33333, 38.88…\n\niris_ranger_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\niris_ranger_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 136\nColumns: 4\n$ .level      &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\"…\n$ .threshold  &lt;dbl&gt; -Inf, 0.000000000, 0.001000000, 0.002250000, 0.004444444, …\n$ specificity &lt;dbl&gt; 0.0000000, 0.0000000, 0.2619048, 0.3571429, 0.4523810, 0.5…\n$ sensitivity &lt;dbl&gt; 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0…\n\niris_ranger_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\n:::\n\niris_rf_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 82\nColumns: 5\n$ .level          &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"set…\n$ .n              &lt;dbl&gt; 0, 10, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 27, 29,…\n$ .n_events       &lt;dbl&gt; 0, 10, 12, 13, 14, 16, 17, 18, 18, 18, 18, 18, 18, 18,…\n$ .percent_tested &lt;dbl&gt; 0.000000, 16.666667, 20.000000, 21.666667, 23.333333, …\n$ .percent_found  &lt;dbl&gt; 0.000000, 55.555556, 66.666667, 72.222222, 77.777778, …\n\niris_rf_probs %&gt;%\n  yardstick::gain_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\niris_rf_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  glimpse()\n\nRows: 85\nColumns: 4\n$ .level      &lt;chr&gt; \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\", \"setosa\"…\n$ .threshold  &lt;dbl&gt; -Inf, 0.00, 0.01, 0.02, 0.05, 0.07, 0.11, 0.13, 0.16, 0.67…\n$ specificity &lt;dbl&gt; 0.0000000, 0.0000000, 0.6428571, 0.7380952, 0.7857143, 0.9…\n$ sensitivity &lt;dbl&gt; 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0000000, 1.0…\n\niris_rf_probs %&gt;%\n  yardstick::roc_curve(Species, .pred_setosa:.pred_virginica) %&gt;%\n  autoplot()\n\n\n\n\n\n\n\nIris Classifier: Metrics\n\npredict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_setosa     &lt;dbl&gt; 0.996250000, 0.931075758, 0.975238095, 0.993535714, 0…\n$ .pred_versicolor &lt;dbl&gt; 0.003750000, 0.060696970, 0.023095238, 0.005464286, 0…\n$ .pred_virginica  &lt;dbl&gt; 0.000000000, 0.008227273, 0.001666667, 0.001000000, 0…\n$ .pred_class      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\npredict(iris_ranger, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)\n\nError in `mn_log_loss()`:\n! Can't select columns that don't exist.\n✖ Columns `...1`, `...2`, and `...3` don't exist.\n\n# And for the `randomForest`method\n\npredict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  glimpse()\n\nRows: 60\nColumns: 5\n$ .pred_setosa     &lt;dbl&gt; 1.00, 0.96, 0.98, 1.00, 0.93, 1.00, 0.67, 0.72, 1.00,…\n$ .pred_versicolor &lt;dbl&gt; 0.00, 0.03, 0.02, 0.00, 0.07, 0.00, 0.27, 0.25, 0.00,…\n$ .pred_virginica  &lt;dbl&gt; 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.06, 0.03, 0.00,…\n$ .pred_class      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n$ Species          &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, setos…\n\npredict(iris_rf, iris_testing_baked, type = \"prob\") %&gt;%\n  bind_cols(predict(iris_ranger, iris_testing_baked)) %&gt;%\n  bind_cols(select(iris_testing_baked, Species)) %&gt;%\n  yardstick::metrics(data = ., truth = Species, estimate = .pred_class, ... = .pred_setosa:.pred_virginica)\n\nError in `mn_log_loss()`:\n! Can't select columns that don't exist.\n✖ Columns `...1`, `...2`, and `...3` don't exist."
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#introduction",
-    "title": "Clustering with Sushi",
-    "section": "Introduction",
-    "text": "Introduction\nWe saw that Classification always had a target variable, which we wanted the algorithm to match, with as high an accuracy as possible.\nWhat if we don’t have a target variable? What kind of situation would that be? Would it be commonplace?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-1-sushi-anyone",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-1-sushi-anyone",
-    "title": "Clustering with Sushi",
-    "section": "Game-1: Sushi, anyone?",
-    "text": "Game-1: Sushi, anyone?\nLet us play a version of an HR game, which we will call Making Sushi. I am going to call out some “choices”, something you might want to do, or not, and you will need to move to a specific location in the room based upon your Yes/No answer.\nObservations-1\n\nOn what basis did you move?\n\nDistance/Proximity/Similarity ( “That’s me!”)\n\n\nWhat were the so-called “observations” in the data? You!!\nEach of you started in “your own cluster” and joined one as soon as you saw Proximity.\n\nContrary to what you might think, this was an example of top-down Clustering, sort of, since I was calling out (central control) the basis for cluster formation. Each Observation could move of course into any cluster, as long as it maximized the Proximity.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-2",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-2",
-    "title": "Clustering with Sushi",
-    "section": "Game-2:",
-    "text": "Game-2:\nTBD\nObservations-2\nTBD",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#so-what-is-clustering-good-for-then",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#so-what-is-clustering-good-for-then",
-    "title": "Clustering with Sushi",
-    "section": "So what is Clustering good for then?",
-    "text": "So what is Clustering good for then?\n\nClustering is used in many diverse fields.\n\ngenes -&gt; diseases; drugs -&gt; diseases\ncustomers -&gt; tastes, products\nfood -&gt; nutrients.\n\n\nThere is no target variable! Just groupings of existing data.\nNew data can also be clustered based on the groupings discovered in Clustering.\n\nSometimes we just want to mine the data: Are there any patterns, or groupings in there?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
-    "title": "Clustering with Sushi",
-    "section": "How Does one Use Proximity for Clustering?",
-    "text": "How Does one Use Proximity for Clustering?\nHere are two interactives to understand how to create clusters with training data.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#cluster-prediction-for-new-data",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#cluster-prediction-for-new-data",
-    "title": "Clustering with Sushi",
-    "section": "Cluster Prediction for New Data",
-    "text": "Cluster Prediction for New Data\nTBD: Is this classification or clustering !!!\nClick on any part of the canvas below and see how the Clustering algorithm decides the cluster for the point based on the nearest neighbours.\n\n\n\nAlgorithm to create clusters (training ):\n\nCluster Assignment\n\nSelect the number of Clusters you “need”. (Not simple!!)\nSet random start points for the clusters\nCalculate Proximity of each point to the “start points”\nAssign Cluster to each point based on highest proximity (smallest distance)\n\n\nCentroid Update\n\nAha! Recalculate Cluster Centers based on centroid of cluster.\n\n\nRepeat.\n\nTo predict:\n\nSimply calculate distance to the k nearest neighbours\n\nTake majority vote based on their cluster identification",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#clustering-using-orange",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#clustering-using-orange",
-    "title": "Clustering with Sushi",
-    "section": "Clustering Using Orange",
-    "text": "Clustering Using Orange\nLet us first do this interactively! Fire up Orange Data Mining and open this file. Interactive k-Means",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#conclusion",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#conclusion",
-    "title": "Clustering with Sushi",
-    "section": "Conclusion",
-    "text": "Conclusion",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#references",
-    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#references",
-    "title": "Clustering with Sushi",
-    "section": "References",
-    "text": "References\n\nGao Hongnan. K-means Clustering. https://www.gaohongnan.com/influential/kmeans_clustering/02_concept.html\nK-means Cluster Analysis. UC Business Analytics R Programming Guide https://uc-r.github.io/kmeans_clustering#optimal\nThean C Lim. Clustering: k-means, k-means ++ and gganimate. https://theanlim.rbind.io/post/clustering-k-means-k-means-and-gganimate/\nhttps://www.datacamp.com/tutorial/hierarchical-clustering-R\nhttps://www.datacamp.com/tutorial/k-means-clustering-r\nMichele Coscia. 2019. Who will Cluster the Cluster Makers? https://www.michelecoscia.com/?p=1709 Accessed 12 Jan 2024.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Clustering with Sushi"
-    ]
-  },
-  {
     "objectID": "content/courses/ModelStory/Modules/1000-Projects/index.html",
     "href": "content/courses/ModelStory/Modules/1000-Projects/index.html",
     "title": "Final Week Projects",
@@ -767,71 +650,6 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html",
-    "title": "🌵 Fractals",
-    "section": "",
-    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#introduction",
-    "title": "🌵 Fractals",
-    "section": "Introduction",
-    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#a-little-just-a-little-of-maths",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#a-little-just-a-little-of-maths",
-    "title": "🌵 Fractals",
-    "section": "A Little ( just a little?) of Maths…",
-    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#wait-but-why",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#wait-but-why",
-    "title": "🌵 Fractals",
-    "section": "Wait, But Why?",
-    "text": "Wait, But Why?\nTo be Written Up.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "🌵 Fractals"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#references",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#references",
-    "title": "🌵 Fractals",
-    "section": "References",
-    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "🌵 Fractals"
-    ]
-  },
-  {
     "objectID": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
     "href": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
     "title": "Chaos",
@@ -841,84 +659,6 @@
       "Home",
       "The Model of the Story",
       "Chaos"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#so-what-is-symmetry-then",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#so-what-is-symmetry-then",
-    "title": "🕹 Creating Symmetry",
-    "section": "So, what is Symmetry, then??",
-    "text": "So, what is Symmetry, then??\nLet us define this idea once and for all:\n\nSymmetry is immunity to change.\n\nWhat?? Change?? What change??? OK, OK, here come some funky games, again!\nSymmetry Games\n\nElizabeth Barrett Browning\nInternet Anagram Server\nThe set of all possible rearrangements of n distinct letters forms the symmetric group Sₙ (the group of all permutations of n objects).\nCanonical Movements\nTBWU - Group theory is the mathematical language of symmetry. A symmetry of an object is a transformation (rotation, reflection, etc.) that leaves it looking unchanged. These transformations form a symmetry group.\nHow do these related to “points of view”?\nThe (brief) Maths of Symmetry\n\\(C_n\\) and \\(D_n\\). What is this cyclic and dihedral stuff anyhow?\nCayley",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#where-have-we-seen-symmetry-before",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#where-have-we-seen-symmetry-before",
-    "title": "🕹 Creating Symmetry",
-    "section": "Where have we seen Symmetry before?",
-    "text": "Where have we seen Symmetry before?\n\nSymmetry in Game Theory\nSymmetry in Randomness, and the Randomized Experiment\nCan Symmetry be a metaphor?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-in-space",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-in-space",
-    "title": "🕹 Creating Symmetry",
-    "section": "Symmetry in Space",
-    "text": "Symmetry in Space\n\nVector Spaces\nBasis Functions\nProjections as Shadows\nCan we detect or design for Symmetry based on the size of Projections/Shadows?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-and-asymmetry-in-ml",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-and-asymmetry-in-ml",
-    "title": "🕹 Creating Symmetry",
-    "section": "Symmetry and Asymmetry in ML",
-    "text": "Symmetry and Asymmetry in ML\n\nIs Machine Learning a way of detecting and exploiting Asymmetry in data\nIf data was symmetric, would it teach us anything?\nWhat does it mean when we say, “Data is Symmetric”?\nPCA as a set of “most-symmetric” shadows\nWhy we want to reduce data/things to symmetry and then ignore them",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#friezes-and-lattices",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#friezes-and-lattices",
-    "title": "🕹 Creating Symmetry",
-    "section": "Friezes and Lattices",
-    "text": "Friezes and Lattices\n\nSymmetry in “vanilla” geometry\nSymmetry “on average”\n\nChaos Games\nStephen Wolfram, A New Kind of Science. https://www.wolframscience.com/nks/\n\n\n\n\nHuman Desire for Symmetry — and Complaints About It\nWe crave symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.\nYet we complain about it too:\n\n\nOver-symmetry feels sterile or oppressive: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).\n\nLabyrinthine or rigid symmetry traps us: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.\n\nWe romanticize asymmetry: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of my garden.\n\nThis ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, ML models seeking isotropic residuals), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.\nDo We Have a “Gene” for Symmetry?\nNot a single “symmetry gene,” but yes, there is a strong evolved biological and psychological basis for preferring symmetry.\nEvolutionary psychology and biology link it to developmental stability and genetic quality: - Bilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments. - This preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments. - Neuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.\nIt’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.\nIn tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in balanced symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape.\nThis ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?\nMahabharata\nT. E. Brown\nElizabeth Barrett Browning",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#references",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#references",
-    "title": "🕹 Creating Symmetry",
-    "section": "References",
-    "text": "References\n\n17 Wallpaper groups. http://xahlee.info/Wallpaper_dir/c5_17WallpaperGroups.html",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Creating Symmetry"
     ]
   },
   {
@@ -970,7 +710,7 @@
     "href": "content/courses/ModelStory/listing.html#some-teasers",
     "title": "The Model of the Story",
     "section": "Some Teasers!!",
-    "text": "Some Teasers!!\n\n\nAre we all Ants?   \nDownload PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nThis century was named by Stephen Hawking as the Age of Complexity.\n\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\n\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\n\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\n\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours\n\n\n\n\n\n\nGerry Rafferty (1979). Baker Street.\n\nThat immortal sax by Raphael Ravenscroft, yes. But the lyrics, the lyrics…\n\n\n\nWinding your way down on Baker Street Light in your head and dead on your feet Well another crazy day, you’ll drink the night away And forget about everything\nThis city desert makes you feel so cold It’s got so many people but it’s got no soul And it’s taken you so long to find out you were wrong When you thought it held everything\nYou used to think that it was so easy You used to say that it was so easy But you’re tryin’, you’re tryin’ now Another year and then you’d be happy Just one more year and then you’d be happy But you’re cryin’, you’re cryin’ now\nWay down the street there’s a light in his place He opens the door, he’s got that look on his face And he asks you where you’ve been, you tell him who you’ve seen And you talk about anything\nHe’s got this dream about buyin’ some land He’s gonna give up the booze and the one night stands And then he’ll settle down, it’s a quiet little town And forget about everything\nBut you know he’ll always keep movin’ You know he’s never gonna stop movin’ ‘Cause he’s rollin’, he’s the rollin’ stone And when you wake up it’s a new mornin’ The sun is shinin’, it’s a new mornin’ But you’re going, you’re going on..",
+    "text": "Some Teasers!!\n\nAre we all Ants?   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\n 2. This century was named by Stephen Hawking as the Age of Complexity.\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours\n\n\n\n\n\n\nGerry Rafferty (1979). Baker Street.\n\nThat immortal sax by Raphael Ravenscroft, yes. But the lyrics, the lyrics…\n\n\n\nWinding your way down on Baker Street Light in your head and dead on your feet Well another crazy day, you’ll drink the night away And forget about everything\nThis city desert makes you feel so cold It’s got so many people but it’s got no soul And it’s taken you so long to find out you were wrong When you thought it held everything\nYou used to think that it was so easy You used to say that it was so easy But you’re tryin’, you’re tryin’ now Another year and then you’d be happy Just one more year and then you’d be happy But you’re cryin’, you’re cryin’ now\nWay down the street there’s a light in his place He opens the door, he’s got that look on his face And he asks you where you’ve been, you tell him who you’ve seen And you talk about anything\nHe’s got this dream about buyin’ some land He’s gonna give up the booze and the one night stands And then he’ll settle down, it’s a quiet little town And forget about everything\nBut you know he’ll always keep movin’ You know he’s never gonna stop movin’ ‘Cause he’s rollin’, he’s the rollin’ stone And when you wake up it’s a new mornin’ The sun is shinin’, it’s a new mornin’ But you’re going, you’re going on..",
     "crumbs": [
       "Home",
       "The Model of the Story"
@@ -992,154 +732,11 @@
     "href": "content/courses/ModelStory/Modules/60-Symmetry/listing.html",
     "title": "Symmetry",
     "section": "",
-    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n🕹 I am multi-sided and multi-lettered\n\n\nWhat Can I change today?\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n🕹 Creating Symmetry\n\n\nThe Language of Symmetry\n\n\nJul 21, 2026\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Title\nSubtitle\nDate\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
       "Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#introduction",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Introduction",
-    "text": "Introduction\nWhy did Abhimanyu have to fight alone, to the death? Why could not any one from the Pandava Army help him??\nWhat are the finger movements and gestures we use to operate our hand-held screens?\nBut why are these two questions here, side-by-side??",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#two-cultural-memories",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#two-cultural-memories",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Two Cultural Memories",
-    "text": "Two Cultural Memories\nLet us consider two very widely “separated” cultural ideas: the Chakrayuha from the Mahabharata, and the poem My Garden by T.E. Brown. Both are about symmetry, but in very different ways. And then we might Count the Ways they are different, using Elizabeth Barrett Browning’s famous sonnet titled (TBD)(Sonnets from the Portuguese).\nThe Chakravyuha from the Mahabharata\nIn the Mahabharata, there is the story of Abhimanyu, the son of Subhadra and Arjuna, who learnt (when in his mother’s womb) about how to penetrate a military battle formation called the Chakravyuha or Padmavyuha:\n\nThe Padmavyūha is a multi-tiered defensive formation that looks like a blooming lotus (पद्म padma) or disc (चक्र chakra) when viewed from above[^1].The warriors at each interleaving position would be in an increasingly tough position to fight against. The formation was used in the battle of Kurukshetra by Dronacharya.\n\nThe formation has rotational symmetry (spinning chakra) and layered, self-similar structure. From afar or in motion, it may appear uniform or disorienting - hard to assign a fixed “direction” or path. Mirroring or rotating the view would preserve its threatening appearance.\nMy Garden by Thomas Brown\nT.E. Brown’s short poem My Garden (often called “A Garden is a Lovesome Thing, God Wot!”) celebrates the garden as an ordered, harmonious space infused with divine presence:\n\nA garden is a lovesome thing, God wot!\nRose plot,\nFringed pool,\nFerned grot—\nThe veriest school\nOf peace; and yet the fool\nContends that God is not—\nNot God! in gardens! when the eve is cool?\nNay, but I have a sign;\n’Tis very sure God walks in mine.\n\nThe poem portrays the garden as a microcosm of beauty, peace, and symmetry: neatly plotted roses, a bordered pool, a fern-filled grotto — structured, balanced, and inviting. This human-imposed (or cultivated) order becomes a “school of peace” and evidence of the divine.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-1",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-1",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Discussion-1",
-    "text": "Discussion-1\n\nThe Chakravyuha is a dynamic, martial symmetry: a rotating, multi-layered lotus/wheel formation of warriors with concentric rings, synchronized movement, and strategic balance.\nIts symmetry serves entrapment and defense — ordered, patterned, and cyclic, yet labyrinthine and disorienting to outsiders.\nThe Chakravyuha deploys rotational and hierarchical symmetry for strategic dominance and psychological dominance.\nLike the garden, it represents imposed human order and beauty (from the commander’s aerial view, a perfect chakra/lotus), but from the intruder’s perspective, it is a trap of deceptive harmony.\nBrown’s garden uses static, nurturing symmetry (plots, fringes, balance) to create peace and to reveal God to the poet.\n\nIn both, symmetry is not accidental — it is designed.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-2",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-2",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Discussion-2",
-    "text": "Discussion-2\n\nDid you get a sense of a varying “Point of View” in the two examples? Which words suggested a varying stance on part of the viewer (you) ?\nCan a Chakravyuha be uniform and disorienting at the same time? How does it achieve this duality?\nWhat does disorienting mean?\nHow can a Chakravyuha move and still be orderly?\nHow does the static garden both inspire and potentially stultify?\n\nWait, But Why?\nWe crave symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.\nYet we complain about it too:\n\n\nOver-symmetry feels sterile or oppressive: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).\n\nLabyrinthine or rigid symmetry traps us: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.\n\nWe romanticize asymmetry: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of my garden.\n\nThis ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, and….in ML models seeking isotropic residuals!!), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.\nDo We Have a “Gene” for Symmetry?\nNot a single “symmetry gene,” but yes, there is a strong evolved biological and psychological basis for preferring symmetry. Evolutionary psychology and biology link it to developmental stability and genetic quality:\n\nBilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments.\nThis preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments.\nNeuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.\n\nIt’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.\nWe will next get into the uh, maths of symmetry and see where that fits into Art and Design!\nAnd add randomness to the mix?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#references",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#references",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "References",
-    "text": "References\n\nAnagram Algebra. https://matthematics.com/redoak/sec_anagrammer.html",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#additional-material-to-be-cleaned-up",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#additional-material-to-be-cleaned-up",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Additional Material to be Cleaned Up!!",
-    "text": "Additional Material to be Cleaned Up!!\nIn tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in balanced symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape.\nThis ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?\nMahabharata\nT. E. Brown\nAnagrams\nAnagrams link to symmetry in science primarily through mathematics—specifically permutations, group theory, and combinatorics—which underpin symmetry concepts across physics, chemistry, and biology.\n1. Anagrams as Permutations (The Fundamental Math Link)\nAn anagram rearranges the letters of a word or phrase. This is exactly a permutation—a reordering of a finite set of elements (letters).\n\nThe set of all possible rearrangements of n distinct letters forms the symmetric group Sₙ (the group of all permutations of n objects).\nGroup theory is the mathematical language of symmetry. A symmetry of an object is a transformation (rotation, reflection, etc.) that leaves it looking unchanged. These transformations form a symmetry group.\n\nExample: For the word “ABC” (3 distinct letters), there are 3! = 6 permutations (anagrams, including itself): ABC, ACB, BAC, BCA, CAB, CBA. These form the symmetric group S₃, which is also the symmetry group of an equilateral triangle (rotations and reflections).\nThis connection is taught in some algebra contexts as “anagram algebra,” where generating anagrams illustrates group operations (composition of permutations, inverses, identity).\n2. Symmetry in Science and How Anagrams/ Permutations Relate\nSymmetry in science means invariance under transformations. Permutation ideas from anagrams help model or analyze this:\n\n\nChemistry & Crystallography (Molecular/Point Group Symmetry): Molecules are classified by symmetry groups (point groups like C₂ᵥ, D₆ₕ). These groups consist of symmetry operations (rotations, reflections, inversions) that map atoms to equivalent positions—essentially permuting the atoms while leaving the molecule “the same.”\n\nTools like character tables (from group theory) predict properties such as vibrational modes, IR/Raman activity, or orbital symmetries.\nAnalogy: Just as not every letter rearrangement makes a meaningful word (only specific permutations “work”), only certain permutations of atomic positions preserve molecular symmetry.\n\n\nPhysics (Noether’s Theorem and Fundamental Symmetries): Continuous symmetries (e.g., rotational symmetry in space) correspond to conserved quantities (angular momentum). Discrete symmetries and permutation symmetries appear in particle physics (e.g., identical particle statistics for bosons/fermions rely on permutation symmetry of wavefunctions).\nBiology: Bilateral symmetry in organisms (left-right mirror images) or radial symmetry can be thought of in terms of invariant transformations. Evolutionary or developmental biology sometimes uses symmetry-breaking concepts, where small perturbations break perfect symmetry.\n\nSpecial Cases with Visual/Linguistic Symmetry:\n\n\nPalindromes: A subset of anagrams with reflection symmetry (reads the same forwards and backwards, like “radar”). These illustrate one-dimensional mirror symmetry.\n\nAmbigram: Words designed to look the same under rotation or reflection—graphic symmetry combining anagram-like letter play with visual invariance.\n\nStar anagrams: Advanced rearrangements with geometric symmetry properties in how letters connect when drawn as polygons.\n\n\n3. Practical Ways to Explore/Link Them\n\n\nEducational Activity: Take a molecule like water (H₂O, bent, C₂ᵥ symmetry). Label atoms and explore permutations that preserve the structure (e.g., swapping the two H atoms). This mirrors finding valid “symmetric anagrams.”\n\nProgramming/Math Tools: Use Python (itertools.permutations for anagrams) or group theory software (GAP, SageMath) to generate permutations and compare to symmetry groups.\n\nTeaching Aid: Use anagrams to introduce abstract algebra before diving into physical symmetries—students rearrange letters, then map that to rotating a symmetric object.\n\nIn short, anagrams provide an accessible, everyday example of permutations, which are the building blocks of the abstract groups that rigorously describe symmetry in nature and science. This bridge is strongest in math education and chemistry (via group theory applications), rather than a direct “anagrams explain physics” link. It’s a great way to make symmetry less abstract!\nIf you want examples in a specific field (e.g., quantum chemistry) or activities/code to demonstrate this, let me know.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#group-theory-and-network-science",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#group-theory-and-network-science",
-    "title": "🕹 I am multi-sided and multi-lettered",
-    "section": "Group Theory and Network Science",
-    "text": "Group Theory and Network Science\nGroup theory connects naturally to network science (including Barabási’s work) through the study of network symmetries, described by automorphism groups. This builds on the permutation/group theory ideas from anagrams while applying them to the structure and dynamics of complex networks like those illustrated in the “Cocktail Party” game.\nQuick Recap: The Barabási Cocktail Party Game/Context\nIn Barabási’s lectures and book, the cocktail party serves as an interactive model for network formation:\n\nPeople (nodes) arrive and form connections (edges) based on rules like preferential attachment (“rich-get-richer”: connect to popular people) or random linking.\nIt demonstrates emergence of scale-free networks, small-world properties, clustering, and hubs—key features in social, biological, and technological networks.\n\nThis is a hands-on way to explore the Barabási–Albert (BA) model and related dynamics.\nLinking Group Theory: Network Automorphisms as Symmetries\nA network automorphism is a permutation (rearrangement) of the nodes that preserves the edge structure—i.e., the network looks identical after the relabeling. The set of all such automorphisms forms the automorphism group of the graph, a subgroup of the full symmetric group Sₙ (where n is the number of nodes).\nThis directly parallels: - Anagrams: Permutations of letters that may (or may not) form valid words. - Molecular symmetry: Permutations of atoms that leave the molecule invariant (point groups in chemistry).\nIn network science: - Symmetry quantification: Real-world networks often have rich but imperfect symmetries. Highly symmetric networks (large automorphism groups) behave differently in terms of robustness, synchronization, controllability, and information flow. - Emergence of symmetry: Models like the BA preferential attachment can be modified to reproduce observed symmetries in real networks. Pure random or preferential models tend to produce asymmetric graphs, but adding “similar linkage patterns” or other rules leads to more symmetric structures. - Decomposition and orbits: The automorphism group partitions nodes into orbits (sets of equivalent nodes under symmetry). Hubs or peripheral nodes may belong to different orbits, affecting dynamics (e.g., which nodes are better for spreading information or controlling the network).\nApplications to Games/Models Like the Cocktail Party\n\n\nAnalyzing the Emergent Network:\n\nAfter the party game, compute (or approximate) the automorphism group of the resulting graph.\nUse tools like nauty, SageMath, or NetworkX (Python) with graph automorphism functions.\nQuestion for participants: “Which people are ‘symmetric’—indistinguishable by connections?” This reveals roles (e.g., equivalent isolates vs. equivalent hubs).\n\n\n\nSymmetry-Breaking and Dynamics:\n\nGroup theory helps study how symmetries break or emerge over time (e.g., as new guests arrive and preferential attachment kicks in).\nIn synchronization or epidemic models on networks, symmetric substructures (orbits) often synchronize together.\n\n\n\nBroader Network Science Ties:\n\n\nGraph isomorphism and equivalence: Group actions classify networks up to symmetry.\n\nSpectral graph theory: Eigenvalues of the adjacency/Laplacian matrix relate to symmetries (degenerate eigenvalues often indicate symmetry).\n\nControl and robustness: Symmetries impose constraints on controllability (some symmetric nodes are harder to control independently).\nIn Barabási’s framework: Hierarchical organization, motifs, and community structure can be refined using symmetry group decompositions.\n\n\nPractical Ways to Teach/Link This\n\n\nActivity Extension: Run the cocktail party game → build the adjacency list → use code to find automorphisms and orbits. Discuss how symmetry affects “influence” or “fairness” in the party network.\n\nMath Bridge: Start with small examples (cycle graph Cₙ has dihedral group symmetry Dₙ; complete graph Kₙ has full Sₙ). Scale up to random/scale-free graphs, which typically have trivial (small) automorphism groups unless engineered for symmetry.\n\nResearch Angle: Explore papers on “Symmetry in Complex Networks” (e.g., MacArthur et al.) that explicitly tie automorphism groups to topology and function in systems Barabási studies.\n\nThis creates a nice progression: Anagrams (permutations) → Group Theory (abstract symmetry) → Network Automorphisms (applied to real-world graphs and games). It shows how the same mathematical tools unify linguistics, chemistry, and network science.\nIf you want code examples (e.g., Python with NetworkX for a small party graph), specific paper summaries, or ways to tie this to a particular aspect of your discussions, provide more details!",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 I am multi-sided and multi-lettered"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
-    "title": "Chaos Games",
-    "section": "",
-    "text": "TBWU: The coast line of Britain ( Lewis Fry Richardson)\nLet us understand the ideas of roughness, fractality, and even dimension from the late great Benoit Mandelbrot. TED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\n\n\n\n\n\nThe Art of Roughness\n\n\n\n\nMathigon link\nGeogebra embed\nHand-made\n\n\n\n\n\nDefinitely hand made\n\n\n\n\n\nElbow-binding exercise\nLook up fractal handbook (TBWU)",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "Chaos Games"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#introduction",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#introduction",
-    "title": "Chaos Games",
-    "section": "",
-    "text": "TBWU: The coast line of Britain ( Lewis Fry Richardson)\nLet us understand the ideas of roughness, fractality, and even dimension from the late great Benoit Mandelbrot. TED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\n\n\n\n\n\nThe Art of Roughness\n\n\n\n\nMathigon link\nGeogebra embed\nHand-made\n\n\n\n\n\nDefinitely hand made\n\n\n\n\n\nElbow-binding exercise\nLook up fractal handbook (TBWU)",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "Chaos Games"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#mixing-randomness-and-symmetry",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#mixing-randomness-and-symmetry",
-    "title": "Chaos Games",
-    "section": "Mixing Randomness and Symmetry",
-    "text": "Mixing Randomness and Symmetry\nYes, there are many real-world phenomena where randomness, combined with simple underlying rules or constraints, produces symmetry, fairness, usefulness, or beauty. This mirrors the Sierpinski triangle chaos game, where repeatedly selecting a random vertex and moving halfway toward it (a stochastic process with deterministic rules) yields a highly structured, self-similar fractal pattern.\n\nStatistical and Physical Examples: Order from Random Motion\n\nGalton board (quincunx): This is one of the closest mechanical analogies. Balls drop randomly left or right at each peg (like coin flips). With enough balls, they form a symmetric bell curve (normal/Gaussian distribution) at the bottom, illustrating the Central Limit Theorem. Individual paths are unpredictable and random, but the aggregate is beautifully ordered and predictable. This demonstrates how randomness averages out into symmetry and is foundational to statistics, error analysis, and quality control.\nCrystal formation and snowflakes: Atoms or molecules jiggle randomly due to thermal motion but settle into highly symmetric lattice structures because of energy minimization and physical laws. Snowflakes exhibit intricate hexagonal symmetry emerging from random diffusion and attachment of water molecules in the atmosphere—chaos seeding beauty.\nBrownian motion and diffusion-limited aggregation: Random particle walks can produce fractal-like structures (e.g., in electrodeposition or mineral growth) that are complex yet patterned. Viscous fingering (e.g., paint between plates) generates fractal patterns from random instabilities.\n\nThese show how microscopic randomness, constrained by physics, leads to macroscopic order and utility (e.g., strong crystal materials).\n\n\nBiological and Natural Patterns\n\nFractals in nature: Trees, river networks, blood vessels, lungs, coastlines, and lightning often exhibit self-similar branching patterns. These arise from growth processes involving randomness (e.g., resource competition, diffusion) optimized by evolutionary or physical pressures for efficiency (maximizing surface area or flow). They look “random” up close but reveal beautiful, functional symmetry at multiple scales.\nPhyllotaxis (leaf/seed arrangement in plants): Seeds in sunflowers or pinecones follow near-random placement that resolves into Fibonacci spirals. This optimizes packing and light exposure through simple local rules, producing striking mathematical beauty.\n\nSelf-organization in systems like clouds, termite mounds, or flocking birds also turns local random interactions into global coherent patterns.\n\n\nHuman and Societal Contexts: Fairness and Usefulness\n\nLaw of Large Numbers and markets/democracy: Individual decisions (votes, purchases, investments) are often somewhat random or biased, but aggregated over many people, they can produce surprisingly efficient or representative outcomes. Stock markets approximate efficient pricing through countless “random” trades; polling averages out noise into reliable signals. Randomness helps cancel biases, leading to collective “fairness” or robustness.\nRandomized algorithms and fair lotteries: In computer science, injecting randomness (e.g., in quicksort pivots or Monte Carlo simulations) often yields faster, more reliable results than deterministic alternatives. Lotteries or random jury selection aim for fairness by removing human bias.\nGenerative art: Artists like Jackson Pollock (drip paintings with fractal qualities) or modern algorithmic artists deliberately introduce randomness into rulesets. Controlled chance produces unique, aesthetically pleasing works that feel organic and emergent—beauty from chaos.\n\n\n\nBroader Philosophical Take\nThis pattern reflects emergence and self-organization: simple local rules + randomness + constraints (gravity, energy, selection pressures) often yield global order without central planning. It’s why chaos theory and fractals describe so much of the universe—from quantum fluctuations seeding cosmic structure to evolution turning random mutations into adapted life.\nThe Sierpinski chaos game isn’t just a math curiosity; it’s a microcosm of how the universe generates complexity and beauty from probabilistic foundations. These examples highlight a comforting truth: randomness isn’t pure disorder—under the right conditions, it reliably builds structure, utility, and wonder.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "Chaos Games"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#references",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#references",
-    "title": "Chaos Games",
-    "section": "References",
-    "text": "References\n\nStephen Wolfram. A New Kind of Science. https://www.wolframscience.com/nks/\nFrame - Golubitsky: Symmetry on Average. Need to explore this\n\n\n\n\n\n\n\nImportantRunning Java applets\n\n\n\nThe website https://cut-the-knot.org uses Java applets to run some of the interactive examples. Modern browsers have dropped support for Java applets, so you may need to install a browser extension to run them. One such extension is CheerpJ Applet Runner, which allows you to run Java applets in Chrome. You can find it here: https://chromewebstore.google.com/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein?pli=1 Install it, and pin it to your browser toolbar. When you navigate to https://www.cut-the-knot.org/, click the CheerpJ icon in your toolbar and select “Run Java Applet” to enable the applets on the page.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Chaos",
-      "Chaos Games"
     ]
   },
   {
@@ -1434,19 +1031,6 @@
     "title": "🎶 Resources and Notes to Myself",
     "section": "References",
     "text": "References\n\nGeneral:\n\nFrancis Su, “Mathmatics for Human Flourishing”, to be published Feb 2020\n\n\nSymmetry\n\nDoris Schattschneider\nBrian Sanderson’s Page on Symmetry and Tilings\nJoe Rosen\nMarcia Ascher “Ethnomathematics”\nPaulus Gerdes\nDarrah Chavey\nJay Kappraff\nKristopher Tapp’s website and PPTs;\nRachel Wells\nWarren Weaver\nProf. Naranan’s PPTs\n\n\nFractals, Chaos and L-Systems\n\nFrame and Golubitsky\nGary William Flake\n\n\nGame Theory\n\nPresh Talwalkar, “The Joy of Game Theory”\nRobert Axelrod,” The Evolution of Cooperation”\nBrian Skyrms,” The Social Constract”\nV.S Raghunathan, “Games Indians Play”\n\n\nSound\n\nTrevor Cox\nDaniel J Levitin: The Story of the World in Six Songs\n\n\nStatistics.\n\nStephen Stigler: Seven Pillars of Statistical Wisdom\nDavid Spiegelhalter: The Art of Statistics\nDerek Rowbotham\n\n\nMachine Learning.\n\nAndriy Burkov Machine Learning in 100 Pages\n\nhttps://vas3k.com/blog/machine_learning/",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Miscellaneous",
-      "🎶 Resources and Notes to Myself"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/5000-Resources/index.html#final-course-exercises-and-projects",
-    "href": "content/courses/ModelStory/Modules/5000-Resources/index.html#final-course-exercises-and-projects",
-    "title": "🎶 Resources and Notes to Myself",
-    "section": "Final Course Exercises and Projects",
-    "text": "Final Course Exercises and Projects\nProject 1: Orchestral Manoeuvres in the Dark over Wi-Fi\nTask: Create an experience to enable multiple users to simultaneously use hand-phone gestures to create collaborative music/sound. Viewers must use dance and/or gestures holding handphones, to create music together . Each user must be able to control unique aspects of the music to create a collaborative piece each time. There must be clear opportunities and instructions for collaboration based on a Stag Hunt / Coordination Game. Tools: Software: Pure Data for sound synthesis; Android apps like Sensors2OSC for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Laptop or Raspberry Pi running PureDataIdeas from our Course: Proximity; Game Theory / Stag Hunt; Networks and GraphsResources:\n\n\nPureData Sound Synthesizer\n\n\nSensors2OSC\n\nProject 2: Living on the Ceiling\nTask: Use physical movement in the room along with smartphone sensor data to project a live Voronoi Diagram on the ceiling. (Hat tip to Anuja Gaikwad, FSP 2019-2020)\nTools: Software: Processing; Android apps for sensor data logging and sharing over WiFi `Hardware: WiFi network hotspot; Smartphones; Arduino + Wi-Fi; Makey-Makey’\nIdeas from our Course: Proximity; Schelling Points\nResources:.\n\n\nProcessing\n\n\nMesh Library for Processing\n\n\nHow to make things with Make-Makey\n\nProject 3: Nightmare at Room 307\nTask: Create strange bloodcurdling sounds based on where individuals are standing in the room. Participants need to move, perhaps be blindfolded and wear headphones / earphones.\nTools: Software: Geogebra or R/RStudio; Android apps for sensor data logging and sharing over WiFi Hardware: WiFi network hotspot; Smartphones; Arduino with Wifi; Makey-Makey for position location based on footfall\nIdeas from our Course: Proximity; Schelling Points\nResources:\n\nTheremin\nProject 4: Friends (Season 65, Episode 12)\nTask: Use this article in the Atlantic Magazine as inspiration: How friendships in Adulthood. Create a physical graph/network related installation, based on personal, or crowd-sourced, or fictitious but plausible friendship data, and show in an interactive way how these friendship networks change over time. Use our collected college network data, and inspiration from https://graphcommons.com as a starting point. Can embed electronic (lights) or computed elements ( touch ) , if desired from an aesthetic point of view or to create/enhance Viewer participation. The installation should show small changes over “time” and must be wilfully and meaningfully degradable by viewers. Water, ink, knives, or flame, rubber-bands and oil are possibilities. No acid.\nTools: Software: None specified. graphcommons.com and RStudio are possibilities. Arduino can also be used for embedding computational elements. Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Connectors and Hubs; Network Dynamics and Measures; Erdos-Renyi / Watts-Strogatz / Barabasi-Albert models; Power Laws\nProject 5: Six Degrees of Separation\nTask: Read the Skit/Play , “Six Degrees of Separation” by John Guare. Stage or show in some way, part or all of it.\nTools: Software: None specified Hardware: None specified. NO THERMOCOL.\nIdeas from our Course: Networks and Graphs; Network Dynamics",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1795,26 +1379,13 @@
   {
     "objectID": "content/courses/ModelStory/Modules/50-ML/listing.html",
     "href": "content/courses/ModelStory/Modules/50-ML/listing.html",
-    "title": "Machine Learning",
+    "title": "Information",
     "section": "",
-    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\nClassifying Narasimha\n\n\n \n\n\nAug 9, 2021\n\n\n\n\n\n\n\n\n\nClustering with Sushi\n\n\nBig in Japan!\n\n\nAug 9, 2021\n\n\n\n\n\n\n\n\n\nLegally Regression\n\n\n \n\n\nAug 9, 2021\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\nClassifying Narasimha\n\n\n \n\n\nAug 9, 2021\n\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html",
-    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html",
-    "title": "Legally Regression",
-    "section": "",
-    "text": "Introduction: Mixing Colours\nInterpolation:\n\nbetween TWO colours, both colours inclusive using a straight line between them\n\nbetween several different colours?\n\nby mixing “equal proportions” of each\n\nProportions based on “distance” from each colour\n\nOn a “plane” with these points\n\n\nSome Examples from Drama\n\nLegally Blonde:\n\n\n\n\n\nLegally Blonde\n\n\nGreek Chorus Explained:\n\n\n\n\n\nThe Greek Chorus Concept\n\n\nSutradhar in Indian Drama\n\nView webpage in full screen\n       \n      \n    \n  \nhttps://www.britannica.com/art/theater-building/Developments-in-Asia#ref463835\nDiscussion\n\nInterpolation\nExtrapolation\nCalculating the optimum  values for m and c, given x and y**, for \\(y = mx + c\\)\n\nPlaying with Orange: Paint My Data\n\n\n\n\n\n\n\nFigure 1: Painting Data for Regression\n\n\n\n\nLet us “draw inspiration” from the picture above, and see if we can replicate it. We will fire up Orange, paint some data and see if we can fit a linear regression ML model to it.\nHere is the Orange file for you to download. Open this file in Orange.\nRegression Plane\n\n\n\n\n\n\n\n\n\n\n(a) Cars and Mileage vs Weight + CC\n\n\n\n\n\n\n\n\n(b) Penguin Weight vs Flipper + Bill\n\n\n\n\nFigure 2: Interactive Regression Planes\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "ML",
-      "Legally Regression"
+      "Information"
     ]
   },
   {
@@ -1826,7 +1397,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1839,7 +1410,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1852,7 +1423,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1865,7 +1436,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1878,7 +1449,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1891,7 +1462,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1904,7 +1475,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1917,7 +1488,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1930,7 +1501,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1943,7 +1514,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1956,7 +1527,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1969,7 +1540,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1982,7 +1553,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -1995,7 +1566,7 @@
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "ML",
+      "Information",
       "Classifying Narasimha"
     ]
   },
@@ -2004,7 +1575,7 @@
     "href": "index.html",
     "title": "Arvind V.",
     "section": "",
-    "text": "I’m external Faculty at the Srishti Manipal Institute of Art and Design, and Engineering Manager at MMRFIC, both in Bangalore, INDIA, and a Certified Level #1 TRIZ Professional.\nI am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nMy teaching websites are:\nMy student portfolios are here:\nWe R Us: A R workshop; Nikhita Purohit; Diya Bijoy; Rayna Singh; Khushi Nagesh; Ananya Satish + Nishtha Raval; Sneha Manu Jacob aka SMJ; Sara Saju; and Diya Bijoy + Rayna Singh + Aanya Pandith + Naman Rajoria + Soumya Saboo.\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!"
+    "text": "I’m external Faculty at the Srishti Manipal Institute of Art and Design, and Engineering Manager at MMRFIC, both in Bangalore, INDIA, and a Certified Level #1 TRIZ Professional.\nI am passionate about working on R, Data Visualization, Complexity Science, and Creative Thinking and Problem Solving with TRIZ. On this website, I share my course materials and methods. I also blog about TRIZ and Data Science on occasion.\nMy teaching websites are:\nMy student portfolios are here:\nWe R Us: A R workshop; Nikhita Purohit; Diya Bijoy; Rayna Singh; Khushi Nagesh; Ananya Satish + Nishtha Raval; Sneha Manu Jacob aka SMJ; Sara Saju; and Diya Bijoy + Rayna Singh + Aanya Pandith + Naman Rajoria + Soumya Saboo.\nAnd here are some Visual Journals by my students:\nMridula Gopal; Varsha Venkatesh; Drashti Mehta.\nYou can find me on Twitter, or GitHub, and on LinkedIn! Feel free to reach out to me via mail too!"
   },
   {
     "objectID": "index.html#section",
@@ -2012,5 +1583,512 @@
     "title": "Arvind V.",
     "section": "",
     "text": "Start Here →"
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#introduction",
+    "title": "Clustering with Sushi",
+    "section": "Introduction",
+    "text": "Introduction\nWe saw that Classification always had a target variable, which we wanted the algorithm to match, with as high an accuracy as possible.\nWhat if we don’t have a target variable? What kind of situation would that be? Would it be commonplace?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-1-sushi-anyone",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-1-sushi-anyone",
+    "title": "Clustering with Sushi",
+    "section": "Game-1: Sushi, anyone?",
+    "text": "Game-1: Sushi, anyone?\nLet us play a version of an HR game, which we will call Making Sushi. I am going to call out some “choices”, something you might want to do, or not, and you will need to move to a specific location in the room based upon your Yes/No answer.\nObservations-1\n\nOn what basis did you move?\n\nDistance/Proximity/Similarity ( “That’s me!”)\n\n\nWhat were the so-called “observations” in the data? You!!\nEach of you started in “your own cluster” and joined one as soon as you saw Proximity.\n\nContrary to what you might think, this was an example of top-down Clustering, sort of, since I was calling out (central control) the basis for cluster formation. Each Observation could move of course into any cluster, as long as it maximized the Proximity.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-2",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#game-2",
+    "title": "Clustering with Sushi",
+    "section": "Game-2:",
+    "text": "Game-2:\nTBD\nObservations-2\nTBD",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#so-what-is-clustering-good-for-then",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#so-what-is-clustering-good-for-then",
+    "title": "Clustering with Sushi",
+    "section": "So what is Clustering good for then?",
+    "text": "So what is Clustering good for then?\n\nClustering is used in many diverse fields.\n\ngenes -&gt; diseases; drugs -&gt; diseases\ncustomers -&gt; tastes, products\nfood -&gt; nutrients.\n\n\nThere is no target variable! Just groupings of existing data.\nNew data can also be clustered based on the groupings discovered in Clustering.\n\nSometimes we just want to mine the data: Are there any patterns, or groupings in there?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#how-does-one-use-proximity-for-clustering",
+    "title": "Clustering with Sushi",
+    "section": "How Does one Use Proximity for Clustering?",
+    "text": "How Does one Use Proximity for Clustering?\nHere are two interactives to understand how to create clusters with training data.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#cluster-prediction-for-new-data",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#cluster-prediction-for-new-data",
+    "title": "Clustering with Sushi",
+    "section": "Cluster Prediction for New Data",
+    "text": "Cluster Prediction for New Data\nTBD: Is this classification or clustering !!!\nClick on any part of the canvas below and see how the Clustering algorithm decides the cluster for the point based on the nearest neighbours.\n\n\n\nAlgorithm to create clusters (training ):\n\nCluster Assignment\n\nSelect the number of Clusters you “need”. (Not simple!!)\nSet random start points for the clusters\nCalculate Proximity of each point to the “start points”\nAssign Cluster to each point based on highest proximity (smallest distance)\n\n\nCentroid Update\n\nAha! Recalculate Cluster Centers based on centroid of cluster.\n\n\nRepeat.\n\nTo predict:\n\nSimply calculate distance to the k nearest neighbours\n\nTake majority vote based on their cluster identification",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#clustering-using-orange",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#clustering-using-orange",
+    "title": "Clustering with Sushi",
+    "section": "Clustering Using Orange",
+    "text": "Clustering Using Orange\nLet us first do this interactively! Fire up Orange Data Mining and open this file. Interactive k-Means",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#conclusion",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#conclusion",
+    "title": "Clustering with Sushi",
+    "section": "Conclusion",
+    "text": "Conclusion",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#references",
+    "href": "content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html#references",
+    "title": "Clustering with Sushi",
+    "section": "References",
+    "text": "References\n\nGao Hongnan. K-means Clustering. https://www.gaohongnan.com/influential/kmeans_clustering/02_concept.html\nK-means Cluster Analysis. UC Business Analytics R Programming Guide https://uc-r.github.io/kmeans_clustering#optimal\nThean C Lim. Clustering: k-means, k-means ++ and gganimate. https://theanlim.rbind.io/post/clustering-k-means-k-means-and-gganimate/\nhttps://www.datacamp.com/tutorial/hierarchical-clustering-R\nhttps://www.datacamp.com/tutorial/k-means-clustering-r\nMichele Coscia. 2019. Who will Cluster the Cluster Makers? https://www.michelecoscia.com/?p=1709 Accessed 12 Jan 2024.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Clustering with Sushi"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html",
+    "title": "Legally Regression",
+    "section": "",
+    "text": "Interpolation:\n\nbetween TWO colours, both colours inclusive using a straight line between them\n\nbetween several different colours?\n\nby mixing “equal proportions” of each\n\nProportions based on “distance” from each colour\n\nOn a “plane” with these points",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#data-sets",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#data-sets",
+    "title": "Legally Regression",
+    "section": "Data Sets",
+    "text": "Data Sets",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#interpreting-regression",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#interpreting-regression",
+    "title": "Legally Regression",
+    "section": "Interpreting Regression",
+    "text": "Interpreting Regression",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#predicting-with-regression",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#predicting-with-regression",
+    "title": "Legally Regression",
+    "section": "Predicting with Regression",
+    "text": "Predicting with Regression",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#wait-but-why",
+    "title": "Legally Regression",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#refernces",
+    "href": "content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html#refernces",
+    "title": "Legally Regression",
+    "section": "Refernces",
+    "text": "Refernces",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Information",
+      "Legally Regression"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#introduction",
+    "title": "🕹 I am multi-sided and multi-lettered",
+    "section": "Introduction",
+    "text": "Introduction\nWhy did Abhimanyu have to fight alone, to the death? Why could not any one from the Pandava Army help him??\nWhat are the finger movements and gestures we use to operate our hand-held screens?\nBut why are these two questions here, side-by-side??",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 I am multi-sided and multi-lettered"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#two-cultural-memories",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#two-cultural-memories",
+    "title": "🕹 I am multi-sided and multi-lettered",
+    "section": "Two Cultural Memories",
+    "text": "Two Cultural Memories\nLet us consider two very widely “separated” cultural ideas: the Chakrayuha from the Mahabharata, and the poem My Garden by T.E. Brown. Both are about symmetry, but in very different ways. And then we might Count the Ways they are different, using Elizabeth Barrett Browning’s famous sonnet titled (TBD)(Sonnets from the Portuguese).\nThe Chakravyuha from the Mahabharata\nIn the Mahabharata, there is the story of Abhimanyu, the son of Subhadra and Arjuna, who learnt (when in his mother’s womb) about how to penetrate a military battle formation called the Chakravyuha or Padmavyuha:\n\nThe Padmavyūha is a multi-tiered defensive formation that looks like a blooming lotus (पद्म padma) or disc (चक्र chakra) when viewed from above[^1].The warriors at each interleaving position would be in an increasingly tough position to fight against. The formation was used in the battle of Kurukshetra by Dronacharya.\n\nThe formation has rotational symmetry (spinning chakra) and layered, self-similar structure. From afar or in motion, it may appear uniform or disorienting - hard to assign a fixed “direction” or path. Mirroring or rotating the view would preserve its threatening appearance.\nMy Garden by Thomas Brown\nT.E. Brown’s short poem My Garden (often called “A Garden is a Lovesome Thing, God Wot!”) celebrates the garden as an ordered, harmonious space infused with divine presence:\n\nA garden is a lovesome thing, God wot!\nRose plot,\nFringed pool,\nFerned grot—\nThe veriest school\nOf peace; and yet the fool\nContends that God is not—\nNot God! in gardens! when the eve is cool?\nNay, but I have a sign;\n’Tis very sure God walks in mine.\n\nThe poem portrays the garden as a microcosm of beauty, peace, and symmetry: neatly plotted roses, a bordered pool, a fern-filled grotto — structured, balanced, and inviting. This human-imposed (or cultivated) order becomes a “school of peace” and evidence of the divine.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 I am multi-sided and multi-lettered"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-1",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-1",
+    "title": "🕹 I am multi-sided and multi-lettered",
+    "section": "Discussion-1",
+    "text": "Discussion-1\n\nThe Chakravyuha is a dynamic, martial symmetry: a rotating, multi-layered lotus/wheel formation of warriors with concentric rings, synchronized movement, and strategic balance.\nIts symmetry serves entrapment and defense — ordered, patterned, and cyclic, yet labyrinthine and disorienting to outsiders.\nThe Chakravyuha deploys rotational and hierarchical symmetry for strategic dominance and psychological dominance.\nLike the garden, it represents imposed human order and beauty (from the commander’s aerial view, a perfect chakra/lotus), but from the intruder’s perspective, it is a trap of deceptive harmony.\nBrown’s garden uses static, nurturing symmetry (plots, fringes, balance) to create peace and to reveal God to the poet.\n\nIn both, symmetry is not accidental — it is designed.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 I am multi-sided and multi-lettered"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-2",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#discussion-2",
+    "title": "🕹 I am multi-sided and multi-lettered",
+    "section": "Discussion-2",
+    "text": "Discussion-2\n\nDid you get a sense of a varying “Point of View” in the two examples? Which words suggested a varying stance on part of the viewer (you) ?\nCan a Chakravyuha be uniform and disorienting at the same time? How does it achieve this duality?\nWhat does disorienting mean?\nHow can a Chakravyuha move and still be orderly?\nHow does the static garden both inspire and potentially stultify?\n\nWait, But Why?\nWe crave symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.\nYet we complain about it too:\n\n\nOver-symmetry feels sterile or oppressive: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).\n\nLabyrinthine or rigid symmetry traps us: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.\n\nWe romanticize asymmetry: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of my garden.\n\nThis ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, and….in ML models seeking isotropic residuals!!), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.\nDo We Have a “Gene” for Symmetry?\nNot a single “symmetry gene,” but yes, there is a strong evolved biological and psychological basis for preferring symmetry. Evolutionary psychology and biology link it to developmental stability and genetic quality:\n\nBilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments.\nThis preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments.\nNeuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.\n\nIt’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.\nWe will next get into the uh, maths of symmetry and see where that fits into Art and Design!\nAnd add randomness to the mix?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 I am multi-sided and multi-lettered"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#references",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html#references",
+    "title": "🕹 I am multi-sided and multi-lettered",
+    "section": "References",
+    "text": "References\n\nAnagram Algebra. https://matthematics.com/redoak/sec_anagrammer.html",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 I am multi-sided and multi-lettered"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#so-what-is-symmetry-then",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#so-what-is-symmetry-then",
+    "title": "🕹 Creating Symmetry",
+    "section": "So, what is Symmetry, then??",
+    "text": "So, what is Symmetry, then??\nLet us define this idea once and for all:\n\nSymmetry is immunity to change.\n\nWhat?? Change?? What change??? OK, OK, here come some funky games, again!\nSymmetry Games\n\nElizabeth Barrett Browning\nInternet Anagram Server\nThe set of all possible rearrangements of n distinct letters forms the symmetric group Sₙ (the group of all permutations of n objects).\nCanonical Movements\nTBWU - Group theory is the mathematical language of symmetry. A symmetry of an object is a transformation (rotation, reflection, etc.) that leaves it looking unchanged. These transformations form a symmetry group.\nHow do these related to “points of view”?\nThe (brief) Maths of Symmetry\n\\(C_n\\) and \\(D_n\\). What is this cyclic and dihedral stuff anyhow?\nCayley",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#where-have-we-seen-symmetry-before",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#where-have-we-seen-symmetry-before",
+    "title": "🕹 Creating Symmetry",
+    "section": "Where have we seen Symmetry before?",
+    "text": "Where have we seen Symmetry before?\n\nSymmetry in Game Theory\nSymmetry in Randomness, and the Randomized Experiment\nCan Symmetry be a metaphor?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-in-space",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-in-space",
+    "title": "🕹 Creating Symmetry",
+    "section": "Symmetry in Space",
+    "text": "Symmetry in Space\n\nVector Spaces\nBasis Functions\nProjections as Shadows\nCan we detect or design for Symmetry based on the size of Projections/Shadows?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-and-asymmetry-in-ml",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#symmetry-and-asymmetry-in-ml",
+    "title": "🕹 Creating Symmetry",
+    "section": "Symmetry and Asymmetry in ML",
+    "text": "Symmetry and Asymmetry in ML\n\nIs Machine Learning a way of detecting and exploiting Asymmetry in data\nIf data was symmetric, would it teach us anything?\nWhat does it mean when we say, “Data is Symmetric”?\nPCA as a set of “most-symmetric” shadows\nWhy we want to reduce data/things to symmetry and then ignore them",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#friezes-and-lattices",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#friezes-and-lattices",
+    "title": "🕹 Creating Symmetry",
+    "section": "Friezes and Lattices",
+    "text": "Friezes and Lattices\n\nSymmetry in “vanilla” geometry\nSymmetry “on average”\n\nChaos Games\nStephen Wolfram, A New Kind of Science. https://www.wolframscience.com/nks/\n\n\n\n\nHuman Desire for Symmetry — and Complaints About It\nWe crave symmetry because it signals order, predictability, health, and beauty. Formal gardens, classical architecture, balanced faces, symmetrical logos, and even Chakravyuha-like mandalas appeal to us. It reduces cognitive load (easier to process) and evokes harmony.\nYet we complain about it too:\n\n\nOver-symmetry feels sterile or oppressive: Perfectly manicured lawns or identical suburban houses can seem soulless or monotonous (“cookie-cutter”). Brown’s garden has structured plots but implies organic life within (roses blooming, evening coolness).\n\nLabyrinthine or rigid symmetry traps us: The Chakravyuha’s ordered beauty becomes a prison. In life, we resent “the daily grind,” bureaucratic routines, or overly rigid social norms — symmetric but stifling.\n\nWe romanticize asymmetry: Wild nature, creative chaos, wabi-sabi imperfection, or organic gardens often feel more alive. The poem’s “fool” misses the divine precisely because they overlook the lived, personal symmetry of my garden.\n\nThis ambivalence is deeply human. We impose symmetry for control and meaning (gardens, battle plans, ML models seeking isotropic residuals), then rebel when it becomes too perfect or confining. It mirrors the tension between order and chaos, Apollo and Dionysus.\nDo We Have a “Gene” for Symmetry?\nNot a single “symmetry gene,” but yes, there is a strong evolved biological and psychological basis for preferring symmetry.\nEvolutionary psychology and biology link it to developmental stability and genetic quality: - Bilateral symmetry in faces and bodies signals resistance to environmental stressors, parasites, mutations, and disease during development. More symmetric individuals were (on average) healthier mates in ancestral environments. - This preference is cross-cultural and appears early in infants. It extends beyond faces to objects, patterns, and environments. - Neuroscience shows symmetry detection is hard-wired in our visual system — rapid and automatic.\nIt’s not purely genetic determinism (culture, experience, and context modulate it), but an innate bias shaped by evolution, reinforced by learning. We like symmetry in mates, art, and design because our ancestors who did so had reproductive advantages. Yet our complaints arise from higher cognition: we also value novelty, creativity, and narrative complexity that perfect symmetry can suppress.\nIn tying it together: The Chakravyuha and Brown’s garden both tap this “symmetry drive.” We build them seeking order and transcendence, yet the very symmetry that attracts us can also entrap or bore us. True wisdom (or divine presence) may lie in balanced symmetry — structured enough for peace and navigation, but alive with enough asymmetry for growth and escape.\nThis ambivalence enriches both the poem and the epic: gardens and chakras are human impositions of pattern on the universe, revealing as much about our inner wiring as about the world itself. What aspect of this resonance interests you most for further exploration?\nMahabharata\nT. E. Brown\nElizabeth Barrett Browning",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#references",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html#references",
+    "title": "🕹 Creating Symmetry",
+    "section": "References",
+    "text": "References\n\n17 Wallpaper groups. http://xahlee.info/Wallpaper_dir/c5_17WallpaperGroups.html",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Creating Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What is a Matrix?",
+    "text": "What is a Matrix?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What can a Matrix Represent?",
+    "text": "What can a Matrix Represent?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What Kinds of Matrices are Useful to us?",
+    "text": "What Kinds of Matrices are Useful to us?\nAdjacency Matrix in Networks\n\n\nAdjacency matrices are a fundamental representation of networks (graphs) in network science. For an undirected graph with \\(n\\) nodes, the adjacency matrix \\(A\\) is an $ n n$ symmetric matrix where the columns and rows indicate nodes in the network: \\[A_{ij} =\n\\begin{cases}\n1 & \\text{if there is an edge between nodes } i \\text{ and } j, \\\\\n0 & \\text{otherwise}.\n\\end{cases}\\]\nFor directed graphs, \\(A\\) is generally asymmetric. For weighted graphs, \\(A_{ij}\\) holds the weight of the edge. The matrix encodes the entire topology compactly, enabling linear algebra techniques (matrix powers, decompositions, etc.) to extract insights about structure, dynamics, and function.\n\n\n\n\n   V1 V2 V3 V4\nV1  0  1  1  0\nV2  1  0  1  0\nV3  1  1  0  1\nV4  0  0  1  0",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
+    "title": "Chaos Games",
+    "section": "",
+    "text": "TBWU: The coast line of Britain ( Lewis Fry Richardson)\nLet us understand the ideas of roughness, fractality, and even dimension from the late great Benoit Mandelbrot. TED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\n\n\n\n\n\nThe Art of Roughness\n\n\n\n\nMathigon link\nGeogebra embed\nHand-made\n\n\n\n\n\nDefinitely hand made\n\n\n\n\n\nElbow-binding exercise\nLook up fractal handbook (TBWU)",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "Chaos Games"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#introduction",
+    "title": "Chaos Games",
+    "section": "",
+    "text": "TBWU: The coast line of Britain ( Lewis Fry Richardson)\nLet us understand the ideas of roughness, fractality, and even dimension from the late great Benoit Mandelbrot. TED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\n\n\n\n\n\n\n\nThe Art of Roughness\n\n\n\n\nMathigon link\nGeogebra embed\nHand-made\n\n\n\n\n\nDefinitely hand made\n\n\n\n\n\nElbow-binding exercise\nLook up fractal handbook (TBWU)",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "Chaos Games"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#mixing-randomness-and-symmetry",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#mixing-randomness-and-symmetry",
+    "title": "Chaos Games",
+    "section": "Mixing Randomness and Symmetry",
+    "text": "Mixing Randomness and Symmetry\nTBWU. Fram and Golubitsky’s paper.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "Chaos Games"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#references",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html#references",
+    "title": "Chaos Games",
+    "section": "References",
+    "text": "References\n\nStephen Wolfram. A New Kind of Science. https://www.wolframscience.com/nks/\nFrame - Golubitsky: Symmetry on Average. Need to explore this\n\n\n\n\n\n\n\nImportantRunning Java applets\n\n\n\nThe website https://cut-the-knot.org uses Java applets to run some of the interactive examples. Modern browsers have dropped support for Java applets, so you may need to install a browser extension to run them. One such extension is CheerpJ Applet Runner, which allows you to run Java applets in Chrome. You can find it here: https://chromewebstore.google.com/detail/cheerpj-applet-runner/bbmolahhldcbngedljfadjlognfaaein?pli=1 Install it, and pin it to your browser toolbar. When you navigate to https://www.cut-the-knot.org/, click the CheerpJ icon in your toolbar and select “Run Java Applet” to enable the applets on the page.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "Chaos Games"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html",
+    "title": "🌵 Fractals",
+    "section": "",
+    "text": "Photo by Mykola/Kolya Korzh on Unsplash",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#introduction",
+    "title": "🌵 Fractals",
+    "section": "Introduction",
+    "text": "Introduction\nLet us listen to the late great Benoit Mandelbrot, on the Art of Roughness.\n\n\n The Art of Roughness",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#a-little-just-a-little-of-maths",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#a-little-just-a-little-of-maths",
+    "title": "🌵 Fractals",
+    "section": "A Little ( just a little?) of Maths…",
+    "text": "A Little ( just a little?) of Maths…\nWhat am \\(i\\)?\nDude, what’s the square root of -1?? 🙀 🙀 🙀\nWhat can you do repeatedly to arrive at \\([-1, 0]\\)?\nComplex Planes\n\n\n The Complex Plane\n\n\nJulia, and Julia, and still more Julia….\n\n\n Julia, Julia, and Julia\n\n\nJewellery Shopping with Mandelbrot\nEver gone shopping for jewellery? How is the place organized? That is a good metaphor for how Mandelbrot Set is generated!!\n\n\n The Mandelbrot Set",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#wait-but-why",
+    "title": "🌵 Fractals",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?\nTo be Written Up.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "🌵 Fractals"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#references",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html#references",
+    "title": "🌵 Fractals",
+    "section": "References",
+    "text": "References\n\nMenger Sponge: https://blogs.scientificamerican.com/roots-of-unity/a-few-of-my-favorite-spaces-the-menger-sponge/\n\n\nUse XaOS to make Mandelbrot and Julia fractals.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chaos",
+      "🌵 Fractals"
+    ]
   }
 ]

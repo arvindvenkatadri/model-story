@@ -573,6 +573,7 @@ To be written up\
         Pages](http://themlbook.com/wiki/doku.php)
     -   <https://vas3k.com/blog/machine_learning/>
 
+::: {.content-hidden}
 ## Final Course Exercises and Projects
 
 ### Project 1: Orchestral Manoeuvres ~~in the Dark~~ over Wi-Fi
@@ -662,3 +663,4 @@ by John Guare. Stage or show in some way, part or all of it.
 `Hardware: None specified. NO THERMOCOL.`
 
 **Ideas from our Course:** `Networks and Graphs; Network Dynamics`
+:::

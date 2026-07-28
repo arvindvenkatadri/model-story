@@ -10,6 +10,8 @@ summary: We will look at the basic models for Clustering of Data.
 tags:
 - Machine Learning
 - Orange
+draft: true
+
 
 ---
 

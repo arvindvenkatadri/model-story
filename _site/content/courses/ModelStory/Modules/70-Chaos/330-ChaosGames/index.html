@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../../../../../../css/fira.css">
@@ -95,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -294,12 +295,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">🕹 DoE or Die with Gabbar Singh</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Throwing Stones with Hamlet and Gabbar</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ML</span></a>
+ <span class="menu-text">Information</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -344,6 +351,18 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🕹 Creating Symmetry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🕹 Measuring and Viewing Symmetry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../../content/courses/ModelStory/Modules/60-Symmetry/350-L-Systems/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🌲 Algorithmic Trees, L-Systems and Kolams</span></a>
   </div>
 </li>
       </ul>
@@ -412,13 +431,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#koch-snowflake" id="toc-koch-snowflake" class="nav-link" data-scroll-target="#koch-snowflake">Koch Snowflake</a></li>
   <li><a href="#make-your-own-fractal" id="toc-make-your-own-fractal" class="nav-link" data-scroll-target="#make-your-own-fractal">Make your own fractal</a></li>
   </ul></li>
-  <li><a href="#mixing-randomness-and-symmetry" id="toc-mixing-randomness-and-symmetry" class="nav-link" data-scroll-target="#mixing-randomness-and-symmetry">Mixing Randomness and Symmetry</a>
-  <ul class="collapse">
-  <li><a href="#statistical-and-physical-examples-order-from-random-motion" id="toc-statistical-and-physical-examples-order-from-random-motion" class="nav-link" data-scroll-target="#statistical-and-physical-examples-order-from-random-motion">Statistical and Physical Examples: Order from Random Motion</a></li>
-  <li><a href="#biological-and-natural-patterns" id="toc-biological-and-natural-patterns" class="nav-link" data-scroll-target="#biological-and-natural-patterns">Biological and Natural Patterns</a></li>
-  <li><a href="#human-and-societal-contexts-fairness-and-usefulness" id="toc-human-and-societal-contexts-fairness-and-usefulness" class="nav-link" data-scroll-target="#human-and-societal-contexts-fairness-and-usefulness">Human and Societal Contexts: Fairness and Usefulness</a></li>
-  <li><a href="#broader-philosophical-take" id="toc-broader-philosophical-take" class="nav-link" data-scroll-target="#broader-philosophical-take">Broader Philosophical Take</a></li>
-  </ul></li>
+  <li><a href="#mixing-randomness-and-symmetry" id="toc-mixing-randomness-and-symmetry" class="nav-link" data-scroll-target="#mixing-randomness-and-symmetry">Mixing Randomness and Symmetry</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
@@ -452,7 +465,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 26, 2026</p>
+      <p class="date-modified">July 28, 2026</p>
     </div>
   </div>
     
@@ -500,37 +513,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="mixing-randomness-and-symmetry" class="level2">
 <h2 class="anchored" data-anchor-id="mixing-randomness-and-symmetry">Mixing Randomness and Symmetry</h2>
-<p><strong>Yes, there are many real-world phenomena where randomness, combined with simple underlying rules or constraints, produces symmetry, fairness, usefulness, or beauty.</strong> This mirrors the Sierpinski triangle chaos game, where repeatedly selecting a random vertex and moving halfway toward it (a stochastic process with deterministic rules) yields a highly structured, self-similar fractal pattern.</p>
-<section id="statistical-and-physical-examples-order-from-random-motion" class="level3">
-<h3 class="anchored" data-anchor-id="statistical-and-physical-examples-order-from-random-motion">Statistical and Physical Examples: Order from Random Motion</h3>
-<ul>
-<li><p><strong>Galton board (quincunx)</strong>: This is one of the closest mechanical analogies. Balls drop randomly left or right at each peg (like coin flips). With enough balls, they form a symmetric <strong>bell curve</strong> (normal/Gaussian distribution) at the bottom, illustrating the <strong>Central Limit Theorem</strong>. Individual paths are unpredictable and random, but the aggregate is beautifully ordered and predictable. This demonstrates how randomness averages out into symmetry and is foundational to statistics, error analysis, and quality control.</p></li>
-<li><p><strong>Crystal formation and snowflakes</strong>: Atoms or molecules jiggle randomly due to thermal motion but settle into highly symmetric lattice structures because of energy minimization and physical laws. Snowflakes exhibit intricate hexagonal symmetry emerging from random diffusion and attachment of water molecules in the atmosphere—chaos seeding beauty.</p></li>
-<li><p><strong>Brownian motion and diffusion-limited aggregation</strong>: Random particle walks can produce fractal-like structures (e.g., in electrodeposition or mineral growth) that are complex yet patterned. Viscous fingering (e.g., paint between plates) generates fractal patterns from random instabilities.</p></li>
-</ul>
-<p>These show how microscopic randomness, constrained by physics, leads to macroscopic order and utility (e.g., strong crystal materials).</p>
-</section>
-<section id="biological-and-natural-patterns" class="level3">
-<h3 class="anchored" data-anchor-id="biological-and-natural-patterns">Biological and Natural Patterns</h3>
-<ul>
-<li><p><strong>Fractals in nature</strong>: Trees, river networks, blood vessels, lungs, coastlines, and lightning often exhibit self-similar branching patterns. These arise from growth processes involving randomness (e.g., resource competition, diffusion) optimized by evolutionary or physical pressures for efficiency (maximizing surface area or flow). They look “random” up close but reveal beautiful, functional symmetry at multiple scales.</p></li>
-<li><p><strong>Phyllotaxis</strong> (leaf/seed arrangement in plants): Seeds in sunflowers or pinecones follow near-random placement that resolves into Fibonacci spirals. This optimizes packing and light exposure through simple local rules, producing striking mathematical beauty.</p></li>
-</ul>
-<p>Self-organization in systems like clouds, termite mounds, or flocking birds also turns local random interactions into global coherent patterns.</p>
-</section>
-<section id="human-and-societal-contexts-fairness-and-usefulness" class="level3">
-<h3 class="anchored" data-anchor-id="human-and-societal-contexts-fairness-and-usefulness">Human and Societal Contexts: Fairness and Usefulness</h3>
-<ul>
-<li><p><strong>Law of Large Numbers and markets/democracy</strong>: Individual decisions (votes, purchases, investments) are often somewhat random or biased, but aggregated over many people, they can produce surprisingly efficient or representative outcomes. Stock markets approximate efficient pricing through countless “random” trades; polling averages out noise into reliable signals. Randomness helps cancel biases, leading to collective “fairness” or robustness.</p></li>
-<li><p><strong>Randomized algorithms and fair lotteries</strong>: In computer science, injecting randomness (e.g., in quicksort pivots or Monte Carlo simulations) often yields faster, more reliable results than deterministic alternatives. Lotteries or random jury selection aim for fairness by removing human bias.</p></li>
-<li><p><strong>Generative art</strong>: Artists like Jackson Pollock (drip paintings with fractal qualities) or modern algorithmic artists deliberately introduce randomness into rulesets. Controlled chance produces unique, aesthetically pleasing works that feel organic and emergent—beauty from chaos.</p></li>
-</ul>
-</section>
-<section id="broader-philosophical-take" class="level3">
-<h3 class="anchored" data-anchor-id="broader-philosophical-take">Broader Philosophical Take</h3>
-<p>This pattern reflects <strong>emergence</strong> and <strong>self-organization</strong>: simple local rules + randomness + constraints (gravity, energy, selection pressures) often yield global order without central planning. It’s why chaos theory and fractals describe so much of the universe—from quantum fluctuations seeding cosmic structure to evolution turning random mutations into adapted life.</p>
-<p>The Sierpinski chaos game isn’t just a math curiosity; it’s a microcosm of how the universe generates complexity and beauty from probabilistic foundations. These examples highlight a comforting truth: randomness isn’t pure disorder—under the right conditions, it reliably builds structure, utility, and wonder.</p>
-</section>
+<p>TBWU. Fram and Golubitsky’s paper.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>

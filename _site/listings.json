@@ -40,23 +40,20 @@
   {
     "listing": "/content/courses/ModelStory/listing.html",
     "items": [
-      "/content/courses/ModelStory/Modules/1000-Projects/index.html",
-      "/content/courses/ModelStory/Modules/5000-Resources/index.html",
       "/content/courses/ModelStory/Modules/10-Games/listing.html",
       "/content/courses/ModelStory/Modules/20-Networks/listing.html",
       "/content/courses/ModelStory/Modules/30-Proximity/listing.html",
       "/content/courses/ModelStory/Modules/40-Chance/listing.html",
       "/content/courses/ModelStory/Modules/50-ML/listing.html",
       "/content/courses/ModelStory/Modules/60-Symmetry/listing.html",
-      "/content/courses/ModelStory/Modules/70-Chaos/listing.html"
+      "/content/courses/ModelStory/Modules/70-Chaos/listing.html",
+      "/content/courses/ModelStory/Modules/1000-Projects/index.html",
+      "/content/courses/ModelStory/Modules/5000-Resources/index.html"
     ]
   },
   {
     "listing": "/content/courses/ModelStory/Modules/60-Symmetry/listing.html",
-    "items": [
-      "/content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html",
-      "/content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/content/courses/ModelStory/Modules/30-Proximity/listing.html",
@@ -68,9 +65,7 @@
   {
     "listing": "/content/courses/ModelStory/Modules/50-ML/listing.html",
     "items": [
-      "/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html",
-      "/content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html",
-      "/content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html"
+      "/content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html"
     ]
   }
 ]

@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -340,7 +340,7 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ML</span></a>
+ <span class="menu-text">Information</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -350,18 +350,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../../content/courses/ModelStory/Modules/50-ML/130-ClassificationNarasimha/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Classifying Narasimha</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/50-ML/140-SushiClustering/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clustering with Sushi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/50-ML/150-LegallyRegression/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Legally Regression</span></a>
   </div>
 </li>
       </ul>
@@ -374,20 +362,7 @@ window.Quarto = {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">
-<li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/60-Symmetry/300-Symmetry/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 I am multi-sided and multi-lettered</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🕹 Creating Symmetry</span></a>
-  </div>
-</li>
-      </ul>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 "></ul>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -397,20 +372,7 @@ window.Quarto = {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">
-<li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chaos Games</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🌵 Fractals</span></a>
-  </div>
-</li>
-      </ul>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 "></ul>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -473,7 +435,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">July 26, 2026</p>
+      <p class="date-modified">July 28, 2026</p>
     </div>
   </div>
     
@@ -594,32 +556,25 @@ window.Quarto = {
 <span class="black bg-gold"><strong><em>Why all these #&amp;%!@!#^%$ things matter in Art and Design</em></strong></span>, especially since you came here because you hated Maths in Class 8!!</li>
 </ul></section><section id="some-teasers" class="level2"><h2 class="anchored" data-anchor-id="some-teasers">Some Teasers!!</h2>
 <ol type="1">
-<li>
-<p>Are we all Ants?   </p>
-<p><a href="../../materials/pdfs/Anthill-extract.pdf" target="_blank">Download PDF File</a></p>
+<li>Are we all Ants?   <p><a href="../../materials/pdfs/Anthill-extract.pdf" target="_blank">Download PDF File</a></p>
    <object data="../../materials/pdfs/Anthill-extract.pdf" type="application/pdf" width="100%" height="600px">
     <p>Unable to display PDF file. <a href="../../materials/pdfs/Anthill-extract.pdf">Download</a> instead.</p>
   </object>
   </li>
-<li><p>This century was named by Stephen Hawking as the <a href="https://blogs.scientificamerican.com/the-curious-wavefunction/stephen-hawkings-advice-for-twenty-first-century-grads-embrace-complexity/"><strong>Age of Complexity</strong></a>.</p></li>
 </ol>
+<p><br> 2. This century was named by Stephen Hawking as the <a href="https://blogs.scientificamerican.com/the-curious-wavefunction/stephen-hawkings-advice-for-twenty-first-century-grads-embrace-complexity/"><strong>Age of Complexity</strong></a>.</p>
 <div class="pa4">
 <div class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
 <p><span class="f5 f4-m f3-l lh-copy measure mt0">A few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.</span></p>
 <p><span class="f6 ttu tracked fs-normal">— Hawking</span></p>
 </div>
 </div>
-<ol start="2" type="1">
-<li>Documentary: <a href="https://topdocumentaryfilms.com/secret-life-chaos/"><strong>The Secret Life of Chaos.</strong></a>
-</li>
-<li>TED Talk: Benoit Mandelbrot. <a href="https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en"><strong>Fractals and the Art of Roughness.</strong></a>
-</li>
-<li>
-<em>Complexity Explorables</em> : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <a href="https://www.complexity-explorables.org" class="uri">https://www.complexity-explorables.org</a>
-</li>
-<li>Santa Fe Complexity Institute’s <em>Complexity Explorer</em> (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <a href="https://www.complexityexplorer.org" class="uri">https://www.complexityexplorer.org</a>
-</li>
-<li>Siegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). <em>An Introduction to Complex Systems Science and Its Applications</em>. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See <a href="#fig-complexity" class="quarto-xref">Figure&nbsp;1</a> extracted from <a href="https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872">this paper</a>, below.</li>
+<ol start="3" type="1">
+<li><p>Documentary: <a href="https://topdocumentaryfilms.com/secret-life-chaos/"><strong>The Secret Life of Chaos.</strong></a></p></li>
+<li><p>TED Talk: Benoit Mandelbrot. <a href="https://www.ted.com/talks/benoit_mandelbrot_fractals_and_the_art_of_roughness/transcript?language=en"><strong>Fractals and the Art of Roughness.</strong></a></p></li>
+<li><p><em>Complexity Explorables</em> : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. <a href="https://www.complexity-explorables.org" class="uri">https://www.complexity-explorables.org</a></p></li>
+<li><p>Santa Fe Complexity Institute’s <em>Complexity Explorer</em> (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. <a href="https://www.complexityexplorer.org" class="uri">https://www.complexityexplorer.org</a></p></li>
+<li><p>Siegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). <em>An Introduction to Complex Systems Science and Its Applications</em>. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See <a href="#fig-complexity" class="quarto-xref">Figure&nbsp;1</a> extracted from <a href="https://onlinelibrary.wiley.com/doi/10.1155/2020/6105872">this paper</a>, below.</p></li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -633,7 +588,7 @@ Figure&nbsp;1: Complexity Phenomena and Behaviours
 </div>
 </div>
 </div>
-<ol start="7" type="1">
+<ol start="8" type="1">
 <li>
 <a href="https://jjmilt.substack.com/p/why-gerry-raffertys-lyrics-in-baker">Gerry Rafferty (1979). <em>Baker Street</em></a>.</li>
 </ol>
@@ -657,111 +612,108 @@ Figure&nbsp;1: Complexity Phenomena and Behaviours
 
 
 
-</section><div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table table-striped table-hover">
-<thead><tr>
-<th>
-Title
-</th>
-
-<th>
-Reading Time
-</th>
-
-</tr></thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1590345000000" data-listing-file-modified-sort="1783324531845" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="603" data-listing-title-sort="Final Week Projects" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/1000-Projects/index.html" class="title listing-title">Final Week Projects</a>
-</td>
-<td>
-<span class="listing-reading-time">4 min</span>
-</td>
-
-</tr>
-<tr data-index="1" data-listing-date-sort="1590345000000" data-listing-file-modified-sort="1784594959918" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="27" data-listing-word-count-sort="5327" data-listing-title-sort="🎶 Resources and Notes to Myself" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/5000-Resources/index.html" class="title listing-title">🎶 Resources and Notes to Myself</a>
-</td>
-<td>
-<span class="listing-reading-time">27 min</span>
-</td>
-
-</tr>
-<tr data-index="2" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031053405" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Games" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/10-Games/listing.html" class="title listing-title">Games</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="3" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031073890" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Networks" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/20-Networks/listing.html" class="title listing-title">Networks</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="4" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031087952" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Proximity" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/30-Proximity/listing.html" class="title listing-title">Proximity</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="5" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031103160" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Chance" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/40-Chance/listing.html" class="title listing-title">Chance</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="6" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031115186" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Machine Learning" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="title listing-title">Machine Learning</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="7" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031150144" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Symmetry" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/60-Symmetry/listing.html" class="title listing-title">Symmetry</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-<tr data-index="8" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785031129048" data-listing-date-modified-sort="1785004200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Chaos" data-listing-filename-sort="listing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../../../content/courses/ModelStory/Modules/70-Chaos/listing.html" class="title listing-title">Chaos</a>
-</td>
-<td>
-<span class="listing-reading-time">1 min</span>
-</td>
-
-</tr>
-</tbody>
-</table>
+</section><div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109370867" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/10-Games/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Games
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109422028" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/20-Networks/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Networks
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109436892" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/30-Proximity/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Proximity
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109476222" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/40-Chance/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Chance
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785202680782" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/50-ML/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Information
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109518392" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/60-Symmetry/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Symmetry
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-date-sort="1721759400000" data-listing-file-modified-sort="1785109540487" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../../../content/courses/ModelStory/Modules/70-Chaos/listing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Chaos
+</h5>
+<div class="listing-reading-time card-text text-muted">1 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-date-sort="1590345000000" data-listing-file-modified-sort="1783324531845" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="4" data-listing-word-count-sort="603">
+<a href="../../../content/courses/ModelStory/Modules/1000-Projects/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Final Week Projects
+</h5>
+<div class="listing-reading-time card-text text-muted">4 min</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-listing-date-sort="1590345000000" data-listing-file-modified-sort="1785202107539" data-listing-date-modified-sort="1785177000000" data-listing-reading-time-sort="27" data-listing-word-count-sort="5328">
+<a href="../../../content/courses/ModelStory/Modules/5000-Resources/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+🎶 Resources and Notes to Myself
+</h5>
+<div class="listing-reading-time card-text text-muted">27 min</div>
+</div>
+</div></a>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

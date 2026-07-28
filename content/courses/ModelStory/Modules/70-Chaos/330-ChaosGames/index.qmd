@@ -8,7 +8,7 @@ categories:
   - Symmetry
   - Randomness
   - Metaphor
-
+draft: true
 ---
 
 ## Introduction
@@ -44,6 +44,9 @@ The Art of Roughness
 - Look up fractal handbook (TBWU)
 
 ## Mixing Randomness and Symmetry
+TBWU. Fram and Golubitsky's paper. 
+
+::: {.content-hidden}
 
 **Yes, there are many real-world phenomena where randomness, combined with simple underlying rules or constraints, produces symmetry, fairness, usefulness, or beauty.** This mirrors the Sierpinski triangle chaos game, where repeatedly selecting a random vertex and moving halfway toward it (a stochastic process with deterministic rules) yields a highly structured, self-similar fractal pattern.
 
@@ -74,7 +77,7 @@ Self-organization in systems like clouds, termite mounds, or flocking birds also
 This pattern reflects **emergence** and **self-organization**: simple local rules + randomness + constraints (gravity, energy, selection pressures) often yield global order without central planning. It's why chaos theory and fractals describe so much of the universe—from quantum fluctuations seeding cosmic structure to evolution turning random mutations into adapted life.
 
 The Sierpinski chaos game isn't just a math curiosity; it's a microcosm of how the universe generates complexity and beauty from probabilistic foundations. These examples highlight a comforting truth: randomness isn't pure disorder—under the right conditions, it reliably builds structure, utility, and wonder.
-
+:::
 
 
 ## References
