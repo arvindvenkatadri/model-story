@@ -28,7 +28,7 @@ How can you possibly be friends with someone who **does not say** `anyways` or `
 
 Let us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask [Avni Gupta](https://www.linkedin.com/in/avni-gupta-551014267/).
 
-Should we use this instead? <https://www.drawnames.com.sg/secret-santa-generator>
+Should we use this instead? <https://www.drawnames.in/secret-santa-generator>
 
 Discussion:
 `Nodes`, `Links`, `Link Directionality`, `Connected and Disconnected Networks`
@@ -44,13 +44,6 @@ This is a game "invented" by Alberto-Laszlo Barabasi, a Network Science pioneer 
     - *Regime #2*: If the coins show *two Heads or two Tails*, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!
 4.  Make a note of your new friends initials. ("AV")
 5.  We will plot this conversation on the board. How?
-
-::: {}
-<center>
-{{< video https://vimeo.com/191074419 width="560" height="400" align="center" title="" >}}
-Connect the Dots
-</center>
-:::
 
 Discussion:
 `Random Network Mechanisms`, `Information Flow`, `Giant Component`, `Emergence`
@@ -68,24 +61,43 @@ Discussion:
 Discussion:
 `Node Degree`, `Degree Distribution`, `Heavy Tail/Scale Free`, `(Network) Configuration Model`
 
-Standard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.
+::: {.callout-note}
+## Random vs Real Networks
+Standard Erdős–Rényi random graphs produce `Poisson` `degree distributions` (most nodes have similar degrees, few extremes). Real-world networks are often `heavy-tailed` (`scale-free`), with many low-degree nodes and a few high-degree hubs.
+:::
+
 
 ### Activity-4: Hi, I am [Kevin Bacon](https://oracleofbacon.org/), SMI Foundation Batch
 
 Let us find a Keven Bacon in SMI Foundation Studies Programme!! Six
 Degrees of Separation...or of Kevin Bacon? Look at this video before you proceed!
 
-::: {}
 <center>
+::: {#fig-six-degrees}
+
 {{< video https://vimeo.com/14196818 width="560" height="400" align="center" title="" >}}
+
 Six Degrees of Separation
-</center>
+
 :::
+</center>
 
 1.  Collect friends Data from across college/class, import and plot,
     analyze and comment
-2.  Use this online tool at DataBasic.io <https://databasic.io>
-    to *Connect the Dots*, OR
+2.  Use this online tool at DataBasic.io <https://databasic.io/en_GB/connectthedots/> to *Connect the Dots*
+
+<center>
+::: {#fig-connect-the-dots}
+
+{{< video https://vimeo.com/191074419 width="560" height="400" align="center" title="" >}}
+
+Connect the Dots
+
+:::
+</center>
+
+<br>
+
 3.  Even more fun at at GraphCommons
     <https://graphcommons.com/graphs/new>
 
@@ -95,8 +107,8 @@ Discussion: `Node Degree`, `Centrality`, `Betweenness`, `Link Values or Costs`
 
 1.  Take your favourite Literary Work / TV Serial / Movie and create a Network Database for it.
 1.  How? Use conversations between pairs of individuals (`nodes`) to create links. E.g. each distinct conversation is a `link`, and the number of sentences uttered is the `weight` of the link.
-1.  Visualize it either with or without tech tools From Teach Engineering, this Activity Sheet: <https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2>. **Hah! Doing Engineering in a Design college!!**`r emoji::emoji("rofl")``r emoji::emoji("rofl")``r emoji::emoji("rofl")`
-1.  Can also use [Graph Comics](https://aviz.fr/~bbach/graphcomics/)<https://aviz.fr/~bbach/graphcomics/>
+1.  Visualize it either with or without tech tools From Teach Engineering, [this Activity Sheet:](https://www.teachengineering.org/activities/view/uno_graphtheory_lesson01_activity2). (**Hah! Doing Engineering in a Design college!!**`r emoji::emoji("rofl")``r emoji::emoji("rofl")``r emoji::emoji("rofl")`)
+1.  Can also use [Graph Comics](https://aviz.fr/~bbach/graphcomics/)
 
 Discussion:`Everything's Connected ("Old Srishti Proverb." Bah!)`, `Networks are everywhere`, `You are a node and you are a link...are you?`
 

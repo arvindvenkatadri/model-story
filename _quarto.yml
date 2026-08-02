@@ -133,7 +133,7 @@ format:
     smooth-scroll: true
     fontsize: "medium"
     theme:
-      - cosmo
+      - lumen
       - brand
     css: 
       - css/fira.css

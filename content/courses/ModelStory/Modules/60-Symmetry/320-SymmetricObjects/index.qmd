@@ -13,10 +13,9 @@ categories:
 - South India
 - Kolam
 order: 320
-draft: true
 
 ---
-<br>
+WORK IN PROGRESS !!!!
 
 ```{r}
 #| echo: false
@@ -29,6 +28,19 @@ draft: true
 knitr::include_graphics("../../../../materials/images/Guide_ Abhimanyu.jpeg")
 
 ```
+
+:::: {.pa4}
+::: {.athelas .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue}
+["Then \[the Catterpillar\] got down off the mushroom, and crawled away in the grass, merely remarking as it went, \“One side will make you grow taller, and the other side will make you grow shorter\".<br>
+\“One side of what? The other side of what?\” thought Alice to herself.<br>
+\“Of the mushroom,\” said the Caterpillar, just as if she had asked it aloud; and in another moment it was out of sight.<br>
+Alice remained looking thoughtfully at the mushroom for a minute, trying to make out which were the two sides of it; and as it was perfectly round, she found this a very difficult question. "]{.f5 .f4-m .f3-l .lh-copy .measure .mt0}
+
+[ --- Lewis Carroll, *Alice in Wonderland*]{.f6 .ttu .tracked .fs-normal}
+:::
+::::
+
+
 
 ```{r}
 #| label: setup

@@ -32,10 +32,7 @@
   },
   {
     "listing": "/content/courses/ModelStory/Modules/70-Chaos/listing.html",
-    "items": [
-      "/content/courses/ModelStory/Modules/70-Chaos/330-ChaosGames/index.html",
-      "/content/courses/ModelStory/Modules/70-Chaos/340-Fractals/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/content/courses/ModelStory/listing.html",
@@ -53,7 +50,10 @@
   },
   {
     "listing": "/content/courses/ModelStory/Modules/60-Symmetry/listing.html",
-    "items": []
+    "items": [
+      "/content/courses/ModelStory/Modules/60-Symmetry/310-SymmetryRevisited/index.html",
+      "/content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html"
+    ]
   },
   {
     "listing": "/content/courses/ModelStory/Modules/30-Proximity/listing.html",

@@ -124,18 +124,6 @@ And of course, there is Nicky Case again!
 - Does a meme automatically create a community?
 -   Did you notice a famous Srishti mathematical meme at the end of the Nicky Case Interactive?
 
-
-## Conclusions
-
--   Individual Actions Matter. Because they can be "reverse infections" **and** be contagious, in a positive way.
--   Correlations between Individual Actions can create *"standing waves"* or "resonances" on the fabric of society.
-    -   Whatsapp "echo chambers"
-    -   Popularity of Memes, Songs, and Movie lines
-    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
-- When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
-- And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
-
-
 ## Viral Trends...With a Song?
 
 A Song that is all about Network Effects !!!
@@ -155,11 +143,11 @@ Network Effects on Reputations!
 ::: {style="text-align: center; font-size: 0.75em;"}
 | Hindi Lyrics | English Translation |
 |-----------------------------|-------------------------------------------|
-| Kuch toh log kahenge | People will say something or the other |
+| Kuch toh log kahenge | People will say something or other |
 | Logon ka kaam hai kehna | It's the job of people to say something |
 | Chhodo bekaar ki baaton mein | Forget all these useless things |
 | Kahin beet na jaaye raina | Or else our night will end just around them |
-| Kuch toh log kahenge | People will say something or the other |
+| Kuch toh log kahenge | People will say something or other |
 | ------ | ------- |
 | Kuch reet jagat ki aisi hai(2) | Some traditions of the world are such that |
 | Har ek subah ki shaam huyi(2) | Every morning has had an evening |
@@ -167,7 +155,7 @@ Network Effects on Reputations!
 | Sita bhi yahan badnaam huyi | Even Goddess Sita has been defamed here |
 | Phir kyun sansaar ki baaton se | Then why with these conversations of the world |
 | Bheeg gaye tere naina | Have your eyes become bedewed |
-| Kuch toh log kahenge | People will say something or the other |
+| Kuch toh log kahenge | People will say something or other |
 | ---------- | ------------ |
 | Humko joh taane dete hai(2) | Those who taunt us saying that |
 | Hum khoye hai in rangraliyon mein(2) | We're lost in this debauchery |
@@ -175,11 +163,26 @@ Network Effects on Reputations!
 | Aate dekha in galiyon mein | Coming in these streets |
 | Yeh sach hai jhoothi baat nahi | This is the truth and not a lie |
 | Tum bolo yeh sach hai na | You tell me, isn't this the truth? |
-| Kuch toh log kahenge | People will say something or the other |
+| Kuch toh log kahenge | People will say something or other |
 | ... | ... |
 :::
 
 <br>
+
+## Viral Trends...With a Dance!
+
+<div style="max-width:1024px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/derek_sivers_how_to_start_a_movement" width="1024px" height="576px" title="How to start a movement" style="position:absolute;left:0;top:0;width:100%;height:100%"  frameborder="0" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen onload="window.parent.postMessage('iframeLoaded', 'https://embed.ted.com')"></iframe></div></div>
+
+
+## Conclusions
+
+-   Individual Actions Matter. Because they can be "reverse infections" **and** be contagious, in a positive way.
+-   Correlations between Individual Actions can create *"standing waves"* or "resonances" on the fabric of society.
+    -   Whatsapp "echo chambers"
+    -   Popularity of Memes, Songs, and Movie lines
+    -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
+- When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
+- And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
 
 
 
