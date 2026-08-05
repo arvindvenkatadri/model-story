@@ -73,11 +73,20 @@ Let us find a Keven Bacon in SMI Foundation Studies Programme!! Six
 Degrees of Separation...or of Kevin Bacon? Look at this video before you proceed!
 
 <center>
-::: {#fig-six-degrees}
+::: {#fig-six-degrees-1}
+{{< video https://youtu.be/TcxZSmzPw8k  width="560" height="400" align="center" title="" >}}
 
-{{< video https://vimeo.com/14196818 width="560" height="400" align="center" title="" >}}
+Veritasium: Six Degrees of Separation
 
-Six Degrees of Separation
+:::
+</center>
+
+<center>
+::: {#fig-six-degrees-2}
+
+{{< video https://www.youtube.com/watch?v=-8w-3oe1uJo width="560" height="400" align="center" title="" >}}
+
+BBC Documentary: Six Degrees of Separation
 
 :::
 </center>
