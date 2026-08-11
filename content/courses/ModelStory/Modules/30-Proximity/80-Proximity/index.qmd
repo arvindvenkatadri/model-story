@@ -99,7 +99,7 @@ Extract from <https://artsandculture.google.com/story/QgUxxeY10_VADg>
 Here is a link to his [**Top 40
 Paintings.**](https://www.wassilykandinsky.net/painting1896-1944.php)
 
-::: {#fig-kandinsky layout-ncol=3}
+::: {#fig-kandinsky-1 layout-ncol=3}
 
  ![Fixed Points](https://www.wassilykandinsky.net/images/works/342.jpg?version=7){#fig-fixed-points}
  
@@ -107,7 +107,7 @@ Paintings.**](https://www.wassilykandinsky.net/painting1896-1944.php)
 
 ![Small Worlds XI](https://www.wassilykandinsky.net/images/works/48.jpg?version=7){#fig-small-worlds-xi}
 
-Famous Paintings by Kandinsky
+Famous Paintings by Kandinsky (Set#1)
 :::
 
 
@@ -136,6 +136,19 @@ Karl Katchee.*Kandinsky, Math Artist?*
 </center>
 :::
 <br>
+
+::: {#fig-kandinsky-2 layout-ncol=3}
+
+ ![Composition IV](https://www.wassilykandinsky.net/images/works/114.jpg?version=7){#fig-composition-4}
+ 
+![Above and Left](https://www.wassilykandinsky.net/images/works/568.jpg?version=7){#fig-above-left}
+
+![Thirty](https://www.wassilykandinsky.net/images/works/273.jpg?version=7){#fig-thirty}
+
+Famous Paintings by Kandinsky (Set#2)
+:::
+
+
 What are the Key Insights from this paper?
 
 -   A very spatial aspect to his paintings?
