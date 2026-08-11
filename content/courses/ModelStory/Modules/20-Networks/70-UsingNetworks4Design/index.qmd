@@ -45,9 +45,10 @@ Here, we will see a few Network Behaviours and Network Effects, and understand h
 
 Consider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played [earlier](../40-Networks/index.qmd#activity-2-barabasi cocktail-party-game). 
 
-In many ways this is the *most agnostic*, or ***Null*** model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is **not random**, or even **differently random** would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on [yet another website of mine](https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude) ). 
+In many ways this is the *most agnostic*, or ***Null*** model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is **not random**, or even **differently random** would have some phenomenon lurking underneath! ( Apropos: [A NULL Model is often used in Statistics]{style="background-color:yellow;"}. More here, on [the Mad Hatter's Guide to Data Viz and Stats](https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude) ). 
 
 ::: {.content-hidden}
+
 There are two closely related formulations, often denoted `G(n, p)` and `G(n, m)`:
 
 ::: {.grid}
@@ -326,7 +327,7 @@ Both produce similar behavior for large n when m is chosen to match the expected
 
 ###### Implications:
 
-- **Degree Distribution**: With random attachment, we get a "bell-curve" like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network. 
+- **Degree Distribution**: With random attachment, [we get a "bell-curve" like situation]{style="background-color:yellow;"}, where seemingly **nothing is happening**. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. **No one has a terrific viral network**. 
 
 ::: {.callout-note}
 #### Math Aside
@@ -716,6 +717,8 @@ p <- ggraph(g, layout = "circle") +
 ggsave("./images/regular_graph_static.png", plot = p, width = 7, height = 7, dpi = 150)
 
 ```
+
+
 ```{r}
 #| label: small-worlds-1
 #| fig-cap: Small worlds (Random)
@@ -838,6 +841,7 @@ ggsave("./images/watts_strogatz_figure1.png", plot = combined, width = 12, heigh
 #   panels will differ slightly each run unless you fix set.seed().
 #   
 ```
+
 ```{r}
 #| echo: false
 #| eval: false
@@ -935,9 +939,13 @@ p_fig2 <- ggplot(plot_df, aes(x = p, y = value, color = metric, shape = metric))
   scale_x_log10(
     breaks = c(0.0001, 0.001, 0.01, 0.1, 1),
     labels = c("0.0001", "0.001", "0.01", "0.1", "1")
-  ) +
+   ) +
   scale_color_manual(values = c("L(p) / L(0)" = "black", "C(p) / C(0)" = "black")) +
   scale_shape_manual(values = c("L(p) / L(0)" = 1, "C(p) / C(0)" = 16)) +
+
+  # 
+  # scale_color_manual(values = c("Path Length" = "black", "Clustering" = "black")) +
+  # scale_shape_manual(values = c("Path Length" = 1, "Clustering" = 16)) +
   labs(
     title = "Figure 2 (Watts & Strogatz, 1998): Small-world transition",
     x = "p",
@@ -1116,7 +1124,7 @@ knitr::include_graphics("./images/watts_strogatz_animation.gif")
 
 In @fig-small-worlds-2, look at the two curves: the [black curve]{.white .bg-black} for $C(p)$ shows the presence of *communities* or clusters: high at first and then as random re-wirings take over, falling in *cliff-like* fashion. The [gray curve]{.white .bg-gray} for $L(p)$ shows the *average path length* between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network. 
 
-The region where $C(p)$ is still high, and $L(p)$ is already low, is what makes a network a *small world*: high clustering and short average path lengths.
+The region where $C(p)$ is still high, and $L(p)$ is already low, is what makes a network a *small world*: high clustering and short average path lengths. This is the area around $p \sim 0.01$ in the @fig-small-worlds-2. 
 
 ### Granovetter: Strength of Weak Ties
 
@@ -1305,7 +1313,7 @@ ggsave("./images/preferential_attachment_static.png", plot = p, width = 7, heigh
 
 ```{r}
 #| label: fig-preferential-attachment
-#| fig-cap: ""
+#| fig-cap: "Preferential Attachment Network (Barabasi-Albert)"
 #| fig-subcap: 
 #| - Preferential Attachment Emerging
 #| - Resulting Network
@@ -1321,8 +1329,8 @@ knitr::include_graphics("./images/preferential_attachment_animation.gif")
 When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a [***"rich get richer" effect***](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf). This is akin to the [Matthew Effect](https://researchonresearch.org/largest-study-of-its-kind-shows-that-the-matthew-effect-in-science-funding-holds-true/) from the Bible:
 
 ```{r}
-#| label: fig-bible
-#| fig-cap: Matthew Effect
+#| label: fig-bible-text
+#| fig-cap: "The Matthew Effect"
 #| fig-align: center
 #| out-height: "80%"
 #| out-width: "80%"
@@ -1491,6 +1499,7 @@ Hmmm...need to find this paper.
 4. Mark Granovetter. (1973). *The Strength of Weak Ties*. American Journal of Sociology 78(6): 1360–1380. {{< pdf https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf >}}
 
 ## Fun Stuff ( ha!)
+
 1. Puzzles and Games for Graph Theory. <https://www.tes.com/teaching-resource/graph-theory-puzzles-and-games-12164908>
 1. The Erdos Number Projects. <https://sites.google.com/oakland.edu/grossman/home/the-erdoes-number-project>
 1. Collab Distance! <https://mathscinet.ams.org/mathscinet/freetools/collab-dist>

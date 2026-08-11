@@ -436,7 +436,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 5, 2026</p>
+      <p class="date-modified">August 11, 2026</p>
     </div>
   </div>
     
@@ -448,11 +448,11 @@ window.Quarto = {
 <p>Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!</p>
 <section id="erdos-and-renyi-random-networks" class="level3"><h3 class="anchored" data-anchor-id="erdos-and-renyi-random-networks">Erdos and Renyi: Random Networks</h3>
 <p>Consider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played <a href="../../../../../../content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html#activity-2-barabasi cocktail-party-game">earlier</a>.</p>
-<p>In many ways this is the <em>most agnostic</em>, or <strong><em>Null</em></strong> model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is <strong>not random</strong>, or even <strong>differently random</strong> would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on <a href="https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude">yet another website of mine</a> ).</p>
+<p>In many ways this is the <em>most agnostic</em>, or <strong><em>Null</em></strong> model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is <strong>not random</strong>, or even <strong>differently random</strong> would have some phenomenon lurking underneath! ( Apropos: <span style="background-color:yellow;">A NULL Model is often used in Statistics</span>. More here, on <a href="https://madhatterguide.netlify.app/content/courses/analytics/20-inference/modules/100-onemean/#statistical-inference-is-almost-an-attitude">the Mad Hatter’s Guide to Data Viz and Stats</a> ).</p>
 <section id="implications" class="level6"><h6 class="anchored" data-anchor-id="implications">Implications:</h6>
 <ul>
 <li>
-<strong>Degree Distribution</strong>: With random attachment, we get a “bell-curve” like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.</li>
+<strong>Degree Distribution</strong>: With random attachment, <span style="background-color:yellow;">we get a “bell-curve” like situation</span>, where seemingly <strong>nothing is happening</strong>. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. <strong>No one has a terrific viral network</strong>.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -506,7 +506,7 @@ window.Quarto = {
 <div class="cell quarto-layout-panel" data-layout-ncol="2">
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-align="center" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-align="center">
 <div class="quarto-layout-row">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div id="fig-small-worlds-1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -543,7 +543,7 @@ Figure&nbsp;3: Small World Construction (Emergent)
 </div>
 </div>
 <p>In <a href="#fig-small-worlds-2" class="quarto-xref">Figure&nbsp;2</a>, look at the two curves: the <span class="white bg-black">black curve</span> for <span class="math inline">\(C(p)\)</span> shows the presence of <em>communities</em> or clusters: high at first and then as random re-wirings take over, falling in <em>cliff-like</em> fashion. The <span class="white bg-gray">gray curve</span> for <span class="math inline">\(L(p)\)</span> shows the <em>average path length</em> between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.</p>
-<p>The region where <span class="math inline">\(C(p)\)</span> is still high, and <span class="math inline">\(L(p)\)</span> is already low, is what makes a network a <em>small world</em>: high clustering and short average path lengths.</p>
+<p>The region where <span class="math inline">\(C(p)\)</span> is still high, and <span class="math inline">\(L(p)\)</span> is already low, is what makes a network a <em>small world</em>: high clustering and short average path lengths. This is the area around <span class="math inline">\(p \sim 0.01\)</span> in the <a href="#fig-small-worlds-2" class="quarto-xref">Figure&nbsp;2</a>.</p>
 </section></section><section id="granovetter-strength-of-weak-ties" class="level3"><h3 class="anchored" data-anchor-id="granovetter-strength-of-weak-ties">Granovetter: Strength of Weak Ties</h3>
 <p>A very related model is called “the Strength of Weak Ties”. <a href="https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf">Granovetter</a> showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.</p>
 <p>Weak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).</p>
@@ -577,19 +577,19 @@ Figure&nbsp;3: Small World Construction (Emergent)
 </div>
 </div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-preferential-attachment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preferential-attachment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Preferential Attachment Network (Barabasi-Albert)
 </figcaption></figure>
 </div>
 <p>When new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a <a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch18.pdf"><strong><em>“rich get richer” effect</em></strong></a>. This is akin to the <a href="https://researchonresearch.org/largest-study-of-its-kind-shows-that-the-matthew-effect-in-science-funding-holds-true/">Matthew Effect</a> from the Bible:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-bible" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-bible-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="./images/King_James_Bible_1772_-_Matthew_25_(2)_(cropped).jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;5: Matthew Effect"><img src="./images/King_James_Bible_1772_-_Matthew_25_(2)_(cropped).jpg" class="quarto-figure quarto-figure-center figure-img" style="width:80.0%;height:80.0%"></a>
+<div id="fig-bible-text" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-bible-text-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="./images/King_James_Bible_1772_-_Matthew_25_(2)_(cropped).jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;5: The Matthew Effect"><img src="./images/King_James_Bible_1772_-_Matthew_25_(2)_(cropped).jpg" class="quarto-figure quarto-figure-center figure-img" style="width:80.0%;height:80.0%"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bible-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Matthew Effect
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bible-text-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The Matthew Effect
 </figcaption></figure>
 </div>
 </div>

@@ -121,6 +121,13 @@ Discussion: `Node Degree`, `Centrality`, `Betweenness`, `Link Values or Costs`
 
 Discussion:`Everything's Connected ("Old Srishti Proverb." Bah!)`, `Networks are everywhere`, `You are a node and you are a link...are you?`
 
+
+## Resources
+
+1. The Blob: Emergence of a `Giant Component`
+
+{{< html https://www.complexity-explorables.org/explorables/the-blob/ >}}
+
 ## References
 
 1.  Albert-Laszlo Barabasi. *Network Science*.

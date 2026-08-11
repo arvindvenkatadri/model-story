@@ -382,7 +382,7 @@
     "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#introduction",
     "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
     "section": "Introduction",
-    "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions\n&lt;/p&gt;\n\n\n\nAntonJarvis · No Man is an Island by John Donne\n\nFrom https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island\n\nThe words ‘No man is an island’ were embedded in a deeply Christian sermon about how human beings are connected to each other, and how important that connection is for the wellbeing and survival of any individual. When you hear the church bell tolling for someone who has died, don’t ask who it is, Donne says, just know that it’s tolling for you too because you are part of the same society and the death of anyone takes a part of your own life away.\n\nDoes the Bell toll for thee?\nThe Game of the Polygons\nLet us explore, sadly, the dark side of Game Theory, and of course Networks. Where our own agent-like actions lead to bad outcomes in Society…\nAlways?\nNot if we…choose to copy others but wisely !!\nLet us play The Parable of the Polygons https://ncase.me/polygons/\n    View webpage in full screen\n       \n      \n    \n  \nThe Parable of the Polygons was created by Vi Hart and Nicky Case in order to demonstrate how small individual biases can have large societal consequences in terms of segregation. This project is based on the work of Thomas Schelling’s Dynamic Models of Segregation.\nAnother Dark Side of…\nWhy are Petrol Stations located next to each other? Here is the Hotelling’s Phenomenon, explained.\n\n\n Hotelling’s Phenomenon, revisited",
+    "text": "Introduction\n\n\n\n- John Donne, from Devotions Upon Emergent Occasions\n&lt;/p&gt;\n\n\n\nAntonJarvis · No Man is an Island by John Donne\n\nFrom https://nosweatshakespeare.com/quotes/famous/no-man-is-an-island\n\nThe words ‘No man is an island’ were embedded in a deeply Christian sermon about how human beings are connected to each other, and how important that connection is for the wellbeing and survival of any individual. When you hear the church bell tolling for someone who has died, don’t ask who it is, Donne says, just know that it’s tolling for you too because you are part of the same society and the death of anyone takes a part of your own life away.\n\nDoes the Bell toll for thee?",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -391,11 +391,50 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#vaccinations-for-or-against",
-    "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#vaccinations-for-or-against",
+    "objectID": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#bias-schelling-segregation",
+    "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#bias-schelling-segregation",
     "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
-    "section": "Vaccinations: For or Against?",
-    "text": "Vaccinations: For or Against?\nIf there are nasty Rumours in circulation, then it is well to be vaccinated against them. But if there are good news stories, or even brands, or cultural trends, one needs to be in with the group. (Can you see costs lurking in here?)\nWhat are the effects of vaccinations? How can one be intellectually vaccinated, and when needed physiologically vaccinated?\n    View webpage in full screen\n       \n      \n    \n  \nAnd of course, there is Nicky Case again!\n    View webpage in full screen\n       \n      \n    \n  \nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\n(VCSB folks) How does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them in Design!!\nDoes a meme automatically create a community?\nDid you notice a famous Srishti mathematical meme at the end of the Nicky Case Interactive?",
+    "section": "Bias: Schelling Segregation",
+    "text": "Bias: Schelling Segregation\nLet us explore, sadly, the dark side of Game Theory, and of course Networks. Where our own agent-like actions lead to bad outcomes in Society…\nAlways?\nNot if we…choose to copy others but wisely !!\nLet us play The Parable of the Polygons https://ncase.me/polygons/\n    View webpage in full screen\n       \n      \n    \n  \nThe Parable of the Polygons was created by Vi Hart and Nicky Case in order to demonstrate how small individual biases can have large societal consequences in terms of segregation. This project is based on the work of Thomas Schelling’s Dynamic Models of Segregation.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Networks",
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#bias-hotellings-phenomenon",
+    "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#bias-hotellings-phenomenon",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
+    "section": "Bias: Hotelling’s Phenomenon",
+    "text": "Bias: Hotelling’s Phenomenon\nWhy are Petrol Stations located next to each other? Here is the Hotelling’s Phenomenon, explained.\n\n\n Hotelling’s Phenomenon, revisited",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Networks",
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#viral-trends-echo-chambers",
+    "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#viral-trends-echo-chambers",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
+    "section": "Viral Trends: Echo Chambers",
+    "text": "Viral Trends: Echo Chambers\n    View webpage in full screen",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Networks",
+      "🍅 Biases, Memes, Brands, Viral Trends... and Rumours!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#viral-trends-rumours-and-vaccinations",
+    "href": "content/courses/ModelStory/Modules/20-Networks/50-Rumours-Biases-ViralTrends/index.html#viral-trends-rumours-and-vaccinations",
+    "title": "🍅 Biases, Memes, Brands, Viral Trends… and Rumours!",
+    "section": "Viral Trends: Rumours and Vaccinations",
+    "text": "Viral Trends: Rumours and Vaccinations\nIf there are nasty Rumours in circulation, then it is well to be vaccinated against them. But if there are good news stories, or even brands, or cultural trends, one needs to be in with the group. (Can you see costs lurking in here?)\nWhat are the effects of vaccinations? How can one be intellectually vaccinated, and when needed physiologically vaccinated?\n    View webpage in full screen\n       \n      \n    \n  \nAnd of course, there is Nicky Case again!\n    View webpage in full screen\n       \n      \n    \n  \nDiscussion Questions\n\nSo how does one scotch/stop a rumour? Can you be vaccinated against rumours? Is there a game-theoretic cost for the vaccination?\nHow does one be individual and different and still one of the gang? Is it possible to be inside and outside the group at the same time? Is it a good idea to be an insider and an outsider at the same time?\n\nHow do Echo Chambers work?\n(VCSB folks) How does one think of products and ads, or policy messages? (Remember the “Bell Bajaao” campaign?\n\nThere are popular and well-known phrases and memes in every language! Use them in Design!!\nDoes a meme automatically create a community?\nDid you notice a famous Srishti mathematical meme at the end of the Nicky Case Interactive?",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -472,7 +511,7 @@
     "href": "content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.html",
     "title": "🕸 Using Networks Science Models in Art and Design",
     "section": "",
-    "text": "Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!\n\nConsider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played earlier.\nIn many ways this is the most agnostic, or Null model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is not random, or even differently random would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on yet another website of mine ).\n\n\n\nDegree Distribution: With random attachment, we get a “bell-curve” like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.\n\n\n\n\n\n\n\nNoteMath Aside\n\n\n\n(In G(n, p), the degree of a node follows a Binomial(n-1, p) distribution. For sparse networks (p small, average degree \\(λ = p(n-1)\\) fixed as n → ∞), this approximates a Poisson(λ) distribution. (More later when we meet Hamlet.)\n\n\n\n\nConnectivity & Giant Component: There is a critical threshold for connectivity.:\n\nWhen average degree λ &lt; 1: Many small components.\nAt λ ≈ 1: Phase transition — a giant component emerges.\nλ &gt; 1: Almost surely a single giant component containing most nodes. Suddenly, if everyone has on average one friend, it is a connected world. On average!!!\n\n\n\nShortest Paths: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.\n\nClustering: No community structure, correlations, or growth dynamics.\n\nNo Hubs: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.\n\n\nGood baseline to compare your Design ( assuming it is a network oriented thing ) to a random network. If your design is not better than random, there are improvements to be made!)\nThe emergent Giant Component is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point.\nWhat can you do to create more correlated actions between nodes on a network? Then you have a better chance of growth dynamics setting in! (See below)\n\n“It’s a Small World” is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming “leap of a connection” bridges across communities that may otherwise be isolated. That one small link jumping across “vast distances” seemingly compresses the network into a \"Small World\"!\n\n\n\nTarget audiences that may seem inaccessible, and very far, may suddenly be not far at all due to one “random link” that bridges communities\nThe World becomes smaller than you had thought\n\n\nTry a very tenuous-looking, unlikely location to access a new community of users / artists / designers / collaborators?\nPut yourself / your art/design enterprise in dangerous positions?\nTry meeting communities or people very unlike yourself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Increasing Random Links ( L to R )\n\n\n\n\n\n\n\n\n\nFigure 2: \"Network Distance\" and \"Clustering vs Connection Probability”\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Small World Construction (Emergent)\n\n\n\n\nIn Figure 2, look at the two curves: the black curve for \\(C(p)\\) shows the presence of communities or clusters: high at first and then as random re-wirings take over, falling in cliff-like fashion. The gray curve for \\(L(p)\\) shows the average path length between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.\nThe region where \\(C(p)\\) is still high, and \\(L(p)\\) is already low, is what makes a network a small world: high clustering and short average path lengths.\n\nA very related model is called “the Strength of Weak Ties”. Granovetter showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.\nWeak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).\nStrong ties create dense, overlapping clusters (high local redundancy; your friends know each other). Weak ties act as local bridges connecting otherwise separate clusters, providing access to novel information. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.\nThis highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.\nIn a sense, Watts-Strogatz’s model provides the math justification for Granovetter’s empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.\n\nIf you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of preferential attachment, a concept that explains how networks grow and evolve over time.\n\n\n\n\n\n\n\n\n\n(a) Preferential Attachment Emerging\n\n\n\n\n\n\n\n\n\n(b) Resulting Network\n\n\n\n\n\n\nFigure 4\n\n\nWhen new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a “rich get richer” effect. This is akin to the Matthew Effect from the Bible:\n\n\n\n\n\n\n\nFigure 5: Matthew Effect\n\n\n\n\n\n\nImagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that’s where the “buzz” is.\nThe Internet topology (where some servers are connected to thousands of others)\nSocial media networks (a few influencers have millions of followers)\nBiological protein interaction networks (some proteins interact with far more partners than most)\n\nThe model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.\n\n\n\nPower-law degree distribution: The probability \\(P(k)\\) that a node has k connections follows a power law: \\(P(k) ∝ k^{-γ}\\). This means most nodes have very few connections, but a small number of “hubs” dominate.\n\n\n\n\n\n\n\n\nFigure 6: Power Law for Node Degree with Preferential Attachment\n\n\n\n\n\n\nSelf-reinforcing growth: As the network grows, hubs become even larger because they attract more connections.\n\nEmergence of scale-free structure: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. https://mathinsight.org/scale_free_network\n\n\n\nThe robustness of infrastructure networks (many small links can fail, but hubs remain). OTOH, if these hubs fail, the network comes to a halt. So more money, typically, would be spent in protecting hubs.\nThe spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.\nIf one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.",
+    "text": "Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!\n\nConsider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played earlier.\nIn many ways this is the most agnostic, or Null model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is not random, or even differently random would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on the Mad Hatter’s Guide to Data Viz and Stats ).\n\n\n\nDegree Distribution: With random attachment, we get a “bell-curve” like situation, where seemingly nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.\n\n\n\n\n\n\n\nNoteMath Aside\n\n\n\n(In G(n, p), the degree of a node follows a Binomial(n-1, p) distribution. For sparse networks (p small, average degree \\(λ = p(n-1)\\) fixed as n → ∞), this approximates a Poisson(λ) distribution. (More later when we meet Hamlet.)\n\n\n\n\nConnectivity & Giant Component: There is a critical threshold for connectivity.:\n\nWhen average degree λ &lt; 1: Many small components.\nAt λ ≈ 1: Phase transition — a giant component emerges.\nλ &gt; 1: Almost surely a single giant component containing most nodes. Suddenly, if everyone has on average one friend, it is a connected world. On average!!!\n\n\n\nShortest Paths: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.\n\nClustering: No community structure, correlations, or growth dynamics.\n\nNo Hubs: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.\n\n\nGood baseline to compare your Design ( assuming it is a network oriented thing ) to a random network. If your design is not better than random, there are improvements to be made!)\nThe emergent Giant Component is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point.\nWhat can you do to create more correlated actions between nodes on a network? Then you have a better chance of growth dynamics setting in! (See below)\n\n“It’s a Small World” is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming “leap of a connection” bridges across communities that may otherwise be isolated. That one small link jumping across “vast distances” seemingly compresses the network into a \"Small World\"!\n\n\n\nTarget audiences that may seem inaccessible, and very far, may suddenly be not far at all due to one “random link” that bridges communities\nThe World becomes smaller than you had thought\n\n\nTry a very tenuous-looking, unlikely location to access a new community of users / artists / designers / collaborators?\nPut yourself / your art/design enterprise in dangerous positions?\nTry meeting communities or people very unlike yourself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Increasing Random Links ( L to R )\n\n\n\n\n\n\n\n\n\nFigure 2: \"Network Distance\" and \"Clustering vs Connection Probability”\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Small World Construction (Emergent)\n\n\n\n\nIn Figure 2, look at the two curves: the black curve for \\(C(p)\\) shows the presence of communities or clusters: high at first and then as random re-wirings take over, falling in cliff-like fashion. The gray curve for \\(L(p)\\) shows the average path length between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.\nThe region where \\(C(p)\\) is still high, and \\(L(p)\\) is already low, is what makes a network a small world: high clustering and short average path lengths. This is the area around \\(p \\sim 0.01\\) in the Figure 2.\n\nA very related model is called “the Strength of Weak Ties”. Granovetter showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.\nWeak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).\nStrong ties create dense, overlapping clusters (high local redundancy; your friends know each other). Weak ties act as local bridges connecting otherwise separate clusters, providing access to novel information. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.\nThis highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.\nIn a sense, Watts-Strogatz’s model provides the math justification for Granovetter’s empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.\n\nIf you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of preferential attachment, a concept that explains how networks grow and evolve over time.\n\n\n\n\n\n\n\n\n\n(a) Preferential Attachment Emerging\n\n\n\n\n\n\n\n\n\n(b) Resulting Network\n\n\n\n\n\n\nFigure 4: Preferential Attachment Network (Barabasi-Albert)\n\n\nWhen new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a “rich get richer” effect. This is akin to the Matthew Effect from the Bible:\n\n\n\n\n\n\n\nFigure 5: The Matthew Effect\n\n\n\n\n\n\nImagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that’s where the “buzz” is.\nThe Internet topology (where some servers are connected to thousands of others)\nSocial media networks (a few influencers have millions of followers)\nBiological protein interaction networks (some proteins interact with far more partners than most)\n\nThe model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.\n\n\n\nPower-law degree distribution: The probability \\(P(k)\\) that a node has k connections follows a power law: \\(P(k) ∝ k^{-γ}\\). This means most nodes have very few connections, but a small number of “hubs” dominate.\n\n\n\n\n\n\n\n\nFigure 6: Power Law for Node Degree with Preferential Attachment\n\n\n\n\n\n\nSelf-reinforcing growth: As the network grows, hubs become even larger because they attract more connections.\n\nEmergence of scale-free structure: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. https://mathinsight.org/scale_free_network\n\n\n\nThe robustness of infrastructure networks (many small links can fail, but hubs remain). OTOH, if these hubs fail, the network comes to a halt. So more money, typically, would be spent in protecting hubs.\nThe spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.\nIf one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -485,7 +524,7 @@
     "href": "content/courses/ModelStory/Modules/20-Networks/70-UsingNetworks4Design/index.html#introduction",
     "title": "🕸 Using Networks Science Models in Art and Design",
     "section": "",
-    "text": "Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!\n\nConsider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played earlier.\nIn many ways this is the most agnostic, or Null model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is not random, or even differently random would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on yet another website of mine ).\n\n\n\nDegree Distribution: With random attachment, we get a “bell-curve” like situation, where seemingly *nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.\n\n\n\n\n\n\n\nNoteMath Aside\n\n\n\n(In G(n, p), the degree of a node follows a Binomial(n-1, p) distribution. For sparse networks (p small, average degree \\(λ = p(n-1)\\) fixed as n → ∞), this approximates a Poisson(λ) distribution. (More later when we meet Hamlet.)\n\n\n\n\nConnectivity & Giant Component: There is a critical threshold for connectivity.:\n\nWhen average degree λ &lt; 1: Many small components.\nAt λ ≈ 1: Phase transition — a giant component emerges.\nλ &gt; 1: Almost surely a single giant component containing most nodes. Suddenly, if everyone has on average one friend, it is a connected world. On average!!!\n\n\n\nShortest Paths: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.\n\nClustering: No community structure, correlations, or growth dynamics.\n\nNo Hubs: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.\n\n\nGood baseline to compare your Design ( assuming it is a network oriented thing ) to a random network. If your design is not better than random, there are improvements to be made!)\nThe emergent Giant Component is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point.\nWhat can you do to create more correlated actions between nodes on a network? Then you have a better chance of growth dynamics setting in! (See below)\n\n“It’s a Small World” is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming “leap of a connection” bridges across communities that may otherwise be isolated. That one small link jumping across “vast distances” seemingly compresses the network into a \"Small World\"!\n\n\n\nTarget audiences that may seem inaccessible, and very far, may suddenly be not far at all due to one “random link” that bridges communities\nThe World becomes smaller than you had thought\n\n\nTry a very tenuous-looking, unlikely location to access a new community of users / artists / designers / collaborators?\nPut yourself / your art/design enterprise in dangerous positions?\nTry meeting communities or people very unlike yourself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Increasing Random Links ( L to R )\n\n\n\n\n\n\n\n\n\nFigure 2: \"Network Distance\" and \"Clustering vs Connection Probability”\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Small World Construction (Emergent)\n\n\n\n\nIn Figure 2, look at the two curves: the black curve for \\(C(p)\\) shows the presence of communities or clusters: high at first and then as random re-wirings take over, falling in cliff-like fashion. The gray curve for \\(L(p)\\) shows the average path length between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.\nThe region where \\(C(p)\\) is still high, and \\(L(p)\\) is already low, is what makes a network a small world: high clustering and short average path lengths.\n\nA very related model is called “the Strength of Weak Ties”. Granovetter showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.\nWeak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).\nStrong ties create dense, overlapping clusters (high local redundancy; your friends know each other). Weak ties act as local bridges connecting otherwise separate clusters, providing access to novel information. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.\nThis highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.\nIn a sense, Watts-Strogatz’s model provides the math justification for Granovetter’s empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.\n\nIf you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of preferential attachment, a concept that explains how networks grow and evolve over time.\n\n\n\n\n\n\n\n\n\n(a) Preferential Attachment Emerging\n\n\n\n\n\n\n\n\n\n(b) Resulting Network\n\n\n\n\n\n\nFigure 4\n\n\nWhen new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a “rich get richer” effect. This is akin to the Matthew Effect from the Bible:\n\n\n\n\n\n\n\nFigure 5: Matthew Effect\n\n\n\n\n\n\nImagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that’s where the “buzz” is.\nThe Internet topology (where some servers are connected to thousands of others)\nSocial media networks (a few influencers have millions of followers)\nBiological protein interaction networks (some proteins interact with far more partners than most)\n\nThe model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.\n\n\n\nPower-law degree distribution: The probability \\(P(k)\\) that a node has k connections follows a power law: \\(P(k) ∝ k^{-γ}\\). This means most nodes have very few connections, but a small number of “hubs” dominate.\n\n\n\n\n\n\n\n\nFigure 6: Power Law for Node Degree with Preferential Attachment\n\n\n\n\n\n\nSelf-reinforcing growth: As the network grows, hubs become even larger because they attract more connections.\n\nEmergence of scale-free structure: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. https://mathinsight.org/scale_free_network\n\n\n\nThe robustness of infrastructure networks (many small links can fail, but hubs remain). OTOH, if these hubs fail, the network comes to a halt. So more money, typically, would be spent in protecting hubs.\nThe spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.\nIf one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.",
+    "text": "Here, we will see a few Network Behaviours and Network Effects, and understand how they could be useful tools in Art and Design!\n\nConsider a set of nodes. Edges can appear randomly between any pair of nodes. Sounds familiar? This is exactly the Barabasi Cocktail Party Game we played earlier.\nIn many ways this is the most agnostic, or Null model that network scientists use, a network where there are no causes for connection except random ones. By this logic, anything that is not random, or even differently random would have some phenomenon lurking underneath! ( Apropos: A NULL Model is often used in Statistics. More here, on the Mad Hatter’s Guide to Data Viz and Stats ).\n\n\n\nDegree Distribution: With random attachment, we get a “bell-curve” like situation, where seemingly nothing is happening. Most nodes have degrees close to the average; extremes are rare. There are not too many differences between nodes/people/agents. No one has a terrific viral network.\n\n\n\n\n\n\n\nNoteMath Aside\n\n\n\n(In G(n, p), the degree of a node follows a Binomial(n-1, p) distribution. For sparse networks (p small, average degree \\(λ = p(n-1)\\) fixed as n → ∞), this approximates a Poisson(λ) distribution. (More later when we meet Hamlet.)\n\n\n\n\nConnectivity & Giant Component: There is a critical threshold for connectivity.:\n\nWhen average degree λ &lt; 1: Many small components.\nAt λ ≈ 1: Phase transition — a giant component emerges.\nλ &gt; 1: Almost surely a single giant component containing most nodes. Suddenly, if everyone has on average one friend, it is a connected world. On average!!!\n\n\n\nShortest Paths: Small diameter and average path length (logarithmic in n for connected regimes) — the “small world” property appears even in this simple model.\n\nClustering: No community structure, correlations, or growth dynamics.\n\nNo Hubs: Lacks the heavy-tailed degree distributions (hubs) seen in scale-free networks.\n\n\nGood baseline to compare your Design ( assuming it is a network oriented thing ) to a random network. If your design is not better than random, there are improvements to be made!)\nThe emergent Giant Component is a metaphor for market uptake of a product. It represents a point of inflexion, or a tipping point.\nWhat can you do to create more correlated actions between nodes on a network? Then you have a better chance of growth dynamics setting in! (See below)\n\n“It’s a Small World” is a aphorism you must have heard before. Most times, it is uttered when you claim to know someone who knows someone you have just met! This seeming “leap of a connection” bridges across communities that may otherwise be isolated. That one small link jumping across “vast distances” seemingly compresses the network into a \"Small World\"!\n\n\n\nTarget audiences that may seem inaccessible, and very far, may suddenly be not far at all due to one “random link” that bridges communities\nThe World becomes smaller than you had thought\n\n\nTry a very tenuous-looking, unlikely location to access a new community of users / artists / designers / collaborators?\nPut yourself / your art/design enterprise in dangerous positions?\nTry meeting communities or people very unlike yourself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Increasing Random Links ( L to R )\n\n\n\n\n\n\n\n\n\nFigure 2: \"Network Distance\" and \"Clustering vs Connection Probability”\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Small World Construction (Emergent)\n\n\n\n\nIn Figure 2, look at the two curves: the black curve for \\(C(p)\\) shows the presence of communities or clusters: high at first and then as random re-wirings take over, falling in cliff-like fashion. The gray curve for \\(L(p)\\) shows the average path length between nodes: high at first, then falling rapidly as random re-wirings create shortcuts across the network.\nThe region where \\(C(p)\\) is still high, and \\(L(p)\\) is already low, is what makes a network a small world: high clustering and short average path lengths. This is the area around \\(p \\sim 0.01\\) in the Figure 2.\n\nA very related model is called “the Strength of Weak Ties”. Granovetter showed that in social networks, weak ties (acquaintances) are more important than strong ties (close friends) for spreading information. This is because weak ties connect different communities, allowing information to flow across the network.\nWeak ties (acquaintances, infrequent or low-intensity connections) are more important for spreading information, opportunities (e.g., job leads, college admissions!), and innovation across social groups than strong ties (close friends/family).\nStrong ties create dense, overlapping clusters (high local redundancy; your friends know each other). Weak ties act as local bridges connecting otherwise separate clusters, providing access to novel information. Empirical observation: People often find jobs through weak ties rather than close friends, because strong-tie circles share similar information.\nThis highlights a tension: social networks are locally clustered (via strong ties and triadic closure) but globally connected via weak ties.\nIn a sense, Watts-Strogatz’s model provides the math justification for Granovetter’s empirical observation: the small-world property allows for efficient information flow across a network, even if most connections are local.\n\nIf you were signing up for a new social media platform, would you rather follow a random user or the most popular user? Most people would choose the latter. This is the essence of preferential attachment, a concept that explains how networks grow and evolve over time.\n\n\n\n\n\n\n\n\n\n(a) Preferential Attachment Emerging\n\n\n\n\n\n\n\n\n\n(b) Resulting Network\n\n\n\n\n\n\nFigure 4: Preferential Attachment Network (Barabasi-Albert)\n\n\nWhen new nodes are added to a growing network (like web pages or people joining social media), they are more likely to connect to existing nodes that already have many connections. This creates a “rich get richer” effect. This is akin to the Matthew Effect from the Bible:\n\n\n\n\n\n\n\nFigure 5: The Matthew Effect\n\n\n\n\n\n\nImagine a school where kids form friendships.The kid who has the most friends is always invited to more parties (gets more invitations). A new student joins and wants to make friends—instead of randomly picking someone, they choose the kid with the biggest social circle because that’s where the “buzz” is.\nThe Internet topology (where some servers are connected to thousands of others)\nSocial media networks (a few influencers have millions of followers)\nBiological protein interaction networks (some proteins interact with far more partners than most)\n\nThe model is a simplified abstraction, but it provides critical insight into why real-world complex systems exhibit such specific (and to some people, vexing) statistical properties.\n\n\n\nPower-law degree distribution: The probability \\(P(k)\\) that a node has k connections follows a power law: \\(P(k) ∝ k^{-γ}\\). This means most nodes have very few connections, but a small number of “hubs” dominate.\n\n\n\n\n\n\n\n\nFigure 6: Power Law for Node Degree with Preferential Attachment\n\n\n\n\n\n\nSelf-reinforcing growth: As the network grows, hubs become even larger because they attract more connections.\n\nEmergence of scale-free structure: Over time, this process creates networks with an infinite number of possible connection paths and robustness against random failures. https://mathinsight.org/scale_free_network\n\n\n\nThe robustness of infrastructure networks (many small links can fail, but hubs remain). OTOH, if these hubs fail, the network comes to a halt. So more money, typically, would be spent in protecting hubs.\nThe spread of information or disease through a population is controlled by hubs. Innoculate them, and you are better off.\nIf one is on a fund-raising platform, add some seed funds to each new user, and they will be more likely to attract more funds. This is a preferential attachment effect.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -563,7 +602,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html",
     "title": "🏘 Measuring and Playing with Proximity",
     "section": "",
-    "text": "So how do we model “proximity”? Let us take a quick look at this description of Predator-Prey Dynamics.\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\nSo here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:\n\n\n\n\n\n\n\n\n\n(a) Delaunay Triangulation\n\n\n\n\n\n\n\n\n\n(b) Voronoi Diagram\n\n\n\n\n\n\n\n\n\n(c) Both Overlaid\n\n\n\n\n\n\nFigure 1: Spatial Partitionings\n\n\nHow do we plot these diagrams?\nWe will use this tool:Geogebra\nDownload and install this on your laptops. You can also use it in your browser https://www.geogebra.org/classic?lang=en and download the Geogebra (.ggb) files that you create. Let us first see Soho with the Voronoi Diagram, and then we make such a diagram step by step.\n\nExercise 1: Download this .ggb file and open it in Geogebra.\nExercise 2: Let us try with just three points and see what we need to do to plot the Voronoi Diagram.\nExercise 3: With 4 points: Four Pointer Voronoi\n\nExercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a “list of points” in Geogebra.\n\n\nDid you see how the Delaunay Triangulation seems to “dislike” obtuse-angles, and changes the triangulation pattern when a certain (sum of) angles become more than 180?\nWasn’t that a very Kandinsky-like thing to do, even for an algorithm?\nThe Delaunay Triangulation gives us a set of triangular elements that cover our desired surface\nThe Voronoi Diagram uses the Delaunay to give us possibly infinite proximal neighbourhoods.",
+    "text": "Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nAnd today, we can make something like this with code:\n\n\n\n\n\n\n\nFigure 1: John Snow’s Cholera Map With our Model Superimposed",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -572,11 +611,63 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram",
-    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram",
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#what-did-john-snow-make",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#what-did-john-snow-make",
     "title": "🏘 Measuring and Playing with Proximity",
     "section": "",
-    "text": "So how do we model “proximity”? Let us take a quick look at this description of Predator-Prey Dynamics.\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\nSo here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:\n\n\n\n\n\n\n\n\n\n(a) Delaunay Triangulation\n\n\n\n\n\n\n\n\n\n(b) Voronoi Diagram\n\n\n\n\n\n\n\n\n\n(c) Both Overlaid\n\n\n\n\n\n\nFigure 1: Spatial Partitionings\n\n\nHow do we plot these diagrams?\nWe will use this tool:Geogebra\nDownload and install this on your laptops. You can also use it in your browser https://www.geogebra.org/classic?lang=en and download the Geogebra (.ggb) files that you create. Let us first see Soho with the Voronoi Diagram, and then we make such a diagram step by step.\n\nExercise 1: Download this .ggb file and open it in Geogebra.\nExercise 2: Let us try with just three points and see what we need to do to plot the Voronoi Diagram.\nExercise 3: With 4 points: Four Pointer Voronoi\n\nExercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a “list of points” in Geogebra.\n\n\nDid you see how the Delaunay Triangulation seems to “dislike” obtuse-angles, and changes the triangulation pattern when a certain (sum of) angles become more than 180?\nWasn’t that a very Kandinsky-like thing to do, even for an algorithm?\nThe Delaunay Triangulation gives us a set of triangular elements that cover our desired surface\nThe Voronoi Diagram uses the Delaunay to give us possibly infinite proximal neighbourhoods.",
+    "text": "Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nAnd today, we can make something like this with code:\n\n\n\n\n\n\n\nFigure 1: John Snow’s Cholera Map With our Model Superimposed",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Proximity",
+      "🏘 Measuring and Playing with Proximity"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#a-model-for-proximity",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#a-model-for-proximity",
+    "title": "🏘 Measuring and Playing with Proximity",
+    "section": "A Model for Proximity",
+    "text": "A Model for Proximity\nSo how do we model “proximity”? Let us take a quick look at this description of Predator-Prey Dynamics.\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \nDelaunay and Voronoi Diagrams\nCan we use Kandinsky’s very idiosyncratic interpretation of triangles to create a diagram that works to measure Proximity? What could such a diagram look like?\nSo here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:\n\n\n\n\n\n\n\n\n\n(a) Delaunay Triangulation\n\n\n\n\n\n\n\n\n\n(b) Voronoi Diagram\n\n\n\n\n\n\n\n\n\n(c) Both Overlaid\n\n\n\n\n\n\nFigure 2: Spatial Partitionings",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Proximity",
+      "🏘 Measuring and Playing with Proximity"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#how-to-interpret-these-diagrams",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#how-to-interpret-these-diagrams",
+    "title": "🏘 Measuring and Playing with Proximity",
+    "section": "How to Interpret these Diagrams?",
+    "text": "How to Interpret these Diagrams?\nThe Voronoi Diagram is possibly easier to interpret: it splits up (a 2D plane ) into disjoint areas which are closest to one-and-only-one of a set of points; i.e it splits the plane into disjoint neighbourhoods.\nA Dual to the Voronoi is the Delaunay Triangulation: this diagram breaks up the plane into discrete closed-off triangular sub-spaces. These subspaces usually are built up based on specific properties we are interested in: temperature, density, slope, vibration/center of gravity etc. Any quantity that varies continuously over a 2D space, cane be modelled using a set of finite elements created by the Delaunay Triangulation.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Proximity",
+      "🏘 Measuring and Playing with Proximity"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#where-are-these-applied",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#where-are-these-applied",
+    "title": "🏘 Measuring and Playing with Proximity",
+    "section": "Where are these applied?",
+    "text": "Where are these applied?\nSee and exhaustive list below!",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Proximity",
+      "🏘 Measuring and Playing with Proximity"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#how-do-we-construct-these-diagrams",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#how-do-we-construct-these-diagrams",
+    "title": "🏘 Measuring and Playing with Proximity",
+    "section": "How do we Construct these Diagrams?",
+    "text": "How do we Construct these Diagrams?\nWe will use this tool: Geogebra\nDownload and install this on your laptops. You can also use it in your browser https://www.geogebra.org/classic?lang=en and download the Geogebra (.ggb) files that you create. Let us first see Soho with the Voronoi Diagram, and then we make such a diagram step by step.\n\nExercise 1: Download this .ggb file and open it in Geogebra.\nExercise 2: Let us try with just three points and see what we need to do to plot the Voronoi Diagram.\nExercise 3: With 4 points: Four Pointer Voronoi\n\nExercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a “list of points” in Geogebra.\n\nDiscussion\n\nDid you see how the Delaunay Triangulation seems to “dislike” obtuse-angles, and changes the triangulation pattern when a certain (sum of) angles become more than 180?\nWasn’t that a very Kandinsky-like thing to do, even for an algorithm?\nThe Delaunay Triangulation gives us a set of triangular elements that cover our desired surface\nThe Voronoi Diagram uses the Delaunay to give us possibly infinite proximal neighbourhoods.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -602,7 +693,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#other-distances",
     "title": "🏘 Measuring and Playing with Proximity",
     "section": "Other Distances?",
-    "text": "Other Distances?\nHamming Distances\nWe have used the simplest and most common of geometric distances between entities, the Euclidean Distance to model proximity. Are there other measures of distance?\n\nHow would you measure distance between digital words? For example \\(10010011\\) and \\(11011011\\)?\n\n\nThe Hamming distance between two equal-length strings of symbols is the number of positions at which the corresponding symbols are different. The symbols may be letters, bits, or decimal digits, among other possibilities. For example, the Hamming distance between: “karolin” and “kathrin” is 3. “karolin” and “kerstin” is 3. “kathrin” and “kerstin” is 4. 0000 and 1111 is 4. 2173896 and 2233796 is 3.\n\nThe Hamming Distance can be calculated using a logical operation known as “Exclusive-OR” or “XOR”.\nGreat Circle Distances\nHow would you measure distance over a curved surface such as the earth?\nView the path here: https://www.greatcirclemap.com/. Calculate distances here: https://www.gpsvisualizer.com/calculators.\nTaxicab Distances\nAnd if a man hatta live in New York?\n\n\n\n\n\n\n\n\nWe will use the Euclidean and maybe other concepts of distance when we get into our Machine Learning models!\nPlotting Silhouette Diagrams\nTo be written up!! https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html",
+    "text": "Other Distances?\nHamming Distances\nWe have used the simplest and most common of geometric distances between entities, the Euclidean Distance to model proximity. Are there other measures of distance?\n\nHow would you measure distance between digital words? For example \\(10010011\\) and \\(11011011\\)?\n\n\nThe Hamming distance between two equal-length strings of symbols is the number of positions at which the corresponding symbols are different. The symbols may be letters, bits, or decimal digits, among other possibilities. For example, the Hamming distance between: “karolin” and “kathrin” is 3. “karolin” and “kerstin” is 3. “kathrin” and “kerstin” is 4. 0000 and 1111 is 4. 2173896 and 2233796 is 3.\n\nThe Hamming Distance can be calculated using a logical operation known as “Exclusive-OR” or “XOR”.\nGreat Circle Distances\nHow would you measure distance over a curved surface such as the earth?\nView the path here: https://www.greatcirclemap.com/. Calculate distances here: https://www.gpsvisualizer.com/calculators.\nTaxicab Distances\nAnd if a man hatta live in New York?\n\n\n\n\n\n\n\n\nWe will use the Euclidean and maybe other concepts of distance when we get into our Machine Learning models!\nPlotting Silhouette Diagrams\nTo be written up!! https://orangedatamining.com/widget-catalog/visualize/silhouetteplot/",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -615,7 +706,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#so-where-are-all-these-proximities-used",
     "title": "🏘 Measuring and Playing with Proximity",
     "section": "So where are all these Proximities used?",
-    "text": "So where are all these Proximities used?\nProximities in the GPS System\nThe GPS system is all about wanting to know if one is proximate to a desired landmark! But how does it work?\nBased on a measurement of two proximity scores, both electronic. One in Space and one in Time. Oooh, cryptic, isn’t it? Here is how it works:\n\nUsers receive GPS transmissions from more than one satellite (to improve accuracy; more later).\nEach Satellite is given a unique digital signature code, called its Coarse/Acquisition, or C/A Code.\nThis code is a digital one-zero based sequence, which repeats after a week.\nThe code ones and zeroes are called chips; the chips are output by each satellite at a rate of 1.023 MHz. ( i.e. a little faster than a million chips per second)\nAll satellites use an on-board time clock. All satellites are synchronized and it is the same time on all satellites, regardless of where they are in the sky.\nA User Receiver cannot understand what the satellite is saying, UNLESS it removes/wipes off the signature used by the satellite. So think of this in proximity terms: the user needs to know the Signature Sequence and also be in sync aligned with it, chip for chip.\nOne the signature is removed, what remains is what the satellite is saying.\nGPS#5 उवाच:\n\n“It is 4 PM on my onboard clock”;\n“The ionosphere is doing weird things so please include that weirdness in your position computation etc”;\nOther stuff, called the satellite ephimeris (which we may discuss in class)\n\n\n\nBut Houston, we have a problem, but right here on the ground, mercifully. The problem is, wait for it, the Speed of Light. And it is a good problem to have.\n\nWhen you detect say GPS#5 saying it is 4 PM, that signal came from GPS#5 to you at the speed of light, so by the time it arrives, the time on the satellite is already 4PM + 150 microseconds.\nSince different GPS satellites we can see are at different ranges, we receive different times from 5 different GPS satellites.\nThen we can set up a set of linear matrix equations in these variables:\n\n“Received Time” from each satellite (Pseudo-Range)\nLong and Lat (called a Position Fix);\nAbsolute Time (Time Fix)\n\n\nWhich we solve to obtain both Position Fix and Time Fix.\n\nSo in summary, the user needs to calculate two proximities:\n\nA C/A code proximity, measured by the Hamming Distance between the received code and a locally generated C/A code. Which code to generate locally? We don’t really know, so we generate ~ all. Huh, what!!! And select that C/A code to wipe off which shows good proximity with received C/A code. (This is called, in telecom language, a Code Matched Filter and Rake Receiver. Ask me what this looks like, at your peril.)\n\nA Time Proximity, by correcting its own local clock to match the satellite clocks, accurately. (This is called, in telecom language again, a Delay-Lock Loop. Peril again.)\nCode Proximity Measurement\nHere is a block diagram of the Code Matched Filter:\n\n\n\n\n\n\n\nFigure 2: Code Matched Filter or Correlator\n\n\n\n\nAnd here is a output of the Code Matched Filter:\n\n\n\n\n\n\n\nFigure 3: Code Matched Filter Output\n\n\n\n\nIn the Figure 3 above, the red curve shows the Hamming Distance between a received C/A code, and its locally generated copy. Only when the proximity between them is within one-chip does the measure have any sensible amplitude. (This is called Autocorrelation.)\nThe blue curve show Hamming Distance proximity between a received C/A code and any other C/A code. At no overlap position do these dissimilar codes have a useful proximity measure. (This is known as Cross-Correlation).\nC/A codes are designed to have that spike-like autocorrelation, and that fuzz like cross-correlation to aid in proximity-based synchronization and code wipe-off.\nA Brief Foray into Cryptography\nIn the Sherlock Holmes story,The Adventure of the Dancing Men, a criminal known the one of the characters communicates with her using a childish/child-like drawing which looks like this:\n\n\n\n\nIn this message, each character is a visual representation, or a **substitution* for, a letter from the alphabet. The characters with flags are the last letter in each word. The message is translated in the story as “Am here, Abe Slaney”.\nThe entire code alphabet is shown in the figure below:\n\n\n\n\n\n\n\n\nThis code is a good example of a Substitution Cipher with non-text substition. See https://www.boxentriq.com/code-breaking/dancing-men-cipher and https://www.dcode.fr/dancing-men-cipher for examples where you can encode and decode your own text, and send them to friends. 😎 😼\nThe intent behind any substitution cipher is to be create distance from the original message, or characters. The algorithms to encode and decode uses this idea of distance to perform their operations and are entirely reversible.",
+    "text": "So where are all these Proximities used?\nProximities in the GPS System\nThe GPS system is all about wanting to know if one is proximate to a desired landmark! But how does it work?\nBased on a measurement of two proximity scores, both electronic. One in Space and one in Time. Oooh, cryptic, isn’t it? Here is how it works:\n\nUsers receive GPS transmissions from more than one satellite (to improve accuracy; more later).\nEach Satellite is given a unique digital signature code, called its Coarse/Acquisition, or C/A Code.\nThis code is a digital one-zero based sequence, which repeats after a week.\nThe code ones and zeroes are called chips; the chips are output by each satellite at a rate of 1.023 MHz. ( i.e. a little faster than a million chips per second)\nAll satellites use an on-board time clock. All satellites are synchronized and it is the same time on all satellites, regardless of where they are in the sky.\nA User Receiver cannot understand what the satellite is saying, UNLESS it removes/wipes off the signature used by the satellite. So think of this in proximity terms: the user needs to know the Signature Sequence and also be in sync aligned with it, chip for chip.\nOne the signature is removed, what remains is what the satellite is saying.\nGPS#5 उवाच:\n\n“It is 4 PM on my onboard clock”;\n“The ionosphere is doing weird things so please include that weirdness in your position computation etc”;\nOther stuff, called the satellite ephimeris (which we may discuss in class)\n\n\n\nBut Houston, we have a problem, but right here on the ground, mercifully. The problem is, wait for it, the Speed of Light. And it is a good problem to have.\n\nWhen you detect say GPS#5 saying it is 4 PM, that signal came from GPS#5 to you at the speed of light, so by the time it arrives, the time on the satellite is already 4PM + 150 microseconds.\nSince different GPS satellites we can see are at different ranges, we receive different times from 5 different GPS satellites.\nThen we can set up a set of linear matrix equations in these variables:\n\n“Received Time” from each satellite (Pseudo-Range)\nLong and Lat (called a Position Fix);\nAbsolute Time (Time Fix)\n\n\nWhich we solve to obtain both Position Fix and Time Fix.\n\nSo in summary, the user needs to calculate two proximities:\n\nA C/A code proximity, measured by the Hamming Distance between the received code and a locally generated C/A code. Which code to generate locally? We don’t really know, so we generate ~ all. Huh, what!!! And select that C/A code to wipe off which shows good proximity with received C/A code. (This is called, in telecom language, a Code Matched Filter and Rake Receiver. Ask me what this looks like, at your peril.)\n\nA Time Proximity, by correcting its own local clock to match the satellite clocks, accurately. (This is called, in telecom language again, a Delay-Lock Loop. Peril again.)\nCode Proximity Measurement\nHere is a block diagram of the Code Matched Filter:\n\n\n\n\n\n\n\nFigure 3: Code Matched Filter or Correlator\n\n\n\n\nAnd here is a output of the Code Matched Filter:\n\n\n\n\n\n\n\nFigure 4: Code Matched Filter Output\n\n\n\n\nIn the Figure 4 above, the red curve shows the Hamming Distance between a received C/A code, and its locally generated copy. Only when the proximity between them is within one-chip does the measure have any sensible amplitude. (This is called Autocorrelation.)\nThe blue curve show Hamming Distance proximity between a received C/A code and any other C/A code. At no overlap position do these dissimilar codes have a useful proximity measure. (This is known as Cross-Correlation).\nC/A codes are designed to have that spike-like autocorrelation, and that fuzz like cross-correlation to aid in proximity-based synchronization and code wipe-off.\nA Brief Foray into Cryptography\nIn the Sherlock Holmes story,The Adventure of the Dancing Men, a criminal known the one of the characters communicates with her using a childish/child-like drawing which looks like this:\n\n\n\n\nIn this message, each character is a visual representation, or a **substitution* for, a letter from the alphabet. The characters with flags are the last letter in each word. The message is translated in the story as “Am here, Abe Slaney”.\nThe entire code alphabet is shown in the figure below:\n\n\n\n\n\n\n\n\nThis code is a good example of a Substitution Cipher with non-text substition. See https://www.boxentriq.com/code-breaking/dancing-men-cipher and https://www.dcode.fr/dancing-men-cipher for examples where you can encode and decode your own text, and send them to friends. 😎 😼\nThe intent behind any substitution cipher is to be create distance from the original message, or characters. The algorithms to encode and decode uses this idea of distance to perform their operations and are entirely reversible.",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -654,7 +745,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#references",
     "title": "🏘 Measuring and Playing with Proximity",
     "section": "References",
-    "text": "References\n\n\nVoronoi Diagrams and a Day at the Beach (PDF) Talks about cholera in Soho, the Voronoi diagram, and how to construct it using waves on a beach!!\nData Genetics. Voronoi Tessellations. Very interesting 3D pictures of how Voronois and Delaunays are created.\nGorilla Sun Blog. https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/\n\nHow are Codes used in GPS? https://natronics.github.io/blag/2014/gps-viz-1/\n\nHow Do Codes Work in GPS? https://natronics.github.io/blag/2014/gps-prn/",
+    "text": "References\n\nThe John Snow Archive and Research Companion. https://johnsnow.matrix.msu.edu/\n\nMafe Callejón.(21 February 2022). Masters series: Recreating John Snow’s cholera map: See an interactive version of John Snow’s iconic cholera map https://flourish.studio/blog/masters-john-snow/\n\n\nVoronoi Diagrams and a Day at the Beach (PDF) Talks about cholera in Soho, the Voronoi diagram, and how to construct it using waves on a beach!!\nData Genetics. Voronoi Tessellations. Very interesting 3D pictures of how Voronois and Delaunays are created.\nGorilla Sun Blog. https://www.gorillasun.de/blog/delaunay-triangulation-and-voronoi-diagrams/\n\nHow are Codes used in GPS? https://natronics.github.io/blag/2014/gps-viz-1/\n\nHow Do Codes Work in GPS? https://natronics.github.io/blag/2014/gps-prn/",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -663,15 +754,159 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
-    "href": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
-    "title": "Chaos",
-    "section": "",
-    "text": "Title\nSubtitle\nDate\n\n\n\n\n\nNo matching items\n Back to top",
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#additional-readings-for-the-curious",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/90-Voronoi/index.html#additional-readings-for-the-curious",
+    "title": "🏘 Measuring and Playing with Proximity",
+    "section": "Additional Readings for the Curious",
+    "text": "Additional Readings for the Curious\n\nRudyard Kipling. How Fear Came. https://www.kiplingsociety.co.uk/tale/how-fear-came.htm",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "Chaos"
+      "Proximity",
+      "🏘 Measuring and Playing with Proximity"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "",
+    "text": "WORK IN PROGRESS !!!!",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What is a Matrix?",
+    "text": "What is a Matrix?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What can a Matrix Represent?",
+    "text": "What can a Matrix Represent?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "What Kinds of Matrices are Useful to us?",
+    "text": "What Kinds of Matrices are Useful to us?\nAdjacency Matrix in Networks\n\n\nAdjacency matrices are a fundamental representation of networks (graphs) in network science. For an undirected graph with \\(n\\) nodes, the adjacency matrix \\(A\\) is an $ n n$ symmetric matrix where the columns and rows indicate nodes in the network: \\[A_{ij} =\n\\begin{cases}\n1 & \\text{if there is an edge between nodes } i \\text{ and } j, \\\\\n0 & \\text{otherwise}.\n\\end{cases}\\]\nFor directed graphs, \\(A\\) is generally asymmetric. For weighted graphs, \\(A_{ij}\\) holds the weight of the edge. The matrix encodes the entire topology compactly, enabling linear algebra techniques (matrix powers, decompositions, etc.) to extract insights about structure, dynamics, and function.\n\n\n\n\n   V1 V2 V3 V4\nV1  0  1  1  0\nV2  1  0  1  0\nV3  1  1  0  1\nV4  0  0  1  0",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
+    "title": "🕹 Measuring and Viewing Symmetry",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry",
+      "🕹 Measuring and Viewing Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/listing.html",
+    "href": "content/courses/ModelStory/Modules/60-Symmetry/listing.html",
+    "title": "Symmetry",
+    "section": "",
+    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n🕹 Creating Symmetry\n\n\nThe Language of Symmetry\n\n\nJul 21, 2026\n\n\n\n\n\n\n\n\n\n🕹 Measuring and Viewing Symmetry\n\n\nThe Matrix Math of Symmetry\n\n\nJul 23, 2026\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Symmetry"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html",
+    "href": "content/courses/ModelStory/listing.html",
+    "title": "The Model of the Story",
+    "section": "",
+    "text": "Clock at Grand Central Station, NY",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html#introduction",
+    "href": "content/courses/ModelStory/listing.html#introduction",
+    "title": "The Model of the Story",
+    "section": "Introduction",
+    "text": "Introduction\n\nIt can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience. — ALBERT EINSTEIN\n\n\nTo become wise you’ve got to have models in your head. And you’ve got to array your experience—both vicarious and direct—on this latticework of models.— CHARLIE MUNGER\n\n\nAll Models Are Wrong But Some Are Useful. — GEORGE BOX\n\n\nHumans possess a set of interacting traits connected to our unique capacities for cognition (how we think and reason), cooperation (how we work together), and culture (how we share and accumulate information). Through such abilities, we have acquired unprecedented powers to design and redesign our environments, but we have also become vulnerable to novel risks and failure modes. — Conspicuous Cognition Substack.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html#course-abstract",
+    "href": "content/courses/ModelStory/listing.html#course-abstract",
+    "title": "The Model of the Story",
+    "section": "Course Abstract",
+    "text": "Course Abstract\nIn this Unit, we will take inspiration from Classic Literature, Poetry, Drama, Movies, Paintings, and Music to contemplate certain Human Experiences. Using these as a starting point, we will create Models and make sense of these human experiences.\nThese Models may resemble a Theory, a Thought Experiment, a Diagram, a simple Procedure, a piece of Computer Code, or even a Cultural Tradition. The Models will be understood, internalized, fitted in with what we already know, and generalized to new situations and applications. This will done with the help of activities based on games, pranks, memes, videos, movies, movie-clips, art-related activities, open source software tools, interactives, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions..\nThe Models should thusly provide data and directions for artistic and design endeavours. In effect, we will go from Stories to Data, rather than the other way around.\nAt the end of the Unit, the tired, but happy students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html#what-you-will-learn",
+    "href": "content/courses/ModelStory/listing.html#what-you-will-learn",
+    "title": "The Model of the Story",
+    "section": "What you will learn",
+    "text": "What you will learn\n\n\nComplexity Science: The so-called (by me!) 4-As - the “Agents, Actions, Again, Aggregate” idea\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\n\nCoordination Games and Schelling Focus Points; Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦🤦🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html#some-teasers",
+    "href": "content/courses/ModelStory/listing.html#some-teasers",
+    "title": "The Model of the Story",
+    "section": "Some Teasers!!",
+    "text": "Some Teasers!!\n\nAre we all Ants?   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\n 2. This century was named by Stephen Hawking as the Age of Complexity.\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours\n\n\n\n\n\n\nGerry Rafferty (1979). Baker Street.\n\nThat immortal sax by Raphael Ravenscroft, yes. But the lyrics, the lyrics…\n\n\n\nWinding your way down on Baker Street Light in your head and dead on your feet Well another crazy day, you’ll drink the night away And forget about everything\nThis city desert makes you feel so cold It’s got so many people but it’s got no soul And it’s taken you so long to find out you were wrong When you thought it held everything\nYou used to think that it was so easy You used to say that it was so easy But you’re tryin’, you’re tryin’ now Another year and then you’d be happy Just one more year and then you’d be happy But you’re cryin’, you’re cryin’ now\nWay down the street there’s a light in his place He opens the door, he’s got that look on his face And he asks you where you’ve been, you tell him who you’ve seen And you talk about anything\nHe’s got this dream about buyin’ some land He’s gonna give up the booze and the one night stands And then he’ll settle down, it’s a quiet little town And forget about everything\nBut you know he’ll always keep movin’ You know he’s never gonna stop movin’ ‘Cause he’s rollin’, he’s the rollin’ stone And when you wake up it’s a new mornin’ The sun is shinin’, it’s a new mornin’ But you’re going, you’re going on..",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/listing.html#modules",
+    "href": "content/courses/ModelStory/listing.html#modules",
+    "title": "The Model of the Story",
+    "section": "Modules",
+    "text": "Modules",
+    "crumbs": [
+      "Home",
+      "The Model of the Story"
     ]
   },
   {
@@ -766,146 +1001,15 @@
     ]
   },
   {
-    "objectID": "content/courses/ModelStory/listing.html",
-    "href": "content/courses/ModelStory/listing.html",
-    "title": "The Model of the Story",
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
+    "title": "Chaos",
     "section": "",
-    "text": "Clock at Grand Central Station, NY",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/listing.html#introduction",
-    "href": "content/courses/ModelStory/listing.html#introduction",
-    "title": "The Model of the Story",
-    "section": "Introduction",
-    "text": "Introduction\n\nIt can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience. — ALBERT EINSTEIN\n\n\nTo become wise you’ve got to have models in your head. And you’ve got to array your experience—both vicarious and direct—on this latticework of models.— CHARLIE MUNGER\n\n\nAll Models Are Wrong But Some Are Useful. — GEORGE BOX\n\n\nHumans possess a set of interacting traits connected to our unique capacities for cognition (how we think and reason), cooperation (how we work together), and culture (how we share and accumulate information). Through such abilities, we have acquired unprecedented powers to design and redesign our environments, but we have also become vulnerable to novel risks and failure modes. — Conspicuous Cognition Substack.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/listing.html#course-abstract",
-    "href": "content/courses/ModelStory/listing.html#course-abstract",
-    "title": "The Model of the Story",
-    "section": "Course Abstract",
-    "text": "Course Abstract\nIn this Unit, we will take inspiration from Classic Literature, Poetry, Drama, Movies, Paintings, and Music to contemplate certain Human Experiences. Using these as a starting point, we will create Models and make sense of these human experiences.\nThese Models may resemble a Theory, a Thought Experiment, a Diagram, a simple Procedure, a piece of Computer Code, or even a Cultural Tradition. The Models will be understood, internalized, fitted in with what we already know, and generalized to new situations and applications. This will done with the help of activities based on games, pranks, memes, videos, movies, movie-clips, art-related activities, open source software tools, interactives, field experiments, field visits, readings, additional readings, writings, more writings, still more writings, and seemingly endless discussions..\nThe Models should thusly provide data and directions for artistic and design endeavours. In effect, we will go from Stories to Data, rather than the other way around.\nAt the end of the Unit, the tired, but happy students will use the gamut of Models / Tools / Techniques encountered in class to design an artifact or performance, working individually or in teams.",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/listing.html#what-you-will-learn",
-    "href": "content/courses/ModelStory/listing.html#what-you-will-learn",
-    "title": "The Model of the Story",
-    "section": "What you will learn",
-    "text": "What you will learn\n\n\nComplexity Science: The so-called (by me!) 4-As - the “Agents, Actions, Again, Aggregate” idea\n\nComplexity concepts and how to identify them and apply them in practice\n\nComplexity in Human Behaviour:\n\nGame Theory: Prisoners’ Dilemma, Stag Hunt, and Chicken Games\n\nCoordination Games and Schelling Focus Points; Public Behaviour and Policy\nViral Trends, Biases, and Epidemics, and why you persist in saying Bro, My Bad, and Think Different🤦🤦🤦\nSpatial Patterns and Social Behaviour\n\n\n\nComplexity in Connections:\n\nNetwork Structure\nNetwork Effects\nHow the Spatial (Static) affects the Temporal (Behavioural) and vice versa\n\n\n\nComplexity in Geometry:\n\nProximity\n\nDelaunay and Voronoi Patterns\nSpatial Pattern Emergence(again)\n\n\nFundamentals of Fractals\n\nRepetition and Iterated Functions\nEmergence of Shape(yet again)\nFractional Dimensions and Box Counting\nMandelbrot, Julia, and Barnsley Fractals\n\n\nSymmetry\n\nCanonical Movements at your fingertips\n1D, 2D, 3D symmetry: Friezes, Mosaics, and Cubes\n\nSymmetry on Average: Probability meets Symmetry\nOrientation and “Orientability”\n\n\n\n\n\nComplexity, Probability, and Randomness:\n\nRandomness and its manifestation in Real Life\n\nPoisson Processes\n\n\nUsing Randomness as a Design Tool\n\nHypothesis Testing\nBasics of Design of Experiments\nData Gathering and Analysis (aka “Primary Design Research”)\n\n\n\n\n\nComplexity and Basics of Machine Learning Algorithms\n\nClassification, Clustering, Regression\nTransformers(?)\nInterpretation of (some) ML/AI algorithms with ideas from Complexity\n\n\n\nAnd, finally\n\n\nWhy all these #&%!@!#^%$ things matter in Art and Design, especially since you came here because you hated Maths in Class 8!!",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/listing.html#some-teasers",
-    "href": "content/courses/ModelStory/listing.html#some-teasers",
-    "title": "The Model of the Story",
-    "section": "Some Teasers!!",
-    "text": "Some Teasers!!\n\nAre we all Ants?   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\n 2. This century was named by Stephen Hawking as the Age of Complexity.\n\n\nA few years ago, Hawking was asked what he thought of the common opinion that the twentieth century was that of biology and the twenty-first century would be that of physics. Hawking replied that in his opinion the twenty-first century would be the “century of complexity”. That remark probably holds more useful advice for contemporary students than they realize since it points to at least two skills which are going to be essential for new college grads in the age of complexity: statistics and data visualization.\n— Hawking\n\n\n\nDocumentary: The Secret Life of Chaos.\nTED Talk: Benoit Mandelbrot. Fractals and the Art of Roughness.\nComplexity Explorables : A collection/playground of interactive explorable explanations of complex systems in biology, physics, mathematics, social sciences, epidemiology, ecology and other fields. https://www.complexity-explorables.org\nSanta Fe Complexity Institute’s Complexity Explorer (not the same as the one above!!) delivers online courses, tutorials, and resources essential to the study of complex systems. https://www.complexityexplorer.org\nSiegenfeld, Alexander F., Bar-Yam, Yaneer.(2020). An Introduction to Complex Systems Science and Its Applications. Complexity, 2020, 6105872, 16 pages, 2020. https://doi.org/10.1155/2020/6105872. See Figure 1 extracted from this paper, below.\n\n\n\n\n\n\n\n\nFigure 1: Complexity Phenomena and Behaviours\n\n\n\n\n\n\nGerry Rafferty (1979). Baker Street.\n\nThat immortal sax by Raphael Ravenscroft, yes. But the lyrics, the lyrics…\n\n\n\nWinding your way down on Baker Street Light in your head and dead on your feet Well another crazy day, you’ll drink the night away And forget about everything\nThis city desert makes you feel so cold It’s got so many people but it’s got no soul And it’s taken you so long to find out you were wrong When you thought it held everything\nYou used to think that it was so easy You used to say that it was so easy But you’re tryin’, you’re tryin’ now Another year and then you’d be happy Just one more year and then you’d be happy But you’re cryin’, you’re cryin’ now\nWay down the street there’s a light in his place He opens the door, he’s got that look on his face And he asks you where you’ve been, you tell him who you’ve seen And you talk about anything\nHe’s got this dream about buyin’ some land He’s gonna give up the booze and the one night stands And then he’ll settle down, it’s a quiet little town And forget about everything\nBut you know he’ll always keep movin’ You know he’s never gonna stop movin’ ‘Cause he’s rollin’, he’s the rollin’ stone And when you wake up it’s a new mornin’ The sun is shinin’, it’s a new mornin’ But you’re going, you’re going on..",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/listing.html#modules",
-    "href": "content/courses/ModelStory/listing.html#modules",
-    "title": "The Model of the Story",
-    "section": "Modules",
-    "text": "Modules",
-    "crumbs": [
-      "Home",
-      "The Model of the Story"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/listing.html",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/listing.html",
-    "title": "Symmetry",
-    "section": "",
-    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n🕹 Creating Symmetry\n\n\nThe Language of Symmetry\n\n\nJul 21, 2026\n\n\n\n\n\n\n\n\n\n🕹 Measuring and Viewing Symmetry\n\n\nThe Matrix Math of Symmetry\n\n\nJul 23, 2026\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Title\nSubtitle\nDate\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
-      "Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
-    "title": "🕹 Measuring and Viewing Symmetry",
-    "section": "",
-    "text": "WORK IN PROGRESS !!!!",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Measuring and Viewing Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-is-a-matrix",
-    "title": "🕹 Measuring and Viewing Symmetry",
-    "section": "What is a Matrix?",
-    "text": "What is a Matrix?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Measuring and Viewing Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-can-a-matrix-represent",
-    "title": "🕹 Measuring and Viewing Symmetry",
-    "section": "What can a Matrix Represent?",
-    "text": "What can a Matrix Represent?",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Measuring and Viewing Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#what-kinds-of-matrices-are-useful-to-us",
-    "title": "🕹 Measuring and Viewing Symmetry",
-    "section": "What Kinds of Matrices are Useful to us?",
-    "text": "What Kinds of Matrices are Useful to us?\nAdjacency Matrix in Networks\n\n\nAdjacency matrices are a fundamental representation of networks (graphs) in network science. For an undirected graph with \\(n\\) nodes, the adjacency matrix \\(A\\) is an $ n n$ symmetric matrix where the columns and rows indicate nodes in the network: \\[A_{ij} =\n\\begin{cases}\n1 & \\text{if there is an edge between nodes } i \\text{ and } j, \\\\\n0 & \\text{otherwise}.\n\\end{cases}\\]\nFor directed graphs, \\(A\\) is generally asymmetric. For weighted graphs, \\(A_{ij}\\) holds the weight of the edge. The matrix encodes the entire topology compactly, enabling linear algebra techniques (matrix powers, decompositions, etc.) to extract insights about structure, dynamics, and function.\n\n\n\n\n   V1 V2 V3 V4\nV1  0  1  1  0\nV2  1  0  1  0\nV3  1  1  0  1\nV4  0  0  1  0",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Measuring and Viewing Symmetry"
-    ]
-  },
-  {
-    "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
-    "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html#references",
-    "title": "🕹 Measuring and Viewing Symmetry",
-    "section": "References",
-    "text": "References",
-    "crumbs": [
-      "Home",
-      "The Model of the Story",
-      "Symmetry",
-      "🕹 Measuring and Viewing Symmetry"
+      "Chaos"
     ]
   },
   {
@@ -938,7 +1042,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html#introduction",
     "title": "🏘 Painting Soho Red with Kandinsky!",
     "section": "Introduction",
-    "text": "Introduction\nMeeting Kandinsky\nHave you heard of a painter called Wassily Kandinksy?\n\n\n\n\n\n\n\n\nExtract from https://artsandculture.google.com/story/QgUxxeY10_VADg\n\n\n\nHe had the gift of synesthesia. Kandinsky was capable of synesthesia, an involuntary neurological phenomenon by which a person perceives several senses as being associated. In Kandinsky’s case, the sense of hearing was associated with the sense of sight, sounds, and colors being intimately linked in his mind. He could therefore ” see music ” as he found himself following a performance of Wagner’s Lohengrin.\n\n\n\n\n\nHe became an artist at the age of 30. In December 1896, Kandinsky left his homeland and moved to Munich with his wife, Ania Tchimiakina, in order to start a career as an artist. It was a radical move, a true departure. The artist was already 30-years old and left behind a respectable life, conforming to the conventions dictated by his family lineage.\n\n\n\n\n\nHe opened his own school in 1902: it was open to women. At the beginning of 1902, the Phalanx (group and school opposed to conventional and conservative art viewpoints) of which Kandinsky was president, opened a painting school in Schwabing. Kandinsky taught painting and drawing there. The school was open to women from its inception. This position was non-conformist and progressive, since, at the time, women were only admitted to the Society of Women Artists, an institution linked to the Munich Academy of Fine Arts, or to the evening classes of that Academy.\n\n\n\n\n\nHe was friends with Marcel Duchamp. European avant-garde made its official entry into the United States in 1913 at the Armory Show in New York. Kandinsky exhibited Improvisation 27, which artist and gallery owner Alfred Stieglitz bought to defend him against criticism. Marcel Duchamp’s Nude Descending a Staircase was a scandalous success. Another scandal followed in 1917 when Duchamp presented a urinal claiming artwork status to the hanging committee of the Salon of independent artists of which he is a member: Fountain became history, formalizing the invention of the ready-made, a radical innovation which establishes an art of the idea and positions Duchamp in art history.\n\n\n\n\n\nHe was a member of the ” Blue Four” group The German Galka Scheyer, who emigrated to New York in 1924, was the founder of the Blue Four group. After successful avant-garde exhibitions, he founded the influential Munich group Der Blaue Reiter (“The Blue Rider”; 1911–14) and began completely abstract painting. His forms evolved from fluid and organic to geometric and, finally, to pictographic (e.g., Tempered Élan, 1944).\n\n\nHere is a link to his Top 40 Paintings.\nLet us listen to Mathew Ritchie tell us about Kandinsky.\n\n\n Mathew Ritchie on Kandinsky\n\n\nThe Math in Kandinsky\nHere is a brief paper discussing the Math-Art of Wassily Kandinsky.:\n\n\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n   Karl Katchee.Kandinsky, Math Artist?\n\n\n What are the Key Insights from this paper?\n\nA very spatial aspect to his paintings?\nMetaphoric Correspondence between Emotions and Colours/Shapes\nDo we use Similar Language?\nGeometry pervades our lives\nProximity can be interpreted in many ways",
+    "text": "Introduction\nMeeting Kandinsky, S. H. Raza, and Malevich\nHave you heard of a painter called Wassily Kandinksy?\n\n\n\n\n\n\n\n\nExtract from https://artsandculture.google.com/story/QgUxxeY10_VADg\n\n\n\nHe had the gift of synesthesia. Kandinsky was capable of synesthesia, an involuntary neurological phenomenon by which a person perceives several senses as being associated. In Kandinsky’s case, the sense of hearing was associated with the sense of sight, sounds, and colors being intimately linked in his mind. He could therefore ” see music ” as he found himself following a performance of Wagner’s Lohengrin.\n\n\n\n\n\nHe became an artist at the age of 30. In December 1896, Kandinsky left his homeland (Russia) and moved to Munich with his wife, Ania Tchimiakina, in order to start a career as an artist. It was a radical move, a true departure. The artist was already 30-years old and left behind a respectable life, conforming to the conventions dictated by his family lineage.\n\n\n\n\n\nHe opened his own school in 1902: it was open to women. At the beginning of 1902, the Phalanx (group and school opposed to conventional and conservative art viewpoints) of which Kandinsky was president, opened a painting school in Schwabing. Kandinsky taught painting and drawing there. The school was open to women from its inception. This position was non-conformist and progressive, since, at the time, women were only admitted to the Society of Women Artists, an institution linked to the Munich Academy of Fine Arts, or to the evening classes of that Academy.\n\n\n\n\n\nHe was friends with Marcel Duchamp. European avant-garde made its official entry into the United States in 1913 at the Armory Show in New York. Kandinsky exhibited Improvisation 27, which artist and gallery owner Alfred Stieglitz bought to defend him against criticism. Marcel Duchamp’s Nude Descending a Staircase was a scandalous success. Another scandal followed in 1917 when Duchamp presented a urinal claiming artwork status to the hanging committee of the Salon of independent artists of which he is a member: Fountain became history, formalizing the invention of the ready-made, a radical innovation which establishes an art of the idea and positions Duchamp in art history.\n\n\n\n\n\nHe was a member of the “Blue Four” group The German Galka Scheyer, who emigrated to New York in 1924, was the founder of the Blue Four group. After successful avant-garde exhibitions, he founded the influential Munich group Der Blaue Reiter (“The Blue Rider”; 1911–14) and began completely abstract painting. His forms evolved from fluid and organic to geometric and, finally, to pictographic (e.g., Tempered Élan, 1944).\n\n\nHere is a link to his Top 40 Paintings.\n\n\n\n\n\n\n\n\n\n(a) Fixed Points\n\n\n\n\n\n\n\n\n\n(b) Composition VIII\n\n\n\n\n\n\n\n\n\n(c) Small Worlds XI\n\n\n\n\n\n\nFigure 2: Famous Paintings by Kandinsky\n\n\nLet us listen to Mathew Ritchie tell us about Kandinsky.\n\n\n\nMathew Ritchie on Kandinsky\n\n\n\nThe Math in Kandinsky\nHere is a brief paper discussing the Math-Art of Wassily Kandinsky.:\n\n\n  Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n   Karl Katchee.Kandinsky, Math Artist?\n\n\n What are the Key Insights from this paper?\n\nA very spatial aspect to his paintings?\nMetaphoric Correspondence between Emotions and Colours/Shapes\nWhat Vocabulary did Kandinsky use?\nDo we use Similar Language?\nGeometry pervades our lives. Maybe we have (the equivalent of) a gene for geometry?\nProximity can be interpreted in many ways",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -951,7 +1055,7 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html#using-proximity-as-a-model",
     "title": "🏘 Painting Soho Red with Kandinsky!",
     "section": "Using Proximity as a Model",
-    "text": "Using Proximity as a Model\nCan we use Proximity as a measure to quantify our experiences? What sort of experiences? What emotions could be involved? How can we attach numerical significance to those emotions?\nWalking the Streets in Soho\nAre you thirsty? Would you like some water?\n\n\n Cholera in Soho \n\n\nMore here: https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak\nA Proximity Effect\nLet us play this Vaccination Game: https://www.complexity-explorables.org/explorables/i-herd-you/\n\n\n    View webpage in full screen\n       \n      \n    \n   Epidemonic: A Complexity Explorable\n\n\nFun Stuff with Kandinsky\nLet’s also become synesthetic, however temporarily, and make music with Kandinsky !!\nChrome Music Lab : Kandinsky: This experiment is inspired by Wassily Kandinsky, an artist who compared painting to making music. It turns anything you draw – lines, circles, triangles, or scribbles – into sound. https://musiclab.chromeexperiments.com/kandinsky/\n\n\n    View webpage in full screen\n       \n      \n    \n   Kandinsky Music Generator\n\n\nHow to say, “You are standing too close to me?”\nCan we ask Sting? https://youtu.be/KNIZofPB8ZM\nMaybe not. There are better Models, may be!!",
+    "text": "Using Proximity as a Model\nCan we use Proximity as a measure to quantify our experiences? What sort of experiences? What emotions could be involved? How can we attach numerical significance to those emotions?\nWalking the Streets in Soho\nAre you thirsty? Would you like some water?\n\n\n Cholera in Soho \n\n\nMore here: https://www.wikiwand.com/en/1854_Broad_Street_cholera_outbreak\nA Proximity Effect\nLet us play this Vaccination Game: https://www.complexity-explorables.org/explorables/i-herd-you/\n\n\n    View webpage in full screen\n       \n      \n    \n   Epidemonic: A Complexity Explorable\n\n\nFun Stuff with Kandinsky\nLet’s also become synesthetic, however temporarily, and make music with Kandinsky !!\nChrome Music Lab : Kandinsky: This experiment is inspired by Wassily Kandinsky, an artist who compared painting to making music. It turns anything you draw – lines, circles, triangles, or scribbles – into sound. https://musiclab.chromeexperiments.com/kandinsky/\n\n\n    View webpage in full screen\n       \n      \n    \n   Kandinsky Music Generator",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -964,7 +1068,20 @@
     "href": "content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html#references",
     "title": "🏘 Painting Soho Red with Kandinsky!",
     "section": "References",
-    "text": "References\n\nDirk Brockman: This message must be Herd - PDF\n\nP. Bingham, N.Q. Verlander, M.J. Cheal (2004). John Snow, William Farr and the 1849 outbreak of cholera that affected London: a reworking of the data highlights the importance of the water supply. Public Health Volume 118, Issue 6, September 2004, Pages 387-394. Read the PDF.\n\n\nggvoronoi package in R: https://github.com/garretrc/ggvoronoi\n\nMake quick cool maps with Snazzy Maps.",
+    "text": "References\n\nRizio Yohannan Raj (Aug 17, 2016) From view to vision: S.H. Raza’s trajectory as an artist https://frontline.thehindu.com/arts-and-culture/art/from-view-to-vision/article8994527.ece\n\nWassily Kandinsky. Point and Line to a Plane. https://archive.org/details/pointlinetoplane00kand/mode/2up\n\nKasimir Malevich. Suprematism. https://monoskop.org/images/5/58/Malevich_Kazimir_1927_2000_Suprematism.pdf\n\nP. Bingham, N.Q. Verlander, M.J. Cheal (2004). John Snow, William Farr and the 1849 outbreak of cholera that affected London: a reworking of the data highlights the importance of the water supply. Public Health Volume 118, Issue 6, September 2004, Pages 387-394. Read the PDF.\n\nDirk Brockman: This message must be Herd - PDF   Download PDF File\n   \n    Unable to display PDF file. Download instead.\n  \n  \n\nggvoronoi package in R: https://github.com/garretrc/ggvoronoi\n\nMake quick cool maps with Snazzy Maps.",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Proximity",
+      "🏘 Painting Soho Red with Kandinsky!"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html#fun-stuff",
+    "href": "content/courses/ModelStory/Modules/30-Proximity/80-Proximity/index.html#fun-stuff",
+    "title": "🏘 Painting Soho Red with Kandinsky!",
+    "section": "Fun Stuff",
+    "text": "Fun Stuff\n\nHow to say, “You are standing too close to me?” Can we ask Sting? https://youtu.be/KNIZofPB8ZM Maybe not. There are better Models, may be!!\n\nStrava Art / GPS Art     \nView webpage in full screen",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1004,7 +1121,20 @@
     "href": "content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html#activities",
     "title": "🕹 I am Insta Famous",
     "section": "Activities",
-    "text": "Activities\nActivity-1: Secret Santa Game\nLet us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask Avni Gupta.\nShould we use this instead? https://www.drawnames.in/secret-santa-generator\nDiscussion: Nodes, Links, Link Directionality, Connected and Disconnected Networks\nActivity-2: Barabasi Cocktail Party Game\nThis is a game “invented” by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. http://networksciencebook.com/\n\nPlease take a coin in your hand. (A rupee coin is good!)\nFind a stranger potential new friend in the classroom. Both of you toss your coins.\n\n\nRegime #1: If the coins show exactly two Heads, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nRegime #2: If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nMake a note of your new friends initials. (“AV”)\nWe will plot this conversation on the board. How?\n\nDiscussion: Random Network Mechanisms, Information Flow, Giant Component, Emergence\nActivity-3: Indian Surnames Game\n\nHow many common Indian surnames do we know? Let us write them on the board.\nEach of us will now look at each surname and recollect how many people they know with that surname.\nWrite down the score for each surname.\nLet’s plot this on (yet another) network!!\nAND: let us plot a count of tallies for each one of us, and see who knows the most number of surnamed-people! 😆\n\nDiscussion: Node Degree, Degree Distribution, Heavy Tail/Scale Free, (Network) Configuration Model\n\n\n\n\n\n\nNoteRandom vs Real Networks\n\n\n\nStandard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.\n\n\nActivity-4: Hi, I am Kevin Bacon, SMI Foundation Batch\nLet us find a Keven Bacon in SMI Foundation Studies Programme!! Six Degrees of Separation…or of Kevin Bacon? Look at this video before you proceed!\n\n\n\n\n\n\nFigure 1: Veritasium: Six Degrees of Separation\n\n\n\n\n\n\n\n\n\nFigure 2: BBC Documentary: Six Degrees of Separation\n\n\n\n\nCollect friends Data from across college/class, import and plot, analyze and comment\nUse this online tool at DataBasic.io https://databasic.io/en_GB/connectthedots/ to Connect the Dots\n\n\n\n\n\n\n\n\nFigure 3: Connect the Dots\n\n\n\n\n\nEven more fun at at GraphCommons https://graphcommons.com/graphs/new\n\n\nDiscussion: Node Degree, Centrality, Betweenness, Link Values or Costs\nActivity-5: Can you introduce me to Chandler, again?\n\nTake your favourite Literary Work / TV Serial / Movie and create a Network Database for it.\nHow? Use conversations between pairs of individuals (nodes) to create links. E.g. each distinct conversation is a link, and the number of sentences uttered is the weight of the link.\nVisualize it either with or without tech tools From Teach Engineering, this Activity Sheet:. (Hah! Doing Engineering in a Design college!!🤣🤣🤣)\nCan also use Graph Comics\n\n\nDiscussion:Everything's Connected (\"Old Srishti Proverb.\" Bah!), Networks are everywhere, You are a node and you are a link...are you?",
+    "text": "Activities\nActivity-1: Secret Santa Game\nLet us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask Avni Gupta.\nShould we use this instead? https://www.drawnames.in/secret-santa-generator\nDiscussion: Nodes, Links, Link Directionality, Connected and Disconnected Networks\nActivity-2: Barabasi Cocktail Party Game\nThis is a game “invented” by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. http://networksciencebook.com/\n\nPlease take a coin in your hand. (A rupee coin is good!)\nFind a stranger potential new friend in the classroom. Both of you toss your coins.\n\n\nRegime #1: If the coins show exactly two Heads, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nRegime #2: If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nMake a note of your new friends initials. (“AV”)\nWe will plot this conversation on the board. How?\n\nDiscussion: Random Network Mechanisms, Information Flow, Giant Component, Emergence\nActivity-3: Indian Surnames Game\n\nHow many common Indian surnames do we know? Let us write them on the board.\nEach of us will now look at each surname and recollect how many people they know with that surname.\nWrite down the score for each surname.\nLet’s plot this on (yet another) network!!\nAND: let us plot a count of tallies for each one of us, and see who knows the most number of surnamed-people! 😂\n\nDiscussion: Node Degree, Degree Distribution, Heavy Tail/Scale Free, (Network) Configuration Model\n\n\n\n\n\n\nNoteRandom vs Real Networks\n\n\n\nStandard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.\n\n\nActivity-4: Hi, I am Kevin Bacon, SMI Foundation Batch\nLet us find a Keven Bacon in SMI Foundation Studies Programme!! Six Degrees of Separation…or of Kevin Bacon? Look at this video before you proceed!\n\n\n\n\n\n\nFigure 1: Veritasium: Six Degrees of Separation\n\n\n\n\n\n\n\n\n\nFigure 2: BBC Documentary: Six Degrees of Separation\n\n\n\n\nCollect friends Data from across college/class, import and plot, analyze and comment\nUse this online tool at DataBasic.io https://databasic.io/en_GB/connectthedots/ to Connect the Dots\n\n\n\n\n\n\n\n\nFigure 3: Connect the Dots\n\n\n\n\n\nEven more fun at at GraphCommons https://graphcommons.com/graphs/new\n\n\nDiscussion: Node Degree, Centrality, Betweenness, Link Values or Costs\nActivity-5: Can you introduce me to Chandler, again?\n\nTake your favourite Literary Work / TV Serial / Movie and create a Network Database for it.\nHow? Use conversations between pairs of individuals (nodes) to create links. E.g. each distinct conversation is a link, and the number of sentences uttered is the weight of the link.\nVisualize it either with or without tech tools From Teach Engineering, this Activity Sheet:. (Hah! Doing Engineering in a Design college!!🤣🤣🤣)\nCan also use Graph Comics\n\n\nDiscussion:Everything's Connected (\"Old Srishti Proverb.\" Bah!), Networks are everywhere, You are a node and you are a link...are you?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Networks",
+      "🕹 I am Insta Famous"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html#resources",
+    "href": "content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html#resources",
+    "title": "🕹 I am Insta Famous",
+    "section": "Resources",
+    "text": "Resources\n\nThe Blob: Emergence of a Giant Component\n\n\nView webpage in full screen",
     "crumbs": [
       "Home",
       "The Model of the Story",

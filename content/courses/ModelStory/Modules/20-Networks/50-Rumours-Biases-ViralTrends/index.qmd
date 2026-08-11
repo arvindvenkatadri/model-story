@@ -69,7 +69,7 @@ From
 
 Does the Bell toll for thee?
 
-### The Game of the Polygons
+## Bias: Schelling Segregation
 
 Let us explore, sadly, the `dark side` of [Game Theory](../../10-Games/10-Company-Heroes/index.qmd), and of course [Networks](../40-Networks/index.qmd). Where our own
 agent-like actions lead to bad outcomes in Society...
@@ -84,7 +84,7 @@ Let us play **The Parable of the Polygons** <https://ncase.me/polygons/>
 
 The Parable of the Polygons was created by [Vi Hart](https://twitter.com/vihartvihart) and [Nicky Case](https://twitter.com/ncasenmare) in order to demonstrate how small individual biases can have large societal consequences in terms of segregation. This project is based on the work of Thomas Schelling's [Dynamic Models of Segregation](https://www.stat.berkeley.edu/%7Ealdous/157/Papers/Schelling_Seg_Models.pdf).
 
-### Another Dark Side of...
+## Bias: Hotelling's Phenomenon
 
 Why are Petrol Stations located next to each other? Here is the
 **Hotelling's Phenomenon**, explained.\
@@ -96,7 +96,12 @@ Hotelling's Phenomenon, revisited
 </center>
 :::
 
-## Vaccinations: For or Against?
+## Viral Trends: Echo Chambers
+
+{{< html https://www.complexity-explorables.org/explorables/echo-chambers/ >}}
+
+
+## Viral Trends: Rumours and Vaccinations
 
 If there are nasty Rumours *in circulation*, then it is well to be **vaccinated against** them. But if there are good news stories, or even ***brands***, or ***cultural trends***, one needs to be in with the group. (*Can you see costs lurking in here?*)
 
@@ -183,8 +188,6 @@ Network Effects on Reputations!
     -   Taglines from Ads, and Products ( e.g. "Think Different". Bah.)
 - When we want to design an ad for a product, or a policy that we want everyone to follow, we are trying to ensure that those actions become part of people's vocabulary
 - And we want those actions to be **contagious"** ( in a nice way!) so that **"many people copy each other"**
-
-
 
 ## References
 

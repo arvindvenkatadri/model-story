@@ -41,7 +41,7 @@ knitr::include_graphics("featured.png")
 
 ## Introduction
 
-### Meeting Kandinsky
+### Meeting Kandinsky, S. H. Raza, and Malevich
 
 Have you heard of a painter called Wassily Kandinksy?
 
@@ -60,7 +60,7 @@ Extract from <https://artsandculture.google.com/story/QgUxxeY10_VADg>
 >     following a performance of Wagner's *Lohengrin*.
 
 > 2.  **He became an artist at the age of 30.** In December 1896,
->     Kandinsky left his homeland and moved to Munich with his wife,
+>     Kandinsky left his homeland (Russia) and moved to Munich with his wife,
 >     Ania Tchimiakina, in order to start a career as an artist. It was
 >     a radical move, a true departure. The artist was already 30-years
 >     old and left behind a respectable life, conforming to the
@@ -78,7 +78,7 @@ Extract from <https://artsandculture.google.com/story/QgUxxeY10_VADg>
 
 > 4.  **He was friends with Marcel Duchamp.** European avant-garde made
 >     its official entry into the United States in 1913 at the Armory
->     Show in New York. Kandinsky exhibited Improvisation 27, which
+>     Show in New York. Kandinsky exhibited [Improvisation 27](https://www.wassily-kandinsky.org/assets/img/paintings/Improvisation-27.jpg), which
 >     artist and gallery owner Alfred Stieglitz bought to defend him
 >     against criticism. Marcel Duchamp's Nude Descending a Staircase
 >     was a scandalous success. Another scandal followed in 1917 when
@@ -88,7 +88,7 @@ Extract from <https://artsandculture.google.com/story/QgUxxeY10_VADg>
 >     ready-made, a radical innovation which establishes an art of the
 >     idea and positions Duchamp in art history.
 
-> 5.  **He was a member of the " Blue Four" group** The German Galka
+> 5.  **He was a member of the "Blue Four" group** The German Galka
 >     Scheyer, who emigrated to New York in 1924, was the founder of the
 >     Blue Four group. After successful avant-garde exhibitions, he
 >     founded the influential Munich group Der Blaue Reiter (“The Blue
@@ -99,14 +99,30 @@ Extract from <https://artsandculture.google.com/story/QgUxxeY10_VADg>
 Here is a link to his [**Top 40
 Paintings.**](https://www.wassilykandinsky.net/painting1896-1944.php)
 
+::: {#fig-kandinsky layout-ncol=3}
+
+ ![Fixed Points](https://www.wassilykandinsky.net/images/works/342.jpg?version=7){#fig-fixed-points}
+ 
+![Composition VIII](https://www.wassilykandinsky.net/images/works/50.jpg?version=7){#fig-composition-viii}
+
+![Small Worlds XI](https://www.wassilykandinsky.net/images/works/48.jpg?version=7){#fig-small-worlds-xi}
+
+Famous Paintings by Kandinsky
+:::
+
+
 Let us listen to Mathew Ritchie tell us about Kandinsky.
 
 ::: {}
 <center>
-{{< video https://www.youtube.com/watch?v=_oxS2TM182I width="560" height="480" >}}
+{{< video https://www.youtube.com/watch?v=_oxS2TM182I width="680" height="480" >}}
+
 Mathew Ritchie on Kandinsky
+
 </center>
 :::
+<br>
+
 
 ### The Math in Kandinsky
 
@@ -124,8 +140,9 @@ What are the Key Insights from this paper?
 
 -   A very spatial aspect to his paintings?
 -   Metaphoric Correspondence between Emotions and Colours/Shapes
--   Do we use Similar Language?
--   Geometry pervades our lives
+-   What Vocabulary did Kandinsky use? 
+-   Do we use Similar Language? 
+-   Geometry pervades our lives. Maybe we have (the equivalent of) a *gene for geometry*?
 -   Proximity can be interpreted in many ways
 
 ## Using Proximity as a Model
@@ -140,7 +157,7 @@ Are you thirsty? Would you like some water?
 
 ::: {}
 <center>
-{{< video https://www.youtube.com/watch?v=lNjrAXGRda4 width="560" height="480" >}}
+{{< video https://www.youtube.com/watch?v=lNjrAXGRda4 width="680" height="480" >}}
 Cholera in Soho
 <br>
 </center>
@@ -176,22 +193,28 @@ Kandinsky Music Generator
 </center>
 :::
 
-### How to say, "You are standing too close to me?"
-
-Can we ask Sting? <https://youtu.be/KNIZofPB8ZM>
-
-Maybe not. There are better Models, may be!!
 
 ## References
 
-1.  Dirk Brockman: [This message must be Herd -
-    PDF](../../../../../materials/pdfs/Brockman-ThisMessageMustBeHerd.pdf)
+1. Rizio Yohannan Raj (Aug 17, 2016) *From view to vision: S.H. Raza’s trajectory as an artist* <https://frontline.thehindu.com/arts-and-culture/art/from-view-to-vision/article8994527.ece>
+1. Wassily Kandinsky. *Point and Line to a Plane*. <https://archive.org/details/pointlinetoplane00kand/mode/2up>
+1. Kasimir Malevich. *Suprematism*. <https://monoskop.org/images/5/58/Malevich_Kazimir_1927_2000_Suprematism.pdf>
 1.  P. Bingham, N.Q. Verlander, M.J. Cheal (2004). *John Snow, William
     Farr and the 1849 outbreak of cholera that affected London: a
     reworking of the data highlights the importance of the water
     supply*. Public Health Volume 118, Issue 6, September 2004, Pages
     387-394. [Read the
     PDF.](https://sci-hub.se/https://doi.org/10.1016/j.puhe.2004.05.007)
+1.  Dirk Brockman: [This message must be Herd -
+    PDF](../../../../../materials/pdfs/Brockman-ThisMessageMustBeHerd.pdf)
+    {{< pdf ../../../../../materials/pdfs/Brockman-ThisMessageMustBeHerd.pdf >}}
 1. `{{ggvoronoi}}` package in R: <https://github.com/garretrc/ggvoronoi>
 1.  Make quick cool maps with [Snazzy Maps.](https://snazzymaps.com)
 
+
+## Fun Stuff
+
+1. How to say, "You are standing too close to me?" Can we ask Sting? <https://youtu.be/KNIZofPB8ZM> Maybe not. There are better Models, may be!!
+
+1. Strava Art / GPS Art
+{{< html https://www.strav.art/home >}}

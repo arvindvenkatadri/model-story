@@ -1,0 +1,18 @@
+---
+title: "Deterministic Chaos"
+subtitle: ""
+order: 310
+date: 09/August/2026
+date-modified: today
+categories:
+  - Logistic Equation
+  - Cobweb Diagram
+draft: true
+---
+
+## Introduction
+
+
+### The Logistic Map
+
+{{< html https://www.complexity-explorables.org/flongs/logistic/ >}}

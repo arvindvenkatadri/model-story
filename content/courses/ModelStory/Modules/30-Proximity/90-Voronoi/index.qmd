@@ -33,18 +33,93 @@ library(latticeExtra)
 
 ```
 
+## What did John Snow Make?
 
-## A Model for Proximity: The Delaunay Triangulation and the Voronoi Diagram 
+{{< pdf https://johnsnow.matrix.msu.edu/documentUploads/15-78-1DB/15-78-1DB-22-1855-01-SnowMCC2-map1-rev.pdf >}}
+
+And today, we can make something like this with code:
+
+```{r}
+#| label: fig-cholera-map
+#| fig-cap: "John Snow's Cholera Map With our Model Superimposed"
+#| echo: false
+#| 
+library(HistData)
+library(ggplot2)
+library(dplyr)
+
+data(Snow.deaths)
+data(Snow.pumps)
+data(Snow.streets)
+data(Snow.polygons)
+
+# Flatten the list of polygon vertex data frames into one df with a pump ID
+polygons_df <- bind_rows(
+  lapply(seq_along(Snow.polygons), function(i) {
+    data.frame(Snow.polygons[[i]], pump = i)
+  })
+)
+
+ggplot() +
+  # Voronoi (Thiessen) regions, one fill color per pump catchment area
+  geom_path(data = polygons_df, aes(x = x, y = y, group = pump), color = "grey50", linetype = "dashed", linewidth = 2) + 
+  # geom_polygon(
+  #   data = polygons_df,
+  #   aes(x = x, y = y, group = pump, fill = factor(pump)),
+  #   color = "white", linewidth = 0.6, alpha = 0.35
+  # ) +
+  # Streets
+  geom_path(
+    data = Snow.streets,
+    aes(x = x, y = y, group = street),
+    color = "grey30", linewidth = 0.4
+  ) +
+  # Deaths
+  geom_point(
+    data = Snow.deaths,
+    aes(x = x, y = y),
+    color = "firebrick", size = 1.3, alpha = 0.8
+  ) +
+  # Pumps
+  geom_point(
+    data = Snow.pumps,
+    aes(x = x, y = y),
+    shape = 17, size = 4, color = "steelblue4"
+  ) +
+  geom_text(
+    data = Snow.pumps,
+    aes(x = x, y = y, label = label),
+    vjust = -1, size = 3, color = "steelblue4", fontface = "bold"
+  ) +
+  coord_equal() +
+  guides(fill = "none") +
+  labs(
+    title = "John Snow's 1854 Cholera Map",
+    subtitle = "Streets, deaths, pumps, and Voronoi catchment areas per pump",
+    x = NULL, y = NULL
+  ) +
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    plot.title = element_text(face = "bold")
+  )
+```
+
+
+## A Model for Proximity
 
 So how do we model "proximity"? Let us take a quick look at this
 description of **Predator-Prey Dynamics.**
 
 {{< pdf ../../../../../materials/pdfs/FollowingtheHerd.pdf >}}
 
-### Plotting the Delaunay and Voronoi Diagrams
+### Delaunay and Voronoi Diagrams
 
-So here is an example of a computationally plotted Delaunay
-Triangulation and Voronoi Diagram:
+Can we use Kandinsky's very idiosyncratic interpretation of triangles to create a diagram that works to measure Proximity? What could such a diagram look like? 
+
+So here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:
 
 ```{r}
 #| label: fig-voronoi-delaunay
@@ -109,9 +184,18 @@ gf_segment(y1 + y2 ~ x1 + x2, data = vor$delsgs, colour = "green") %>%
 
 ```
 
-How do we plot these diagrams?
+## How to Interpret these Diagrams?
 
-We will use this tool:[**Geogebra**](https://www.geogebra.org/classic)
+The *Voronoi Diagram* is possibly easier to interpret: it splits up (a 2D plane ) into disjoint areas which are closest to one-and-only-one of a set of points; i.e it splits the plane into disjoint **neighbourhoods**. 
+
+A Dual to the Voronoi is the *Delaunay Triangulation*: this diagram breaks up the plane into discrete closed-off **triangular sub-spaces**. These subspaces usually are built up based on specific properties we are interested in: temperature, density, slope, vibration/center of gravity etc. Any quantity that varies continuously over a 2D space, cane be modelled using a set of *finite elements* created by the Delaunay Triangulation. 
+
+## Where are these applied? 
+See and exhaustive list below! 
+
+## How do we Construct these Diagrams?
+
+We will use this tool: [**Geogebra**](https://www.geogebra.org/classic)
 
 Download and install this on your laptops. You can also use it in your
 browser <https://www.geogebra.org/classic?lang=en> and download
@@ -128,7 +212,7 @@ the Geogebra (*.ggb*) files that you create. Let us first see Soho with the Voro
 -   Did you see how the Delaunay Triangulation seems to "dislike"
     obtuse-angles, and changes the triangulation pattern when a certain
     (sum of) angles become more than 180?
--   Wasn't that a very Kandinsky-like thing to do, even for an
+-   Wasn't that [a very Kandinsky-like thing]{style="background-color:yellow;"} to do, even for an
     algorithm?
 -   The Delaunay Triangulation gives us a set of triangular elements
     that cover our desired surface
@@ -200,7 +284,7 @@ We will use the Euclidean and maybe other concepts of distance when we get into 
 ### Plotting Silhouette Diagrams
 
 To be written up!!
-<https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html>
+<https://orangedatamining.com/widget-catalog/visualize/silhouetteplot/>
 
 ## So where are all these Proximities used?
 
@@ -408,6 +492,8 @@ Proximity, and use Voronoi/Delaunay diagrams in their work. From
 
 ## References
 
+1. The John Snow Archive and Research Companion. <https://johnsnow.matrix.msu.edu/>
+1. Mafe Callejón.(21 February 2022). *Masters series: Recreating John Snow's cholera map: See an interactive version of John Snow's iconic cholera map* <https://flourish.studio/blog/masters-john-snow/> 
 1.  **Voronoi Diagrams and a Day at the Beach**
     [**(PDF)**](../../../../../materials/pdfs/VoronoiDiagrams-ADayAtTheBeach.pdf)
     Talks about cholera in Soho, the Voronoi diagram, and how to
@@ -422,3 +508,9 @@ Proximity, and use Voronoi/Delaunay diagrams in their work. From
     <https://natronics.github.io/blag/2014/gps-viz-1/>
 5.  How Do Codes Work in GPS?
     <https://natronics.github.io/blag/2014/gps-prn/>
+    
+## Additional Readings for the Curious
+
+1. Rudyard Kipling. *How Fear Came*. <https://www.kiplingsociety.co.uk/tale/how-fear-came.htm>
+
+1. 

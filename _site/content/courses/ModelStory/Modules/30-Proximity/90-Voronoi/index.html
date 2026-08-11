@@ -391,11 +391,19 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li>
-<a href="#a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram" id="toc-a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram" class="nav-link active" data-scroll-target="#a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram">A Model for Proximity: The Delaunay Triangulation and the Voronoi Diagram</a>
+<li><a href="#what-did-john-snow-make" id="toc-what-did-john-snow-make" class="nav-link active" data-scroll-target="#what-did-john-snow-make">What did John Snow Make?</a></li>
+  <li>
+<a href="#a-model-for-proximity" id="toc-a-model-for-proximity" class="nav-link" data-scroll-target="#a-model-for-proximity">A Model for Proximity</a>
   <ul class="collapse">
-<li><a href="#plotting-the-delaunay-and-voronoi-diagrams" id="toc-plotting-the-delaunay-and-voronoi-diagrams" class="nav-link" data-scroll-target="#plotting-the-delaunay-and-voronoi-diagrams">Plotting the Delaunay and Voronoi Diagrams</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+<li><a href="#delaunay-and-voronoi-diagrams" id="toc-delaunay-and-voronoi-diagrams" class="nav-link" data-scroll-target="#delaunay-and-voronoi-diagrams">Delaunay and Voronoi Diagrams</a></li>
+  </ul>
+</li>
+  <li><a href="#how-to-interpret-these-diagrams" id="toc-how-to-interpret-these-diagrams" class="nav-link" data-scroll-target="#how-to-interpret-these-diagrams">How to Interpret these Diagrams?</a></li>
+  <li><a href="#where-are-these-applied" id="toc-where-are-these-applied" class="nav-link" data-scroll-target="#where-are-these-applied">Where are these applied?</a></li>
+  <li>
+<a href="#how-do-we-construct-these-diagrams" id="toc-how-do-we-construct-these-diagrams" class="nav-link" data-scroll-target="#how-do-we-construct-these-diagrams">How do we Construct these Diagrams?</a>
+  <ul class="collapse">
+<li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   </ul>
 </li>
   <li><a href="#fun-stuff-with-geogebra-and-voronoi" id="toc-fun-stuff-with-geogebra-and-voronoi" class="nav-link" data-scroll-target="#fun-stuff-with-geogebra-and-voronoi">Fun Stuff with Geogebra and Voronoi</a></li>
@@ -419,6 +427,7 @@ window.Quarto = {
   <li><a href="#painting-with-proximitydistance" id="toc-painting-with-proximitydistance" class="nav-link" data-scroll-target="#painting-with-proximitydistance">Painting with Proximity/Distance</a></li>
   <li><a href="#wait-but-why" id="toc-wait-but-why" class="nav-link" data-scroll-target="#wait-but-why">Wait, But Why?</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#additional-readings-for-the-curious" id="toc-additional-readings-for-the-curious" class="nav-link" data-scroll-target="#additional-readings-for-the-curious">Additional Readings for the Curious</a></li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -451,7 +460,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 5, 2026</p>
+      <p class="date-modified">August 11, 2026</p>
     </div>
   </div>
     
@@ -459,14 +468,34 @@ window.Quarto = {
   
 
 
-</header><section id="a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram" class="level2"><h2 class="anchored" data-anchor-id="a-model-for-proximity-the-delaunay-triangulation-and-the-voronoi-diagram">A Model for Proximity: The Delaunay Triangulation and the Voronoi Diagram</h2>
+</header><section id="what-did-john-snow-make" class="level2"><h2 class="anchored" data-anchor-id="what-did-john-snow-make">What did John Snow Make?</h2>
+  <p><a href="https://johnsnow.matrix.msu.edu/documentUploads/15-78-1DB/15-78-1DB-22-1855-01-SnowMCC2-map1-rev.pdf" target="_blank">Download PDF File</a></p>
+   <object data="https://johnsnow.matrix.msu.edu/documentUploads/15-78-1DB/15-78-1DB-22-1855-01-SnowMCC2-map1-rev.pdf" type="application/pdf" width="100%" height="600px">
+    <p>Unable to display PDF file. <a href="https://johnsnow.matrix.msu.edu/documentUploads/15-78-1DB/15-78-1DB-22-1855-01-SnowMCC2-map1-rev.pdf">Download</a> instead.</p>
+  </object>
+  
+<p>And today, we can make something like this with code:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-cholera-map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-cholera-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-cholera-map-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: John Snow’s Cholera Map With our Model Superimposed"><img src="index_files/figure-html/fig-cholera-map-1.png" class="img-fluid figure-img" width="2100"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cholera-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: John Snow’s Cholera Map With our Model Superimposed
+</figcaption></figure>
+</div>
+</div>
+</div>
+</section><section id="a-model-for-proximity" class="level2"><h2 class="anchored" data-anchor-id="a-model-for-proximity">A Model for Proximity</h2>
 <p>So how do we model “proximity”? Let us take a quick look at this description of <strong>Predator-Prey Dynamics.</strong></p>
   <p><a href="../../../../../materials/pdfs/FollowingtheHerd.pdf" target="_blank">Download PDF File</a></p>
    <object data="../../../../../materials/pdfs/FollowingtheHerd.pdf" type="application/pdf" width="100%" height="600px">
     <p>Unable to display PDF file. <a href="../../../../../materials/pdfs/FollowingtheHerd.pdf">Download</a> instead.</p>
   </object>
   
-<section id="plotting-the-delaunay-and-voronoi-diagrams" class="level3"><h3 class="anchored" data-anchor-id="plotting-the-delaunay-and-voronoi-diagrams">Plotting the Delaunay and Voronoi Diagrams</h3>
+<section id="delaunay-and-voronoi-diagrams" class="level3"><h3 class="anchored" data-anchor-id="delaunay-and-voronoi-diagrams">Delaunay and Voronoi Diagrams</h3>
+<p>Can we use Kandinsky’s very idiosyncratic interpretation of triangles to create a diagram that works to measure Proximity? What could such a diagram look like?</p>
 <p>So here is an example of a computationally plotted Delaunay Triangulation and Voronoi Diagram:</p>
 <div id="fig-voronoi-delaunay" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-voronoi-delaunay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -474,7 +503,7 @@ window.Quarto = {
 <div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-voronoi-delaunay" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div id="fig-voronoi-delaunay-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-voronoi-delaunay-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-voronoi-delaunay-1.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;1&nbsp;(a): Delaunay Triangulation"><img src="index_files/figure-html/fig-voronoi-delaunay-1.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
+<a href="index_files/figure-html/fig-voronoi-delaunay-1.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;2&nbsp;(a): Delaunay Triangulation"><img src="index_files/figure-html/fig-voronoi-delaunay-1.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-voronoi-delaunay-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Delaunay Triangulation
@@ -484,7 +513,7 @@ window.Quarto = {
 <div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-voronoi-delaunay" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div id="fig-voronoi-delaunay-2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-voronoi-delaunay-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-voronoi-delaunay-2.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;1&nbsp;(b): Voronoi Diagram"><img src="index_files/figure-html/fig-voronoi-delaunay-2.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
+<a href="index_files/figure-html/fig-voronoi-delaunay-2.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;2&nbsp;(b): Voronoi Diagram"><img src="index_files/figure-html/fig-voronoi-delaunay-2.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-voronoi-delaunay-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Voronoi Diagram
@@ -494,7 +523,7 @@ window.Quarto = {
 <div class="cell-output-display quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-voronoi-delaunay" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div id="fig-voronoi-delaunay-3" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure"><div aria-describedby="fig-voronoi-delaunay-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="index_files/figure-html/fig-voronoi-delaunay-3.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;1&nbsp;(c): Both Overlaid"><img src="index_files/figure-html/fig-voronoi-delaunay-3.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
+<a href="index_files/figure-html/fig-voronoi-delaunay-3.png" class="lightbox" data-gallery="fig-voronoi-delaunay" title="Figure&nbsp;2&nbsp;(c): Both Overlaid"><img src="index_files/figure-html/fig-voronoi-delaunay-3.png" style="width:120.0%;height:120.0%" data-ref-parent="fig-voronoi-delaunay" class="figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-voronoi-delaunay-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (c) Both Overlaid
@@ -504,11 +533,16 @@ window.Quarto = {
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-voronoi-delaunay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Spatial Partitionings
+Figure&nbsp;2: Spatial Partitionings
 </figcaption></figure>
 </div>
-<p>How do we plot these diagrams?</p>
-<p>We will use this tool:<a href="https://www.geogebra.org/classic"><strong>Geogebra</strong></a></p>
+</section></section><section id="how-to-interpret-these-diagrams" class="level2"><h2 class="anchored" data-anchor-id="how-to-interpret-these-diagrams">How to Interpret these Diagrams?</h2>
+<p>The <em>Voronoi Diagram</em> is possibly easier to interpret: it splits up (a 2D plane ) into disjoint areas which are closest to one-and-only-one of a set of points; i.e it splits the plane into disjoint <strong>neighbourhoods</strong>.</p>
+<p>A Dual to the Voronoi is the <em>Delaunay Triangulation</em>: this diagram breaks up the plane into discrete closed-off <strong>triangular sub-spaces</strong>. These subspaces usually are built up based on specific properties we are interested in: temperature, density, slope, vibration/center of gravity etc. Any quantity that varies continuously over a 2D space, cane be modelled using a set of <em>finite elements</em> created by the Delaunay Triangulation.</p>
+</section><section id="where-are-these-applied" class="level2"><h2 class="anchored" data-anchor-id="where-are-these-applied">Where are these applied?</h2>
+<p>See and exhaustive list below!</p>
+</section><section id="how-do-we-construct-these-diagrams" class="level2"><h2 class="anchored" data-anchor-id="how-do-we-construct-these-diagrams">How do we Construct these Diagrams?</h2>
+<p>We will use this tool: <a href="https://www.geogebra.org/classic"><strong>Geogebra</strong></a></p>
 <p>Download and install this on your laptops. You can also use it in your browser <a href="https://www.geogebra.org/classic?lang=en" class="uri">https://www.geogebra.org/classic?lang=en</a> and download the Geogebra (<em>.ggb</em>) files that you create. Let us first see Soho with the Voronoi Diagram, and then we make such a diagram step by step.</p>
 <ol type="1">
 <li>Exercise 1: Download <a href="../../../../../materials/pdfs/SohoMap.ggb">this <code>.ggb</code> file</a> and open it in Geogebra.</li>
@@ -516,10 +550,11 @@ Figure&nbsp;1: Spatial Partitionings
 <li>Exercise 3: With 4 points: <a href="../../../../../materials/pdfs/four points.ggb">Four Pointer Voronoi</a>
 </li>
 <li>Exercise 4: Let us now add more points. How do we make a multi-point Voronoi? We need to make a <a href="../../../../../materials/pdfs/VoronoiLargeNoOfPointsInGeogebra.pdf"><strong>“list of points” in Geogebra</strong></a>.</li>
-</ol></section><section id="discussion" class="level3"><h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
+</ol>
+<section id="discussion" class="level3"><h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
 <ul>
 <li>Did you see how the Delaunay Triangulation seems to “dislike” obtuse-angles, and changes the triangulation pattern when a certain (sum of) angles become more than 180?</li>
-<li>Wasn’t that a very Kandinsky-like thing to do, even for an algorithm?</li>
+<li>Wasn’t that <span style="background-color:yellow;">a very Kandinsky-like thing</span> to do, even for an algorithm?</li>
 <li>The Delaunay Triangulation gives us a set of triangular elements that cover our desired surface</li>
 <li>The Voronoi Diagram uses the Delaunay to give us <em>possibly infinite</em> proximal neighbourhoods.</li>
 </ul></section></section><section id="fun-stuff-with-geogebra-and-voronoi" class="level2"><h2 class="anchored" data-anchor-id="fun-stuff-with-geogebra-and-voronoi">Fun Stuff with Geogebra and Voronoi</h2>
@@ -575,16 +610,16 @@ Figure&nbsp;1: Spatial Partitionings
 </section><section id="taxicab-distances" class="level3"><h3 class="anchored" data-anchor-id="taxicab-distances">Taxicab Distances</h3>
 <p>And if a <em>man hatta</em> live in New York?</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="taxicab-manhattan-grid-layout-paths.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="taxicab-manhattan-grid-layout-paths.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+<figure class="figure"><p><a href="taxicab-manhattan-grid-layout-paths.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="taxicab-manhattan-grid-layout-paths.gif" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="taxicab-manhattan-grid-taxicab-distance.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="taxicab-manhattan-grid-taxicab-distance.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+<figure class="figure"><p><a href="taxicab-manhattan-grid-taxicab-distance.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="taxicab-manhattan-grid-taxicab-distance.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
 </figure>
 </div>
 <p>We will use the Euclidean and maybe other concepts of distance when we get into our Machine Learning models!</p>
 </section><section id="plotting-silhouette-diagrams" class="level3"><h3 class="anchored" data-anchor-id="plotting-silhouette-diagrams">Plotting Silhouette Diagrams</h3>
-<p>To be written up!! <a href="https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html" class="uri">https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/widgets/visualize/silhouetteplot.html</a></p>
+<p>To be written up!! <a href="https://orangedatamining.com/widget-catalog/visualize/silhouetteplot/" class="uri">https://orangedatamining.com/widget-catalog/visualize/silhouetteplot/</a></p>
 </section></section><section id="so-where-are-all-these-proximities-used" class="level2"><h2 class="anchored" data-anchor-id="so-where-are-all-these-proximities-used">So where are all these Proximities used?</h2>
 <section id="proximities-in-the-gps-system" class="level3"><h3 class="anchored" data-anchor-id="proximities-in-the-gps-system">Proximities in the GPS System</h3>
 <p>The GPS system is all about wanting to know if one is <em>proximate</em> to a desired landmark! But how does it work?</p>
@@ -629,10 +664,10 @@ Figure&nbsp;1: Spatial Partitionings
 <div class="cell-output-display">
 <div id="fig-code-mf" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-code-mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="https://gssc.esa.int/navipedia/images/7/73/Corr_block.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;2: Code Matched Filter or Correlator"><img src="https://gssc.esa.int/navipedia/images/7/73/Corr_block.png" class="img-fluid figure-img"></a>
+<a href="https://gssc.esa.int/navipedia/images/7/73/Corr_block.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;3: Code Matched Filter or Correlator"><img src="https://gssc.esa.int/navipedia/images/7/73/Corr_block.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-code-mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Code Matched Filter or Correlator
+Figure&nbsp;3: Code Matched Filter or Correlator
 </figcaption></figure>
 </div>
 </div>
@@ -642,21 +677,21 @@ Figure&nbsp;2: Code Matched Filter or Correlator
 <div class="cell-output-display">
 <div id="fig-code-autocorr" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-code-autocorr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="https://gssc.esa.int/navipedia/images/8/88/Corr_prn.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;3: Code Matched Filter Output"><img src="https://gssc.esa.int/navipedia/images/8/88/Corr_prn.png" class="img-fluid figure-img"></a>
+<a href="https://gssc.esa.int/navipedia/images/8/88/Corr_prn.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;4: Code Matched Filter Output"><img src="https://gssc.esa.int/navipedia/images/8/88/Corr_prn.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-code-autocorr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Code Matched Filter Output
+Figure&nbsp;4: Code Matched Filter Output
 </figcaption></figure>
 </div>
 </div>
 </div>
-<p>In the <a href="#fig-code-autocorr" class="quarto-xref">Figure&nbsp;3</a> above, the red curve shows the Hamming Distance between a received C/A code, and its locally generated copy. Only when the proximity between them is within one-chip does the measure have any sensible amplitude. (This is called <strong><em>Autocorrelation</em></strong>.)</p>
+<p>In the <a href="#fig-code-autocorr" class="quarto-xref">Figure&nbsp;4</a> above, the red curve shows the Hamming Distance between a received C/A code, and its locally generated copy. Only when the proximity between them is within one-chip does the measure have any sensible amplitude. (This is called <strong><em>Autocorrelation</em></strong>.)</p>
 <p>The blue curve show Hamming Distance proximity between a received C/A code and <strong>any other</strong> C/A code. At no overlap position do these dissimilar codes have a useful proximity measure. (This is known as <strong>Cross-Correlation</strong>).</p>
 <p>C/A codes are <strong><em>designed</em></strong> to have that spike-like autocorrelation, and that fuzz like cross-correlation to aid in proximity-based synchronization and code wipe-off.</p>
 </section><section id="a-brief-foray-into-cryptography" class="level3"><h3 class="anchored" data-anchor-id="a-brief-foray-into-cryptography">A Brief Foray into Cryptography</h3>
 <p>In the Sherlock Holmes story,<a href="https://www.gutenberg.org/files/108/108-h/108-h.htm#chap03"><strong>The Adventure of the Dancing Men</strong></a>, a criminal known the one of the characters communicates with her using a childish/child-like drawing which looks like this:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/img01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="images/img01.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
+<figure class="figure"><p><a href="images/img01.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/img01.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
 </figure>
 </div>
 <p>In this message, each character is a visual representation, or a **substitution* for, a letter from the alphabet. The characters with flags are the last letter in each word. The message is translated in the story as <em>“Am here, Abe Slaney”</em>.</p>
@@ -664,7 +699,7 @@ Figure&nbsp;3: Code Matched Filter Output
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><a href="images/dancing-men-cipher-overview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="images/dancing-men-cipher-overview.png" class="quarto-figure quarto-figure-center figure-img" width="360" height="360"></a></p>
+<figure class="figure"><p><a href="images/dancing-men-cipher-overview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="images/dancing-men-cipher-overview.png" class="quarto-figure quarto-figure-center figure-img" width="360" height="360"></a></p>
 </figure>
 </div>
 </div>
@@ -808,6 +843,10 @@ Figure&nbsp;3: Code Matched Filter Output
 </li>
 </ul></section><section id="references" class="level2"><h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
+<li>The John Snow Archive and Research Companion. <a href="https://johnsnow.matrix.msu.edu/" class="uri">https://johnsnow.matrix.msu.edu/</a>
+</li>
+<li>Mafe Callejón.(21 February 2022). <em>Masters series: Recreating John Snow’s cholera map: See an interactive version of John Snow’s iconic cholera map</em> <a href="https://flourish.studio/blog/masters-john-snow/" class="uri">https://flourish.studio/blog/masters-john-snow/</a>
+</li>
 <li>
 <strong>Voronoi Diagrams and a Day at the Beach</strong> <a href="../../../../../materials/pdfs/VoronoiDiagrams-ADayAtTheBeach.pdf"><strong>(PDF)</strong></a> Talks about cholera in Soho, the Voronoi diagram, and how to construct it using waves on a beach!!</li>
 <li>Data Genetics. <a href="http://datagenetics.com/blog/may12017/index.html"><em>Voronoi Tessellations</em>.</a> Very interesting 3D pictures of how Voronois and Delaunays are created.</li>
@@ -817,7 +856,11 @@ Figure&nbsp;3: Code Matched Filter Output
 </li>
 <li>How Do Codes Work in GPS? <a href="https://natronics.github.io/blag/2014/gps-prn/" class="uri">https://natronics.github.io/blag/2014/gps-prn/</a>
 </li>
-</ol>
+</ol></section><section id="additional-readings-for-the-curious" class="level2"><h2 class="anchored" data-anchor-id="additional-readings-for-the-curious">Additional Readings for the Curious</h2>
+<ol type="1">
+<li><p>Rudyard Kipling. <em>How Fear Came</em>. <a href="https://www.kiplingsociety.co.uk/tale/how-fear-came.htm" class="uri">https://www.kiplingsociety.co.uk/tale/how-fear-came.htm</a></p></li>
+<li>
+</li></ol>
 
 
 </section><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
