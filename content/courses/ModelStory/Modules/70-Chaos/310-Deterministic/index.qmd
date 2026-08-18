@@ -7,8 +7,9 @@ date-modified: today
 categories:
   - Logistic Equation
   - Cobweb Diagram
-draft: true
+
 ---
+WORK IN PROGRESS!!
 
 ## Introduction
 

@@ -88,9 +88,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -352,6 +352,12 @@ window.Quarto = {
  <span class="menu-text">🕹 DoE or Die with Gabbar Singh</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../../content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Throwing Stones with Hamlet and Gabbar</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -437,7 +443,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29id2ViJTIwRGlhZ3JhbQ==">Cobweb Diagram <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TG9naXN0aWMlMjBFcXVhdGlvbg==">Logistic Equation <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -461,7 +467,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 18, 2026</p>
+      <p class="date-modified">August 19, 2026</p>
     </div>
   </div>
     
@@ -479,14 +485,45 @@ window.Quarto = {
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <table class="quarto-listing-table table table-striped table-hover">
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Subtitle</th>
-<th data-quarto-table-cell-role="th">Date</th>
+<tr>
+
+<th>
+ 
+</th>
+
+<th>
+Title
+</th>
+
+<th>
+Subtitle
+</th>
+
+<th>
+Date
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
+
+<tr data-index="0" data-categories="TG9naXN0aWMlMjBFcXVhdGlvbiUyQ0NvYndlYiUyMERpYWdyYW0=" data-listing-date-sort="1786213800000" data-listing-file-modified-sort="1787096282871" data-listing-date-modified-sort="1787077800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="9" data-listing-title-sort="Deterministic Chaos" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-image"><div class="listing-item-img-placeholder card-img-top" style="height: 40px;">&nbsp;</div></span>
+</td>
+<td>
+<a href="../../../../../content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html" class="title listing-title">Deterministic Chaos</a>
+</td>
+<td>
+<span class="listing-subtitle">&nbsp;</span>
+</td>
+<td>
+<span class="listing-date">Aug 9, 2026</span>
+</td>
+
+</tr>
+
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

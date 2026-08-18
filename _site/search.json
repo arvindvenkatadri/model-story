@@ -137,7 +137,7 @@
     "href": "content/courses/ModelStory/Modules/40-Chance/listing.html",
     "title": "Chance",
     "section": "",
-    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n🕹 A Random Walk with Hamlet\n\n\n \n\n\nDec 11, 2021\n\n\n\n\n\n\n\n\n\n🕹 Eating Mangoes with Hamlet\n\n\nHamlet is also, yeah, I mean,… like us! Random!!\n\n\nDec 11, 2021\n\n\n\n\n\n\n\n\n\n🕹 DoE or Die with Gabbar Singh\n\n\nHum ko kucch nahin pata\n\n\nDec 11, 2021\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\n🕹 A Random Walk with Hamlet\n\n\n \n\n\nDec 11, 2021\n\n\n\n\n\n\n\n\n\n🕹 Eating Mangoes with Hamlet\n\n\nHamlet is also, yeah, I mean,… like us! Random!!\n\n\nDec 11, 2021\n\n\n\n\n\n\n\n\n\n🕹 DoE or Die with Gabbar Singh\n\n\nHum ko kucch nahin pata\n\n\nDec 11, 2021\n\n\n\n\n\n\n\n\n\nThrowing Stones with Hamlet and Gabbar\n\n\n \n\n\nJun 17, 2024\n\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -728,6 +728,20 @@
     ]
   },
   {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html",
+    "title": "Deterministic Chaos",
+    "section": "",
+    "text": "WORK IN PROGRESS!!"
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html#introduction",
+    "href": "content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html#introduction",
+    "title": "Deterministic Chaos",
+    "section": "Introduction",
+    "text": "Introduction\n\nThe Logistic Map\n    View webpage in full screen"
+  },
+  {
     "objectID": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
     "href": "content/courses/ModelStory/Modules/60-Symmetry/320-SymmetricObjects/index.html",
     "title": "🕹 Measuring and Viewing Symmetry",
@@ -966,7 +980,7 @@
     "href": "content/courses/ModelStory/Modules/70-Chaos/listing.html",
     "title": "Chaos",
     "section": "",
-    "text": "Title\nSubtitle\nDate\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Title\n\n\n\nSubtitle\n\n\n\nDate\n\n\n\n\n\n\n\n\n\n\n\nDeterministic Chaos\n\n\n \n\n\nAug 9, 2026\n\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1082,7 +1096,7 @@
     "href": "content/courses/ModelStory/Modules/20-Networks/40-Networks/index.html#activities",
     "title": "🕹 I am Insta Famous",
     "section": "Activities",
-    "text": "Activities\nActivity-1: Secret Santa Game\nLet us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask Avni Gupta.\nShould we use this instead? https://www.drawnames.in/secret-santa-generator\nDiscussion: Nodes, Links, Link Directionality, Connected and Disconnected Networks\nActivity-2: Barabasi Cocktail Party Game\nThis is a game “invented” by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. http://networksciencebook.com/\n\nPlease take a coin in your hand. (A rupee coin is good!)\nFind a stranger potential new friend in the classroom. Both of you toss your coins.\n\n\nRegime #1: If the coins show exactly two Heads, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nRegime #2: If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nMake a note of your new friends initials. (“AV”)\nWe will plot this conversation on the board. How?\n\nDiscussion: Random Network Mechanisms, Information Flow, Giant Component, Emergence\nActivity-3: Indian Surnames Game\n\nHow many common Indian surnames do we know? Let us write them on the board.\nEach of us will now look at each surname and recollect how many people they know with that surname.\nWrite down the score for each surname.\nLet’s plot this on (yet another) network!!\nAND: let us plot a count of tallies for each one of us, and see who knows the most number of surnamed-people! 😂\n\nDiscussion: Node Degree, Degree Distribution, Heavy Tail/Scale Free, (Network) Configuration Model\n\n\n\n\n\n\nNoteRandom vs Real Networks\n\n\n\nStandard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.\n\n\nActivity-4: Hi, I am Kevin Bacon, SMI Foundation Batch\nLet us find a Keven Bacon in SMI Foundation Studies Programme!! Six Degrees of Separation…or of Kevin Bacon? Look at this video before you proceed!\n\n\n\n\n\n\nFigure 1: Veritasium: Six Degrees of Separation\n\n\n\n\n\n\n\n\n\nFigure 2: BBC Documentary: Six Degrees of Separation\n\n\n\n\nCollect friends Data from across college/class, import and plot, analyze and comment\nUse this online tool at DataBasic.io https://databasic.io/en_GB/connectthedots/ to Connect the Dots\n\n\n\n\n\n\n\n\nFigure 3: Connect the Dots\n\n\n\n\n\nEven more fun at at GraphCommons https://graphcommons.com/graphs/new\n\n\nDiscussion: Node Degree, Centrality, Betweenness, Link Values or Costs\nActivity-5: Can you introduce me to Chandler, again?\n\nTake your favourite Literary Work / TV Serial / Movie and create a Network Database for it.\nHow? Use conversations between pairs of individuals (nodes) to create links. E.g. each distinct conversation is a link, and the number of sentences uttered is the weight of the link.\nVisualize it either with or without tech tools From Teach Engineering, this Activity Sheet:. (Hah! Doing Engineering in a Design college!!🤣🤣🤣)\nCan also use Graph Comics\n\n\nDiscussion:Everything's Connected (\"Old Srishti Proverb.\" Bah!), Networks are everywhere, You are a node and you are a link...are you?",
+    "text": "Activities\nActivity-1: Secret Santa Game\nLet us play this in the vanilla way: Paper chits with names in a bin and drawing them in turn. What can go wrong with this? Ask Avni Gupta.\nShould we use this instead? https://www.drawnames.in/secret-santa-generator\nDiscussion: Nodes, Links, Link Directionality, Connected and Disconnected Networks\nActivity-2: Barabasi Cocktail Party Game\nThis is a game “invented” by Alberto-Laszlo Barabasi, a Network Science pioneer and expert, who has written a wonderful, and wonderfully accessible, book on Network Science, available online. http://networksciencebook.com/\n\nPlease take a coin in your hand. (A rupee coin is good!)\nFind a stranger potential new friend in the classroom. Both of you toss your coins.\n\n\nRegime #1: If the coins show exactly two Heads, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nRegime #2: If the coins show two Heads or two Tails, introduce yourselves, make small talk, exchange classroom and college gossip. 2 Minutes!\n\nMake a note of your new friends initials. (“AV”)\nWe will plot this conversation on the board. How?\n\nDiscussion: Random Network Mechanisms, Information Flow, Giant Component, Emergence\nActivity-3: Indian Surnames Game\n\nHow many common Indian surnames do we know? Let us write them on the board.\nEach of us will now look at each surname and recollect how many people they know with that surname.\nWrite down the score for each surname.\nLet’s plot this on (yet another) network!!\nAND: let us plot a count of tallies for each one of us, and see who knows the most number of surnamed-people! 😆\n\nDiscussion: Node Degree, Degree Distribution, Heavy Tail/Scale Free, (Network) Configuration Model\n\n\n\n\n\n\nNoteRandom vs Real Networks\n\n\n\nStandard Erdős–Rényi random graphs produce Poisson degree distributions (most nodes have similar degrees, few extremes). Real-world networks are often heavy-tailed (scale-free), with many low-degree nodes and a few high-degree hubs.\n\n\nActivity-4: Hi, I am Kevin Bacon, SMI Foundation Batch\nLet us find a Keven Bacon in SMI Foundation Studies Programme!! Six Degrees of Separation…or of Kevin Bacon? Look at this video before you proceed!\n\n\n\n\n\n\nFigure 1: Veritasium: Six Degrees of Separation\n\n\n\n\n\n\n\n\n\nFigure 2: BBC Documentary: Six Degrees of Separation\n\n\n\n\nCollect friends Data from across college/class, import and plot, analyze and comment\nUse this online tool at DataBasic.io https://databasic.io/en_GB/connectthedots/ to Connect the Dots\n\n\n\n\n\n\n\n\nFigure 3: Connect the Dots\n\n\n\n\n\nEven more fun at at GraphCommons https://graphcommons.com/graphs/new\n\n\nDiscussion: Node Degree, Centrality, Betweenness, Link Values or Costs\nActivity-5: Can you introduce me to Chandler, again?\n\nTake your favourite Literary Work / TV Serial / Movie and create a Network Database for it.\nHow? Use conversations between pairs of individuals (nodes) to create links. E.g. each distinct conversation is a link, and the number of sentences uttered is the weight of the link.\nVisualize it either with or without tech tools From Teach Engineering, this Activity Sheet:. (Hah! Doing Engineering in a Design college!!🤣🤣🤣)\nCan also use Graph Comics\n\n\nDiscussion:Everything's Connected (\"Old Srishti Proverb.\" Bah!), Networks are everywhere, You are a node and you are a link...are you?",
     "crumbs": [
       "Home",
       "The Model of the Story",
@@ -1569,6 +1583,71 @@
       "The Model of the Story",
       "Games",
       "🕹 How Must I Play?"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html",
+    "href": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html",
+    "title": "Throwing Stones with Hamlet and Gabbar",
+    "section": "",
+    "text": "We saw how we could use randomization to generate parallel worlds to make sense of our experiment, and to decide whether there was something algorithmic Mother Nature was doing, or if it was just mere chance that we saw something.\nAre there other applications of this chaotic procedure? Can we throw more random stones, some more outrageous slings and arrows of fortune back at the world? Let us see if there are some applications where this might be a useful thing to do!",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chance",
+      "Throwing Stones with Hamlet and Gabbar"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#introduction-where-are-the-stones",
+    "href": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#introduction-where-are-the-stones",
+    "title": "Throwing Stones with Hamlet and Gabbar",
+    "section": "",
+    "text": "We saw how we could use randomization to generate parallel worlds to make sense of our experiment, and to decide whether there was something algorithmic Mother Nature was doing, or if it was just mere chance that we saw something.\nAre there other applications of this chaotic procedure? Can we throw more random stones, some more outrageous slings and arrows of fortune back at the world? Let us see if there are some applications where this might be a useful thing to do!",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chance",
+      "Throwing Stones with Hamlet and Gabbar"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#spread-spectrum-communications-bluetooth-gpsagain-and-cdma",
+    "href": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#spread-spectrum-communications-bluetooth-gpsagain-and-cdma",
+    "title": "Throwing Stones with Hamlet and Gabbar",
+    "section": "Spread Spectrum Communications: Bluetooth, GPS(again), and CDMA",
+    "text": "Spread Spectrum Communications: Bluetooth, GPS(again), and CDMA\n\nPseudo Noise Codes\nC/A code\n“A random satellite??”\n\nHave you see TRON?\n\nKen Perlin\n\n\n\n\n\nA Brief Intro to p5.js\n\nMaking Noise with p5.js\n\nMaking Mountains out of molehills noise\nHave you seen an Algorithmic Cat?\nWe are the Robots",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chance",
+      "Throwing Stones with Hamlet and Gabbar"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#wait-but-why",
+    "href": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#wait-but-why",
+    "title": "Throwing Stones with Hamlet and Gabbar",
+    "section": "Wait, But Why?",
+    "text": "Wait, But Why?",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chance",
+      "Throwing Stones with Hamlet and Gabbar"
+    ]
+  },
+  {
+    "objectID": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#references",
+    "href": "content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html#references",
+    "title": "Throwing Stones with Hamlet and Gabbar",
+    "section": "References",
+    "text": "References\n\nKen Perlin. Making Noise. https://web.archive.org/web/20160308022101/http://noisemachine.com/talk1/index.html\nhttps://rtouti.github.io/graphics/perlin-noise-algorithm&gt;\nAdrian Biagioli. (09 August 2014 ). Understanding Perlin Noise. https://adrianb.io/2014/08/09/perlinnoise.html\nBetter Explained Blog. Vector Calculus: Understanding the Dot Product. https://betterexplained.com/articles/vector-calculus-understanding-the-dot-product/\nBall P. (2015). Forging patterns and making waves from biology to geology: a commentary on Turing (1952) ‘The chemical basis of morphogenesis’. Philosophical transactions of the Royal Society of London. Series B, Biological sciences, 370(1666), 20140218. https://doi.org/10.1098/rstb.2014.0218. PDF\nTerragen Software Page. https://planetside.co.uk\nTRON Academy Award\nCats Coats and Colours. https://manypets.com/us/blog/cat-coats-patterns/",
+    "crumbs": [
+      "Home",
+      "The Model of the Story",
+      "Chance",
+      "Throwing Stones with Hamlet and Gabbar"
     ]
   },
   {

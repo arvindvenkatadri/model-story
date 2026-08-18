@@ -16,7 +16,7 @@ categories:
 editor_options: 
   markdown: 
     wrap: 72
-draft: true
+
 ---
 
 ```{r setup, include=FALSE}

@@ -10,7 +10,8 @@
     "items": [
       "/content/courses/ModelStory/Modules/40-Chance/100-Randomness/index.html",
       "/content/courses/ModelStory/Modules/40-Chance/110-Mangoes/index.html",
-      "/content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.html"
+      "/content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.html",
+      "/content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.html"
     ]
   },
   {
@@ -53,7 +54,9 @@
   },
   {
     "listing": "/content/courses/ModelStory/Modules/70-Chaos/listing.html",
-    "items": []
+    "items": [
+      "/content/courses/ModelStory/Modules/70-Chaos/310-Deterministic/index.html"
+    ]
   },
   {
     "listing": "/content/courses/ModelStory/Modules/30-Proximity/listing.html",
