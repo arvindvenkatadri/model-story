@@ -17,13 +17,18 @@ editor_options:
     wrap: 72
 ---
 
-```{r include=FALSE}
+```{r}
+#| label: setup
+#| echo: false
+#| 
 library(blogdown)
 library(tidyverse)
 library(mosaic)
 library(patchwork)
 library(ggtext)
 library(ggformula)
+library(plotly)
+
 ```
 
 
@@ -40,57 +45,453 @@ Which one? Take your pick:
 
 ## Design of Experiments
 
-Let us pretend we are with Hamlet and Gabbar, and design a simple experiment to find out some "truth" (highly probable idea) that is important to us. And then we will travel to Ramgadh and get help from Gabbar Singh!
-
-### [**No Free Hunch**](https://nofreehunch.org): Hypothesis Design
-
 We learnt a lot (new) words from Hamlet, didn't we? How many do we
-remember? What Hypothesis could be make? What do we have a hunch about?
+remember? What do we have a hunch about? What Hypothesis could we make? 
+Let us pretend we are with Hamlet, and design a simple experiment to find out some "truth" (highly probable idea) that is important to us. And then we will travel to Ramgadh and get help from Gabbar Singh!
 
-Let us consider the **Short Term Memory(STM)** of Foundation Students at SMI as our vehicle for testing similar Hypotheses. (Or we could use [Guilford Alternative Uses Creative Test](https://curtbonk.com/bobweb/r546/modules/creativity/creativity_tests/guilford_uses_task.html)). 
+### [Problem / Hypothesis](https://nofreehunch.org) Design
 
-What *Questions* might we think of, to form our Hypotheses (plural!)?
+Let us consider the Short Term Memory (STM) of Foundation Students at SMI as our vehicle for testing similar Hypotheses. This here is a paper describing a simple *Design of Experiments* workshop in class much like ours. We will use it to guide our Hypothesis Testing and the Design of our Experiment. We will try to mimic as much of this as we can. Do read through this in the evening today in preparation for our experiment.
 
-- STM scores are significantly different between students of Design and those of Art (;-O)
-- STM is much better for those who use Windows as compared to those who use Macs
-- Any other factors, not related to types of individuals, but more like *parameters of STM itself*, also affect the STM scores, for example:
-  - Word complexity (Syllables per Word)
-  - No of Words
-  - Exposure Time and Recall Time
+{{< pdf Lawrance-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf >}}
 
-With the Guilford Divergent Thinking Test, you might consider:
+<br>
+
+In this paper, the class devises a **Short Term Memory(STM)** *test tool*, which **measures** the STM of a set of people randomly chosen as *respondents*. 
+
+::: {.column-margin}
+
+Alternatively, we could use the [Guilford Alternative Uses Creative Test](https://curtbonk.com/bobweb/r546/modules/creativity/creativity_tests/guilford_uses_task.html), which is a General Creativity Test for Divergent Thinking). With the Guilford Divergent Thinking Test, you might consider:
 
 - Students who speak their Mother Tongue fluently score better in
   Divergent Thinking Scores (Fluency, Flexibility, Elaboration,
   Originality)
 - There is a significant difference in Guilford Scores between students from "small towns" and those from metros.
 
-### Factors in Hypothesis
+:::
+
+What *Questions* might we think of, to form our Hypotheses (plural!)? Questions usually are formulated in the following manner:
+
+::: callout-note
+
+### Hypothesis Sample Format
+Are STM scores significantly different, on average, when [`some factor`] is varied between two `levels`?
+
+:::
+
+For example: 
+
+Are STM scores significantly different:
+
+- **Art vs Design**: between students of Design and those of Art? (;-O)
+- **Windows vs Macs**: between students who use Windows as compared to those who use Macs (;-O)
+- **No. of Words (Few / Many)**: when using a short list vs a long list of words
+- **Word complexity**: when the number of Syllables are few or large in number?
+- **Exposure Time  ( Long / Short)**: when the list is shown to the resondent for a long or a short time?
+- **Recall Time  ( Long / Short)**: when the time given to the respondent to recall is short or long?
+
+
+Note that the last three Hypotheses are about the `Test Tool Type`, whereas the first two are about the `population`. Both types of `variables` are called `factors`. We will discuss how to deal with these shortly, both in Data Design and in Analysing the Data. 
+
+::: callout-important
+
+### Factors are Axes
+
+Each of the (binary) factors defines an independent axis! The combination of these axes defines a *space* in which we can conduct our experiment. The more factors we have, the more complex the space becomes. For example, if we have three binary factors, we have a 3D space with 8 corners (2^3 = 8 combinations). Each corner represents a unique combination of factor levels.
+
+:::
 
 In each of these Hypotheses, we can see that there are *binary* (Yes/No)
-(two-valued) parameters that are part of the test: `Art vs Design`,
-`Windows vs Mac`, `Speaks Mother Tongue or Not`, `Small Town vs Metro`,
+(two-valued) factors / parameters that are part of the test: `Art vs Design`,
+`Windows vs Mac`; and others that are *inside* the test tool itself: 
 `Long vs Short List of Words`, `Short vs Long Words` and
 `Long vs Short Exposure`.
 
 If we want our experiment to be **fair** we must have:
 
-- Devise a test tool for each combination of binary parameters (*Test Type*)
-- the **same number** of subjects for each Test Type
-- **Randomly** select the people as *respondents* each Test Type
+-  (`Factorial Experiment` aka `Blocking`): Devise a Test Tool Type for **each combination** of binary parameters ($2^n$ for $n$ binary factors!!! Gasp!!)
+-  ( `Replication` ): The **same number** of *respondents* for each Test Tool Type
+- (`Randomization`): **Randomly** select the people as *respondents* each Test Tool Type 
 
-We will choose one of these questions, or a similar one, and use the **PPDAC Method** to proceed with our Experiment. This paper by Lawrance to guide our Hypothesis Testing and the Design of our Experiment:
+We can see this can become exponentially hard if we choose say more than 3 binary factors. Let us do that!!
+
+```{r}
+#| label: fig-experiment-space-1
+#| fig-cap: Three Binary Factors Define a Cubic Expt. Space
+#| echo: false
+#| warning: false
+#| 
+
+set.seed(123)
+cube_vertices <- tibble::data_frame(
+  x = c(0,1,1,0,0,1,1,0),
+  y = c(0,0,1,1,0,0,1,1),
+  z = c(0,0,0,0,1,1,1,1)
+)
+
+# Vertex pairs defining the 12 edges
+cube_edges <- matrix(
+  c(
+    1,2,
+    2,3,
+    3,4,
+    4,1,
+
+    5,6,
+    6,7,
+    7,8,
+    8,5,
+
+    1,5,
+    2,6,
+    3,7,
+    4,8
+  ),
+  byrow = TRUE,
+  ncol = 2
+)
+
+# Cube vertices
+# vertices <- expand.grid(
+#   x = c(0, 1),
+#   y = c(0, 1),
+#   z = c(0, 1)
+# )
+
+# Parameters
+n_per_vertex <- 200
+sd_vertex <- 0.05
+
+# Generate Gaussian clusters around each vertex
+point_list <- lapply(seq_len(nrow(cube_vertices)), function(i) {
+  data.frame(
+    x = rnorm(n_per_vertex, mean = cube_vertices$x[i], sd = sd_vertex),
+    y = rnorm(n_per_vertex, mean = cube_vertices$y[i], sd = sd_vertex),
+    z = rnorm(n_per_vertex, mean = cube_vertices$z[i], sd = sd_vertex),
+    vertex = paste0(
+      "(", cube_vertices$x[i], ",",
+      cube_vertices$y[i], ",",
+      cube_vertices$z[i], ")"
+    )
+  )
+})
+
+points_df <- do.call(rbind, point_list)
+
+# Create 3D scatter plot
+fig <- plot_ly(
+  data = points_df,
+  x = ~x,
+  y = ~y,
+  z = ~z,
+  color = ~vertex,
+  colors = "Set1",
+  type = "scatter3d",
+  mode = "markers",
+  marker = list(
+    size = 3,
+    opacity = 0.7
+  )
+)
+
+fig <- fig %>%
+  layout(
+    title = "STM Score Clusters at Cube Vertices",
+    scene = list(
+      xaxis = list(title = "X"),
+      yaxis = list(title = "Y"),
+      zaxis = list(title = "Z"),
+      aspectmode = "cube"
+    )
+  )
+
+for(i in seq_len(nrow(cube_edges))) {
+
+  fig <- fig %>% add_trace(
+    x = cube_vertices$x[cube_edges[i,]],
+    y = cube_vertices$y[cube_edges[i,]],
+    z = cube_vertices$z[cube_edges[i,]],
+    type = "scatter3d",
+    mode = "lines",
+    line = list(
+      color = "black",
+      width = 6
+    ),
+    inherit = FALSE,
+    showlegend = FALSE
+  )
+}
 
 
-{{< pdf Lawrance-ADesignofExperimentsWorkshopasanIntroductiontoStatistics.pdf >}}
+fig <- fig %>%
+  layout(
+    title = list(
+      text = "STM Score Clusters at Cube Vertices",
+      y = 0.97,        # push title higher (closer to 1 = top of figure)
+      yanchor = "top"
+    ),
+    margin = list(t = 80),  # add top margin (in pixels) to create space
+    scene = list(
+      xaxis = list(
+        title = "X",
+        tickmode = "array",
+        tickvals = c(0, 1),
+        ticktext = c("0", "1"),
+        range = c(1.15, -0.15)
+      ),
+      yaxis = list(
+        title = "Y",
+        tickmode = "array",
+        tickvals = c(0, 1),
+        ticktext = c("0", "1"),
+        range = c(1.15, -0.15)
+      ),
+      zaxis = list(
+        title = "Z",
+        tickmode = "array",
+        tickvals = c(0, 1),
+        ticktext = c("0", "1"),
+        range = c(1.15, -0.15)
+      ),
+      aspectmode = "cube"
+    )
+  )
+fig
+```
+
+### Data Design
+
+What will our data look like then? We want to **evaluate** multiple STM scores for each **setting** of the binary factors. Accordingly, our Data format might look like this:
+
+```{r}
+#| label: tbl-data-format
+#| tbl-cap: Data Format (8 respondents, 1 per combination of 3 binary factors)
+#| echo: false
+#| warning: false
+
+my_data <- expand_grid(Factor1 = c("Level1", "Level2"), 
+                       Factor2 = c("Level1", "Level2"), 
+                       Factor3 = c("Level1", "Level2")) |> 
+  mutate( STM_Score = rpois(8, lambda = 12), 
+          Respondent = 1:8) |> 
+  select(Respondent, Factor1, Factor2, Factor3, STM_Score)
+my_data
+
+```
+
+Here, in @tbl-data-format, we have (only) 8 respondents, each with a unique combination of the three binary factors. Each respondent has an associated STM score. To ensure `replication`, we would of course need to have more respondents for each combination of the three binary factors. 
+
+### Analysis Design
+
+We want to be able to state a clear inference/conclusion for each of the `factors`. We have three binary factors, and these are all independently settable. How do we compute the `effect` for just one of them?
+
+::: callout-important
+
+### Flattening the Experiment Space
+Our experiment space is a cube. In order to compute the different in average scores between the two setting of any binary factor, we need to flatten / collapse the cube onto just that axis, so that we can compare the two settings of that factor.
+
+:::
 
 
-This is the paper describing a simple *Design of Experiments* workshop
-in class much like ours. We will try to mimic as much of this as we can.
-Do read through this in the evening today in preparation for our
-experiment.
 
-## Data Analysis-1: Comparison of STM Histograms using Excel and WTFcsv
+```{r}
+#| label: fig-flatten-1
+#| fig-cap: "Projection onto the X-Z Plane"
+#| echo: false
+
+# library(plotly)
+
+set.seed(123)
+
+# Cube vertices
+flat_vertices <- expand.grid(
+  x = c(0, 1),
+  y = c(0, 1),
+  z = c(0, 1)
+)
+
+n_per_vertex <- 200
+sd_vertex <- 0.05
+
+# Generate clusters
+point_list <- lapply(seq_len(nrow(flat_vertices)), function(i) {
+
+  data.frame(
+    x = rnorm(n_per_vertex, flat_vertices$x[i], sd_vertex),
+    y = rnorm(n_per_vertex, flat_vertices$y[i], sd_vertex),
+    z = rnorm(n_per_vertex, flat_vertices$z[i], sd_vertex),
+    vertex = paste0(
+      "(", flat_vertices$x[i], ",",
+      flat_vertices$y[i], ",",
+      flat_vertices$z[i], ")"
+    )
+  )
+})
+
+points_df <- do.call(rbind, point_list)
+
+# Flatten along Y
+points_df$y_flat <- 0
+
+# Fixed colours for the 8 original vertices
+vertex_cols <- c(
+  "#e41a1c", # (0,0,0)
+  "#377eb8", # (1,0,0)
+  "#4daf4a", # (0,1,0)
+  "#984ea3", # (1,1,0)
+  "#ff7f00", # (0,0,1)
+  "#ffff33", # (1,0,1)
+  "#a65628", # (0,1,1)
+  "#f781bf"  # (1,1,1)
+)
+
+names(vertex_cols) <- unique(points_df$vertex)
+
+
+# Square corresponding to the projection of the cube
+square_x <- c(0, 1, 1, 0, 0)
+square_z <- c(0, 0, 1, 1, 0)
+#
+# Projection into X-Z plane while preserving colours
+plot_ly(
+  data = points_df,
+  x = ~x,
+  y = ~z,
+  color = ~vertex,
+  colors = vertex_cols,
+  type = "scatter",
+  mode = "markers",
+  marker = list(
+    size = 6,
+    opacity = 0.6
+  )
+) %>%
+  layout(
+    title = "Projection onto X-Z Plane with Original Vertex Colours",
+    xaxis = list(title = "X"),
+    yaxis = list(title = "Z")
+  ) %>% add_trace(
+  x = square_x,
+  y = square_z,
+  type = "scatter",
+  mode = "lines",
+  line = list(
+    color = "black",
+    width = 3
+  ),
+  inherit = FALSE,
+  showlegend = FALSE
+) %>%
+  layout(
+    title = "Projection onto X-Z Plane",
+    xaxis = list(
+      title = "X"
+    ),
+    yaxis = list(
+      title = "Z",
+      scaleanchor = "x",  # lock y scale to x scale
+      scaleratio = 1
+    )
+  )
+
+```
+
+```{r}
+#| label: fig-flatten-2
+#| fig-cap: "Collapse onto the Z Axis"
+#| echo: false
+#| 
+#library(plotly)
+
+set.seed(123)
+
+# Cube vertices
+vertices <- expand.grid(
+  x = c(0, 1),
+  y = c(0, 1),
+  z = c(0, 1)
+)
+
+n_per_vertex <- 200
+sd_vertex <- 0.05
+
+# Generate Gaussian clusters
+point_list <- lapply(seq_len(nrow(vertices)), function(i) {
+
+  data.frame(
+    x = rnorm(n_per_vertex, vertices$x[i], sd_vertex),
+    y = rnorm(n_per_vertex, vertices$y[i], sd_vertex),
+    z = rnorm(n_per_vertex, vertices$z[i], sd_vertex),
+    vertex = paste0(
+      "(",
+      vertices$x[i], ",",
+      vertices$y[i], ",",
+      vertices$z[i], ")"
+    )
+  )
+})
+
+points_df <- do.call(rbind, point_list)
+
+# Fixed colours for original vertices
+vertex_cols <- c(
+  "#e41a1c", # (0,0,0)
+  "#377eb8", # (1,0,0)
+  "#4daf4a", # (0,1,0)
+  "#984ea3", # (1,1,0)
+  "#ff7f00", # (0,0,1)
+  "#ffff33", # (1,0,1)
+  "#a65628", # (0,1,1)
+  "#f781bf"  # (1,1,1)
+)
+
+names(vertex_cols) <- unique(points_df$vertex)
+
+# Collapse X and Y completely
+# Add small vertical jitter only for visibility
+points_df$collapsed_axis <- rnorm(
+  nrow(points_df),
+  mean = 0,
+  sd = 0.015
+)
+
+plot_ly(
+  data = points_df,
+  x = ~z,
+  y = ~collapsed_axis,
+  color = ~vertex,
+  colors = vertex_cols,
+  type = "scatter",
+  mode = "markers",
+  marker = list(
+    size = 6,
+    opacity = 0.5
+  )
+) %>%
+  layout(
+    title = "Collapse onto the Z Axis (Original Colours Retained)",
+    xaxis = list(
+      title = "Z",
+      zeroline = FALSE
+    ),
+    yaxis = list(
+      title = "",
+      showticklabels = FALSE,
+      zeroline = FALSE
+    )
+  )
+```
+
+Now that we have just two levels, we take the average on both ends and decide if that is big enough for us to think that this `factor` makes a difference to STM scores. ( i.e. has an `effect`)
+
+And identically with the other `factors`. 
+
+Let us now explore two very different methods to decide whether each `factor` has an `effect`. 
+
+
+#### Data Analysis-1: Comparison of STM Histograms using Excel and WTFcsv
+
+We do this **flattening of the data cube** by **stacking** the scores from all the other factors together, so that we have just two columns of scores, one for each setting of the factor under consideration. This allows us to compute the difference in average scores between the two settings of that factor, while controlling for the other factors.
 
 Once our test/survey is complete, let us collate all the data for all
 tests using this Excel [**spreadsheet**](STM.xlsx), which we can
@@ -105,8 +506,11 @@ with categorical factors and scores.)
 5.  If we have three two-valued, categorical factors, we will get thres sets of stacked scores, each from a (shuffled) set of the tests.
 6.  Half the scores in these stacked columns will pertain to one *level* of the factor, and the other half of the scores will pertain to the other level. (This should remind you of the Karnaugh Map you may have learnt in your digital logic courses in school.). See example below: it shows how we can stack up the scores from *4* tests for each *level* of the parameter *p1*.
 
-```{r,echo=FALSE,message=FALSE,warning=FALSE}
-#| label: fig-Experiment-Design
+```{r}
+#| label: fig-analysis-design
+#| echo: false
+#| message: false
+#| warning: false
 #| fig-cap: "Experiment Data Analysis Strategy"
 #| out-height: "50%"
 #| out-width: "50%"
@@ -118,7 +522,7 @@ dat <- tibble(scores = rep(20, 8),
               test = LETTERS[1:8])
 params <- expand_grid(p1 = c("True", "False"), p2 = c("Long", "Short"), p3 = c("Big", "Small"))
 
-scores <- cbind(dat, params)
+scores <- cbind(params, dat) |> select(test, p1, p2, p3, scores)
 scores %>% kableExtra::kable(align = "c")
 
 p1 <- ggplot(scores, aes(x = test, y = scores, fill = test)) + 
@@ -149,7 +553,7 @@ patchwork::wrap_plots(p1,p2, ncol = 2, nrow = 1, guides = "collect")
     effect on STM scores or none.
 
 ```{r,echo=FALSE,message=FALSE,warning=FALSE}
-#| label: fig-Permutation-Design
+#| label: fig-permutation-design
 #| fig-cap: "Using Randomness for Analysis"
 #| out-height: "50%"
 #| out-width: "50%"
@@ -180,7 +584,7 @@ ggplot(p1, aes(x = values, fill = p1, colour = p1)) +
     along with *Comic Generator* (discussed below) to tell the story of
     your Hypothesis Testing.
 
-## Computing Parallel Worlds: The Permutation Test
+#### Data Analysis-2: Computing Parallel Worlds with Gabbar Singh
 
 BTW, why did Gabbar Singh say to Kaalia and the others in Sholay, ["Hum ko kuchh nahi pata"](https://youtu.be/chi9hsfYcDE)? And
 then afterwards, "Kamal ho gaya"...why does he say that?
@@ -267,7 +671,7 @@ ggplot2::set_theme(new = theme_classic())
 # scores_long %>% knitr::kable()
 
 null_dist_time <-
-  do(4999) * diff(mean(
+  mosaic::do(4999) * diff(mean(
     scores_long$times ~ shuffle(scores_long$channel),
     data = scores_long))
 
@@ -297,7 +701,7 @@ null_dist_time %>%
 > groups and that ad time is different between `basic` and `extended` TV
 > channels.
 
-## Data Analysis-2: The Card Trick: Creating Parallel Worlds
+#### Data Analysis-2: The Card Trick: Creating Parallel Worlds
 
 1.  We will execute on Permutation Test on one sheet step by step and
     decide whether that factor had a significant *effect* on STM scores.

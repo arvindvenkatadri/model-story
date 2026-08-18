@@ -397,9 +397,9 @@ window.Quarto = {
 <li><a href="#discussion-1" id="toc-discussion-1" class="nav-link" data-scroll-target="#discussion-1">Discussion-1</a></li>
   </ul>
 </li>
-  <li><a href="#poisson-distribution-as-a-4as-complexity-idea" id="toc-poisson-distribution-as-a-4as-complexity-idea" class="nav-link" data-scroll-target="#poisson-distribution-as-a-4as-complexity-idea">Poisson Distribution as a 4As Complexity Idea…</a></li>
+  <li><a href="#poisson-distribution-as-a-4as-complexity-idea" id="toc-poisson-distribution-as-a-4as-complexity-idea" class="nav-link" data-scroll-target="#poisson-distribution-as-a-4as-complexity-idea">Poisson Distribution as a 4As Complexity Idea?</a></li>
   <li>
-<a href="#is-randomness-a-design-tool" id="toc-is-randomness-a-design-tool" class="nav-link" data-scroll-target="#is-randomness-a-design-tool">Is Randomness a Design Tool?</a>
+<a href="#so-is-randomness-a-design-tool" id="toc-so-is-randomness-a-design-tool" class="nav-link" data-scroll-target="#so-is-randomness-a-design-tool">So is Randomness a Design Tool?</a>
   <ul class="collapse">
 <li><a href="#pedagogical-vandalism" id="toc-pedagogical-vandalism" class="nav-link" data-scroll-target="#pedagogical-vandalism">Pedagogical Vandalism</a></li>
   </ul>
@@ -441,7 +441,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">August 12, 2026</p>
+      <p class="date-modified">August 18, 2026</p>
     </div>
   </div>
     
@@ -523,12 +523,32 @@ Figure&nbsp;1: Traffic Data Analysis
 <li>Is <em>anything</em> random at all?</li>
 <li>Does seeing a pattern make it “not random”?</li>
 <li>Are we just Victims of Randomness and cannot do much else but put up with it?</li>
-</ul></section></section><section id="poisson-distribution-as-a-4as-complexity-idea" class="level2"><h2 class="anchored" data-anchor-id="poisson-distribution-as-a-4as-complexity-idea">Poisson Distribution as a 4As Complexity Idea…</h2>
+</ul></section></section><section id="poisson-distribution-as-a-4as-complexity-idea" class="level2"><h2 class="anchored" data-anchor-id="poisson-distribution-as-a-4as-complexity-idea">Poisson Distribution as a 4As Complexity Idea?</h2>
 <p>Consider a coin toss. One gets HEAD(H) or TAIL(T), and if the coin is fair, the long term chances of getting a H or a T are even. If one tosses a single coin several times, one gets different sequences of Hs and Ts.</p>
 <p>If we assume that an H means people <a href="https://youtu.be/w9NbXDXvr8M"><strong>get into their car and drive</strong></a>, what can we say of many many people? They are all tossing coins, so to speak, and leave only if they get a H. <em>Each sequence of Hs and Ts is a manifestation of car traffic</em>, with H being a vehicle, and T being no vehicle.</p>
 <p>In a large society with <span class="math inline">\(\large{n~ -&gt; \infty}\)</span>, not many people drive out at any given time, so <span class="math inline">\(p\)</span> is low. So the product <span class="math inline">\(\large{people \times p(H) = np}\)</span> can be thought of as a constant, say 10, or 100.</p>
 <p>The Accumulated random binary Actions of a large number of people gives us an aggregate <a href="https://math.oxford.emory.edu/site/math117/connectingPoissonAndBinomial/"><strong>Poisson distribution</strong></a> for the occurrence of traffic, with a mean of <span class="math inline">\(\large{\lambda = np}\)</span>.</p>
-</section><section id="is-randomness-a-design-tool" class="level2"><h2 class="anchored" data-anchor-id="is-randomness-a-design-tool">Is Randomness a Design Tool?</h2>
+<p>Is this an example of Complexity? Not quite, or weakly at best. Why?</p>
+<ul>
+<li>The individual AGENTs do not interact with each other, like in Prisoners’ Dilemma. Their choices are independent, not related. They do not decide to drive or not drive based whether others are driving out or not. They do not communicate with each other, or coordinate their actions.</li>
+<li>The individual AGENTs do not have any memory of their past actions, or the actions of others. They do not learn from their past experiences, or adapt to the changing environment.</li>
+<li>There is no feedback; each choice is made regardless of prior experiences.</li>
+</ul>
+<p>Hence thus is a weakly complex system, and not a strongly complex system. But it is a <strong>random or stochastic process</strong>, which we need to understand and try to work with.</p>
+<p>Complexity <strong><em>would</em></strong> emerge in this situation if:</p>
+<ul>
+<li>Agents acted based on Congestion / Road Occupancy</li>
+<li>Seeing more cars yesterday makes them less likely to drive today</li>
+<li>Social influences and clustering; e.g.&nbsp;car pooling.</li>
+<li>If all of these affect future choices ( drive / don’t drive).</li>
+</ul>
+<p>In this case we would see examples of <strong>emergent behavior</strong> and <strong>self-organization</strong>, which are hallmarks of Complexity:</p>
+<ul>
+<li>Traffic Waves</li>
+<li>Ghost Traffic Jams</li>
+<li>Even Power Law distributions of vehicles across streets</li>
+<li>Phase transitions from Jammed to free-flow.</li>
+</ul></section><section id="so-is-randomness-a-design-tool" class="level2"><h2 class="anchored" data-anchor-id="so-is-randomness-a-design-tool">So is Randomness a Design Tool?</h2>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -537,7 +557,8 @@ Figure&nbsp;1: Traffic Data Analysis
 </div>
 </div>
 </div>
-<p>But we are interested in more than just the Poisson Process. And mangoes are far more interesting than cars!!!</p>
+<p>In the Poisson Process above, we saw randomness and how different sequences of events can be generated by a large number of independent agents. Are we then at the <strong>mercy of randomness</strong>? Or can we use randomness as a tool in Design? Can we use randomness to create fairness, or to create surprise, or to create novelty?</p>
+<p>Well, mangoes are far more interesting than cars!!!</p>
 <ol type="1">
 <li>Do you remember plucking mangoes from the trees in your childhood gardens?</li>
 <li>Did you happen to be the youngest in the group?</li>
@@ -545,10 +566,10 @@ Figure&nbsp;1: Traffic Data Analysis
 <li>Why did you trust your friends not to eat off the best mangoes in your absence? ;-D</li>
 <li>Were you used to being the “<em>denner</em>” in every game?</li>
 <li>Or the last person to bat or bowl, or whatever was the cool thing in the game…</li>
-<li>What strategy did you use when playing “Rock, Paper, Scissors”? Were you always “steady as a rock”, or “variable as traffic”?</li>
+<li>What strategy did you use when playing “Rock, Paper, Scissors”? Were you always “steady as a rock”, or “variable as traffic”? You didn’t stick with just one of Rock, Paper, or Scissors. But chose one at…..random.</li>
 </ol>
-<p>Perhaps you suffered, but maybe you didn’t because everyone “got their turn” and they weren’t always the first, nor were you always the last… So somehow it was all…fair, because it was “random”.</p>
-<p>And you didn’t stick with just one of Rock, Paper, or Scissors. But chose one at…..random.</p>
+<p>Perhaps you suffered, but maybe you didn’t because everyone “got their turn” and they weren’t always the first, nor were you always the last…</p>
+<p><span style="background-color:yellow;"><strong><em>So somehow it was all…fair, because it was “random”</em></strong></span>.</p>
 <p>So can we use <strong>Randomness</strong> in Design? With <em>intent</em>? Like this:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -564,7 +585,7 @@ Figure&nbsp;2: Future IPL Stars, Randomizing Batting Order (painted by Grok)
 </div>
 <p>And is <a href="https://www.jacksonpollock.org">this</a> the use of <strong>randomness</strong> in Art?</p>
 <section id="pedagogical-vandalism" class="level3"><h3 class="anchored" data-anchor-id="pedagogical-vandalism">Pedagogical Vandalism</h3>
-<p>Let us throw some chalk pieces on the floor at random and see what happens!!</p>
+<p>Let us throw some chalk/paper pieces on the floor at random and see what happens!!</p>
 <ol type="1">
 <li>Was that a completely “mad” thing to do, throwing stuff on the floor? Or was it an act of <strong><em>Pedagogical Vandalism</em></strong>? (See <a href="https://youtu.be/OCTaIZc1o8g?si=o7Bhi437vFZppXJQ"><em>wreck this Journal</em></a>.</li>
 <li>Is Randomness just too much to handle or comprehend?</li>

@@ -16,3 +16,7 @@ mosaicData
 mosaic
 patchwork
 ggtext
+plotly
+scales
+ggiraph
+ggridges

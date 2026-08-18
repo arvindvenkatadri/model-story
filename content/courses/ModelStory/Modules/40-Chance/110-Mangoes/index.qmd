@@ -24,6 +24,8 @@ library(mosaic)
 library(patchwork)
 library(ggtext)
 library(ggformula)
+library(plotly)
+
 ```
 
 
