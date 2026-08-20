@@ -1,5 +1,5 @@
 ---
-title: "Throwing Stones with Hamlet and Gabbar"
+title: "Random Applications of Randomness"
 date: "2024-06-17"
 date-modified: today
 order: 120

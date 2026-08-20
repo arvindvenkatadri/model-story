@@ -72,7 +72,8 @@ website:
                   - content/courses/ModelStory/Modules/40-Chance/100-Randomness/index.qmd
                   - content/courses/ModelStory/Modules/40-Chance/110-Mangoes/index.qmd
                   - content/courses/ModelStory/Modules/40-Chance/120-DoEwithGabbar/index.qmd
-                  - content/courses/ModelStory/Modules/40-Chance/130-UsingRandomness/index.qmd
+                  - content/courses/ModelStory/Modules/40-Chance/130-Analysis/index.qmd
+                  - content/courses/ModelStory/Modules/40-Chance/140-UsingRandomness/index.qmd
           
 #######################################
               - section: "Information"

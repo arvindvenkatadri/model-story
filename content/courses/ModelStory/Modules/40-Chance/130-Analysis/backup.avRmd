@@ -1,0 +1,257 @@
+---
+title: "A Design Of Experiments Class"
+subtitle: 
+author: "Arvind Venkatadri"
+date: "2022-01-30"
+weight: 1
+output:
+  html_document:
+    theme: flatly
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 2
+    number_sections: TRUE
+    code_folding: hide
+    code_download: TRUE
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(mosaic)
+```
+
+## Introduction
+
+This project is a quick analysis of the Design of Experiments class carried out in the Order and Chaos course, FSP-2021-2022, at SMI MAHE, Bangalore.  
+
+The methodology followed was that in A.J. Lawrance's paper [^1] describing a Statistics module based on the method of Design of Experiments. The inquiry relates to Short Term Memory (STM) among students.
+
+## Structure
+The total number of students were 17. 
+Eight Pairs of students were created randomly to create eight different Test tools for Short Term Memory testing. 
+
+The binary ( two - level ) variables/parameters that were used in the tests, were, following Lawrance:  
+
+- WL: Word List Length ( 7 and 15 words )  
+- SL: Syllables in the Words ( 2 and 5 syllables )  
+- ST: Study Time allowed for the Respondents ( 15 and 30 seconds )  
+
+Other parameters considered were a) Language b) Structure/Depiction of the Word Lists ( e.g. word clouds, matrices, columns...), c) Whether the words would be shown or read aloud, and d) whether the respondents had to speak out, or write down, the recollected words. These parameters were discussed and abandoned as too complex to mechanize, though they could have had an impact on the STM scores. 
+
+Hence a total of **8 Tests** were created by 8 pairs of students, and each team tested the remaining 15 students ( Due to COVID restrictions, this testing was carried out entirely online on MS Teams, using individual breakout rooms for the Test Teams. )
+
+The data were entered into a Google Sheet and the STM scores were converted to *percentages* so as to be comparable across WL. 
+
+The data was then "flattened" for each of the binary parameters; this was logical to do since for each parameter, the other two parameters were balanced out by the Test structure. For instance, for WL = 5, the SL and ST parameters used all the four combinations ( SL = 5, 15 ) and (ST = 15, 30 ). Hence the "common sense" analysis could proceed for each of the parameters individually. Joint effects were not considered for this preliminary class. 
+
+
+## Data
+
+```{r, reading-data}
+stm <- readxl::read_xlsx("RandomTesters.xlsx",
+                         sheet = "Data",
+                         range = "C31:H91") %>% 
+  janitor::clean_names()
+stm
+```
+
+The data has scores that have been combined into single columns for each setting for each of the parameters. For example, the column `syllable_2` contains STM scores for **all** tests that used SL = 2-syllables in their tests. The Word Length WL and Study Time ST go through all their combinations in this column. 
+The other columns are constructed similarly. 
+
+
+## Basic Plots
+
+We will use Box Plots and Density Plots to compare the STM score distributions for each Parameter. To do this we need to `pivot_longer` the adjacent columns ( e.g. `syllable_2` and syllable_5) and use these names as categorical variables:
+
+### Syllable Parameter SL
+
+```{r plots-1}
+stm_syllable <- stm %>%
+  select(contains("syllable")) %>%
+  pivot_longer(
+    data = .,
+    cols = starts_with("syllable"),
+    names_to = "syllable",
+    values_to = "syl_scores"
+  )
+stm_syllable
+
+p1 <- stm_syllable %>%
+  ggplot(.) + geom_boxplot(aes(
+    y = syl_scores,
+    x = syllable,
+    colour = syllable,
+    fill = syllable
+  ),
+  alpha = 0.3) +
+  labs(title = "STM scores by Syllables in Test Word Lists")
+
+p2 <- stm_syllable %>%
+  ggplot(.) + geom_density(aes(x = syl_scores, colour = syllable, fill = syllable), alpha = 0.3) +
+  labs(title = "STM scores by Syllables in Test Word Lists")
+
+patchwork::wrap_plots(p1 + p2, guides = "collect")
+```
+
+
+### Study Time Parameter ST
+
+```{r plots-2}
+stm_studytime <- stm %>%
+  select(contains("study")) %>%
+  pivot_longer(
+    data = .,
+    cols = starts_with("study"),
+    names_to = "study",
+    values_to = "study_scores"
+  )
+stm_studytime
+
+p1 <- stm_studytime %>%
+  ggplot(.) + geom_boxplot(aes(
+    y = study_scores,
+    x = study,
+    colour = study,
+    fill = study
+  ),
+  alpha = 0.3,
+  ) +
+  labs(title = "STM scores by Study Time in Test Word Lists")
+p2 <- stm_studytime %>%
+  ggplot(.) + geom_density(aes(x = study_scores, colour = study, fill = study), alpha = 0.3) +
+  labs(title = "STM scores by Study Time in Test Word Lists")
+
+patchwork::wrap_plots(p1 + p2, guides = "collect")
+```
+
+
+### Word List Length Parameter WL
+
+```{r plots-3}
+stm_words <- stm %>% 
+  select(contains("list")) %>% 
+  pivot_longer(data = ., cols = starts_with("list"), 
+               names_to = "list", values_to = "list_scores")
+stm_words
+
+p1 <- stm_words %>%
+  ggplot(.) + geom_boxplot(aes(y = list_scores, x = list, colour = list, fill = list), alpha = 0.3) +
+  labs(title = "STM scores by Word Count in Test Word Lists")
+
+p2 <- stm_words %>%
+  ggplot(.) + geom_density(aes(x = list_scores, colour = list, fill = list), alpha = 0.3) +
+  labs(title = "STM scores by Study Time in Test Word Lists")
+
+patchwork::wrap_plots(p1 + p2,guides = "collect")
+```
+
+## Preliminary Observations
+
+Clearly, based on visual inspection of the Plots, the Word Count seems to have a large effect on STM Test Scores, with fewer words ( 7 ) being easier to recall.  Study Time ( 15 and 30 seconds ) also seems to have a more modest positive effect on STM scores, while Syllable Count ( 2 or 5 syllables ) seems to have a modest negative effect on STM scores.
+
+
+## Analysis
+
+We wish to establish the significance of the effect size due to each of the Parameters. Already from the Density Plots, we can see that *none* of the scores are normally distributed. A quick *Shapiro-Wilkes Test* for each of them confirms that the scores are *not* normally distributed.
+
+Hence we go for a Permutation Test to check for significance of effect.
+ 
+On the other hand, as remarked in Ernst[^2], the non-parametric permutation test can be both *exact* and also **intuitively easier** for students to grasp, as I can testify from direct observation in this class. There is no need to discuss sampling distributions and means, t-tests and the like. Permutations are easily executed in R, using packages such as `mosaic`[^3].
+
+
+```{r,shapiro-wilkes}
+shapiro.test(stm$syllable_2)
+shapiro.test(stm$syllable_5)
+
+shapiro.test(stm$study_time_15)
+shapiro.test(stm$study_time_30)
+
+shapiro.test(stm$list_length_7)
+shapiro.test(stm$list_length_15)
+```
+
+
+## A Permutation Test
+
+We proceed with a Permutation Test for each of the Parameters. 
+We start with the Syllable Parameter SL. We shuffle the labels ( SL- = 2 and SL+ = 5) between the scores and determine the null distribution. This is then compared with the difference in *mean scores* between the unpermuted sets. 
+We continue similarly for the other two parameters. 
+
+```{r permutation-tests}
+#Syllable Parameter SL
+
+obs_syl_mean <- mean(stm$syllable_2) - mean(stm$syllable_5)
+obs_syl_mean
+
+null_dist_syllable <-
+  do(10000) * diff(mean(
+    stm_syllable$syl_scores ~ shuffle(stm_syllable$syllable),
+    data = stm_syllable
+  ))
+head(null_dist_syllable)
+
+p1 <-
+  null_dist_syllable %>% 
+  ggplot(., aes(x = syllable_5)) + 
+  geom_histogram(aes(fill = syllable_5 >= obs_syl_mean)) +
+  labs(x = "Distribution of Diff in Means under null hypothesis for Syllables")
+
+
+# Study Time Parameter ST
+obs_study_mean <- mean(stm$study_time_30) - mean(stm$study_time_15)
+obs_study_mean
+
+null_dist_studytime <-
+  do(10000) * diff(mean(
+    stm_studytime$study_scores ~ shuffle(stm_studytime$study),
+    data = stm_studytime
+  ))
+head(null_dist_studytime)
+
+p2 <- null_dist_studytime %>%
+  ggplot(., aes(x = study_time_30)) + 
+  geom_histogram(aes(fill = study_time_30 >= obs_study_mean)) +
+  labs(x = "Distribution of Diff in Means under null hypothesis for Study Time")
+
+# Word List Length Parameter WL
+obs_word_mean <- mean(stm$list_length_7) - mean(stm$list_length_15)
+obs_word_mean
+
+null_dist_words <-
+  do(10000) * diff(mean(stm_words$list_scores ~ shuffle(stm_words$list), data = stm_words))
+head(null_dist_words)
+
+p3 <-
+  null_dist_words %>% 
+  ggplot(., aes(x = list_length_7)) + 
+  geom_histogram(aes(fill = list_length_7 >= obs_word_mean)) +
+  labs(x = "Distribution of Diff in Means under null hypothesis for Words")
+```
+
+
+```{r, null-plots}
+# patchwork::wrap_plots(p1 + p2 + p3, nrow= 3, guides = "auto")
+p1
+p2
+p3
+```
+
+## Conclusions
+
+From the above null distribution plots obtained using Permutation tests, it is clear that both Study Time ( ST ) and List Word Length ( WL) have significant effects on the Short Term Memory Scores. 
+On the other hand, Syllable Count (SL) does not seem to affect the STM scores significantly. 
+
+
+
+
+# References
+
+[^1]: Lawrance, A. J. 1996. “A Design of Experiments Workshop as an Introduction to Statistics.” American Statistician 50 (2): 156–58. doi:10.1080/00031305.1996.10474364.
+
+[^2]: Ernst, Michael D. 2004. “Permutation Methods: A Basis for Exact Inference.” Statistical Science 19 (4): 676–85. doi:10.1214/088342304000000396.
+
+[^3]: Pruim R, Kaplan DT, Horton NJ (2017). “The mosaic Package: Helping Students to 'Think with Data' Using R.” The R Journal, 9(1), 77–102. https://journal.r-project.org/archive/2017/RJ-2017-024/index.html.
+
+
